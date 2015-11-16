@@ -1,0 +1,198 @@
+         U abort@@GLIBC_2.0
+         U AddMemoryInfoCallback
+0003eaa8 A __bss_start
+         U chdir@@GLIBC_2.0
+         U CommandLine
+0000a8b0 T Coroutine_Cancel
+0000b090 T Coroutine_Continue
+0000b0c0 T Coroutine_Create
+0000b030 T Coroutine_DebugAssert
+0000b060 T Coroutine_DebugBreak
+0000a870 T Coroutine_GetCurrentlyActive
+0000a270 T Coroutine_GetStackDepth
+0000a890 T Coroutine_IsActive
+00009f10 T Coroutine_ReleaseThreadMemory
+00009f00 T Coroutine_ValidateGlobals
+0000a4e0 T Coroutine_YieldToMain
+00020ca0 T CreateInterface
+000172d0 T CreateNewThreadPool
+         U __cxa_atexit@@GLIBC_2.1.3
+         U __cxa_call_unexpected@@CXXABI_1.3
+         w __cxa_finalize@@GLIBC_2.1.3
+         U __cxa_guard_abort@@CXXABI_1.3
+         U __cxa_guard_acquire@@CXXABI_1.3
+         U __cxa_guard_release@@CXXABI_1.3
+00015d10 T DestroyThreadPool
+         U dlclose@@GLIBC_2.0
+         U dlerror@@GLIBC_2.0
+         U dl_iterate_phdr@@GLIBC_2.2.4
+         U dlopen@@GLIBC_2.1
+         U dlsym@@GLIBC_2.0
+         U __dynamic_cast@@CXXABI_1.3
+0003eaa8 A _edata
+00043e90 A _end
+         U Error
+0002dd98 T _fini
+         U free@@GLIBC_2.0
+         U g_ClockSpeedMillisecondsMultiplier
+         U GetCPUInformation
+         U getcwd@@GLIBC_2.0
+         w __gmon_start__
+         U g_pMemAlloc
+0003e98c D g_pThreadPool
+000421c0 B g_VCoverage
+         U g_VProfCurrentProfile
+         U __gxx_personality_v0@@CXXABI_1.3
+         U iconv_close@@GLIBC_2.1
+         U iconv@@GLIBC_2.1
+         U iconv_open@@GLIBC_2.1
+000092a8 T _init
+0001cf70 T InstallUniformRandomStream
+         U isalnum@@GLIBC_2.0
+         U iscntrl@@GLIBC_2.0
+         U isprint@@GLIBC_2.0
+         U iswalnum@@GLIBC_2.0
+         U iswspace@@GLIBC_2.0
+         w _Jv_RegisterClasses
+0001b1b0 T KeyValuesSystem
+         U __log_finite@@GLIBC_2.15
+         U LOG_GENERAL
+         U LoggingSystem_IsChannelEnabled
+         U LoggingSystem_Log
+         U longjmp@@GLIBC_2.0
+         U malloc@@GLIBC_2.0
+         U mbstowcs@@GLIBC_2.0
+         U memcmp@@GLIBC_2.0
+         U memcpy@@GLIBC_2.0
+         U memmove@@GLIBC_2.0
+         U memset@@GLIBC_2.0
+         U Msg
+         U Plat_ExitProcess
+         U Plat_IsInDebugSession
+         U __powf_finite@@GLIBC_2.15
+         U __pow_finite@@GLIBC_2.15
+         U printf@@GLIBC_2.0
+         w pthread_cancel@@GLIBC_2.0
+         U pthread_mutexattr_init@@GLIBC_2.0
+         U pthread_mutexattr_settype@@GLIBC_2.1
+         U pthread_mutex_destroy@@GLIBC_2.0
+         U pthread_mutex_init@@GLIBC_2.0
+         U pthread_mutex_lock@@GLIBC_2.0
+         U pthread_mutex_unlock@@GLIBC_2.0
+         w pthread_once@@GLIBC_2.0
+         U rand@@GLIBC_2.0
+0001cfb0 T RandomFloat
+0001cfe0 T RandomFloatExp
+0001d5d0 T RandomGaussianFloat
+0001d010 T RandomInt
+0001cf90 T RandomSeed
+         U RemoveMemoryInfoCallback
+000177b0 T RunThreadPoolTests
+         U RunTSListTests
+         U RunTSQueueTests
+         U _setjmp@@GLIBC_2.0
+00042390 B s_pInterfaceRegs
+         U sscanf@@GLIBC_2.0
+         U strcasecmp@@GLIBC_2.0
+         U strchr@@GLIBC_2.0
+         U strcmp@@GLIBC_2.0
+         U strcpy@@GLIBC_2.0
+         U strlen@@GLIBC_2.0
+         U strncat@@GLIBC_2.0
+         U strncpy@@GLIBC_2.0
+         U strnlen@@GLIBC_2.0
+         U strstr@@GLIBC_2.0
+         U strtod@@GLIBC_2.0
+         U strtol@@GLIBC_2.0
+         U strtoll@@GLIBC_2.0
+         U strtoul@@GLIBC_2.0
+         U ThreadGetCurrentId
+         U ThreadGetPriority
+         U ThreadInMainThread
+         U ThreadInterlockedAssignIf64
+         U ThreadJoin
+         U ThreadSetAffinity
+         U ThreadSetDebugName
+         U ThreadSetPriority
+         U ThreadSleep
+         U tolower@@GLIBC_2.0
+         U toupper@@GLIBC_2.0
+         U towlower@@GLIBC_2.0
+         U towupper@@GLIBC_2.0
+         U vsnprintf@@GLIBC_2.0
+0000cb90 T VStdLib_GetICVarFactory
+         U vswprintf@@GLIBC_2.2
+0001d8e0 T V_UCS2ToUnicode
+0001da20 T V_UCS2ToUTF8
+0001d990 T V_UnicodeToUCS2
+0001d820 T V_UnicodeToUTF8
+0001db60 T V_UTF8_strncpy
+0001dac0 T V_UTF8ToUCS2
+0001d760 T V_UTF8ToUnicode
+         U Warning
+         U wcslen@@GLIBC_2.0
+         U wcsncat@@GLIBC_2.0
+         U wcsncpy@@GLIBC_2.0
+         U wcstombs@@GLIBC_2.0
+         U WriteMiniDump
+         U DevWarning(char const*, ...)
+         U ConMsg(char const*, ...)
+         U DevMsg(char const*, ...)
+         U CVProfNode::EnterScope()
+         U CVProfNode::GetSubNode(char const*, int, char const*, int)
+         U CVProfNode::ExitScope()
+         U CThreadEvent::WaitForMultiple(int, CThreadEvent**, bool, unsigned int)
+         U CThreadEvent::Set()
+         U CThreadEvent::Wait(unsigned int)
+         U CThreadEvent::Check()
+         U CThreadEvent::Reset()
+         U CThreadEvent::CThreadEvent(bool)
+         U CThreadEvent::CThreadEvent(bool)
+         U CThreadMutex::TryLock()
+         U CWorkerThread::CallWorker(unsigned int, unsigned int, bool)
+         U CWorkerThread::WaitForReply(unsigned int)
+         U CWorkerThread::GetCallHandle()
+         U CWorkerThread::Reply(unsigned int)
+         U CWorkerThread::PeekCall(unsigned int*)
+         U CWorkerThread::CWorkerThread()
+         U CThreadSpinRWLock::SpinLockForRead()
+         U CThreadSpinRWLock::SpinLockForWrite()
+         U CThreadSyncObject::~CThreadSyncObject()
+         U GenericThreadLocals::CThreadLocalBase::Set(void*)
+         U GenericThreadLocals::CThreadLocalBase::CThreadLocalBase()
+         U GenericThreadLocals::CThreadLocalBase::~CThreadLocalBase()
+0001d330 T CUniformRandomStream::RandomFloat(float, float)
+0001d2b0 T CUniformRandomStream::RandomFloatExp(float, float, float)
+0001d080 T CUniformRandomStream::GenerateRandomNumber()
+0001ced0 T CUniformRandomStream::SetSeed(int)
+0001d240 T CUniformRandomStream::RandomInt(int, int)
+0001d040 T CUniformRandomStream::CUniformRandomStream()
+0001d040 T CUniformRandomStream::CUniformRandomStream()
+0001d420 T CGaussianRandomStream::RandomFloat(float, float)
+0001d390 T CGaussianRandomStream::AttachToStream(IUniformRandomStream*)
+0001d400 T CGaussianRandomStream::CGaussianRandomStream(IUniformRandomStream*)
+0001d400 T CGaussianRandomStream::CGaussianRandomStream(IUniformRandomStream*)
+         U CThread::GetThreadProc()
+         U CThread::GetThreadHandle()
+         U CThread::IsThreadRunning()
+         U CThread::WaitForCreateComplete(CThreadEvent*)
+         U CThread::Init()
+         U CThread::Start(unsigned int, CThread::ThreadPriorityEnum_t)
+         U CThread::OnExit()
+         U CThread::Resume()
+         U CThread::IsAlive()
+         U CThread::SetName(char const*)
+         U CThread::Suspend()
+         U CThread::~CThread()
+         U CVProfile::FindOrCreateCounter(char const*, CounterGroup_t)
+         U CWorkerThread::GetCallParam() const
+         U GenericThreadLocals::CThreadLocalBase::Get() const
+         U CThreadFastMutex::Lock(unsigned int, unsigned int) volatile
+         U std::terminate()@@GLIBCXX_3.4
+0002fa2c V typeinfo for CUniformRandomStream
+         U typeinfo for CThread
+0002fa14 V typeinfo name for CUniformRandomStream
+0002fa38 V vtable for CUniformRandomStream
+         U vtable for __cxxabiv1::__class_type_info@@CXXABI_1.3
+         U vtable for __cxxabiv1::__si_class_type_info@@CXXABI_1.3
+         U vtable for __cxxabiv1::__vmi_class_type_info@@CXXABI_1.3

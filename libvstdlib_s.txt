@@ -1,0 +1,483 @@
+         U abort@@GLIBC_2.0
+         U access@@GLIBC_2.0
+         U alphasort64@@GLIBC_2.2
+         U AssertMsgImplementation
+0001ef8d T BHanIdeograph
+0003d0f0 A __bss_start
+0001f000 T CanBeginLine
+0001f055 T CanBreakBetween
+0001f03b T CanBreakRepeated
+0001efc0 T CanEndLine
+         U chdir@@GLIBC_2.0
+         U chmod@@GLIBC_2.0
+         U chown@@GLIBC_2.1
+         U clock_gettime@@GLIBC_2.2
+         U closedir@@GLIBC_2.0
+         U close@@GLIBC_2.0
+000109aa T Coroutine_Cancel
+00010484 T Coroutine_Continue
+0000f242 T Coroutine_Create
+00010455 T Coroutine_DebugBreak
+0000f1e6 T Coroutine_GetCurrentlyActive
+0000f144 T Coroutine_GetStackDepth
+0000f1d3 T Coroutine_IsActive
+0000f0a7 T Coroutine_IsAddressInOurStack
+0000e6e5 T Coroutine_ReleaseThreadMemory
+000104b0 T Coroutine_Test
+0000e310 T Coroutine_ValidateGlobals
+0000f8f0 T Coroutine_YieldToMain
+000097c0 T CreateInterface
+         U CreateVProfile
+         U __cxa_atexit@@GLIBC_2.1.3
+         w __cxa_finalize@@GLIBC_2.1.3
+         U __cxa_guard_abort@@CXXABI_1.3
+         U __cxa_guard_acquire@@CXXABI_1.3
+         U __cxa_guard_release@@CXXABI_1.3
+         U __cxa_pure_virtual@@CXXABI_1.3
+00011091 T DebugStatsSystem
+         U dlclose@@GLIBC_2.0
+         U dlerror@@GLIBC_2.0
+         U dl_iterate_phdr@@GLIBC_2.2.4
+         U dlmopen@@GLIBC_2.3.4
+         U dlopen@@GLIBC_2.1
+         U dlsym@@GLIBC_2.0
+         U _DMsg
+         U dup@@GLIBC_2.0
+0003d0f0 A _edata
+0004b828 A _end
+         U __errno_location@@GLIBC_2.0
+         U Error
+         U fclose@@GLIBC_2.1
+         U fdatasync@@GLIBC_2.0
+         U fflush@@GLIBC_2.0
+         U fgetc@@GLIBC_2.0
+         U fgets@@GLIBC_2.0
+00029eec T _fini
+         U fopen64@@GLIBC_2.1
+         U fopen@@GLIBC_2.1
+         U fprintf@@GLIBC_2.0
+         U fread@@GLIBC_2.0
+         U free@@GLIBC_2.0
+         U freopen@@GLIBC_2.0
+         U fseek@@GLIBC_2.0
+         U fseeko64@@GLIBC_2.1
+         U ftell@@GLIBC_2.0
+         U ftruncate64@@GLIBC_2.1
+         U ftruncate@@GLIBC_2.0
+         U futimes@@GLIBC_2.3
+         U fwrite@@GLIBC_2.0
+         U __fxstat64@@GLIBC_2.2
+         U g_ClockSpeed
+         U g_CpuTimeUnreliable
+         U getcwd@@GLIBC_2.0
+         U getenv@@GLIBC_2.0
+         U gethostbyname@@GLIBC_2.0
+00014b15 T GetNameFromOSType
+000148c0 T GetOSDetailString
+000146d4 T GetOSType
+00014d87 T GetPlatformFromOS
+00014cb3 T GetPlatformName
+00014d45 T GetPlatformNameFromEPlatformType
+00014e27 T GetPortableOsVersionInformation
+         U getsockname@@GLIBC_2.0
+         U GetSpewOutputFunc
+         U getuid@@GLIBC_2.0
+         w __gmon_start__
+         U g_pMemAllocSteam
+         U g_VProfile
+         U g_VProfManager
+         U g_VProfProfilesRunningCount
+         U __gxx_personality_v0@@CXXABI_1.3
+0000817c T _init
+0001623f T InstallUniformRandomStream
+         U Is64BitOS
+         U isalnum@@GLIBC_2.0
+         U isspace@@GLIBC_2.0
+         U iswspace@@GLIBC_2.0
+         w _Jv_RegisterClasses
+00011d23 T KeyValuesSystemSteam
+         U lchown@@GLIBC_2.0
+         U link@@GLIBC_2.0
+         U localeconv@@GLIBC_2.2
+         U log@@GLIBC_2.0
+         U longjmp@@GLIBC_2.0
+         U lseek64@@GLIBC_2.2
+         U __lxstat64@@GLIBC_2.2
+         U __lxstat@@GLIBC_2.0
+         U malloc@@GLIBC_2.0
+         U memcpy@@GLIBC_2.0
+         U memmove@@GLIBC_2.0
+         U memset@@GLIBC_2.0
+         U mkdir@@GLIBC_2.0
+         U mkfifo@@GLIBC_2.0
+         U mktemp@@GLIBC_2.0
+         U mmap64@@GLIBC_2.1
+         U mmap@@GLIBC_2.0
+         U mount@@GLIBC_2.0
+         U Msg
+         U munmap@@GLIBC_2.0
+         U open64@@GLIBC_2.2
+         U opendir@@GLIBC_2.0
+         U open@@GLIBC_2.0
+00014c53 T OSTypesAreCompatible
+         U Plat_GetCommandLine
+         U Plat_GetExecutablePath
+         U Plat_localtime
+         U Plat_OutputDebugString
+         U Plat_OutputDebugStringRaw
+         U Plat_VirtualAccessFlags
+         U pread64@@GLIBC_2.2
+         U printf@@GLIBC_2.0
+         w pthread_cancel@@GLIBC_2.0
+         U pthread_mutex_lock@@GLIBC_2.0
+         U pthread_mutex_unlock@@GLIBC_2.0
+         w pthread_once@@GLIBC_2.0
+         U pwrite64@@GLIBC_2.2
+         U qsort@@GLIBC_2.0
+         U readdir64@@GLIBC_2.2
+         U read@@GLIBC_2.0
+         U readlink@@GLIBC_2.0
+         U realpath@@GLIBC_2.3
+         U rename@@GLIBC_2.0
+         U rmdir@@GLIBC_2.0
+         U scandir64@@GLIBC_2.2
+         U scandir@@GLIBC_2.0
+         U sched_yield@@GLIBC_2.0
+         U sendfile64@@GLIBC_2.3
+         U _setjmp@@GLIBC_2.0
+         U shm_open@@GLIBC_2.2
+         U shm_unlink@@GLIBC_2.2
+         U snprintf@@GLIBC_2.0
+         U _SpewMessageType
+         U sprintf@@GLIBC_2.0
+         U sqrtf@@GLIBC_2.0
+         U sscanf@@GLIBC_2.0
+         U __stack_chk_fail@@GLIBC_2.4
+         U statvfs64@@GLIBC_2.1
+         U statvfs@@GLIBC_2.1
+         U stderr@@GLIBC_2.0
+0000a4d0 T SteamRealPath
+         U strcasecmp@@GLIBC_2.0
+         U strcasestr@@GLIBC_2.1
+         U strcat@@GLIBC_2.0
+         U strchr@@GLIBC_2.0
+         U strcmp@@GLIBC_2.0
+         U strcpy@@GLIBC_2.0
+         U strdup@@GLIBC_2.0
+         U strerror@@GLIBC_2.0
+         U strftime@@GLIBC_2.0
+0001f105 T StringAfterPrefix
+0001f3e4 T StringAfterPrefixCaseSensitive
+0001f497 T StringHasSuffix
+0001f57c T _strlwr
+         U strncasecmp@@GLIBC_2.0
+         U strncat@@GLIBC_2.0
+         U strncmp@@GLIBC_2.0
+         U strncpy@@GLIBC_2.0
+         U strpbrk@@GLIBC_2.0
+         U strrchr@@GLIBC_2.0
+         U strstr@@GLIBC_2.0
+         U strtod@@GLIBC_2.0
+         U strtol@@GLIBC_2.0
+         U strtoll@@GLIBC_2.0
+         U strtoul@@GLIBC_2.0
+         U strtoull@@GLIBC_2.0
+0001f53c T _strupr
+         U swprintf@@GLIBC_2.2
+         U swscanf@@GLIBC_2.2
+         U symlink@@GLIBC_2.0
+         U system@@GLIBC_2.0
+         U ThreadGetCurrentId
+         U ThreadGetCurrentProcessId
+         U ThreadGetCurrentRunningRef
+         U ThreadInMainThread
+         U ThreadInterlockedAssignIf
+         U ThreadInterlockedAssignIf64
+         U ThreadInterlockedDecrement
+         U ThreadInterlockedExchange
+         U ThreadInterlockedExchangeAdd
+         U ThreadInterlockedIncrement
+         U ThreadIsThreadRunning
+         U ThreadSleep
+         U time@@GLIBC_2.0
+         U tolower@@GLIBC_2.0
+         U toupper@@GLIBC_2.0
+         U towlower@@GLIBC_2.0
+         U towupper@@GLIBC_2.0
+         U TSListBase_Init
+         U TSListBase_Pop
+         U TSListBase_Push
+         U TSListBase_SwapList
+         U TSListBase_UnsafePeek
+         U TSQueueBase_Init
+         U TSQueueBase_Pop
+         U TSQueueBase_Push
+         U TSQueueBase_UnsafeDummy
+         U TSQueueBase_UnsafePeek
+         U TSQueue_PopIntoFreeList
+         U uname@@GLIBC_2.0
+         U unlink@@GLIBC_2.0
+         U usleep@@GLIBC_2.0
+         U utime@@GLIBC_2.0
+         U utimes@@GLIBC_2.0
+0001a3df T V_AggressiveStripPrecedingAndTrailingWhitespace
+0001a271 T V_AggressiveStripPrecedingAndTrailingWhitespaceW
+0001dc21 T V_AppendParamToURL
+0001b866 T V_AppendSlash
+         U vasprintf@@GLIBC_2.0
+0001840e T V_atof
+0001821e T V_atoi
+0001ca75 T V_BasicHtmlEntityEncode
+0001a93b T V_binarytohex
+0001bb20 T V_CbMakeAbsolutePath
+0001b8c9 T V_ComposeFileName
+0001af42 T V_CopyAndFixSlashes
+00019dc2 T V_CP437CharsToUTF8
+0001acf6 T V_DefaultExtension
+0001f1cc T V_ExtractDomainFromURL
+0001b2b2 T V_ExtractFileExtension
+0001b19a T V_ExtractFilePath
+0001aa40 T V_FileBase
+0001b0e7 T V_FixDoubleSlashes
+0001af10 T V_FixSlashes
+0001f5bc T V_FixupPathName
+0001c982 T V_FormatAndAppend
+0001c9ba T V_FormatAndAppendTail
+0001c881 T V_FormatAndAppendV
+0001c28a T V_GetCurrentDirectory
+0001b254 T V_GetFileExtension
+0001a68f T V_hextobinary
+0001cce0 T V_HtmlEntityDecodeToUTF8
+0001bad7 T V_IsAbsolutePath
+0001f0e5 T V_isbreakablewspace
+00019f9c T V_IsDeprecatedW
+00019fd0 T V_IsMeanSpaceW
+00018770 T V_isnumeric
+0001f62a T V_isstrlower
+00026683 T V_IsTLD
+0001e3c2 T V_IsValidDomainNameCharacter
+0001a7b5 T V_isvalidhex
+0002194a T V_IsValidUChar32
+0001e4d0 T V_IsValidURLCharacter
+00020240 T V_JoinNumbers
+000209a0 T V_JoinNumbersUint
+0001bd90 T V_MakeAbsolutePath
+0001f78b T V_MakeFileSafeName
+0001b940 T V_MakeRelativePath
+0001eda0 T V_MatchWildcardDNSName
+0001ee60 T V_MatchWildcardString
+00017af9 T V_memcpy_nocache
+00017830 T V_NormalizeUTF8
+00019f00 T V_NormalizeUTF8Old
+000197ee T V_pretifymem
+00019a8c T V_pretifynum
+0001de56 T V_qsort_s
+0001b300 T V_RemoveDotSlashes
+0001b640 T V_ReplaceBadFilenameCharacters
+0001b4d0 T V_ReplaceBadFilenameCharactersInPlace
+0001c2b9 T V_SetCurrentDirectory
+0001ae55 T V_SetExtension
+0001de96 T V_SetURLParam
+0001902a T V_snprintf
+         U vsnprintf@@GLIBC_2.0
+000211eb T V_SplitNumbers
+000210b2 T V_SplitNumbersUint
+0001faa3 T V_SplitString
+0001f910 T V_SplitString2
+00010dcf T VStdLib_GetICVarFactory
+00017fa0 T vstdlib_wcsicmp
+000180b2 T vstdlib_wcsnicmp
+00017e4a T vstdlib_wcstoi64
+00017ef5 T vstdlib_wcstoui64
+00018cae T V_strcat
+0001c549 T V_strcmp_prefix
+0001c620 T V_stricmp_prefix
+0001dbbd T V_StripAndPreserveHTML
+0001d160 T V_StripAndPreserveHTMLCore
+0001cffd T V_StripBBCode
+0001ac40 T V_StripExtension
+0001aed0 T V_StripFilename
+0001afc0 T V_StripLastDir
+0001a31a T V_StripPrecedingAndTrailingWhitespace
+0001a1c8 T V_StripPrecedingAndTrailingWhitespaceW
+0001abcc T V_StripTrailingSlash
+0001a4a4 T V_StripUnprintable
+0001a5aa T V_StripUnprintableW
+0001c3c8 T V_StrLeft
+000194f0 T V_strnappend
+00019660 T V_strnappend_strlen
+0001937a T V_strncat
+00018b35 T V_strnchr
+00017bcb T V_strncmp
+00018bd4 T V_strncpy
+00017d01 T V_strnicmp
+00018959 T V_strnistr
+00018b90 T V_strnlen
+0001bfee T V_StrReplaceChar
+0001c418 T V_StrRight
+0001c700 T V_strristr
+0001f663 T V_StrSkipArticles
+0001c2de T V_StrSlice
+0001c030 T V_StrSubst
+0001c1f1 T V_StrSubstInPlace
+000186a9 T V_strtoi64
+000186d9 T V_strtoui64
+0001c48c T V_StrTrim
+         U vswprintf@@GLIBC_2.2
+0001ed86 T V_tolower
+0001ef7c T V_toupper
+0001bf95 T V_TruncateAbsolutePathToDiskIdentity
+00022461 T V_UChar32ToUTF16
+00021c40 T V_UChar32ToUTF16Len
+00021c51 T V_UChar32ToUTF8
+00021c18 T V_UChar32ToUTF8Len
+0001b170 T V_UnqualifiedFileName
+0001f311 T V_URLContainsDomain
+00021750 T V_URLCracker
+0001e5cb T V_URLDecode
+0001e631 T V_URLDecodeRaw
+0001e598 T V_URLEncode
+0001e5fe T V_URLEncodeRaw
+0001596f T V_URLParse
+0001502a T V_URLPartsToString
+00025765 T V_UTF16CharsToUTF32
+0002573e T V_UTF16CharsToUTF8
+00024025 T V_UTF16ToUChar32
+00025699 T V_UTF16ToUTF32
+0002567c T V_UTF16ToUTF8
+000257b3 T V_UTF32CharsToUTF16
+0002578c T V_UTF32CharsToUTF8
+000256d3 T V_UTF32ToUTF16
+000256b6 T V_UTF32ToUTF8
+000256f0 T V_UTF8CharsToUTF16
+00025717 T V_UTF8CharsToUTF32
+00022c26 T V_UTF8ToUChar32
+00025642 T V_UTF8ToUTF16
+0002565f T V_UTF8ToUTF32
+00019132 T V_vsnprintf
+0001923a T V_vsnprintfRet
+00018f9c T V_vsnwprintf
+00018e62 T V_wcscat
+00018f52 T V_wcslower
+00019475 T V_wcsncat
+00018d67 T V_wcsncpy
+0001f6f7 T V_WcsSkipArticles
+00018709 T V_wcstoi64
+00018739 T V_wcstoui64
+00018f15 T V_wcsupr
+0001a800 T V_whextobinary
+00019c9f T V_Windows1252CharsToUTF8
+         U Warning
+         U wcscasecmp@@GLIBC_2.1
+         U wcscmp@@GLIBC_2.0
+         U wcslen@@GLIBC_2.0
+         U wcsncasecmp@@GLIBC_2.1
+         U wcsncat@@GLIBC_2.0
+         U wcsncpy@@GLIBC_2.0
+         U wcstol@@GLIBC_2.0
+         U wcstoll@@GLIBC_2.1
+         U wcstoull@@GLIBC_2.1
+00016323 T WeakRandomChar
+00016345 T WeakRandomFillMemory
+00016289 T WeakRandomFloat
+0001678a T WeakRandomGaussianFloat
+000162bb T WeakRandomInt
+00016260 T WeakRandomSeed
+000162ed T WeakRandomUint32
+         U write@@GLIBC_2.0
+         U __xmknod@@GLIBC_2.0
+         U __xstat64@@GLIBC_2.2
+         U __xstat@@GLIBC_2.0
+00020e82 T V_SplitString(char const*, char const*, CUtlVector<CUtlString, CUtlMemory<CUtlString> >&, bool)
+00020bad T V_SplitString2(char const*, char const* const*, int, CUtlVector<CUtlString, CUtlMemory<CUtlString> >&, bool)
+000254c7 T V_UnicodeLength(char const*)
+00025510 T V_UnicodeLength(unsigned short const*)
+0002555d T V_UnicodeLength(wchar_t const*)
+000257da T V_UnicodeRepair(char*, EStringConvertErrorPolicy)
+000257ed T V_UnicodeRepair(unsigned short*, EStringConvertErrorPolicy)
+00025800 T V_UnicodeRepair(wchar_t*, EStringConvertErrorPolicy)
+00025574 T V_UnicodeAdvance(char*, int)
+000255c5 T V_UnicodeAdvance(unsigned short*, int)
+00025620 T V_UnicodeAdvance(wchar_t*, int)
+000253bb T V_UnicodeValidate(char const*)
+00025424 T V_UnicodeValidate(unsigned short const*)
+0002547e T V_UnicodeValidate(wchar_t const*)
+0001e664 T V_ConvertStringToUUID(char const*, EUUIDStringFlags, V_UUID*)
+0001e862 T V_ConvertStringToUUID(wchar_t const*, EUUIDStringFlags, V_UUID*)
+0001ea60 T V_ConvertUUIDToString(V_UUID const*, EUUIDStringFlags, char*, int)
+0001ebe3 T V_ConvertUUIDToString(V_UUID const*, EUUIDStringFlags, wchar_t*, int)
+000187c9 T V_stristr(char const*, char const*)
+         U operator delete[](void*)@@GLIBCXX_3.4
+         U operator delete(void*)@@GLIBCXX_3.4
+         U CValidator::ClaimMemory(void*)
+         U CValidator::ClaimArrayMemory(void*)
+         U CValidator::Pop()
+         U CValidator::Push(char const*, void*, char const*)
+         U CValidator::IsClaimed(void*)
+         U SteamVProf::CVProfNode::EnterScope(void*)
+         U SteamVProf::CVProfNode::GetSubNode(char const*, int, EVProfBugdetGroup, int)
+         U SteamVProf::CVProfNode::ExitScope()
+         U SteamVProf::CVProfile::~CVProfile()
+0000d380 T SteamStdLib::CommandLine()
+0000d4d2 T SteamStdLib::CCommandLineParam::CCommandLineParam(char const*, char const*)
+0000d4d2 T SteamStdLib::CCommandLineParam::CCommandLineParam(char const*, char const*)
+0000d8da T SteamStdLib::CCommandLineParam::~CCommandLineParam()
+0000d8da T SteamStdLib::CCommandLineParam::~CCommandLineParam()
+         U SteamThreadTools::CThreadEvent::Set()
+         U SteamThreadTools::CThreadEvent::CThreadEvent(bool)
+         U SteamThreadTools::CThreadMutex::CThreadMutex()
+         U SteamThreadTools::CThreadMutex::~CThreadMutex()
+         U SteamThreadTools::CThreadLocalBase::Set(void*)
+         U SteamThreadTools::CThreadLocalBase::CThreadLocalBase()
+         U SteamThreadTools::CThreadLocalBase::~CThreadLocalBase()
+         U SteamThreadTools::CThreadSpinRWLock::UnlockRead()
+         U SteamThreadTools::CThreadSpinRWLock::LockForRead()
+         U SteamThreadTools::CThreadSpinRWLock::UnlockWrite()
+         U SteamThreadTools::CThreadSpinRWLock::SpinLockForWrite(unsigned int)
+         U SteamThreadTools::CThreadSyncObject::Wait(unsigned int)
+         U SteamThreadTools::CThreadSyncObject::~CThreadSyncObject()
+         U SteamThreadTools::CThread::GetThreadProc()
+         U SteamThreadTools::CThread::IsThreadRunning()
+         U SteamThreadTools::CThread::Init()
+         U SteamThreadTools::CThread::Join(unsigned int)
+         U SteamThreadTools::CThread::Start(unsigned int)
+         U SteamThreadTools::CThread::OnExit()
+         U SteamThreadTools::CThread::IsAlive()
+         U SteamThreadTools::CThread::SetName(char const*)
+         U SteamThreadTools::CThread::CThread()
+         U SteamThreadTools::CThread::~CThread()
+00016e9c T CStringNormalization::Initialize()
+0004b3d8 B CStringNormalization::m_bInitialized
+0001751c T CStringNormalization::ValidateStatics(CValidator&, char const*)
+000175e0 T CStringNormalization::Test_BValidateStructures()
+00017028 T CStringNormalization::Fold(wchar_t const*, wchar_t*, int)
+000173d2 T CStringNormalization::Normalize(bool, char const*, char*, int)
+0001706a T CStringNormalization::Normalize(bool, wchar_t const*, wchar_t*, int)
+0001621c T CUniformRandomStream::RandomChar()
+000165da T CUniformRandomStream::RandomFloat(float, float)
+0001653e T CUniformRandomStream::RandomFillMemory(void*, unsigned int)
+00016478 T CUniformRandomStream::GenerateRandomNumber()
+00016200 T CUniformRandomStream::SetSeed(int)
+0001657a T CUniformRandomStream::RandomInt(int, int)
+00016378 T CUniformRandomStream::CUniformRandomStream()
+00016378 T CUniformRandomStream::CUniformRandomStream()
+00016658 T CGaussianRandomStream::RandomFloat(float, float)
+00016620 T CGaussianRandomStream::AttachToStream(IUniformRandomStream*)
+00016630 T CGaussianRandomStream::CGaussianRandomStream(IUniformRandomStream*)
+00016630 T CGaussianRandomStream::CGaussianRandomStream(IUniformRandomStream*)
+0004b6a0 B CURLUtils::m_bInitialized
+0002591c T CURLUtils::ValidateStatics(CValidator&, char const*)
+00025814 T CURLUtils::FixupSeparatorScheme(CUtlString&)
+000260d0 T CURLUtils::IsTLD(char const*)
+0004b6c0 B CURLUtils::m_Mutex
+         U operator new[](unsigned int)@@GLIBCXX_3.4
+         U SteamThreadTools::CThreadLocalBase::Get() const
+         U SteamThreadTools::CThreadSpinLock::Lock(unsigned int) volatile
+         U operator new(unsigned int)@@GLIBCXX_3.4
+         U std::terminate()@@GLIBCXX_3.4
+0003cb40 V typeinfo for CUniformRandomStream
+         U typeinfo for SteamThreadTools::CThread
+0002bfe6 V typeinfo name for CUniformRandomStream
+0003cb50 V vtable for CUniformRandomStream
+         U vtable for __cxxabiv1::__class_type_info@@CXXABI_1.3
+         U vtable for __cxxabiv1::__si_class_type_info@@CXXABI_1.3

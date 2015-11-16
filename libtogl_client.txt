@@ -1,0 +1,444 @@
+         U abort@@GLIBC_2.0
+         U access@@GLIBC_2.0
+         U __acosf_finite@@GLIBC_2.15
+         U __acos_finite@@GLIBC_2.15
+         U __asin_finite@@GLIBC_2.15
+         U __atan2f_finite@@GLIBC_2.15
+         U __atan2_finite@@GLIBC_2.15
+         U atan@@GLIBC_2.0
+000a53c8 A __bss_start
+         U cbrtf@@GLIBC_2.0
+         U chdir@@GLIBC_2.0
+         U chmod@@GLIBC_2.0
+         U chown@@GLIBC_2.1
+00038d20 T ClearOpenGLEntryPoints
+         U closedir@@GLIBC_2.0
+         U CommandLine
+         U cos@@GLIBC_2.0
+00049fd0 T CreateInterface
+         U __ctype_b_loc@@GLIBC_2.3
+         U __ctype_tolower_loc@@GLIBC_2.3
+         U __cxa_atexit@@GLIBC_2.1.3
+         U __cxa_call_unexpected@@CXXABI_1.3
+         w __cxa_finalize@@GLIBC_2.1.3
+         U __cxa_guard_abort@@CXXABI_1.3
+         U __cxa_guard_acquire@@CXXABI_1.3
+         U __cxa_guard_release@@CXXABI_1.3
+00030510 T D3DPERF_SetOptions
+00030520 T D3DXCompileShader
+00030b30 T D3DXCreateMatrixStack
+0002ff30 T D3DXGetPixelShaderProfile
+00030150 T D3DXMatrixIdentity
+000301e0 T D3DXMatrixInverse
+0002ff40 T D3DXMatrixMultiply
+00030450 T D3DXMatrixOrthoOffCenterRH
+00030470 T D3DXMatrixPerspectiveOffCenterRH
+00030460 T D3DXMatrixPerspectiveRH
+00030190 T D3DXMatrixTranslation
+00030210 T D3DXMatrixTranspose
+000302c0 T D3DXPlaneNormalize
+00030480 T D3DXPlaneTransform
+00030050 T D3DXVec3TransformCoord
+00030390 T D3DXVec4Normalize
+00030360 T D3DXVec4Transform
+000304e0 T Direct3DCreate9
+         U dlclose@@GLIBC_2.0
+         U dlerror@@GLIBC_2.0
+         U dl_iterate_phdr@@GLIBC_2.2.4
+         U dlopen@@GLIBC_2.1
+         U dlsym@@GLIBC_2.0
+         U __dynamic_cast@@CXXABI_1.3
+000a53c8 A _edata
+00511d28 A _end
+         U __errno_location@@GLIBC_2.0
+         U Error
+         U __expf_finite@@GLIBC_2.15
+         U fclose@@GLIBC_2.1
+000727c0 T _fini
+         U fopen64@@GLIBC_2.1
+         U fopen@@GLIBC_2.1
+         U fprintf@@GLIBC_2.0
+         U fread@@GLIBC_2.0
+         U free@@GLIBC_2.0
+         U freopen@@GLIBC_2.0
+         U fwrite@@GLIBC_2.0
+         U g_ClockSpeed
+         U g_ClockSpeedSecondsMultiplier
+         U GetCPUInformation
+         U getcwd@@GLIBC_2.0
+         U getenv@@GLIBC_2.0
+000384e0 T GetOpenGLEntryPoints
+00042140 T GLMBeginPIXEvent
+000416b0 T GLMDecode
+000430b0 T GLMEndPIXEvent
+000422e0 T GLMKnob
+000422f0 T GLMKnobToggle
+         w __gmon_start__
+         U g_pMemAlloc
+         U __gxx_personality_v0@@CXXABI_1.3
+         U iconv_close@@GLIBC_2.1
+         U iconv@@GLIBC_2.1
+         U iconv_open@@GLIBC_2.1
+00017e34 T _init
+         U isalnum@@GLIBC_2.0
+         U iscntrl@@GLIBC_2.0
+         U isprint@@GLIBC_2.0
+         U iswalnum@@GLIBC_2.0
+         U iswspace@@GLIBC_2.0
+         w _Jv_RegisterClasses
+         U KeyValuesSystem
+         U lchown@@GLIBC_2.0
+         U link@@GLIBC_2.0
+         U __log_finite@@GLIBC_2.15
+         U LOG_GENERAL
+         U LoggingSystem_IsChannelEnabled
+         U LoggingSystem_Log
+         U __lxstat64@@GLIBC_2.2
+         U __lxstat@@GLIBC_2.0
+         U malloc@@GLIBC_2.0
+         U mbstowcs@@GLIBC_2.0
+         U memcmp@@GLIBC_2.0
+         U memcpy@@GLIBC_2.0
+         U memmove@@GLIBC_2.0
+         U memset@@GLIBC_2.0
+         U mkdir@@GLIBC_2.0
+         U mkfifo@@GLIBC_2.0
+         U modf@@GLIBC_2.0
+         U mount@@GLIBC_2.0
+         U Msg
+         U open64@@GLIBC_2.2
+         U opendir@@GLIBC_2.0
+         U open@@GLIBC_2.0
+         U Plat_ExitProcess
+         U Plat_FloatTime
+         U Plat_IsInDebugSession
+         U __pow_finite@@GLIBC_2.15
+         U printf@@GLIBC_2.0
+         w pthread_cancel@@GLIBC_2.0
+         w pthread_mutex_lock@@GLIBC_2.0
+         w pthread_mutex_unlock@@GLIBC_2.0
+         w pthread_once@@GLIBC_2.0
+         U putchar@@GLIBC_2.0
+         U puts@@GLIBC_2.0
+         U rand@@GLIBC_2.0
+         U RandomFloat
+         U RandomSeed
+         U readdir64@@GLIBC_2.2
+         U realpath@@GLIBC_2.3
+         U rename@@GLIBC_2.0
+         U rmdir@@GLIBC_2.0
+         U scandir@@GLIBC_2.0
+         U sincosf@@GLIBC_2.1
+         U sincos@@GLIBC_2.1
+         U sinf@@GLIBC_2.0
+         U sin@@GLIBC_2.0
+004f0d0c B s_pInterfaceRegs
+         U sprintf@@GLIBC_2.0
+         U sscanf@@GLIBC_2.0
+         U stderr@@GLIBC_2.0
+         U strcasecmp@@GLIBC_2.0
+         U strcasestr@@GLIBC_2.1
+         U strcat@@GLIBC_2.0
+         U strchr@@GLIBC_2.0
+         U strcmp@@GLIBC_2.0
+         U strcpy@@GLIBC_2.0
+         U strdup@@GLIBC_2.0
+         U strlen@@GLIBC_2.0
+         U strncat@@GLIBC_2.0
+         U strncmp@@GLIBC_2.0
+         U strncpy@@GLIBC_2.0
+         U strnlen@@GLIBC_2.0
+         U strpbrk@@GLIBC_2.0
+         U strrchr@@GLIBC_2.0
+         U strstr@@GLIBC_2.0
+         U strtod@@GLIBC_2.0
+         U strtol@@GLIBC_2.0
+         U strtoll@@GLIBC_2.0
+         U strtoul@@GLIBC_2.0
+         U swprintf@@GLIBC_2.2
+         U swscanf@@GLIBC_2.2
+         U symlink@@GLIBC_2.0
+         U system@@GLIBC_2.0
+         U tanf@@GLIBC_2.0
+         U tan@@GLIBC_2.0
+         U ThreadGetCurrentId
+         U ThreadSleep
+00034f80 T ToGLConnectLibraries
+00035040 T ToGLDisconnectLibraries
+00030530 T toglGetClientRect
+         U tolower@@GLIBC_2.0
+         U toupper@@GLIBC_2.0
+         U towlower@@GLIBC_2.0
+         U towupper@@GLIBC_2.0
+         U unlink@@GLIBC_2.0
+         U utime@@GLIBC_2.0
+         U utimes@@GLIBC_2.0
+         U vsnprintf@@GLIBC_2.0
+         U vswprintf@@GLIBC_2.2
+         U Warning
+         U wcslen@@GLIBC_2.0
+         U wcsncat@@GLIBC_2.0
+         U wcsncpy@@GLIBC_2.0
+         U wcstof@@GLIBC_2.0
+         U wcstol@@GLIBC_2.0
+         U wcstombs@@GLIBC_2.0
+         U WriteMiniDump
+         U __xmknod@@GLIBC_2.0
+         U __xstat64@@GLIBC_2.2
+         U __xstat@@GLIBC_2.0
+         U DevWarning(char const*, ...)
+         U ConMsg(char const*, ...)
+         U DevMsg(char const*, ...)
+000299a0 T D3DXMATRIX::operator()(int, int)
+00029990 T D3DXMATRIX::operator float*()
+000322e0 T IDirect3D9::CreateDevice(unsigned int, _D3DDEVTYPE, void*, unsigned int, _D3DPRESENT_PARAMETERS_*, IDirect3DDevice9**)
+0002a7e0 T IDirect3D9::GetDeviceCaps(unsigned int, _D3DDEVTYPE, _D3DCAPS9*)
+0002ad70 T IDirect3D9::CheckDeviceType(unsigned int, _D3DDEVTYPE, _D3DFORMAT, _D3DFORMAT, int)
+0002a7b0 T IDirect3D9::GetAdapterCount()
+0002acb0 T IDirect3D9::EnumAdapterModes(unsigned int, _D3DFORMAT, unsigned int, _D3DDISPLAYMODE*)
+0002aac0 T IDirect3D9::CheckDeviceFormat(unsigned int, _D3DDEVTYPE, _D3DFORMAT, unsigned int, _D3DRESOURCETYPE, _D3DFORMAT)
+0002ac30 T IDirect3D9::GetAdapterModeCount(unsigned int, _D3DFORMAT)
+0002a850 T IDirect3D9::GetAdapterIdentifier(unsigned int, unsigned int, _D3DADAPTER_IDENTIFIER9*)
+0002ad80 T IDirect3D9::GetAdapterDisplayMode(unsigned int, _D3DDISPLAYMODE*)
+0002ae40 T IDirect3D9::CheckDepthStencilMatch(unsigned int, _D3DDEVTYPE, _D3DFORMAT, _D3DFORMAT, _D3DFORMAT)
+0002ae70 T IDirect3D9::CheckDeviceMultiSampleType(unsigned int, _D3DDEVTYPE, _D3DFORMAT, int, _D3DMULTISAMPLE_TYPE, unsigned int*)
+00029530 T IDirect3D9::~IDirect3D9()
+00029520 T IDirect3D9::~IDirect3D9()
+00029520 T IDirect3D9::~IDirect3D9()
+00029ae0 T D3DXVECTOR2::operator float*()
+00029b00 T D3DXVECTOR3::D3DXVECTOR3(float, float, float)
+00029b00 T D3DXVECTOR3::D3DXVECTOR3(float, float, float)
+00029b20 T D3DXVECTOR3::operator float*()
+00029b40 T D3DXVECTOR4::D3DXVECTOR4(float, float, float, float)
+00029b40 T D3DXVECTOR4::D3DXVECTOR4(float, float, float, float)
+0002fd30 T ID3DXBuffer::GetBufferSize()
+0002fd20 T ID3DXBuffer::GetBufferPointer()
+0002af70 T IDirect3DQuery9::Issue(unsigned int)
+0002b070 T IDirect3DQuery9::GetData(void*, unsigned int, unsigned int)
+000295b0 T IDirect3DQuery9::~IDirect3DQuery9()
+00029550 T IDirect3DQuery9::~IDirect3DQuery9()
+00029550 T IDirect3DQuery9::~IDirect3DQuery9()
+0002fe60 T ID3DXMatrixStack::LoadMatrix(D3DXMATRIX const*)
+0002fee0 T ID3DXMatrixStack::MultMatrix(D3DXMATRIX const*)
+0002ff00 T ID3DXMatrixStack::ScaleLocal(float, float, float)
+0002fe10 T ID3DXMatrixStack::LoadIdentity()
+0002ff20 T ID3DXMatrixStack::TranslateLocal(float, float, float)
+0002fef0 T ID3DXMatrixStack::MultMatrixLocal(D3DXMATRIX const*)
+0002ff10 T ID3DXMatrixStack::RotateAxisLocal(D3DXVECTOR3 const*, float)
+0002fdb0 T ID3DXMatrixStack::Pop()
+000309b0 T ID3DXMatrixStack::Push()
+0002fd80 T ID3DXMatrixStack::AddRef(int, char*)
+00030a50 T ID3DXMatrixStack::Create()
+0002fd90 T ID3DXMatrixStack::GetTop()
+00030580 T ID3DXMatrixStack::Release(int, char*)
+0002fd40 T ID3DXMatrixStack::ID3DXMatrixStack()
+0002fd40 T ID3DXMatrixStack::ID3DXMatrixStack()
+0002b830 T IDirect3DDevice9::BeginScene()
+0002bae0 T IDirect3DDevice9::GetTexture(unsigned int, IDirect3DBaseTexture9**)
+0002dde0 T IDirect3DDevice9::InitStates()
+0002e990 T IDirect3DDevice9::ShowCursor(int)
+0002d9c0 T IDirect3DDevice9::CreateQuery(_D3DQUERYTYPE, IDirect3DQuery9**)
+0002b7d0 T IDirect3DDevice9::GetViewport(_D3DVIEWPORT9*)
+0002ea10 T IDirect3DDevice9::LightEnable(unsigned int, int)
+00030610 T IDirect3DDevice9::ResetFBOMap()
+0002ec00 T IDirect3DDevice9::SaveGLState()
+00030b70 T IDirect3DDevice9::ScrubFBOMap(CGLMTex*)
+0002ea00 T IDirect3DDevice9::SetMaterial(_D3DMATERIAL9 const*)
+0002b6a0 T IDirect3DDevice9::SetViewport(_D3DVIEWPORT9 const*)
+00031660 T IDirect3DDevice9::StretchRect(IDirect3DSurface9*, _RECT const*, IDirect3DSurface9*, _RECT const*, _D3DTEXTUREFILTERTYPE)
+0002eb40 T IDirect3DDevice9::SetClipPlane(unsigned int, float const*)
+0002ebc0 T IDirect3DDevice9::SetGammaRamp(unsigned int, unsigned int, _D3DGAMMARAMP const*)
+0002e9d0 T IDirect3DDevice9::SetTransform(_D3DTRANSFORMSTATETYPE, D3DMATRIX const*)
+00029c40 T IDirect3DDevice9::CreateTexture(unsigned int, unsigned int, unsigned int, unsigned int, _D3DFORMAT, _D3DPOOL, IDirect3DTexture9**, void**, char*)
+0002e970 T IDirect3DDevice9::DrawPrimitive(_D3DPRIMITIVETYPE, unsigned int, unsigned int)
+0002eac0 T IDirect3DDevice9::GetDeviceCaps(_D3DCAPS9*)
+0002d9b0 T IDirect3DDevice9::ReleasedQuery(IDirect3DQuery9*)
+0002ceb0 T IDirect3DDevice9::LinkShaderPair(IDirect3DVertexShader9*, IDirect3DPixelShader9*)
+0002ec10 T IDirect3DDevice9::RestoreGLState()
+0002ed40 T IDirect3DDevice9::SetRenderState(_D3DRENDERSTATETYPE, unsigned int)
+0002ea20 T IDirect3DDevice9::SetScissorRect(_RECT const*)
+000311a0 T IDirect3DDevice9::UpdateBoundFBO()
+0002e9f0 T IDirect3DDevice9::ValidateDevice(unsigned int*)
+0002e110 T IDirect3DDevice9::FullFlushStates()
+0002bcb0 T IDirect3DDevice9::GetRenderTarget(unsigned int, IDirect3DSurface9**)
+0002cf30 T IDirect3DDevice9::QueryShaderPair(int, GLMShaderPairInfo*)
+00030da0 T IDirect3DDevice9::ReleasedCGLMTex(CGLMTex*)
+0002d540 T IDirect3DDevice9::ReleasedSurface(IDirect3DSurface9*)
+0002d4c0 T IDirect3DDevice9::ReleasedTexture(IDirect3DBaseTexture9*)
+0002bc40 T IDirect3DDevice9::SetRenderTarget(unsigned int, IDirect3DSurface9*)
+0002b870 T IDirect3DDevice9::PrintObjectStats(IDirect3DDevice9::ObjectStats_t const&)
+00029fb0 T IDirect3DDevice9::CreateCubeTexture(unsigned int, unsigned int, unsigned int, _D3DFORMAT, _D3DPOOL, IDirect3DCubeTexture9**, void**, char*)
+0002b410 T IDirect3DDevice9::CreateIndexBuffer(unsigned int, unsigned int, _D3DFORMAT, _D3DPOOL, IDirect3DIndexBuffer9**, void**)
+0002c010 T IDirect3DDevice9::CreatePixelShader(unsigned int const*, IDirect3DPixelShader9**, char const*, char*, unsigned int const*)
+0002baf0 T IDirect3DDevice9::CreateRenderTarget(unsigned int, unsigned int, _D3DFORMAT, _D3DMULTISAMPLE_TYPE, unsigned int, int, IDirect3DSurface9**, void**, char*)
+0002b2c0 T IDirect3DDevice9::CreateVertexBuffer(unsigned int, unsigned int, unsigned int, _D3DPOOL, IDirect3DVertexBuffer9**, void**)
+0002c7d0 T IDirect3DDevice9::CreateVertexShader(unsigned int const*, IDirect3DVertexShader9**, char const*, char*)
+0002b940 T IDirect3DDevice9::DumpStatsToConsole(CCommand const*)
+0002c000 T IDirect3DDevice9::GetFrontBufferData(unsigned int, IDirect3DSurface9*)
+0002cef0 T IDirect3DDevice9::ValidateShaderPair(IDirect3DVertexShader9*, IDirect3DPixelShader9*)
+0002a310 T IDirect3DDevice9::CreateVolumeTexture(unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, _D3DFORMAT, _D3DPOOL, IDirect3DVolumeTexture9**, void**, char*)
+000318e0 T IDirect3DDevice9::GetRenderTargetData(IDirect3DSurface9*, IDirect3DSurface9*)
+0002d970 T IDirect3DDevice9::ReleasedIndexBuffer(IDirect3DIndexBuffer9*)
+0002d5d0 T IDirect3DDevice9::ReleasedPixelShader(IDirect3DPixelShader9*)
+0002d390 T IDirect3DDevice9::SetIndicesNonInline(IDirect3DIndexBuffer9*)
+0002fc20 T IDirect3DDevice9::SetTextureNonInline(unsigned int, IDirect3DBaseTexture9*)
+000314e0 T IDirect3DDevice9::DrawIndexedPrimitive(_D3DPRIMITIVETYPE, int, unsigned int, unsigned int, unsigned int, unsigned int)
+0002d7f0 T IDirect3DDevice9::ReleasedVertexBuffer(IDirect3DVertexBuffer9*)
+0002d690 T IDirect3DDevice9::ReleasedVertexShader(IDirect3DVertexShader9*)
+0002e9e0 T IDirect3DDevice9::SetTextureStageState(unsigned int, _D3DTEXTURESTAGESTATETYPE, unsigned int)
+0002eb30 T IDirect3DDevice9::TestCooperativeLevel()
+0002eba0 T IDirect3DDevice9::EvictManagedResources()
+0002ec40 T IDirect3DDevice9::AcquireThreadOwnership()
+0002e980 T IDirect3DDevice9::DrawIndexedPrimitiveUP(_D3DPRIMITIVETYPE, unsigned int, unsigned int, unsigned int, void const*, _D3DFORMAT, void const*, unsigned int)
+0002db10 T IDirect3DDevice9::FlushClipPlaneEquation()
+0002bfc0 T IDirect3DDevice9::GetDepthStencilSurface(IDirect3DSurface9**)
+0002ec70 T IDirect3DDevice9::ReleaseThreadOwnership()
+0002bf60 T IDirect3DDevice9::SetDepthStencilSurface(IDirect3DSurface9*)
+0002cf60 T IDirect3DDevice9::CreateVertexDeclaration(_D3DVERTEXELEMENT9 const*, IDirect3DVertexDeclaration9**)
+0002c760 T IDirect3DDevice9::SetPixelShaderConstantB(unsigned int, int const*, unsigned int)
+0002c7c0 T IDirect3DDevice9::SetPixelShaderConstantI(unsigned int, int const*, unsigned int)
+0002c690 T IDirect3DDevice9::SetPixelShaderNonInline(IDirect3DPixelShader9*)
+0002f910 T IDirect3DDevice9::SetSamplerStateNonInline(unsigned int, _D3DSAMPLERSTATETYPE, unsigned int)
+0002d320 T IDirect3DDevice9::SetStreamSourceNonInline(unsigned int, IDirect3DVertexBuffer9*, unsigned int, unsigned int)
+0002cbf0 T IDirect3DDevice9::SetVertexShaderNonInline(IDirect3DVertexShader9*)
+0002be20 T IDirect3DDevice9::CreateDepthStencilSurface(unsigned int, unsigned int, _D3DFORMAT, _D3DMULTISAMPLE_TYPE, unsigned int, int, IDirect3DSurface9**, void**)
+0002d3b0 T IDirect3DDevice9::ReleasedVertexDeclaration(IDirect3DVertexDeclaration9*)
+0002fb80 T IDirect3DDevice9::SetSamplerStatesNonInline(unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int)
+0002bd10 T IDirect3DDevice9::CreateOffscreenPlainSurface(unsigned int, unsigned int, _D3DFORMAT, _D3DPOOL, IDirect3DSurface9**, void**)
+0002d2e0 T IDirect3DDevice9::SetVertexDeclarationNonInline(IDirect3DVertexDeclaration9*)
+0002c6e0 T IDirect3DDevice9::SetPixelShaderConstantFNonInline(unsigned int, float const*, unsigned int)
+0002cde0 T IDirect3DDevice9::SetVertexShaderConstantBNonInline(unsigned int, int const*, unsigned int)
+0002cc30 T IDirect3DDevice9::SetVertexShaderConstantFNonInline(unsigned int, float const*, unsigned int)
+0002ce40 T IDirect3DDevice9::SetVertexShaderConstantINonInline(unsigned int, int const*, unsigned int)
+0002eca0 T IDirect3DDevice9::SetMaxUsedVertexShaderConstantsHintNonInline(unsigned int)
+00031390 T IDirect3DDevice9::Clear(unsigned int, _D3DRECT const*, unsigned int, unsigned int, float, unsigned int)
+000319b0 T IDirect3DDevice9::Reset(_D3DPRESENT_PARAMETERS_*)
+00031cf0 T IDirect3DDevice9::Create(IDirect3DDevice9Params*)
+0002d310 T IDirect3DDevice9::GetFVF(unsigned int*)
+0002d300 T IDirect3DDevice9::SetFVF(unsigned int)
+00031920 T IDirect3DDevice9::Present(_RECT const*, _RECT const*, void*, RGNDATA const*)
+0002b850 T IDirect3DDevice9::EndScene()
+0002ebb0 T IDirect3DDevice9::SetLight(unsigned int, _D3DLIGHT9 const*)
+0002b670 T IDirect3DDevice9::IDirect3DDevice9()
+0002b670 T IDirect3DDevice9::IDirect3DDevice9()
+00030990 T IDirect3DDevice9::~IDirect3DDevice9()
+000306d0 T IDirect3DDevice9::~IDirect3DDevice9()
+000306d0 T IDirect3DDevice9::~IDirect3DDevice9()
+0002a720 T IDirect3DSurface9::UnlockRect()
+0002a770 T IDirect3DSurface9::GetDesc(_D3DSURFACE_DESC*)
+0002a680 T IDirect3DSurface9::LockRect(_D3DLOCKED_RECT*, _RECT const*, unsigned int)
+00030ef0 T IDirect3DSurface9::~IDirect3DSurface9()
+00030de0 T IDirect3DSurface9::~IDirect3DSurface9()
+00030de0 T IDirect3DSurface9::~IDirect3DSurface9()
+00029ed0 T IDirect3DTexture9::UnlockRect(unsigned int)
+00029ee0 T IDirect3DTexture9::GetSurfaceLevel(unsigned int, IDirect3DSurface9**)
+00029ec0 T IDirect3DTexture9::LockRect(unsigned int, _D3DLOCKED_RECT*, _RECT const*, unsigned int)
+00031160 T IDirect3DTexture9::~IDirect3DTexture9()
+000310e0 T IDirect3DTexture9::~IDirect3DTexture9()
+000310e0 T IDirect3DTexture9::~IDirect3DTexture9()
+00029b60 T IDirect3DResource9::SetPriority(unsigned int)
+00032440 W IDirect3DResource9::~IDirect3DResource9()
+00032430 W IDirect3DResource9::~IDirect3DResource9()
+00032430 W IDirect3DResource9::~IDirect3DResource9()
+00029ba0 T IDirect3DBaseTexture9::GetLevelDesc(unsigned int, _D3DSURFACE_DESC*)
+00029b80 T IDirect3DBaseTexture9::GetLevelCount()
+00029b70 T IDirect3DBaseTexture9::GetType()
+00031180 T IDirect3DBaseTexture9::~IDirect3DBaseTexture9()
+00030f10 T IDirect3DBaseTexture9::~IDirect3DBaseTexture9()
+00030f10 T IDirect3DBaseTexture9::~IDirect3DBaseTexture9()
+0002a270 T IDirect3DCubeTexture9::GetLevelDesc(unsigned int, _D3DSURFACE_DESC*)
+0002a1a0 T IDirect3DCubeTexture9::GetCubeMapSurface(_D3DCUBEMAP_FACES, unsigned int, IDirect3DSurface9**)
+000310c0 T IDirect3DCubeTexture9::~IDirect3DCubeTexture9()
+00031030 T IDirect3DCubeTexture9::~IDirect3DCubeTexture9()
+00031030 T IDirect3DCubeTexture9::~IDirect3DCubeTexture9()
+0002b550 T IDirect3DIndexBuffer9::UnlockActualSize(unsigned int, void const*)
+0002b4d0 T IDirect3DIndexBuffer9::Lock(unsigned int, unsigned int, void**, unsigned int)
+0002b520 T IDirect3DIndexBuffer9::Unlock()
+0002b570 T IDirect3DIndexBuffer9::GetDesc(_D3DINDEXBUFFER_DESC*)
+00029800 T IDirect3DIndexBuffer9::~IDirect3DIndexBuffer9()
+00029780 T IDirect3DIndexBuffer9::~IDirect3DIndexBuffer9()
+00029780 T IDirect3DIndexBuffer9::~IDirect3DIndexBuffer9()
+0002d670 T IDirect3DPixelShader9::~IDirect3DPixelShader9()
+0002d610 T IDirect3DPixelShader9::~IDirect3DPixelShader9()
+0002d610 T IDirect3DPixelShader9::~IDirect3DPixelShader9()
+0002b3f0 T IDirect3DVertexBuffer9::UnlockActualSize(unsigned int, void const*)
+0002b370 T IDirect3DVertexBuffer9::Lock(unsigned int, unsigned int, void**, unsigned int)
+0002b3c0 T IDirect3DVertexBuffer9::Unlock()
+0002d950 T IDirect3DVertexBuffer9::~IDirect3DVertexBuffer9()
+0002d8e0 T IDirect3DVertexBuffer9::~IDirect3DVertexBuffer9()
+0002d8e0 T IDirect3DVertexBuffer9::~IDirect3DVertexBuffer9()
+0002d7d0 T IDirect3DVertexShader9::~IDirect3DVertexShader9()
+0002d770 T IDirect3DVertexShader9::~IDirect3DVertexShader9()
+0002d770 T IDirect3DVertexShader9::~IDirect3DVertexShader9()
+0002a5f0 T IDirect3DVolumeTexture9::GetLevelDesc(unsigned int, _D3DVOLUME_DESC*)
+0002a510 T IDirect3DVolumeTexture9::LockBox(unsigned int, _D3DLOCKED_BOX*, _D3DBOX const*, unsigned int)
+0002a5b0 T IDirect3DVolumeTexture9::UnlockBox(unsigned int)
+00031010 T IDirect3DVolumeTexture9::~IDirect3DVolumeTexture9()
+00030f90 T IDirect3DVolumeTexture9::~IDirect3DVolumeTexture9()
+00030f90 T IDirect3DVolumeTexture9::~IDirect3DVolumeTexture9()
+0002d4a0 T IDirect3DVertexDeclaration9::~IDirect3DVertexDeclaration9()
+0002d470 T IDirect3DVertexDeclaration9::~IDirect3DVertexDeclaration9()
+0002d470 T IDirect3DVertexDeclaration9::~IDirect3DVertexDeclaration9()
+00032460 W IUnknown::~IUnknown()
+00032420 W IUnknown::~IUnknown()
+00032420 W IUnknown::~IUnknown()
+00029ac0 T D3DXPLANE::operator float*()
+00029a20 T D3DXPLANE::operator==(D3DXPLANE const&)
+00029a10 T D3DXPLANE::operator[](int)
+00029a70 T D3DXPLANE::operator!=(D3DXPLANE const&)
+000299c0 T D3DXMATRIX::operator()(int, int) const
+00030020 T D3DXMATRIX::operator*(D3DXMATRIX const&) const
+000299e0 T D3DXMATRIX::operator!=(D3DXMATRIX const&) const
+00029af0 T D3DXVECTOR2::operator float const*() const
+00029b30 T D3DXVECTOR3::operator float const*() const
+00029ad0 T D3DXPLANE::operator float const*() const
+         U CThreadFastMutex::Lock(unsigned int, unsigned int) volatile
+         U std::terminate()@@GLIBCXX_3.4
+0007560c V typeinfo for IDirect3D9
+00075658 V typeinfo for IDirect3DQuery9
+00075710 V typeinfo for IDirect3DDevice9
+000755f0 V typeinfo for IDirect3DSurface9
+00075584 V typeinfo for IDirect3DTexture9
+000758d0 V typeinfo for IDirect3DResource9
+00075564 V typeinfo for IDirect3DBaseTexture9
+000755a8 V typeinfo for IDirect3DCubeTexture9
+000756a4 V typeinfo for IDirect3DIndexBuffer9
+000756c8 V typeinfo for IDirect3DPixelShader9
+00075680 V typeinfo for IDirect3DVertexBuffer9
+000756f0 V typeinfo for IDirect3DVertexShader9
+000755d0 V typeinfo for IDirect3DVolumeTexture9
+00075638 V typeinfo for IDirect3DVertexDeclaration9
+000758dc V typeinfo for IUnknown
+000755fc V typeinfo name for IDirect3D9
+00075644 V typeinfo name for IDirect3DQuery9
+000756fc V typeinfo name for IDirect3DDevice9
+000755dc V typeinfo name for IDirect3DSurface9
+00075570 V typeinfo name for IDirect3DTexture9
+000758e4 V typeinfo name for IDirect3DResource9
+0007554c V typeinfo name for IDirect3DBaseTexture9
+00075590 V typeinfo name for IDirect3DCubeTexture9
+0007568c V typeinfo name for IDirect3DIndexBuffer9
+000756b0 V typeinfo name for IDirect3DPixelShader9
+00075664 V typeinfo name for IDirect3DVertexBuffer9
+000756d4 V typeinfo name for IDirect3DVertexShader9
+000755b4 V typeinfo name for IDirect3DVolumeTexture9
+00075618 V typeinfo name for IDirect3DVertexDeclaration9
+000758f9 V typeinfo name for IUnknown
+00075770 V vtable for IDirect3D9
+000757e0 V vtable for IDirect3DQuery9
+000757a0 V vtable for IDirect3DDevice9
+00075760 V vtable for IDirect3DSurface9
+00075730 V vtable for IDirect3DTexture9
+000757f0 V vtable for IDirect3DResource9
+00075720 V vtable for IDirect3DBaseTexture9
+00075740 V vtable for IDirect3DCubeTexture9
+00075790 V vtable for IDirect3DIndexBuffer9
+000757b0 V vtable for IDirect3DPixelShader9
+00075780 V vtable for IDirect3DVertexBuffer9
+000757c0 V vtable for IDirect3DVertexShader9
+00075750 V vtable for IDirect3DVolumeTexture9
+000757d0 V vtable for IDirect3DVertexDeclaration9
+00075800 V vtable for IUnknown
+         U vtable for __cxxabiv1::__class_type_info@@CXXABI_1.3
+         U vtable for __cxxabiv1::__si_class_type_info@@CXXABI_1.3
+         U vtable for __cxxabiv1::__vmi_class_type_info@@CXXABI_1.3

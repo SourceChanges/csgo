@@ -1,0 +1,473 @@
+         U abort@@GLIBC_2.0
+00008aeb t add_fdes
+0000e958 d adds.7496
+00008dc6 t base_from_cb_data
+0000881e t base_from_object
+0000e960 A __bss_start
+00001e40 t _calloc_dbg
+000089cd t classify_object_over_fdes
+0000e960 b completed.5793
+0000e028 d cplus_demangle_builtin_types
+0000e380 d cplus_demangle_operators
+0000e014 d __CTOR_END__
+0000e000 d __CTOR_LIST__
+000031df t __cxa_allocate_dependent_exception
+00003092 t __cxa_allocate_exception
+00002b7f t __cxa_begin_catch
+0000332c t __cxa_call_terminate
+00002919 t __cxa_call_unexpected
+00006a18 t __cxa_current_exception_type
+000068a2 t __cxa_demangle
+00002bff t __cxa_end_catch
+         w __cxa_finalize@@GLIBC_2.1.3
+00003291 t __cxa_free_dependent_exception
+00003152 t __cxa_free_exception
+00002b74 t __cxa_get_exception_ptr
+00002d7a t __cxa_get_globals
+00002d5c t __cxa_get_globals_fast
+00001ce0 t __cxa_pure_virtual
+00002e5c t __cxa_rethrow
+00002df0 t __cxa_throw
+00003b6b t d_add_substitution
+00003800 t d_append_buffer
+000037c3 t d_append_char
+00003934 t d_append_num
+0000390c t d_append_string
+0000425b t d_bare_function_type
+00003b02 t d_call_offset
+000039cb t d_compact_number
+0000359f t d_cv_qualifiers
+00006676 t d_demangle_callback.constprop.18
+00004a3c t d_encoding
+00009a29 t __deregister_frame
+00009a20 t __deregister_frame_info
+0000994a t __deregister_frame_info_bases
+00004fb6 t d_expression
+000052e4 t d_exprlist
+00004eef t d_expr_primary
+00003855 t d_find_pack
+00003b91 t d_growable_string_callback_adapter
+0000382e t d_index_template_argument
+         U dl_iterate_phdr@@GLIBC_2.2.4
+0000357a t d_make_builtin_type
+000034e3 t d_make_comp
+000034c8 t d_make_empty
+0000354b t d_make_name
+00004ec4 t d_mangled_name
+0000470f t d_name
+0000396f t d_number.isra.0
+00009bd4 t __do_global_ctors_aux
+00001c28 t __do_global_dtors_aux
+000042ae t d_operator_name
+000041da t d_parmlist
+00006379 t d_print_array_type.isra.10
+00006550 t d_print_cast.isra.13.part.14
+0000535a t d_print_comp
+000065f7 t d_print_expr_op
+00003786 t d_print_flush
+00006447 t d_print_function_type.isra.12
+0000610d t d_print_mod
+00006213 t d_print_mod_list
+0000661e t d_print_subexpr
+0000e940 d __dso_handle
+00003a4d t d_source_name
+00003618 t d_substitution
+00004638 t d_template_args
+00003a04 t d_template_param
+0000e01c d __DTOR_END__
+0000e964 b dtor_idx.5795
+0000e018 d __DTOR_LIST__
+00003c48 t d_type
+000043cd t d_unqualified_name
+000133b4 b dwarf_reg_size_table
+0000e948 d DW.ref.__gxx_personality_v0
+0000e954 d DW.ref._ZTISt9exception
+0000e798 a _DYNAMIC
+0000e960 A _edata
+000134c8 A _end
+00006c66 t execute_cfa_program
+000075c9 t execute_stack_op
+00001ec0 t _expand_dbg
+00008c4a t fde_mixed_encoding_compare
+00008bcd t fde_single_encoding_compare
+000086aa t fde_unencoded_compare
+00009bfc T _fini
+         U fputc@@GLIBC_2.0
+         U fputs@@GLIBC_2.0
+000086cf t frame_downheap
+00001c97 t frame_dummy
+0000da88 r __FRAME_END__
+000133fc b frame_hdr_cache
+000133f8 b frame_hdr_cache_head
+0000875a t frame_heapsort
+00008185 t __frame_state_for
+00001ed0 t _free_dbg
+         U free@@GLIBC_2.0
+000069e3 t __gcclibcxx_demangle_callback
+0000890f t get_cie_encoding
+000089bc t get_fde_encoding
+00002210 T GetUnitTest
+0000e8ec a _GLOBAL_OFFSET_TABLE_
+00001ae0 t _GLOBAL__sub_I___cxa_pure_virtual
+00001b31 t _GLOBAL__sub_I_eh_alloc.cc
+00001b10 t _GLOBAL__sub_I__ZN9CTestCaseC2EPKcP10ITestSuite
+         w __gmon_start__
+         U g_pMemAlloc
+0000e944 d g_pszModule
+000025a5 t __gxx_personality_v0
+00001cce t __i686.get_pc_thunk.bx
+00002b70 t __i686.get_pc_thunk.cx
+00003325 t __i686.get_pc_thunk.dx
+0000197c T _init
+00006be6 t init_dwarf_reg_size_table
+0000e020 d __JCR_END__
+0000e020 d __JCR_LIST__
+         w _Jv_RegisterClasses
+00003543 t .L12
+00003d49 t .L155
+00003d52 t .L156
+00003f1e t .L157
+00003f7e t .L158
+00003d13 t .L159
+00003f35 t .L160
+00003dd1 t .L161
+00003ed9 t .L162
+00003ef0 t .L163
+00003f07 t .L164
+00003e74 t .L165
+00003e4a t .L166
+00003f5c t .L167
+00003cd1 t .L168
+00003cf9 t .L169
+00006b84 t .L17
+00006b4e t .L19
+00006b69 t .L20
+00007ac1 t .L214
+00007ac5 t .L215
+00007aca t .L216
+00007ace t .L217
+000041bc t .L218
+00007ada t .L218
+00007adf t .L219
+00007ae9 t .L220
+00007aed t .L221
+00007af3 t .L222
+00007af9 t .L223
+00007aff t .L224
+00007b11 t .L225
+00007b0a t .L226
+00007b1f t .L227
+00007b03 t .L228
+00007b18 t .L229
+00006b5a t .L23
+00007b26 t .L230
+00006b6e t .L24
+00007b8c t .L244
+00006b76 t .L25
+000023d3 t .L26
+00006b7d t .L26
+00007cdb t .L271
+00007ce5 t .L272
+00007d11 t .L273
+00007d5c t .L274
+00007d75 t .L275
+0000239d t .L28
+000023b8 t .L29
+000023a9 t .L32
+000049f4 t .L327
+00004984 t .L328
+00004744 t .L329
+000023bd t .L33
+00004992 t .L330
+00004884 t .L331
+000023c5 t .L34
+000023cc t .L35
+000070b8 t .L43
+000088e3 t .L45
+000070b3 t .L46
+00006d1c t .L47
+000088ad t .L47
+00006d49 t .L48
+000088c8 t .L48
+00006d67 t .L49
+00006d85 t .L50
+00006da2 t .L51
+000088b9 t .L51
+00006dca t .L52
+000088cd t .L52
+00006e00 t .L53
+000088d5 t .L53
+00006de5 t .L54
+000088dc t .L54
+000053a5 t .L542
+00005464 t .L543
+00005496 t .L544
+00005619 t .L545
+000056e5 t .L546
+00006050 t .L547
+0000574c t .L549
+00006e1b t .L55
+0000575b t .L550
+00005766 t .L551
+00005771 t .L552
+000057a6 t .L553
+000057b1 t .L554
+000057bc t .L555
+000057c4 t .L556
+000057cf t .L557
+000057da t .L558
+000057e5 t .L559
+00006e44 t .L56
+000057f8 t .L560
+00005803 t .L561
+0000580e t .L562
+00005819 t .L563
+00005835 t .L564
+00005861 t .L565
+00005899 t .L566
+000058c2 t .L567
+000058cd t .L568
+00005973 t .L569
+00006e7f t .L57
+00005a70 t .L570
+00005acb t .L571
+00005b29 t .L572
+00005bb1 t .L573
+00005bf2 t .L574
+00005c0b t .L575
+00005c3b t .L576
+00005c98 t .L577
+00005d8d t .L579
+00006ea5 t .L58
+00005dfc t .L581
+00005f62 t .L582
+00005f7b t .L583
+00005f91 t .L584
+00005f4f t .L585
+00005f9d t .L586
+00006066 t .L587
+0000607c t .L588
+0000609a t .L589
+00006edc t .L59
+000060cc t .L590
+00005fc3 t .L591
+00003512 t .L6
+00006eff t .L60
+00006f12 t .L61
+00006f2a t .L62
+00006f45 t .L63
+00006f72 t .L64
+00006fb0 t .L65
+00006fd0 t .L66
+00005e72 t .L663
+00005e7c t .L664
+00005e86 t .L665
+00005e91 t .L666
+00005e9c t .L667
+00006ff2 t .L67
+00007025 t .L68
+000060f8 t .L683
+0000704b t .L69
+0000351c t .L7
+0000706e t .L70
+00005c00 t .L700
+00007081 t .L71
+000061fb t .L711
+000061cc t .L712
+0000613e t .L713
+00006146 t .L714
+0000615a t .L715
+00006162 t .L716
+00006176 t .L717
+00006186 t .L718
+0000618d t .L719
+00006195 t .L720
+0000619d t .L721
+000061a5 t .L722
+000061d1 t .L723
+00003528 t .L8
+00003522 t .L9
+00008cc7 t linear_search_fdes
+00001e20 t _malloc_dbg
+         U malloc@@GLIBC_2.0
+000134c4 b marker.7234
+         U memcmp@@GLIBC_2.0
+         U memset@@GLIBC_2.0
+00001ef0 t _msize_dbg
+00001df0 t _nh_malloc_dbg
+000133d0 b object_mutex
+000133c8 b once_regsizes.7669
+         U Plat_ExitProcess
+         U Plat_IsInDebugSession
+         w pthread_cancel@@GLIBC_2.0
+         w pthread_mutex_lock@@GLIBC_2.0
+         w pthread_mutex_unlock@@GLIBC_2.0
+         w pthread_once@@GLIBC_2.0
+00006ac2 t read_encoded_value
+00008866 t read_encoded_value_with_base
+00006a78 t read_sleb128
+00008660 t read_sleb128
+00006a48 t read_uleb128
+00008630 t read_uleb128
+00001ea0 t _realloc_dbg
+         U realloc@@GLIBC_2.0
+00009846 t __register_frame
+0000982c t __register_frame_info
+0000979e t __register_frame_info_bases
+00009904 t __register_frame_info_table
+0000987b t __register_frame_info_table_bases
+0000991e t __register_frame_table
+000092a0 t search_object
+000133ec b seen_objects
+00001b6f t set_fast_math
+000087ce t size_of_encoded_value
+         U sprintf@@GLIBC_2.0
+0000e2bc d standard_subs
+         U stderr@@GLIBC_2.0
+         U strcmp@@GLIBC_2.0
+         U strcpy@@GLIBC_2.0
+         U strlen@@GLIBC_2.0
+         U strncmp@@GLIBC_2.0
+000133f0 b subs.7497
+000134bc b terminator.7340
+         U ___tls_get_addr@@GLIBC_2.3
+00002200 T UnitTestCount
+00002060 T UnitTestInstallTestCase
+000133e8 b unseen_objects
+000085af t _Unwind_Backtrace
+00008246 t _Unwind_DebugHook
+00008593 t _Unwind_DeleteException
+0000813d t _Unwind_FindEnclosingFunction
+00009a5a t _Unwind_Find_FDE
+00008380 t _Unwind_ForcedUnwind
+00007f3f t _Unwind_ForcedUnwind_Phase2
+00008097 t _Unwind_GetCFA
+0000816f t _Unwind_GetDataRelBase
+00007490 t _Unwind_GetGR
+000080f8 t _Unwind_GetIP
+00008103 t _Unwind_GetIPInfo
+00008127 t _Unwind_GetLanguageSpecificData
+00008132 t _Unwind_GetRegionStart
+0000817a t _Unwind_GetTextRelBase
+00008e0e t _Unwind_IteratePhdrCallback
+0000824b t _Unwind_RaiseException
+00007ffc t _Unwind_RaiseException_Phase2
+0000842b t _Unwind_Resume
+000084d2 t _Unwind_Resume_or_Rethrow
+000080a2 t _Unwind_SetGR
+00008119 t _Unwind_SetIP
+00006bb0 t _Unwind_SetSpColumn
+000070e4 t uw_frame_state_for
+00007e3e t uw_init_context_1
+000074dc t uw_install_context_1
+00007f05 t uw_update_context
+00007ba0 t uw_update_context_1
+         U WriteMiniDump
+00001dc0 t operator delete[](void*)
+00001d90 t operator delete(void*)
+0000e96c b s_TestCount
+00002250 t read_sleb128(unsigned char const*, long*)
+00002220 t read_uleb128(unsigned char const*, unsigned long*)
+0000e974 b s_ppTestCases
+0000e994 b emergency_used
+000129a0 b dependents_used
+000024d1 t get_ttype_entry(lsda_header_info*, unsigned long) [clone .constprop.6]
+0000e970 b s_TestAllocated
+0000e9a0 b emergency_buffer
+0000229a t get_adjusted_ptr(std::type_info const*, std::type_info const*, void**)
+000129b0 b dependents_buffer
+00002433 t parse_lsda_header(_Unwind_Context*, unsigned char const*, lsda_header_info*) [clone .constprop.5]
+000023ff t read_encoded_value(_Unwind_Context*, unsigned char, unsigned char const*, unsigned int*)
+00002553 t check_exception_spec(lsda_header_info*, std::type_info const*, void*, long) [clone .constprop.4]
+000022ec t base_of_encoded_value(unsigned char, _Unwind_Context*)
+00002d98 t __gxx_exception_cleanup(_Unwind_Reason_Code, _Unwind_Exception*)
+0000e968 b UNSPECIFIED_LOGGING_COLOR
+0000e978 b UNSPECIFIED_LOGGING_COLOR
+00002356 t read_encoded_value_with_base(unsigned char, unsigned int, unsigned char const*, unsigned int*)
+00001f20 T CTestSuite::AddTest(ITestCase*)
+00001f10 T CTestSuite::GetName()
+00001fa0 T CTestSuite::RunTest()
+000020f0 T CTestSuite::CTestSuite(char const*, ITestSuite*)
+000020f0 T CTestSuite::CTestSuite(char const*, ITestSuite*)
+00002010 T CTestSuite::~CTestSuite()
+00002010 T CTestSuite::~CTestSuite()
+00002ca4 t __cxxabiv1::__terminate(void (*)())
+00002ce6 t __cxxabiv1::__unexpected(void (*)())
+00002ae6 t __cxxabiv1::__forced_unwind::~__forced_unwind()
+00002a50 t __cxxabiv1::__forced_unwind::~__forced_unwind()
+00002a50 t __cxxabiv1::__forced_unwind::~__forced_unwind()
+00002ab8 t __cxxabiv1::__foreign_exception::~__foreign_exception()
+00002a6e t __cxxabiv1::__foreign_exception::~__foreign_exception()
+00002a6e t __cxxabiv1::__foreign_exception::~__foreign_exception()
+0000e950 d __cxxabiv1::__terminate_handler
+0000e94c d __cxxabiv1::__unexpected_handler
+0000e97c b (anonymous namespace)::emergency_mutex
+00001f00 T CTestCase::GetName()
+00002180 T CTestCase::CTestCase(char const*, ITestSuite*)
+00002180 T CTestCase::CTestCase(char const*, ITestSuite*)
+00001fe0 T CTestCase::~CTestCase()
+00001fe0 T CTestCase::~CTestCase()
+00002fc0 t __gnu_cxx::__scoped_lock::__scoped_lock(__gnu_cxx::__mutex&)
+00002fc0 t __gnu_cxx::__scoped_lock::__scoped_lock(__gnu_cxx::__mutex&)
+00003020 t __gnu_cxx::__scoped_lock::~__scoped_lock()
+00003020 t __gnu_cxx::__scoped_lock::~__scoped_lock()
+00002f86 t __gnu_cxx::__concurrence_lock_error::~__concurrence_lock_error()
+00002ef0 t __gnu_cxx::__concurrence_lock_error::~__concurrence_lock_error()
+00002ef0 t __gnu_cxx::__concurrence_lock_error::~__concurrence_lock_error()
+00002f4c t __gnu_cxx::__concurrence_unlock_error::~__concurrence_unlock_error()
+00002f1e t __gnu_cxx::__concurrence_unlock_error::~__concurrence_unlock_error()
+00002f1e t __gnu_cxx::__concurrence_unlock_error::~__concurrence_unlock_error()
+0000337c t __gnu_cxx::__verbose_terminate_handler()
+00001d50 t operator new[](unsigned int)
+00001d70 t operator new[](unsigned int, int, char const*, int)
+00002ec4 t __gnu_cxx::__concurrence_lock_error::what() const
+00002eda t __gnu_cxx::__concurrence_unlock_error::what() const
+00002aa2 t std::bad_exception::what() const
+00002a8c t std::exception::what() const
+00002b14 t std::bad_exception::~bad_exception()
+00002a22 t std::bad_exception::~bad_exception()
+00002a22 t std::bad_exception::~bad_exception()
+00002b42 t std::exception::~exception()
+00002a04 t std::exception::~exception()
+00002a04 t std::exception::~exception()
+00001d10 t operator new(unsigned int)
+00001d30 t operator new(unsigned int, int, char const*, int)
+00002cfe t std::unexpected()
+00002d1d t std::set_terminate(void (*)())
+00002d3c t std::set_unexpected(void (*)())
+00002c81 t std::uncaught_exception()
+00002cc7 t std::terminate()
+00009c48 V typeinfo for CTestSuite
+00009cac r typeinfo for ITestSuite
+00009c2c V typeinfo for CTestCase
+00009ca4 r typeinfo for ITestCase
+0000e6e4 V typeinfo for __cxxabiv1::__forced_unwind
+0000e6ec V typeinfo for __cxxabiv1::__foreign_exception
+0000e76c V typeinfo for __gnu_cxx::__concurrence_lock_error
+0000e78c V typeinfo for __gnu_cxx::__concurrence_unlock_error
+0000e6d8 d typeinfo for std::bad_exception
+0000e6d0 d typeinfo for std::exception
+00009c38 V typeinfo name for CTestSuite
+00009cc3 r typeinfo name for ITestSuite
+00009c20 V typeinfo name for CTestCase
+00009cb8 r typeinfo name for ITestCase
+00009d4c V typeinfo name for __cxxabiv1::__forced_unwind
+00009d6c V typeinfo name for __cxxabiv1::__foreign_exception
+00009ddc V typeinfo name for __gnu_cxx::__concurrence_lock_error
+00009e04 V typeinfo name for __gnu_cxx::__concurrence_unlock_error
+00009d38 r typeinfo name for std::bad_exception
+00009d28 r typeinfo name for std::exception
+00009c68 V vtable for CTestSuite
+00009c90 r vtable for ITestSuite
+00009c58 V vtable for CTestCase
+00009c80 r vtable for ITestCase
+0000e728 V vtable for __cxxabiv1::__forced_unwind
+         U vtable for __cxxabiv1::__class_type_info
+0000e740 V vtable for __cxxabiv1::__foreign_exception
+         U vtable for __cxxabiv1::__si_class_type_info
+0000e758 V vtable for __gnu_cxx::__concurrence_lock_error
+0000e778 V vtable for __gnu_cxx::__concurrence_unlock_error
+0000e710 d vtable for std::bad_exception
+0000e6f8 d vtable for std::exception
+00000000 b (anonymous namespace)::get_global()::global
+000133b0 b __gnu_cxx::__verbose_terminate_handler()::terminating

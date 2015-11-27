@@ -1,111 +1,111 @@
-         U abort@@GLIBC_2.0
-         U atan2@@GLIBC_2.0
-00026208 A __bss_start
-         U calloc@@GLIBC_2.0
-00010310 T celt_decode
-00010350 T celt_decode_float
-0000eb70 T celt_decoder_create
-0000ebe0 T celt_decoder_create_custom
-00010390 T celt_decoder_ctl
-0000ec70 T celt_decoder_destroy
-0000e940 T celt_decoder_get_size
-0000e990 T celt_decoder_get_size_custom
-0000eaa0 T celt_decoder_init
-0000e9c0 T celt_decoder_init_custom
-0000e640 T celt_encode
-0000e680 T celt_encode_float
-0000bdf0 T celt_encoder_create
-0000be60 T celt_encoder_create_custom
-0000e6c0 T celt_encoder_ctl
-0000bef0 T celt_encoder_destroy
-0000bb50 T celt_encoder_get_size
-0000bbb0 T celt_encoder_get_size_custom
-0000bd20 T celt_encoder_init
-0000bbf0 T celt_encoder_init_custom
-00011930 T celt_mode_create
-000118b0 T celt_mode_destroy
-00010500 T celt_strerror
-         U chdir@@GLIBC_2.0
-         U CommandLine
-         U cos@@GLIBC_2.0
-00003500 T CreateInterface
-         U __cxa_call_unexpected@@CXXABI_1.3
-         w __cxa_finalize@@GLIBC_2.1.3
-         U dlclose@@GLIBC_2.0
-         U dlerror@@GLIBC_2.0
-         U dl_iterate_phdr@@GLIBC_2.2.4
-         U dlopen@@GLIBC_2.1
-         U dlsym@@GLIBC_2.0
-00026208 A _edata
-00026700 A _end
-         U Error
-         U exp@@GLIBC_2.0
-0001e904 T _fini
-         U floorf@@GLIBC_2.0
-         U floor@@GLIBC_2.0
-         U free@@GLIBC_2.0
-         U getcwd@@GLIBC_2.0
-         w __gmon_start__
-         U g_pMemAlloc
-         U __gxx_personality_v0@@CXXABI_1.3
-         U iconv_close@@GLIBC_2.1
-         U iconv@@GLIBC_2.1
-         U iconv_open@@GLIBC_2.1
-00002cac T _init
-         U isalnum@@GLIBC_2.0
-         U iscntrl@@GLIBC_2.0
-         U isprint@@GLIBC_2.0
-         U iswalnum@@GLIBC_2.0
-         U iswspace@@GLIBC_2.0
-         w _Jv_RegisterClasses
-         U LOG_GENERAL
-         U LoggingSystem_IsChannelEnabled
-         U LoggingSystem_Log
-         U log@@GLIBC_2.0
-         U malloc@@GLIBC_2.0
-         U mbstowcs@@GLIBC_2.0
-         U memcmp@@GLIBC_2.0
-         U memcpy@@GLIBC_2.0
-         U memmove@@GLIBC_2.0
-         U memset@@GLIBC_2.0
-         U Msg
-         U Plat_ExitProcess
-         U Plat_IsInDebugSession
-         U __pow_finite@@GLIBC_2.15
-         U printf@@GLIBC_2.0
-         w pthread_cancel@@GLIBC_2.0
-         w pthread_mutex_lock@@GLIBC_2.0
-         w pthread_mutex_unlock@@GLIBC_2.0
-         w pthread_once@@GLIBC_2.0
-         U rand@@GLIBC_2.0
-         U sincos@@GLIBC_2.1
-         U sin@@GLIBC_2.0
-0002622c B s_pInterfaceRegs
-         U sqrtf@@GLIBC_2.0
-         U sqrt@@GLIBC_2.0
-         U __stack_chk_fail@@GLIBC_2.4
-         U strcasecmp@@GLIBC_2.0
-         U strchr@@GLIBC_2.0
-         U strcmp@@GLIBC_2.0
-         U strcpy@@GLIBC_2.0
-         U strlen@@GLIBC_2.0
-         U strncat@@GLIBC_2.0
-         U strnlen@@GLIBC_2.0
-         U strstr@@GLIBC_2.0
-         U strtod@@GLIBC_2.0
-         U strtol@@GLIBC_2.0
-         U tolower@@GLIBC_2.0
-         U toupper@@GLIBC_2.0
-         U towlower@@GLIBC_2.0
-         U towupper@@GLIBC_2.0
-         U vsnprintf@@GLIBC_2.0
-         U vswprintf@@GLIBC_2.2
-         U Warning
-         U wcslen@@GLIBC_2.0
-         U wcsncat@@GLIBC_2.0
-         U wcsncpy@@GLIBC_2.0
-         U wcstombs@@GLIBC_2.0
-         U WriteMiniDump
-         U DevWarning(char const*, ...)
-         U vtable for __cxxabiv1::__class_type_info@@CXXABI_1.3
-         U vtable for __cxxabiv1::__si_class_type_info@@CXXABI_1.3
+U abort@@GLIBC_2.0
+U atan2@@GLIBC_2.0
+A __bss_start
+U calloc@@GLIBC_2.0
+T celt_decode
+T celt_decode_float
+T celt_decoder_create
+T celt_decoder_create_custom
+T celt_decoder_ctl
+T celt_decoder_destroy
+T celt_decoder_get_size
+T celt_decoder_get_size_custom
+T celt_decoder_init
+T celt_decoder_init_custom
+T celt_encode
+T celt_encode_float
+T celt_encoder_create
+T celt_encoder_create_custom
+T celt_encoder_ctl
+T celt_encoder_destroy
+T celt_encoder_get_size
+T celt_encoder_get_size_custom
+T celt_encoder_init
+T celt_encoder_init_custom
+T celt_mode_create
+T celt_mode_destroy
+T celt_strerror
+U chdir@@GLIBC_2.0
+U CommandLine
+U cos@@GLIBC_2.0
+T CreateInterface
+U __cxa_call_unexpected@@CXXABI_1.3
+w __cxa_finalize@@GLIBC_2.1.3
+U dlclose@@GLIBC_2.0
+U dlerror@@GLIBC_2.0
+U dl_iterate_phdr@@GLIBC_2.2.4
+U dlopen@@GLIBC_2.1
+U dlsym@@GLIBC_2.0
+A _edata
+A _end
+U Error
+U exp@@GLIBC_2.0
+T _fini
+U floorf@@GLIBC_2.0
+U floor@@GLIBC_2.0
+U free@@GLIBC_2.0
+U getcwd@@GLIBC_2.0
+w __gmon_start__
+U g_pMemAlloc
+U __gxx_personality_v0@@CXXABI_1.3
+U iconv_close@@GLIBC_2.1
+U iconv@@GLIBC_2.1
+U iconv_open@@GLIBC_2.1
+T _init
+U isalnum@@GLIBC_2.0
+U iscntrl@@GLIBC_2.0
+U isprint@@GLIBC_2.0
+U iswalnum@@GLIBC_2.0
+U iswspace@@GLIBC_2.0
+w _Jv_RegisterClasses
+U LOG_GENERAL
+U LoggingSystem_IsChannelEnabled
+U LoggingSystem_Log
+U log@@GLIBC_2.0
+U malloc@@GLIBC_2.0
+U mbstowcs@@GLIBC_2.0
+U memcmp@@GLIBC_2.0
+U memcpy@@GLIBC_2.0
+U memmove@@GLIBC_2.0
+U memset@@GLIBC_2.0
+U Msg
+U Plat_ExitProcess
+U Plat_IsInDebugSession
+U __pow_finite@@GLIBC_2.15
+U printf@@GLIBC_2.0
+w pthread_cancel@@GLIBC_2.0
+w pthread_mutex_lock@@GLIBC_2.0
+w pthread_mutex_unlock@@GLIBC_2.0
+w pthread_once@@GLIBC_2.0
+U rand@@GLIBC_2.0
+U sincos@@GLIBC_2.1
+U sin@@GLIBC_2.0
+B s_pInterfaceRegs
+U sqrtf@@GLIBC_2.0
+U sqrt@@GLIBC_2.0
+U __stack_chk_fail@@GLIBC_2.4
+U strcasecmp@@GLIBC_2.0
+U strchr@@GLIBC_2.0
+U strcmp@@GLIBC_2.0
+U strcpy@@GLIBC_2.0
+U strlen@@GLIBC_2.0
+U strncat@@GLIBC_2.0
+U strnlen@@GLIBC_2.0
+U strstr@@GLIBC_2.0
+U strtod@@GLIBC_2.0
+U strtol@@GLIBC_2.0
+U tolower@@GLIBC_2.0
+U toupper@@GLIBC_2.0
+U towlower@@GLIBC_2.0
+U towupper@@GLIBC_2.0
+U vsnprintf@@GLIBC_2.0
+U vswprintf@@GLIBC_2.2
+U Warning
+U wcslen@@GLIBC_2.0
+U wcsncat@@GLIBC_2.0
+U wcsncpy@@GLIBC_2.0
+U wcstombs@@GLIBC_2.0
+U WriteMiniDump
+U DevWarning(char const*, ...)
+U vtable for __cxxabiv1::__class_type_info@@CXXABI_1.3
+U vtable for __cxxabiv1::__si_class_type_info@@CXXABI_1.3

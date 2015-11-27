@@ -1,282 +1,282 @@
-         U abort@@GLIBC_2.0
-         U accept@@GLIBC_2.0
-         U access@@GLIBC_2.0
-         U __acosf_finite@@GLIBC_2.15
-         U __acos_finite@@GLIBC_2.15
-         U alphasort64@@GLIBC_2.2
-         U __asinf_finite@@GLIBC_2.15
-         U __asin_finite@@GLIBC_2.15
-         U __atan2f_finite@@GLIBC_2.15
-         U __atan2_finite@@GLIBC_2.15
-         U atan@@GLIBC_2.0
-         U bind@@GLIBC_2.0
-000ca4f8 A __bss_start
-         U CallAssertFailedNotifyFunc
-         U cbrtf@@GLIBC_2.0
-         U chdir@@GLIBC_2.0
-         U chmod@@GLIBC_2.0
-         U chown@@GLIBC_2.1
-         U closedir@@GLIBC_2.0
-         U close@@GLIBC_2.0
-         U CommandLine
-         U connect@@GLIBC_2.0
-         U cosf@@GLIBC_2.0
-         U cos@@GLIBC_2.0
-0005b820 T CreateInterface
-         U CreateNewThreadPool
-         U CreateSimpleThread
-         U ctermid@@GLIBC_2.0
-         U ctime@@GLIBC_2.0
-         U __ctype_b_loc@@GLIBC_2.3
-         U __ctype_tolower_loc@@GLIBC_2.3
-         U __cxa_atexit@@GLIBC_2.1.3
-         U __cxa_call_unexpected@@CXXABI_1.3
-         w __cxa_finalize@@GLIBC_2.1.3
-         U __cxa_guard_abort@@CXXABI_1.3
-         U __cxa_guard_acquire@@CXXABI_1.3
-         U __cxa_guard_release@@CXXABI_1.3
-00053d20 T DedicatedMain
-         U dlclose@@GLIBC_2.0
-         U dlerror@@GLIBC_2.0
-         U dl_iterate_phdr@@GLIBC_2.2.4
-         U dlopen@@GLIBC_2.1
-         U dlsym@@GLIBC_2.0
-         U DoNewAssertDialog
-         U __dynamic_cast@@CXXABI_1.3
-000ca4f8 A _edata
-000f1b68 A _end
-         U __errno_location@@GLIBC_2.0
-         U Error
-         U _exit@@GLIBC_2.0
-         U exit@@GLIBC_2.0
-         U _ExitOnFatalAssert
-         U __expf_finite@@GLIBC_2.15
-         U fclose@@GLIBC_2.1
-         U feof@@GLIBC_2.0
-         U ferror@@GLIBC_2.0
-         U fflush@@GLIBC_2.0
-         U fgets@@GLIBC_2.0
-         U fileno_unlocked@@GLIBC_2.0
-0009a270 T _fini
-         U flock@@GLIBC_2.0
-         U fopen64@@GLIBC_2.1
-         U fopen@@GLIBC_2.1
-         U fork@@GLIBC_2.0
-         U fprintf@@GLIBC_2.0
-         U fputc@@GLIBC_2.0
-         U fputs@@GLIBC_2.0
-         U fread@@GLIBC_2.0
-         U free@@GLIBC_2.0
-         U freopen@@GLIBC_2.0
-         U fseek@@GLIBC_2.0
-         U fseeko64@@GLIBC_2.1
-         U ftell@@GLIBC_2.0
-         U ftello64@@GLIBC_2.1
-         U fwrite@@GLIBC_2.0
-         U g_ClockSpeed
-         U g_ClockSpeedMicrosecondsMultiplier
-         U GetCallStack
-         U GetCPUInformation
-         U getcwd@@GLIBC_2.0
-         U getenv@@GLIBC_2.0
-         U gethostbyname@@GLIBC_2.0
-         U gethostname@@GLIBC_2.0
-         U getsockname@@GLIBC_2.0
-         w __gmon_start__
-         U g_pMemAlloc
-         U g_VProfCurrentProfile
-         U __gxx_personality_v0@@CXXABI_1.3
-         U iconv_close@@GLIBC_2.1
-         U iconv@@GLIBC_2.1
-         U iconv_open@@GLIBC_2.1
-         U inet_addr@@GLIBC_2.0
-00018114 T _init
-         U ioctl@@GLIBC_2.0
-         U isalnum@@GLIBC_2.0
-         U isatty@@GLIBC_2.0
-         U iscntrl@@GLIBC_2.0
-         U isprint@@GLIBC_2.0
-         U iswalnum@@GLIBC_2.0
-         U iswspace@@GLIBC_2.0
-         w _Jv_RegisterClasses
-         U KeyValuesSystem
-         U kill@@GLIBC_2.0
-         U lchown@@GLIBC_2.0
-         U link@@GLIBC_2.0
-         U listen@@GLIBC_2.0
-         U localtime@@GLIBC_2.0
-         U __logf_finite@@GLIBC_2.15
-         U __log_finite@@GLIBC_2.15
-         U LOG_GENERAL
-         U LoggingSystem_IsChannelEnabled
-         U LoggingSystem_Log
-         U LoggingSystem_LogAssert
-         U LoggingSystem_PopLoggingState
-         U LoggingSystem_PushLoggingState
-         U LoggingSystem_RegisterLoggingListener
-         U LoggingSystem_ResetCurrentLoggingState
-         U LoggingSystem_SetLoggingResponsePolicy
-         U __lxstat64@@GLIBC_2.2
-         U __lxstat@@GLIBC_2.0
-         U malloc@@GLIBC_2.0
-         U mbstowcs@@GLIBC_2.0
-         U memcmp@@GLIBC_2.0
-         U memcpy@@GLIBC_2.0
-         U memmove@@GLIBC_2.0
-         U memset@@GLIBC_2.0
-         U mkdir@@GLIBC_2.0
-         U mkfifo@@GLIBC_2.0
-         U mount@@GLIBC_2.0
-         U Msg
-         U mtrace@@GLIBC_2.0
-         U open64@@GLIBC_2.2
-         U opendir@@GLIBC_2.0
-         U open@@GLIBC_2.0
-         U Plat_ExitProcess
-         U Plat_FloatTime
-         U Plat_IsInDebugSession
-         U Plat_MSTime
-         U Plat_SetCommandLine
-         U Plat_SetWindowTitle
-         U poll@@GLIBC_2.0
-         U __pow_finite@@GLIBC_2.15
-         U printf@@GLIBC_2.0
-         w pthread_cancel@@GLIBC_2.0
-         U pthread_mutexattr_init@@GLIBC_2.0
-         U pthread_mutexattr_settype@@GLIBC_2.1
-         U pthread_mutex_destroy@@GLIBC_2.0
-         U pthread_mutex_init@@GLIBC_2.0
-         U pthread_mutex_lock@@GLIBC_2.0
-         U pthread_mutex_unlock@@GLIBC_2.0
-         w pthread_once@@GLIBC_2.0
-         U putchar@@GLIBC_2.0
-         U puts@@GLIBC_2.0
-         U qsort@@GLIBC_2.0
-         U rand@@GLIBC_2.0
-         U RandomFloat
-         U RandomInt
-         U RandomSeed
-         U readdir64@@GLIBC_2.2
-         U read@@GLIBC_2.0
-         U realpath@@GLIBC_2.3
-         U recv@@GLIBC_2.0
-         U ReleaseThreadHandle
-         U rename@@GLIBC_2.0
-         U rewind@@GLIBC_2.0
-         U rmdir@@GLIBC_2.0
-         U scandir64@@GLIBC_2.2
-         U scandir@@GLIBC_2.0
-         U select@@GLIBC_2.0
-         U send@@GLIBC_2.0
-         U setbuf@@GLIBC_2.0
-         U setenv@@GLIBC_2.0
-         U setsockopt@@GLIBC_2.0
-         U ShouldUseNewAssertDialog
-         U sigaddset@@GLIBC_2.0
-         U sigemptyset@@GLIBC_2.0
-         U sigprocmask@@GLIBC_2.0
-         U sincosf@@GLIBC_2.1
-         U sinf@@GLIBC_2.0
-         U sin@@GLIBC_2.0
-         U snprintf@@GLIBC_2.0
-         U socket@@GLIBC_2.0
-         U socketpair@@GLIBC_2.0
-000d0910 B s_pInterfaceRegs
-         U sprintf@@GLIBC_2.0
-         U sscanf@@GLIBC_2.0
-         U StackToolsNotify_LoadedLibrary
-         U stderr@@GLIBC_2.0
-         U stdout@@GLIBC_2.0
-         U strcasecmp@@GLIBC_2.0
-         U strcasestr@@GLIBC_2.1
-         U strcat@@GLIBC_2.0
-         U strchr@@GLIBC_2.0
-         U strcmp@@GLIBC_2.0
-         U strcpy@@GLIBC_2.0
-         U strdup@@GLIBC_2.0
-         U strerror@@GLIBC_2.0
-         U strlen@@GLIBC_2.0
-         U strncat@@GLIBC_2.0
-         U strncpy@@GLIBC_2.0
-         U strnlen@@GLIBC_2.0
-         U strpbrk@@GLIBC_2.0
-         U strrchr@@GLIBC_2.0
-         U strspn@@GLIBC_2.0
-         U strstr@@GLIBC_2.0
-         U strtod@@GLIBC_2.0
-         U strtol@@GLIBC_2.0
-         U strtoll@@GLIBC_2.0
-         U strtoul@@GLIBC_2.0
-         U swprintf@@GLIBC_2.2
-         U swscanf@@GLIBC_2.2
-         U symlink@@GLIBC_2.0
-         U syscall@@GLIBC_2.0
-         U tanf@@GLIBC_2.0
-         U tan@@GLIBC_2.0
-         U tcgetattr@@GLIBC_2.0
-         U tcsetattr@@GLIBC_2.0
-         U ThreadGetCurrentId
-         U ThreadGetPriority
-         U ThreadInMainThread
-         U ThreadInterlockedAssignIf64
-         U ThreadJoin
-         U ThreadSetPriority
-         U ThreadSleep
-         U time@@GLIBC_2.0
-         U ___tls_get_addr@@GLIBC_2.3
-         U tmpnam@@GLIBC_2.0
-         U tolower@@GLIBC_2.0
-         U toupper@@GLIBC_2.0
-         U towlower@@GLIBC_2.0
-         U towupper@@GLIBC_2.0
-         U TranslateStackInfo
-         U unlink@@GLIBC_2.0
-         U usleep@@GLIBC_2.0
-         U utime@@GLIBC_2.0
-         U utimes@@GLIBC_2.0
-         U vfprintf@@GLIBC_2.0
-         U vsnprintf@@GLIBC_2.0
-         U VStdLib_GetICVarFactory
-         U vswprintf@@GLIBC_2.2
-         U waitpid@@GLIBC_2.0
-         U Warning
-         U wcslen@@GLIBC_2.0
-         U wcsncat@@GLIBC_2.0
-         U wcsncpy@@GLIBC_2.0
-         U wcstof@@GLIBC_2.0
-         U wcstol@@GLIBC_2.0
-         U wcstombs@@GLIBC_2.0
-         U WriteMiniDump
-         U __xmknod@@GLIBC_2.0
-         U __xstat64@@GLIBC_2.2
-         U __xstat@@GLIBC_2.0
-         U DevWarning(char const*, ...)
-         U ConMsg(char const*, ...)
-         U DevMsg(char const*, ...)
-         U CVProfNode::EnterScope()
-         U CVProfNode::GetSubNode(char const*, int, char const*, int)
-         U CVProfNode::ExitScope()
-         U CThreadEvent::Set()
-         U CThreadEvent::Wait(unsigned int)
-         U CThreadEvent::CThreadEvent(bool)
-         U CThreadRWLock::UnlockWrite()
-         U CThreadRWLock::WaitForRead()
-         U CThreadRWLock::LockForWrite()
-         U CThreadSpinRWLock::SpinLockForRead()
-         U CThreadSpinRWLock::SpinLockForWrite()
-         U CThreadSyncObject::~CThreadSyncObject()
-         U CThread::GetThreadProc()
-         U CThread::IsThreadRunning()
-         U CThread::WaitForCreateComplete(CThreadEvent*)
-         U CThread::Init()
-         U CThread::Sleep(unsigned int)
-         U CThread::Start(unsigned int, CThread::ThreadPriorityEnum_t)
-         U CThread::OnExit()
-         U CThread::CThread()
-         U CThread::~CThread()
-         U CThreadFastMutex::Lock(unsigned int, unsigned int) volatile
-         U std::terminate()@@GLIBCXX_3.4
-         U typeinfo for CThread
-         U vtable for __cxxabiv1::__class_type_info@@CXXABI_1.3
-         U vtable for __cxxabiv1::__si_class_type_info@@CXXABI_1.3
-         U vtable for __cxxabiv1::__vmi_class_type_info@@CXXABI_1.3
+U abort@@GLIBC_2.0
+U accept@@GLIBC_2.0
+U access@@GLIBC_2.0
+U __acosf_finite@@GLIBC_2.15
+U __acos_finite@@GLIBC_2.15
+U alphasort64@@GLIBC_2.2
+U __asinf_finite@@GLIBC_2.15
+U __asin_finite@@GLIBC_2.15
+U __atan2f_finite@@GLIBC_2.15
+U __atan2_finite@@GLIBC_2.15
+U atan@@GLIBC_2.0
+U bind@@GLIBC_2.0
+A __bss_start
+U CallAssertFailedNotifyFunc
+U cbrtf@@GLIBC_2.0
+U chdir@@GLIBC_2.0
+U chmod@@GLIBC_2.0
+U chown@@GLIBC_2.1
+U closedir@@GLIBC_2.0
+U close@@GLIBC_2.0
+U CommandLine
+U connect@@GLIBC_2.0
+U cosf@@GLIBC_2.0
+U cos@@GLIBC_2.0
+T CreateInterface
+U CreateNewThreadPool
+U CreateSimpleThread
+U ctermid@@GLIBC_2.0
+U ctime@@GLIBC_2.0
+U __ctype_b_loc@@GLIBC_2.3
+U __ctype_tolower_loc@@GLIBC_2.3
+U __cxa_atexit@@GLIBC_2.1.3
+U __cxa_call_unexpected@@CXXABI_1.3
+w __cxa_finalize@@GLIBC_2.1.3
+U __cxa_guard_abort@@CXXABI_1.3
+U __cxa_guard_acquire@@CXXABI_1.3
+U __cxa_guard_release@@CXXABI_1.3
+T DedicatedMain
+U dlclose@@GLIBC_2.0
+U dlerror@@GLIBC_2.0
+U dl_iterate_phdr@@GLIBC_2.2.4
+U dlopen@@GLIBC_2.1
+U dlsym@@GLIBC_2.0
+U DoNewAssertDialog
+U __dynamic_cast@@CXXABI_1.3
+A _edata
+A _end
+U __errno_location@@GLIBC_2.0
+U Error
+U _exit@@GLIBC_2.0
+U exit@@GLIBC_2.0
+U _ExitOnFatalAssert
+U __expf_finite@@GLIBC_2.15
+U fclose@@GLIBC_2.1
+U feof@@GLIBC_2.0
+U ferror@@GLIBC_2.0
+U fflush@@GLIBC_2.0
+U fgets@@GLIBC_2.0
+U fileno_unlocked@@GLIBC_2.0
+T _fini
+U flock@@GLIBC_2.0
+U fopen64@@GLIBC_2.1
+U fopen@@GLIBC_2.1
+U fork@@GLIBC_2.0
+U fprintf@@GLIBC_2.0
+U fputc@@GLIBC_2.0
+U fputs@@GLIBC_2.0
+U fread@@GLIBC_2.0
+U free@@GLIBC_2.0
+U freopen@@GLIBC_2.0
+U fseek@@GLIBC_2.0
+U fseeko64@@GLIBC_2.1
+U ftell@@GLIBC_2.0
+U ftello64@@GLIBC_2.1
+U fwrite@@GLIBC_2.0
+U g_ClockSpeed
+U g_ClockSpeedMicrosecondsMultiplier
+U GetCallStack
+U GetCPUInformation
+U getcwd@@GLIBC_2.0
+U getenv@@GLIBC_2.0
+U gethostbyname@@GLIBC_2.0
+U gethostname@@GLIBC_2.0
+U getsockname@@GLIBC_2.0
+w __gmon_start__
+U g_pMemAlloc
+U g_VProfCurrentProfile
+U __gxx_personality_v0@@CXXABI_1.3
+U iconv_close@@GLIBC_2.1
+U iconv@@GLIBC_2.1
+U iconv_open@@GLIBC_2.1
+U inet_addr@@GLIBC_2.0
+T _init
+U ioctl@@GLIBC_2.0
+U isalnum@@GLIBC_2.0
+U isatty@@GLIBC_2.0
+U iscntrl@@GLIBC_2.0
+U isprint@@GLIBC_2.0
+U iswalnum@@GLIBC_2.0
+U iswspace@@GLIBC_2.0
+w _Jv_RegisterClasses
+U KeyValuesSystem
+U kill@@GLIBC_2.0
+U lchown@@GLIBC_2.0
+U link@@GLIBC_2.0
+U listen@@GLIBC_2.0
+U localtime@@GLIBC_2.0
+U __logf_finite@@GLIBC_2.15
+U __log_finite@@GLIBC_2.15
+U LOG_GENERAL
+U LoggingSystem_IsChannelEnabled
+U LoggingSystem_Log
+U LoggingSystem_LogAssert
+U LoggingSystem_PopLoggingState
+U LoggingSystem_PushLoggingState
+U LoggingSystem_RegisterLoggingListener
+U LoggingSystem_ResetCurrentLoggingState
+U LoggingSystem_SetLoggingResponsePolicy
+U __lxstat64@@GLIBC_2.2
+U __lxstat@@GLIBC_2.0
+U malloc@@GLIBC_2.0
+U mbstowcs@@GLIBC_2.0
+U memcmp@@GLIBC_2.0
+U memcpy@@GLIBC_2.0
+U memmove@@GLIBC_2.0
+U memset@@GLIBC_2.0
+U mkdir@@GLIBC_2.0
+U mkfifo@@GLIBC_2.0
+U mount@@GLIBC_2.0
+U Msg
+U mtrace@@GLIBC_2.0
+U open64@@GLIBC_2.2
+U opendir@@GLIBC_2.0
+U open@@GLIBC_2.0
+U Plat_ExitProcess
+U Plat_FloatTime
+U Plat_IsInDebugSession
+U Plat_MSTime
+U Plat_SetCommandLine
+U Plat_SetWindowTitle
+U poll@@GLIBC_2.0
+U __pow_finite@@GLIBC_2.15
+U printf@@GLIBC_2.0
+w pthread_cancel@@GLIBC_2.0
+U pthread_mutexattr_init@@GLIBC_2.0
+U pthread_mutexattr_settype@@GLIBC_2.1
+U pthread_mutex_destroy@@GLIBC_2.0
+U pthread_mutex_init@@GLIBC_2.0
+U pthread_mutex_lock@@GLIBC_2.0
+U pthread_mutex_unlock@@GLIBC_2.0
+w pthread_once@@GLIBC_2.0
+U putchar@@GLIBC_2.0
+U puts@@GLIBC_2.0
+U qsort@@GLIBC_2.0
+U rand@@GLIBC_2.0
+U RandomFloat
+U RandomInt
+U RandomSeed
+U readdir64@@GLIBC_2.2
+U read@@GLIBC_2.0
+U realpath@@GLIBC_2.3
+U recv@@GLIBC_2.0
+U ReleaseThreadHandle
+U rename@@GLIBC_2.0
+U rewind@@GLIBC_2.0
+U rmdir@@GLIBC_2.0
+U scandir64@@GLIBC_2.2
+U scandir@@GLIBC_2.0
+U select@@GLIBC_2.0
+U send@@GLIBC_2.0
+U setbuf@@GLIBC_2.0
+U setenv@@GLIBC_2.0
+U setsockopt@@GLIBC_2.0
+U ShouldUseNewAssertDialog
+U sigaddset@@GLIBC_2.0
+U sigemptyset@@GLIBC_2.0
+U sigprocmask@@GLIBC_2.0
+U sincosf@@GLIBC_2.1
+U sinf@@GLIBC_2.0
+U sin@@GLIBC_2.0
+U snprintf@@GLIBC_2.0
+U socket@@GLIBC_2.0
+U socketpair@@GLIBC_2.0
+B s_pInterfaceRegs
+U sprintf@@GLIBC_2.0
+U sscanf@@GLIBC_2.0
+U StackToolsNotify_LoadedLibrary
+U stderr@@GLIBC_2.0
+U stdout@@GLIBC_2.0
+U strcasecmp@@GLIBC_2.0
+U strcasestr@@GLIBC_2.1
+U strcat@@GLIBC_2.0
+U strchr@@GLIBC_2.0
+U strcmp@@GLIBC_2.0
+U strcpy@@GLIBC_2.0
+U strdup@@GLIBC_2.0
+U strerror@@GLIBC_2.0
+U strlen@@GLIBC_2.0
+U strncat@@GLIBC_2.0
+U strncpy@@GLIBC_2.0
+U strnlen@@GLIBC_2.0
+U strpbrk@@GLIBC_2.0
+U strrchr@@GLIBC_2.0
+U strspn@@GLIBC_2.0
+U strstr@@GLIBC_2.0
+U strtod@@GLIBC_2.0
+U strtol@@GLIBC_2.0
+U strtoll@@GLIBC_2.0
+U strtoul@@GLIBC_2.0
+U swprintf@@GLIBC_2.2
+U swscanf@@GLIBC_2.2
+U symlink@@GLIBC_2.0
+U syscall@@GLIBC_2.0
+U tanf@@GLIBC_2.0
+U tan@@GLIBC_2.0
+U tcgetattr@@GLIBC_2.0
+U tcsetattr@@GLIBC_2.0
+U ThreadGetCurrentId
+U ThreadGetPriority
+U ThreadInMainThread
+U ThreadInterlockedAssignIf64
+U ThreadJoin
+U ThreadSetPriority
+U ThreadSleep
+U time@@GLIBC_2.0
+U ___tls_get_addr@@GLIBC_2.3
+U tmpnam@@GLIBC_2.0
+U tolower@@GLIBC_2.0
+U toupper@@GLIBC_2.0
+U towlower@@GLIBC_2.0
+U towupper@@GLIBC_2.0
+U TranslateStackInfo
+U unlink@@GLIBC_2.0
+U usleep@@GLIBC_2.0
+U utime@@GLIBC_2.0
+U utimes@@GLIBC_2.0
+U vfprintf@@GLIBC_2.0
+U vsnprintf@@GLIBC_2.0
+U VStdLib_GetICVarFactory
+U vswprintf@@GLIBC_2.2
+U waitpid@@GLIBC_2.0
+U Warning
+U wcslen@@GLIBC_2.0
+U wcsncat@@GLIBC_2.0
+U wcsncpy@@GLIBC_2.0
+U wcstof@@GLIBC_2.0
+U wcstol@@GLIBC_2.0
+U wcstombs@@GLIBC_2.0
+U WriteMiniDump
+U __xmknod@@GLIBC_2.0
+U __xstat64@@GLIBC_2.2
+U __xstat@@GLIBC_2.0
+U DevWarning(char const*, ...)
+U ConMsg(char const*, ...)
+U DevMsg(char const*, ...)
+U CVProfNode::EnterScope()
+U CVProfNode::GetSubNode(char const*, int, char const*, int)
+U CVProfNode::ExitScope()
+U CThreadEvent::Set()
+U CThreadEvent::Wait(unsigned int)
+U CThreadEvent::CThreadEvent(bool)
+U CThreadRWLock::UnlockWrite()
+U CThreadRWLock::WaitForRead()
+U CThreadRWLock::LockForWrite()
+U CThreadSpinRWLock::SpinLockForRead()
+U CThreadSpinRWLock::SpinLockForWrite()
+U CThreadSyncObject::~CThreadSyncObject()
+U CThread::GetThreadProc()
+U CThread::IsThreadRunning()
+U CThread::WaitForCreateComplete(CThreadEvent*)
+U CThread::Init()
+U CThread::Sleep(unsigned int)
+U CThread::Start(unsigned int, CThread::ThreadPriorityEnum_t)
+U CThread::OnExit()
+U CThread::CThread()
+U CThread::~CThread()
+U CThreadFastMutex::Lock(unsigned int, unsigned int) volatile
+U std::terminate()@@GLIBCXX_3.4
+U typeinfo for CThread
+U vtable for __cxxabiv1::__class_type_info@@CXXABI_1.3
+U vtable for __cxxabiv1::__si_class_type_info@@CXXABI_1.3
+U vtable for __cxxabiv1::__vmi_class_type_info@@CXXABI_1.3

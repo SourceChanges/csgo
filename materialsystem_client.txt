@@ -1,177 +1,177 @@
-         U abort@@GLIBC_2.0
-         U __acosf_finite@@GLIBC_2.15
-         U __acos_finite@@GLIBC_2.15
-         U AddMemoryInfoCallback
-         U __asin_finite@@GLIBC_2.15
-         U __atan2f_finite@@GLIBC_2.15
-         U __atan2_finite@@GLIBC_2.15
-         U atan@@GLIBC_2.0
-00163088 A __bss_start
-         U CallAssertFailedNotifyFunc
-         U cbrtf@@GLIBC_2.0
-         U chdir@@GLIBC_2.0
-         U CommandLine
-         U cos@@GLIBC_2.0
-000a6fa0 T CreateInterface
-         U CreateNewThreadPool
-         U CreateSimpleThread
-         U __ctype_b_loc@@GLIBC_2.3
-         U __cxa_atexit@@GLIBC_2.1.3
-         U __cxa_call_unexpected@@CXXABI_1.3
-         w __cxa_finalize@@GLIBC_2.1.3
-         U __cxa_guard_abort@@CXXABI_1.3
-         U __cxa_guard_acquire@@CXXABI_1.3
-         U __cxa_guard_release@@CXXABI_1.3
-         U DevWarning
-         U dlclose@@GLIBC_2.0
-         U dlerror@@GLIBC_2.0
-         U dl_iterate_phdr@@GLIBC_2.2.4
-         U dlopen@@GLIBC_2.1
-         U dlsym@@GLIBC_2.0
-         U DoNewAssertDialog
-         U __dynamic_cast@@CXXABI_1.3
-00163088 A _edata
-00199b70 A _end
-         U __errno_location@@GLIBC_2.0
-         U Error
-         U _ExitOnFatalAssert
-         U __expf_finite@@GLIBC_2.15
-         U __exp_finite@@GLIBC_2.15
-001067c4 T _fini
-         U free@@GLIBC_2.0
-         U GetCPUInformation
-         U getcwd@@GLIBC_2.0
-         w __gmon_start__
-         U g_PerfStats
-         U g_pMemAlloc
-         U g_pThreadPool
-         U g_VProfCurrentProfile
-         U __gxx_personality_v0@@CXXABI_1.3
-         U iconv_close@@GLIBC_2.1
-         U iconv@@GLIBC_2.1
-         U iconv_open@@GLIBC_2.1
-0002a990 T _init
-         U isalnum@@GLIBC_2.0
-         U iscntrl@@GLIBC_2.0
-         U isgraph@@GLIBC_2.0
-         U isprint@@GLIBC_2.0
-         U iswalnum@@GLIBC_2.0
-         U iswspace@@GLIBC_2.0
-         w _Jv_RegisterClasses
-         U KeyValuesSystem
-         U __log_finite@@GLIBC_2.15
-         U LOG_GENERAL
-         U LoggingSystem_AddTagToCurrentChannel
-         U LoggingSystem_IsChannelEnabled
-         U LoggingSystem_Log
-         U LoggingSystem_LogAssert
-         U LoggingSystem_LogDirect
-         U LoggingSystem_PopLoggingState
-         U LoggingSystem_PushLoggingState
-         U LoggingSystem_RegisterLoggingChannel
-         U LoggingSystem_RegisterLoggingListener
-         U LoggingSystem_SetLoggingResponsePolicy
-         U malloc@@GLIBC_2.0
-         U mbstowcs@@GLIBC_2.0
-         U MemAllocScratch
-         U memcmp@@GLIBC_2.0
-         U memcpy@@GLIBC_2.0
-         U MemFreeScratch
-         U memmove@@GLIBC_2.0
-         U MemOutOfMemory
-         U memset@@GLIBC_2.0
-         U Msg
-         U Plat_ExitProcess
-         U Plat_FloatTime
-         U Plat_IsInDebugSession
-         U __pow_finite@@GLIBC_2.15
-         U printf@@GLIBC_2.0
-         w pthread_cancel@@GLIBC_2.0
-         U pthread_mutexattr_init@@GLIBC_2.0
-         U pthread_mutexattr_settype@@GLIBC_2.1
-         U pthread_mutex_destroy@@GLIBC_2.0
-         U pthread_mutex_init@@GLIBC_2.0
-         U pthread_mutex_lock@@GLIBC_2.0
-         U pthread_mutex_unlock@@GLIBC_2.0
-         w pthread_once@@GLIBC_2.0
-         U putchar@@GLIBC_2.0
-         U qsort@@GLIBC_2.0
-         U rand@@GLIBC_2.0
-         U RandomFloat
-         U RandomSeed
-         U ReleaseThreadHandle
-         U RemoveMemoryInfoCallback
-         U ShouldUseNewAssertDialog
-         U sincosf@@GLIBC_2.1
-         U sincos@@GLIBC_2.1
-         U sinf@@GLIBC_2.0
-         U sin@@GLIBC_2.0
-00175d4c B s_pInterfaceRegs
-         U sprintf@@GLIBC_2.0
-         U sscanf@@GLIBC_2.0
-         U strcasecmp@@GLIBC_2.0
-         U strchr@@GLIBC_2.0
-         U strcmp@@GLIBC_2.0
-         U strcpy@@GLIBC_2.0
-         U strlen@@GLIBC_2.0
-         U strncat@@GLIBC_2.0
-         U strncpy@@GLIBC_2.0
-         U strnlen@@GLIBC_2.0
-         U strspn@@GLIBC_2.0
-         U strstr@@GLIBC_2.0
-         U strtod@@GLIBC_2.0
-         U strtol@@GLIBC_2.0
-         U strtoll@@GLIBC_2.0
-         U strtoul@@GLIBC_2.0
-         U swprintf@@GLIBC_2.2
-         U swscanf@@GLIBC_2.2
-         U tanf@@GLIBC_2.0
-         U tan@@GLIBC_2.0
-         U ThreadGetCurrentId
-         U ThreadInMainThread
-         U ThreadInterlockedAssignIf64
-         U ThreadJoin
-         U ThreadSetDebugName
-         U ThreadSleep
-         U tolower@@GLIBC_2.0
-         U toupper@@GLIBC_2.0
-         U towlower@@GLIBC_2.0
-         U towupper@@GLIBC_2.0
-         U vsnprintf@@GLIBC_2.0
-         U vswprintf@@GLIBC_2.2
-         U Warning
-         U wcslen@@GLIBC_2.0
-         U wcsncat@@GLIBC_2.0
-         U wcsncpy@@GLIBC_2.0
-         U wcstof@@GLIBC_2.0
-         U wcstol@@GLIBC_2.0
-         U wcstombs@@GLIBC_2.0
-         U WriteMiniDump
-         U DevWarning(char const*, ...)
-         U ConColorMsg(Color const&, char const*, ...)
-         U ConMsg(char const*, ...)
-         U DevMsg(char const*, ...)
-         U CVProfNode::EnterScope()
-         U CVProfNode::GetSubNode(char const*, int, char const*, int)
-         U CVProfNode::ExitScope()
-         U CThreadEvent::Set()
-         U CThreadEvent::Wait(unsigned int)
-         U CThreadEvent::Reset()
-         U CThreadEvent::CThreadEvent(bool)
-         U CThreadRWLock::UnlockWrite()
-         U CThreadRWLock::WaitForRead()
-         U CThreadRWLock::LockForWrite()
-         U CPerfStatsData::Tick()
-         U CThreadSpinRWLock::SpinLockForRead()
-         U CThreadSpinRWLock::SpinLockForWrite()
-         U CThreadSyncObject::~CThreadSyncObject()
-         U GenericThreadLocals::CThreadLocalBase::Set(void*)
-         U GenericThreadLocals::CThreadLocalBase::CThreadLocalBase()
-         U GenericThreadLocals::CThreadLocalBase::~CThreadLocalBase()
-         U CVProfile::FindOrCreateCounter(char const*, CounterGroup_t)
-         U GenericThreadLocals::CThreadLocalBase::Get() const
-         U CThreadFastMutex::Lock(unsigned int, unsigned int) volatile
-         U std::terminate()@@GLIBCXX_3.4
-         U vtable for __cxxabiv1::__class_type_info@@CXXABI_1.3
-         U vtable for __cxxabiv1::__si_class_type_info@@CXXABI_1.3
-         U vtable for __cxxabiv1::__vmi_class_type_info@@CXXABI_1.3
+U abort@@GLIBC_2.0
+U __acosf_finite@@GLIBC_2.15
+U __acos_finite@@GLIBC_2.15
+U AddMemoryInfoCallback
+U __asin_finite@@GLIBC_2.15
+U __atan2f_finite@@GLIBC_2.15
+U __atan2_finite@@GLIBC_2.15
+U atan@@GLIBC_2.0
+A __bss_start
+U CallAssertFailedNotifyFunc
+U cbrtf@@GLIBC_2.0
+U chdir@@GLIBC_2.0
+U CommandLine
+U cos@@GLIBC_2.0
+T CreateInterface
+U CreateNewThreadPool
+U CreateSimpleThread
+U __ctype_b_loc@@GLIBC_2.3
+U __cxa_atexit@@GLIBC_2.1.3
+U __cxa_call_unexpected@@CXXABI_1.3
+w __cxa_finalize@@GLIBC_2.1.3
+U __cxa_guard_abort@@CXXABI_1.3
+U __cxa_guard_acquire@@CXXABI_1.3
+U __cxa_guard_release@@CXXABI_1.3
+U DevWarning
+U dlclose@@GLIBC_2.0
+U dlerror@@GLIBC_2.0
+U dl_iterate_phdr@@GLIBC_2.2.4
+U dlopen@@GLIBC_2.1
+U dlsym@@GLIBC_2.0
+U DoNewAssertDialog
+U __dynamic_cast@@CXXABI_1.3
+A _edata
+A _end
+U __errno_location@@GLIBC_2.0
+U Error
+U _ExitOnFatalAssert
+U __expf_finite@@GLIBC_2.15
+U __exp_finite@@GLIBC_2.15
+T _fini
+U free@@GLIBC_2.0
+U GetCPUInformation
+U getcwd@@GLIBC_2.0
+w __gmon_start__
+U g_PerfStats
+U g_pMemAlloc
+U g_pThreadPool
+U g_VProfCurrentProfile
+U __gxx_personality_v0@@CXXABI_1.3
+U iconv_close@@GLIBC_2.1
+U iconv@@GLIBC_2.1
+U iconv_open@@GLIBC_2.1
+T _init
+U isalnum@@GLIBC_2.0
+U iscntrl@@GLIBC_2.0
+U isgraph@@GLIBC_2.0
+U isprint@@GLIBC_2.0
+U iswalnum@@GLIBC_2.0
+U iswspace@@GLIBC_2.0
+w _Jv_RegisterClasses
+U KeyValuesSystem
+U __log_finite@@GLIBC_2.15
+U LOG_GENERAL
+U LoggingSystem_AddTagToCurrentChannel
+U LoggingSystem_IsChannelEnabled
+U LoggingSystem_Log
+U LoggingSystem_LogAssert
+U LoggingSystem_LogDirect
+U LoggingSystem_PopLoggingState
+U LoggingSystem_PushLoggingState
+U LoggingSystem_RegisterLoggingChannel
+U LoggingSystem_RegisterLoggingListener
+U LoggingSystem_SetLoggingResponsePolicy
+U malloc@@GLIBC_2.0
+U mbstowcs@@GLIBC_2.0
+U MemAllocScratch
+U memcmp@@GLIBC_2.0
+U memcpy@@GLIBC_2.0
+U MemFreeScratch
+U memmove@@GLIBC_2.0
+U MemOutOfMemory
+U memset@@GLIBC_2.0
+U Msg
+U Plat_ExitProcess
+U Plat_FloatTime
+U Plat_IsInDebugSession
+U __pow_finite@@GLIBC_2.15
+U printf@@GLIBC_2.0
+w pthread_cancel@@GLIBC_2.0
+U pthread_mutexattr_init@@GLIBC_2.0
+U pthread_mutexattr_settype@@GLIBC_2.1
+U pthread_mutex_destroy@@GLIBC_2.0
+U pthread_mutex_init@@GLIBC_2.0
+U pthread_mutex_lock@@GLIBC_2.0
+U pthread_mutex_unlock@@GLIBC_2.0
+w pthread_once@@GLIBC_2.0
+U putchar@@GLIBC_2.0
+U qsort@@GLIBC_2.0
+U rand@@GLIBC_2.0
+U RandomFloat
+U RandomSeed
+U ReleaseThreadHandle
+U RemoveMemoryInfoCallback
+U ShouldUseNewAssertDialog
+U sincosf@@GLIBC_2.1
+U sincos@@GLIBC_2.1
+U sinf@@GLIBC_2.0
+U sin@@GLIBC_2.0
+B s_pInterfaceRegs
+U sprintf@@GLIBC_2.0
+U sscanf@@GLIBC_2.0
+U strcasecmp@@GLIBC_2.0
+U strchr@@GLIBC_2.0
+U strcmp@@GLIBC_2.0
+U strcpy@@GLIBC_2.0
+U strlen@@GLIBC_2.0
+U strncat@@GLIBC_2.0
+U strncpy@@GLIBC_2.0
+U strnlen@@GLIBC_2.0
+U strspn@@GLIBC_2.0
+U strstr@@GLIBC_2.0
+U strtod@@GLIBC_2.0
+U strtol@@GLIBC_2.0
+U strtoll@@GLIBC_2.0
+U strtoul@@GLIBC_2.0
+U swprintf@@GLIBC_2.2
+U swscanf@@GLIBC_2.2
+U tanf@@GLIBC_2.0
+U tan@@GLIBC_2.0
+U ThreadGetCurrentId
+U ThreadInMainThread
+U ThreadInterlockedAssignIf64
+U ThreadJoin
+U ThreadSetDebugName
+U ThreadSleep
+U tolower@@GLIBC_2.0
+U toupper@@GLIBC_2.0
+U towlower@@GLIBC_2.0
+U towupper@@GLIBC_2.0
+U vsnprintf@@GLIBC_2.0
+U vswprintf@@GLIBC_2.2
+U Warning
+U wcslen@@GLIBC_2.0
+U wcsncat@@GLIBC_2.0
+U wcsncpy@@GLIBC_2.0
+U wcstof@@GLIBC_2.0
+U wcstol@@GLIBC_2.0
+U wcstombs@@GLIBC_2.0
+U WriteMiniDump
+U DevWarning(char const*, ...)
+U ConColorMsg(Color const&, char const*, ...)
+U ConMsg(char const*, ...)
+U DevMsg(char const*, ...)
+U CVProfNode::EnterScope()
+U CVProfNode::GetSubNode(char const*, int, char const*, int)
+U CVProfNode::ExitScope()
+U CThreadEvent::Set()
+U CThreadEvent::Wait(unsigned int)
+U CThreadEvent::Reset()
+U CThreadEvent::CThreadEvent(bool)
+U CThreadRWLock::UnlockWrite()
+U CThreadRWLock::WaitForRead()
+U CThreadRWLock::LockForWrite()
+U CPerfStatsData::Tick()
+U CThreadSpinRWLock::SpinLockForRead()
+U CThreadSpinRWLock::SpinLockForWrite()
+U CThreadSyncObject::~CThreadSyncObject()
+U GenericThreadLocals::CThreadLocalBase::Set(void*)
+U GenericThreadLocals::CThreadLocalBase::CThreadLocalBase()
+U GenericThreadLocals::CThreadLocalBase::~CThreadLocalBase()
+U CVProfile::FindOrCreateCounter(char const*, CounterGroup_t)
+U GenericThreadLocals::CThreadLocalBase::Get() const
+U CThreadFastMutex::Lock(unsigned int, unsigned int) volatile
+U std::terminate()@@GLIBCXX_3.4
+U vtable for __cxxabiv1::__class_type_info@@CXXABI_1.3
+U vtable for __cxxabiv1::__si_class_type_info@@CXXABI_1.3
+U vtable for __cxxabiv1::__vmi_class_type_info@@CXXABI_1.3

@@ -1,231 +1,231 @@
-         U abort@@GLIBC_2.0
-         U access@@GLIBC_2.0
-0004f3e0 A __bss_start
-         U chdir@@GLIBC_2.0
-         U chmod@@GLIBC_2.0
-         U chown@@GLIBC_2.1
-         U closedir@@GLIBC_2.0
-         U close@@GLIBC_2.0
-         U CommandLine
-         U COM_TimestampedLog
-000195a0 T CreateInterface
-         U __ctype_b_loc@@GLIBC_2.3
-         U __ctype_tolower_loc@@GLIBC_2.3
-         U __cxa_atexit@@GLIBC_2.1.3
-         U __cxa_call_unexpected@@CXXABI_1.3
-         w __cxa_finalize@@GLIBC_2.1.3
-         U __cxa_guard_abort@@CXXABI_1.3
-         U __cxa_guard_acquire@@CXXABI_1.3
-         U __cxa_guard_release@@CXXABI_1.3
-         U dlclose@@GLIBC_2.0
-         U dlerror@@GLIBC_2.0
-         U dl_iterate_phdr@@GLIBC_2.2.4
-         U dlopen@@GLIBC_2.1
-         U dlsym@@GLIBC_2.0
-         U __dynamic_cast@@CXXABI_1.3
-0004f3e0 A _edata
-00062f88 A _end
-         U __errno_location@@GLIBC_2.0
-         U Error
-         U exit@@GLIBC_2.0
-         U fchmod@@GLIBC_2.0
-         U fclose@@GLIBC_2.1
-         U fcntl@@GLIBC_2.0
-         U fflush@@GLIBC_2.0
-0003ba00 T _fini
-         U fopen64@@GLIBC_2.1
-         U fopen@@GLIBC_2.1
-         U fprintf@@GLIBC_2.0
-         U fread@@GLIBC_2.0
-         U free@@GLIBC_2.0
-         U freopen@@GLIBC_2.0
-         U fseek@@GLIBC_2.0
-         U ftell@@GLIBC_2.0
-         U g_ClockSpeedMillisecondsMultiplier
-         U GetAssertDialogParent
-         U getcwd@@GLIBC_2.0
-         U getenv@@GLIBC_2.0
-         U GetOpenGLEntryPoints
-         w __gmon_start__
-         U g_pMemAlloc
-         U g_VProfCurrentProfile
-         U __gxx_personality_v0@@CXXABI_1.3
-         U iconv_close@@GLIBC_2.1
-         U iconv@@GLIBC_2.1
-         U iconv_open@@GLIBC_2.1
-0000a4b4 T _init
-         U isalnum@@GLIBC_2.0
-         U iscntrl@@GLIBC_2.0
-         U isprint@@GLIBC_2.0
-         U iswalnum@@GLIBC_2.0
-         U iswspace@@GLIBC_2.0
-         w _Jv_RegisterClasses
-         U KeyValuesSystem
-000101a0 T LauncherMain
-         U lchown@@GLIBC_2.0
-         U link@@GLIBC_2.0
-         U LOG_GENERAL
-         U LoggingSystem_IsChannelEnabled
-         U LoggingSystem_Log
-         U LoggingSystem_RegisterLoggingChannel
-         U LoggingSystem_RegisterLoggingListener
-         U LoggingSystem_ResetCurrentLoggingState
-         U LoggingSystem_SetLoggingResponsePolicy
-         U __lxstat64@@GLIBC_2.2
-         U __lxstat@@GLIBC_2.0
-         U malloc@@GLIBC_2.0
-         U mbstowcs@@GLIBC_2.0
-         U memcmp@@GLIBC_2.0
-         U memcpy@@GLIBC_2.0
-         U memmove@@GLIBC_2.0
-         U memset@@GLIBC_2.0
-         U mkdir@@GLIBC_2.0
-         U mkfifo@@GLIBC_2.0
-         U mount@@GLIBC_2.0
-         U Msg
-         U open64@@GLIBC_2.2
-         U opendir@@GLIBC_2.0
-         U open@@GLIBC_2.0
-         U Plat_ExitProcess
-         U Plat_FloatTime
-         U Plat_IsInDebugSession
-         U Plat_SetWindowTitle
-         U Plat_VerifyHardwareKeyPrompt
-         U __pow_finite@@GLIBC_2.15
-         U printf@@GLIBC_2.0
-         w pthread_cancel@@GLIBC_2.0
-         U pthread_mutexattr_init@@GLIBC_2.0
-         U pthread_mutexattr_settype@@GLIBC_2.1
-         U pthread_mutex_destroy@@GLIBC_2.0
-         U pthread_mutex_init@@GLIBC_2.0
-         U pthread_mutex_lock@@GLIBC_2.0
-         U pthread_mutex_unlock@@GLIBC_2.0
-         w pthread_once@@GLIBC_2.0
-         U qsort@@GLIBC_2.0
-         U rand@@GLIBC_2.0
-         U readdir64@@GLIBC_2.2
-         U realpath@@GLIBC_2.3
-         U rename@@GLIBC_2.0
-         U rmdir@@GLIBC_2.0
-         U RunThreadPoolTests
-         U RunTSListTests
-         U RunTSQueueTests
-         U scandir@@GLIBC_2.0
-         U SDL_CreateColorCursor
-         U SDL_CreateWindow
-         U SDL_DestroyWindow
-         U SDL_FreeCursor
-         U SDL_FreeSurface
-         U SDL_GetCurrentVideoDriver
-         U SDL_GetDesktopDisplayMode
-         U SDL_GetDisplayBounds
-         U SDL_GetError
-         U SDL_GetMouseState
-         U SDL_GetNumVideoDisplays
-         U SDL_GetWindowDisplayIndex
-         U SDL_GetWindowDisplayMode
-         U SDL_GetWindowGrab
-         U SDL_GetWindowSize
-         U SDL_GL_CreateContext
-         U SDL_GL_DeleteContext
-         U SDL_GL_GetProcAddress
-         U SDL_GL_LoadLibrary
-         U SDL_GL_MakeCurrent
-         U SDL_GL_SetAttribute
-         U SDL_GL_SetSwapInterval
-         U SDL_GL_SwapWindow
-         U SDL_GL_UnloadLibrary
-         U SDL_HideWindow
-         U SDL_Init
-         U SDL_LoadBMP_RW
-         U SDL_PollEvent
-         U SDL_QuitSubSystem
-         U SDL_RaiseWindow
-         U SDL_RWFromFile
-         U SDL_SetCursor
-         U SDL_SetHint
-         U SDL_SetModState
-         U SDL_SetRelativeMouseMode
-         U SDL_SetWindowDisplayMode
-         U SDL_SetWindowFullscreen
-         U SDL_SetWindowGammaRamp
-         U SDL_SetWindowGrab
-         U SDL_SetWindowIcon
-         U SDL_SetWindowPosition
-         U SDL_SetWindowSize
-         U SDL_SetWindowTitle
-         U SDL_ShowCursor
-         U SDL_ShowSimpleMessageBox
-         U SDL_ShowWindow
-         U SDL_WaitEventTimeout
-         U SDL_WarpMouseInWindow
-         U SDL_WasInit
-         U SetAssertDialogParent
-         U setenv@@GLIBC_2.0
-         U setlocale@@GLIBC_2.0
-         U ShouldUseNewAssertDialog
-00050ccc B s_pInterfaceRegs
-         U sscanf@@GLIBC_2.0
-         U stderr@@GLIBC_2.0
-         U stdout@@GLIBC_2.0
-         U strcasecmp@@GLIBC_2.0
-         U strcasestr@@GLIBC_2.1
-         U strchr@@GLIBC_2.0
-         U strcmp@@GLIBC_2.0
-         U strcpy@@GLIBC_2.0
-         U strdup@@GLIBC_2.0
-         U strlen@@GLIBC_2.0
-         U strncat@@GLIBC_2.0
-         U strncpy@@GLIBC_2.0
-         U strnlen@@GLIBC_2.0
-         U strpbrk@@GLIBC_2.0
-         U strstr@@GLIBC_2.0
-         U strtod@@GLIBC_2.0
-         U strtol@@GLIBC_2.0
-         U strtoll@@GLIBC_2.0
-         U strtoul@@GLIBC_2.0
-         U swprintf@@GLIBC_2.2
-         U swscanf@@GLIBC_2.2
-         U symlink@@GLIBC_2.0
-         U ThreadGetCurrentId
-         U ThreadSleep
-         U tolower@@GLIBC_2.0
-         U toupper@@GLIBC_2.0
-         U towlower@@GLIBC_2.0
-         U towupper@@GLIBC_2.0
-         U unlink@@GLIBC_2.0
-         U utime@@GLIBC_2.0
-         U utimes@@GLIBC_2.0
-         U vsnprintf@@GLIBC_2.0
-         U VStdLib_GetICVarFactory
-         U vswprintf@@GLIBC_2.2
-         U Warning
-         U wcslen@@GLIBC_2.0
-         U wcsncat@@GLIBC_2.0
-         U wcsncpy@@GLIBC_2.0
-         U wcstof@@GLIBC_2.0
-         U wcstol@@GLIBC_2.0
-         U wcstombs@@GLIBC_2.0
-         U WriteMiniDump
-         U __xmknod@@GLIBC_2.0
-         U __xstat64@@GLIBC_2.2
-         U __xstat@@GLIBC_2.0
-         U DevWarning(char const*, ...)
-         U ConMsg(char const*, ...)
-         U DevMsg(char const*, ...)
-         U CVProfNode::EnterScope()
-         U CVProfNode::GetSubNode(char const*, int, char const*, int)
-         U CVProfNode::ExitScope()
-         U CThreadEvent::Set()
-         U CThreadEvent::CThreadEvent(bool)
-         U CThreadRWLock::UnlockWrite()
-         U CThreadRWLock::WaitForRead()
-         U CThreadRWLock::LockForWrite()
-         U CThreadSpinRWLock::SpinLockForRead()
-         U CThreadSpinRWLock::SpinLockForWrite()
-         U CThreadSyncObject::~CThreadSyncObject()
-         U CThreadFastMutex::Lock(unsigned int, unsigned int) volatile
-         U std::terminate()@@GLIBCXX_3.4
-         U vtable for __cxxabiv1::__class_type_info@@CXXABI_1.3
-         U vtable for __cxxabiv1::__si_class_type_info@@CXXABI_1.3
-         U vtable for __cxxabiv1::__vmi_class_type_info@@CXXABI_1.3
+U abort@@GLIBC_2.0
+U access@@GLIBC_2.0
+A __bss_start
+U chdir@@GLIBC_2.0
+U chmod@@GLIBC_2.0
+U chown@@GLIBC_2.1
+U closedir@@GLIBC_2.0
+U close@@GLIBC_2.0
+U CommandLine
+U COM_TimestampedLog
+T CreateInterface
+U __ctype_b_loc@@GLIBC_2.3
+U __ctype_tolower_loc@@GLIBC_2.3
+U __cxa_atexit@@GLIBC_2.1.3
+U __cxa_call_unexpected@@CXXABI_1.3
+w __cxa_finalize@@GLIBC_2.1.3
+U __cxa_guard_abort@@CXXABI_1.3
+U __cxa_guard_acquire@@CXXABI_1.3
+U __cxa_guard_release@@CXXABI_1.3
+U dlclose@@GLIBC_2.0
+U dlerror@@GLIBC_2.0
+U dl_iterate_phdr@@GLIBC_2.2.4
+U dlopen@@GLIBC_2.1
+U dlsym@@GLIBC_2.0
+U __dynamic_cast@@CXXABI_1.3
+A _edata
+A _end
+U __errno_location@@GLIBC_2.0
+U Error
+U exit@@GLIBC_2.0
+U fchmod@@GLIBC_2.0
+U fclose@@GLIBC_2.1
+U fcntl@@GLIBC_2.0
+U fflush@@GLIBC_2.0
+T _fini
+U fopen64@@GLIBC_2.1
+U fopen@@GLIBC_2.1
+U fprintf@@GLIBC_2.0
+U fread@@GLIBC_2.0
+U free@@GLIBC_2.0
+U freopen@@GLIBC_2.0
+U fseek@@GLIBC_2.0
+U ftell@@GLIBC_2.0
+U g_ClockSpeedMillisecondsMultiplier
+U GetAssertDialogParent
+U getcwd@@GLIBC_2.0
+U getenv@@GLIBC_2.0
+U GetOpenGLEntryPoints
+w __gmon_start__
+U g_pMemAlloc
+U g_VProfCurrentProfile
+U __gxx_personality_v0@@CXXABI_1.3
+U iconv_close@@GLIBC_2.1
+U iconv@@GLIBC_2.1
+U iconv_open@@GLIBC_2.1
+T _init
+U isalnum@@GLIBC_2.0
+U iscntrl@@GLIBC_2.0
+U isprint@@GLIBC_2.0
+U iswalnum@@GLIBC_2.0
+U iswspace@@GLIBC_2.0
+w _Jv_RegisterClasses
+U KeyValuesSystem
+T LauncherMain
+U lchown@@GLIBC_2.0
+U link@@GLIBC_2.0
+U LOG_GENERAL
+U LoggingSystem_IsChannelEnabled
+U LoggingSystem_Log
+U LoggingSystem_RegisterLoggingChannel
+U LoggingSystem_RegisterLoggingListener
+U LoggingSystem_ResetCurrentLoggingState
+U LoggingSystem_SetLoggingResponsePolicy
+U __lxstat64@@GLIBC_2.2
+U __lxstat@@GLIBC_2.0
+U malloc@@GLIBC_2.0
+U mbstowcs@@GLIBC_2.0
+U memcmp@@GLIBC_2.0
+U memcpy@@GLIBC_2.0
+U memmove@@GLIBC_2.0
+U memset@@GLIBC_2.0
+U mkdir@@GLIBC_2.0
+U mkfifo@@GLIBC_2.0
+U mount@@GLIBC_2.0
+U Msg
+U open64@@GLIBC_2.2
+U opendir@@GLIBC_2.0
+U open@@GLIBC_2.0
+U Plat_ExitProcess
+U Plat_FloatTime
+U Plat_IsInDebugSession
+U Plat_SetWindowTitle
+U Plat_VerifyHardwareKeyPrompt
+U __pow_finite@@GLIBC_2.15
+U printf@@GLIBC_2.0
+w pthread_cancel@@GLIBC_2.0
+U pthread_mutexattr_init@@GLIBC_2.0
+U pthread_mutexattr_settype@@GLIBC_2.1
+U pthread_mutex_destroy@@GLIBC_2.0
+U pthread_mutex_init@@GLIBC_2.0
+U pthread_mutex_lock@@GLIBC_2.0
+U pthread_mutex_unlock@@GLIBC_2.0
+w pthread_once@@GLIBC_2.0
+U qsort@@GLIBC_2.0
+U rand@@GLIBC_2.0
+U readdir64@@GLIBC_2.2
+U realpath@@GLIBC_2.3
+U rename@@GLIBC_2.0
+U rmdir@@GLIBC_2.0
+U RunThreadPoolTests
+U RunTSListTests
+U RunTSQueueTests
+U scandir@@GLIBC_2.0
+U SDL_CreateColorCursor
+U SDL_CreateWindow
+U SDL_DestroyWindow
+U SDL_FreeCursor
+U SDL_FreeSurface
+U SDL_GetCurrentVideoDriver
+U SDL_GetDesktopDisplayMode
+U SDL_GetDisplayBounds
+U SDL_GetError
+U SDL_GetMouseState
+U SDL_GetNumVideoDisplays
+U SDL_GetWindowDisplayIndex
+U SDL_GetWindowDisplayMode
+U SDL_GetWindowGrab
+U SDL_GetWindowSize
+U SDL_GL_CreateContext
+U SDL_GL_DeleteContext
+U SDL_GL_GetProcAddress
+U SDL_GL_LoadLibrary
+U SDL_GL_MakeCurrent
+U SDL_GL_SetAttribute
+U SDL_GL_SetSwapInterval
+U SDL_GL_SwapWindow
+U SDL_GL_UnloadLibrary
+U SDL_HideWindow
+U SDL_Init
+U SDL_LoadBMP_RW
+U SDL_PollEvent
+U SDL_QuitSubSystem
+U SDL_RaiseWindow
+U SDL_RWFromFile
+U SDL_SetCursor
+U SDL_SetHint
+U SDL_SetModState
+U SDL_SetRelativeMouseMode
+U SDL_SetWindowDisplayMode
+U SDL_SetWindowFullscreen
+U SDL_SetWindowGammaRamp
+U SDL_SetWindowGrab
+U SDL_SetWindowIcon
+U SDL_SetWindowPosition
+U SDL_SetWindowSize
+U SDL_SetWindowTitle
+U SDL_ShowCursor
+U SDL_ShowSimpleMessageBox
+U SDL_ShowWindow
+U SDL_WaitEventTimeout
+U SDL_WarpMouseInWindow
+U SDL_WasInit
+U SetAssertDialogParent
+U setenv@@GLIBC_2.0
+U setlocale@@GLIBC_2.0
+U ShouldUseNewAssertDialog
+B s_pInterfaceRegs
+U sscanf@@GLIBC_2.0
+U stderr@@GLIBC_2.0
+U stdout@@GLIBC_2.0
+U strcasecmp@@GLIBC_2.0
+U strcasestr@@GLIBC_2.1
+U strchr@@GLIBC_2.0
+U strcmp@@GLIBC_2.0
+U strcpy@@GLIBC_2.0
+U strdup@@GLIBC_2.0
+U strlen@@GLIBC_2.0
+U strncat@@GLIBC_2.0
+U strncpy@@GLIBC_2.0
+U strnlen@@GLIBC_2.0
+U strpbrk@@GLIBC_2.0
+U strstr@@GLIBC_2.0
+U strtod@@GLIBC_2.0
+U strtol@@GLIBC_2.0
+U strtoll@@GLIBC_2.0
+U strtoul@@GLIBC_2.0
+U swprintf@@GLIBC_2.2
+U swscanf@@GLIBC_2.2
+U symlink@@GLIBC_2.0
+U ThreadGetCurrentId
+U ThreadSleep
+U tolower@@GLIBC_2.0
+U toupper@@GLIBC_2.0
+U towlower@@GLIBC_2.0
+U towupper@@GLIBC_2.0
+U unlink@@GLIBC_2.0
+U utime@@GLIBC_2.0
+U utimes@@GLIBC_2.0
+U vsnprintf@@GLIBC_2.0
+U VStdLib_GetICVarFactory
+U vswprintf@@GLIBC_2.2
+U Warning
+U wcslen@@GLIBC_2.0
+U wcsncat@@GLIBC_2.0
+U wcsncpy@@GLIBC_2.0
+U wcstof@@GLIBC_2.0
+U wcstol@@GLIBC_2.0
+U wcstombs@@GLIBC_2.0
+U WriteMiniDump
+U __xmknod@@GLIBC_2.0
+U __xstat64@@GLIBC_2.2
+U __xstat@@GLIBC_2.0
+U DevWarning(char const*, ...)
+U ConMsg(char const*, ...)
+U DevMsg(char const*, ...)
+U CVProfNode::EnterScope()
+U CVProfNode::GetSubNode(char const*, int, char const*, int)
+U CVProfNode::ExitScope()
+U CThreadEvent::Set()
+U CThreadEvent::CThreadEvent(bool)
+U CThreadRWLock::UnlockWrite()
+U CThreadRWLock::WaitForRead()
+U CThreadRWLock::LockForWrite()
+U CThreadSpinRWLock::SpinLockForRead()
+U CThreadSpinRWLock::SpinLockForWrite()
+U CThreadSyncObject::~CThreadSyncObject()
+U CThreadFastMutex::Lock(unsigned int, unsigned int) volatile
+U std::terminate()@@GLIBCXX_3.4
+U vtable for __cxxabiv1::__class_type_info@@CXXABI_1.3
+U vtable for __cxxabiv1::__si_class_type_info@@CXXABI_1.3
+U vtable for __cxxabiv1::__vmi_class_type_info@@CXXABI_1.3

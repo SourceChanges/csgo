@@ -1,451 +1,451 @@
-         U abort@@GLIBC_2.0
-         U access@@GLIBC_2.0
-         U __acosf_finite@@GLIBC_2.15
-         U __acos_finite@@GLIBC_2.15
-         U AddMemoryInfoCallback
-         U alphasort64@@GLIBC_2.2
-         U asctime@@GLIBC_2.0
-         U __asinf_finite@@GLIBC_2.15
-         U __asin_finite@@GLIBC_2.15
-         U __assert_fail@@GLIBC_2.0
-         U __atan2f_finite@@GLIBC_2.15
-         U __atan2_finite@@GLIBC_2.15
-         U atanf@@GLIBC_2.0
-         U atan@@GLIBC_2.0
-01485968 A __bss_start
-         U CallAssertFailedNotifyFunc
-         U cbrtf@@GLIBC_2.0
-         U ceil@@GLIBC_2.0
-         U chdir@@GLIBC_2.0
-         U chmod@@GLIBC_2.0
-         U chown@@GLIBC_2.1
-         U closedir@@GLIBC_2.0
-         U close@@GLIBC_2.0
-         U CommandLine
-         U COM_TimestampedLog
-         U ConDMsg
-         U Coroutine_Continue
-         U Coroutine_Create
-         U Coroutine_DebugBreak
-         U Coroutine_YieldToMain
-         U cosf@@GLIBC_2.0
-         U cos@@GLIBC_2.0
-00be7300 T CreateInterface
-         U CreateNewThreadPool
-         U __ctype_b_loc@@GLIBC_2.3
-         U __ctype_tolower_loc@@GLIBC_2.3
-         U __ctype_toupper_loc@@GLIBC_2.3
-         U __cxa_allocate_exception@@CXXABI_1.3
-         U __cxa_atexit@@GLIBC_2.1.3
-         U __cxa_begin_catch@@CXXABI_1.3
-         U __cxa_call_unexpected@@CXXABI_1.3
-         U __cxa_end_catch@@CXXABI_1.3
-         w __cxa_finalize@@GLIBC_2.1.3
-         U __cxa_free_exception@@CXXABI_1.3
-         U __cxa_guard_abort@@CXXABI_1.3
-         U __cxa_guard_acquire@@CXXABI_1.3
-         U __cxa_guard_release@@CXXABI_1.3
-         U __cxa_rethrow@@CXXABI_1.3
-         U __cxa_throw@@CXXABI_1.3
-         U __daylight@@GLIBC_2.0
-         U daylight@@GLIBC_2.0
-         U DestroyThreadPool
-         U DevMsg
-         U DevWarning
-         U dlclose@@GLIBC_2.0
-         U dlerror@@GLIBC_2.0
-         U dl_iterate_phdr@@GLIBC_2.2.4
-         U dlopen@@GLIBC_2.1
-         U dlsym@@GLIBC_2.0
-         U DoNewAssertDialog
-         U dup@@GLIBC_2.0
-         U __dynamic_cast@@CXXABI_1.3
-01485968 A _edata
-05573fb0 A _end
-         U __errno_location@@GLIBC_2.0
-         U Error
-         U exit@@GLIBC_2.0
-         U _ExitOnFatalAssert
-         U __expf_finite@@GLIBC_2.15
-         U __exp_finite@@GLIBC_2.15
-         U fclose@@GLIBC_2.1
-         U fdopen@@GLIBC_2.1
-         U ferror@@GLIBC_2.0
-         U fflush@@GLIBC_2.0
-         U fgetc@@GLIBC_2.0
-00f4bec0 T _fini
-         U fopen64@@GLIBC_2.1
-         U fopen@@GLIBC_2.1
-         U fprintf@@GLIBC_2.0
-         U fputc@@GLIBC_2.0
-         U fread@@GLIBC_2.0
-         U free@@GLIBC_2.0
-         U freopen@@GLIBC_2.0
-         U fseek@@GLIBC_2.0
-         U fseeko64@@GLIBC_2.1
-         U ftell@@GLIBC_2.0
-         U ftello64@@GLIBC_2.1
-         U futimes@@GLIBC_2.3
-         U fwrite@@GLIBC_2.0
-         U __fxstat64@@GLIBC_2.2
-         U g_ClockSpeed
-         U g_ClockSpeedMillisecondsMultiplier
-         U g_dwClockSpeed
-         U GetCPUFrequencyResults
-         U GetCPUInformation
-         U getcwd@@GLIBC_2.0
-         U getenv@@GLIBC_2.0
-         U gethostbyname@@GLIBC_2.0
-         U GetHSteamPipe
-         U getsockname@@GLIBC_2.0
-         U getuid@@GLIBC_2.0
-         U getwd@@GLIBC_2.0
-         w __gmon_start__
-         U g_nThreadID
-         U g_PerfStats
-         U g_pMemAlloc
-         U g_pThreadPool
-         U g_VProfCurrentProfile
-         U __gxx_personality_v0@@CXXABI_1.3
-         U iconv_close@@GLIBC_2.1
-         U iconv@@GLIBC_2.1
-         U iconv_open@@GLIBC_2.1
-003a4668 T _init
-         U isalnum@@GLIBC_2.0
-         U isalpha@@GLIBC_2.0
-         U iscntrl@@GLIBC_2.0
-         U isprint@@GLIBC_2.0
-         U ispunct@@GLIBC_2.0
-         U iswalnum@@GLIBC_2.0
-         U iswcntrl@@GLIBC_2.0
-         U iswdigit@@GLIBC_2.0
-         U iswpunct@@GLIBC_2.0
-         U iswspace@@GLIBC_2.0
-003fd600 T jpeg_UtlBuffer_dest
-         w _Jv_RegisterClasses
-         U KeyValuesSystem
-         U lchown@@GLIBC_2.0
-         U link@@GLIBC_2.0
-         U localeconv@@GLIBC_2.2
-         U localtime@@GLIBC_2.0
-         U __log10_finite@@GLIBC_2.15
-         U __logf_finite@@GLIBC_2.15
-         U __log_finite@@GLIBC_2.15
-         U LOG_GENERAL
-         U LoggingSystem_AddTagToCurrentChannel
-         U LoggingSystem_IsChannelEnabled
-         U LoggingSystem_Log
-         U LoggingSystem_LogAssert
-         U LoggingSystem_RegisterLoggingChannel
-         U longjmp@@GLIBC_2.0
-         U lseek64@@GLIBC_2.2
-         U lseek@@GLIBC_2.0
-         U __lxstat64@@GLIBC_2.2
-         U __lxstat@@GLIBC_2.0
-         U malloc@@GLIBC_2.0
-         U mbstowcs@@GLIBC_2.0
-         U MemAllocScratch
-         U memcmp@@GLIBC_2.0
-         U memcpy@@GLIBC_2.0
-         U MemFreeScratch
-         U memmove@@GLIBC_2.0
-         U memset@@GLIBC_2.0
-         U mkdir@@GLIBC_2.0
-         U mkfifo@@GLIBC_2.0
-         U mktime@@GLIBC_2.0
-         U mmap64@@GLIBC_2.1
-         U mount@@GLIBC_2.0
-         U mprotect@@GLIBC_2.0
-         U Msg
-         U munmap@@GLIBC_2.0
-         U open64@@GLIBC_2.2
-         U opendir@@GLIBC_2.0
-         U open@@GLIBC_2.0
-         U Plat_ConvertToLocalTime
-         U Plat_ctime
-         U Plat_ExitProcess
-         U Plat_FloatTime
-         U Platform_gmtime
-         U Plat_GetLocalTime
-         U Plat_GetTimeString
-         U Plat_IsInBenchmarkMode
-         U Plat_IsInDebugSession
-         U Plat_localtime
-         U Plat_MSTime
-         U Plat_timegm
-         U __powf_finite@@GLIBC_2.15
-         U __pow_finite@@GLIBC_2.15
-         U printf@@GLIBC_2.0
-         w pthread_cancel@@GLIBC_2.0
-         U pthread_mutexattr_init@@GLIBC_2.0
-         U pthread_mutexattr_settype@@GLIBC_2.1
-         U pthread_mutex_destroy@@GLIBC_2.0
-         U pthread_mutex_init@@GLIBC_2.0
-         U pthread_mutex_lock@@GLIBC_2.0
-         U pthread_mutex_unlock@@GLIBC_2.0
-         w pthread_once@@GLIBC_2.0
-         U putchar@@GLIBC_2.0
-         U qsort@@GLIBC_2.0
-         U RandomFloat
-         U RandomInt
-         U RandomSeed
-         U readdir64@@GLIBC_2.2
-         U read@@GLIBC_2.0
-         U realpath@@GLIBC_2.3
-         U RemoveMemoryInfoCallback
-         U rename@@GLIBC_2.0
-         U rmdir@@GLIBC_2.0
-         U scandir64@@GLIBC_2.2
-         U scandir@@GLIBC_2.0
-         U sched_yield@@GLIBC_2.0
-         U setenv@@GLIBC_2.0
-         U _setjmp@@GLIBC_2.0
-         U setlocale@@GLIBC_2.0
-         U shm_open@@GLIBC_2.2
-         U ShouldUseNewAssertDialog
-         U sincosf@@GLIBC_2.1
-         U sincos@@GLIBC_2.1
-         U sinf@@GLIBC_2.0
-         U sin@@GLIBC_2.0
-         U snprintf@@GLIBC_2.0
-054d8cf0 B s_pInterfaceRegs
-         U sprintf@@GLIBC_2.0
-         U sscanf@@GLIBC_2.0
-         U __stack_chk_fail@@GLIBC_2.4
-         U stderr@@GLIBC_2.0
-         U stdin@@GLIBC_2.0
-         U stdout@@GLIBC_2.0
-         U SteamAPI_GetHSteamPipe
-         U SteamAPI_GetHSteamUser
-         U SteamAPI_InitSafe
-         U SteamAPI_RegisterCallback
-         U SteamAPI_RegisterCallResult
-         U SteamAPI_SetTryCatchCallbacks
-         U SteamAPI_UnregisterCallback
-         U SteamAPI_UnregisterCallResult
-         U SteamClient
-         U strcasecmp@@GLIBC_2.0
-         U strcasestr@@GLIBC_2.1
-         U strcat@@GLIBC_2.0
-         U strchr@@GLIBC_2.0
-         U strcmp@@GLIBC_2.0
-         U strcpy@@GLIBC_2.0
-         U strdup@@GLIBC_2.0
-         U strerror@@GLIBC_2.0
-         U strftime@@GLIBC_2.0
-         U strlen@@GLIBC_2.0
-         U strncat@@GLIBC_2.0
-         U strncpy@@GLIBC_2.0
-         U strnlen@@GLIBC_2.0
-         U strpbrk@@GLIBC_2.0
-         U strptime@@GLIBC_2.0
-         U strrchr@@GLIBC_2.0
-         U strstr@@GLIBC_2.0
-         U strtod@@GLIBC_2.0
-         U strtof@@GLIBC_2.0
-         U strtok@@GLIBC_2.0
-         U strtol@@GLIBC_2.0
-         U strtoll@@GLIBC_2.0
-         U strtoul@@GLIBC_2.0
-         U strtoull@@GLIBC_2.0
-         U swprintf@@GLIBC_2.2
-         U swscanf@@GLIBC_2.2
-         U symlink@@GLIBC_2.0
-         U tanf@@GLIBC_2.0
-         U tan@@GLIBC_2.0
-         U tempnam@@GLIBC_2.0
-         U ThreadGetCurrentId
-         U ThreadInMainThread
-         U ThreadInterlockedAssignIf64
-         U ThreadSleep
-         U time@@GLIBC_2.0
-         U __timezone@@GLIBC_2.0
-         U timezone@@GLIBC_2.0
-         U tmpnam@@GLIBC_2.0
-         U tolower@@GLIBC_2.0
-         U toupper@@GLIBC_2.0
-         U towlower@@GLIBC_2.0
-         U towupper@@GLIBC_2.0
-         U tzset@@GLIBC_2.0
-         U ungetc@@GLIBC_2.0
-         U unlink@@GLIBC_2.0
-         U usleep@@GLIBC_2.0
-         U utime@@GLIBC_2.0
-         U utimes@@GLIBC_2.0
-         U vsnprintf@@GLIBC_2.0
-         U vswprintf@@GLIBC_2.2
-         U V_UnicodeToUTF8
-         U V_UTF8ToUnicode
-         U Warning
-         U wcscat@@GLIBC_2.0
-         U wcschr@@GLIBC_2.0
-         U wcscmp@@GLIBC_2.0
-         U wcscoll@@GLIBC_2.0
-         U wcscpy@@GLIBC_2.0
-         U wcslen@@GLIBC_2.0
-         U wcsncat@@GLIBC_2.0
-         U wcsncmp@@GLIBC_2.0
-         U wcsncpy@@GLIBC_2.0
-         U wcsstr@@GLIBC_2.0
-         U wcstod@@GLIBC_2.0
-         U wcstof@@GLIBC_2.0
-         U wcstol@@GLIBC_2.0
-         U wcstombs@@GLIBC_2.0
-         U wmemcpy@@GLIBC_2.0
-         U write@@GLIBC_2.0
-         U WriteMiniDump
-         U __xmknod@@GLIBC_2.0
-         U __xstat64@@GLIBC_2.2
-         U __xstat@@GLIBC_2.0
-         U DevWarning(char const*, ...)
-         U ConColorMsg(Color const&, char const*, ...)
-         U LoggingSystem_Log(int, LoggingSeverity_t, Color, char const*, ...)
-         U ConMsg(char const*, ...)
-         U DevMsg(char const*, ...)
-         U ZeroMemory
-         U CVProfNode::EnterScope()
-         U CVProfNode::GetSubNode(char const*, int, char const*, int)
-         U CVProfNode::ExitScope()
-         U CThreadEvent::Set()
-         U CThreadEvent::Wait(unsigned int)
-         U CThreadEvent::CThreadEvent(bool)
-         U CThreadMutex::TryLock()
-         U CThreadRWLock::UnlockWrite()
-         U CThreadRWLock::WaitForRead()
-         U CThreadRWLock::LockForWrite()
-         U CThreadSpinRWLock::SpinLockForRead()
-         U CThreadSpinRWLock::SpinLockForWrite()
-         U CThreadSyncObject::~CThreadSyncObject()
-         U GenericThreadLocals::CThreadLocalBase::Set(void*)
-         U GenericThreadLocals::CThreadLocalBase::CThreadLocalBase()
-         U GenericThreadLocals::CThreadLocalBase::~CThreadLocalBase()
-         U CUniformRandomStream::RandomFloat(float, float)
-         U CUniformRandomStream::SetSeed(int)
-         U CUniformRandomStream::RandomInt(int, int)
-         U CUniformRandomStream::CUniformRandomStream()
-         U CGaussianRandomStream::RandomFloat(float, float)
-         U CGaussianRandomStream::AttachToStream(IUniformRandomStream*)
-         U CGaussianRandomStream::CGaussianRandomStream(IUniformRandomStream*)
-         U CThread::GetThreadProc()
-         U CThread::IsThreadRunning()
-         U CThread::WaitForCreateComplete(CThreadEvent*)
-         U CThread::Init()
-         U CThread::Join(unsigned int)
-         U CThread::Start(unsigned int, CThread::ThreadPriorityEnum_t)
-         U CThread::GetName()
-         U CThread::SetName(char const*)
-         U CThread::CThread()
-         U CThread::~CThread()
-         U CVProfile::FindOrCreateCounter(char const*, CounterGroup_t)
-00e80652 W bool __gnu_cxx::__is_null_pointer<char>(char*)
-         U GenericThreadLocals::CThreadLocalBase::Get() const
-         U std::istream::gcount() const@@GLIBCXX_3.4
-         U std::string::find_last_of(char, unsigned int) const@@GLIBCXX_3.4
-         U std::string::find_first_of(char, unsigned int) const@@GLIBCXX_3.4
-         U std::string::find_first_of(char const*, unsigned int) const@@GLIBCXX_3.4
-         U std::string::find_first_not_of(char const*, unsigned int) const@@GLIBCXX_3.4
-         U std::string::data() const@@GLIBCXX_3.4
-         U std::string::find(std::string const&, unsigned int) const@@GLIBCXX_3.4
-         U std::string::size() const@@GLIBCXX_3.4
-         U std::string::c_str() const@@GLIBCXX_3.4
-         U std::string::empty() const@@GLIBCXX_3.4
-         U std::string::length() const@@GLIBCXX_3.4
-         U std::string::substr(unsigned int, unsigned int) const@@GLIBCXX_3.4
-         U std::string::compare(unsigned int, unsigned int, std::string const&) const@@GLIBCXX_3.4
-         U std::string::compare(char const*) const@@GLIBCXX_3.4
-         U std::string::compare(std::string const&) const@@GLIBCXX_3.4
-         U std::string::_M_iend() const@@GLIBCXX_3.4
-         U std::string::capacity() const@@GLIBCXX_3.4
-         U std::string::operator[](unsigned int) const@@GLIBCXX_3.4
-         U std::basic_ios<char, std::char_traits<char> >::eof() const@@GLIBCXX_3.4
-         U std::basic_ios<char, std::char_traits<char> >::fail() const@@GLIBCXX_3.4
-         U std::basic_ios<char, std::char_traits<char> >::good() const@@GLIBCXX_3.4
-         U std::allocator<char>::allocator()@@GLIBCXX_3.4
-         U std::allocator<char>::~allocator()@@GLIBCXX_3.4
-         U std::basic_string<wchar_t, std::char_traits<wchar_t>, std::allocator<wchar_t> >::_Rep::_M_destroy(std::allocator<wchar_t> const&)@@GLIBCXX_3.4
-         U std::basic_string<wchar_t, std::char_traits<wchar_t>, std::allocator<wchar_t> >::_Rep::_S_empty_rep_storage@@GLIBCXX_3.4
-         U std::basic_string<wchar_t, std::char_traits<wchar_t>, std::allocator<wchar_t> >::_Rep::_S_create(unsigned int, unsigned int, std::allocator<wchar_t> const&)@@GLIBCXX_3.4
-         U std::basic_string<wchar_t, std::char_traits<wchar_t>, std::allocator<wchar_t> >::swap(std::basic_string<wchar_t, std::char_traits<wchar_t>, std::allocator<wchar_t> >&)@@GLIBCXX_3.4
-         U std::basic_string<wchar_t, std::char_traits<wchar_t>, std::allocator<wchar_t> >::assign(std::basic_string<wchar_t, std::char_traits<wchar_t>, std::allocator<wchar_t> > const&)@@GLIBCXX_3.4
-         U std::basic_string<wchar_t, std::char_traits<wchar_t>, std::allocator<wchar_t> >::~basic_string()@@GLIBCXX_3.4
-         U std::istream::read(char*, int)@@GLIBCXX_3.4
-         U std::ostream::write(char const*, int)@@GLIBCXX_3.4
-         U std::string::_Alloc_hider::_Alloc_hider(char*, std::allocator<char> const&)@@GLIBCXX_3.4
-         U std::string::_M_leak_hard()@@GLIBCXX_3.4
-         U std::string::_S_empty_rep()@@GLIBCXX_3.4
-         U std::string::_S_copy_chars(char*, char*, char*)@@GLIBCXX_3.4
-         U std::string::end()@@GLIBCXX_3.4
-         U std::string::_Rep::_M_destroy(std::allocator<char> const&)@@GLIBCXX_3.4
-         U std::string::_Rep::_M_refdata()@@GLIBCXX_3.4
-         U std::string::_Rep::_S_empty_rep_storage@@GLIBCXX_3.4
-         U std::string::_Rep::_M_set_length_and_sharable(unsigned int)@@GLIBCXX_3.4.5
-         U std::string::_Rep::_S_create(unsigned int, unsigned int, std::allocator<char> const&)@@GLIBCXX_3.4
-         U std::string::swap(std::string&)@@GLIBCXX_3.4
-         U std::string::begin()@@GLIBCXX_3.4
-         U std::string::clear()@@GLIBCXX_3.4
-         U std::string::erase(unsigned int, unsigned int)@@GLIBCXX_3.4
-         U std::string::append(unsigned int, char)@@GLIBCXX_3.4
-         U std::string::append(char const*)@@GLIBCXX_3.4
-         U std::string::append(char const*, unsigned int)@@GLIBCXX_3.4
-         U std::string::append(std::string const&)@@GLIBCXX_3.4
-         U std::string::append(std::string const&, unsigned int, unsigned int)@@GLIBCXX_3.4
-         U std::string::assign(char const*)@@GLIBCXX_3.4
-         U std::string::assign(char const*, unsigned int)@@GLIBCXX_3.4
-         U std::string::assign(std::string const&)@@GLIBCXX_3.4
-         U std::string::resize(unsigned int, char)@@GLIBCXX_3.4
-         U std::string::resize(unsigned int)@@GLIBCXX_3.4
-         U std::string::replace(__gnu_cxx::__normal_iterator<char*, std::string>, __gnu_cxx::__normal_iterator<char*, std::string>, char const*, char const*)@@GLIBCXX_3.4
-         U std::string::reserve(unsigned int)@@GLIBCXX_3.4
-         U std::string::_M_mutate(unsigned int, unsigned int, unsigned int)@@GLIBCXX_3.4
-         U std::string::push_back(char)@@GLIBCXX_3.4
-         U std::string::operator=(char const*)@@GLIBCXX_3.4
-         U std::string::operator=(std::string const&)@@GLIBCXX_3.4
-         U std::basic_string<char, std::char_traits<char>, std::allocator<char> >::basic_string(unsigned int, char, std::allocator<char> const&)@@GLIBCXX_3.4
-         U std::basic_string<char, std::char_traits<char>, std::allocator<char> >::basic_string(char const*, unsigned int, std::allocator<char> const&)@@GLIBCXX_3.4
-         U std::basic_string<char, std::char_traits<char>, std::allocator<char> >::basic_string(char const*, std::allocator<char> const&)@@GLIBCXX_3.4
-         U std::basic_string<char, std::char_traits<char>, std::allocator<char> >::basic_string(std::string const&)@@GLIBCXX_3.4
-         U std::basic_string<char, std::char_traits<char>, std::allocator<char> >::basic_string()@@GLIBCXX_3.4
-         U std::basic_string<char, std::char_traits<char>, std::allocator<char> >::~basic_string()@@GLIBCXX_3.4
-         U std::string::operator[](unsigned int)@@GLIBCXX_3.4
-         U std::string::operator+=(char)@@GLIBCXX_3.4
-         U std::string::operator+=(char const*)@@GLIBCXX_3.4
-         U std::string::operator+=(std::string const&)@@GLIBCXX_3.4
-         U std::basic_ostream<wchar_t, std::char_traits<wchar_t> >& std::basic_ostream<wchar_t, std::char_traits<wchar_t> >::_M_insert<double>(double)@@GLIBCXX_3.4.9
-         U std::basic_ostringstream<wchar_t, std::char_traits<wchar_t>, std::allocator<wchar_t> >::~basic_ostringstream()@@GLIBCXX_3.4
-         U std::tr1::__detail::__prime_list@@GLIBCXX_3.4.10
-         U std::locale::locale(char const*)@@GLIBCXX_3.4
-         U std::locale::locale()@@GLIBCXX_3.4
-         U std::locale::~locale()@@GLIBCXX_3.4
-         U std::ios_base::Init::Init()@@GLIBCXX_3.4
-         U std::ios_base::Init::~Init()@@GLIBCXX_3.4
-         U std::ios_base::ios_base()@@GLIBCXX_3.4
-         U std::ios_base::~ios_base()@@GLIBCXX_3.4
-         U std::basic_ios<wchar_t, std::char_traits<wchar_t> >::init(std::basic_streambuf<wchar_t, std::char_traits<wchar_t> >*)@@GLIBCXX_3.4
-         U std::basic_ios<wchar_t, std::char_traits<wchar_t> >::imbue(std::locale const&)@@GLIBCXX_3.4
-         U std::basic_ios<wchar_t, std::char_traits<wchar_t> >::~basic_ios()@@GLIBCXX_3.4
-         U std::exception::~exception()@@GLIBCXX_3.4
-         U CThreadFastMutex::Lock(unsigned int, unsigned int) volatile
-         U std::__throw_bad_alloc()@@GLIBCXX_3.4
-         U std::_Rb_tree_decrement(std::_Rb_tree_node_base const*)@@GLIBCXX_3.4
-         U std::_Rb_tree_decrement(std::_Rb_tree_node_base*)@@GLIBCXX_3.4
-         U std::_Rb_tree_increment(std::_Rb_tree_node_base const*)@@GLIBCXX_3.4
-         U std::_Rb_tree_increment(std::_Rb_tree_node_base*)@@GLIBCXX_3.4
-         U std::__throw_logic_error(char const*)@@GLIBCXX_3.4
-         U std::__throw_length_error(char const*)@@GLIBCXX_3.4
-         U std::__throw_out_of_range(char const*)@@GLIBCXX_3.4
-         U std::_Rb_tree_rebalance_for_erase(std::_Rb_tree_node_base*, std::_Rb_tree_node_base&)@@GLIBCXX_3.4
-         U std::_Rb_tree_insert_and_rebalance(bool, std::_Rb_tree_node_base*, std::_Rb_tree_node_base*, std::_Rb_tree_node_base&)@@GLIBCXX_3.4
-         U std::terminate()@@GLIBCXX_3.4
-         U typeinfo for CThread
-         U typeinfo for float@@CXXABI_1.3
-         U typeinfo for unsigned int@@CXXABI_1.3
-         U typeinfo for std::exception@@GLIBCXX_3.4
-         U VTT for std::basic_ostringstream<wchar_t, std::char_traits<wchar_t>, std::allocator<wchar_t> >@@GLIBCXX_3.4
-         U vtable for __cxxabiv1::__class_type_info@@CXXABI_1.3
-         U vtable for __cxxabiv1::__si_class_type_info@@CXXABI_1.3
-         U vtable for __cxxabiv1::__vmi_class_type_info@@CXXABI_1.3
-         U vtable for std::basic_streambuf<wchar_t, std::char_traits<wchar_t> >@@GLIBCXX_3.4
-         U vtable for std::basic_stringbuf<wchar_t, std::char_traits<wchar_t>, std::allocator<wchar_t> >@@GLIBCXX_3.4
-         U vtable for std::basic_ostringstream<wchar_t, std::char_traits<wchar_t>, std::allocator<wchar_t> >@@GLIBCXX_3.4
-         U vtable for std::basic_ios<wchar_t, std::char_traits<wchar_t> >@@GLIBCXX_3.4
-         U vtable for std::exception@@GLIBCXX_3.4
+U abort@@GLIBC_2.0
+U access@@GLIBC_2.0
+U __acosf_finite@@GLIBC_2.15
+U __acos_finite@@GLIBC_2.15
+U AddMemoryInfoCallback
+U alphasort64@@GLIBC_2.2
+U asctime@@GLIBC_2.0
+U __asinf_finite@@GLIBC_2.15
+U __asin_finite@@GLIBC_2.15
+U __assert_fail@@GLIBC_2.0
+U __atan2f_finite@@GLIBC_2.15
+U __atan2_finite@@GLIBC_2.15
+U atanf@@GLIBC_2.0
+U atan@@GLIBC_2.0
+A __bss_start
+U CallAssertFailedNotifyFunc
+U cbrtf@@GLIBC_2.0
+U ceil@@GLIBC_2.0
+U chdir@@GLIBC_2.0
+U chmod@@GLIBC_2.0
+U chown@@GLIBC_2.1
+U closedir@@GLIBC_2.0
+U close@@GLIBC_2.0
+U CommandLine
+U COM_TimestampedLog
+U ConDMsg
+U Coroutine_Continue
+U Coroutine_Create
+U Coroutine_DebugBreak
+U Coroutine_YieldToMain
+U cosf@@GLIBC_2.0
+U cos@@GLIBC_2.0
+T CreateInterface
+U CreateNewThreadPool
+U __ctype_b_loc@@GLIBC_2.3
+U __ctype_tolower_loc@@GLIBC_2.3
+U __ctype_toupper_loc@@GLIBC_2.3
+U __cxa_allocate_exception@@CXXABI_1.3
+U __cxa_atexit@@GLIBC_2.1.3
+U __cxa_begin_catch@@CXXABI_1.3
+U __cxa_call_unexpected@@CXXABI_1.3
+U __cxa_end_catch@@CXXABI_1.3
+w __cxa_finalize@@GLIBC_2.1.3
+U __cxa_free_exception@@CXXABI_1.3
+U __cxa_guard_abort@@CXXABI_1.3
+U __cxa_guard_acquire@@CXXABI_1.3
+U __cxa_guard_release@@CXXABI_1.3
+U __cxa_rethrow@@CXXABI_1.3
+U __cxa_throw@@CXXABI_1.3
+U __daylight@@GLIBC_2.0
+U daylight@@GLIBC_2.0
+U DestroyThreadPool
+U DevMsg
+U DevWarning
+U dlclose@@GLIBC_2.0
+U dlerror@@GLIBC_2.0
+U dl_iterate_phdr@@GLIBC_2.2.4
+U dlopen@@GLIBC_2.1
+U dlsym@@GLIBC_2.0
+U DoNewAssertDialog
+U dup@@GLIBC_2.0
+U __dynamic_cast@@CXXABI_1.3
+A _edata
+A _end
+U __errno_location@@GLIBC_2.0
+U Error
+U exit@@GLIBC_2.0
+U _ExitOnFatalAssert
+U __expf_finite@@GLIBC_2.15
+U __exp_finite@@GLIBC_2.15
+U fclose@@GLIBC_2.1
+U fdopen@@GLIBC_2.1
+U ferror@@GLIBC_2.0
+U fflush@@GLIBC_2.0
+U fgetc@@GLIBC_2.0
+T _fini
+U fopen64@@GLIBC_2.1
+U fopen@@GLIBC_2.1
+U fprintf@@GLIBC_2.0
+U fputc@@GLIBC_2.0
+U fread@@GLIBC_2.0
+U free@@GLIBC_2.0
+U freopen@@GLIBC_2.0
+U fseek@@GLIBC_2.0
+U fseeko64@@GLIBC_2.1
+U ftell@@GLIBC_2.0
+U ftello64@@GLIBC_2.1
+U futimes@@GLIBC_2.3
+U fwrite@@GLIBC_2.0
+U __fxstat64@@GLIBC_2.2
+U g_ClockSpeed
+U g_ClockSpeedMillisecondsMultiplier
+U g_dwClockSpeed
+U GetCPUFrequencyResults
+U GetCPUInformation
+U getcwd@@GLIBC_2.0
+U getenv@@GLIBC_2.0
+U gethostbyname@@GLIBC_2.0
+U GetHSteamPipe
+U getsockname@@GLIBC_2.0
+U getuid@@GLIBC_2.0
+U getwd@@GLIBC_2.0
+w __gmon_start__
+U g_nThreadID
+U g_PerfStats
+U g_pMemAlloc
+U g_pThreadPool
+U g_VProfCurrentProfile
+U __gxx_personality_v0@@CXXABI_1.3
+U iconv_close@@GLIBC_2.1
+U iconv@@GLIBC_2.1
+U iconv_open@@GLIBC_2.1
+T _init
+U isalnum@@GLIBC_2.0
+U isalpha@@GLIBC_2.0
+U iscntrl@@GLIBC_2.0
+U isprint@@GLIBC_2.0
+U ispunct@@GLIBC_2.0
+U iswalnum@@GLIBC_2.0
+U iswcntrl@@GLIBC_2.0
+U iswdigit@@GLIBC_2.0
+U iswpunct@@GLIBC_2.0
+U iswspace@@GLIBC_2.0
+T jpeg_UtlBuffer_dest
+w _Jv_RegisterClasses
+U KeyValuesSystem
+U lchown@@GLIBC_2.0
+U link@@GLIBC_2.0
+U localeconv@@GLIBC_2.2
+U localtime@@GLIBC_2.0
+U __log10_finite@@GLIBC_2.15
+U __logf_finite@@GLIBC_2.15
+U __log_finite@@GLIBC_2.15
+U LOG_GENERAL
+U LoggingSystem_AddTagToCurrentChannel
+U LoggingSystem_IsChannelEnabled
+U LoggingSystem_Log
+U LoggingSystem_LogAssert
+U LoggingSystem_RegisterLoggingChannel
+U longjmp@@GLIBC_2.0
+U lseek64@@GLIBC_2.2
+U lseek@@GLIBC_2.0
+U __lxstat64@@GLIBC_2.2
+U __lxstat@@GLIBC_2.0
+U malloc@@GLIBC_2.0
+U mbstowcs@@GLIBC_2.0
+U MemAllocScratch
+U memcmp@@GLIBC_2.0
+U memcpy@@GLIBC_2.0
+U MemFreeScratch
+U memmove@@GLIBC_2.0
+U memset@@GLIBC_2.0
+U mkdir@@GLIBC_2.0
+U mkfifo@@GLIBC_2.0
+U mktime@@GLIBC_2.0
+U mmap64@@GLIBC_2.1
+U mount@@GLIBC_2.0
+U mprotect@@GLIBC_2.0
+U Msg
+U munmap@@GLIBC_2.0
+U open64@@GLIBC_2.2
+U opendir@@GLIBC_2.0
+U open@@GLIBC_2.0
+U Plat_ConvertToLocalTime
+U Plat_ctime
+U Plat_ExitProcess
+U Plat_FloatTime
+U Platform_gmtime
+U Plat_GetLocalTime
+U Plat_GetTimeString
+U Plat_IsInBenchmarkMode
+U Plat_IsInDebugSession
+U Plat_localtime
+U Plat_MSTime
+U Plat_timegm
+U __powf_finite@@GLIBC_2.15
+U __pow_finite@@GLIBC_2.15
+U printf@@GLIBC_2.0
+w pthread_cancel@@GLIBC_2.0
+U pthread_mutexattr_init@@GLIBC_2.0
+U pthread_mutexattr_settype@@GLIBC_2.1
+U pthread_mutex_destroy@@GLIBC_2.0
+U pthread_mutex_init@@GLIBC_2.0
+U pthread_mutex_lock@@GLIBC_2.0
+U pthread_mutex_unlock@@GLIBC_2.0
+w pthread_once@@GLIBC_2.0
+U putchar@@GLIBC_2.0
+U qsort@@GLIBC_2.0
+U RandomFloat
+U RandomInt
+U RandomSeed
+U readdir64@@GLIBC_2.2
+U read@@GLIBC_2.0
+U realpath@@GLIBC_2.3
+U RemoveMemoryInfoCallback
+U rename@@GLIBC_2.0
+U rmdir@@GLIBC_2.0
+U scandir64@@GLIBC_2.2
+U scandir@@GLIBC_2.0
+U sched_yield@@GLIBC_2.0
+U setenv@@GLIBC_2.0
+U _setjmp@@GLIBC_2.0
+U setlocale@@GLIBC_2.0
+U shm_open@@GLIBC_2.2
+U ShouldUseNewAssertDialog
+U sincosf@@GLIBC_2.1
+U sincos@@GLIBC_2.1
+U sinf@@GLIBC_2.0
+U sin@@GLIBC_2.0
+U snprintf@@GLIBC_2.0
+B s_pInterfaceRegs
+U sprintf@@GLIBC_2.0
+U sscanf@@GLIBC_2.0
+U __stack_chk_fail@@GLIBC_2.4
+U stderr@@GLIBC_2.0
+U stdin@@GLIBC_2.0
+U stdout@@GLIBC_2.0
+U SteamAPI_GetHSteamPipe
+U SteamAPI_GetHSteamUser
+U SteamAPI_InitSafe
+U SteamAPI_RegisterCallback
+U SteamAPI_RegisterCallResult
+U SteamAPI_SetTryCatchCallbacks
+U SteamAPI_UnregisterCallback
+U SteamAPI_UnregisterCallResult
+U SteamClient
+U strcasecmp@@GLIBC_2.0
+U strcasestr@@GLIBC_2.1
+U strcat@@GLIBC_2.0
+U strchr@@GLIBC_2.0
+U strcmp@@GLIBC_2.0
+U strcpy@@GLIBC_2.0
+U strdup@@GLIBC_2.0
+U strerror@@GLIBC_2.0
+U strftime@@GLIBC_2.0
+U strlen@@GLIBC_2.0
+U strncat@@GLIBC_2.0
+U strncpy@@GLIBC_2.0
+U strnlen@@GLIBC_2.0
+U strpbrk@@GLIBC_2.0
+U strptime@@GLIBC_2.0
+U strrchr@@GLIBC_2.0
+U strstr@@GLIBC_2.0
+U strtod@@GLIBC_2.0
+U strtof@@GLIBC_2.0
+U strtok@@GLIBC_2.0
+U strtol@@GLIBC_2.0
+U strtoll@@GLIBC_2.0
+U strtoul@@GLIBC_2.0
+U strtoull@@GLIBC_2.0
+U swprintf@@GLIBC_2.2
+U swscanf@@GLIBC_2.2
+U symlink@@GLIBC_2.0
+U tanf@@GLIBC_2.0
+U tan@@GLIBC_2.0
+U tempnam@@GLIBC_2.0
+U ThreadGetCurrentId
+U ThreadInMainThread
+U ThreadInterlockedAssignIf64
+U ThreadSleep
+U time@@GLIBC_2.0
+U __timezone@@GLIBC_2.0
+U timezone@@GLIBC_2.0
+U tmpnam@@GLIBC_2.0
+U tolower@@GLIBC_2.0
+U toupper@@GLIBC_2.0
+U towlower@@GLIBC_2.0
+U towupper@@GLIBC_2.0
+U tzset@@GLIBC_2.0
+U ungetc@@GLIBC_2.0
+U unlink@@GLIBC_2.0
+U usleep@@GLIBC_2.0
+U utime@@GLIBC_2.0
+U utimes@@GLIBC_2.0
+U vsnprintf@@GLIBC_2.0
+U vswprintf@@GLIBC_2.2
+U V_UnicodeToUTF8
+U V_UTF8ToUnicode
+U Warning
+U wcscat@@GLIBC_2.0
+U wcschr@@GLIBC_2.0
+U wcscmp@@GLIBC_2.0
+U wcscoll@@GLIBC_2.0
+U wcscpy@@GLIBC_2.0
+U wcslen@@GLIBC_2.0
+U wcsncat@@GLIBC_2.0
+U wcsncmp@@GLIBC_2.0
+U wcsncpy@@GLIBC_2.0
+U wcsstr@@GLIBC_2.0
+U wcstod@@GLIBC_2.0
+U wcstof@@GLIBC_2.0
+U wcstol@@GLIBC_2.0
+U wcstombs@@GLIBC_2.0
+U wmemcpy@@GLIBC_2.0
+U write@@GLIBC_2.0
+U WriteMiniDump
+U __xmknod@@GLIBC_2.0
+U __xstat64@@GLIBC_2.2
+U __xstat@@GLIBC_2.0
+U DevWarning(char const*, ...)
+U ConColorMsg(Color const&, char const*, ...)
+U LoggingSystem_Log(int, LoggingSeverity_t, Color, char const*, ...)
+U ConMsg(char const*, ...)
+U DevMsg(char const*, ...)
+U ZeroMemory
+U CVProfNode::EnterScope()
+U CVProfNode::GetSubNode(char const*, int, char const*, int)
+U CVProfNode::ExitScope()
+U CThreadEvent::Set()
+U CThreadEvent::Wait(unsigned int)
+U CThreadEvent::CThreadEvent(bool)
+U CThreadMutex::TryLock()
+U CThreadRWLock::UnlockWrite()
+U CThreadRWLock::WaitForRead()
+U CThreadRWLock::LockForWrite()
+U CThreadSpinRWLock::SpinLockForRead()
+U CThreadSpinRWLock::SpinLockForWrite()
+U CThreadSyncObject::~CThreadSyncObject()
+U GenericThreadLocals::CThreadLocalBase::Set(void*)
+U GenericThreadLocals::CThreadLocalBase::CThreadLocalBase()
+U GenericThreadLocals::CThreadLocalBase::~CThreadLocalBase()
+U CUniformRandomStream::RandomFloat(float, float)
+U CUniformRandomStream::SetSeed(int)
+U CUniformRandomStream::RandomInt(int, int)
+U CUniformRandomStream::CUniformRandomStream()
+U CGaussianRandomStream::RandomFloat(float, float)
+U CGaussianRandomStream::AttachToStream(IUniformRandomStream*)
+U CGaussianRandomStream::CGaussianRandomStream(IUniformRandomStream*)
+U CThread::GetThreadProc()
+U CThread::IsThreadRunning()
+U CThread::WaitForCreateComplete(CThreadEvent*)
+U CThread::Init()
+U CThread::Join(unsigned int)
+U CThread::Start(unsigned int, CThread::ThreadPriorityEnum_t)
+U CThread::GetName()
+U CThread::SetName(char const*)
+U CThread::CThread()
+U CThread::~CThread()
+U CVProfile::FindOrCreateCounter(char const*, CounterGroup_t)
+W bool __gnu_cxx::__is_null_pointer<char>(char*)
+U GenericThreadLocals::CThreadLocalBase::Get() const
+U std::istream::gcount() const@@GLIBCXX_3.4
+U std::string::find_last_of(char, unsigned int) const@@GLIBCXX_3.4
+U std::string::find_first_of(char, unsigned int) const@@GLIBCXX_3.4
+U std::string::find_first_of(char const*, unsigned int) const@@GLIBCXX_3.4
+U std::string::find_first_not_of(char const*, unsigned int) const@@GLIBCXX_3.4
+U std::string::data() const@@GLIBCXX_3.4
+U std::string::find(std::string const&, unsigned int) const@@GLIBCXX_3.4
+U std::string::size() const@@GLIBCXX_3.4
+U std::string::c_str() const@@GLIBCXX_3.4
+U std::string::empty() const@@GLIBCXX_3.4
+U std::string::length() const@@GLIBCXX_3.4
+U std::string::substr(unsigned int, unsigned int) const@@GLIBCXX_3.4
+U std::string::compare(unsigned int, unsigned int, std::string const&) const@@GLIBCXX_3.4
+U std::string::compare(char const*) const@@GLIBCXX_3.4
+U std::string::compare(std::string const&) const@@GLIBCXX_3.4
+U std::string::_M_iend() const@@GLIBCXX_3.4
+U std::string::capacity() const@@GLIBCXX_3.4
+U std::string::operator[](unsigned int) const@@GLIBCXX_3.4
+U std::basic_ios<char, std::char_traits<char> >::eof() const@@GLIBCXX_3.4
+U std::basic_ios<char, std::char_traits<char> >::fail() const@@GLIBCXX_3.4
+U std::basic_ios<char, std::char_traits<char> >::good() const@@GLIBCXX_3.4
+U std::allocator<char>::allocator()@@GLIBCXX_3.4
+U std::allocator<char>::~allocator()@@GLIBCXX_3.4
+U std::basic_string<wchar_t, std::char_traits<wchar_t>, std::allocator<wchar_t> >::_Rep::_M_destroy(std::allocator<wchar_t> const&)@@GLIBCXX_3.4
+U std::basic_string<wchar_t, std::char_traits<wchar_t>, std::allocator<wchar_t> >::_Rep::_S_empty_rep_storage@@GLIBCXX_3.4
+U std::basic_string<wchar_t, std::char_traits<wchar_t>, std::allocator<wchar_t> >::_Rep::_S_create(unsigned int, unsigned int, std::allocator<wchar_t> const&)@@GLIBCXX_3.4
+U std::basic_string<wchar_t, std::char_traits<wchar_t>, std::allocator<wchar_t> >::swap(std::basic_string<wchar_t, std::char_traits<wchar_t>, std::allocator<wchar_t> >&)@@GLIBCXX_3.4
+U std::basic_string<wchar_t, std::char_traits<wchar_t>, std::allocator<wchar_t> >::assign(std::basic_string<wchar_t, std::char_traits<wchar_t>, std::allocator<wchar_t> > const&)@@GLIBCXX_3.4
+U std::basic_string<wchar_t, std::char_traits<wchar_t>, std::allocator<wchar_t> >::~basic_string()@@GLIBCXX_3.4
+U std::istream::read(char*, int)@@GLIBCXX_3.4
+U std::ostream::write(char const*, int)@@GLIBCXX_3.4
+U std::string::_Alloc_hider::_Alloc_hider(char*, std::allocator<char> const&)@@GLIBCXX_3.4
+U std::string::_M_leak_hard()@@GLIBCXX_3.4
+U std::string::_S_empty_rep()@@GLIBCXX_3.4
+U std::string::_S_copy_chars(char*, char*, char*)@@GLIBCXX_3.4
+U std::string::end()@@GLIBCXX_3.4
+U std::string::_Rep::_M_destroy(std::allocator<char> const&)@@GLIBCXX_3.4
+U std::string::_Rep::_M_refdata()@@GLIBCXX_3.4
+U std::string::_Rep::_S_empty_rep_storage@@GLIBCXX_3.4
+U std::string::_Rep::_M_set_length_and_sharable(unsigned int)@@GLIBCXX_3.4.5
+U std::string::_Rep::_S_create(unsigned int, unsigned int, std::allocator<char> const&)@@GLIBCXX_3.4
+U std::string::swap(std::string&)@@GLIBCXX_3.4
+U std::string::begin()@@GLIBCXX_3.4
+U std::string::clear()@@GLIBCXX_3.4
+U std::string::erase(unsigned int, unsigned int)@@GLIBCXX_3.4
+U std::string::append(unsigned int, char)@@GLIBCXX_3.4
+U std::string::append(char const*)@@GLIBCXX_3.4
+U std::string::append(char const*, unsigned int)@@GLIBCXX_3.4
+U std::string::append(std::string const&)@@GLIBCXX_3.4
+U std::string::append(std::string const&, unsigned int, unsigned int)@@GLIBCXX_3.4
+U std::string::assign(char const*)@@GLIBCXX_3.4
+U std::string::assign(char const*, unsigned int)@@GLIBCXX_3.4
+U std::string::assign(std::string const&)@@GLIBCXX_3.4
+U std::string::resize(unsigned int, char)@@GLIBCXX_3.4
+U std::string::resize(unsigned int)@@GLIBCXX_3.4
+U std::string::replace(__gnu_cxx::__normal_iterator<char*, std::string>, __gnu_cxx::__normal_iterator<char*, std::string>, char const*, char const*)@@GLIBCXX_3.4
+U std::string::reserve(unsigned int)@@GLIBCXX_3.4
+U std::string::_M_mutate(unsigned int, unsigned int, unsigned int)@@GLIBCXX_3.4
+U std::string::push_back(char)@@GLIBCXX_3.4
+U std::string::operator=(char const*)@@GLIBCXX_3.4
+U std::string::operator=(std::string const&)@@GLIBCXX_3.4
+U std::basic_string<char, std::char_traits<char>, std::allocator<char> >::basic_string(unsigned int, char, std::allocator<char> const&)@@GLIBCXX_3.4
+U std::basic_string<char, std::char_traits<char>, std::allocator<char> >::basic_string(char const*, unsigned int, std::allocator<char> const&)@@GLIBCXX_3.4
+U std::basic_string<char, std::char_traits<char>, std::allocator<char> >::basic_string(char const*, std::allocator<char> const&)@@GLIBCXX_3.4
+U std::basic_string<char, std::char_traits<char>, std::allocator<char> >::basic_string(std::string const&)@@GLIBCXX_3.4
+U std::basic_string<char, std::char_traits<char>, std::allocator<char> >::basic_string()@@GLIBCXX_3.4
+U std::basic_string<char, std::char_traits<char>, std::allocator<char> >::~basic_string()@@GLIBCXX_3.4
+U std::string::operator[](unsigned int)@@GLIBCXX_3.4
+U std::string::operator+=(char)@@GLIBCXX_3.4
+U std::string::operator+=(char const*)@@GLIBCXX_3.4
+U std::string::operator+=(std::string const&)@@GLIBCXX_3.4
+U std::basic_ostream<wchar_t, std::char_traits<wchar_t> >& std::basic_ostream<wchar_t, std::char_traits<wchar_t> >::_M_insert<double>(double)@@GLIBCXX_3.4.9
+U std::basic_ostringstream<wchar_t, std::char_traits<wchar_t>, std::allocator<wchar_t> >::~basic_ostringstream()@@GLIBCXX_3.4
+U std::tr1::__detail::__prime_list@@GLIBCXX_3.4.10
+U std::locale::locale(char const*)@@GLIBCXX_3.4
+U std::locale::locale()@@GLIBCXX_3.4
+U std::locale::~locale()@@GLIBCXX_3.4
+U std::ios_base::Init::Init()@@GLIBCXX_3.4
+U std::ios_base::Init::~Init()@@GLIBCXX_3.4
+U std::ios_base::ios_base()@@GLIBCXX_3.4
+U std::ios_base::~ios_base()@@GLIBCXX_3.4
+U std::basic_ios<wchar_t, std::char_traits<wchar_t> >::init(std::basic_streambuf<wchar_t, std::char_traits<wchar_t> >*)@@GLIBCXX_3.4
+U std::basic_ios<wchar_t, std::char_traits<wchar_t> >::imbue(std::locale const&)@@GLIBCXX_3.4
+U std::basic_ios<wchar_t, std::char_traits<wchar_t> >::~basic_ios()@@GLIBCXX_3.4
+U std::exception::~exception()@@GLIBCXX_3.4
+U CThreadFastMutex::Lock(unsigned int, unsigned int) volatile
+U std::__throw_bad_alloc()@@GLIBCXX_3.4
+U std::_Rb_tree_decrement(std::_Rb_tree_node_base const*)@@GLIBCXX_3.4
+U std::_Rb_tree_decrement(std::_Rb_tree_node_base*)@@GLIBCXX_3.4
+U std::_Rb_tree_increment(std::_Rb_tree_node_base const*)@@GLIBCXX_3.4
+U std::_Rb_tree_increment(std::_Rb_tree_node_base*)@@GLIBCXX_3.4
+U std::__throw_logic_error(char const*)@@GLIBCXX_3.4
+U std::__throw_length_error(char const*)@@GLIBCXX_3.4
+U std::__throw_out_of_range(char const*)@@GLIBCXX_3.4
+U std::_Rb_tree_rebalance_for_erase(std::_Rb_tree_node_base*, std::_Rb_tree_node_base&)@@GLIBCXX_3.4
+U std::_Rb_tree_insert_and_rebalance(bool, std::_Rb_tree_node_base*, std::_Rb_tree_node_base*, std::_Rb_tree_node_base&)@@GLIBCXX_3.4
+U std::terminate()@@GLIBCXX_3.4
+U typeinfo for CThread
+U typeinfo for float@@CXXABI_1.3
+U typeinfo for unsigned int@@CXXABI_1.3
+U typeinfo for std::exception@@GLIBCXX_3.4
+U VTT for std::basic_ostringstream<wchar_t, std::char_traits<wchar_t>, std::allocator<wchar_t> >@@GLIBCXX_3.4
+U vtable for __cxxabiv1::__class_type_info@@CXXABI_1.3
+U vtable for __cxxabiv1::__si_class_type_info@@CXXABI_1.3
+U vtable for __cxxabiv1::__vmi_class_type_info@@CXXABI_1.3
+U vtable for std::basic_streambuf<wchar_t, std::char_traits<wchar_t> >@@GLIBCXX_3.4
+U vtable for std::basic_stringbuf<wchar_t, std::char_traits<wchar_t>, std::allocator<wchar_t> >@@GLIBCXX_3.4
+U vtable for std::basic_ostringstream<wchar_t, std::char_traits<wchar_t>, std::allocator<wchar_t> >@@GLIBCXX_3.4
+U vtable for std::basic_ios<wchar_t, std::char_traits<wchar_t> >@@GLIBCXX_3.4
+U vtable for std::exception@@GLIBCXX_3.4

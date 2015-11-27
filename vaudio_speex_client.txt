@@ -1,225 +1,225 @@
-         U abort@@GLIBC_2.0
-         U acosf@@GLIBC_2.0
-0000e050 T be_int
-0000e084 T be_short
-00024f08 A __bss_start
-00018514 T bw_lpc
-         U calloc@@GLIBC_2.0
-000241a0 D cdbk_nb
-000246a0 D cdbk_nb_high1
-000247e0 D cdbk_nb_high2
-00024420 D cdbk_nb_low1
-00024560 D cdbk_nb_low2
-         U chdir@@GLIBC_2.0
-00018bae T comb_filter
-         U CommandLine
-00018b8e T comp_filter_mem_init
-         U cosf@@GLIBC_2.0
-         U cos@@GLIBC_2.0
-00006550 T CreateInterface
-         U __cxa_call_unexpected@@CXXABI_1.3
-         w __cxa_finalize@@GLIBC_2.1.3
-         U dlclose@@GLIBC_2.0
-         U dlerror@@GLIBC_2.0
-         U dl_iterate_phdr@@GLIBC_2.2.4
-         U dlopen@@GLIBC_2.1
-         U dlsym@@GLIBC_2.0
-00024f08 A _edata
-00025460 A _end
-         U Error
-00023b00 D exc_10_16_table
-000239c0 D exc_10_32_table
-00023ba0 D exc_20_32_table
-00022f80 D exc_5_256_table
-00023480 D exc_5_64_table
-000235c0 D exc_8_128_table
-00023f80 D exc_gain_quant_scal1
-00023f60 D exc_gain_quant_scal3
-         U exit@@GLIBC_2.0
-         U expf@@GLIBC_2.0
-         U exp@@GLIBC_2.0
-00018555 T filter_mem2
-0001c5f0 T _fini
-00018676 T fir_mem2
-00018a19 T fir_mem_up
-         U floorf@@GLIBC_2.0
-         U floor@@GLIBC_2.0
-000158ef T forced_pitch_quant
-00015942 T forced_pitch_unquant
-         U fprintf@@GLIBC_2.0
-         U fputc@@GLIBC_2.0
-         U free@@GLIBC_2.0
-00024aa0 D gain_cdbk_lbr
-00024920 D gain_cdbk_nb
-         U getcwd@@GLIBC_2.0
-         w __gmon_start__
-         U g_pMemAlloc
-         U __gxx_personality_v0@@CXXABI_1.3
-00023e20 D hexc_10_32_table
-00022b80 D hexc_table
-00024b00 D high_lsp_cdbk
-00024d00 D high_lsp_cdbk2
-         U iconv_close@@GLIBC_2.1
-         U iconv@@GLIBC_2.1
-         U iconv_open@@GLIBC_2.1
-000185ef T iir_mem2
-00005cfc T _init
-         U isalnum@@GLIBC_2.0
-         U iscntrl@@GLIBC_2.0
-         U isprint@@GLIBC_2.0
-         U iswalnum@@GLIBC_2.0
-         U iswspace@@GLIBC_2.0
-         w _Jv_RegisterClasses
-0000e07c T le_int
-0000e09b T le_short
-         U log10@@GLIBC_2.0
-         U logf@@GLIBC_2.0
-         U LOG_GENERAL
-         U LoggingSystem_IsChannelEnabled
-         U LoggingSystem_Log
-         U log@@GLIBC_2.0
-0001672e T lpc_to_lsp
-00016a3c T lsp_enforce_margin
-00017011 T lsp_quant_high
-000171d4 T lsp_quant_lbr
-0001742f T lsp_quant_nb
-00016945 T lsp_to_lpc
-00016c40 T lsp_unquant_high
-00016d1d T lsp_unquant_lbr
-00016e4b T lsp_unquant_nb
-         U malloc@@GLIBC_2.0
-         U mbstowcs@@GLIBC_2.0
-         U memcmp@@GLIBC_2.0
-         U memcpy@@GLIBC_2.0
-         U memmove@@GLIBC_2.0
-         U memset@@GLIBC_2.0
-         U Msg
-0000e866 T nb_decode
-0000e250 T nb_decoder_ctl
-0000fe17 T nb_decoder_destroy
-0000fe20 T nb_decoder_init
-000105ee T nb_encode
-0000e42d T nb_encoder_ctl
-00010094 T nb_encoder_destroy
-000100b9 T nb_encoder_init
-000176de T noise_codebook_quant
-000176c8 T noise_codebook_unquant
-00016146 T open_loop_nbest_pitch
-00015c54 T pitch_gain_search_3tap
-00016433 T pitch_search_3tap
-000159a5 T pitch_unquant_3tap
-         U Plat_ExitProcess
-         U Plat_IsInDebugSession
-         U __pow_finite@@GLIBC_2.15
-         U pow@@GLIBC_2.0
-         U printf@@GLIBC_2.0
-0000e1f0 T print_vec
-         w pthread_cancel@@GLIBC_2.0
-         w pthread_mutex_lock@@GLIBC_2.0
-         w pthread_mutex_unlock@@GLIBC_2.0
-         w pthread_once@@GLIBC_2.0
-         U putchar@@GLIBC_2.0
-00018895 T qmf_decomp
-         U rand@@GLIBC_2.0
-         U realloc@@GLIBC_2.0
-000187c2 T residue_percep_zero
-00013004 T sb_decode
-00012460 T sb_decoder_ctl
-000139a8 T sb_decoder_destroy
-000139ca T sb_decoder_init
-00014105 T sb_encode
-000126d9 T sb_encoder_ctl
-00013b94 T sb_encoder_destroy
-00013bb6 T sb_encoder_init
-0000e1d5 T speex_alloc
-0000d410 T speex_bits_advance
-0000d7a3 T speex_bits_destroy
-0000d7bd T speex_bits_init
-0000d128 T speex_bits_init_buffer
-0000d589 T speex_bits_insert_terminator
-0000d48a T speex_bits_nbytes
-0000d49b T speex_bits_pack
-0000d3d1 T speex_bits_peek
-0000d353 T speex_bits_peek_unsigned
-0000d6fa T speex_bits_read_from
-0000d5e1 T speex_bits_read_whole_bytes
-0000d466 T speex_bits_remaining
-0000d173 T speex_bits_reset
-0000d1ae T speex_bits_rewind
-0000d31c T speex_bits_unpack_signed
-0000d286 T speex_bits_unpack_unsigned
-0000d1cb T speex_bits_write
-0000d205 T speex_bits_write_whole_bytes
-0000d85a T speex_decode
-0000d876 T speex_decoder_ctl
-0000d84c T speex_decoder_destroy
-0000d824 T speex_decoder_init
-000190ec T speex_default_user_handler
-0000d83e T speex_encode
-0000d868 T speex_encoder_ctl
-0000d830 T speex_encoder_destroy
-0000d818 T speex_encoder_init
-0000e18c T speex_error
-0000e1c3 T speex_free
-00019121 T speex_inband_handler
-000221c0 D speex_mode_list
-0000d884 T speex_mode_query
-0000e1ba T speex_move
-000221e0 D speex_nb_mode
-0000e0a4 T _speex_putc
-0000e0ad T speex_rand
-0000e0e2 T speex_rand_vec
-0000e1cc T speex_realloc
-000191a9 T speex_std_char_handler
-000192fa T speex_std_enh_request_handler
-0001924c T speex_std_high_mode_request_handler
-00019286 T speex_std_low_mode_request_handler
-000192c0 T speex_std_mode_request_handler
-000191d8 T speex_std_vbr_quality_request_handler
-00019212 T speex_std_vbr_request_handler
-00022260 D speex_uwb_mode
-0000e168 T speex_warning
-0000e13d T speex_warning_int
-00022220 D speex_wb_mode
-00024f2c B s_pInterfaceRegs
-00017893 T split_cb_search_shape_sign
-00017769 T split_cb_shape_sign_unquant
-00015838 T _spx_autocorr
-         U sqrtf@@GLIBC_2.0
-         U stderr@@GLIBC_2.0
-         U strcasecmp@@GLIBC_2.0
-         U strchr@@GLIBC_2.0
-         U strcmp@@GLIBC_2.0
-         U strcpy@@GLIBC_2.0
-         U strlen@@GLIBC_2.0
-         U strncat@@GLIBC_2.0
-         U strnlen@@GLIBC_2.0
-         U strstr@@GLIBC_2.0
-         U strtod@@GLIBC_2.0
-         U strtol@@GLIBC_2.0
-000186ef T syn_percep_zero
-         U tolower@@GLIBC_2.0
-         U toupper@@GLIBC_2.0
-         U towlower@@GLIBC_2.0
-         U towupper@@GLIBC_2.0
-0000da0e T vbr_analysis
-0000d970 T vbr_destroy
-00022a40 D vbr_hb_thresh
-0000d975 T vbr_init
-000228a0 D vbr_nb_thresh
-00022b20 D vbr_uhb_thresh
-00018e00 T vq_index
-00018e7b T vq_nbest
-00018f89 T vq_nbest_sign
-         U vsnprintf@@GLIBC_2.0
-         U vswprintf@@GLIBC_2.2
-         U Warning
-         U wcslen@@GLIBC_2.0
-         U wcsncat@@GLIBC_2.0
-         U wcsncpy@@GLIBC_2.0
-         U wcstombs@@GLIBC_2.0
-00015758 T wld
-         U WriteMiniDump
-         U DevWarning(char const*, ...)
-         U vtable for __cxxabiv1::__class_type_info@@CXXABI_1.3
-         U vtable for __cxxabiv1::__si_class_type_info@@CXXABI_1.3
+U abort@@GLIBC_2.0
+U acosf@@GLIBC_2.0
+T be_int
+T be_short
+A __bss_start
+T bw_lpc
+U calloc@@GLIBC_2.0
+D cdbk_nb
+D cdbk_nb_high1
+D cdbk_nb_high2
+D cdbk_nb_low1
+D cdbk_nb_low2
+U chdir@@GLIBC_2.0
+T comb_filter
+U CommandLine
+T comp_filter_mem_init
+U cosf@@GLIBC_2.0
+U cos@@GLIBC_2.0
+T CreateInterface
+U __cxa_call_unexpected@@CXXABI_1.3
+w __cxa_finalize@@GLIBC_2.1.3
+U dlclose@@GLIBC_2.0
+U dlerror@@GLIBC_2.0
+U dl_iterate_phdr@@GLIBC_2.2.4
+U dlopen@@GLIBC_2.1
+U dlsym@@GLIBC_2.0
+A _edata
+A _end
+U Error
+D exc_10_16_table
+D exc_10_32_table
+D exc_20_32_table
+D exc_5_256_table
+D exc_5_64_table
+D exc_8_128_table
+D exc_gain_quant_scal1
+D exc_gain_quant_scal3
+U exit@@GLIBC_2.0
+U expf@@GLIBC_2.0
+U exp@@GLIBC_2.0
+T filter_mem2
+T _fini
+T fir_mem2
+T fir_mem_up
+U floorf@@GLIBC_2.0
+U floor@@GLIBC_2.0
+T forced_pitch_quant
+T forced_pitch_unquant
+U fprintf@@GLIBC_2.0
+U fputc@@GLIBC_2.0
+U free@@GLIBC_2.0
+D gain_cdbk_lbr
+D gain_cdbk_nb
+U getcwd@@GLIBC_2.0
+w __gmon_start__
+U g_pMemAlloc
+U __gxx_personality_v0@@CXXABI_1.3
+D hexc_10_32_table
+D hexc_table
+D high_lsp_cdbk
+D high_lsp_cdbk2
+U iconv_close@@GLIBC_2.1
+U iconv@@GLIBC_2.1
+U iconv_open@@GLIBC_2.1
+T iir_mem2
+T _init
+U isalnum@@GLIBC_2.0
+U iscntrl@@GLIBC_2.0
+U isprint@@GLIBC_2.0
+U iswalnum@@GLIBC_2.0
+U iswspace@@GLIBC_2.0
+w _Jv_RegisterClasses
+T le_int
+T le_short
+U log10@@GLIBC_2.0
+U logf@@GLIBC_2.0
+U LOG_GENERAL
+U LoggingSystem_IsChannelEnabled
+U LoggingSystem_Log
+U log@@GLIBC_2.0
+T lpc_to_lsp
+T lsp_enforce_margin
+T lsp_quant_high
+T lsp_quant_lbr
+T lsp_quant_nb
+T lsp_to_lpc
+T lsp_unquant_high
+T lsp_unquant_lbr
+T lsp_unquant_nb
+U malloc@@GLIBC_2.0
+U mbstowcs@@GLIBC_2.0
+U memcmp@@GLIBC_2.0
+U memcpy@@GLIBC_2.0
+U memmove@@GLIBC_2.0
+U memset@@GLIBC_2.0
+U Msg
+T nb_decode
+T nb_decoder_ctl
+T nb_decoder_destroy
+T nb_decoder_init
+T nb_encode
+T nb_encoder_ctl
+T nb_encoder_destroy
+T nb_encoder_init
+T noise_codebook_quant
+T noise_codebook_unquant
+T open_loop_nbest_pitch
+T pitch_gain_search_3tap
+T pitch_search_3tap
+T pitch_unquant_3tap
+U Plat_ExitProcess
+U Plat_IsInDebugSession
+U __pow_finite@@GLIBC_2.15
+U pow@@GLIBC_2.0
+U printf@@GLIBC_2.0
+T print_vec
+w pthread_cancel@@GLIBC_2.0
+w pthread_mutex_lock@@GLIBC_2.0
+w pthread_mutex_unlock@@GLIBC_2.0
+w pthread_once@@GLIBC_2.0
+U putchar@@GLIBC_2.0
+T qmf_decomp
+U rand@@GLIBC_2.0
+U realloc@@GLIBC_2.0
+T residue_percep_zero
+T sb_decode
+T sb_decoder_ctl
+T sb_decoder_destroy
+T sb_decoder_init
+T sb_encode
+T sb_encoder_ctl
+T sb_encoder_destroy
+T sb_encoder_init
+T speex_alloc
+T speex_bits_advance
+T speex_bits_destroy
+T speex_bits_init
+T speex_bits_init_buffer
+T speex_bits_insert_terminator
+T speex_bits_nbytes
+T speex_bits_pack
+T speex_bits_peek
+T speex_bits_peek_unsigned
+T speex_bits_read_from
+T speex_bits_read_whole_bytes
+T speex_bits_remaining
+T speex_bits_reset
+T speex_bits_rewind
+T speex_bits_unpack_signed
+T speex_bits_unpack_unsigned
+T speex_bits_write
+T speex_bits_write_whole_bytes
+T speex_decode
+T speex_decoder_ctl
+T speex_decoder_destroy
+T speex_decoder_init
+T speex_default_user_handler
+T speex_encode
+T speex_encoder_ctl
+T speex_encoder_destroy
+T speex_encoder_init
+T speex_error
+T speex_free
+T speex_inband_handler
+D speex_mode_list
+T speex_mode_query
+T speex_move
+D speex_nb_mode
+T _speex_putc
+T speex_rand
+T speex_rand_vec
+T speex_realloc
+T speex_std_char_handler
+T speex_std_enh_request_handler
+T speex_std_high_mode_request_handler
+T speex_std_low_mode_request_handler
+T speex_std_mode_request_handler
+T speex_std_vbr_quality_request_handler
+T speex_std_vbr_request_handler
+D speex_uwb_mode
+T speex_warning
+T speex_warning_int
+D speex_wb_mode
+B s_pInterfaceRegs
+T split_cb_search_shape_sign
+T split_cb_shape_sign_unquant
+T _spx_autocorr
+U sqrtf@@GLIBC_2.0
+U stderr@@GLIBC_2.0
+U strcasecmp@@GLIBC_2.0
+U strchr@@GLIBC_2.0
+U strcmp@@GLIBC_2.0
+U strcpy@@GLIBC_2.0
+U strlen@@GLIBC_2.0
+U strncat@@GLIBC_2.0
+U strnlen@@GLIBC_2.0
+U strstr@@GLIBC_2.0
+U strtod@@GLIBC_2.0
+U strtol@@GLIBC_2.0
+T syn_percep_zero
+U tolower@@GLIBC_2.0
+U toupper@@GLIBC_2.0
+U towlower@@GLIBC_2.0
+U towupper@@GLIBC_2.0
+T vbr_analysis
+T vbr_destroy
+D vbr_hb_thresh
+T vbr_init
+D vbr_nb_thresh
+D vbr_uhb_thresh
+T vq_index
+T vq_nbest
+T vq_nbest_sign
+U vsnprintf@@GLIBC_2.0
+U vswprintf@@GLIBC_2.2
+U Warning
+U wcslen@@GLIBC_2.0
+U wcsncat@@GLIBC_2.0
+U wcsncpy@@GLIBC_2.0
+U wcstombs@@GLIBC_2.0
+T wld
+U WriteMiniDump
+U DevWarning(char const*, ...)
+U vtable for __cxxabiv1::__class_type_info@@CXXABI_1.3
+U vtable for __cxxabiv1::__si_class_type_info@@CXXABI_1.3

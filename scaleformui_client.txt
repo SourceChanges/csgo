@@ -1,337 +1,337 @@
-         U abort@@GLIBC_2.0
-         U access@@GLIBC_2.0
-         U __acosf_finite@@GLIBC_2.15
-         U acosf@@GLIBC_2.0
-         U __acos_finite@@GLIBC_2.15
-         U acos@@GLIBC_2.0
-003fc7b0 T adler32
-003fca40 T adler32_combine
-003fcb20 T adler32_combine64
-         U asinf@@GLIBC_2.0
-         U __asin_finite@@GLIBC_2.15
-         U asin@@GLIBC_2.0
-         U __atan2f_finite@@GLIBC_2.15
-         U atan2f@@GLIBC_2.0
-         U __atan2_finite@@GLIBC_2.15
-         U atan2@@GLIBC_2.0
-         U atan@@GLIBC_2.0
-005bfd70 A __bss_start
-         U cbrtf@@GLIBC_2.0
-         U ceilf@@GLIBC_2.0
-         U ceil@@GLIBC_2.0
-         U chdir@@GLIBC_2.0
-         U chmod@@GLIBC_2.0
-         U chown@@GLIBC_2.1
-         U closedir@@GLIBC_2.0
-         U CommandLine
-         U cos@@GLIBC_2.0
-003f3460 T crc32
-003f39b0 T crc32_combine
-003f39e0 T crc32_combine64
-000bea00 T CreateInterface
-         U __ctype_b_loc@@GLIBC_2.3
-         U __ctype_tolower_loc@@GLIBC_2.3
-         U __cxa_atexit@@GLIBC_2.1.3
-         U __cxa_call_unexpected@@CXXABI_1.3
-         w __cxa_finalize@@GLIBC_2.1.3
-         U __cxa_guard_abort@@CXXABI_1.3
-         U __cxa_guard_acquire@@CXXABI_1.3
-         U __cxa_guard_release@@CXXABI_1.3
-003f5e90 T deflate
-003f3ae0 T deflateBound
-003f3d30 T deflateCopy
-004e40c0 R deflate_copyright
-003f3c20 T deflateEnd
-003f4b00 T deflateInit_
-003f4850 T deflateInit2_
-003f6f40 T deflateParams
-003f3a40 T deflatePending
-003f4530 T deflatePrime
-003f46b0 T deflateReset
-003f45d0 T deflateResetKeep
-003f4280 T deflateSetDictionary
-003f3a10 T deflateSetHeader
-003f3a90 T deflateTune
-         U DevMsg
-         U dlclose@@GLIBC_2.0
-         U dlerror@@GLIBC_2.0
-         U dl_iterate_phdr@@GLIBC_2.2.4
-         U dlopen@@GLIBC_2.1
-         U dlsym@@GLIBC_2.0
-         U __dynamic_cast@@CXXABI_1.3
-005bfd70 A _edata
-0062f7a8 A _end
-         U __errno_location@@GLIBC_2.0
-         U Error
-         U exit@@GLIBC_2.0
-         U __expf_finite@@GLIBC_2.15
-         U __exp_finite@@GLIBC_2.15
-         U exp@@GLIBC_2.0
-         U fclose@@GLIBC_2.1
-         U fflush@@GLIBC_2.0
-004422e0 T _fini
-         U floorf@@GLIBC_2.0
-         U floor@@GLIBC_2.0
-         U fmod@@GLIBC_2.0
-         U fopen64@@GLIBC_2.1
-         U fopen@@GLIBC_2.1
-         U __fprintf_chk@@GLIBC_2.3.4
-         U fprintf@@GLIBC_2.0
-         U fputc@@GLIBC_2.0
-         U fread@@GLIBC_2.0
-         U free@@GLIBC_2.0
-         U freopen@@GLIBC_2.0
-         U frexp@@GLIBC_2.0
-         U fseek@@GLIBC_2.0
-         U ftell@@GLIBC_2.0
-         U fwrite@@GLIBC_2.0
-         U GetCPUInformation
-003f3450 T get_crc_table
-         U getcwd@@GLIBC_2.0
-         U getenv@@GLIBC_2.0
-         U gettimeofday@@GLIBC_2.0
-         U glBindTexture
-         U glBlendFunc
-         U glClear
-         U glClearColor
-         U glClearStencil
-         U glColorMask
-         U glDeleteTextures
-         U glDisable
-         U glDrawArrays
-         U glDrawElements
-         U glEnable
-         U glFlush
-         U glGenTextures
-         U glGetError
-         U glGetFloatv
-         U glGetIntegerv
-         U glGetString
-         U glGetTexLevelParameteriv
-         U glGetTexParameteriv
-         U glPixelStorei
-         U glReadPixels
-         U glScissor
-         U glStencilFunc
-         U glStencilMask
-         U glStencilOp
-         U glTexImage2D
-         U glTexParameteri
-         U glTexSubImage2D
-         U glViewport
-         U glXGetProcAddressARB
-         w __gmon_start__
-         U gmtime@@GLIBC_2.0
-         U g_pMemAlloc
-         U g_pThreadPool
-         U g_VProfCurrentProfile
-         U __gxx_personality_v0@@CXXABI_1.3
-         U iconv_close@@GLIBC_2.1
-         U iconv@@GLIBC_2.1
-         U iconv_open@@GLIBC_2.1
-003f76a0 T inflate
-003f72e0 T inflateCopy
-004e4cc0 R inflate_copyright
-003f7170 T inflateEnd
-003f71d0 T inflateGetHeader
-003f97c0 T inflateInit_
-003f96e0 T inflateInit2_
-003f7280 T inflateMark
-003f70f0 T inflatePrime
-003f9570 T inflateReset
-003f9630 T inflateReset2
-003f7050 T inflateResetKeep
-003f75c0 T inflateSetDictionary
-003f98a0 T inflateSync
-003f7210 T inflateSyncPoint
-003f7250 T inflateUndermine
-00088944 T _init
-         U isalnum@@GLIBC_2.0
-         U iscntrl@@GLIBC_2.0
-         U __isoc99_sscanf@@GLIBC_2.7
-         U isprint@@GLIBC_2.0
-         U isspace@@GLIBC_2.0
-         U iswalnum@@GLIBC_2.0
-         U iswspace@@GLIBC_2.0
-         w _Jv_RegisterClasses
-         U KeyValuesSystem
-         U lchown@@GLIBC_2.0
-         U link@@GLIBC_2.0
-         U localeconv@@GLIBC_2.2
-         U __log_finite@@GLIBC_2.15
-         U LOG_GENERAL
-         U LoggingSystem_IsChannelEnabled
-         U LoggingSystem_Log
-         U LoggingSystem_LogDirect
-         U LoggingSystem_RegisterLoggingChannel
-         U log@@GLIBC_2.0
-         U __longjmp_chk@@GLIBC_2.11
-         U __lxstat64@@GLIBC_2.2
-         U __lxstat@@GLIBC_2.0
-         U malloc@@GLIBC_2.0
-         U mbstowcs@@GLIBC_2.0
-         U MemAllocScratch
-         U memcmp@@GLIBC_2.0
-         U __memcpy_chk@@GLIBC_2.3.4
-         U memcpy@@GLIBC_2.0
-         U MemFreeScratch
-         U memmove@@GLIBC_2.0
-         U __memset_chk@@GLIBC_2.3.4
-         U memset@@GLIBC_2.0
-         U mkdir@@GLIBC_2.0
-         U mkfifo@@GLIBC_2.0
-         U modf@@GLIBC_2.0
-         U mount@@GLIBC_2.0
-         U Msg
-         U open64@@GLIBC_2.2
-         U opendir@@GLIBC_2.0
-         U open@@GLIBC_2.0
-         U Plat_ExitProcess
-         U Plat_IsInDebugSession
-         U __pow_finite@@GLIBC_2.15
-         U pow@@GLIBC_2.0
-         U __printf_chk@@GLIBC_2.3.4
-         U printf@@GLIBC_2.0
-         U pthread_attr_destroy@@GLIBC_2.0
-         U pthread_attr_init@@GLIBC_2.1
-         U pthread_attr_setdetachstate@@GLIBC_2.0
-         U pthread_attr_setschedparam@@GLIBC_2.0
-         U pthread_attr_setstacksize@@GLIBC_2.1
-         w pthread_cancel@@GLIBC_2.0
-         U pthread_cond_broadcast@@GLIBC_2.3.2
-         U pthread_cond_destroy@@GLIBC_2.3.2
-         U pthread_cond_init@@GLIBC_2.3.2
-         U pthread_cond_signal@@GLIBC_2.3.2
-         U pthread_cond_timedwait@@GLIBC_2.3.2
-         U pthread_cond_wait@@GLIBC_2.3.2
-         U pthread_create@@GLIBC_2.1
-         U pthread_exit@@GLIBC_2.0
-         U pthread_mutexattr_init@@GLIBC_2.0
-         U pthread_mutexattr_settype@@GLIBC_2.1
-         U pthread_mutex_destroy@@GLIBC_2.0
-         U pthread_mutex_init@@GLIBC_2.0
-         U pthread_mutex_lock@@GLIBC_2.0
-         U pthread_mutex_trylock@@GLIBC_2.0
-         U pthread_mutex_unlock@@GLIBC_2.0
-         w pthread_once@@GLIBC_2.0
-         U pthread_self@@GLIBC_2.0
-         U putchar@@GLIBC_2.0
-         U rand@@GLIBC_2.0
-         U RandomFloat
-         U RandomSeed
-         U readdir64@@GLIBC_2.2
-         U realpath@@GLIBC_2.3
-         U rename@@GLIBC_2.0
-         U rewind@@GLIBC_2.0
-         U rmdir@@GLIBC_2.0
-         U scandir@@GLIBC_2.0
-         U _setjmp@@GLIBC_2.0
-         U sincosf@@GLIBC_2.1
-         U sincos@@GLIBC_2.1
-         U sinf@@GLIBC_2.0
-         U sin@@GLIBC_2.0
-         U sleep@@GLIBC_2.0
-0060adf0 B s_pInterfaceRegs
-         U __sprintf_chk@@GLIBC_2.3.4
-         U sprintf@@GLIBC_2.0
-         U sqrtf@@GLIBC_2.0
-         U sqrt@@GLIBC_2.0
-         U sscanf@@GLIBC_2.0
-         U __stack_chk_fail@@GLIBC_2.4
-         U stderr@@GLIBC_2.0
-         U SteamAPI_GetHSteamPipe
-         U SteamAPI_GetHSteamUser
-         U SteamAPI_InitSafe
-         U SteamAPI_RegisterCallback
-         U SteamAPI_UnregisterCallback
-         U SteamClient
-         U strcasecmp@@GLIBC_2.0
-         U strcasestr@@GLIBC_2.1
-         U __strcat_chk@@GLIBC_2.3.4
-         U strcat@@GLIBC_2.0
-         U strchr@@GLIBC_2.0
-         U strcmp@@GLIBC_2.0
-         U __strcpy_chk@@GLIBC_2.3.4
-         U strcpy@@GLIBC_2.0
-         U strcspn@@GLIBC_2.0
-         U strdup@@GLIBC_2.0
-         U strlen@@GLIBC_2.0
-         U strncasecmp@@GLIBC_2.0
-         U strncat@@GLIBC_2.0
-         U strncmp@@GLIBC_2.0
-         U __strncpy_chk@@GLIBC_2.3.4
-         U strncpy@@GLIBC_2.0
-         U strnlen@@GLIBC_2.0
-         U strpbrk@@GLIBC_2.0
-         U strrchr@@GLIBC_2.0
-         U strspn@@GLIBC_2.0
-         U strstr@@GLIBC_2.0
-         U strtod@@GLIBC_2.0
-         U strtol@@GLIBC_2.0
-         U strtoll@@GLIBC_2.0
-         U strtoul@@GLIBC_2.0
-         U strtoull@@GLIBC_2.0
-         U swprintf@@GLIBC_2.2
-         U swscanf@@GLIBC_2.2
-         U symlink@@GLIBC_2.0
-         U tanf@@GLIBC_2.0
-         U tan@@GLIBC_2.0
-         U ThreadGetCurrentId
-         U ThreadInterlockedAssignIf64
-         U ThreadSleep
-         U tolower@@GLIBC_2.0
-         U toupper@@GLIBC_2.0
-         U towlower@@GLIBC_2.0
-         U towupper@@GLIBC_2.0
-         U trunc@@GLIBC_2.1
-         U unlink@@GLIBC_2.0
-         U usleep@@GLIBC_2.0
-         U utime@@GLIBC_2.0
-         U utimes@@GLIBC_2.0
-         U __vsnprintf_chk@@GLIBC_2.3.4
-         U vsnprintf@@GLIBC_2.0
-         U __vsprintf_chk@@GLIBC_2.3.4
-         U vswprintf@@GLIBC_2.2
-         U V_UnicodeToUTF8
-         U V_UTF8ToUnicode
-         U Warning
-         U wcscasecmp@@GLIBC_2.1
-         U wcschr@@GLIBC_2.0
-         U wcscmp@@GLIBC_2.0
-         U wcscoll@@GLIBC_2.0
-         U wcslen@@GLIBC_2.0
-         U wcsncat@@GLIBC_2.0
-         U wcsncpy@@GLIBC_2.0
-         U wcstof@@GLIBC_2.0
-         U wcstol@@GLIBC_2.0
-         U wcstombs@@GLIBC_2.0
-         U WriteMiniDump
-         U __xmknod@@GLIBC_2.0
-         U __xstat64@@GLIBC_2.2
-         U __xstat@@GLIBC_2.0
-         U DevWarning(char const*, ...)
-         U ConMsg(char const*, ...)
-         U DevMsg(char const*, ...)
-004e58e0 R z_errmsg
-003fc750 T zError
-003fc740 T zlibCompileFlags
-003fc730 T zlibVersion
-         U CVProfNode::EnterScope()
-         U CVProfNode::GetSubNode(char const*, int, char const*, int)
-         U CVProfNode::ExitScope()
-         U CThreadEvent::Set()
-         U CThreadEvent::CThreadEvent(bool)
-         U CThreadRWLock::UnlockWrite()
-         U CThreadRWLock::WaitForRead()
-         U CThreadRWLock::LockForWrite()
-         U IDirect3DDevice9::GetViewport(_D3DVIEWPORT9*)
-         U IDirect3DDevice9::SaveGLState()
-         U IDirect3DDevice9::RestoreGLState()
-         U CThreadSpinRWLock::SpinLockForRead()
-         U CThreadSpinRWLock::SpinLockForWrite()
-         U CThreadSyncObject::~CThreadSyncObject()
-         U CThreadFastMutex::Lock(unsigned int, unsigned int) volatile
-         U std::terminate()@@GLIBCXX_3.4
-         U vtable for __cxxabiv1::__class_type_info@@CXXABI_1.3
-         U vtable for __cxxabiv1::__si_class_type_info@@CXXABI_1.3
-         U vtable for __cxxabiv1::__vmi_class_type_info@@CXXABI_1.3
+U abort@@GLIBC_2.0
+U access@@GLIBC_2.0
+U __acosf_finite@@GLIBC_2.15
+U acosf@@GLIBC_2.0
+U __acos_finite@@GLIBC_2.15
+U acos@@GLIBC_2.0
+T adler32
+T adler32_combine
+T adler32_combine64
+U asinf@@GLIBC_2.0
+U __asin_finite@@GLIBC_2.15
+U asin@@GLIBC_2.0
+U __atan2f_finite@@GLIBC_2.15
+U atan2f@@GLIBC_2.0
+U __atan2_finite@@GLIBC_2.15
+U atan2@@GLIBC_2.0
+U atan@@GLIBC_2.0
+A __bss_start
+U cbrtf@@GLIBC_2.0
+U ceilf@@GLIBC_2.0
+U ceil@@GLIBC_2.0
+U chdir@@GLIBC_2.0
+U chmod@@GLIBC_2.0
+U chown@@GLIBC_2.1
+U closedir@@GLIBC_2.0
+U CommandLine
+U cos@@GLIBC_2.0
+T crc32
+T crc32_combine
+T crc32_combine64
+T CreateInterface
+U __ctype_b_loc@@GLIBC_2.3
+U __ctype_tolower_loc@@GLIBC_2.3
+U __cxa_atexit@@GLIBC_2.1.3
+U __cxa_call_unexpected@@CXXABI_1.3
+w __cxa_finalize@@GLIBC_2.1.3
+U __cxa_guard_abort@@CXXABI_1.3
+U __cxa_guard_acquire@@CXXABI_1.3
+U __cxa_guard_release@@CXXABI_1.3
+T deflate
+T deflateBound
+T deflateCopy
+R deflate_copyright
+T deflateEnd
+T deflateInit_
+T deflateInit2_
+T deflateParams
+T deflatePending
+T deflatePrime
+T deflateReset
+T deflateResetKeep
+T deflateSetDictionary
+T deflateSetHeader
+T deflateTune
+U DevMsg
+U dlclose@@GLIBC_2.0
+U dlerror@@GLIBC_2.0
+U dl_iterate_phdr@@GLIBC_2.2.4
+U dlopen@@GLIBC_2.1
+U dlsym@@GLIBC_2.0
+U __dynamic_cast@@CXXABI_1.3
+A _edata
+A _end
+U __errno_location@@GLIBC_2.0
+U Error
+U exit@@GLIBC_2.0
+U __expf_finite@@GLIBC_2.15
+U __exp_finite@@GLIBC_2.15
+U exp@@GLIBC_2.0
+U fclose@@GLIBC_2.1
+U fflush@@GLIBC_2.0
+T _fini
+U floorf@@GLIBC_2.0
+U floor@@GLIBC_2.0
+U fmod@@GLIBC_2.0
+U fopen64@@GLIBC_2.1
+U fopen@@GLIBC_2.1
+U __fprintf_chk@@GLIBC_2.3.4
+U fprintf@@GLIBC_2.0
+U fputc@@GLIBC_2.0
+U fread@@GLIBC_2.0
+U free@@GLIBC_2.0
+U freopen@@GLIBC_2.0
+U frexp@@GLIBC_2.0
+U fseek@@GLIBC_2.0
+U ftell@@GLIBC_2.0
+U fwrite@@GLIBC_2.0
+U GetCPUInformation
+T get_crc_table
+U getcwd@@GLIBC_2.0
+U getenv@@GLIBC_2.0
+U gettimeofday@@GLIBC_2.0
+U glBindTexture
+U glBlendFunc
+U glClear
+U glClearColor
+U glClearStencil
+U glColorMask
+U glDeleteTextures
+U glDisable
+U glDrawArrays
+U glDrawElements
+U glEnable
+U glFlush
+U glGenTextures
+U glGetError
+U glGetFloatv
+U glGetIntegerv
+U glGetString
+U glGetTexLevelParameteriv
+U glGetTexParameteriv
+U glPixelStorei
+U glReadPixels
+U glScissor
+U glStencilFunc
+U glStencilMask
+U glStencilOp
+U glTexImage2D
+U glTexParameteri
+U glTexSubImage2D
+U glViewport
+U glXGetProcAddressARB
+w __gmon_start__
+U gmtime@@GLIBC_2.0
+U g_pMemAlloc
+U g_pThreadPool
+U g_VProfCurrentProfile
+U __gxx_personality_v0@@CXXABI_1.3
+U iconv_close@@GLIBC_2.1
+U iconv@@GLIBC_2.1
+U iconv_open@@GLIBC_2.1
+T inflate
+T inflateCopy
+R inflate_copyright
+T inflateEnd
+T inflateGetHeader
+T inflateInit_
+T inflateInit2_
+T inflateMark
+T inflatePrime
+T inflateReset
+T inflateReset2
+T inflateResetKeep
+T inflateSetDictionary
+T inflateSync
+T inflateSyncPoint
+T inflateUndermine
+T _init
+U isalnum@@GLIBC_2.0
+U iscntrl@@GLIBC_2.0
+U __isoc99_sscanf@@GLIBC_2.7
+U isprint@@GLIBC_2.0
+U isspace@@GLIBC_2.0
+U iswalnum@@GLIBC_2.0
+U iswspace@@GLIBC_2.0
+w _Jv_RegisterClasses
+U KeyValuesSystem
+U lchown@@GLIBC_2.0
+U link@@GLIBC_2.0
+U localeconv@@GLIBC_2.2
+U __log_finite@@GLIBC_2.15
+U LOG_GENERAL
+U LoggingSystem_IsChannelEnabled
+U LoggingSystem_Log
+U LoggingSystem_LogDirect
+U LoggingSystem_RegisterLoggingChannel
+U log@@GLIBC_2.0
+U __longjmp_chk@@GLIBC_2.11
+U __lxstat64@@GLIBC_2.2
+U __lxstat@@GLIBC_2.0
+U malloc@@GLIBC_2.0
+U mbstowcs@@GLIBC_2.0
+U MemAllocScratch
+U memcmp@@GLIBC_2.0
+U __memcpy_chk@@GLIBC_2.3.4
+U memcpy@@GLIBC_2.0
+U MemFreeScratch
+U memmove@@GLIBC_2.0
+U __memset_chk@@GLIBC_2.3.4
+U memset@@GLIBC_2.0
+U mkdir@@GLIBC_2.0
+U mkfifo@@GLIBC_2.0
+U modf@@GLIBC_2.0
+U mount@@GLIBC_2.0
+U Msg
+U open64@@GLIBC_2.2
+U opendir@@GLIBC_2.0
+U open@@GLIBC_2.0
+U Plat_ExitProcess
+U Plat_IsInDebugSession
+U __pow_finite@@GLIBC_2.15
+U pow@@GLIBC_2.0
+U __printf_chk@@GLIBC_2.3.4
+U printf@@GLIBC_2.0
+U pthread_attr_destroy@@GLIBC_2.0
+U pthread_attr_init@@GLIBC_2.1
+U pthread_attr_setdetachstate@@GLIBC_2.0
+U pthread_attr_setschedparam@@GLIBC_2.0
+U pthread_attr_setstacksize@@GLIBC_2.1
+w pthread_cancel@@GLIBC_2.0
+U pthread_cond_broadcast@@GLIBC_2.3.2
+U pthread_cond_destroy@@GLIBC_2.3.2
+U pthread_cond_init@@GLIBC_2.3.2
+U pthread_cond_signal@@GLIBC_2.3.2
+U pthread_cond_timedwait@@GLIBC_2.3.2
+U pthread_cond_wait@@GLIBC_2.3.2
+U pthread_create@@GLIBC_2.1
+U pthread_exit@@GLIBC_2.0
+U pthread_mutexattr_init@@GLIBC_2.0
+U pthread_mutexattr_settype@@GLIBC_2.1
+U pthread_mutex_destroy@@GLIBC_2.0
+U pthread_mutex_init@@GLIBC_2.0
+U pthread_mutex_lock@@GLIBC_2.0
+U pthread_mutex_trylock@@GLIBC_2.0
+U pthread_mutex_unlock@@GLIBC_2.0
+w pthread_once@@GLIBC_2.0
+U pthread_self@@GLIBC_2.0
+U putchar@@GLIBC_2.0
+U rand@@GLIBC_2.0
+U RandomFloat
+U RandomSeed
+U readdir64@@GLIBC_2.2
+U realpath@@GLIBC_2.3
+U rename@@GLIBC_2.0
+U rewind@@GLIBC_2.0
+U rmdir@@GLIBC_2.0
+U scandir@@GLIBC_2.0
+U _setjmp@@GLIBC_2.0
+U sincosf@@GLIBC_2.1
+U sincos@@GLIBC_2.1
+U sinf@@GLIBC_2.0
+U sin@@GLIBC_2.0
+U sleep@@GLIBC_2.0
+B s_pInterfaceRegs
+U __sprintf_chk@@GLIBC_2.3.4
+U sprintf@@GLIBC_2.0
+U sqrtf@@GLIBC_2.0
+U sqrt@@GLIBC_2.0
+U sscanf@@GLIBC_2.0
+U __stack_chk_fail@@GLIBC_2.4
+U stderr@@GLIBC_2.0
+U SteamAPI_GetHSteamPipe
+U SteamAPI_GetHSteamUser
+U SteamAPI_InitSafe
+U SteamAPI_RegisterCallback
+U SteamAPI_UnregisterCallback
+U SteamClient
+U strcasecmp@@GLIBC_2.0
+U strcasestr@@GLIBC_2.1
+U __strcat_chk@@GLIBC_2.3.4
+U strcat@@GLIBC_2.0
+U strchr@@GLIBC_2.0
+U strcmp@@GLIBC_2.0
+U __strcpy_chk@@GLIBC_2.3.4
+U strcpy@@GLIBC_2.0
+U strcspn@@GLIBC_2.0
+U strdup@@GLIBC_2.0
+U strlen@@GLIBC_2.0
+U strncasecmp@@GLIBC_2.0
+U strncat@@GLIBC_2.0
+U strncmp@@GLIBC_2.0
+U __strncpy_chk@@GLIBC_2.3.4
+U strncpy@@GLIBC_2.0
+U strnlen@@GLIBC_2.0
+U strpbrk@@GLIBC_2.0
+U strrchr@@GLIBC_2.0
+U strspn@@GLIBC_2.0
+U strstr@@GLIBC_2.0
+U strtod@@GLIBC_2.0
+U strtol@@GLIBC_2.0
+U strtoll@@GLIBC_2.0
+U strtoul@@GLIBC_2.0
+U strtoull@@GLIBC_2.0
+U swprintf@@GLIBC_2.2
+U swscanf@@GLIBC_2.2
+U symlink@@GLIBC_2.0
+U tanf@@GLIBC_2.0
+U tan@@GLIBC_2.0
+U ThreadGetCurrentId
+U ThreadInterlockedAssignIf64
+U ThreadSleep
+U tolower@@GLIBC_2.0
+U toupper@@GLIBC_2.0
+U towlower@@GLIBC_2.0
+U towupper@@GLIBC_2.0
+U trunc@@GLIBC_2.1
+U unlink@@GLIBC_2.0
+U usleep@@GLIBC_2.0
+U utime@@GLIBC_2.0
+U utimes@@GLIBC_2.0
+U __vsnprintf_chk@@GLIBC_2.3.4
+U vsnprintf@@GLIBC_2.0
+U __vsprintf_chk@@GLIBC_2.3.4
+U vswprintf@@GLIBC_2.2
+U V_UnicodeToUTF8
+U V_UTF8ToUnicode
+U Warning
+U wcscasecmp@@GLIBC_2.1
+U wcschr@@GLIBC_2.0
+U wcscmp@@GLIBC_2.0
+U wcscoll@@GLIBC_2.0
+U wcslen@@GLIBC_2.0
+U wcsncat@@GLIBC_2.0
+U wcsncpy@@GLIBC_2.0
+U wcstof@@GLIBC_2.0
+U wcstol@@GLIBC_2.0
+U wcstombs@@GLIBC_2.0
+U WriteMiniDump
+U __xmknod@@GLIBC_2.0
+U __xstat64@@GLIBC_2.2
+U __xstat@@GLIBC_2.0
+U DevWarning(char const*, ...)
+U ConMsg(char const*, ...)
+U DevMsg(char const*, ...)
+R z_errmsg
+T zError
+T zlibCompileFlags
+T zlibVersion
+U CVProfNode::EnterScope()
+U CVProfNode::GetSubNode(char const*, int, char const*, int)
+U CVProfNode::ExitScope()
+U CThreadEvent::Set()
+U CThreadEvent::CThreadEvent(bool)
+U CThreadRWLock::UnlockWrite()
+U CThreadRWLock::WaitForRead()
+U CThreadRWLock::LockForWrite()
+U IDirect3DDevice9::GetViewport(_D3DVIEWPORT9*)
+U IDirect3DDevice9::SaveGLState()
+U IDirect3DDevice9::RestoreGLState()
+U CThreadSpinRWLock::SpinLockForRead()
+U CThreadSpinRWLock::SpinLockForWrite()
+U CThreadSyncObject::~CThreadSyncObject()
+U CThreadFastMutex::Lock(unsigned int, unsigned int) volatile
+U std::terminate()@@GLIBCXX_3.4
+U vtable for __cxxabiv1::__class_type_info@@CXXABI_1.3
+U vtable for __cxxabiv1::__si_class_type_info@@CXXABI_1.3
+U vtable for __cxxabiv1::__vmi_class_type_info@@CXXABI_1.3

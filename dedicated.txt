@@ -2092,6 +2092,7 @@ t CUtlVector<CCountedStringPoolBase<unsigned short>::hash_item_t, CUtlMemory<CCo
 t CUtlVector<CCountedStringPoolBase<unsigned short>::hash_item_t, CUtlMemory<CCountedStringPoolBase<unsigned short>::hash_item_t, int> >::~CUtlVector()
 t CUtlVector<IAppSystem*, CUtlMemory<IAppSystem*, int> >::InsertBefore(int, IAppSystem* const&)
 t CUtlVector<CPackedStore*, CUtlMemory<CPackedStore*, int> >::InsertBefore(int, CPackedStore* const&)
+t CUtlVector<CPackedStore*, CUtlMemory<CPackedStore*, int> >::ShiftElementsLeft(int, int)
 t CUtlVector<CPackedStore*, CUtlMemory<CPackedStore*, int> >::~CUtlVector()
 t CUtlVector<CPackedStore*, CUtlMemory<CPackedStore*, int> >::~CUtlVector()
 t CUtlVector<CFileHandleTimer*, CUtlMemory<CFileHandleTimer*, int> >::InsertBefore(int, CFileHandleTimer* const&)
@@ -3328,7 +3329,7 @@ U CThread::IsThreadRunning()
 U CThread::WaitForCreateComplete(CThreadEvent*)
 U CThread::Init()
 U CThread::Sleep(unsigned int)
-U CThread::Start(unsigned int, CThread::ThreadPriorityEnum_t)
+U CThread::Start(unsigned int, ThreadPriorityEnum_t)
 U CThread::OnExit()
 U CThread::CThread()
 U CThread::~CThread()
@@ -3522,6 +3523,7 @@ t KeyValues::GetFirstValue()
 t KeyValues::InternalWrite(IBaseFileSystem*, void*, CUtlBuffer*, void const*, int)
 t KeyValues::MergeBaseKeys(CUtlVector<KeyValues*, CUtlMemory<KeyValues*, int> >&)
 t KeyValues::ContainsSubKey(KeyValues*)
+t KeyValues::FindLastSubKey()
 t KeyValues::LoadFromBuffer(char const*, CUtlBuffer&, IBaseFileSystem*, char const*, bool (*)(char const*))
 t KeyValues::LoadFromBuffer(char const*, char const*, IBaseFileSystem*, char const*, bool (*)(char const*))
 t KeyValues::SetStringValue(char const*)
@@ -3551,6 +3553,8 @@ t KeyValues::GetSymbolForStringClassic(char const*, bool)
 t KeyValues::SetUseGrowableStringTable(bool)
 t KeyValues::GetStringForSymbolGrowable(int)
 t KeyValues::GetSymbolForStringGrowable(char const*, bool)
+t KeyValues::AddSubkeyUsingKnownLastChild(KeyValues*, KeyValues*)
+t KeyValues::CreateKeyUsingKnownLastChild(char const*, KeyValues*)
 t KeyValues::Dump(IKeyValuesDumpContext*, int)
 t KeyValues::Init()
 t KeyValues::Clear()
@@ -3712,8 +3716,6 @@ t VMatrix::operator*(VPlane const&) const
 t VMatrix::operator*(VMatrix const&) const
 t CCommand::FindArgInt(char const*, int) const
 t CCommand::FindArg(char const*) const
-t netadr_s::addr_htonl() const
-t netadr_s::addr_ntohl() const
 t netadr_s::CompareAdr(netadr_s const&, bool) const
 t netadr_s::IsLoopback() const
 t netadr_s::IsLocalhost() const
@@ -3721,11 +3723,13 @@ t netadr_s::IsReservedAdr() const
 t netadr_s::IsBaseAdrValid() const
 t netadr_s::CompareClassBAdr(netadr_s const&) const
 t netadr_s::CompareClassCAdr(netadr_s const&) const
-t netadr_s::GetIP() const
+t netadr_s::GetIPHostByteOrder() const
+t netadr_s::GetIPNetworkByteOrder() const
 t netadr_s::GetPort() const
 t netadr_s::GetType() const
 t netadr_s::IsValid() const
 t netadr_s::ToString(bool) const
+t netadr_s::ToString(char*, unsigned int, bool) const
 t netadr_s::ToSockadr(sockaddr*) const
 t netadr_s::operator<(netadr_s const&) const
 t ConVarRef::IsValid() const

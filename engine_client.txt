@@ -3300,6 +3300,7 @@ U Plat_MSTime
 U Plat_SetBenchmarkMode
 U Plat_SetWindowTitle
 U Plat_timegm
+U Plat_USTime
 T policy_cache_find_data
 T policy_cache_free
 T policy_cache_set
@@ -3407,6 +3408,7 @@ U recv@@GLIBC_2.0
 T register_ameth_gost
 T register_pmeth_gost
 U ReleaseThreadHandle
+U remove@@GLIBC_2.0
 U RemoveMemoryInfoCallback
 U rename@@GLIBC_2.0
 T ripemd160_block_asm_data_order
@@ -4027,6 +4029,7 @@ U SteamAPI_GetHSteamPipe
 U SteamAPI_GetHSteamUser
 U SteamAPI_InitSafe
 U SteamAPI_RegisterCallback
+U SteamAPI_RegisterCallResult
 U SteamAPI_RestartAppIfNecessary
 U SteamAPI_RunCallbacks
 U SteamAPI_SetBreakpadAppID
@@ -4034,6 +4037,7 @@ U SteamAPI_SetMiniDumpComment
 U SteamAPI_SetTryCatchCallbacks
 U SteamAPI_Shutdown
 U SteamAPI_UnregisterCallback
+U SteamAPI_UnregisterCallResult
 U SteamAPI_UseBreakpadCrashHandler
 U SteamAPI_WriteMiniDump
 U SteamClient
@@ -4099,6 +4103,7 @@ U ThreadInterlockedAssignIf64
 U ThreadJoin
 U ThreadNanoSleep
 U ThreadSetDebugName
+U ThreadSetPriority
 U ThreadSleep
 U time@@GLIBC_2.0
 U times@@GLIBC_2.0
@@ -4764,7 +4769,7 @@ U CThread::WaitForCreateComplete(CThreadEvent*)
 U CThread::Init()
 U CThread::Join(unsigned int)
 U CThread::Stop(int)
-U CThread::Start(unsigned int, CThread::ThreadPriorityEnum_t)
+U CThread::Start(unsigned int, ThreadPriorityEnum_t)
 U CThread::OnExit()
 U CThread::IsAlive()
 U CThread::SetName(char const*)

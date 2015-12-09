@@ -226,6 +226,7 @@ t _GLOBAL__sub_I__ZN23CSchemaClassBindingBase20sm_pClassBindingListE
 t _GLOBAL__sub_I__ZN24CMatchEventsSubscriptionC2Ev
 t _GLOBAL__sub_I__ZN30CMatchNetworkMsgControllerBaseC2Ev
 t _GLOBAL__sub_I__ZN7CServerC2Ev
+t _GLOBAL__sub_I__ZN8CSteamIDC2EPKc9EUniverse
 t _GLOBAL__sub_I__ZN9CBitWrite12StartWritingEPviii
 t _GLOBAL__sub_I__ZN9KeyValues22s_pfGetSymbolForStringE
 t _GLOBAL__sub_I__ZNK8netadr_s10CompareAdrERKS_b
@@ -785,6 +786,7 @@ t V_RandomString(int)
 t V_SetExtension(char*, char const*, int)
 t V_SplitString2(char const*, char const**, int, CUtlVector<char*, CUtlMemory<char*, int> >&)
 t V_SplitWString(wchar_t const*, wchar_t const*, CUtlVector<wchar_t*, CUtlMemory<wchar_t*, int> >&)
+t int V_sprintf_safe<64u>(char (&) [64u], char const*, ...)
 t V_StripLastDir(char*, int)
 t V_TokenWaiting(char const*)
 t V_vsnprintfRet(char*, int, char const*, char*, bool*)
@@ -1185,6 +1187,7 @@ b vec2_origin
 b vec2_origin
 b vec2_origin
 b vec2_origin
+b vec2_origin
 b vec4_origin
 b vec4_origin
 b vec4_origin
@@ -1218,6 +1221,7 @@ t read_sleb128(unsigned char const*, long*)
 t read_uleb128(unsigned char const*, unsigned long*)
 b s_DefaultQos
 b s_InviteInfo
+b vec2_invalid
 b vec2_invalid
 b vec2_invalid
 b vec2_invalid
@@ -1346,6 +1350,7 @@ b g_MatchEventsSubscription
 b mm_datacenter_query_delay
 b mm_dlc_debugprint_command
 b s_pConnectionRegistration
+b UNSPECIFIED_LOGGING_COLOR
 b UNSPECIFIED_LOGGING_COLOR
 b UNSPECIFIED_LOGGING_COLOR
 b UNSPECIFIED_LOGGING_COLOR
@@ -2249,6 +2254,10 @@ t CFmtStrN<256, false>::AppendFormat(char const*, ...)
 t CFmtStrN<256, false>::InitQuietTruncation()
 t CFmtStrN<256, false>::CFmtStrN(char const*, ...)
 t CFmtStrN<256, false>::CFmtStrN(char const*, ...)
+t CSteamID::SetFromString(char const*, EUniverse)
+t CSteamID::Render(unsigned long long)
+t CSteamID::CSteamID(char const*, EUniverse)
+t CSteamID::CSteamID(char const*, EUniverse)
 t CUtlHash<int, CKeyValuesGrowableStringTable::CLookupFunctor&, CKeyValuesGrowableStringTable::CLookupFunctor&>::CUtlHash(int, int, int, CKeyValuesGrowableStringTable::CLookupFunctor&, CKeyValuesGrowableStringTable::CLookupFunctor&)
 t CUtlHash<int, CKeyValuesGrowableStringTable::CLookupFunctor&, CKeyValuesGrowableStringTable::CLookupFunctor&>::CUtlHash(int, int, int, CKeyValuesGrowableStringTable::CLookupFunctor&, CKeyValuesGrowableStringTable::CLookupFunctor&)
 t netadr_s::SetFromSocket(int)
@@ -2427,6 +2436,7 @@ t KeyValues::GetFirstValue()
 t KeyValues::InternalWrite(IBaseFileSystem*, void*, CUtlBuffer*, void const*, int)
 t KeyValues::MergeBaseKeys(CUtlVector<KeyValues*, CUtlMemory<KeyValues*, int> >&)
 t KeyValues::ContainsSubKey(KeyValues*)
+t KeyValues::FindLastSubKey()
 t KeyValues::LoadFromBuffer(char const*, CUtlBuffer&, IBaseFileSystem*, char const*, bool (*)(char const*))
 t KeyValues::LoadFromBuffer(char const*, char const*, IBaseFileSystem*, char const*, bool (*)(char const*))
 t KeyValues::SetStringValue(char const*)
@@ -2456,6 +2466,8 @@ t KeyValues::GetSymbolForStringClassic(char const*, bool)
 t KeyValues::SetUseGrowableStringTable(bool)
 t KeyValues::GetStringForSymbolGrowable(int)
 t KeyValues::GetSymbolForStringGrowable(char const*, bool)
+t KeyValues::AddSubkeyUsingKnownLastChild(KeyValues*, KeyValues*)
+t KeyValues::CreateKeyUsingKnownLastChild(char const*, KeyValues*)
 t KeyValues::Dump(IKeyValuesDumpContext*, int)
 t KeyValues::Init()
 t KeyValues::Clear()
@@ -2576,8 +2588,8 @@ t VMatrix::operator*(VPlane const&) const
 t VMatrix::operator*(VMatrix const&) const
 t CCommand::FindArgInt(char const*, int) const
 t CCommand::FindArg(char const*) const
-t netadr_s::addr_htonl() const
-t netadr_s::addr_ntohl() const
+t CSteamID::BValidExternalSteamID() const
+t CSteamID::Render() const
 t netadr_s::CompareAdr(netadr_s const&, bool) const
 t netadr_s::IsLoopback() const
 t netadr_s::IsLocalhost() const
@@ -2585,11 +2597,13 @@ t netadr_s::IsReservedAdr() const
 t netadr_s::IsBaseAdrValid() const
 t netadr_s::CompareClassBAdr(netadr_s const&) const
 t netadr_s::CompareClassCAdr(netadr_s const&) const
-t netadr_s::GetIP() const
+t netadr_s::GetIPHostByteOrder() const
+t netadr_s::GetIPNetworkByteOrder() const
 t netadr_s::GetPort() const
 t netadr_s::GetType() const
 t netadr_s::IsValid() const
 t netadr_s::ToString(bool) const
+t netadr_s::ToString(char*, unsigned int, bool) const
 t netadr_s::ToSockadr(sockaddr*) const
 t netadr_s::operator<(netadr_s const&) const
 t ConVarRef::IsValid() const
@@ -2878,5 +2892,7 @@ b CFmtStrN<256, false>::CFmtStrN(char const*, ...)::scAsserted
 d ConVarRef::Init(char const*, bool)::bFirst
 b __gnu_cxx::__verbose_terminate_handler()::terminating
 b KeyValues::RecursiveSaveToFile(IBaseFileSystem*, void*, CUtlBuffer*, int, bool)::buf
+b CSteamID::Render() const::nBuf
+b CSteamID::Render() const::rgchBuf
 b netadr_s::ToString(bool) const::s
 b netadr_s::ToString(bool) const::slot

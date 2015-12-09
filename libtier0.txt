@@ -540,6 +540,7 @@ T Plat_SetWindowTitle
 T Plat_SimpleLog
 T Plat_timegm
 T Plat_timezone
+T Plat_USTime
 T Plat_VerifyHardwareKey
 T Plat_VerifyHardwareKeyDriver
 T Plat_VerifyHardwareKeyPrompt
@@ -1192,7 +1193,7 @@ T CThread::Init()
 T CThread::Join(unsigned int)
 T CThread::Stop(int)
 T CThread::Sleep(unsigned int)
-T CThread::Start(unsigned int, CThread::ThreadPriorityEnum_t)
+T CThread::Start(unsigned int, ThreadPriorityEnum_t)
 T CThread::Yield()
 T CThread::OnExit()
 T CThread::Resume()
@@ -1277,6 +1278,7 @@ t __cxxabiv1::__si_class_type_info::__do_dyncast(int, __cxxabiv1::__class_type_i
 t __cxxabiv1::__si_class_type_info::__do_find_public_src(int, void const*, __cxxabiv1::__class_type_info const*, void const*) const
 t CCommandLine::GetCmdLine() const
 t CCommandLine::GetParm(int) const
+t CCommandLine::HasParm(char const*) const
 t CCommandLine::FindParm(char const*) const
 t CCommandLine::CheckParm(char const*, char const**) const
 t CCommandLine::ParmCount() const
@@ -2006,7 +2008,6 @@ d vtable for std::bad_cast
 d vtable for std::bad_alloc
 d vtable for std::exception
 d vtable for std::type_info
-b Plat_MSTime::secbase
 b DoNewAssertDialog::autoMutex__
 b DoNewAssertDialog::pfnSDLShowMessageBox
 b DoNewAssertDialog::pfnSDLGetKeyboardFocus

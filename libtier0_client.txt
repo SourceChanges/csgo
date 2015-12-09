@@ -203,6 +203,7 @@ T Plat_SetWindowTitle
 T Plat_SimpleLog
 T Plat_timegm
 T Plat_timezone
+T Plat_USTime
 T Plat_VerifyHardwareKey
 T Plat_VerifyHardwareKeyDriver
 T Plat_VerifyHardwareKeyPrompt
@@ -426,7 +427,7 @@ T CThread::Init()
 T CThread::Join(unsigned int)
 T CThread::Stop(int)
 T CThread::Sleep(unsigned int)
-T CThread::Start(unsigned int, CThread::ThreadPriorityEnum_t)
+T CThread::Start(unsigned int, ThreadPriorityEnum_t)
 T CThread::Yield()
 T CThread::OnExit()
 T CThread::Resume()

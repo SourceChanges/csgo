@@ -7528,7 +7528,7 @@ t CBaseClient::CLCMsg_BaselineAck(CCLCMsg_BaselineAck const&)
 t CBaseClient::GetHltvReplayDelay()
 t CBaseClient::NETMsg_SignonState(CNETMsg_SignonState const&)
 t CBaseClient::ShouldSendMessages()
-t CBaseClient::ShouldSendMessages() [clone .part.89]
+t CBaseClient::ShouldSendMessages() [clone .part.91]
 t CBaseClient::UpdateUserSettings()
 t CBaseClient::CLCMsg_CmdKeyValues(CCLCMsg_CmdKeyValues const&)
 t CBaseClient::CLCMsg_FileCRCCheck(CCLCMsg_FileCRCCheck const&)
@@ -7709,7 +7709,7 @@ t CGameClient::CLCMsg_CmdKeyValues(CCLCMsg_CmdKeyValues const&)
 t CGameClient::CLCMsg_FileCRCCheck(CCLCMsg_FileCRCCheck const&)
 t CGameClient::CLCMsg_FileCRCCheck(CCLCMsg_FileCRCCheck const&) [clone .part.56]
 t CGameClient::ExecuteStringCommand(char const*)
-t CGameClient::ExecuteStringCommand(char const*) [clone .part.104]
+t CGameClient::ExecuteStringCommand(char const*) [clone .part.103]
 t CGameClient::PerformDisconnection(char const*)
 t CGameClient::StepHltvReplayStatus(int)
 t CGameClient::WriteViewAngleUpdate()
@@ -10158,7 +10158,7 @@ t CVEngineServer::EmitAmbientSound(int, Vector const&, char const*, float, sound
 t CVEngineServer::FadeClientVolume(edict_t const*, float, float, float, float)
 t CVEngineServer::ForceFlushEntity(int)
 t CVEngineServer::ForceModelBounds(char const*, Vector const&, Vector const&)
-t CVEngineServer::GetClientSteamID(edict_t*)
+t CVEngineServer::GetClientSteamID(edict_t const*)
 t CVEngineServer::GetGamestatsData()
 t CVEngineServer::GetLaunchOptions()
 t CVEngineServer::GetPlayerNetInfo(int)

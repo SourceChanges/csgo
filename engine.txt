@@ -6635,6 +6635,7 @@ t CUtlMemory<CHLTVServer*, int>::Grow(int)
 t CUtlMemory<CPhonemeTag*, int>::Grow(int)
 t CUtlMemory<CPhonemeTag*, int>::~CUtlMemory()
 t CUtlMemory<CPhonemeTag*, int>::~CUtlMemory()
+t CUtlMemory<INetMessage*, int>::Grow(int)
 t CUtlMemory<msurface2_t*, int>::Grow(int)
 t CUtlMemory<CPhysCollide*, int>::Grow(int)
 t CUtlMemory<ICollideable*, int>::Grow(int)
@@ -6697,7 +6698,6 @@ t CUtlMemory<void (*)(IConVar*, char const*, float), int>::~CUtlMemory()
 t CUtlMemory<studiohdr_t const*, int>::Grow(int)
 t CUtlMemory<RecvProp const*, int>::Grow(int)
 t CUtlMemory<SendProp const*, int>::Grow(int)
-t CUtlMemory<CGameClient::QueuedGameEvent_t*, int>::Grow(int)
 t CUtlMemory<CInitTracker::InitFunc*, int>::Grow(int)
 t CUtlMemory<CInitTracker::InitFunc*, int>::~CUtlMemory()
 t CUtlMemory<CInitTracker::InitFunc*, int>::~CUtlMemory()
@@ -7249,6 +7249,7 @@ t CUtlVector<CHLTVServer*, CUtlMemory<CHLTVServer*, int> >::InsertBefore(int, CH
 t CUtlVector<CPhonemeTag*, CUtlMemory<CPhonemeTag*, int> >::InsertBefore(int, CPhonemeTag* const&)
 t CUtlVector<CPhonemeTag*, CUtlMemory<CPhonemeTag*, int> >::~CUtlVector()
 t CUtlVector<CPhonemeTag*, CUtlMemory<CPhonemeTag*, int> >::~CUtlVector()
+t CUtlVector<INetMessage*, CUtlMemory<INetMessage*, int> >::InsertBefore(int, INetMessage* const&)
 t CUtlVector<msurface2_t*, CUtlMemory<msurface2_t*, int> >::InsertBefore(int, msurface2_t* const&)
 t CUtlVector<CPhysCollide*, CUtlMemory<CPhysCollide*, int> >::SetCount(int)
 t CUtlVector<CPhysCollide*, CUtlMemory<CPhysCollide*, int> >::~CUtlVector()
@@ -7343,7 +7344,6 @@ t CUtlVector<SendProp const*, CUtlMemory<SendProp const*, int> >::SetCount(int)
 t CUtlVector<SendProp const*, CUtlMemory<SendProp const*, int> >::CopyArray(SendProp const* const*, int)
 t CUtlVector<SendProp const*, CUtlMemory<SendProp const*, int> >::~CUtlVector()
 t CUtlVector<SendProp const*, CUtlMemory<SendProp const*, int> >::~CUtlVector()
-t CUtlVector<CGameClient::QueuedGameEvent_t*, CUtlMemory<CGameClient::QueuedGameEvent_t*, int> >::InsertBefore(int, CGameClient::QueuedGameEvent_t* const&)
 t CUtlVector<CInitTracker::InitFunc*, CUtlMemory<CInitTracker::InitFunc*, int> >::InsertBefore(int, CInitTracker::InitFunc* const&)
 t CUtlVector<CInitTracker::InitFunc*, CUtlMemory<CInitTracker::InitFunc*, int> >::~CUtlVector()
 t CUtlVector<CInitTracker::InitFunc*, CUtlMemory<CInitTracker::InitFunc*, int> >::~CUtlVector()
@@ -7697,9 +7697,6 @@ t CGameClient::ConnectionClosing(char const*)
 t CGameClient::ConnectionCrashed(char const*)
 t CGameClient::FillSoundsMessage(CSVCMsg_Sounds&, int)
 t CGameClient::GetPropCullClient()
-t CGameClient::QueuedGameEvent_t::~QueuedGameEvent_t()
-t CGameClient::QueuedGameEvent_t::~QueuedGameEvent_t()
-t CGameClient::QueuedGameEvent_t::~QueuedGameEvent_t()
 t CGameClient::SetupPrevPackInfo()
 t CGameClient::CanStartHltvReplay()
 t CGameClient::GetHltvReplayDelay()
@@ -30787,8 +30784,6 @@ t non-virtual thunk to CGameClient::StopHltvReplay()
 t non-virtual thunk to CGameClient::StartHltvReplay(HltvReplayParams_t const&)
 t non-virtual thunk to CGameClient::ConnectionClosing(char const*)
 t non-virtual thunk to CGameClient::ConnectionCrashed(char const*)
-t non-virtual thunk to CGameClient::QueuedGameEvent_t::~QueuedGameEvent_t()
-t non-virtual thunk to CGameClient::QueuedGameEvent_t::~QueuedGameEvent_t()
 t non-virtual thunk to CGameClient::CanStartHltvReplay()
 t non-virtual thunk to CGameClient::GetHltvReplayDelay()
 t non-virtual thunk to CGameClient::ExecuteStringCommand(char const*)
@@ -32414,7 +32409,6 @@ U typeinfo for unsigned int
 V typeinfo for __cxxabiv1::__forced_unwind
 V typeinfo for __cxxabiv1::__enum_type_info
 V typeinfo for __cxxabiv1::__foreign_exception
-r typeinfo for CGameClient::QueuedGameEvent_t
 r typeinfo for (anonymous namespace)::future_error_category
 r typeinfo for (anonymous namespace)::system_error_category
 r typeinfo for (anonymous namespace)::generic_error_category
@@ -33580,7 +33574,6 @@ r typeinfo name for IRegistry
 V typeinfo name for __cxxabiv1::__forced_unwind
 V typeinfo name for __cxxabiv1::__enum_type_info
 V typeinfo name for __cxxabiv1::__foreign_exception
-r typeinfo name for CGameClient::QueuedGameEvent_t
 r typeinfo name for (anonymous namespace)::future_error_category
 r typeinfo name for (anonymous namespace)::system_error_category
 r typeinfo name for (anonymous namespace)::generic_error_category
@@ -35037,7 +35030,6 @@ V vtable for __cxxabiv1::__foreign_exception
 U vtable for __cxxabiv1::__pointer_type_info
 U vtable for __cxxabiv1::__si_class_type_info
 U vtable for __cxxabiv1::__vmi_class_type_info
-r vtable for CGameClient::QueuedGameEvent_t
 r vtable for (anonymous namespace)::future_error_category
 r vtable for (anonymous namespace)::system_error_category
 r vtable for (anonymous namespace)::generic_error_category

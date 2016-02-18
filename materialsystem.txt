@@ -4173,6 +4173,7 @@ d VTFFileHeaderV7_3_t::m_DataMap
 t VTFFileHeaderX360_t::GetBaseMap()
 d VTFFileHeaderX360_t::m_DataMap
 t CDummyHardwareConfig::SetHDREnabled(bool)
+t CDummyHardwareConfig::SetCSMAccurateBlending(bool)
 t CDummyHardwareConfig::OverrideStreamOffsetSupport(bool, bool)
 t CDummyMaterialSystem::ReEnableRenderTargetAllocation_IRealizeIfICallThisAllTexturesWillBeUnloadedAndLoadTimeWillSufferHorribly()
 t CDummyMaterialSystem::BeginBatch(IMesh*)
@@ -6242,12 +6243,14 @@ t CDummyHardwareConfig::GetMinDXSupportLevel() const
 t CDummyHardwareConfig::GetNullTextureFormat() const
 t CDummyHardwareConfig::MaxHWMorphBatchCount() const
 t CDummyHardwareConfig::NeedsATICentroidHack() const
+t CDummyHardwareConfig::SupportsResolveDepth() const
 t CDummyHardwareConfig::SupportsStreamOffset() const
 t CDummyHardwareConfig::GetVertexSamplerCount() const
 t CDummyHardwareConfig::HasFastVertexTextures() const
 t CDummyHardwareConfig::HasSetDeviceGammaRamp() const
 t CDummyHardwareConfig::MaxTextureAspectRatio() const
 t CDummyHardwareConfig::PreferDynamicTextures() const
+t CDummyHardwareConfig::GetCSMAccurateBlending() const
 t CDummyHardwareConfig::GetLightMapScaleFactor() const
 t CDummyHardwareConfig::MaximumAnisotropicLevel() const
 t CDummyHardwareConfig::NumPixelShaderConstants() const
@@ -6269,6 +6272,7 @@ t CDummyHardwareConfig::SupportsShadowDepthTextures() const
 t CDummyHardwareConfig::GetMaxVertexTextureDimension() const
 t CDummyHardwareConfig::GetShadowSlopeScaleDepthBias() const
 t CDummyHardwareConfig::MaxVertexShaderBlendMatrices() const
+t CDummyHardwareConfig::HasFullResolutionDepthTexture() const
 t CDummyHardwareConfig::SupportsCascadedShadowMapping() const
 t CDummyHardwareConfig::SpecifiesFogColorInLinearSpace() const
 t CDummyHardwareConfig::NumBooleanVertexShaderConstants() const

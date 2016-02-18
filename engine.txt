@@ -116,7 +116,7 @@ r CSWTCH.206
 r CSWTCH.23
 r CSWTCH.258
 r CSWTCH.413
-r CSWTCH.592
+r CSWTCH.594
 r CSWTCH.619
 r CSWTCH.622
 r CSWTCH.842
@@ -329,6 +329,7 @@ b g_AreasNetworked
 b g_bAbortServerSet
 b g_bAllowThreadedSound
 b g_bBakedPropLightingNoSeparateHDR
+b g_bBakedPropLightingStreams3
 b g_bClearingClientState
 b g_bDedicatedServerBenchmarkMode
 b g_bDispOrthoRender
@@ -337,6 +338,7 @@ d g_bEnableMasterServerUpdater
 b g_bFlushMemoryOnNextServer
 b g_bHasIssuedMatSuppressOrDebug
 b g_bHasLightmapAlphaData
+b g_bHasLightmapAlphaData3
 b g_bHunkAllocLightmaps
 b g_bInErrorExit
 b g_bInSpew
@@ -545,10 +547,10 @@ t _GLOBAL__sub_I_qhAllocHook
 t _GLOBAL__sub_I_quakedef.cpp
 t _GLOBAL__sub_I_randomstream.cpp
 t _GLOBAL__sub_I_r_decal_overlap_count
+t _GLOBAL__sub_I_r_drawmodelstatsoverlay
 t _GLOBAL__sub_I_render_pch.cpp
 t _GLOBAL__sub_I_r_framecount
 t _GLOBAL__sub_I_r_hidepaintedsurfaces
-t _GLOBAL__sub_I_r_staticlight_streams
 t _GLOBAL__sub_I_r_staticpropinfo
 t _GLOBAL__sub_I_r_visocclusion
 t _GLOBAL__sub_I_s_bMathlibInitialized
@@ -1392,7 +1394,6 @@ b r_shadow_deferred
 b r_shadowrendertotexture
 b r_skybox_draw_last
 b r_slowpathwireframe
-b r_staticlight_streams
 b r_staticpropinfo
 b r_staticprop_lod
 b r_surfacevisframe
@@ -1546,6 +1547,7 @@ b sv_consistency
 b sv_debugmanualmode
 b sv_downloadurl
 b sv_dumpstringtables
+b sv_duplicate_playernames_ok
 b sv_enable_delta_packing
 b sv_hibernate_ms
 b sv_hibernate_ms_vgui
@@ -3050,7 +3052,7 @@ t CreatePlatformFilename(char const*, char*, int)
 t CreateSpatialPartition(Vector const&, Vector const&)
 t DeallocateLightingData(worldbrushdata_t*)
 t DevShotGenerator_Usage()
-t DispInfo_DrawPrimLists(IMatRenderContext*, bool)
+t DispInfo_DrawPrimLists(IMatRenderContext*, ERenderDepthMode_t)
 t ED_AllowImmediateReuse()
 t Engine_WorldLightAngle(dworldlight_t const*, Vector const&, Vector const&, Vector const&)
 t FindHLTVDataInSnapshot(CFrameSnapshot*, int)
@@ -3212,7 +3214,7 @@ t DisconnectTier3Libraries()
 t DispInfo_DrawDecalsGroup(IMatRenderContext*, int, int)
 t DispInfoRenderDebugModes()
 t DispInfo_RenderListDebug(IMatRenderContext*, msurface2_t**, int)
-t DispInfo_RenderListWorld(IMatRenderContext*, int, msurface2_t**, int, bool, unsigned long, bool)
+t DispInfo_RenderListWorld(IMatRenderContext*, int, msurface2_t**, int, bool, unsigned long, int)
 t EngineBitBufErrorHandler(BitBufErrorType, char const*)
 t FindNeighboringDispSurfs(CCoreDispInfo**, int)
 t GetCStringCharConversion()
@@ -3915,6 +3917,8 @@ b guard variable for CBaseServer::ReplyReservationRequest(ns_address const&, bf_
 b guard variable for CBaseServer::ProcessConnectionlessPacket(netpacket_s*)::s_bEnableLegacyPackets
 b guard variable for CHLTVServer::AddNewFrame(CClientFrame*)::tv_delay
 b guard variable for CEngineTrace::TraceRay(Ray_t const&, unsigned int, ITraceFilter*, CGameTrace*)::_counter
+b guard variable for CModelRender::StaticPropColorMeshCallback(void*, void const*, int, FSAsyncStatus_t)::r_staticlight_streams
+b guard variable for CModelRender::ValidateStaticPropColorData(unsigned short)::r_staticlight_streams
 b guard variable for (anonymous namespace)::get_locale_mutex()::locale_mutex
 b guard variable for (anonymous namespace)::get_locale_cache_mutex()::locale_cache_mutex
 b guard variable for (anonymous namespace)::__future_category_instance()::__fec
@@ -3922,6 +3926,8 @@ b guard variable for CSteam3Server::OnLogonSuccess(SteamServersConnected_t*)::s_
 b guard variable for CSteam3Server::NotifyClientConnect(CBaseClient*, unsigned int, ns_address const&, void const*, unsigned int)::s_pchTournamentServer
 b guard variable for CSteam3Server::Activate()::ipname_steam
 b guard variable for CSteam3Server::Activate()::ipname
+b guard variable for CColorMeshData::EstimatedSize(colormeshparams_t const&)::r_staticlight_streams
+b guard variable for CColorMeshData::CreateResource(colormeshparams_t const&)::r_staticlight_streams
 b guard variable for CNetSupportImpl::GetServerInfo(INetSupport::ServerInfo_t*)::s_bHideHostIP
 b guard variable for CNetSupportImpl::GetServerInfo(INetSupport::ServerInfo_t*)::s_netAdrLocalhost
 b guard variable for COcclusionSystem::IsOccluded(int, Vector const&, Vector const&)::mutex
@@ -3936,6 +3942,8 @@ b guard variable for CryptoPP::GetRecommendedParameters(CryptoPP::EcRecommendedP
 b guard variable for CryptoPP::GetRecommendedParameters(CryptoPP::EcRecommendedParameters<CryptoPP::EC2N> const*&, CryptoPP::EcRecommendedParameters<CryptoPP::EC2N> const*&)::rec
 b guard variable for CDemoFile::ReadCustomData(int*, unsigned char**)::s_TempMemoryBuffer
 b guard variable for CDispInfo::SetupDecalNodeIntersect(CVertIndex const&, int, CDispDecalBase*, ShadowInfo_t const*)::cache
+b guard variable for CModelInfo::UsesStaticLighting(model_t const*) const::r_staticlight_mode
+b guard variable for CModelInfo::UsesStaticLighting(model_t const*) const::r_staticlight_streams
 b guard variable for CHLTVServer::GetHltvRelayPassword() const::tv_relaypassword
 b guard variable for CSteam3Server::GetGSSteamID() const::s_LAN
 b guard variable for CBlackBoxRecord::operator char const*() const::buf
@@ -5244,7 +5252,7 @@ t vprof_cachemiss_on(CCommand const&)
 t vprof_record_start(CCommand const&)
 b actualLightingState
 t budget_toggle_group(CCommand const&)
-t BuildSpriteLoadName(char const*, char*, int, bool&, bool&) [clone .constprop.244]
+t BuildSpriteLoadName(char const*, char*, int, bool&, bool&) [clone .constprop.245]
 b cache_print_command
 t cache_print_summary(CCommand const&)
 t ComputeCenterMatrix(Vector const&, QAngle const&, Vector const&, Vector const&, matrix3x4_t&) [clone .constprop.48]
@@ -5507,6 +5515,7 @@ b host_timer_report_command
 b key_listboundkeys_command
 b logaddress_delall_command
 b mat_configcurrent_command
+b mat_resolveFullFrameDepth
 b mod_combiner_info_command
 b mod_dynamicunloadtextures
 b reset_gameconvars_command
@@ -5865,6 +5874,7 @@ b __g_CDedicatedServerAPI_singleton
 t __gxx_dependent_exception_cleanup(_Unwind_Reason_Code, _Unwind_Exception*)
 t Host_Changelevel_f_CompletionFunc(char const*, char (*) [64])
 b host_filtered_time_report_command
+t mat_resolveFullFrameDepth_changed(IConVar*, char const*, float)
 b s_nOcclusionTestsCollectionsToRun
 b sv_dump_entity_pack_stats_command
 t vprof_generate_report_budget_Impl()
@@ -8419,7 +8429,7 @@ t CMemoryStack::~CMemoryStack()
 t CMeshBuilder::~CMeshBuilder()
 t CMeshBuilder::~CMeshBuilder()
 t CModelLoader::Map_IsValid(char const*, bool)
-t CModelLoader::Map_IsValid(char const*, bool) [clone .part.33]
+t CModelLoader::Map_IsValid(char const*, bool) [clone .part.34]
 t CModelLoader::UnloadModel(model_t*)
 t CModelLoader::GetExtraData(model_t*)
 t CModelLoader::Map_LoadModel(model_t*)
@@ -9779,7 +9789,7 @@ t CMapLoadHelper::LoadLumpElement(int, int, void*)
 t CMapLoadHelper::FreeLightingLump()
 t CMapLoadHelper::UncompressedLumpSize()
 t CMapLoadHelper::Init(model_t*, char const*)
-t CMapLoadHelper::Init(model_t*, char const*) [clone .part.34]
+t CMapLoadHelper::Init(model_t*, char const*) [clone .part.35]
 t CMapLoadHelper::GetMap()
 t CMapLoadHelper::LumpBase()
 t CMapLoadHelper::LumpSize(int)
@@ -9865,6 +9875,7 @@ t CStaticPropMgr::TraceRayAgainstStaticProp(Ray_t const&, int, CGameTrace&)
 t CStaticPropMgr::DrawStaticProps_FastPipeline(IClientRenderable**, RenderableInstance_t const*, int, bool)
 t CStaticPropMgr::CreateVPhysicsRepresentations(IPhysicsEnvironment*, IVPhysicsKeyHandler*, void*)
 t CStaticPropMgr::RemoveAllShadowsFromStaticProp(IClientRenderable*)
+t CStaticPropMgr::DisableCSMRenderingForStaticProp(int)
 t CStaticPropMgr::GetLightCacheHandleForStaticProp(IHandleEntity*)
 t CStaticPropMgr::GetStaticPropMaterialColorAndLighting(CGameTrace*, int, Vector&, Vector&)
 t CStaticPropMgr::Init()
@@ -21894,9 +21905,9 @@ t unsigned int CUtlHashtable<CSteamID, SteamDatagramTransport::CSteamDatagramTra
 t unsigned int CUtlHashtable<int, CAsyncOcclusionQuery*, IdentityHashFunctor, DefaultEqualFunctor<int>, undefined_t>::DoLookup<int>(int, unsigned int, unsigned int*) const [clone .part.109]
 t unsigned int CUtlHashtable<unsigned int, SteamDatagramTransport::SharedClusterData::DataCenterPing, DefaultHashFunctor<unsigned int>, DefaultEqualFunctor<unsigned int>, undefined_t>::DoLookup<unsigned int>(unsigned int, unsigned int, unsigned int*) const [clone .part.198] [clone .constprop.289]
 t unsigned int CUtlHashtable<CUtlStableHashtable<model_t*, empty_t, CModelInfo::ModelFileHandleHash, CModelInfo::ModelFileHandleEq, short, void*>::IndirectIndex, empty_t, CUtlStableHashtable<model_t*, empty_t, CModelInfo::ModelFileHandleHash, CModelInfo::ModelFileHandleEq, short, void*>::HashProxy, CUtlStableHashtable<model_t*, empty_t, CModelInfo::ModelFileHandleHash, CModelInfo::ModelFileHandleEq, short, void*>::EqualProxy, void*>::DoLookup<void*>(void*, unsigned int, unsigned int*) const
-t unsigned int CUtlHashtable<IModelLoadCallback*, int, DefaultHashFunctor<IModelLoadCallback*>, DefaultEqualFunctor<IModelLoadCallback*>, undefined_t>::DoLookup<IModelLoadCallback*>(IModelLoadCallback*, unsigned int, unsigned int*) const [clone .part.225]
+t unsigned int CUtlHashtable<IModelLoadCallback*, int, DefaultHashFunctor<IModelLoadCallback*>, DefaultEqualFunctor<IModelLoadCallback*>, undefined_t>::DoLookup<IModelLoadCallback*>(IModelLoadCallback*, unsigned int, unsigned int*) const [clone .part.226]
 t unsigned int CUtlHashtable<qhFace*, int, DefaultHashFunctor<qhFace*>, DefaultEqualFunctor<qhFace*>, undefined_t>::DoLookup<qhFace*>(qhFace*, unsigned int, unsigned int*) const [clone .part.42] [clone .constprop.55]
-t unsigned int CUtlHashtable<model_t*, CModelLoader::CDynamicModelInfo, DefaultHashFunctor<model_t*>, DefaultEqualFunctor<model_t*>, undefined_t>::DoLookup<model_t*>(model_t*, unsigned int, unsigned int*) const [clone .part.149]
+t unsigned int CUtlHashtable<model_t*, CModelLoader::CDynamicModelInfo, DefaultHashFunctor<model_t*>, DefaultEqualFunctor<model_t*>, undefined_t>::DoLookup<model_t*>(model_t*, unsigned int, unsigned int*) const [clone .part.150]
 t CClockDriftMgr::GetCurrentClockDifference() const
 t CEngineBSPTree::LeafCount() const
 t CFrameSnapshot::GetMemSize() const
@@ -35961,6 +35972,8 @@ d CXboxSystem::GameHasSavegames()::s_bHasSavegames
 b CEngineTrace::TraceRay(Ray_t const&, unsigned int, ITraceFilter*, CGameTrace*)::_counter
 b CModelLoader::Map_IsValid(char const*, bool)::s_szBaseMapName
 b CModelLoader::UpdateDynamicModelLoadQueue()::s_LastDynamicLoadTime
+b CModelRender::StaticPropColorMeshCallback(void*, void const*, int, FSAsyncStatus_t)::r_staticlight_streams
+b CModelRender::ValidateStaticPropColorData(unsigned short)::r_staticlight_streams
 b (anonymous namespace)::get_global()::global
 b (anonymous namespace)::get_locale_mutex()::locale_mutex
 b (anonymous namespace)::get_locale_cache_mutex()::locale_cache_mutex
@@ -35972,6 +35985,8 @@ b CSteam3Server::NotifyClientConnect(CBaseClient*, unsigned int, ns_address cons
 b CSteam3Server::Activate()::ipname_steam
 b CSteam3Server::Activate()::ipname
 b CSteam3Server::RunFrame()::s_fLastRunCallback
+b CColorMeshData::EstimatedSize(colormeshparams_t const&)::r_staticlight_streams
+b CColorMeshData::CreateResource(colormeshparams_t const&)::r_staticlight_streams
 b CVEngineServer::ChangeLevel(char const*, char const*)::last_spawncount
 b CVEngineServer::ClientCommand(edict_t*, char const*, ...)::szOut
 b CNetSupportImpl::GetServerInfo(INetSupport::ServerInfo_t*)::s_bHideHostIP
@@ -36062,6 +36077,8 @@ b CSentence::GetBoundedSample(int, float)::nullend
 b CSentence::GetBoundedSample(int, float)::nullstart
 b __gnu_cxx::__verbose_terminate_handler()::terminating
 b KeyValues::RecursiveSaveToFile(IBaseFileSystem*, void*, CUtlBuffer*, int, bool)::buf
+b CModelInfo::UsesStaticLighting(model_t const*) const::r_staticlight_mode
+b CModelInfo::UsesStaticLighting(model_t const*) const::r_staticlight_streams
 d tokenset_t<SendPropType>::GetNameByToken(SendPropType) const::unknown
 d tokenset_t<int>::GetNameByToken(int) const::unknown
 b CHLTVServer::GetHltvRelayPassword() const::tv_relaypassword

@@ -637,7 +637,7 @@ b guard variable for CShaderAPIEmpty::GetAspectRatioInfo() const::dummy
 b guard variable for CShaderAPIEmpty::GetFlashlightState(VMatrix&) const::blah
 b guard variable for CShaderAPIEmpty::GetFlashlightStateEx(VMatrix&, ITexture**) const::blah
 b guard variable for CShaderAPIEmpty::GetToneMappingScaleLinear() const::dummy
-b guard variable for CShaderAPIEmpty::GetCascadedShadowMappingState(ITexture**) const::dummyState
+b guard variable for CShaderAPIEmpty::GetCascadedShadowMappingState(ITexture**, bool) const::dummyState
 b guard variable for CShaderDeviceEmpty::GetAspectRatioInfo() const::dummy
 b s_BreakSet
 b s_nCVarFlag
@@ -1063,6 +1063,7 @@ t CShaderAPIEmpty::GetMaxVerticesToRender(IMaterial*)
 t CShaderAPIEmpty::GetVertexModifyBuilder()
 t CShaderAPIEmpty::MarkUnusedVertexFields(unsigned int, int, bool*)
 t CShaderAPIEmpty::ReleaseThreadOwnership()
+t CShaderAPIEmpty::SetCSMAccurateBlending(bool)
 t CShaderAPIEmpty::SetPixelShaderConstant(int, float const*, int, bool)
 t CShaderAPIEmpty::UnlockDebugTextureList()
 t CShaderAPIEmpty::ClearBuffersObeyStencil(bool, bool)
@@ -1121,10 +1122,10 @@ t CShaderAPIEmpty::PurgeUnusedVertexAndPixelShaders()
 t CShaderAPIEmpty::SetStandardVertexShaderConstants(float)
 t CShaderAPIEmpty::EnableLinearColorSpaceFrameBuffer(bool)
 t CShaderAPIEmpty::PerformFullScreenStencilOperation()
+t CShaderAPIEmpty::SetDepthFeatheringShaderConstants(int, float)
 t CShaderAPIEmpty::ClearVertexAndPixelShaderRefCounts()
 t CShaderAPIEmpty::SetLinearToGammaConversionTextures(int, int)
 t CShaderAPIEmpty::OcclusionQuery_GetNumPixelsRendered(ShaderAPIOcclusionQuery_t__*, bool)
-t CShaderAPIEmpty::SetDepthFeatheringPixelShaderConstant(int, float)
 t CShaderAPIEmpty::SetVertexShaderModelViewProjAndModelView()
 t CShaderAPIEmpty::Bind(IMaterial*)
 t CShaderAPIEmpty::Draw(MaterialPrimitiveType_t, int, int)
@@ -1435,6 +1436,7 @@ t CShaderAPIEmpty::GetMinDXSupportLevel() const
 t CShaderAPIEmpty::GetNullTextureFormat() const
 t CShaderAPIEmpty::MaxHWMorphBatchCount() const
 t CShaderAPIEmpty::NeedsATICentroidHack() const
+t CShaderAPIEmpty::SupportsResolveDepth() const
 t CShaderAPIEmpty::SupportsStreamOffset() const
 t CShaderAPIEmpty::GetVertexSamplerCount() const
 t CShaderAPIEmpty::GetVertexTextureCount() const
@@ -1442,6 +1444,7 @@ t CShaderAPIEmpty::HasFastVertexTextures() const
 t CShaderAPIEmpty::HasSetDeviceGammaRamp() const
 t CShaderAPIEmpty::MaxTextureAspectRatio() const
 t CShaderAPIEmpty::PreferDynamicTextures() const
+t CShaderAPIEmpty::GetCSMAccurateBlending() const
 t CShaderAPIEmpty::GetLightMapScaleFactor() const
 t CShaderAPIEmpty::GetBackBufferDimensions(int&, int&) const
 t CShaderAPIEmpty::GetFlashlightShaderInfo(bool*, bool*) const
@@ -1483,8 +1486,9 @@ t CShaderAPIEmpty::GetShadowSlopeScaleDepthBias() const
 t CShaderAPIEmpty::GetTextureRenderingParameter(int) const
 t CShaderAPIEmpty::GetWorldSpaceCameraDirection(float*) const
 t CShaderAPIEmpty::MaxVertexShaderBlendMatrices() const
-t CShaderAPIEmpty::GetCascadedShadowMappingState(ITexture**) const
+t CShaderAPIEmpty::GetCascadedShadowMappingState(ITexture**, bool) const
 t CShaderAPIEmpty::GetFlashlightAmbientOcclusion() const
+t CShaderAPIEmpty::HasFullResolutionDepthTexture() const
 t CShaderAPIEmpty::SupportsCascadedShadowMapping() const
 t CShaderAPIEmpty::GammaToLinear_HardwareSpecific(float) const
 t CShaderAPIEmpty::LinearToGamma_HardwareSpecific(float) const
@@ -1585,6 +1589,7 @@ t non-virtual thunk to CEmptyMesh::Unlock(int, IndexDesc_t&)
 t non-virtual thunk to CEmptyMesh::GetMesh()
 t non-virtual thunk to CEmptyMesh::ModifyEnd(IndexDesc_t&)
 t non-virtual thunk to CShaderAPIEmpty::SetHDREnabled(bool)
+t non-virtual thunk to CShaderAPIEmpty::SetCSMAccurateBlending(bool)
 t non-virtual thunk to CShaderAPIEmpty::OverrideStreamOffsetSupport(bool, bool)
 t non-virtual thunk to CEmptyMesh::IndexCount() const
 t non-virtual thunk to CEmptyMesh::IndexFormat() const
@@ -1626,12 +1631,14 @@ t non-virtual thunk to CShaderAPIEmpty::GetMinDXSupportLevel() const
 t non-virtual thunk to CShaderAPIEmpty::GetNullTextureFormat() const
 t non-virtual thunk to CShaderAPIEmpty::MaxHWMorphBatchCount() const
 t non-virtual thunk to CShaderAPIEmpty::NeedsATICentroidHack() const
+t non-virtual thunk to CShaderAPIEmpty::SupportsResolveDepth() const
 t non-virtual thunk to CShaderAPIEmpty::SupportsStreamOffset() const
 t non-virtual thunk to CShaderAPIEmpty::GetVertexSamplerCount() const
 t non-virtual thunk to CShaderAPIEmpty::HasFastVertexTextures() const
 t non-virtual thunk to CShaderAPIEmpty::HasSetDeviceGammaRamp() const
 t non-virtual thunk to CShaderAPIEmpty::MaxTextureAspectRatio() const
 t non-virtual thunk to CShaderAPIEmpty::PreferDynamicTextures() const
+t non-virtual thunk to CShaderAPIEmpty::GetCSMAccurateBlending() const
 t non-virtual thunk to CShaderAPIEmpty::GetLightMapScaleFactor() const
 t non-virtual thunk to CShaderAPIEmpty::MaximumAnisotropicLevel() const
 t non-virtual thunk to CShaderAPIEmpty::NumPixelShaderConstants() const
@@ -1653,6 +1660,7 @@ t non-virtual thunk to CShaderAPIEmpty::SupportsShadowDepthTextures() const
 t non-virtual thunk to CShaderAPIEmpty::GetMaxVertexTextureDimension() const
 t non-virtual thunk to CShaderAPIEmpty::GetShadowSlopeScaleDepthBias() const
 t non-virtual thunk to CShaderAPIEmpty::MaxVertexShaderBlendMatrices() const
+t non-virtual thunk to CShaderAPIEmpty::HasFullResolutionDepthTexture() const
 t non-virtual thunk to CShaderAPIEmpty::SupportsCascadedShadowMapping() const
 t non-virtual thunk to CShaderAPIEmpty::SpecifiesFogColorInLinearSpace() const
 t non-virtual thunk to CShaderAPIEmpty::SuppressPixelShaderCentroidHackFixup() const
@@ -1795,5 +1803,5 @@ b CShaderAPIEmpty::GetAspectRatioInfo() const::dummy
 b CShaderAPIEmpty::GetFlashlightState(VMatrix&) const::blah
 b CShaderAPIEmpty::GetFlashlightStateEx(VMatrix&, ITexture**) const::blah
 b CShaderAPIEmpty::GetToneMappingScaleLinear() const::dummy
-b CShaderAPIEmpty::GetCascadedShadowMappingState(ITexture**) const::dummyState
+b CShaderAPIEmpty::GetCascadedShadowMappingState(ITexture**, bool) const::dummyState
 b CShaderDeviceEmpty::GetAspectRatioInfo() const::dummy

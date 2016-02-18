@@ -700,6 +700,8 @@ t datamap_t* DataMapInit<mstudiolinearbone_t>(mstudiolinearbone_t*)
 t datamap_t* DataMapInit<mstudiomodelgroup_t>(mstudiomodelgroup_t*)
 t datamap_t* DataMapInit<mstudio_frame_anim_t>(mstudio_frame_anim_t*)
 t datamap_t* DataMapInit<mstudioanimsections_t>(mstudioanimsections_t*)
+t datamap_t* DataMapInit<mstudioikconstraint_t>(mstudioikconstraint_t*)
+t datamap_t* DataMapInit<mstudioaimconstraint_t>(mstudioaimconstraint_t*)
 t datamap_t* DataMapInit<mstudioanim_valueptr_t>(mstudioanim_valueptr_t*)
 t datamap_t* DataMapInit<mstudioposeparamdesc_t>(mstudioposeparamdesc_t*)
 t datamap_t* DataMapInit<mstudioaxisinterpbone_t>(mstudioaxisinterpbone_t*)
@@ -709,11 +711,16 @@ t datamap_t* DataMapInit<mstudioflexcontroller_t>(mstudioflexcontroller_t*)
 t datamap_t* DataMapInit<mstudiolocalhierarchy_t>(mstudiolocalhierarchy_t*)
 t datamap_t* DataMapInit<mstudioquatinterpbone_t>(mstudioquatinterpbone_t*)
 t datamap_t* DataMapInit<mstudioquatinterpinfo_t>(mstudioquatinterpinfo_t*)
+t datamap_t* DataMapInit<mstudioconstraintslave_t>(mstudioconstraintslave_t*)
 t datamap_t* DataMapInit<mstudio_meshvertexdata_t>(mstudio_meshvertexdata_t*)
+t datamap_t* DataMapInit<mstudiopointconstraint_t>(mstudiopointconstraint_t*)
 t datamap_t* DataMapInit<mstudiotwistbonetarget_t>(mstudiotwistbonetarget_t*)
 t datamap_t* DataMapInit<mstudioactivitymodifier_t>(mstudioactivitymodifier_t*)
+t datamap_t* DataMapInit<mstudioconstrainttarget_t>(mstudioconstrainttarget_t*)
 t datamap_t* DataMapInit<mstudioflexcontrollerui_t>(mstudioflexcontrollerui_t*)
 t datamap_t* DataMapInit<mstudio_modelvertexdata_t>(mstudio_modelvertexdata_t*)
+t datamap_t* DataMapInit<mstudioorientconstraint_t>(mstudioorientconstraint_t*)
+t datamap_t* DataMapInit<mstudioparentconstraint_t>(mstudioparentconstraint_t*)
 t datamap_t* DataMapInit<mstudiosrcbonetransform_t>(mstudiosrcbonetransform_t*)
 t datamap_t* DataMapInit<mstudiovertanim_wrinkle_t>(mstudiovertanim_wrinkle_t*)
 t datamap_t* DataMapInit<mstudiocompressedikerror_t>(mstudiocompressedikerror_t*)
@@ -1201,6 +1208,8 @@ b guard variable for datamap_t* DataMapInit<mstudiolinearbone_t>(mstudiolinearbo
 b guard variable for datamap_t* DataMapInit<mstudiomodelgroup_t>(mstudiomodelgroup_t*)::nameHolder
 b guard variable for datamap_t* DataMapInit<mstudio_frame_anim_t>(mstudio_frame_anim_t*)::nameHolder
 b guard variable for datamap_t* DataMapInit<mstudioanimsections_t>(mstudioanimsections_t*)::nameHolder
+b guard variable for datamap_t* DataMapInit<mstudioikconstraint_t>(mstudioikconstraint_t*)::nameHolder
+b guard variable for datamap_t* DataMapInit<mstudioaimconstraint_t>(mstudioaimconstraint_t*)::nameHolder
 b guard variable for datamap_t* DataMapInit<mstudioanim_valueptr_t>(mstudioanim_valueptr_t*)::nameHolder
 b guard variable for datamap_t* DataMapInit<mstudioposeparamdesc_t>(mstudioposeparamdesc_t*)::nameHolder
 b guard variable for datamap_t* DataMapInit<mstudioaxisinterpbone_t>(mstudioaxisinterpbone_t*)::nameHolder
@@ -1210,11 +1219,16 @@ b guard variable for datamap_t* DataMapInit<mstudioflexcontroller_t>(mstudioflex
 b guard variable for datamap_t* DataMapInit<mstudiolocalhierarchy_t>(mstudiolocalhierarchy_t*)::nameHolder
 b guard variable for datamap_t* DataMapInit<mstudioquatinterpbone_t>(mstudioquatinterpbone_t*)::nameHolder
 b guard variable for datamap_t* DataMapInit<mstudioquatinterpinfo_t>(mstudioquatinterpinfo_t*)::nameHolder
+b guard variable for datamap_t* DataMapInit<mstudioconstraintslave_t>(mstudioconstraintslave_t*)::nameHolder
 b guard variable for datamap_t* DataMapInit<mstudio_meshvertexdata_t>(mstudio_meshvertexdata_t*)::nameHolder
+b guard variable for datamap_t* DataMapInit<mstudiopointconstraint_t>(mstudiopointconstraint_t*)::nameHolder
 b guard variable for datamap_t* DataMapInit<mstudiotwistbonetarget_t>(mstudiotwistbonetarget_t*)::nameHolder
 b guard variable for datamap_t* DataMapInit<mstudioactivitymodifier_t>(mstudioactivitymodifier_t*)::nameHolder
+b guard variable for datamap_t* DataMapInit<mstudioconstrainttarget_t>(mstudioconstrainttarget_t*)::nameHolder
 b guard variable for datamap_t* DataMapInit<mstudioflexcontrollerui_t>(mstudioflexcontrollerui_t*)::nameHolder
 b guard variable for datamap_t* DataMapInit<mstudio_modelvertexdata_t>(mstudio_modelvertexdata_t*)::nameHolder
+b guard variable for datamap_t* DataMapInit<mstudioorientconstraint_t>(mstudioorientconstraint_t*)::nameHolder
+b guard variable for datamap_t* DataMapInit<mstudioparentconstraint_t>(mstudioparentconstraint_t*)::nameHolder
 b guard variable for datamap_t* DataMapInit<mstudiosrcbonetransform_t>(mstudiosrcbonetransform_t*)::nameHolder
 b guard variable for datamap_t* DataMapInit<mstudiovertanim_wrinkle_t>(mstudiovertanim_wrinkle_t*)::nameHolder
 b guard variable for datamap_t* DataMapInit<mstudiocompressedikerror_t>(mstudiocompressedikerror_t*)::nameHolder
@@ -2554,6 +2568,8 @@ t CUtlCStringConversion::CUtlCStringConversion(char, char const*, int, CUtlCharC
 t CUtlCStringConversion::CUtlCStringConversion(char, char const*, int, CUtlCharConversion::ConversionArray_t*)
 t mstudioanimsections_t::GetBaseMap()
 d mstudioanimsections_t::m_DataMap
+t mstudioikconstraint_t::GetBaseMap()
+d mstudioikconstraint_t::m_DataMap
 t CBaseResourcePrecacher::RegisterAll()
 b CBaseResourcePrecacher::sm_pFirst
 t CCleanupUtlSymbolTable::~CCleanupUtlSymbolTable()
@@ -2576,6 +2592,8 @@ t CResourceAccessControl::CResourceAccessControl()
 t CResourceAccessControl::CResourceAccessControl()
 t CResourceAccessControl::~CResourceAccessControl()
 t CResourceAccessControl::~CResourceAccessControl()
+t mstudioaimconstraint_t::GetBaseMap()
+d mstudioaimconstraint_t::m_DataMap
 t mstudioanim_valueptr_t::GetBaseMap()
 d mstudioanim_valueptr_t::m_DataMap
 t mstudioposeparamdesc_t::GetBaseMap()
@@ -2611,8 +2629,12 @@ t mstudioquatinterpbone_t::GetBaseMap()
 d mstudioquatinterpbone_t::m_DataMap
 t mstudioquatinterpinfo_t::GetBaseMap()
 d mstudioquatinterpinfo_t::m_DataMap
+t mstudioconstraintslave_t::GetBaseMap()
+d mstudioconstraintslave_t::m_DataMap
 t mstudio_meshvertexdata_t::GetBaseMap()
 d mstudio_meshvertexdata_t::m_DataMap
+t mstudiopointconstraint_t::GetBaseMap()
+d mstudiopointconstraint_t::m_DataMap
 t mstudiotwistbonetarget_t::GetBaseMap()
 d mstudiotwistbonetarget_t::m_DataMap
 b phyheader_t_DataDescInit::g_DataMapHolder
@@ -2625,10 +2647,16 @@ t CDataCacheSectionFastFind::~CDataCacheSectionFastFind()
 t CDataCacheSectionFastFind::~CDataCacheSectionFastFind()
 t mstudioactivitymodifier_t::GetBaseMap()
 d mstudioactivitymodifier_t::m_DataMap
+t mstudioconstrainttarget_t::GetBaseMap()
+d mstudioconstrainttarget_t::m_DataMap
 t mstudioflexcontrollerui_t::GetBaseMap()
 d mstudioflexcontrollerui_t::m_DataMap
 t mstudio_modelvertexdata_t::GetBaseMap()
 d mstudio_modelvertexdata_t::m_DataMap
+t mstudioorientconstraint_t::GetBaseMap()
+d mstudioorientconstraint_t::m_DataMap
+t mstudioparentconstraint_t::GetBaseMap()
+d mstudioparentconstraint_t::m_DataMap
 t mstudiosrcbonetransform_t::GetBaseMap()
 d mstudiosrcbonetransform_t::m_DataMap
 t mstudiovertanim_wrinkle_t::GetBaseMap()
@@ -2684,6 +2712,8 @@ b mstudiolinearbone_t_DataDescInit::g_DataMapHolder
 b mstudiomodelgroup_t_DataDescInit::g_DataMapHolder
 b mstudio_frame_anim_t_DataDescInit::g_DataMapHolder
 b mstudioanimsections_t_DataDescInit::g_DataMapHolder
+b mstudioikconstraint_t_DataDescInit::g_DataMapHolder
+b mstudioaimconstraint_t_DataDescInit::g_DataMapHolder
 b mstudioanim_valueptr_t_DataDescInit::g_DataMapHolder
 b mstudioposeparamdesc_t_DataDescInit::g_DataMapHolder
 b mstudioaxisinterpbone_t_DataDescInit::g_DataMapHolder
@@ -2693,11 +2723,16 @@ b mstudioflexcontroller_t_DataDescInit::g_DataMapHolder
 b mstudiolocalhierarchy_t_DataDescInit::g_DataMapHolder
 b mstudioquatinterpbone_t_DataDescInit::g_DataMapHolder
 b mstudioquatinterpinfo_t_DataDescInit::g_DataMapHolder
+b mstudioconstraintslave_t_DataDescInit::g_DataMapHolder
 b mstudio_meshvertexdata_t_DataDescInit::g_DataMapHolder
+b mstudiopointconstraint_t_DataDescInit::g_DataMapHolder
 b mstudiotwistbonetarget_t_DataDescInit::g_DataMapHolder
 b mstudioactivitymodifier_t_DataDescInit::g_DataMapHolder
+b mstudioconstrainttarget_t_DataDescInit::g_DataMapHolder
 b mstudioflexcontrollerui_t_DataDescInit::g_DataMapHolder
 b mstudio_modelvertexdata_t_DataDescInit::g_DataMapHolder
+b mstudioorientconstraint_t_DataDescInit::g_DataMapHolder
+b mstudioparentconstraint_t_DataDescInit::g_DataMapHolder
 b mstudiosrcbonetransform_t_DataDescInit::g_DataMapHolder
 b mstudiovertanim_wrinkle_t_DataDescInit::g_DataMapHolder
 b mstudiocompressedikerror_t_DataDescInit::g_DataMapHolder
@@ -4017,6 +4052,10 @@ b datamap_t* DataMapInit<mstudio_frame_anim_t>(mstudio_frame_anim_t*)::nameHolde
 d datamap_t* DataMapInit<mstudio_frame_anim_t>(mstudio_frame_anim_t*)::dataDesc
 b datamap_t* DataMapInit<mstudioanimsections_t>(mstudioanimsections_t*)::nameHolder
 d datamap_t* DataMapInit<mstudioanimsections_t>(mstudioanimsections_t*)::dataDesc
+b datamap_t* DataMapInit<mstudioikconstraint_t>(mstudioikconstraint_t*)::nameHolder
+b datamap_t* DataMapInit<mstudioikconstraint_t>(mstudioikconstraint_t*)::dataDesc
+b datamap_t* DataMapInit<mstudioaimconstraint_t>(mstudioaimconstraint_t*)::nameHolder
+d datamap_t* DataMapInit<mstudioaimconstraint_t>(mstudioaimconstraint_t*)::dataDesc
 b datamap_t* DataMapInit<mstudioanim_valueptr_t>(mstudioanim_valueptr_t*)::nameHolder
 d datamap_t* DataMapInit<mstudioanim_valueptr_t>(mstudioanim_valueptr_t*)::dataDesc
 b datamap_t* DataMapInit<mstudioposeparamdesc_t>(mstudioposeparamdesc_t*)::nameHolder
@@ -4035,16 +4074,26 @@ b datamap_t* DataMapInit<mstudioquatinterpbone_t>(mstudioquatinterpbone_t*)::nam
 d datamap_t* DataMapInit<mstudioquatinterpbone_t>(mstudioquatinterpbone_t*)::dataDesc
 b datamap_t* DataMapInit<mstudioquatinterpinfo_t>(mstudioquatinterpinfo_t*)::nameHolder
 d datamap_t* DataMapInit<mstudioquatinterpinfo_t>(mstudioquatinterpinfo_t*)::dataDesc
+b datamap_t* DataMapInit<mstudioconstraintslave_t>(mstudioconstraintslave_t*)::nameHolder
+d datamap_t* DataMapInit<mstudioconstraintslave_t>(mstudioconstraintslave_t*)::dataDesc
 b datamap_t* DataMapInit<mstudio_meshvertexdata_t>(mstudio_meshvertexdata_t*)::nameHolder
 d datamap_t* DataMapInit<mstudio_meshvertexdata_t>(mstudio_meshvertexdata_t*)::dataDesc
+b datamap_t* DataMapInit<mstudiopointconstraint_t>(mstudiopointconstraint_t*)::nameHolder
+d datamap_t* DataMapInit<mstudiopointconstraint_t>(mstudiopointconstraint_t*)::dataDesc
 b datamap_t* DataMapInit<mstudiotwistbonetarget_t>(mstudiotwistbonetarget_t*)::nameHolder
 d datamap_t* DataMapInit<mstudiotwistbonetarget_t>(mstudiotwistbonetarget_t*)::dataDesc
 b datamap_t* DataMapInit<mstudioactivitymodifier_t>(mstudioactivitymodifier_t*)::nameHolder
 d datamap_t* DataMapInit<mstudioactivitymodifier_t>(mstudioactivitymodifier_t*)::dataDesc
+b datamap_t* DataMapInit<mstudioconstrainttarget_t>(mstudioconstrainttarget_t*)::nameHolder
+d datamap_t* DataMapInit<mstudioconstrainttarget_t>(mstudioconstrainttarget_t*)::dataDesc
 b datamap_t* DataMapInit<mstudioflexcontrollerui_t>(mstudioflexcontrollerui_t*)::nameHolder
 d datamap_t* DataMapInit<mstudioflexcontrollerui_t>(mstudioflexcontrollerui_t*)::dataDesc
 b datamap_t* DataMapInit<mstudio_modelvertexdata_t>(mstudio_modelvertexdata_t*)::nameHolder
 d datamap_t* DataMapInit<mstudio_modelvertexdata_t>(mstudio_modelvertexdata_t*)::dataDesc
+b datamap_t* DataMapInit<mstudioorientconstraint_t>(mstudioorientconstraint_t*)::nameHolder
+d datamap_t* DataMapInit<mstudioorientconstraint_t>(mstudioorientconstraint_t*)::dataDesc
+b datamap_t* DataMapInit<mstudioparentconstraint_t>(mstudioparentconstraint_t*)::nameHolder
+d datamap_t* DataMapInit<mstudioparentconstraint_t>(mstudioparentconstraint_t*)::dataDesc
 b datamap_t* DataMapInit<mstudiosrcbonetransform_t>(mstudiosrcbonetransform_t*)::nameHolder
 d datamap_t* DataMapInit<mstudiosrcbonetransform_t>(mstudiosrcbonetransform_t*)::dataDesc
 b datamap_t* DataMapInit<mstudiovertanim_wrinkle_t>(mstudiovertanim_wrinkle_t*)::nameHolder

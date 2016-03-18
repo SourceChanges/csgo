@@ -185,6 +185,7 @@ T Plat_GetLocalTime
 T Plat_GetMemPageSize
 T Plat_GetPagedPoolInfo
 T Plat_GetShellWindow
+T Plat_GetTime
 T Plat_GetTimeString
 T Plat_GetWindowClientSize
 T Plat_IsInBenchmarkMode

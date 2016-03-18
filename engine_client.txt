@@ -3293,6 +3293,7 @@ U Plat_GetClockStart
 U Plat_GetLocalTime
 U Plat_GetMemPageSize
 U Plat_GetPagedPoolInfo
+U Plat_GetTime
 U Plat_GetTimeString
 U Plat_IsInBenchmarkMode
 U Plat_IsInDebugSession

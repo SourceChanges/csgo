@@ -1647,6 +1647,7 @@ b tv_broadcast1
 b tv_broadcast_drop_fragments
 b tv_broadcast_keyframe_interval
 b tv_broadcast_max_requests
+b tv_broadcast_origin_auth
 b tv_broadcast_startup_resend_interval
 b tv_broadcast_terminate
 b tv_broadcast_url

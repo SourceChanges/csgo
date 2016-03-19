@@ -246,6 +246,7 @@ U Warning
 U wcscpy@@GLIBC_2.0
 U wcslen@@GLIBC_2.0
 U wcsncat@@GLIBC_2.0
+U wcsncmp@@GLIBC_2.0
 U wcsncpy@@GLIBC_2.0
 U wcstof@@GLIBC_2.0
 U wcstol@@GLIBC_2.0

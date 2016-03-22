@@ -1656,6 +1656,7 @@ b tv_enable
 b tv_enable1
 b tv_maxclients_relayreserved
 b tv_name
+b tv_playcast_origin_auth
 b tv_snapshotrate
 b tv_snapshotrate1
 b tv_title
@@ -5826,6 +5827,7 @@ t MatchRecvPropsToSendProps_R(CUtlRBTree<MatchingProp_t, unsigned short, bool (*
 b mat_monitorgamma_tv_enabled
 b net_compresspackets_minsize
 b net_steamcnx_status_command
+b r_ignoreStaticColorChecksum
 d s_SplitPacketSequenceNumber
 t StaticPropColorMeshCallback(FileAsyncRequest_t const&, int, FSAsyncStatus_t)
 b stringtable_usedictionaries
@@ -7538,7 +7540,7 @@ t CBaseClient::DemoRestart()
 t CBaseClient::NETMsg_Tick(CNETMsg_Tick const&)
 t CBaseClient::SetUserCVar(char const*, char const*)
 t CBaseClient::SpawnPlayer()
-t CBaseClient::ApplyConVars(CMsg_CVars const&)
+t CBaseClient::ApplyConVars(CMsg_CVars const&, bool)
 t CBaseClient::CheckConnect()
 t CBaseClient::ClientPrintf(char const*, ...)
 t CBaseClient::FillUserInfo(player_info_s&)
@@ -10498,6 +10500,8 @@ t CDemoStreamHttp::CFragmentRequest::OnSuccess(HTTPRequestCompleted_t const*)
 t CDemoStreamHttp::GetTicksPerFrame()
 t CDemoStreamHttp::GetFragmentBuffer(int, CDemoStreamHttp::FragmentTypeEnum_t)
 t CDemoStreamHttp::GetTicksPerSecond()
+t CDemoStreamHttp::PrepareForStreaming(char const*)
+t CDemoStreamHttp::StartStreamingCached(char const*, int)
 t CDemoStreamHttp::OnFragmentRequestFailure(EHTTPStatusCode, int, CDemoStreamHttp::FragmentTypeEnum_t)
 t CDemoStreamHttp::OnFragmentRequestSuccess(unsigned int, int, CDemoStreamHttp::FragmentTypeEnum_t)
 t CDemoStreamHttp::Close()
@@ -12251,6 +12255,8 @@ t CDedicatedServerAPI::RunFrame()
 t CEntityListAlongRay::EnumElement(IHandleEntity*)
 t CFSMountContentInfo::CFSMountContentInfo()
 t CFSMountContentInfo::CFSMountContentInfo()
+t CMicroProfilerGuard::~CMicroProfilerGuard()
+t CMicroProfilerGuard::~CMicroProfilerGuard()
 t CNETMsg_SetConVar_t::AddToTail(char const*, char const*)
 t CNETMsg_SetConVar_t::~CNETMsg_SetConVar_t()
 t CNETMsg_SetConVar_t::~CNETMsg_SetConVar_t()
@@ -22087,7 +22093,7 @@ t CSVCMsg_Print::SerializeWithCachedSizesToArray(unsigned char*) const
 t CSVCMsg_Print::New() const
 t CSVCMsg_Print::ByteSize() const
 t unsigned int CUtlHashtable<CSteamID, SteamDatagramTransport::CSteamDatagramTransportGameserver::Client, SteamDatagramTransport::CSteamDatagramTransportGameserver::SteamIDHashFunctor, DefaultEqualFunctor<CSteamID>, undefined_t>::DoLookup<CSteamID const&>(CSteamID const&, unsigned int, unsigned int*) const [clone .part.55]
-t unsigned int CUtlHashtable<int, CDemoStreamHttp::Fragment_t, IdentityHashFunctor, DefaultEqualFunctor<int>, undefined_t>::DoLookup<int>(int, unsigned int, unsigned int*) const [clone .part.53]
+t unsigned int CUtlHashtable<int, CDemoStreamHttp::Fragment_t, IdentityHashFunctor, DefaultEqualFunctor<int>, undefined_t>::DoLookup<int>(int, unsigned int, unsigned int*) const [clone .part.54]
 t unsigned int CUtlHashtable<int, CAsyncOcclusionQuery*, IdentityHashFunctor, DefaultEqualFunctor<int>, undefined_t>::DoLookup<int>(int, unsigned int, unsigned int*) const [clone .part.109]
 t unsigned int CUtlHashtable<unsigned int, SteamDatagramTransport::SharedClusterData::DataCenterPing, DefaultHashFunctor<unsigned int>, DefaultEqualFunctor<unsigned int>, undefined_t>::DoLookup<unsigned int>(unsigned int, unsigned int, unsigned int*) const [clone .part.198] [clone .constprop.289]
 t unsigned int CUtlHashtable<CUtlStableHashtable<model_t*, empty_t, CModelInfo::ModelFileHandleHash, CModelInfo::ModelFileHandleEq, short, void*>::IndirectIndex, empty_t, CUtlStableHashtable<model_t*, empty_t, CModelInfo::ModelFileHandleHash, CModelInfo::ModelFileHandleEq, short, void*>::HashProxy, CUtlStableHashtable<model_t*, empty_t, CModelInfo::ModelFileHandleHash, CModelInfo::ModelFileHandleEq, short, void*>::EqualProxy, void*>::DoLookup<void*>(void*, unsigned int, unsigned int*) const
@@ -36177,6 +36183,7 @@ b g_execwithwhitelist_CompletionFunc(char const*, char (*) [64])::execwithwhitel
 b CStudioHdr::GroupStudioHdr(int)::__executeCount
 b CStudioHdr::GroupStudioHdr(int)::__executeCount
 b CUtlSymbol::Initialize()::symbolsInitialized
+b CBaseClient::ApplyConVars(CMsg_CVars const&, bool)::s_dblLastWarned
 b CBaseClient::SetName(char const*)::s_pchTournamentServer
 b CBaseServer::ReplyChallenge(ns_address const&, bf_read&)::s_bPrintedInfo
 b CBaseServer::ReplyChallenge(ns_address const&, bf_read&)::s_bAllowLanWhitelist

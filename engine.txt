@@ -110,8 +110,8 @@ d cplus_demangle_builtin_types
 d cplus_demangle_operators
 T CreateInterface
 U CreateSimpleThread
-r CSWTCH.1363
-r CSWTCH.1365
+r CSWTCH.1364
+r CSWTCH.1366
 r CSWTCH.206
 r CSWTCH.23
 r CSWTCH.258
@@ -1656,6 +1656,8 @@ b tv_enable
 b tv_enable1
 b tv_maxclients_relayreserved
 b tv_name
+b tv_playcast_max_rcvage
+b tv_playcast_max_rtdelay
 b tv_playcast_origin_auth
 b tv_snapshotrate
 b tv_snapshotrate1

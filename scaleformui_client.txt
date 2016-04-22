@@ -244,7 +244,7 @@ U SteamAPI_GetHSteamUser
 U SteamAPI_InitSafe
 U SteamAPI_RegisterCallback
 U SteamAPI_UnregisterCallback
-U SteamClient
+U SteamInternal_CreateInterface
 U strcasecmp@@GLIBC_2.0
 U strcasestr@@GLIBC_2.1
 U __strcat_chk@@GLIBC_2.3.4

@@ -86,7 +86,7 @@ U sscanf@@GLIBC_2.0
 U SteamAPI_GetHSteamPipe
 U SteamAPI_GetHSteamUser
 U SteamAPI_InitSafe
-U SteamClient
+U SteamInternal_CreateInterface
 U strcasecmp@@GLIBC_2.0
 U strchr@@GLIBC_2.0
 U strcmp@@GLIBC_2.0

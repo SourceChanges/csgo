@@ -810,7 +810,6 @@ b g_pSoundEmitterSystem
 b g_pSoundJob
 b g_pSoundServices
 b g_pSoundSystem
-U g_pSteamClientGameServer
 b g_pSteamDatagramClient
 b g_pSteamDatagramGameserver
 d g_pSteamSocketMgr
@@ -1501,13 +1500,13 @@ U SteamAPI_SetTryCatchCallbacks
 U SteamAPI_UnregisterCallback
 U SteamAPI_UnregisterCallResult
 U SteamAPI_UseBreakpadCrashHandler
-U SteamClient
 U SteamGameServer_GetHSteamPipe
 U SteamGameServer_GetHSteamUser
 U SteamGameServer_GetIPCCallCount
-U SteamGameServer_InitSafe
+U SteamGameServerInternal_CreateInterface
 U SteamGameServer_RunCallbacks
 U SteamGameServer_Shutdown
+U SteamInternal_GameServer_Init
 U strcasecmp@@GLIBC_2.0
 U strcasestr@@GLIBC_2.1
 U strcat@@GLIBC_2.0
@@ -3458,7 +3457,7 @@ t MatrixBuildRotationAboutAxis(VMatrix&, Vector const&, float)
 t MatrixBuildRotationAboutAxis(Vector const&, float, matrix3x4_t&)
 t NET_BufferToBufferDecompress(char*, unsigned int*, char*, unsigned int)
 t NET_DiscardStaleSplitpackets(int)
-t NetMsgSetCVarUsingDictionary(CMsg_CVars_CVar*, char const*, char const*) [clone .part.69]
+t NetMsgSetCVarUsingDictionary(CMsg_CVars_CVar*, char const*, char const*) [clone .part.70]
 t NET_TerminateSteamConnection(int, unsigned long long)
 t OverrideMaterialSystemConfig(MaterialSystem_Config_t&)
 t PackEntities_NetworkBackDoor(int, CGameClient**, CFrameSnapshot*)

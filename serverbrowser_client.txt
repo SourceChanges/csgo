@@ -130,7 +130,7 @@ U SteamAPI_InitSafe
 U SteamAPI_RegisterCallback
 U SteamAPI_SetTryCatchCallbacks
 U SteamAPI_UnregisterCallback
-U SteamClient
+U SteamInternal_CreateInterface
 U strcasecmp@@GLIBC_2.0
 U strcasestr@@GLIBC_2.1
 U strcat@@GLIBC_2.0

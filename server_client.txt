@@ -86,7 +86,6 @@ w __gmon_start__
 U g_nThreadID
 U g_PerfStats
 U g_pMemAlloc
-U g_pSteamClientGameServer
 U g_pThreadPool
 U g_VProfCurrentProfile
 U g_VProfSignalSpike
@@ -190,9 +189,10 @@ U SteamAPI_RegisterCallResult
 U SteamAPI_RestartAppIfNecessary
 U SteamAPI_UnregisterCallback
 U SteamAPI_UnregisterCallResult
-U SteamClient
 U SteamGameServer_GetHSteamPipe
 U SteamGameServer_GetHSteamUser
+U SteamGameServerInternal_CreateInterface
+U SteamInternal_CreateInterface
 U strcasecmp@@GLIBC_2.0
 U strcasestr@@GLIBC_2.1
 U strcat@@GLIBC_2.0

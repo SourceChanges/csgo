@@ -2504,7 +2504,6 @@ T gost_set_default_param
 T gost_sign_keygen
 U g_PerfStats
 U g_pMemAlloc
-U g_pSteamClientGameServer
 U g_pThreadPool
 U g_VProfCurrentProfile
 U g_VProfSignalSpike
@@ -4041,13 +4040,14 @@ U SteamAPI_UnregisterCallback
 U SteamAPI_UnregisterCallResult
 U SteamAPI_UseBreakpadCrashHandler
 U SteamAPI_WriteMiniDump
-U SteamClient
 U SteamGameServer_GetHSteamPipe
 U SteamGameServer_GetHSteamUser
 U SteamGameServer_GetIPCCallCount
-U SteamGameServer_InitSafe
+U SteamGameServerInternal_CreateInterface
 U SteamGameServer_RunCallbacks
 U SteamGameServer_Shutdown
+U SteamInternal_CreateInterface
+U SteamInternal_GameServer_Init
 T store_bignum
 U strcasecmp@@GLIBC_2.0
 U strcasestr@@GLIBC_2.1

@@ -30,6 +30,8 @@ T CrackSmokingCompiler
 T CreateSimpleProcess
 T CreateVProfile
 U ctime_r@@GLIBC_2.0
+U __ctype_b_loc@@GLIBC_2.3
+U __ctype_tolower_loc@@GLIBC_2.3
 U __cxa_allocate_exception@@CXXABI_1.3
 U __cxa_atexit@@GLIBC_2.1.3
 U __cxa_begin_catch@@CXXABI_1.3
@@ -68,7 +70,7 @@ T _fini
 U fopen64@@GLIBC_2.1
 U fopen@@GLIBC_2.1
 U fork@@GLIBC_2.0
-U fprintf@@GLIBC_2.0
+U __fprintf_chk@@GLIBC_2.3.4
 U fputs@@GLIBC_2.0
 T FreeCrashMemoryReserve
 U free@@GLIBC_2.0
@@ -112,12 +114,12 @@ T _init
 T InitializeStackTrackingFilters
 T InitPME
 T Is64BitOS
-U isalpha@@GLIBC_2.0
 T IsInAssert
 T IsLogActive
-U isspace@@GLIBC_2.0
 T IsSpewActive
 T IsStackTrackingFiltered
+w _ITM_deregisterTMCloneTable
+w _ITM_registerTMCloneTable
 w _Jv_RegisterClasses
 U kill@@GLIBC_2.0
 U lchown@@GLIBC_2.0
@@ -181,7 +183,7 @@ T Plat_VirtualAccessFlags
 T Plat_VirtualAlloc
 T Plat_VirtualFree
 T Plat_VirtualProtect
-U printf@@GLIBC_2.0
+U __printf_chk@@GLIBC_2.3.4
 U pthread_attr_init@@GLIBC_2.1
 U pthread_attr_setstacksize@@GLIBC_2.1
 U pthread_cancel@@GLIBC_2.0
@@ -198,6 +200,7 @@ U pthread_create@@GLIBC_2.1
 U pthread_exit@@GLIBC_2.0
 U pthread_getspecific@@GLIBC_2.0
 U pthread_join@@GLIBC_2.0
+w __pthread_key_create@@GLIBC_2.0
 U pthread_key_create@@GLIBC_2.0
 U pthread_key_delete@@GLIBC_2.0
 U pthread_kill@@GLIBC_2.0
@@ -211,12 +214,14 @@ U pthread_mutex_trylock@@GLIBC_2.0
 U pthread_mutex_unlock@@GLIBC_2.0
 w pthread_once@@GLIBC_2.0
 U pthread_self@@GLIBC_2.0
+U pthread_setname_np@@GLIBC_2.12
 U pthread_setspecific@@GLIBC_2.0
 U readdir64@@GLIBC_2.2
 U readdir@@GLIBC_2.0
 U readlink@@GLIBC_2.0
 T RealGetCallStack
 U realloc@@GLIBC_2.0
+U __realpath_chk@@GLIBC_2.4
 U realpath@@GLIBC_2.3
 T RealPrintCallStack
 T RealPrintRawCallStack
@@ -246,6 +251,7 @@ U sigaddset@@GLIBC_2.0
 U sigemptyset@@GLIBC_2.0
 U signal@@GLIBC_2.0
 U sigprocmask@@GLIBC_2.0
+U __snprintf_chk@@GLIBC_2.3.4
 U snprintf@@GLIBC_2.0
 T SpewActivate
 T SpewAndLogActivate
@@ -255,7 +261,7 @@ T _SpewInfo
 T _SpewMessage
 T _SpewMessageType
 T SpewOutputFunc
-U sprintf@@GLIBC_2.0
+U __sprintf_chk@@GLIBC_2.3.4
 U sscanf@@GLIBC_2.0
 U __stack_chk_fail@@GLIBC_2.4
 U statvfs64@@GLIBC_2.1
@@ -266,11 +272,13 @@ U strcasecmp@@GLIBC_2.0
 U strcasestr@@GLIBC_2.1
 U strchr@@GLIBC_2.0
 U strcmp@@GLIBC_2.0
+U __strcpy_chk@@GLIBC_2.3.4
 U strcpy@@GLIBC_2.0
 U strdup@@GLIBC_2.0
 U strerror@@GLIBC_2.0
+U strlen@@GLIBC_2.0
 U strncasecmp@@GLIBC_2.0
-U strncat@@GLIBC_2.0
+U __strncat_chk@@GLIBC_2.3.4
 U strncpy@@GLIBC_2.0
 U strpbrk@@GLIBC_2.0
 U strrchr@@GLIBC_2.0
@@ -331,7 +339,6 @@ U time@@GLIBC_2.0
 U timegm@@GLIBC_2.0
 U __timezone@@GLIBC_2.0
 U timezone@@GLIBC_2.0
-U tolower@@GLIBC_2.0
 T TSListBase_Init
 T TSListBase_Pop
 T TSListBase_Push
@@ -350,8 +357,8 @@ U usleep@@GLIBC_2.0
 U utime@@GLIBC_2.0
 U utimes@@GLIBC_2.0
 T ValidateSpew
-U vfprintf@@GLIBC_2.0
-U vsnprintf@@GLIBC_2.0
+U __vfprintf_chk@@GLIBC_2.3.4
+U __vsnprintf_chk@@GLIBC_2.3.4
 T vtune
 U waitpid@@GLIBC_2.0
 T Warning
@@ -399,6 +406,7 @@ T SteamVProf::CVProfNode::Validate(CValidator&, char const*)
 T SteamVProf::CVProfNode::ExitScope()
 T SteamVProf::CVProfNode::MarkFrame()
 T SteamVProf::CVProfNode::ResetPeak()
+W SteamVProf::CVProfManager::AddProfileForThread(SteamVProf::CVProfile*, unsigned int, unsigned int)
 T SteamVProf::CVProfManager::GetAllThreadProfiles(SteamVProf::CVProfileArray*)
 W SteamVProf::CVProfManager::~CVProfManager()
 W SteamVProf::CVProfManager::~CVProfManager()
@@ -526,4 +534,3 @@ V typeinfo name for SteamThreadTools::CThread
 U vtable for __cxxabiv1::__class_type_info@@CXXABI_1.3
 U vtable for __cxxabiv1::__si_class_type_info@@CXXABI_1.3
 V vtable for SteamThreadTools::CThread
-V SteamThreadTools::CThreadSpinRWLock::TryLockForWrite(unsigned int)::oldValue

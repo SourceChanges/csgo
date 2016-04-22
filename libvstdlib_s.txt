@@ -28,6 +28,9 @@ T Coroutine_ValidateGlobals
 T Coroutine_YieldToMain
 T CreateInterface
 U CreateVProfile
+U __ctype_b_loc@@GLIBC_2.3
+U __ctype_tolower_loc@@GLIBC_2.3
+U __ctype_toupper_loc@@GLIBC_2.3
 U __cxa_atexit@@GLIBC_2.1.3
 w __cxa_finalize@@GLIBC_2.1.3
 U __cxa_guard_abort@@CXXABI_1.3
@@ -93,7 +96,11 @@ T InstallUniformRandomStream
 U Is64BitOS
 U isalnum@@GLIBC_2.0
 U isspace@@GLIBC_2.0
+U iswalnum@@GLIBC_2.0
+U iswalpha@@GLIBC_2.0
 U iswspace@@GLIBC_2.0
+w _ITM_deregisterTMCloneTable
+w _ITM_registerTMCloneTable
 w _Jv_RegisterClasses
 T KeyValuesSystemSteam
 U lchown@@GLIBC_2.0
@@ -105,6 +112,7 @@ U lseek64@@GLIBC_2.2
 U __lxstat64@@GLIBC_2.2
 U __lxstat@@GLIBC_2.0
 U malloc@@GLIBC_2.0
+U memcmp@@GLIBC_2.0
 U memcpy@@GLIBC_2.0
 U memmove@@GLIBC_2.0
 U memset@@GLIBC_2.0
@@ -128,12 +136,11 @@ U Plat_OutputDebugStringRaw
 U Plat_VirtualAccessFlags
 U pread64@@GLIBC_2.2
 U printf@@GLIBC_2.0
-w pthread_cancel@@GLIBC_2.0
+w __pthread_key_create@@GLIBC_2.0
 U pthread_mutex_lock@@GLIBC_2.0
 U pthread_mutex_unlock@@GLIBC_2.0
 w pthread_once@@GLIBC_2.0
 U pwrite64@@GLIBC_2.2
-U qsort@@GLIBC_2.0
 U readdir64@@GLIBC_2.2
 U read@@GLIBC_2.0
 U readlink@@GLIBC_2.0
@@ -157,6 +164,7 @@ U statvfs64@@GLIBC_2.1
 U statvfs@@GLIBC_2.1
 U stderr@@GLIBC_2.0
 T SteamRealPath
+U stpcpy@@GLIBC_2.0
 U strcasecmp@@GLIBC_2.0
 U strcasestr@@GLIBC_2.1
 U strcat@@GLIBC_2.0
@@ -169,6 +177,7 @@ U strftime@@GLIBC_2.0
 T StringAfterPrefix
 T StringAfterPrefixCaseSensitive
 T StringHasSuffix
+U strlen@@GLIBC_2.0
 T _strlwr
 U strncasecmp@@GLIBC_2.0
 U strncat@@GLIBC_2.0
@@ -271,7 +280,6 @@ T V_NormalizeUTF8
 T V_NormalizeUTF8Old
 T V_pretifymem
 T V_pretifynum
-T V_qsort_s
 T V_RemoveDotSlashes
 T V_ReplaceBadFilenameCharacters
 T V_ReplaceBadFilenameCharactersInPlace
@@ -304,6 +312,7 @@ T V_StripTrailingSlash
 T V_StripUnprintable
 T V_StripUnprintableW
 T V_StrLeft
+T V_strlower_fast
 T V_strnappend
 T V_strnappend_strlen
 T V_strncat
@@ -323,9 +332,12 @@ T V_StrSubstInPlace
 T V_strtoi64
 T V_strtoui64
 T V_StrTrim
+T V_strupper_fast
 U vswprintf@@GLIBC_2.2
 T V_tolower
 T V_toupper
+T V_towlower32
+T V_towupper32
 T V_TruncateAbsolutePathToDiskIdentity
 T V_UChar32ToUTF16
 T V_UChar32ToUTF16Len
@@ -340,8 +352,6 @@ T V_URLEncode
 T V_URLEncodeRaw
 T V_URLParse
 T V_URLPartsToString
-T V_UTF16CharsToUTF32
-T V_UTF16CharsToUTF8
 T V_UTF16ToUChar32
 T V_UTF16ToUTF32
 T V_UTF16ToUTF8
@@ -349,8 +359,6 @@ T V_UTF32CharsToUTF16
 T V_UTF32CharsToUTF8
 T V_UTF32ToUTF16
 T V_UTF32ToUTF8
-T V_UTF8CharsToUTF16
-T V_UTF8CharsToUTF32
 T V_UTF8ToUChar32
 T V_UTF8ToUTF16
 T V_UTF8ToUTF32
@@ -358,13 +366,11 @@ T V_vsnprintf
 T V_vsnprintfRet
 T V_vsnwprintf
 T V_wcscat
-T V_wcslower
 T V_wcsncat
 T V_wcsncpy
 T V_WcsSkipArticles
 T V_wcstoi64
 T V_wcstoui64
-T V_wcsupr
 T V_whextobinary
 T V_Windows1252CharsToUTF8
 U Warning
@@ -402,6 +408,12 @@ T V_UnicodeAdvance(wchar_t*, int)
 T V_UnicodeValidate(char const*)
 T V_UnicodeValidate(unsigned short const*)
 T V_UnicodeValidate(wchar_t const*)
+T V_UnicodeCaseConvert(char const*, char*, int, int, EStringConvertErrorPolicy)
+T V_UnicodeCaseConvert(unsigned short const*, unsigned short*, int, int, EStringConvertErrorPolicy)
+T V_UnicodeCaseConvert(wchar_t const*, wchar_t*, int, int, EStringConvertErrorPolicy)
+T V_UnicodeCaseConvert(CUtlString&, int, EStringConvertErrorPolicy)
+T V_UnicodeCaseConvert(CUtlVector<wchar_t, CUtlMemory<wchar_t> >&, int, EStringConvertErrorPolicy)
+T V_UnicodeCaseConvert(CUtlStringBuilder&, int, EStringConvertErrorPolicy)
 T V_ConvertStringToUUID(char const*, EUUIDStringFlags, V_UUID*)
 T V_ConvertStringToUUID(wchar_t const*, EUUIDStringFlags, V_UUID*)
 T V_ConvertUUIDToString(V_UUID const*, EUUIDStringFlags, char*, int)

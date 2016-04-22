@@ -1304,6 +1304,7 @@ b lineartotexture
 t Sys_LoadLibrary(char const*)
 b texturetolinear
 t voice_show_mute(CCommand const&)
+t voice_show_mute(CCommand const&) [clone .part.6]
 b emergency_buffer
 t get_adjusted_ptr(std::type_info const*, std::type_info const*, void**)
 b g_MatchFramework

@@ -658,6 +658,7 @@ T ThreadGetPriority
 T ThreadInMainThread
 T ThreadInterlockedAssignIf64
 T ThreadInterlockedCompareExchange64
+T ThreadInterlockedExchange64
 T ThreadJoin
 T ThreadNanoSleep
 T ThreadSetAffinity
@@ -788,7 +789,6 @@ t IgnoreAssertsInCurrentFile()
 t ThreadInterlockedDecrement(long volatile*)
 t ThreadInterlockedIncrement(long volatile*)
 t AppendCallStackToLogMessage(char*, int, int)
-t ThreadInterlockedExchange64(long long volatile*, long long)
 t DoApplyMemoryInitializations(void*, unsigned int)
 t ThreadInterlockedExchangeAdd(long volatile*, long)
 t VirtualMemoryManager_Shutdown()

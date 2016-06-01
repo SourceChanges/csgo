@@ -822,7 +822,7 @@ U __xstat64@@GLIBC_2.2
 U __xstat@@GLIBC_2.0
 t AppStartup(int, char**, CAppSystemGroup*)
 t AppStartup(void*, void*, char const*, int, CAppSystemGroup*)
-t CRC32_Init(unsigned long*)
+t CRC32_Init(unsigned int*)
 t CRC64_Init(unsigned long long*)
 U DevWarning(char const*, ...)
 t FileSelect(dirent const*)
@@ -856,7 +856,7 @@ t AngleMatrix(QAngle const&, matrix3x4_t&)
 t AngleMatrix(QAngle const&, Vector const&, matrix3x4_t&)
 t AppShutdown(CAppSystemGroup*)
 t ClearBounds(Vector&, Vector&)
-t CRC32_Final(unsigned long*)
+t CRC32_Final(unsigned int*)
 t CRC64_Final(unsigned long long*)
 t CubicBasis0(float)
 t CubicBasis1(float)
@@ -1128,7 +1128,7 @@ t V_StringToIntArray(int*, int, char const*)
 t AxisAngleQuaternion(Vector const&, float, Quaternion&)
 t BuildTransformedBox(Vector*, Vector const&, Vector const&, matrix3x4_t const&)
 t CRC32_GetTableEntry(unsigned int)
-t CRC32_ProcessBuffer(unsigned long*, void const*, int)
+t CRC32_ProcessBuffer(unsigned int*, void const*, int)
 t CRC64_ProcessBuffer(unsigned long long*, void const*, int)
 t FixUpPathCaseForPS3(char const*)
 t Hermite_SplineBasis(float, float*)
@@ -2208,7 +2208,7 @@ t CFileTracker::CacheFileCRC(char const*, char const*)
 t CFileTracker::GetFileInfos(CFileInfo**, int, char const*)
 t CFileTracker::CacheFileCRC_Copy(char const*, char const*, char const*)
 t CFileTracker::GetPathIDFileList(char const*, bool)
-t CFileTracker::CheckCachedFileCRC(char const*, char const*, unsigned long*)
+t CFileTracker::CheckCachedFileCRC(char const*, char const*, unsigned int*)
 t CFileTracker::CalculateCRCForFile(void*)
 t CFileTracker::CalculateMissingCRC(char const*, char const*)
 t CFileTracker::MarkAllCRCsVerified(bool)
@@ -2646,7 +2646,7 @@ t CBaseFileSystem::AddPackFileFromPath(char const*, char const*, bool, char cons
 t CBaseFileSystem::CheckCachedFileHash(char const*, char const*, int, FileHash_t*)
 t CBaseFileSystem::FindOrAddPathIDInfo(CUtlSymbol const&, int)
 t CBaseFileSystem::GetCurrentDirectory(char*, int)
-t CBaseFileSystem::GetStringFromKVPool(unsigned long, unsigned int, char*, int)
+t CBaseFileSystem::GetStringFromKVPool(unsigned int, unsigned int, char*, int)
 b CBaseFileSystem::m_bAllowXboxInstall
 t CBaseFileSystem::AsyncFinishAllWrites()
 t CBaseFileSystem::CSearchPathsIterator::CopySearchPaths(CUtlVector<CBaseFileSystem::CSearchPath, CUtlMemory<CBaseFileSystem::CSearchPath, int> > const&)
@@ -3449,11 +3449,10 @@ t netadr_s::SetIP(unsigned int)
 t netadr_s::SetPort(unsigned short)
 t netadr_s::SetType(netadrtype_t)
 t CByteswap::SwapFieldToTargetEndian(void*, void*, typedescription_t*)
-t void CByteswap::SwapBufferToTargetEndian<float>(float*, float*, int) [clone .part.32] [clone .constprop.92]
-t void CByteswap::SwapBufferToTargetEndian<int>(int*, int*, int) [clone .part.63] [clone .constprop.96]
-t void CByteswap::SwapBufferToTargetEndian<unsigned int>(unsigned int*, unsigned int*, int) [clone .part.50] [clone .constprop.93]
-t void CByteswap::SwapBufferToTargetEndian<unsigned short>(unsigned short*, unsigned short*, int) [clone .part.60] [clone .constprop.95]
-t void CByteswap::SwapBufferToTargetEndian<long long>(long long*, long long*, int) [clone .part.66] [clone .constprop.91]
+t void CByteswap::SwapBufferToTargetEndian<float>(float*, float*, int) [clone .part.31] [clone .constprop.89]
+t void CByteswap::SwapBufferToTargetEndian<int>(int*, int*, int) [clone .part.60] [clone .constprop.92]
+t void CByteswap::SwapBufferToTargetEndian<unsigned short>(unsigned short*, unsigned short*, int) [clone .part.57] [clone .constprop.91]
+t void CByteswap::SwapBufferToTargetEndian<long long>(long long*, long long*, int) [clone .part.63] [clone .constprop.88]
 t CByteswap::SwapFieldsToTargetEndian(void*, void*, datamap_t*)
 t CFileInfo::CFileInfo()
 t CFileInfo::CFileInfo()

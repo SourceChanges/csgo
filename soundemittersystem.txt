@@ -516,7 +516,7 @@ U wcstof@@GLIBC_2.0
 U wcstol@@GLIBC_2.0
 U wcstombs@@GLIBC_2.0
 U WriteMiniDump
-t CRC32_Init(unsigned long*)
+t CRC32_Init(unsigned int*)
 t CRC64_Init(unsigned long long*)
 U DevWarning(char const*, ...)
 t HashString(char const*)
@@ -535,7 +535,7 @@ t V_StrSubst(char const*, char const*, char const*, char*, int, bool)
 t V_strtowcs(char const*, int, wchar_t*, int)
 t V_wcstostr(wchar_t const*, int, char*, int)
 t AllocString(char const*, int)
-t CRC32_Final(unsigned long*)
+t CRC32_Final(unsigned int*)
 t CRC64_Final(unsigned long long*)
 t MurmurHash2(void const*, int, unsigned int)
 t Q_URLDecode(char*, int, char const*, int)
@@ -625,7 +625,7 @@ t V_MakeRelativePath(char const*, char const*, char*, int)
 t V_RemoveDotSlashes(char*, char)
 t V_StringToIntArray(int*, int, char const*)
 t CRC32_GetTableEntry(unsigned int)
-t CRC32_ProcessBuffer(unsigned long*, void const*, int)
+t CRC32_ProcessBuffer(unsigned int*, void const*, int)
 t CRC64_ProcessBuffer(unsigned long long*, void const*, int)
 t Q_URLDecodeInternal(char*, int, char const*, int, bool)
 t Q_URLEncodeInternal(char*, int, char const*, int, bool)
@@ -809,7 +809,7 @@ t read_encoded_value_with_base(unsigned char, unsigned int, unsigned char const*
 d s_pConversionArrays_NoEscConversion
 t Register_LOG_SOUNDEMITTER_SYSTEM_Tags()
 d s_pConversionArrays_StringCharConversion
-t AccumulateFileNameAndTimestampIntoChecksum(unsigned long*, char const*)
+t AccumulateFileNameAndTimestampIntoChecksum(unsigned int*, char const*)
 r s_hex
 b __g_CreateCSoundEmitterSystemBaseISoundEmitterSystemBase_reg
 t __CreateCSoundEmitterSystemBaseISoundEmitterSystemBase_interface()
@@ -1323,11 +1323,10 @@ t CUtlDict<gender_t, unsigned char>::~CUtlDict()
 t CUtlDict<gender_t, unsigned char>::~CUtlDict()
 t CUtlHash<int, CKeyValuesGrowableStringTable::CLookupFunctor&, CKeyValuesGrowableStringTable::CLookupFunctor&>::CUtlHash(int, int, int, CKeyValuesGrowableStringTable::CLookupFunctor&, CKeyValuesGrowableStringTable::CLookupFunctor&)
 t CUtlHash<int, CKeyValuesGrowableStringTable::CLookupFunctor&, CKeyValuesGrowableStringTable::CLookupFunctor&>::CUtlHash(int, int, int, CKeyValuesGrowableStringTable::CLookupFunctor&, CKeyValuesGrowableStringTable::CLookupFunctor&)
-t void CByteswap::SwapBufferToTargetEndian<float>(float*, float*, int) [clone .part.32] [clone .constprop.92]
-t void CByteswap::SwapBufferToTargetEndian<int>(int*, int*, int) [clone .part.63] [clone .constprop.96]
-t void CByteswap::SwapBufferToTargetEndian<unsigned int>(unsigned int*, unsigned int*, int) [clone .part.50] [clone .constprop.93]
-t void CByteswap::SwapBufferToTargetEndian<unsigned short>(unsigned short*, unsigned short*, int) [clone .part.60] [clone .constprop.95]
-t void CByteswap::SwapBufferToTargetEndian<long long>(long long*, long long*, int) [clone .part.66] [clone .constprop.91]
+t void CByteswap::SwapBufferToTargetEndian<float>(float*, float*, int) [clone .part.31] [clone .constprop.89]
+t void CByteswap::SwapBufferToTargetEndian<int>(int*, int*, int) [clone .part.60] [clone .constprop.92]
+t void CByteswap::SwapBufferToTargetEndian<unsigned short>(unsigned short*, unsigned short*, int) [clone .part.57] [clone .constprop.91]
+t void CByteswap::SwapBufferToTargetEndian<long long>(long long*, long long*, int) [clone .part.63] [clone .constprop.88]
 t ConVarRef::Init(char const*, bool)
 t ConVarRef::ConVarRef(IConVar*)
 t ConVarRef::ConVarRef(char const*)

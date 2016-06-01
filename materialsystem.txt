@@ -2691,7 +2691,6 @@ t CShaderSystem::InitStateSnapshots(IShader*, IMaterialVar**, ShaderRenderState_
 d CShaderSystem::s_pDebugShaderName
 t CShaderSystem::DrawMeasureFillRate(ShaderRenderState_t*, int, VertexCompressionType_t)
 t CShaderSystem::UnloadAllShaderDLLs()
-t CShaderSystem::VerifyBaseShaderDLL(CSysModule*)
 t CShaderSystem::CreateDebugMaterials()
 t CShaderSystem::InitRenderStateFlags(ShaderRenderState_t*, int, IMaterialVar**)
 t CShaderSystem::InitShaderParameters(IShader*, IMaterialVar**, char const*)
@@ -5541,11 +5540,10 @@ t CUtlDict<char const*, unsigned short>::~CUtlDict()
 t CUtlDict<char const*, unsigned short>::~CUtlDict()
 t CUtlHash<int, CKeyValuesGrowableStringTable::CLookupFunctor&, CKeyValuesGrowableStringTable::CLookupFunctor&>::CUtlHash(int, int, int, CKeyValuesGrowableStringTable::CLookupFunctor&, CKeyValuesGrowableStringTable::CLookupFunctor&)
 t CUtlHash<int, CKeyValuesGrowableStringTable::CLookupFunctor&, CKeyValuesGrowableStringTable::CLookupFunctor&>::CUtlHash(int, int, int, CKeyValuesGrowableStringTable::CLookupFunctor&, CKeyValuesGrowableStringTable::CLookupFunctor&)
-t void CByteswap::SwapBufferToTargetEndian<float>(float*, float*, int) [clone .part.32] [clone .constprop.92]
-t void CByteswap::SwapBufferToTargetEndian<int>(int*, int*, int) [clone .part.63] [clone .constprop.96]
-t void CByteswap::SwapBufferToTargetEndian<unsigned int>(unsigned int*, unsigned int*, int) [clone .part.50] [clone .constprop.93]
-t void CByteswap::SwapBufferToTargetEndian<unsigned short>(unsigned short*, unsigned short*, int) [clone .part.60] [clone .constprop.95]
-t void CByteswap::SwapBufferToTargetEndian<long long>(long long*, long long*, int) [clone .part.66] [clone .constprop.91]
+t void CByteswap::SwapBufferToTargetEndian<float>(float*, float*, int) [clone .part.31] [clone .constprop.89]
+t void CByteswap::SwapBufferToTargetEndian<int>(int*, int*, int) [clone .part.60] [clone .constprop.92]
+t void CByteswap::SwapBufferToTargetEndian<unsigned short>(unsigned short*, unsigned short*, int) [clone .part.57] [clone .constprop.91]
+t void CByteswap::SwapBufferToTargetEndian<long long>(long long*, long long*, int) [clone .part.63] [clone .constprop.88]
 t CFunctor3<void (*)(matrix3x4_t const&, float, bool), matrix3x4_t, float, bool, CRefCounted1<CFunctor, CRefCountServiceBase<true, CRefMT> > >::operator()()
 t CFunctor3<void (*)(matrix3x4_t const&, float, bool), matrix3x4_t, float, bool, CRefCounted1<CFunctor, CRefCountServiceBase<true, CRefMT> > >::~CFunctor3()
 t CFunctor3<void (*)(matrix3x4_t const&, float, bool), matrix3x4_t, float, bool, CRefCounted1<CFunctor, CRefCountServiceBase<true, CRefMT> > >::~CFunctor3()

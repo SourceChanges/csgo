@@ -2218,7 +2218,7 @@ t bf_write::SeekToBit(int)
 t bf_write::WriteBits(void const*, int)
 t bf_write::WriteByte(unsigned int)
 t bf_write::WriteChar(int)
-t bf_write::WriteLong(long)
+t bf_write::WriteLong(int)
 t bf_write::WriteWord(unsigned int)
 t bf_write::bf_write(char const*, void*, int, int)
 t bf_write::bf_write(void*, int, int)
@@ -2286,11 +2286,10 @@ t CBitWrite::WriteBitVec3Normal(Vector const&)
 t CBitWrite::WriteBitsFromBuffer(bf_read*, int)
 t CBitWrite::SeekToBit(int)
 t CBitWrite::WriteBits(void const*, int)
-t void CByteswap::SwapBufferToTargetEndian<float>(float*, float*, int) [clone .part.32] [clone .constprop.92]
-t void CByteswap::SwapBufferToTargetEndian<int>(int*, int*, int) [clone .part.63] [clone .constprop.96]
-t void CByteswap::SwapBufferToTargetEndian<unsigned int>(unsigned int*, unsigned int*, int) [clone .part.50] [clone .constprop.93]
-t void CByteswap::SwapBufferToTargetEndian<unsigned short>(unsigned short*, unsigned short*, int) [clone .part.60] [clone .constprop.95]
-t void CByteswap::SwapBufferToTargetEndian<long long>(long long*, long long*, int) [clone .part.66] [clone .constprop.91]
+t void CByteswap::SwapBufferToTargetEndian<float>(float*, float*, int) [clone .part.31] [clone .constprop.89]
+t void CByteswap::SwapBufferToTargetEndian<int>(int*, int*, int) [clone .part.60] [clone .constprop.92]
+t void CByteswap::SwapBufferToTargetEndian<unsigned short>(unsigned short*, unsigned short*, int) [clone .part.57] [clone .constprop.91]
+t void CByteswap::SwapBufferToTargetEndian<long long>(long long*, long long*, int) [clone .part.63] [clone .constprop.88]
 t ConVarRef::Init(char const*, bool)
 t ConVarRef::ConVarRef(IConVar*)
 t ConVarRef::ConVarRef(char const*)

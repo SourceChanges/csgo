@@ -122,7 +122,6 @@ r CSWTCH.622
 r CSWTCH.842
 d __CTOR_END__
 d __CTOR_LIST__
-U __ctype_b_loc@@GLIBC_2.3
 U __ctype_get_mb_cur_max@@GLIBC_2.0
 d cv
 b cvar
@@ -1797,7 +1796,7 @@ t CM_NullVis(CCollisionBSPData*, unsigned char*)
 t CM_PreStab(TraceInfo_t*, unsigned short const*, int, Vector&, int, int&)
 t Con_Printf(char const*, ...)
 t copy_block(TState&, char*, unsigned int, int)
-t CRC32_Init(unsigned long*)
+t CRC32_Init(unsigned int*)
 t CRC64_Init(unsigned long long*)
 t CreateZipZ(void*, unsigned int, unsigned int)
 t Decal_Init()
@@ -1864,9 +1863,9 @@ t CM_PostStab(TraceInfo_t*)
 U ConColorMsg(Color const&, char const*, ...)
 t Con_DPrintf(char const*, ...)
 t Con_NPrintf(int, char const*, ...)
-t CRC32_Final(unsigned long*)
+t CRC32_Final(unsigned int*)
 t CRC64_Final(unsigned long long*)
-t CRC_MapFile(unsigned long*, char const*)
+t CRC_MapFile(unsigned int*, char const*)
 t CubicBasis0(float)
 t CubicBasis1(float)
 t CubicBasis2(float)
@@ -2295,7 +2294,7 @@ t Con_ColorPrintf(Color const&, char const*, ...)
 t ConVar_Register(int, IConCommandBaseAccessor*)
 t DoesFileExistIn(char const*, char const*)
 t EnsureDirectory(char const*, char const*)
-t EnsureDirectory(char const*, char const*) [clone .part.6]
+t EnsureDirectory(char const*, char const*) [clone .part.3]
 t Filter_Shutdown()
 t FindExcludeProp(char const*, char const*, ExcludeProp const*, int)
 t GetEntSendTable(edict_t*)
@@ -2688,7 +2687,7 @@ t qhCheckConsistency(qhFace const*)
 t QuaternionMultiply(Quaternion const&, Vector const&, Vector&)
 t ReconnectInterface(void* (*)(char const*, int*), char const*)
 t ReconnectInterface(void* (*)(char const*, int*), char const*, void**)
-t SendTable_CRCTable(unsigned long&, SendTable*)
+t SendTable_CRCTable(unsigned int&, SendTable*)
 t SetupEdgeNeighbors(CCoreDispInfo*, CCoreDispInfo*)
 t SetupMatrixAxisRot(Vector const&, float)
 t SpinUpOcclusionJob()
@@ -2743,7 +2742,7 @@ t COM_CompareFileTime(char const*, char const*, int*)
 t COM_DXLevelToString(int)
 t COM_GetModDirectory()
 t CRC32_GetTableEntry(unsigned int)
-t CRC32_ProcessBuffer(unsigned long*, void const*, int)
+t CRC32_ProcessBuffer(unsigned int*, void const*, int)
 t CRC64_ProcessBuffer(unsigned long long*, void const*, int)
 t DebugCheckOcclusion(Vector const&, Vector const&, Vector const&, Vector const&, int)
 t DispCollTrees_Alloc(int)
@@ -3200,7 +3199,7 @@ t S_GetGainFromSoundLevel(soundlevel_t, float)
 t Status_CheckSendETWMark()
 t SV_BuildSendTablesArray(ServerClass*, SendTable**, int)
 t SVC_Messages_descriptor()
-t SV_ComputeClassInfosCRC(unsigned long*)
+t SV_ComputeClassInfosCRC(unsigned int*)
 t SV_ExecuteRemoteCommand(char const*, int)
 t SV_ParallelSendSnapshot(CGameClient*&)
 t SV_SetSteamCrashComment()
@@ -3717,7 +3716,7 @@ t CeilPow2(int)
 t Cmd_Init()
 t COM_Init()
 t Con_Init()
-t CRC_File(unsigned long*, char const*)
+t CRC_File(unsigned int*, char const*)
 t ct_tally(TState&, int, int)
 t DTI_Init()
 t DTI_Term()
@@ -6478,10 +6477,10 @@ t CUtlMemory<UtlRBTreeNode_t<CUtlMap<netadr_s, SteamDatagramTransport::CSteamDat
 t CUtlMemory<UtlRBTreeNode_t<CUtlMap<int, int, unsigned short, bool (*)(int const&, int const&)>::Node_t, unsigned short>, unsigned short>::Grow(int)
 t CUtlMemory<UtlRBTreeNode_t<CUtlMap<int, unsigned char*, int, CDefLess<int> >::Node_t, int>, int>::Grow(int)
 t CUtlMemory<UtlRBTreeNode_t<CUtlMap<int, CThreadedSocketQueue::CSocketThread*, unsigned short, bool (*)(int const&, int const&)>::Node_t, unsigned short>, unsigned short>::Grow(int)
+t CUtlMemory<UtlRBTreeNode_t<CUtlMap<unsigned int, int, unsigned short, bool (*)(unsigned int const&, unsigned int const&)>::Node_t, unsigned short>, unsigned short>::Grow(int)
 t CUtlMemory<UtlRBTreeNode_t<CUtlMap<unsigned int, CNETMsg_PlayerAvatarData_t*, int, CDefLess<unsigned int> >::Node_t, int>, int>::Grow(int)
 t CUtlMemory<UtlRBTreeNode_t<CUtlMap<unsigned int, SteamDatagramTransport::SharedClusterData*, int, bool (*)(unsigned int const&, unsigned int const&)>::Node_t, int>, int>::Grow(int)
 t CUtlMemory<UtlRBTreeNode_t<CUtlMap<long, int, int, CDefLess<long> >::Node_t, int>, int>::Grow(int)
-t CUtlMemory<UtlRBTreeNode_t<CUtlMap<unsigned long, int, unsigned short, bool (*)(unsigned long const&, unsigned long const&)>::Node_t, unsigned short>, unsigned short>::Grow(int)
 t CUtlMemory<UtlRBTreeNode_t<CUtlMap<CNetworkStringDict::CTableItem, CNetworkStringTableItem, unsigned short, bool (*)(CNetworkStringDict::CTableItem const&, CNetworkStringDict::CTableItem const&)>::Node_t, unsigned short>, unsigned short>::Grow(int)
 t CUtlMemory<UtlRBTreeNode_t<CUtlMap<char*, double, unsigned short, bool (*)(char* const&, char* const&)>::Node_t, unsigned short>, unsigned short>::Grow(int)
 t CUtlMemory<UtlRBTreeNode_t<CUtlMap<char*, int, unsigned short, bool (*)(char* const&, char* const&)>::Node_t, unsigned short>, unsigned short>::Grow(int)
@@ -6854,6 +6853,13 @@ t CUtlRBTree<CUtlMap<int, CThreadedSocketQueue::CSocketThread*, unsigned short, 
 t CUtlRBTree<CUtlMap<int, CThreadedSocketQueue::CSocketThread*, unsigned short, bool (*)(int const&, int const&)>::Node_t, unsigned short, CUtlMap<int, CThreadedSocketQueue::CSocketThread*, unsigned short, bool (*)(int const&, int const&)>::CKeyLess, CUtlMemory<UtlRBTreeNode_t<CUtlMap<int, CThreadedSocketQueue::CSocketThread*, unsigned short, bool (*)(int const&, int const&)>::Node_t, unsigned short>, unsigned short> >::Unlink(unsigned short)
 t CUtlRBTree<CUtlMap<int, CThreadedSocketQueue::CSocketThread*, unsigned short, bool (*)(int const&, int const&)>::Node_t, unsigned short, CUtlMap<int, CThreadedSocketQueue::CSocketThread*, unsigned short, bool (*)(int const&, int const&)>::CKeyLess, CUtlMemory<UtlRBTreeNode_t<CUtlMap<int, CThreadedSocketQueue::CSocketThread*, unsigned short, bool (*)(int const&, int const&)>::Node_t, unsigned short>, unsigned short> >::NewNode()
 t CUtlRBTree<CUtlMap<int, CThreadedSocketQueue::CSocketThread*, unsigned short, bool (*)(int const&, int const&)>::Node_t, unsigned short, CUtlMap<int, CThreadedSocketQueue::CSocketThread*, unsigned short, bool (*)(int const&, int const&)>::CKeyLess, CUtlMemory<UtlRBTreeNode_t<CUtlMap<int, CThreadedSocketQueue::CSocketThread*, unsigned short, bool (*)(int const&, int const&)>::Node_t, unsigned short>, unsigned short> >::RemoveAll()
+t CUtlRBTree<CUtlMap<unsigned int, int, unsigned short, bool (*)(unsigned int const&, unsigned int const&)>::Node_t, unsigned short, CUtlMap<unsigned int, int, unsigned short, bool (*)(unsigned int const&, unsigned int const&)>::CKeyLess, CUtlMemory<UtlRBTreeNode_t<CUtlMap<unsigned int, int, unsigned short, bool (*)(unsigned int const&, unsigned int const&)>::Node_t, unsigned short>, unsigned short> >::RotateLeft(unsigned short)
+t CUtlRBTree<CUtlMap<unsigned int, int, unsigned short, bool (*)(unsigned int const&, unsigned int const&)>::Node_t, unsigned short, CUtlMap<unsigned int, int, unsigned short, bool (*)(unsigned int const&, unsigned int const&)>::CKeyLess, CUtlMemory<UtlRBTreeNode_t<CUtlMap<unsigned int, int, unsigned short, bool (*)(unsigned int const&, unsigned int const&)>::Node_t, unsigned short>, unsigned short> >::RotateRight(unsigned short)
+t CUtlRBTree<CUtlMap<unsigned int, int, unsigned short, bool (*)(unsigned int const&, unsigned int const&)>::Node_t, unsigned short, CUtlMap<unsigned int, int, unsigned short, bool (*)(unsigned int const&, unsigned int const&)>::CKeyLess, CUtlMemory<UtlRBTreeNode_t<CUtlMap<unsigned int, int, unsigned short, bool (*)(unsigned int const&, unsigned int const&)>::Node_t, unsigned short>, unsigned short> >::InsertRebalance(unsigned short)
+t CUtlRBTree<CUtlMap<unsigned int, int, unsigned short, bool (*)(unsigned int const&, unsigned int const&)>::Node_t, unsigned short, CUtlMap<unsigned int, int, unsigned short, bool (*)(unsigned int const&, unsigned int const&)>::CKeyLess, CUtlMemory<UtlRBTreeNode_t<CUtlMap<unsigned int, int, unsigned short, bool (*)(unsigned int const&, unsigned int const&)>::Node_t, unsigned short>, unsigned short> >::Purge()
+t CUtlRBTree<CUtlMap<unsigned int, int, unsigned short, bool (*)(unsigned int const&, unsigned int const&)>::Node_t, unsigned short, CUtlMap<unsigned int, int, unsigned short, bool (*)(unsigned int const&, unsigned int const&)>::CKeyLess, CUtlMemory<UtlRBTreeNode_t<CUtlMap<unsigned int, int, unsigned short, bool (*)(unsigned int const&, unsigned int const&)>::Node_t, unsigned short>, unsigned short> >::Insert(CUtlMap<unsigned int, int, unsigned short, bool (*)(unsigned int const&, unsigned int const&)>::Node_t const&)
+t CUtlRBTree<CUtlMap<unsigned int, int, unsigned short, bool (*)(unsigned int const&, unsigned int const&)>::Node_t, unsigned short, CUtlMap<unsigned int, int, unsigned short, bool (*)(unsigned int const&, unsigned int const&)>::CKeyLess, CUtlMemory<UtlRBTreeNode_t<CUtlMap<unsigned int, int, unsigned short, bool (*)(unsigned int const&, unsigned int const&)>::Node_t, unsigned short>, unsigned short> >::NewNode()
+t CUtlRBTree<CUtlMap<unsigned int, int, unsigned short, bool (*)(unsigned int const&, unsigned int const&)>::Node_t, unsigned short, CUtlMap<unsigned int, int, unsigned short, bool (*)(unsigned int const&, unsigned int const&)>::CKeyLess, CUtlMemory<UtlRBTreeNode_t<CUtlMap<unsigned int, int, unsigned short, bool (*)(unsigned int const&, unsigned int const&)>::Node_t, unsigned short>, unsigned short> >::RemoveAll()
 t CUtlRBTree<CUtlMap<unsigned int, CNETMsg_PlayerAvatarData_t*, int, CDefLess<unsigned int> >::Node_t, int, CUtlMap<unsigned int, CNETMsg_PlayerAvatarData_t*, int, CDefLess<unsigned int> >::CKeyLess, CUtlMemory<UtlRBTreeNode_t<CUtlMap<unsigned int, CNETMsg_PlayerAvatarData_t*, int, CDefLess<unsigned int> >::Node_t, int>, int> >::RotateLeft(int)
 t CUtlRBTree<CUtlMap<unsigned int, CNETMsg_PlayerAvatarData_t*, int, CDefLess<unsigned int> >::Node_t, int, CUtlMap<unsigned int, CNETMsg_PlayerAvatarData_t*, int, CDefLess<unsigned int> >::CKeyLess, CUtlMemory<UtlRBTreeNode_t<CUtlMap<unsigned int, CNETMsg_PlayerAvatarData_t*, int, CDefLess<unsigned int> >::Node_t, int>, int> >::RotateRight(int)
 t CUtlRBTree<CUtlMap<unsigned int, CNETMsg_PlayerAvatarData_t*, int, CDefLess<unsigned int> >::Node_t, int, CUtlMap<unsigned int, CNETMsg_PlayerAvatarData_t*, int, CDefLess<unsigned int> >::CKeyLess, CUtlMemory<UtlRBTreeNode_t<CUtlMap<unsigned int, CNETMsg_PlayerAvatarData_t*, int, CDefLess<unsigned int> >::Node_t, int>, int> >::InsertRebalance(int)
@@ -6879,13 +6885,6 @@ t CUtlRBTree<CUtlMap<long, int, int, CDefLess<long> >::Node_t, int, CUtlMap<long
 t CUtlRBTree<CUtlMap<long, int, int, CDefLess<long> >::Node_t, int, CUtlMap<long, int, int, CDefLess<long> >::CKeyLess, CUtlMemory<UtlRBTreeNode_t<CUtlMap<long, int, int, CDefLess<long> >::Node_t, int>, int> >::Unlink(int)
 t CUtlRBTree<CUtlMap<long, int, int, CDefLess<long> >::Node_t, int, CUtlMap<long, int, int, CDefLess<long> >::CKeyLess, CUtlMemory<UtlRBTreeNode_t<CUtlMap<long, int, int, CDefLess<long> >::Node_t, int>, int> >::NewNode()
 t CUtlRBTree<CUtlMap<long, int, int, CDefLess<long> >::Node_t, int, CUtlMap<long, int, int, CDefLess<long> >::CKeyLess, CUtlMemory<UtlRBTreeNode_t<CUtlMap<long, int, int, CDefLess<long> >::Node_t, int>, int> >::RemoveAll()
-t CUtlRBTree<CUtlMap<unsigned long, int, unsigned short, bool (*)(unsigned long const&, unsigned long const&)>::Node_t, unsigned short, CUtlMap<unsigned long, int, unsigned short, bool (*)(unsigned long const&, unsigned long const&)>::CKeyLess, CUtlMemory<UtlRBTreeNode_t<CUtlMap<unsigned long, int, unsigned short, bool (*)(unsigned long const&, unsigned long const&)>::Node_t, unsigned short>, unsigned short> >::RotateLeft(unsigned short)
-t CUtlRBTree<CUtlMap<unsigned long, int, unsigned short, bool (*)(unsigned long const&, unsigned long const&)>::Node_t, unsigned short, CUtlMap<unsigned long, int, unsigned short, bool (*)(unsigned long const&, unsigned long const&)>::CKeyLess, CUtlMemory<UtlRBTreeNode_t<CUtlMap<unsigned long, int, unsigned short, bool (*)(unsigned long const&, unsigned long const&)>::Node_t, unsigned short>, unsigned short> >::RotateRight(unsigned short)
-t CUtlRBTree<CUtlMap<unsigned long, int, unsigned short, bool (*)(unsigned long const&, unsigned long const&)>::Node_t, unsigned short, CUtlMap<unsigned long, int, unsigned short, bool (*)(unsigned long const&, unsigned long const&)>::CKeyLess, CUtlMemory<UtlRBTreeNode_t<CUtlMap<unsigned long, int, unsigned short, bool (*)(unsigned long const&, unsigned long const&)>::Node_t, unsigned short>, unsigned short> >::InsertRebalance(unsigned short)
-t CUtlRBTree<CUtlMap<unsigned long, int, unsigned short, bool (*)(unsigned long const&, unsigned long const&)>::Node_t, unsigned short, CUtlMap<unsigned long, int, unsigned short, bool (*)(unsigned long const&, unsigned long const&)>::CKeyLess, CUtlMemory<UtlRBTreeNode_t<CUtlMap<unsigned long, int, unsigned short, bool (*)(unsigned long const&, unsigned long const&)>::Node_t, unsigned short>, unsigned short> >::Purge()
-t CUtlRBTree<CUtlMap<unsigned long, int, unsigned short, bool (*)(unsigned long const&, unsigned long const&)>::Node_t, unsigned short, CUtlMap<unsigned long, int, unsigned short, bool (*)(unsigned long const&, unsigned long const&)>::CKeyLess, CUtlMemory<UtlRBTreeNode_t<CUtlMap<unsigned long, int, unsigned short, bool (*)(unsigned long const&, unsigned long const&)>::Node_t, unsigned short>, unsigned short> >::Insert(CUtlMap<unsigned long, int, unsigned short, bool (*)(unsigned long const&, unsigned long const&)>::Node_t const&)
-t CUtlRBTree<CUtlMap<unsigned long, int, unsigned short, bool (*)(unsigned long const&, unsigned long const&)>::Node_t, unsigned short, CUtlMap<unsigned long, int, unsigned short, bool (*)(unsigned long const&, unsigned long const&)>::CKeyLess, CUtlMemory<UtlRBTreeNode_t<CUtlMap<unsigned long, int, unsigned short, bool (*)(unsigned long const&, unsigned long const&)>::Node_t, unsigned short>, unsigned short> >::NewNode()
-t CUtlRBTree<CUtlMap<unsigned long, int, unsigned short, bool (*)(unsigned long const&, unsigned long const&)>::Node_t, unsigned short, CUtlMap<unsigned long, int, unsigned short, bool (*)(unsigned long const&, unsigned long const&)>::CKeyLess, CUtlMemory<UtlRBTreeNode_t<CUtlMap<unsigned long, int, unsigned short, bool (*)(unsigned long const&, unsigned long const&)>::Node_t, unsigned short>, unsigned short> >::RemoveAll()
 t CUtlRBTree<CUtlMap<CNetworkStringDict::CTableItem, CNetworkStringTableItem, unsigned short, bool (*)(CNetworkStringDict::CTableItem const&, CNetworkStringDict::CTableItem const&)>::Node_t, unsigned short, CUtlMap<CNetworkStringDict::CTableItem, CNetworkStringTableItem, unsigned short, bool (*)(CNetworkStringDict::CTableItem const&, CNetworkStringDict::CTableItem const&)>::CKeyLess, CUtlMemory<UtlRBTreeNode_t<CUtlMap<CNetworkStringDict::CTableItem, CNetworkStringTableItem, unsigned short, bool (*)(CNetworkStringDict::CTableItem const&, CNetworkStringDict::CTableItem const&)>::Node_t, unsigned short>, unsigned short> >::RotateLeft(unsigned short)
 t CUtlRBTree<CUtlMap<CNetworkStringDict::CTableItem, CNetworkStringTableItem, unsigned short, bool (*)(CNetworkStringDict::CTableItem const&, CNetworkStringDict::CTableItem const&)>::Node_t, unsigned short, CUtlMap<CNetworkStringDict::CTableItem, CNetworkStringTableItem, unsigned short, bool (*)(CNetworkStringDict::CTableItem const&, CNetworkStringDict::CTableItem const&)>::CKeyLess, CUtlMemory<UtlRBTreeNode_t<CUtlMap<CNetworkStringDict::CTableItem, CNetworkStringTableItem, unsigned short, bool (*)(CNetworkStringDict::CTableItem const&, CNetworkStringDict::CTableItem const&)>::Node_t, unsigned short>, unsigned short> >::RotateRight(unsigned short)
 t CUtlRBTree<CUtlMap<CNetworkStringDict::CTableItem, CNetworkStringTableItem, unsigned short, bool (*)(CNetworkStringDict::CTableItem const&, CNetworkStringDict::CTableItem const&)>::Node_t, unsigned short, CUtlMap<CNetworkStringDict::CTableItem, CNetworkStringTableItem, unsigned short, bool (*)(CNetworkStringDict::CTableItem const&, CNetworkStringDict::CTableItem const&)>::CKeyLess, CUtlMemory<UtlRBTreeNode_t<CUtlMap<CNetworkStringDict::CTableItem, CNetworkStringTableItem, unsigned short, bool (*)(CNetworkStringDict::CTableItem const&, CNetworkStringDict::CTableItem const&)>::Node_t, unsigned short>, unsigned short> >::InsertRebalance(unsigned short)
@@ -11052,11 +11051,11 @@ t COcclusionSystem::COcclusionSystem()
 t COcclusionSystem::~COcclusionSystem()
 t COcclusionSystem::~COcclusionSystem()
 t COM_IOReadBinary::open(char const*)
-t COM_IOReadBinary::read(void*, int, int)
-t COM_IOReadBinary::seek(int, int)
-t COM_IOReadBinary::size(int)
-t COM_IOReadBinary::tell(int)
-t COM_IOReadBinary::close(int)
+t COM_IOReadBinary::read(void*, int, void*)
+t COM_IOReadBinary::seek(void*, int)
+t COM_IOReadBinary::size(void*)
+t COM_IOReadBinary::tell(void*)
+t COM_IOReadBinary::close(void*)
 t CPropOffsetStack::RecurseAndCallProxies(CSendNode*, unsigned char*)
 t CPureFileTracker::DoesFileMatch(char const*, char const*, int, FileHash_t*, USERID_s)
 t CPureFileTracker::ListUserFiles(bool, char const*)
@@ -13805,7 +13804,7 @@ t CSVCMsg_GameEventList_descriptor_t::~CSVCMsg_GameEventList_descriptor_t()
 t SteamDatagramLinkInstantaneousStats::Clear()
 t CNetworkStringTableDictionaryManager::ProcessBuffer(CUtlBuffer&)
 t CNetworkStringTableDictionaryManager::LoadMapStrings(char const*, bool)
-t CNetworkStringTableDictionaryManager::OnLevelLoadStart(char const*, unsigned long*)
+t CNetworkStringTableDictionaryManager::OnLevelLoadStart(char const*, unsigned int*)
 t CNetworkStringTableDictionaryManager::LoadDictionaryFile(CUtlBuffer&, char const*)
 t CNetworkStringTableDictionaryManager::OnBSPFullyUnloaded()
 t CNetworkStringTableDictionaryManager::SetLoadedFallbacks(bool)
@@ -17378,7 +17377,7 @@ t qhMass::qhMass()
 t qhMass::qhMass()
 t qhMass::operator+=(qhMass const&)
 t TUnzip::Get(int, ZIPENTRY*)
-t TUnzip::Get(int, ZIPENTRY*) [clone .part.4]
+t TUnzip::Get(int, ZIPENTRY*) [clone .part.5]
 t TUnzip::Find(char const*, bool, int*, ZIPENTRY*)
 t TUnzip::Open(void*, unsigned int, unsigned int)
 t TUnzip::Close()
@@ -17387,7 +17386,6 @@ t CDefOps<CUtlSymbol>::LessFunc(CUtlSymbol const&, CUtlSymbol const&)
 t CDefOps<netadr_s>::LessFunc(netadr_s const&, netadr_s const&)
 t CDefOps<int>::LessFunc(int const&, int const&)
 t CDefOps<unsigned int>::LessFunc(unsigned int const&, unsigned int const&)
-t CDefOps<unsigned long>::LessFunc(unsigned long const&, unsigned long const&)
 t CDefOps<model_t*>::LessFunc(model_t* const&, model_t* const&)
 t CDefOps<char*>::LessFunc(char* const&, char* const&)
 t CDefOps<studiohdr_t const*>::LessFunc(studiohdr_t const* const&, studiohdr_t const* const&)
@@ -17449,12 +17447,12 @@ t CUtlMap<int, int, unsigned short, bool (*)(int const&, int const&)>::~CUtlMap(
 t CUtlMap<int, int, unsigned short, bool (*)(int const&, int const&)>::~CUtlMap()
 t CUtlMap<int, unsigned char*, int, CDefLess<int> >::~CUtlMap()
 t CUtlMap<int, unsigned char*, int, CDefLess<int> >::~CUtlMap()
+t CUtlMap<unsigned int, int, unsigned short, bool (*)(unsigned int const&, unsigned int const&)>::~CUtlMap()
+t CUtlMap<unsigned int, int, unsigned short, bool (*)(unsigned int const&, unsigned int const&)>::~CUtlMap()
 t CUtlMap<unsigned int, CNETMsg_PlayerAvatarData_t*, int, CDefLess<unsigned int> >::~CUtlMap()
 t CUtlMap<unsigned int, CNETMsg_PlayerAvatarData_t*, int, CDefLess<unsigned int> >::~CUtlMap()
 t CUtlMap<unsigned int, SteamDatagramTransport::SharedClusterData*, int, bool (*)(unsigned int const&, unsigned int const&)>::~CUtlMap()
 t CUtlMap<unsigned int, SteamDatagramTransport::SharedClusterData*, int, bool (*)(unsigned int const&, unsigned int const&)>::~CUtlMap()
-t CUtlMap<unsigned long, int, unsigned short, bool (*)(unsigned long const&, unsigned long const&)>::~CUtlMap()
-t CUtlMap<unsigned long, int, unsigned short, bool (*)(unsigned long const&, unsigned long const&)>::~CUtlMap()
 t CUtlMap<CNetworkStringDict::CTableItem, CNetworkStringTableItem, unsigned short, bool (*)(CNetworkStringDict::CTableItem const&, CNetworkStringDict::CTableItem const&)>::Node_t::~Node_t()
 t CUtlMap<CNetworkStringDict::CTableItem, CNetworkStringTableItem, unsigned short, bool (*)(CNetworkStringDict::CTableItem const&, CNetworkStringDict::CTableItem const&)>::Node_t::~Node_t()
 t CUtlMap<CNetworkStringDict::CTableItem, CNetworkStringTableItem, unsigned short, bool (*)(CNetworkStringDict::CTableItem const&, CNetworkStringDict::CTableItem const&)>::~CUtlMap()
@@ -17521,7 +17519,7 @@ t bf_write::SeekToBit(int)
 t bf_write::WriteBits(void const*, int)
 t bf_write::WriteByte(unsigned int)
 t bf_write::WriteChar(int)
-t bf_write::WriteLong(long)
+t bf_write::WriteLong(int)
 t bf_write::WriteWord(unsigned int)
 t bf_write::bf_write(char const*, void*, int, int)
 t bf_write::bf_write(void*, int, int)
@@ -20354,13 +20352,12 @@ t void CByteswap::SwapBuffer<int>(int*, int*, int) [clone .isra.63] [clone .part
 t void CByteswap::SwapBuffer<unsigned long>(unsigned long*, unsigned long*, int) [clone .isra.72] [clone .part.73] [clone .constprop.145]
 t void CByteswap::SwapBuffer<unsigned short>(unsigned short*, unsigned short*, int) [clone .isra.68] [clone .part.69] [clone .constprop.151]
 t CByteswap::SwapFieldToTargetEndian(void*, void*, typedescription_t*)
-t void CByteswap::SwapBufferToTargetEndian<float>(float*, float*, int) [clone .part.32] [clone .constprop.92]
+t void CByteswap::SwapBufferToTargetEndian<float>(float*, float*, int) [clone .part.31] [clone .constprop.89]
 t void CByteswap::SwapBufferToTargetEndian<int>(int*, int*, int) [clone .part.135] [clone .constprop.227]
-t void CByteswap::SwapBufferToTargetEndian<int>(int*, int*, int) [clone .part.63] [clone .constprop.96]
-t void CByteswap::SwapBufferToTargetEndian<unsigned int>(unsigned int*, unsigned int*, int) [clone .part.50] [clone .constprop.93]
-t void CByteswap::SwapBufferToTargetEndian<unsigned short>(unsigned short*, unsigned short*, int) [clone .part.60] [clone .constprop.95]
+t void CByteswap::SwapBufferToTargetEndian<int>(int*, int*, int) [clone .part.60] [clone .constprop.92]
+t void CByteswap::SwapBufferToTargetEndian<unsigned short>(unsigned short*, unsigned short*, int) [clone .part.57] [clone .constprop.91]
 t void CByteswap::SwapBufferToTargetEndian<long long>(long long*, long long*, int)
-t void CByteswap::SwapBufferToTargetEndian<long long>(long long*, long long*, int) [clone .part.66] [clone .constprop.91]
+t void CByteswap::SwapBufferToTargetEndian<long long>(long long*, long long*, int) [clone .part.63] [clone .constprop.88]
 t CByteswap::SwapFieldsToTargetEndian(void*, void*, datamap_t*)
 t CCallback<CSteam3Server, GSPolicyResponse_t, true>::Run(void*)
 t CCallback<CSteam3Server, SteamServersConnected_t, true>::Run(void*)
@@ -21474,10 +21471,10 @@ t CUtlRBTree<CUtlMap<netadr_s, SteamDatagramTransport::CSteamDatagramTransportCl
 t CUtlRBTree<CUtlMap<int, int, unsigned short, bool (*)(int const&, int const&)>::Node_t, unsigned short, CUtlMap<int, int, unsigned short, bool (*)(int const&, int const&)>::CKeyLess, CUtlMemory<UtlRBTreeNode_t<CUtlMap<int, int, unsigned short, bool (*)(int const&, int const&)>::Node_t, unsigned short>, unsigned short> >::NextInorder(unsigned short) const
 t CUtlRBTree<CUtlMap<int, int, unsigned short, bool (*)(int const&, int const&)>::Node_t, unsigned short, CUtlMap<int, int, unsigned short, bool (*)(int const&, int const&)>::CKeyLess, CUtlMemory<UtlRBTreeNode_t<CUtlMap<int, int, unsigned short, bool (*)(int const&, int const&)>::Node_t, unsigned short>, unsigned short> >::Find(CUtlMap<int, int, unsigned short, bool (*)(int const&, int const&)>::Node_t const&) const
 t CUtlRBTree<CUtlMap<int, CThreadedSocketQueue::CSocketThread*, unsigned short, bool (*)(int const&, int const&)>::Node_t, unsigned short, CUtlMap<int, CThreadedSocketQueue::CSocketThread*, unsigned short, bool (*)(int const&, int const&)>::CKeyLess, CUtlMemory<UtlRBTreeNode_t<CUtlMap<int, CThreadedSocketQueue::CSocketThread*, unsigned short, bool (*)(int const&, int const&)>::Node_t, unsigned short>, unsigned short> >::Find(CUtlMap<int, CThreadedSocketQueue::CSocketThread*, unsigned short, bool (*)(int const&, int const&)>::Node_t const&) const
+t CUtlRBTree<CUtlMap<unsigned int, int, unsigned short, bool (*)(unsigned int const&, unsigned int const&)>::Node_t, unsigned short, CUtlMap<unsigned int, int, unsigned short, bool (*)(unsigned int const&, unsigned int const&)>::CKeyLess, CUtlMemory<UtlRBTreeNode_t<CUtlMap<unsigned int, int, unsigned short, bool (*)(unsigned int const&, unsigned int const&)>::Node_t, unsigned short>, unsigned short> >::Find(CUtlMap<unsigned int, int, unsigned short, bool (*)(unsigned int const&, unsigned int const&)>::Node_t const&) const
 t CUtlRBTree<CUtlMap<unsigned int, SteamDatagramTransport::SharedClusterData*, int, bool (*)(unsigned int const&, unsigned int const&)>::Node_t, int, CUtlMap<unsigned int, SteamDatagramTransport::SharedClusterData*, int, bool (*)(unsigned int const&, unsigned int const&)>::CKeyLess, CUtlMemory<UtlRBTreeNode_t<CUtlMap<unsigned int, SteamDatagramTransport::SharedClusterData*, int, bool (*)(unsigned int const&, unsigned int const&)>::Node_t, int>, int> >::NextInorder(int) const
 t CUtlRBTree<CUtlMap<unsigned int, SteamDatagramTransport::SharedClusterData*, int, bool (*)(unsigned int const&, unsigned int const&)>::Node_t, int, CUtlMap<unsigned int, SteamDatagramTransport::SharedClusterData*, int, bool (*)(unsigned int const&, unsigned int const&)>::CKeyLess, CUtlMemory<UtlRBTreeNode_t<CUtlMap<unsigned int, SteamDatagramTransport::SharedClusterData*, int, bool (*)(unsigned int const&, unsigned int const&)>::Node_t, int>, int> >::Find(CUtlMap<unsigned int, SteamDatagramTransport::SharedClusterData*, int, bool (*)(unsigned int const&, unsigned int const&)>::Node_t const&) const
 t CUtlRBTree<CUtlMap<long, int, int, CDefLess<long> >::Node_t, int, CUtlMap<long, int, int, CDefLess<long> >::CKeyLess, CUtlMemory<UtlRBTreeNode_t<CUtlMap<long, int, int, CDefLess<long> >::Node_t, int>, int> >::NextInorder(int) const
-t CUtlRBTree<CUtlMap<unsigned long, int, unsigned short, bool (*)(unsigned long const&, unsigned long const&)>::Node_t, unsigned short, CUtlMap<unsigned long, int, unsigned short, bool (*)(unsigned long const&, unsigned long const&)>::CKeyLess, CUtlMemory<UtlRBTreeNode_t<CUtlMap<unsigned long, int, unsigned short, bool (*)(unsigned long const&, unsigned long const&)>::Node_t, unsigned short>, unsigned short> >::Find(CUtlMap<unsigned long, int, unsigned short, bool (*)(unsigned long const&, unsigned long const&)>::Node_t const&) const
 t CUtlRBTree<CUtlMap<CNetworkStringDict::CTableItem, CNetworkStringTableItem, unsigned short, bool (*)(CNetworkStringDict::CTableItem const&, CNetworkStringDict::CTableItem const&)>::Node_t, unsigned short, CUtlMap<CNetworkStringDict::CTableItem, CNetworkStringTableItem, unsigned short, bool (*)(CNetworkStringDict::CTableItem const&, CNetworkStringDict::CTableItem const&)>::CKeyLess, CUtlMemory<UtlRBTreeNode_t<CUtlMap<CNetworkStringDict::CTableItem, CNetworkStringTableItem, unsigned short, bool (*)(CNetworkStringDict::CTableItem const&, CNetworkStringDict::CTableItem const&)>::Node_t, unsigned short>, unsigned short> >::Find(CUtlMap<CNetworkStringDict::CTableItem, CNetworkStringTableItem, unsigned short, bool (*)(CNetworkStringDict::CTableItem const&, CNetworkStringDict::CTableItem const&)>::Node_t const&) const
 t CUtlRBTree<CUtlMap<model_t*, ViewWeaponEntry_t*, unsigned short, bool (*)(model_t* const&, model_t* const&)>::Node_t, unsigned short, CUtlMap<model_t*, ViewWeaponEntry_t*, unsigned short, bool (*)(model_t* const&, model_t* const&)>::CKeyLess, CUtlMemory<UtlRBTreeNode_t<CUtlMap<model_t*, ViewWeaponEntry_t*, unsigned short, bool (*)(model_t* const&, model_t* const&)>::Node_t, unsigned short>, unsigned short> >::Find(CUtlMap<model_t*, ViewWeaponEntry_t*, unsigned short, bool (*)(model_t* const&, model_t* const&)>::Node_t const&) const
 t CUtlRBTree<CUtlMap<char*, double, unsigned short, bool (*)(char* const&, char* const&)>::Node_t, unsigned short, CUtlMap<char*, double, unsigned short, bool (*)(char* const&, char* const&)>::CKeyLess, CUtlMemory<UtlRBTreeNode_t<CUtlMap<char*, double, unsigned short, bool (*)(char* const&, char* const&)>::Node_t, unsigned short>, unsigned short> >::Find(CUtlMap<char*, double, unsigned short, bool (*)(char* const&, char* const&)>::Node_t const&) const
@@ -35971,7 +35968,7 @@ d GetEndMask(int)::bitStringEndMasks
 b GetMapName()::mapname
 b Host_Error(char const*, ...)::inerror
 b AddNeighbor(CCoreDispInfo*, int, int, NeighborSpan, CCoreDispInfo*, int, NeighborSpan)::__executeCount
-b CRC_MapFile(unsigned long*, char const*)::gamedir
+b CRC_MapFile(unsigned int*, char const*)::gamedir
 b datamap_t* DataMapInit<BSPHeader_t>(BSPHeader_t*)::nameHolder
 d datamap_t* DataMapInit<BSPHeader_t>(BSPHeader_t*)::dataDesc
 b datamap_t* DataMapInit<player_info_s>(player_info_s*)::nameHolder
@@ -36241,7 +36238,7 @@ d SplitScreenConVarRef::Init(char const*, bool)::bFirst
 t SteamDatagramTransport::CSteamDatagramTransportClient::ThinkPingProbes(unsigned long long)::{lambda(int const*, int const*)#1}::_FUN(int const*, int const*)
 d SteamDatagramTransport::CSteamDatagramTransportClient::SendPing(SteamDatagramTransport::CSteamDatagramTransportClient::ServerData&, unsigned long long, bool)::pkt
 b CKeyValuesDumpContextAsDevMsg::KvBeginKey(KeyValues*, int)::r_developer
-b CNetworkStringTableDictionaryManager::OnLevelLoadStart(char const*, unsigned long*)::gamedir
+b CNetworkStringTableDictionaryManager::OnLevelLoadStart(char const*, unsigned int*)::gamedir
 b CNetworkStringTableDictionaryManager::ShouldRecreateDictionary(char const*)::gamedir
 b CLog::Print(char const*)::string
 b CLog::Printf(char const*, ...)::string

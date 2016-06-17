@@ -110,8 +110,8 @@ d cplus_demangle_builtin_types
 d cplus_demangle_operators
 T CreateInterface
 U CreateSimpleThread
-r CSWTCH.1364
-r CSWTCH.1366
+r CSWTCH.1337
+r CSWTCH.1339
 r CSWTCH.206
 r CSWTCH.23
 r CSWTCH.258
@@ -1652,6 +1652,7 @@ b tv_broadcast_url
 b tv_debug
 b tv_enable
 b tv_enable1
+b tv_maxclients
 b tv_maxclients_relayreserved
 b tv_name
 b tv_playcast_max_rcvage
@@ -3457,6 +3458,7 @@ t MatrixBuildRotationAboutAxis(Vector const&, float, matrix3x4_t&)
 t NET_BufferToBufferDecompress(char*, unsigned int*, char*, unsigned int)
 t NET_DiscardStaleSplitpackets(int)
 t NetMsgSetCVarUsingDictionary(CMsg_CVars_CVar*, char const*, char const*) [clone .part.70]
+t NetMsgSetCVarUsingDictionary(CMsg_CVars_CVar*, char const*, char const*) [clone .part.86]
 t NET_TerminateSteamConnection(int, unsigned long long)
 t OverrideMaterialSystemConfig(MaterialSystem_Config_t&)
 t PackEntities_NetworkBackDoor(int, CGameClient**, CFrameSnapshot*)
@@ -4891,7 +4893,6 @@ b sv_redirected
 b sv_redirectto
 b texgammatable
 b tv_deltacache
-b tv_maxclients
 b tv_relayvoice
 t tv_stoprecord(CCommand const&)
 b users_command
@@ -11013,6 +11014,7 @@ t CHLTVClientState::SVCMsg_CrosshairAngle(CSVCMsg_CrosshairAngle const&)
 t CHLTVClientState::SVCMsg_PacketEntities(CSVCMsg_PacketEntities const&)
 t CHLTVClientState::NETMsg_PlayerAvatarData(CNETMsg_PlayerAvatarData const&)
 t CHLTVClientState::InstallStringTableCallback(char const*)
+t CHLTVClientState::SetLocalInfoConvarsForUpstreamConnection(CMsg_CVars&, bool)
 t CHLTVClientState::Clear()
 t CHLTVClientState::RunFrame()
 t CHLTVClientState::PacketEnd()
@@ -12257,7 +12259,6 @@ t CFSMountContentInfo::CFSMountContentInfo()
 t CFSMountContentInfo::CFSMountContentInfo()
 t CMicroProfilerGuard::~CMicroProfilerGuard()
 t CMicroProfilerGuard::~CMicroProfilerGuard()
-t CNETMsg_SetConVar_t::AddToTail(char const*, char const*)
 t CNETMsg_SetConVar_t::~CNETMsg_SetConVar_t()
 t CNETMsg_SetConVar_t::~CNETMsg_SetConVar_t()
 t CNETMsg_SetConVar_t::~CNETMsg_SetConVar_t()

@@ -6151,17 +6151,11 @@ t CCvarQuery::Shutdown()
 t CErrorText::BuildComment(char const*)
 t CErrorText::~CErrorText()
 t CErrorText::~CErrorText()
-t CGameEvent::GetWString(char const*, wchar_t const*)
 t CGameEvent::SetWString(char const*, wchar_t const*)
-t CGameEvent::GetInt(char const*, int)
 t CGameEvent::SetInt(char const*, int)
-t CGameEvent::GetBool(char const*, bool)
-t CGameEvent::IsEmpty(char const*)
+t CGameEvent::SetPtr(char const*, void const*)
 t CGameEvent::SetBool(char const*, bool)
-t CGameEvent::GetFloat(char const*, float)
 t CGameEvent::SetFloat(char const*, float)
-t CGameEvent::GetString(char const*, char const*)
-t CGameEvent::GetUint64(char const*, unsigned long long)
 t CGameEvent::SetString(char const*, char const*)
 t CGameEvent::SetUint64(char const*, unsigned long long)
 t CGameEvent::CGameEvent(CGameEventDescriptor*, char const*)
@@ -9144,343 +9138,294 @@ t CMemoryPoolMT::~CMemoryPoolMT()
 t CMemoryPoolMT::~CMemoryPoolMT()
 b CNetMessagePB<0, CNETMsg_NOP, 0, true>::s_typeName
 t CNetMessagePB<0, CNETMsg_NOP, 0, true>::SetReliable(bool)
-t CNetMessagePB<0, CNETMsg_NOP, 0, true>::WriteToBuffer(bf_write&)
 t CNetMessagePB<0, CNETMsg_NOP, 0, true>::ReadFromBuffer(bf_read&)
 t CNetMessagePB<0, CNETMsg_NOP, 0, true>::~CNetMessagePB()
 t CNetMessagePB<0, CNETMsg_NOP, 0, true>::~CNetMessagePB()
 t CNetMessagePB<0, CNETMsg_NOP, 0, true>::~CNetMessagePB()
 b CNetMessagePB<100, CNETMsg_PlayerAvatarData, 14, true>::s_typeName
 t CNetMessagePB<100, CNETMsg_PlayerAvatarData, 14, true>::SetReliable(bool)
-t CNetMessagePB<100, CNETMsg_PlayerAvatarData, 14, true>::WriteToBuffer(bf_write&)
 t CNetMessagePB<100, CNETMsg_PlayerAvatarData, 14, true>::ReadFromBuffer(bf_read&)
 t CNetMessagePB<100, CNETMsg_PlayerAvatarData, 14, true>::~CNetMessagePB()
 t CNetMessagePB<100, CNETMsg_PlayerAvatarData, 14, true>::~CNetMessagePB()
 t CNetMessagePB<100, CNETMsg_PlayerAvatarData, 14, true>::~CNetMessagePB()
 b CNetMessagePB<10, CCLCMsg_VoiceData, 9, false>::s_typeName
 t CNetMessagePB<10, CCLCMsg_VoiceData, 9, false>::SetReliable(bool)
-t CNetMessagePB<10, CCLCMsg_VoiceData, 9, false>::WriteToBuffer(bf_write&)
 t CNetMessagePB<10, CCLCMsg_VoiceData, 9, false>::ReadFromBuffer(bf_read&)
 t CNetMessagePB<10, CCLCMsg_VoiceData, 9, false>::~CNetMessagePB()
 t CNetMessagePB<10, CCLCMsg_VoiceData, 9, false>::~CNetMessagePB()
 t CNetMessagePB<10, CCLCMsg_VoiceData, 9, false>::~CNetMessagePB()
 b CNetMessagePB<10, CSVCMsg_ClassInfo, 13, true>::s_typeName
 t CNetMessagePB<10, CSVCMsg_ClassInfo, 13, true>::SetReliable(bool)
-t CNetMessagePB<10, CSVCMsg_ClassInfo, 13, true>::WriteToBuffer(bf_write&)
 t CNetMessagePB<10, CSVCMsg_ClassInfo, 13, true>::ReadFromBuffer(bf_read&)
 t CNetMessagePB<10, CSVCMsg_ClassInfo, 13, true>::~CNetMessagePB()
 t CNetMessagePB<10, CSVCMsg_ClassInfo, 13, true>::~CNetMessagePB()
 t CNetMessagePB<10, CSVCMsg_ClassInfo, 13, true>::~CNetMessagePB()
 b CNetMessagePB<11, CSVCMsg_SetPause, 0, true>::s_typeName
 t CNetMessagePB<11, CSVCMsg_SetPause, 0, true>::SetReliable(bool)
-t CNetMessagePB<11, CSVCMsg_SetPause, 0, true>::WriteToBuffer(bf_write&)
 t CNetMessagePB<11, CSVCMsg_SetPause, 0, true>::ReadFromBuffer(bf_read&)
 t CNetMessagePB<11, CSVCMsg_SetPause, 0, true>::~CNetMessagePB()
 t CNetMessagePB<11, CSVCMsg_SetPause, 0, true>::~CNetMessagePB()
 t CNetMessagePB<11, CSVCMsg_SetPause, 0, true>::~CNetMessagePB()
 b CNetMessagePB<11, CCLCMsg_BaselineAck, 0, true>::s_typeName
 t CNetMessagePB<11, CCLCMsg_BaselineAck, 0, true>::SetReliable(bool)
-t CNetMessagePB<11, CCLCMsg_BaselineAck, 0, true>::WriteToBuffer(bf_write&)
 t CNetMessagePB<11, CCLCMsg_BaselineAck, 0, true>::ReadFromBuffer(bf_read&)
 t CNetMessagePB<11, CCLCMsg_BaselineAck, 0, true>::~CNetMessagePB()
 t CNetMessagePB<11, CCLCMsg_BaselineAck, 0, true>::~CNetMessagePB()
 t CNetMessagePB<11, CCLCMsg_BaselineAck, 0, true>::~CNetMessagePB()
 b CNetMessagePB<12, CCLCMsg_ListenEvents, 0, true>::s_typeName
 t CNetMessagePB<12, CCLCMsg_ListenEvents, 0, true>::SetReliable(bool)
-t CNetMessagePB<12, CCLCMsg_ListenEvents, 0, true>::WriteToBuffer(bf_write&)
 t CNetMessagePB<12, CCLCMsg_ListenEvents, 0, true>::ReadFromBuffer(bf_read&)
 t CNetMessagePB<12, CCLCMsg_ListenEvents, 0, true>::~CNetMessagePB()
 t CNetMessagePB<12, CCLCMsg_ListenEvents, 0, true>::~CNetMessagePB()
 t CNetMessagePB<12, CCLCMsg_ListenEvents, 0, true>::~CNetMessagePB()
 b CNetMessagePB<12, CSVCMsg_CreateStringTable, 13, true>::s_typeName
 t CNetMessagePB<12, CSVCMsg_CreateStringTable, 13, true>::SetReliable(bool)
-t CNetMessagePB<12, CSVCMsg_CreateStringTable, 13, true>::WriteToBuffer(bf_write&)
 t CNetMessagePB<12, CSVCMsg_CreateStringTable, 13, true>::ReadFromBuffer(bf_read&)
 t CNetMessagePB<12, CSVCMsg_CreateStringTable, 13, true>::~CNetMessagePB()
 t CNetMessagePB<12, CSVCMsg_CreateStringTable, 13, true>::~CNetMessagePB()
 t CNetMessagePB<12, CSVCMsg_CreateStringTable, 13, true>::~CNetMessagePB()
 b CNetMessagePB<13, CCLCMsg_RespondCvarValue, 0, true>::s_typeName
 t CNetMessagePB<13, CCLCMsg_RespondCvarValue, 0, true>::SetReliable(bool)
-t CNetMessagePB<13, CCLCMsg_RespondCvarValue, 0, true>::WriteToBuffer(bf_write&)
 t CNetMessagePB<13, CCLCMsg_RespondCvarValue, 0, true>::ReadFromBuffer(bf_read&)
 t CNetMessagePB<13, CCLCMsg_RespondCvarValue, 0, true>::~CNetMessagePB()
 t CNetMessagePB<13, CCLCMsg_RespondCvarValue, 0, true>::~CNetMessagePB()
 t CNetMessagePB<13, CCLCMsg_RespondCvarValue, 0, true>::~CNetMessagePB()
 b CNetMessagePB<13, CSVCMsg_UpdateStringTable, 10, true>::s_typeName
 t CNetMessagePB<13, CSVCMsg_UpdateStringTable, 10, true>::SetReliable(bool)
-t CNetMessagePB<13, CSVCMsg_UpdateStringTable, 10, true>::WriteToBuffer(bf_write&)
 t CNetMessagePB<13, CSVCMsg_UpdateStringTable, 10, true>::ReadFromBuffer(bf_read&)
 t CNetMessagePB<13, CSVCMsg_UpdateStringTable, 10, true>::~CNetMessagePB()
 t CNetMessagePB<13, CSVCMsg_UpdateStringTable, 10, true>::~CNetMessagePB()
 t CNetMessagePB<13, CSVCMsg_UpdateStringTable, 10, true>::~CNetMessagePB()
 b CNetMessagePB<14, CSVCMsg_VoiceInit, 13, true>::s_typeName
 t CNetMessagePB<14, CSVCMsg_VoiceInit, 13, true>::SetReliable(bool)
-t CNetMessagePB<14, CSVCMsg_VoiceInit, 13, true>::WriteToBuffer(bf_write&)
 t CNetMessagePB<14, CSVCMsg_VoiceInit, 13, true>::ReadFromBuffer(bf_read&)
 t CNetMessagePB<14, CSVCMsg_VoiceInit, 13, true>::~CNetMessagePB()
 t CNetMessagePB<14, CSVCMsg_VoiceInit, 13, true>::~CNetMessagePB()
 t CNetMessagePB<14, CSVCMsg_VoiceInit, 13, true>::~CNetMessagePB()
 b CNetMessagePB<14, CCLCMsg_FileCRCCheck, 0, true>::s_typeName
 t CNetMessagePB<14, CCLCMsg_FileCRCCheck, 0, true>::SetReliable(bool)
-t CNetMessagePB<14, CCLCMsg_FileCRCCheck, 0, true>::WriteToBuffer(bf_write&)
 t CNetMessagePB<14, CCLCMsg_FileCRCCheck, 0, true>::ReadFromBuffer(bf_read&)
 t CNetMessagePB<14, CCLCMsg_FileCRCCheck, 0, true>::~CNetMessagePB()
 t CNetMessagePB<14, CCLCMsg_FileCRCCheck, 0, true>::~CNetMessagePB()
 t CNetMessagePB<14, CCLCMsg_FileCRCCheck, 0, true>::~CNetMessagePB()
 b CNetMessagePB<15, CSVCMsg_VoiceData, 9, false>::s_typeName
 t CNetMessagePB<15, CSVCMsg_VoiceData, 9, false>::SetReliable(bool)
-t CNetMessagePB<15, CSVCMsg_VoiceData, 9, false>::WriteToBuffer(bf_write&)
 t CNetMessagePB<15, CSVCMsg_VoiceData, 9, false>::ReadFromBuffer(bf_read&)
 t CNetMessagePB<15, CSVCMsg_VoiceData, 9, false>::~CNetMessagePB()
 t CNetMessagePB<15, CSVCMsg_VoiceData, 9, false>::~CNetMessagePB()
 t CNetMessagePB<15, CSVCMsg_VoiceData, 9, false>::~CNetMessagePB()
 b CNetMessagePB<15, CCLCMsg_LoadingProgress, 0, true>::s_typeName
 t CNetMessagePB<15, CCLCMsg_LoadingProgress, 0, true>::SetReliable(bool)
-t CNetMessagePB<15, CCLCMsg_LoadingProgress, 0, true>::WriteToBuffer(bf_write&)
 t CNetMessagePB<15, CCLCMsg_LoadingProgress, 0, true>::ReadFromBuffer(bf_read&)
 t CNetMessagePB<15, CCLCMsg_LoadingProgress, 0, true>::~CNetMessagePB()
 t CNetMessagePB<15, CCLCMsg_LoadingProgress, 0, true>::~CNetMessagePB()
 t CNetMessagePB<15, CCLCMsg_LoadingProgress, 0, true>::~CNetMessagePB()
 b CNetMessagePB<16, CSVCMsg_Print, 0, false>::s_typeName
 t CNetMessagePB<16, CSVCMsg_Print, 0, false>::SetReliable(bool)
-t CNetMessagePB<16, CSVCMsg_Print, 0, false>::WriteToBuffer(bf_write&)
 t CNetMessagePB<16, CSVCMsg_Print, 0, false>::ReadFromBuffer(bf_read&)
 t CNetMessagePB<16, CSVCMsg_Print, 0, false>::~CNetMessagePB()
 t CNetMessagePB<16, CSVCMsg_Print, 0, false>::~CNetMessagePB()
 t CNetMessagePB<16, CSVCMsg_Print, 0, false>::~CNetMessagePB()
 b CNetMessagePB<16, CCLCMsg_SplitPlayerConnect, 0, true>::s_typeName
 t CNetMessagePB<16, CCLCMsg_SplitPlayerConnect, 0, true>::SetReliable(bool)
-t CNetMessagePB<16, CCLCMsg_SplitPlayerConnect, 0, true>::WriteToBuffer(bf_write&)
 t CNetMessagePB<16, CCLCMsg_SplitPlayerConnect, 0, true>::ReadFromBuffer(bf_read&)
 t CNetMessagePB<16, CCLCMsg_SplitPlayerConnect, 0, true>::~CNetMessagePB()
 t CNetMessagePB<16, CCLCMsg_SplitPlayerConnect, 0, true>::~CNetMessagePB()
 t CNetMessagePB<16, CCLCMsg_SplitPlayerConnect, 0, true>::~CNetMessagePB()
 b CNetMessagePB<17, CSVCMsg_Sounds, 4, true>::s_typeName
 t CNetMessagePB<17, CSVCMsg_Sounds, 4, true>::SetReliable(bool)
-t CNetMessagePB<17, CSVCMsg_Sounds, 4, true>::WriteToBuffer(bf_write&)
 t CNetMessagePB<17, CSVCMsg_Sounds, 4, true>::ReadFromBuffer(bf_read&)
 t CNetMessagePB<17, CSVCMsg_Sounds, 4, true>::~CNetMessagePB()
 t CNetMessagePB<17, CSVCMsg_Sounds, 4, true>::~CNetMessagePB()
 t CNetMessagePB<17, CSVCMsg_Sounds, 4, true>::~CNetMessagePB()
 b CNetMessagePB<18, CSVCMsg_SetView, 0, true>::s_typeName
 t CNetMessagePB<18, CSVCMsg_SetView, 0, true>::SetReliable(bool)
-t CNetMessagePB<18, CSVCMsg_SetView, 0, true>::WriteToBuffer(bf_write&)
 t CNetMessagePB<18, CSVCMsg_SetView, 0, true>::ReadFromBuffer(bf_read&)
 t CNetMessagePB<18, CSVCMsg_SetView, 0, true>::~CNetMessagePB()
 t CNetMessagePB<18, CSVCMsg_SetView, 0, true>::~CNetMessagePB()
 t CNetMessagePB<18, CSVCMsg_SetView, 0, true>::~CNetMessagePB()
 b CNetMessagePB<18, CCLCMsg_CmdKeyValues, 0, true>::s_typeName
 t CNetMessagePB<18, CCLCMsg_CmdKeyValues, 0, true>::SetReliable(bool)
-t CNetMessagePB<18, CCLCMsg_CmdKeyValues, 0, true>::WriteToBuffer(bf_write&)
 t CNetMessagePB<18, CCLCMsg_CmdKeyValues, 0, true>::ReadFromBuffer(bf_read&)
 t CNetMessagePB<18, CCLCMsg_CmdKeyValues, 0, true>::~CNetMessagePB()
 t CNetMessagePB<18, CCLCMsg_CmdKeyValues, 0, true>::~CNetMessagePB()
 t CNetMessagePB<18, CCLCMsg_CmdKeyValues, 0, true>::~CNetMessagePB()
 b CNetMessagePB<19, CSVCMsg_FixAngle, 0, false>::s_typeName
 t CNetMessagePB<19, CSVCMsg_FixAngle, 0, false>::SetReliable(bool)
-t CNetMessagePB<19, CSVCMsg_FixAngle, 0, false>::WriteToBuffer(bf_write&)
 t CNetMessagePB<19, CSVCMsg_FixAngle, 0, false>::ReadFromBuffer(bf_read&)
 t CNetMessagePB<19, CSVCMsg_FixAngle, 0, false>::~CNetMessagePB()
 t CNetMessagePB<19, CSVCMsg_FixAngle, 0, false>::~CNetMessagePB()
 t CNetMessagePB<19, CSVCMsg_FixAngle, 0, false>::~CNetMessagePB()
 b CNetMessagePB<1, CNETMsg_Disconnect, 0, true>::s_typeName
 t CNetMessagePB<1, CNETMsg_Disconnect, 0, true>::SetReliable(bool)
-t CNetMessagePB<1, CNETMsg_Disconnect, 0, true>::WriteToBuffer(bf_write&)
 t CNetMessagePB<1, CNETMsg_Disconnect, 0, true>::ReadFromBuffer(bf_read&)
 t CNetMessagePB<1, CNETMsg_Disconnect, 0, true>::~CNetMessagePB()
 t CNetMessagePB<1, CNETMsg_Disconnect, 0, true>::~CNetMessagePB()
 t CNetMessagePB<1, CNETMsg_Disconnect, 0, true>::~CNetMessagePB()
 b CNetMessagePB<20, CCLCMsg_HltvReplay, 0, true>::s_typeName
 t CNetMessagePB<20, CCLCMsg_HltvReplay, 0, true>::SetReliable(bool)
-t CNetMessagePB<20, CCLCMsg_HltvReplay, 0, true>::WriteToBuffer(bf_write&)
 t CNetMessagePB<20, CCLCMsg_HltvReplay, 0, true>::ReadFromBuffer(bf_read&)
 t CNetMessagePB<20, CCLCMsg_HltvReplay, 0, true>::~CNetMessagePB()
 t CNetMessagePB<20, CCLCMsg_HltvReplay, 0, true>::~CNetMessagePB()
 t CNetMessagePB<20, CCLCMsg_HltvReplay, 0, true>::~CNetMessagePB()
 b CNetMessagePB<20, CSVCMsg_CrosshairAngle, 0, true>::s_typeName
 t CNetMessagePB<20, CSVCMsg_CrosshairAngle, 0, true>::SetReliable(bool)
-t CNetMessagePB<20, CSVCMsg_CrosshairAngle, 0, true>::WriteToBuffer(bf_write&)
 t CNetMessagePB<20, CSVCMsg_CrosshairAngle, 0, true>::ReadFromBuffer(bf_read&)
 t CNetMessagePB<20, CSVCMsg_CrosshairAngle, 0, true>::~CNetMessagePB()
 t CNetMessagePB<20, CSVCMsg_CrosshairAngle, 0, true>::~CNetMessagePB()
 t CNetMessagePB<20, CSVCMsg_CrosshairAngle, 0, true>::~CNetMessagePB()
 b CNetMessagePB<21, CSVCMsg_BSPDecal, 0, true>::s_typeName
 t CNetMessagePB<21, CSVCMsg_BSPDecal, 0, true>::SetReliable(bool)
-t CNetMessagePB<21, CSVCMsg_BSPDecal, 0, true>::WriteToBuffer(bf_write&)
 t CNetMessagePB<21, CSVCMsg_BSPDecal, 0, true>::ReadFromBuffer(bf_read&)
 t CNetMessagePB<21, CSVCMsg_BSPDecal, 0, true>::~CNetMessagePB()
 t CNetMessagePB<21, CSVCMsg_BSPDecal, 0, true>::~CNetMessagePB()
 t CNetMessagePB<21, CSVCMsg_BSPDecal, 0, true>::~CNetMessagePB()
 b CNetMessagePB<22, CSVCMsg_SplitScreen, 0, true>::s_typeName
 t CNetMessagePB<22, CSVCMsg_SplitScreen, 0, true>::SetReliable(bool)
-t CNetMessagePB<22, CSVCMsg_SplitScreen, 0, true>::WriteToBuffer(bf_write&)
 t CNetMessagePB<22, CSVCMsg_SplitScreen, 0, true>::ReadFromBuffer(bf_read&)
 t CNetMessagePB<22, CSVCMsg_SplitScreen, 0, true>::~CNetMessagePB()
 t CNetMessagePB<22, CSVCMsg_SplitScreen, 0, true>::~CNetMessagePB()
 t CNetMessagePB<22, CSVCMsg_SplitScreen, 0, true>::~CNetMessagePB()
 b CNetMessagePB<23, CSVCMsg_UserMessage, 7, false>::s_typeName
 t CNetMessagePB<23, CSVCMsg_UserMessage, 7, false>::SetReliable(bool)
-t CNetMessagePB<23, CSVCMsg_UserMessage, 7, false>::WriteToBuffer(bf_write&)
 t CNetMessagePB<23, CSVCMsg_UserMessage, 7, false>::ReadFromBuffer(bf_read&)
 t CNetMessagePB<23, CSVCMsg_UserMessage, 7, false>::~CNetMessagePB()
 t CNetMessagePB<23, CSVCMsg_UserMessage, 7, false>::~CNetMessagePB()
 t CNetMessagePB<23, CSVCMsg_UserMessage, 7, false>::~CNetMessagePB()
 b CNetMessagePB<24, CSVCMsg_EntityMsg, 8, false>::s_typeName
 t CNetMessagePB<24, CSVCMsg_EntityMsg, 8, false>::SetReliable(bool)
-t CNetMessagePB<24, CSVCMsg_EntityMsg, 8, false>::WriteToBuffer(bf_write&)
 t CNetMessagePB<24, CSVCMsg_EntityMsg, 8, false>::ReadFromBuffer(bf_read&)
 t CNetMessagePB<24, CSVCMsg_EntityMsg, 8, false>::~CNetMessagePB()
 t CNetMessagePB<24, CSVCMsg_EntityMsg, 8, false>::~CNetMessagePB()
 t CNetMessagePB<24, CSVCMsg_EntityMsg, 8, false>::~CNetMessagePB()
 b CNetMessagePB<25, CSVCMsg_GameEvent, 5, true>::s_typeName
 t CNetMessagePB<25, CSVCMsg_GameEvent, 5, true>::SetReliable(bool)
-t CNetMessagePB<25, CSVCMsg_GameEvent, 5, true>::WriteToBuffer(bf_write&)
 t CNetMessagePB<25, CSVCMsg_GameEvent, 5, true>::ReadFromBuffer(bf_read&)
 t CNetMessagePB<25, CSVCMsg_GameEvent, 5, true>::~CNetMessagePB()
 t CNetMessagePB<25, CSVCMsg_GameEvent, 5, true>::~CNetMessagePB()
 t CNetMessagePB<25, CSVCMsg_GameEvent, 5, true>::~CNetMessagePB()
 b CNetMessagePB<26, CSVCMsg_PacketEntities, 3, true>::s_typeName
 t CNetMessagePB<26, CSVCMsg_PacketEntities, 3, true>::SetReliable(bool)
-t CNetMessagePB<26, CSVCMsg_PacketEntities, 3, true>::WriteToBuffer(bf_write&)
 t CNetMessagePB<26, CSVCMsg_PacketEntities, 3, true>::ReadFromBuffer(bf_read&)
 t CNetMessagePB<26, CSVCMsg_PacketEntities, 3, true>::~CNetMessagePB()
 t CNetMessagePB<26, CSVCMsg_PacketEntities, 3, true>::~CNetMessagePB()
 t CNetMessagePB<26, CSVCMsg_PacketEntities, 3, true>::~CNetMessagePB()
 b CNetMessagePB<27, CSVCMsg_TempEntities, 6, false>::s_typeName
 t CNetMessagePB<27, CSVCMsg_TempEntities, 6, false>::SetReliable(bool)
-t CNetMessagePB<27, CSVCMsg_TempEntities, 6, false>::WriteToBuffer(bf_write&)
 t CNetMessagePB<27, CSVCMsg_TempEntities, 6, false>::ReadFromBuffer(bf_read&)
 t CNetMessagePB<27, CSVCMsg_TempEntities, 6, false>::~CNetMessagePB()
 t CNetMessagePB<27, CSVCMsg_TempEntities, 6, false>::~CNetMessagePB()
 t CNetMessagePB<27, CSVCMsg_TempEntities, 6, false>::~CNetMessagePB()
 b CNetMessagePB<28, CSVCMsg_Prefetch, 4, true>::s_typeName
 t CNetMessagePB<28, CSVCMsg_Prefetch, 4, true>::SetReliable(bool)
-t CNetMessagePB<28, CSVCMsg_Prefetch, 4, true>::WriteToBuffer(bf_write&)
 t CNetMessagePB<28, CSVCMsg_Prefetch, 4, true>::ReadFromBuffer(bf_read&)
 t CNetMessagePB<28, CSVCMsg_Prefetch, 4, true>::~CNetMessagePB()
 t CNetMessagePB<28, CSVCMsg_Prefetch, 4, true>::~CNetMessagePB()
 t CNetMessagePB<28, CSVCMsg_Prefetch, 4, true>::~CNetMessagePB()
 b CNetMessagePB<29, CSVCMsg_Menu, 0, false>::s_typeName
 t CNetMessagePB<29, CSVCMsg_Menu, 0, false>::SetReliable(bool)
-t CNetMessagePB<29, CSVCMsg_Menu, 0, false>::WriteToBuffer(bf_write&)
 t CNetMessagePB<29, CSVCMsg_Menu, 0, false>::ReadFromBuffer(bf_read&)
 t CNetMessagePB<29, CSVCMsg_Menu, 0, false>::~CNetMessagePB()
 t CNetMessagePB<29, CSVCMsg_Menu, 0, false>::~CNetMessagePB()
 t CNetMessagePB<29, CSVCMsg_Menu, 0, false>::~CNetMessagePB()
 b CNetMessagePB<2, CNETMsg_File, 0, true>::s_typeName
 t CNetMessagePB<2, CNETMsg_File, 0, true>::SetReliable(bool)
-t CNetMessagePB<2, CNETMsg_File, 0, true>::WriteToBuffer(bf_write&)
 t CNetMessagePB<2, CNETMsg_File, 0, true>::ReadFromBuffer(bf_read&)
 t CNetMessagePB<2, CNETMsg_File, 0, true>::~CNetMessagePB()
 t CNetMessagePB<2, CNETMsg_File, 0, true>::~CNetMessagePB()
 t CNetMessagePB<2, CNETMsg_File, 0, true>::~CNetMessagePB()
 b CNetMessagePB<30, CSVCMsg_GameEventList, 0, true>::s_typeName
 t CNetMessagePB<30, CSVCMsg_GameEventList, 0, true>::SetReliable(bool)
-t CNetMessagePB<30, CSVCMsg_GameEventList, 0, true>::WriteToBuffer(bf_write&)
 t CNetMessagePB<30, CSVCMsg_GameEventList, 0, true>::ReadFromBuffer(bf_read&)
 t CNetMessagePB<30, CSVCMsg_GameEventList, 0, true>::~CNetMessagePB()
 t CNetMessagePB<30, CSVCMsg_GameEventList, 0, true>::~CNetMessagePB()
 t CNetMessagePB<30, CSVCMsg_GameEventList, 0, true>::~CNetMessagePB()
 b CNetMessagePB<31, CSVCMsg_GetCvarValue, 0, true>::s_typeName
 t CNetMessagePB<31, CSVCMsg_GetCvarValue, 0, true>::SetReliable(bool)
-t CNetMessagePB<31, CSVCMsg_GetCvarValue, 0, true>::WriteToBuffer(bf_write&)
 t CNetMessagePB<31, CSVCMsg_GetCvarValue, 0, true>::ReadFromBuffer(bf_read&)
 t CNetMessagePB<31, CSVCMsg_GetCvarValue, 0, true>::~CNetMessagePB()
 t CNetMessagePB<31, CSVCMsg_GetCvarValue, 0, true>::~CNetMessagePB()
 t CNetMessagePB<31, CSVCMsg_GetCvarValue, 0, true>::~CNetMessagePB()
 b CNetMessagePB<33, CSVCMsg_PaintmapData, 14, true>::s_typeName
 t CNetMessagePB<33, CSVCMsg_PaintmapData, 14, true>::SetReliable(bool)
-t CNetMessagePB<33, CSVCMsg_PaintmapData, 14, true>::WriteToBuffer(bf_write&)
 t CNetMessagePB<33, CSVCMsg_PaintmapData, 14, true>::ReadFromBuffer(bf_read&)
 t CNetMessagePB<33, CSVCMsg_PaintmapData, 14, true>::~CNetMessagePB()
 t CNetMessagePB<33, CSVCMsg_PaintmapData, 14, true>::~CNetMessagePB()
 t CNetMessagePB<33, CSVCMsg_PaintmapData, 14, true>::~CNetMessagePB()
 b CNetMessagePB<34, CSVCMsg_CmdKeyValues, 0, true>::s_typeName
 t CNetMessagePB<34, CSVCMsg_CmdKeyValues, 0, true>::SetReliable(bool)
-t CNetMessagePB<34, CSVCMsg_CmdKeyValues, 0, true>::WriteToBuffer(bf_write&)
 t CNetMessagePB<34, CSVCMsg_CmdKeyValues, 0, true>::ReadFromBuffer(bf_read&)
 t CNetMessagePB<34, CSVCMsg_CmdKeyValues, 0, true>::~CNetMessagePB()
 t CNetMessagePB<34, CSVCMsg_CmdKeyValues, 0, true>::~CNetMessagePB()
 t CNetMessagePB<34, CSVCMsg_CmdKeyValues, 0, true>::~CNetMessagePB()
 b CNetMessagePB<35, CSVCMsg_EncryptedData, 15, true>::s_typeName
 t CNetMessagePB<35, CSVCMsg_EncryptedData, 15, true>::SetReliable(bool)
-t CNetMessagePB<35, CSVCMsg_EncryptedData, 15, true>::WriteToBuffer(bf_write&)
 t CNetMessagePB<35, CSVCMsg_EncryptedData, 15, true>::ReadFromBuffer(bf_read&)
 t CNetMessagePB<35, CSVCMsg_EncryptedData, 15, true>::~CNetMessagePB()
 t CNetMessagePB<35, CSVCMsg_EncryptedData, 15, true>::~CNetMessagePB()
 t CNetMessagePB<35, CSVCMsg_EncryptedData, 15, true>::~CNetMessagePB()
 b CNetMessagePB<36, CSVCMsg_HltvReplay, 3, true>::s_typeName
 t CNetMessagePB<36, CSVCMsg_HltvReplay, 3, true>::SetReliable(bool)
-t CNetMessagePB<36, CSVCMsg_HltvReplay, 3, true>::WriteToBuffer(bf_write&)
 t CNetMessagePB<36, CSVCMsg_HltvReplay, 3, true>::ReadFromBuffer(bf_read&)
 t CNetMessagePB<36, CSVCMsg_HltvReplay, 3, true>::~CNetMessagePB()
 t CNetMessagePB<36, CSVCMsg_HltvReplay, 3, true>::~CNetMessagePB()
 t CNetMessagePB<36, CSVCMsg_HltvReplay, 3, true>::~CNetMessagePB()
 b CNetMessagePB<38, CSVCMsg_Broadcast_Command, 12, true>::s_typeName
 t CNetMessagePB<38, CSVCMsg_Broadcast_Command, 12, true>::SetReliable(bool)
-t CNetMessagePB<38, CSVCMsg_Broadcast_Command, 12, true>::WriteToBuffer(bf_write&)
 t CNetMessagePB<38, CSVCMsg_Broadcast_Command, 12, true>::ReadFromBuffer(bf_read&)
 t CNetMessagePB<38, CSVCMsg_Broadcast_Command, 12, true>::~CNetMessagePB()
 t CNetMessagePB<38, CSVCMsg_Broadcast_Command, 12, true>::~CNetMessagePB()
 t CNetMessagePB<38, CSVCMsg_Broadcast_Command, 12, true>::~CNetMessagePB()
 b CNetMessagePB<3, CNETMsg_SplitScreenUser, 0, true>::s_typeName
 t CNetMessagePB<3, CNETMsg_SplitScreenUser, 0, true>::SetReliable(bool)
-t CNetMessagePB<3, CNETMsg_SplitScreenUser, 0, true>::WriteToBuffer(bf_write&)
 t CNetMessagePB<3, CNETMsg_SplitScreenUser, 0, true>::ReadFromBuffer(bf_read&)
 t CNetMessagePB<3, CNETMsg_SplitScreenUser, 0, true>::~CNetMessagePB()
 t CNetMessagePB<3, CNETMsg_SplitScreenUser, 0, true>::~CNetMessagePB()
 t CNetMessagePB<3, CNETMsg_SplitScreenUser, 0, true>::~CNetMessagePB()
 b CNetMessagePB<4, CNETMsg_Tick, 0, true>::s_typeName
 t CNetMessagePB<4, CNETMsg_Tick, 0, true>::SetReliable(bool)
-t CNetMessagePB<4, CNETMsg_Tick, 0, true>::WriteToBuffer(bf_write&)
 t CNetMessagePB<4, CNETMsg_Tick, 0, true>::ReadFromBuffer(bf_read&)
 t CNetMessagePB<4, CNETMsg_Tick, 0, true>::~CNetMessagePB()
 t CNetMessagePB<4, CNETMsg_Tick, 0, true>::~CNetMessagePB()
 t CNetMessagePB<4, CNETMsg_Tick, 0, true>::~CNetMessagePB()
 b CNetMessagePB<5, CNETMsg_StringCmd, 12, true>::s_typeName
 t CNetMessagePB<5, CNETMsg_StringCmd, 12, true>::SetReliable(bool)
-t CNetMessagePB<5, CNETMsg_StringCmd, 12, true>::WriteToBuffer(bf_write&)
 t CNetMessagePB<5, CNETMsg_StringCmd, 12, true>::ReadFromBuffer(bf_read&)
 t CNetMessagePB<5, CNETMsg_StringCmd, 12, true>::~CNetMessagePB()
 t CNetMessagePB<5, CNETMsg_StringCmd, 12, true>::~CNetMessagePB()
 t CNetMessagePB<5, CNETMsg_StringCmd, 12, true>::~CNetMessagePB()
 b CNetMessagePB<6, CNETMsg_SetConVar, 12, true>::s_typeName
 t CNetMessagePB<6, CNETMsg_SetConVar, 12, true>::SetReliable(bool)
-t CNetMessagePB<6, CNETMsg_SetConVar, 12, true>::WriteToBuffer(bf_write&)
 t CNetMessagePB<6, CNETMsg_SetConVar, 12, true>::ReadFromBuffer(bf_read&)
 t CNetMessagePB<6, CNETMsg_SetConVar, 12, true>::~CNetMessagePB()
 t CNetMessagePB<6, CNETMsg_SetConVar, 12, true>::~CNetMessagePB()
 t CNetMessagePB<6, CNETMsg_SetConVar, 12, true>::~CNetMessagePB()
 b CNetMessagePB<7, CNETMsg_SignonState, 13, true>::s_typeName
 t CNetMessagePB<7, CNETMsg_SignonState, 13, true>::SetReliable(bool)
-t CNetMessagePB<7, CNETMsg_SignonState, 13, true>::WriteToBuffer(bf_write&)
 t CNetMessagePB<7, CNETMsg_SignonState, 13, true>::ReadFromBuffer(bf_read&)
 t CNetMessagePB<7, CNETMsg_SignonState, 13, true>::~CNetMessagePB()
 t CNetMessagePB<7, CNETMsg_SignonState, 13, true>::~CNetMessagePB()
 t CNetMessagePB<7, CNETMsg_SignonState, 13, true>::~CNetMessagePB()
 b CNetMessagePB<8, CCLCMsg_ClientInfo, 0, true>::s_typeName
 t CNetMessagePB<8, CCLCMsg_ClientInfo, 0, true>::SetReliable(bool)
-t CNetMessagePB<8, CCLCMsg_ClientInfo, 0, true>::WriteToBuffer(bf_write&)
 t CNetMessagePB<8, CCLCMsg_ClientInfo, 0, true>::ReadFromBuffer(bf_read&)
 t CNetMessagePB<8, CCLCMsg_ClientInfo, 0, true>::~CNetMessagePB()
 t CNetMessagePB<8, CCLCMsg_ClientInfo, 0, true>::~CNetMessagePB()
 t CNetMessagePB<8, CCLCMsg_ClientInfo, 0, true>::~CNetMessagePB()
 b CNetMessagePB<8, CSVCMsg_ServerInfo, 13, true>::s_typeName
 t CNetMessagePB<8, CSVCMsg_ServerInfo, 13, true>::SetReliable(bool)
-t CNetMessagePB<8, CSVCMsg_ServerInfo, 13, true>::WriteToBuffer(bf_write&)
 t CNetMessagePB<8, CSVCMsg_ServerInfo, 13, true>::ReadFromBuffer(bf_read&)
 t CNetMessagePB<8, CSVCMsg_ServerInfo, 13, true>::~CNetMessagePB()
 t CNetMessagePB<8, CSVCMsg_ServerInfo, 13, true>::~CNetMessagePB()
 t CNetMessagePB<8, CSVCMsg_ServerInfo, 13, true>::~CNetMessagePB()
 b CNetMessagePB<9, CCLCMsg_Move, 11, false>::s_typeName
 t CNetMessagePB<9, CCLCMsg_Move, 11, false>::SetReliable(bool)
-t CNetMessagePB<9, CCLCMsg_Move, 11, false>::WriteToBuffer(bf_write&)
 t CNetMessagePB<9, CCLCMsg_Move, 11, false>::ReadFromBuffer(bf_read&)
 t CNetMessagePB<9, CCLCMsg_Move, 11, false>::~CNetMessagePB()
 t CNetMessagePB<9, CCLCMsg_Move, 11, false>::~CNetMessagePB()
 t CNetMessagePB<9, CCLCMsg_Move, 11, false>::~CNetMessagePB()
 b CNetMessagePB<9, CSVCMsg_SendTable, 13, true>::s_typeName
 t CNetMessagePB<9, CSVCMsg_SendTable, 13, true>::SetReliable(bool)
-t CNetMessagePB<9, CSVCMsg_SendTable, 13, true>::WriteToBuffer(bf_write&)
 t CNetMessagePB<9, CSVCMsg_SendTable, 13, true>::ReadFromBuffer(bf_read&)
 t CNetMessagePB<9, CSVCMsg_SendTable, 13, true>::~CNetMessagePB()
 t CNetMessagePB<9, CSVCMsg_SendTable, 13, true>::~CNetMessagePB()
@@ -11272,6 +11217,7 @@ t CGameEventManager::WriteEventList(CSVCMsg_GameEventList*)
 t CGameEventManager::FireEventIntern(IGameEvent*, bool, bool)
 t CGameEventManager::UnserializeEvent(CSVCMsg_GameEvent const&)
 t CGameEventManager::FindEventListener(void*)
+t CGameEventManager::GetEventDataTypes(IGameEvent*)
 t CGameEventManager::RemoveListenerOld(void*)
 t CGameEventManager::GetEventDescriptor(int)
 t CGameEventManager::GetEventDescriptor(IGameEvent*)
@@ -11294,23 +11240,21 @@ t CGameEventManager::~CGameEventManager()
 t CGameEventManager::~CGameEventManager()
 t CGameEventManager::~CGameEventManager()
 t CHLTVDemoRecorder::WriteFrame(CHLTVFrame*, bf_write*)
-t CHLTVDemoRecorder::GetDemoFile()
 t CHLTVDemoRecorder::IsRecording()
 t CHLTVDemoRecorder::RecordPacket()
 t CHLTVDemoRecorder::RecordCommand(char const*)
 t CHLTVDemoRecorder::StopRecording(CGameInfo const*)
 t CHLTVDemoRecorder::WriteMessages(unsigned char, bf_write&)
-t CHLTVDemoRecorder::PauseRecording()
 t CHLTVDemoRecorder::RecordMessages(bf_read&, int)
-t CHLTVDemoRecorder::SetSignonState(int)
+t CHLTVDemoRecorder::SetSignonState(SIGNONSTATE)
 t CHLTVDemoRecorder::StartRecording(char const*, bool)
-t CHLTVDemoRecorder::StartRecording(char const*, bool) [clone .part.54]
+t CHLTVDemoRecorder::StartRecording(char const*, bool) [clone .part.7]
 t CHLTVDemoRecorder::RecordUserInput(int)
-t CHLTVDemoRecorder::ResumeRecording()
 t CHLTVDemoRecorder::WriteServerInfo()
 t CHLTVDemoRecorder::WriteSignonData()
 t CHLTVDemoRecorder::GetRecordingTick()
 t CHLTVDemoRecorder::RecordCustomData(int, void const*, unsigned int)
+t CHLTVDemoRecorder::RecordPlayerAvatar(CNETMsg_PlayerAvatarData_t const*)
 t CHLTVDemoRecorder::RecordStringTables()
 t CHLTVDemoRecorder::StartAutoRecording()
 t CHLTVDemoRecorder::RecordServerClasses(ServerClass*)
@@ -21379,9 +21323,18 @@ t SendTable::~SendTable()
 t operator new[](unsigned int)
 t operator new[](unsigned int, int, char const*, int)
 t CBaseEdict::GetChangeAccessor() const
+t CGameEvent::GetWString(char const*, wchar_t const*) const
 t CGameEvent::IsReliable() const
+t CGameEvent::ForEventData(IGameEventVisitor2*) const
+t CGameEvent::GetInt(char const*, int) const
+t CGameEvent::GetPtr(char const*) const
+t CGameEvent::GetBool(char const*, bool) const
 t CGameEvent::GetName() const
+t CGameEvent::IsEmpty(char const*) const
 t CGameEvent::IsLocal() const
+t CGameEvent::GetFloat(char const*, float) const
+t CGameEvent::GetString(char const*, char const*) const
+t CGameEvent::GetUint64(char const*, unsigned long long) const
 t CGameTrace::GetEdict() const
 t CHLTVFrame::GetMemSize() const
 t CModelInfo::GetVCollide(int) const
@@ -21740,6 +21693,7 @@ t PackedEntity::GetNumRecipients() const
 t PackedEntity::CompareRecipients(CUtlMemory<CSendProxyRecipients, int> const&) const
 t CCoreDispInfo::GetPowerInfo() const
 t CNetMessagePB<0, CNETMsg_NOP, 0, true>::IsReliable() const
+t CNetMessagePB<0, CNETMsg_NOP, 0, true>::WriteToBuffer(bf_write&) const
 t CNetMessagePB<0, CNETMsg_NOP, 0, true>::Clone() const
 t CNetMessagePB<0, CNETMsg_NOP, 0, true>::GetName() const
 t CNetMessagePB<0, CNETMsg_NOP, 0, true>::GetSize() const
@@ -21747,6 +21701,7 @@ t CNetMessagePB<0, CNETMsg_NOP, 0, true>::GetType() const
 t CNetMessagePB<0, CNETMsg_NOP, 0, true>::GetGroup() const
 t CNetMessagePB<0, CNETMsg_NOP, 0, true>::ToString() const
 t CNetMessagePB<100, CNETMsg_PlayerAvatarData, 14, true>::IsReliable() const
+t CNetMessagePB<100, CNETMsg_PlayerAvatarData, 14, true>::WriteToBuffer(bf_write&) const
 t CNetMessagePB<100, CNETMsg_PlayerAvatarData, 14, true>::Clone() const
 t CNetMessagePB<100, CNETMsg_PlayerAvatarData, 14, true>::GetName() const
 t CNetMessagePB<100, CNETMsg_PlayerAvatarData, 14, true>::GetSize() const
@@ -21754,6 +21709,7 @@ t CNetMessagePB<100, CNETMsg_PlayerAvatarData, 14, true>::GetType() const
 t CNetMessagePB<100, CNETMsg_PlayerAvatarData, 14, true>::GetGroup() const
 t CNetMessagePB<100, CNETMsg_PlayerAvatarData, 14, true>::ToString() const
 t CNetMessagePB<10, CCLCMsg_VoiceData, 9, false>::IsReliable() const
+t CNetMessagePB<10, CCLCMsg_VoiceData, 9, false>::WriteToBuffer(bf_write&) const
 t CNetMessagePB<10, CCLCMsg_VoiceData, 9, false>::Clone() const
 t CNetMessagePB<10, CCLCMsg_VoiceData, 9, false>::GetName() const
 t CNetMessagePB<10, CCLCMsg_VoiceData, 9, false>::GetSize() const
@@ -21761,6 +21717,7 @@ t CNetMessagePB<10, CCLCMsg_VoiceData, 9, false>::GetType() const
 t CNetMessagePB<10, CCLCMsg_VoiceData, 9, false>::GetGroup() const
 t CNetMessagePB<10, CCLCMsg_VoiceData, 9, false>::ToString() const
 t CNetMessagePB<10, CSVCMsg_ClassInfo, 13, true>::IsReliable() const
+t CNetMessagePB<10, CSVCMsg_ClassInfo, 13, true>::WriteToBuffer(bf_write&) const
 t CNetMessagePB<10, CSVCMsg_ClassInfo, 13, true>::Clone() const
 t CNetMessagePB<10, CSVCMsg_ClassInfo, 13, true>::GetName() const
 t CNetMessagePB<10, CSVCMsg_ClassInfo, 13, true>::GetSize() const
@@ -21768,6 +21725,7 @@ t CNetMessagePB<10, CSVCMsg_ClassInfo, 13, true>::GetType() const
 t CNetMessagePB<10, CSVCMsg_ClassInfo, 13, true>::GetGroup() const
 t CNetMessagePB<10, CSVCMsg_ClassInfo, 13, true>::ToString() const
 t CNetMessagePB<11, CSVCMsg_SetPause, 0, true>::IsReliable() const
+t CNetMessagePB<11, CSVCMsg_SetPause, 0, true>::WriteToBuffer(bf_write&) const
 t CNetMessagePB<11, CSVCMsg_SetPause, 0, true>::Clone() const
 t CNetMessagePB<11, CSVCMsg_SetPause, 0, true>::GetName() const
 t CNetMessagePB<11, CSVCMsg_SetPause, 0, true>::GetSize() const
@@ -21775,6 +21733,7 @@ t CNetMessagePB<11, CSVCMsg_SetPause, 0, true>::GetType() const
 t CNetMessagePB<11, CSVCMsg_SetPause, 0, true>::GetGroup() const
 t CNetMessagePB<11, CSVCMsg_SetPause, 0, true>::ToString() const
 t CNetMessagePB<11, CCLCMsg_BaselineAck, 0, true>::IsReliable() const
+t CNetMessagePB<11, CCLCMsg_BaselineAck, 0, true>::WriteToBuffer(bf_write&) const
 t CNetMessagePB<11, CCLCMsg_BaselineAck, 0, true>::Clone() const
 t CNetMessagePB<11, CCLCMsg_BaselineAck, 0, true>::GetName() const
 t CNetMessagePB<11, CCLCMsg_BaselineAck, 0, true>::GetSize() const
@@ -21782,6 +21741,7 @@ t CNetMessagePB<11, CCLCMsg_BaselineAck, 0, true>::GetType() const
 t CNetMessagePB<11, CCLCMsg_BaselineAck, 0, true>::GetGroup() const
 t CNetMessagePB<11, CCLCMsg_BaselineAck, 0, true>::ToString() const
 t CNetMessagePB<12, CCLCMsg_ListenEvents, 0, true>::IsReliable() const
+t CNetMessagePB<12, CCLCMsg_ListenEvents, 0, true>::WriteToBuffer(bf_write&) const
 t CNetMessagePB<12, CCLCMsg_ListenEvents, 0, true>::Clone() const
 t CNetMessagePB<12, CCLCMsg_ListenEvents, 0, true>::GetName() const
 t CNetMessagePB<12, CCLCMsg_ListenEvents, 0, true>::GetSize() const
@@ -21789,6 +21749,7 @@ t CNetMessagePB<12, CCLCMsg_ListenEvents, 0, true>::GetType() const
 t CNetMessagePB<12, CCLCMsg_ListenEvents, 0, true>::GetGroup() const
 t CNetMessagePB<12, CCLCMsg_ListenEvents, 0, true>::ToString() const
 t CNetMessagePB<12, CSVCMsg_CreateStringTable, 13, true>::IsReliable() const
+t CNetMessagePB<12, CSVCMsg_CreateStringTable, 13, true>::WriteToBuffer(bf_write&) const
 t CNetMessagePB<12, CSVCMsg_CreateStringTable, 13, true>::Clone() const
 t CNetMessagePB<12, CSVCMsg_CreateStringTable, 13, true>::GetName() const
 t CNetMessagePB<12, CSVCMsg_CreateStringTable, 13, true>::GetSize() const
@@ -21796,6 +21757,7 @@ t CNetMessagePB<12, CSVCMsg_CreateStringTable, 13, true>::GetType() const
 t CNetMessagePB<12, CSVCMsg_CreateStringTable, 13, true>::GetGroup() const
 t CNetMessagePB<12, CSVCMsg_CreateStringTable, 13, true>::ToString() const
 t CNetMessagePB<13, CCLCMsg_RespondCvarValue, 0, true>::IsReliable() const
+t CNetMessagePB<13, CCLCMsg_RespondCvarValue, 0, true>::WriteToBuffer(bf_write&) const
 t CNetMessagePB<13, CCLCMsg_RespondCvarValue, 0, true>::Clone() const
 t CNetMessagePB<13, CCLCMsg_RespondCvarValue, 0, true>::GetName() const
 t CNetMessagePB<13, CCLCMsg_RespondCvarValue, 0, true>::GetSize() const
@@ -21803,6 +21765,7 @@ t CNetMessagePB<13, CCLCMsg_RespondCvarValue, 0, true>::GetType() const
 t CNetMessagePB<13, CCLCMsg_RespondCvarValue, 0, true>::GetGroup() const
 t CNetMessagePB<13, CCLCMsg_RespondCvarValue, 0, true>::ToString() const
 t CNetMessagePB<13, CSVCMsg_UpdateStringTable, 10, true>::IsReliable() const
+t CNetMessagePB<13, CSVCMsg_UpdateStringTable, 10, true>::WriteToBuffer(bf_write&) const
 t CNetMessagePB<13, CSVCMsg_UpdateStringTable, 10, true>::Clone() const
 t CNetMessagePB<13, CSVCMsg_UpdateStringTable, 10, true>::GetName() const
 t CNetMessagePB<13, CSVCMsg_UpdateStringTable, 10, true>::GetSize() const
@@ -21810,6 +21773,7 @@ t CNetMessagePB<13, CSVCMsg_UpdateStringTable, 10, true>::GetType() const
 t CNetMessagePB<13, CSVCMsg_UpdateStringTable, 10, true>::GetGroup() const
 t CNetMessagePB<13, CSVCMsg_UpdateStringTable, 10, true>::ToString() const
 t CNetMessagePB<14, CSVCMsg_VoiceInit, 13, true>::IsReliable() const
+t CNetMessagePB<14, CSVCMsg_VoiceInit, 13, true>::WriteToBuffer(bf_write&) const
 t CNetMessagePB<14, CSVCMsg_VoiceInit, 13, true>::Clone() const
 t CNetMessagePB<14, CSVCMsg_VoiceInit, 13, true>::GetName() const
 t CNetMessagePB<14, CSVCMsg_VoiceInit, 13, true>::GetSize() const
@@ -21817,6 +21781,7 @@ t CNetMessagePB<14, CSVCMsg_VoiceInit, 13, true>::GetType() const
 t CNetMessagePB<14, CSVCMsg_VoiceInit, 13, true>::GetGroup() const
 t CNetMessagePB<14, CSVCMsg_VoiceInit, 13, true>::ToString() const
 t CNetMessagePB<14, CCLCMsg_FileCRCCheck, 0, true>::IsReliable() const
+t CNetMessagePB<14, CCLCMsg_FileCRCCheck, 0, true>::WriteToBuffer(bf_write&) const
 t CNetMessagePB<14, CCLCMsg_FileCRCCheck, 0, true>::Clone() const
 t CNetMessagePB<14, CCLCMsg_FileCRCCheck, 0, true>::GetName() const
 t CNetMessagePB<14, CCLCMsg_FileCRCCheck, 0, true>::GetSize() const
@@ -21824,6 +21789,7 @@ t CNetMessagePB<14, CCLCMsg_FileCRCCheck, 0, true>::GetType() const
 t CNetMessagePB<14, CCLCMsg_FileCRCCheck, 0, true>::GetGroup() const
 t CNetMessagePB<14, CCLCMsg_FileCRCCheck, 0, true>::ToString() const
 t CNetMessagePB<15, CSVCMsg_VoiceData, 9, false>::IsReliable() const
+t CNetMessagePB<15, CSVCMsg_VoiceData, 9, false>::WriteToBuffer(bf_write&) const
 t CNetMessagePB<15, CSVCMsg_VoiceData, 9, false>::Clone() const
 t CNetMessagePB<15, CSVCMsg_VoiceData, 9, false>::GetName() const
 t CNetMessagePB<15, CSVCMsg_VoiceData, 9, false>::GetSize() const
@@ -21831,6 +21797,7 @@ t CNetMessagePB<15, CSVCMsg_VoiceData, 9, false>::GetType() const
 t CNetMessagePB<15, CSVCMsg_VoiceData, 9, false>::GetGroup() const
 t CNetMessagePB<15, CSVCMsg_VoiceData, 9, false>::ToString() const
 t CNetMessagePB<15, CCLCMsg_LoadingProgress, 0, true>::IsReliable() const
+t CNetMessagePB<15, CCLCMsg_LoadingProgress, 0, true>::WriteToBuffer(bf_write&) const
 t CNetMessagePB<15, CCLCMsg_LoadingProgress, 0, true>::Clone() const
 t CNetMessagePB<15, CCLCMsg_LoadingProgress, 0, true>::GetName() const
 t CNetMessagePB<15, CCLCMsg_LoadingProgress, 0, true>::GetSize() const
@@ -21838,6 +21805,7 @@ t CNetMessagePB<15, CCLCMsg_LoadingProgress, 0, true>::GetType() const
 t CNetMessagePB<15, CCLCMsg_LoadingProgress, 0, true>::GetGroup() const
 t CNetMessagePB<15, CCLCMsg_LoadingProgress, 0, true>::ToString() const
 t CNetMessagePB<16, CSVCMsg_Print, 0, false>::IsReliable() const
+t CNetMessagePB<16, CSVCMsg_Print, 0, false>::WriteToBuffer(bf_write&) const
 t CNetMessagePB<16, CSVCMsg_Print, 0, false>::Clone() const
 t CNetMessagePB<16, CSVCMsg_Print, 0, false>::GetName() const
 t CNetMessagePB<16, CSVCMsg_Print, 0, false>::GetSize() const
@@ -21845,6 +21813,7 @@ t CNetMessagePB<16, CSVCMsg_Print, 0, false>::GetType() const
 t CNetMessagePB<16, CSVCMsg_Print, 0, false>::GetGroup() const
 t CNetMessagePB<16, CSVCMsg_Print, 0, false>::ToString() const
 t CNetMessagePB<16, CCLCMsg_SplitPlayerConnect, 0, true>::IsReliable() const
+t CNetMessagePB<16, CCLCMsg_SplitPlayerConnect, 0, true>::WriteToBuffer(bf_write&) const
 t CNetMessagePB<16, CCLCMsg_SplitPlayerConnect, 0, true>::Clone() const
 t CNetMessagePB<16, CCLCMsg_SplitPlayerConnect, 0, true>::GetName() const
 t CNetMessagePB<16, CCLCMsg_SplitPlayerConnect, 0, true>::GetSize() const
@@ -21852,6 +21821,7 @@ t CNetMessagePB<16, CCLCMsg_SplitPlayerConnect, 0, true>::GetType() const
 t CNetMessagePB<16, CCLCMsg_SplitPlayerConnect, 0, true>::GetGroup() const
 t CNetMessagePB<16, CCLCMsg_SplitPlayerConnect, 0, true>::ToString() const
 t CNetMessagePB<17, CSVCMsg_Sounds, 4, true>::IsReliable() const
+t CNetMessagePB<17, CSVCMsg_Sounds, 4, true>::WriteToBuffer(bf_write&) const
 t CNetMessagePB<17, CSVCMsg_Sounds, 4, true>::Clone() const
 t CNetMessagePB<17, CSVCMsg_Sounds, 4, true>::GetName() const
 t CNetMessagePB<17, CSVCMsg_Sounds, 4, true>::GetSize() const
@@ -21859,6 +21829,7 @@ t CNetMessagePB<17, CSVCMsg_Sounds, 4, true>::GetType() const
 t CNetMessagePB<17, CSVCMsg_Sounds, 4, true>::GetGroup() const
 t CNetMessagePB<17, CSVCMsg_Sounds, 4, true>::ToString() const
 t CNetMessagePB<18, CSVCMsg_SetView, 0, true>::IsReliable() const
+t CNetMessagePB<18, CSVCMsg_SetView, 0, true>::WriteToBuffer(bf_write&) const
 t CNetMessagePB<18, CSVCMsg_SetView, 0, true>::Clone() const
 t CNetMessagePB<18, CSVCMsg_SetView, 0, true>::GetName() const
 t CNetMessagePB<18, CSVCMsg_SetView, 0, true>::GetSize() const
@@ -21866,6 +21837,7 @@ t CNetMessagePB<18, CSVCMsg_SetView, 0, true>::GetType() const
 t CNetMessagePB<18, CSVCMsg_SetView, 0, true>::GetGroup() const
 t CNetMessagePB<18, CSVCMsg_SetView, 0, true>::ToString() const
 t CNetMessagePB<18, CCLCMsg_CmdKeyValues, 0, true>::IsReliable() const
+t CNetMessagePB<18, CCLCMsg_CmdKeyValues, 0, true>::WriteToBuffer(bf_write&) const
 t CNetMessagePB<18, CCLCMsg_CmdKeyValues, 0, true>::Clone() const
 t CNetMessagePB<18, CCLCMsg_CmdKeyValues, 0, true>::GetName() const
 t CNetMessagePB<18, CCLCMsg_CmdKeyValues, 0, true>::GetSize() const
@@ -21873,6 +21845,7 @@ t CNetMessagePB<18, CCLCMsg_CmdKeyValues, 0, true>::GetType() const
 t CNetMessagePB<18, CCLCMsg_CmdKeyValues, 0, true>::GetGroup() const
 t CNetMessagePB<18, CCLCMsg_CmdKeyValues, 0, true>::ToString() const
 t CNetMessagePB<19, CSVCMsg_FixAngle, 0, false>::IsReliable() const
+t CNetMessagePB<19, CSVCMsg_FixAngle, 0, false>::WriteToBuffer(bf_write&) const
 t CNetMessagePB<19, CSVCMsg_FixAngle, 0, false>::Clone() const
 t CNetMessagePB<19, CSVCMsg_FixAngle, 0, false>::GetName() const
 t CNetMessagePB<19, CSVCMsg_FixAngle, 0, false>::GetSize() const
@@ -21880,6 +21853,7 @@ t CNetMessagePB<19, CSVCMsg_FixAngle, 0, false>::GetType() const
 t CNetMessagePB<19, CSVCMsg_FixAngle, 0, false>::GetGroup() const
 t CNetMessagePB<19, CSVCMsg_FixAngle, 0, false>::ToString() const
 t CNetMessagePB<1, CNETMsg_Disconnect, 0, true>::IsReliable() const
+t CNetMessagePB<1, CNETMsg_Disconnect, 0, true>::WriteToBuffer(bf_write&) const
 t CNetMessagePB<1, CNETMsg_Disconnect, 0, true>::Clone() const
 t CNetMessagePB<1, CNETMsg_Disconnect, 0, true>::GetName() const
 t CNetMessagePB<1, CNETMsg_Disconnect, 0, true>::GetSize() const
@@ -21887,6 +21861,7 @@ t CNetMessagePB<1, CNETMsg_Disconnect, 0, true>::GetType() const
 t CNetMessagePB<1, CNETMsg_Disconnect, 0, true>::GetGroup() const
 t CNetMessagePB<1, CNETMsg_Disconnect, 0, true>::ToString() const
 t CNetMessagePB<20, CCLCMsg_HltvReplay, 0, true>::IsReliable() const
+t CNetMessagePB<20, CCLCMsg_HltvReplay, 0, true>::WriteToBuffer(bf_write&) const
 t CNetMessagePB<20, CCLCMsg_HltvReplay, 0, true>::Clone() const
 t CNetMessagePB<20, CCLCMsg_HltvReplay, 0, true>::GetName() const
 t CNetMessagePB<20, CCLCMsg_HltvReplay, 0, true>::GetSize() const
@@ -21894,6 +21869,7 @@ t CNetMessagePB<20, CCLCMsg_HltvReplay, 0, true>::GetType() const
 t CNetMessagePB<20, CCLCMsg_HltvReplay, 0, true>::GetGroup() const
 t CNetMessagePB<20, CCLCMsg_HltvReplay, 0, true>::ToString() const
 t CNetMessagePB<20, CSVCMsg_CrosshairAngle, 0, true>::IsReliable() const
+t CNetMessagePB<20, CSVCMsg_CrosshairAngle, 0, true>::WriteToBuffer(bf_write&) const
 t CNetMessagePB<20, CSVCMsg_CrosshairAngle, 0, true>::Clone() const
 t CNetMessagePB<20, CSVCMsg_CrosshairAngle, 0, true>::GetName() const
 t CNetMessagePB<20, CSVCMsg_CrosshairAngle, 0, true>::GetSize() const
@@ -21901,6 +21877,7 @@ t CNetMessagePB<20, CSVCMsg_CrosshairAngle, 0, true>::GetType() const
 t CNetMessagePB<20, CSVCMsg_CrosshairAngle, 0, true>::GetGroup() const
 t CNetMessagePB<20, CSVCMsg_CrosshairAngle, 0, true>::ToString() const
 t CNetMessagePB<21, CSVCMsg_BSPDecal, 0, true>::IsReliable() const
+t CNetMessagePB<21, CSVCMsg_BSPDecal, 0, true>::WriteToBuffer(bf_write&) const
 t CNetMessagePB<21, CSVCMsg_BSPDecal, 0, true>::Clone() const
 t CNetMessagePB<21, CSVCMsg_BSPDecal, 0, true>::GetName() const
 t CNetMessagePB<21, CSVCMsg_BSPDecal, 0, true>::GetSize() const
@@ -21908,6 +21885,7 @@ t CNetMessagePB<21, CSVCMsg_BSPDecal, 0, true>::GetType() const
 t CNetMessagePB<21, CSVCMsg_BSPDecal, 0, true>::GetGroup() const
 t CNetMessagePB<21, CSVCMsg_BSPDecal, 0, true>::ToString() const
 t CNetMessagePB<22, CSVCMsg_SplitScreen, 0, true>::IsReliable() const
+t CNetMessagePB<22, CSVCMsg_SplitScreen, 0, true>::WriteToBuffer(bf_write&) const
 t CNetMessagePB<22, CSVCMsg_SplitScreen, 0, true>::Clone() const
 t CNetMessagePB<22, CSVCMsg_SplitScreen, 0, true>::GetName() const
 t CNetMessagePB<22, CSVCMsg_SplitScreen, 0, true>::GetSize() const
@@ -21915,6 +21893,7 @@ t CNetMessagePB<22, CSVCMsg_SplitScreen, 0, true>::GetType() const
 t CNetMessagePB<22, CSVCMsg_SplitScreen, 0, true>::GetGroup() const
 t CNetMessagePB<22, CSVCMsg_SplitScreen, 0, true>::ToString() const
 t CNetMessagePB<23, CSVCMsg_UserMessage, 7, false>::IsReliable() const
+t CNetMessagePB<23, CSVCMsg_UserMessage, 7, false>::WriteToBuffer(bf_write&) const
 t CNetMessagePB<23, CSVCMsg_UserMessage, 7, false>::Clone() const
 t CNetMessagePB<23, CSVCMsg_UserMessage, 7, false>::GetName() const
 t CNetMessagePB<23, CSVCMsg_UserMessage, 7, false>::GetSize() const
@@ -21922,6 +21901,7 @@ t CNetMessagePB<23, CSVCMsg_UserMessage, 7, false>::GetType() const
 t CNetMessagePB<23, CSVCMsg_UserMessage, 7, false>::GetGroup() const
 t CNetMessagePB<23, CSVCMsg_UserMessage, 7, false>::ToString() const
 t CNetMessagePB<24, CSVCMsg_EntityMsg, 8, false>::IsReliable() const
+t CNetMessagePB<24, CSVCMsg_EntityMsg, 8, false>::WriteToBuffer(bf_write&) const
 t CNetMessagePB<24, CSVCMsg_EntityMsg, 8, false>::Clone() const
 t CNetMessagePB<24, CSVCMsg_EntityMsg, 8, false>::GetName() const
 t CNetMessagePB<24, CSVCMsg_EntityMsg, 8, false>::GetSize() const
@@ -21929,6 +21909,7 @@ t CNetMessagePB<24, CSVCMsg_EntityMsg, 8, false>::GetType() const
 t CNetMessagePB<24, CSVCMsg_EntityMsg, 8, false>::GetGroup() const
 t CNetMessagePB<24, CSVCMsg_EntityMsg, 8, false>::ToString() const
 t CNetMessagePB<25, CSVCMsg_GameEvent, 5, true>::IsReliable() const
+t CNetMessagePB<25, CSVCMsg_GameEvent, 5, true>::WriteToBuffer(bf_write&) const
 t CNetMessagePB<25, CSVCMsg_GameEvent, 5, true>::Clone() const
 t CNetMessagePB<25, CSVCMsg_GameEvent, 5, true>::GetName() const
 t CNetMessagePB<25, CSVCMsg_GameEvent, 5, true>::GetSize() const
@@ -21936,6 +21917,7 @@ t CNetMessagePB<25, CSVCMsg_GameEvent, 5, true>::GetType() const
 t CNetMessagePB<25, CSVCMsg_GameEvent, 5, true>::GetGroup() const
 t CNetMessagePB<25, CSVCMsg_GameEvent, 5, true>::ToString() const
 t CNetMessagePB<26, CSVCMsg_PacketEntities, 3, true>::IsReliable() const
+t CNetMessagePB<26, CSVCMsg_PacketEntities, 3, true>::WriteToBuffer(bf_write&) const
 t CNetMessagePB<26, CSVCMsg_PacketEntities, 3, true>::Clone() const
 t CNetMessagePB<26, CSVCMsg_PacketEntities, 3, true>::GetName() const
 t CNetMessagePB<26, CSVCMsg_PacketEntities, 3, true>::GetSize() const
@@ -21943,6 +21925,7 @@ t CNetMessagePB<26, CSVCMsg_PacketEntities, 3, true>::GetType() const
 t CNetMessagePB<26, CSVCMsg_PacketEntities, 3, true>::GetGroup() const
 t CNetMessagePB<26, CSVCMsg_PacketEntities, 3, true>::ToString() const
 t CNetMessagePB<27, CSVCMsg_TempEntities, 6, false>::IsReliable() const
+t CNetMessagePB<27, CSVCMsg_TempEntities, 6, false>::WriteToBuffer(bf_write&) const
 t CNetMessagePB<27, CSVCMsg_TempEntities, 6, false>::Clone() const
 t CNetMessagePB<27, CSVCMsg_TempEntities, 6, false>::GetName() const
 t CNetMessagePB<27, CSVCMsg_TempEntities, 6, false>::GetSize() const
@@ -21950,6 +21933,7 @@ t CNetMessagePB<27, CSVCMsg_TempEntities, 6, false>::GetType() const
 t CNetMessagePB<27, CSVCMsg_TempEntities, 6, false>::GetGroup() const
 t CNetMessagePB<27, CSVCMsg_TempEntities, 6, false>::ToString() const
 t CNetMessagePB<28, CSVCMsg_Prefetch, 4, true>::IsReliable() const
+t CNetMessagePB<28, CSVCMsg_Prefetch, 4, true>::WriteToBuffer(bf_write&) const
 t CNetMessagePB<28, CSVCMsg_Prefetch, 4, true>::Clone() const
 t CNetMessagePB<28, CSVCMsg_Prefetch, 4, true>::GetName() const
 t CNetMessagePB<28, CSVCMsg_Prefetch, 4, true>::GetSize() const
@@ -21957,6 +21941,7 @@ t CNetMessagePB<28, CSVCMsg_Prefetch, 4, true>::GetType() const
 t CNetMessagePB<28, CSVCMsg_Prefetch, 4, true>::GetGroup() const
 t CNetMessagePB<28, CSVCMsg_Prefetch, 4, true>::ToString() const
 t CNetMessagePB<29, CSVCMsg_Menu, 0, false>::IsReliable() const
+t CNetMessagePB<29, CSVCMsg_Menu, 0, false>::WriteToBuffer(bf_write&) const
 t CNetMessagePB<29, CSVCMsg_Menu, 0, false>::Clone() const
 t CNetMessagePB<29, CSVCMsg_Menu, 0, false>::GetName() const
 t CNetMessagePB<29, CSVCMsg_Menu, 0, false>::GetSize() const
@@ -21964,6 +21949,7 @@ t CNetMessagePB<29, CSVCMsg_Menu, 0, false>::GetType() const
 t CNetMessagePB<29, CSVCMsg_Menu, 0, false>::GetGroup() const
 t CNetMessagePB<29, CSVCMsg_Menu, 0, false>::ToString() const
 t CNetMessagePB<2, CNETMsg_File, 0, true>::IsReliable() const
+t CNetMessagePB<2, CNETMsg_File, 0, true>::WriteToBuffer(bf_write&) const
 t CNetMessagePB<2, CNETMsg_File, 0, true>::Clone() const
 t CNetMessagePB<2, CNETMsg_File, 0, true>::GetName() const
 t CNetMessagePB<2, CNETMsg_File, 0, true>::GetSize() const
@@ -21971,6 +21957,7 @@ t CNetMessagePB<2, CNETMsg_File, 0, true>::GetType() const
 t CNetMessagePB<2, CNETMsg_File, 0, true>::GetGroup() const
 t CNetMessagePB<2, CNETMsg_File, 0, true>::ToString() const
 t CNetMessagePB<30, CSVCMsg_GameEventList, 0, true>::IsReliable() const
+t CNetMessagePB<30, CSVCMsg_GameEventList, 0, true>::WriteToBuffer(bf_write&) const
 t CNetMessagePB<30, CSVCMsg_GameEventList, 0, true>::Clone() const
 t CNetMessagePB<30, CSVCMsg_GameEventList, 0, true>::GetName() const
 t CNetMessagePB<30, CSVCMsg_GameEventList, 0, true>::GetSize() const
@@ -21978,6 +21965,7 @@ t CNetMessagePB<30, CSVCMsg_GameEventList, 0, true>::GetType() const
 t CNetMessagePB<30, CSVCMsg_GameEventList, 0, true>::GetGroup() const
 t CNetMessagePB<30, CSVCMsg_GameEventList, 0, true>::ToString() const
 t CNetMessagePB<31, CSVCMsg_GetCvarValue, 0, true>::IsReliable() const
+t CNetMessagePB<31, CSVCMsg_GetCvarValue, 0, true>::WriteToBuffer(bf_write&) const
 t CNetMessagePB<31, CSVCMsg_GetCvarValue, 0, true>::Clone() const
 t CNetMessagePB<31, CSVCMsg_GetCvarValue, 0, true>::GetName() const
 t CNetMessagePB<31, CSVCMsg_GetCvarValue, 0, true>::GetSize() const
@@ -21985,6 +21973,7 @@ t CNetMessagePB<31, CSVCMsg_GetCvarValue, 0, true>::GetType() const
 t CNetMessagePB<31, CSVCMsg_GetCvarValue, 0, true>::GetGroup() const
 t CNetMessagePB<31, CSVCMsg_GetCvarValue, 0, true>::ToString() const
 t CNetMessagePB<33, CSVCMsg_PaintmapData, 14, true>::IsReliable() const
+t CNetMessagePB<33, CSVCMsg_PaintmapData, 14, true>::WriteToBuffer(bf_write&) const
 t CNetMessagePB<33, CSVCMsg_PaintmapData, 14, true>::Clone() const
 t CNetMessagePB<33, CSVCMsg_PaintmapData, 14, true>::GetName() const
 t CNetMessagePB<33, CSVCMsg_PaintmapData, 14, true>::GetSize() const
@@ -21992,6 +21981,7 @@ t CNetMessagePB<33, CSVCMsg_PaintmapData, 14, true>::GetType() const
 t CNetMessagePB<33, CSVCMsg_PaintmapData, 14, true>::GetGroup() const
 t CNetMessagePB<33, CSVCMsg_PaintmapData, 14, true>::ToString() const
 t CNetMessagePB<34, CSVCMsg_CmdKeyValues, 0, true>::IsReliable() const
+t CNetMessagePB<34, CSVCMsg_CmdKeyValues, 0, true>::WriteToBuffer(bf_write&) const
 t CNetMessagePB<34, CSVCMsg_CmdKeyValues, 0, true>::Clone() const
 t CNetMessagePB<34, CSVCMsg_CmdKeyValues, 0, true>::GetName() const
 t CNetMessagePB<34, CSVCMsg_CmdKeyValues, 0, true>::GetSize() const
@@ -21999,6 +21989,7 @@ t CNetMessagePB<34, CSVCMsg_CmdKeyValues, 0, true>::GetType() const
 t CNetMessagePB<34, CSVCMsg_CmdKeyValues, 0, true>::GetGroup() const
 t CNetMessagePB<34, CSVCMsg_CmdKeyValues, 0, true>::ToString() const
 t CNetMessagePB<35, CSVCMsg_EncryptedData, 15, true>::IsReliable() const
+t CNetMessagePB<35, CSVCMsg_EncryptedData, 15, true>::WriteToBuffer(bf_write&) const
 t CNetMessagePB<35, CSVCMsg_EncryptedData, 15, true>::Clone() const
 t CNetMessagePB<35, CSVCMsg_EncryptedData, 15, true>::GetName() const
 t CNetMessagePB<35, CSVCMsg_EncryptedData, 15, true>::GetSize() const
@@ -22006,6 +21997,7 @@ t CNetMessagePB<35, CSVCMsg_EncryptedData, 15, true>::GetType() const
 t CNetMessagePB<35, CSVCMsg_EncryptedData, 15, true>::GetGroup() const
 t CNetMessagePB<35, CSVCMsg_EncryptedData, 15, true>::ToString() const
 t CNetMessagePB<36, CSVCMsg_HltvReplay, 3, true>::IsReliable() const
+t CNetMessagePB<36, CSVCMsg_HltvReplay, 3, true>::WriteToBuffer(bf_write&) const
 t CNetMessagePB<36, CSVCMsg_HltvReplay, 3, true>::Clone() const
 t CNetMessagePB<36, CSVCMsg_HltvReplay, 3, true>::GetName() const
 t CNetMessagePB<36, CSVCMsg_HltvReplay, 3, true>::GetSize() const
@@ -22013,6 +22005,7 @@ t CNetMessagePB<36, CSVCMsg_HltvReplay, 3, true>::GetType() const
 t CNetMessagePB<36, CSVCMsg_HltvReplay, 3, true>::GetGroup() const
 t CNetMessagePB<36, CSVCMsg_HltvReplay, 3, true>::ToString() const
 t CNetMessagePB<38, CSVCMsg_Broadcast_Command, 12, true>::IsReliable() const
+t CNetMessagePB<38, CSVCMsg_Broadcast_Command, 12, true>::WriteToBuffer(bf_write&) const
 t CNetMessagePB<38, CSVCMsg_Broadcast_Command, 12, true>::Clone() const
 t CNetMessagePB<38, CSVCMsg_Broadcast_Command, 12, true>::GetName() const
 t CNetMessagePB<38, CSVCMsg_Broadcast_Command, 12, true>::GetSize() const
@@ -22020,6 +22013,7 @@ t CNetMessagePB<38, CSVCMsg_Broadcast_Command, 12, true>::GetType() const
 t CNetMessagePB<38, CSVCMsg_Broadcast_Command, 12, true>::GetGroup() const
 t CNetMessagePB<38, CSVCMsg_Broadcast_Command, 12, true>::ToString() const
 t CNetMessagePB<3, CNETMsg_SplitScreenUser, 0, true>::IsReliable() const
+t CNetMessagePB<3, CNETMsg_SplitScreenUser, 0, true>::WriteToBuffer(bf_write&) const
 t CNetMessagePB<3, CNETMsg_SplitScreenUser, 0, true>::Clone() const
 t CNetMessagePB<3, CNETMsg_SplitScreenUser, 0, true>::GetName() const
 t CNetMessagePB<3, CNETMsg_SplitScreenUser, 0, true>::GetSize() const
@@ -22027,6 +22021,7 @@ t CNetMessagePB<3, CNETMsg_SplitScreenUser, 0, true>::GetType() const
 t CNetMessagePB<3, CNETMsg_SplitScreenUser, 0, true>::GetGroup() const
 t CNetMessagePB<3, CNETMsg_SplitScreenUser, 0, true>::ToString() const
 t CNetMessagePB<4, CNETMsg_Tick, 0, true>::IsReliable() const
+t CNetMessagePB<4, CNETMsg_Tick, 0, true>::WriteToBuffer(bf_write&) const
 t CNetMessagePB<4, CNETMsg_Tick, 0, true>::Clone() const
 t CNetMessagePB<4, CNETMsg_Tick, 0, true>::GetName() const
 t CNetMessagePB<4, CNETMsg_Tick, 0, true>::GetSize() const
@@ -22034,6 +22029,7 @@ t CNetMessagePB<4, CNETMsg_Tick, 0, true>::GetType() const
 t CNetMessagePB<4, CNETMsg_Tick, 0, true>::GetGroup() const
 t CNetMessagePB<4, CNETMsg_Tick, 0, true>::ToString() const
 t CNetMessagePB<5, CNETMsg_StringCmd, 12, true>::IsReliable() const
+t CNetMessagePB<5, CNETMsg_StringCmd, 12, true>::WriteToBuffer(bf_write&) const
 t CNetMessagePB<5, CNETMsg_StringCmd, 12, true>::Clone() const
 t CNetMessagePB<5, CNETMsg_StringCmd, 12, true>::GetName() const
 t CNetMessagePB<5, CNETMsg_StringCmd, 12, true>::GetSize() const
@@ -22041,6 +22037,7 @@ t CNetMessagePB<5, CNETMsg_StringCmd, 12, true>::GetType() const
 t CNetMessagePB<5, CNETMsg_StringCmd, 12, true>::GetGroup() const
 t CNetMessagePB<5, CNETMsg_StringCmd, 12, true>::ToString() const
 t CNetMessagePB<6, CNETMsg_SetConVar, 12, true>::IsReliable() const
+t CNetMessagePB<6, CNETMsg_SetConVar, 12, true>::WriteToBuffer(bf_write&) const
 t CNetMessagePB<6, CNETMsg_SetConVar, 12, true>::Clone() const
 t CNetMessagePB<6, CNETMsg_SetConVar, 12, true>::GetName() const
 t CNetMessagePB<6, CNETMsg_SetConVar, 12, true>::GetSize() const
@@ -22048,6 +22045,7 @@ t CNetMessagePB<6, CNETMsg_SetConVar, 12, true>::GetType() const
 t CNetMessagePB<6, CNETMsg_SetConVar, 12, true>::GetGroup() const
 t CNetMessagePB<6, CNETMsg_SetConVar, 12, true>::ToString() const
 t CNetMessagePB<7, CNETMsg_SignonState, 13, true>::IsReliable() const
+t CNetMessagePB<7, CNETMsg_SignonState, 13, true>::WriteToBuffer(bf_write&) const
 t CNetMessagePB<7, CNETMsg_SignonState, 13, true>::Clone() const
 t CNetMessagePB<7, CNETMsg_SignonState, 13, true>::GetName() const
 t CNetMessagePB<7, CNETMsg_SignonState, 13, true>::GetSize() const
@@ -22055,6 +22053,7 @@ t CNetMessagePB<7, CNETMsg_SignonState, 13, true>::GetType() const
 t CNetMessagePB<7, CNETMsg_SignonState, 13, true>::GetGroup() const
 t CNetMessagePB<7, CNETMsg_SignonState, 13, true>::ToString() const
 t CNetMessagePB<8, CCLCMsg_ClientInfo, 0, true>::IsReliable() const
+t CNetMessagePB<8, CCLCMsg_ClientInfo, 0, true>::WriteToBuffer(bf_write&) const
 t CNetMessagePB<8, CCLCMsg_ClientInfo, 0, true>::Clone() const
 t CNetMessagePB<8, CCLCMsg_ClientInfo, 0, true>::GetName() const
 t CNetMessagePB<8, CCLCMsg_ClientInfo, 0, true>::GetSize() const
@@ -22062,6 +22061,7 @@ t CNetMessagePB<8, CCLCMsg_ClientInfo, 0, true>::GetType() const
 t CNetMessagePB<8, CCLCMsg_ClientInfo, 0, true>::GetGroup() const
 t CNetMessagePB<8, CCLCMsg_ClientInfo, 0, true>::ToString() const
 t CNetMessagePB<8, CSVCMsg_ServerInfo, 13, true>::IsReliable() const
+t CNetMessagePB<8, CSVCMsg_ServerInfo, 13, true>::WriteToBuffer(bf_write&) const
 t CNetMessagePB<8, CSVCMsg_ServerInfo, 13, true>::Clone() const
 t CNetMessagePB<8, CSVCMsg_ServerInfo, 13, true>::GetName() const
 t CNetMessagePB<8, CSVCMsg_ServerInfo, 13, true>::GetSize() const
@@ -22069,6 +22069,7 @@ t CNetMessagePB<8, CSVCMsg_ServerInfo, 13, true>::GetType() const
 t CNetMessagePB<8, CSVCMsg_ServerInfo, 13, true>::GetGroup() const
 t CNetMessagePB<8, CSVCMsg_ServerInfo, 13, true>::ToString() const
 t CNetMessagePB<9, CCLCMsg_Move, 11, false>::IsReliable() const
+t CNetMessagePB<9, CCLCMsg_Move, 11, false>::WriteToBuffer(bf_write&) const
 t CNetMessagePB<9, CCLCMsg_Move, 11, false>::Clone() const
 t CNetMessagePB<9, CCLCMsg_Move, 11, false>::GetName() const
 t CNetMessagePB<9, CCLCMsg_Move, 11, false>::GetSize() const
@@ -22076,6 +22077,7 @@ t CNetMessagePB<9, CCLCMsg_Move, 11, false>::GetType() const
 t CNetMessagePB<9, CCLCMsg_Move, 11, false>::GetGroup() const
 t CNetMessagePB<9, CCLCMsg_Move, 11, false>::ToString() const
 t CNetMessagePB<9, CSVCMsg_SendTable, 13, true>::IsReliable() const
+t CNetMessagePB<9, CSVCMsg_SendTable, 13, true>::WriteToBuffer(bf_write&) const
 t CNetMessagePB<9, CSVCMsg_SendTable, 13, true>::Clone() const
 t CNetMessagePB<9, CSVCMsg_SendTable, 13, true>::GetName() const
 t CNetMessagePB<9, CSVCMsg_SendTable, 13, true>::GetSize() const

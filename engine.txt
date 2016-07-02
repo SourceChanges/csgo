@@ -629,6 +629,7 @@ t _GLOBAL__sub_I__Z28Pow_FixedPoint_Exponent_SIMDRKU8__vectorfi
 t _GLOBAL__sub_I__Z29CheckConnectionLessRateLimitsRK10ns_address
 t _GLOBAL__sub_I__Z39protobuf_AssignDesc_netmessages_2eprotov
 t _GLOBAL__sub_I__Z40DataTable_SetupReceiveTableFromSendTableP9SendTableb
+t _GLOBAL__sub_I__Z47protobuf_AssignDesc_engine_5fgcmessages_2eprotov
 t _GLOBAL__sub_I__Z48protobuf_AssignDesc_network_5fconnection_2eprotov
 t _GLOBAL__sub_I__Z52protobuf_AssignDesc_steamdatagram_5fmessages_2eprotov
 t _GLOBAL__sub_I__Z7MD5InitP12MD5Context_t
@@ -1484,6 +1485,7 @@ U __stack_chk_fail@@GLIBC_2.4
 d standard_subs
 t stat
 t __stat
+b static_descriptor_initializer_engine_5fgcmessages_2eproto_
 b static_descriptor_initializer_netmessages_2eproto_
 b static_descriptor_initializer_network_5fconnection_2eproto_
 b static_descriptor_initializer_steamdatagram_5fmessages_2eproto_
@@ -1655,6 +1657,7 @@ b tv_enable1
 b tv_maxclients
 b tv_maxclients_relayreserved
 b tv_name
+b tv_playcast_delay_prediction
 b tv_playcast_max_rcvage
 b tv_playcast_max_rtdelay
 b tv_playcast_origin_auth
@@ -3646,11 +3649,14 @@ t SteamDatagram_AddGameserversToFakeCluster(char const*, int, SteamDatagramServi
 t CalculateSphereFromProjectionMatrixInverse(VMatrix const&, Vector*, float*)
 t FileSystem_IsHldsUpdateToolDedicatedServer()
 t DataTable_CreateClientTablesFromServerTables()
+t protobuf_AddDesc_engine_5fgcmessages_2eproto()
 t protobuf_AddDesc_network_5fconnection_2eproto()
 t SteamDatagramNetwork_SetupHardcodedRouterList(char const*)
+t protobuf_AssignDesc_engine_5fgcmessages_2eproto()
 t protobuf_AssignDesc_network_5fconnection_2eproto()
 t DataTable_CreateClientClassInfosFromServerClasses(CBaseClientState*)
 t protobuf_AddDesc_steamdatagram_5fmessages_2eproto()
+t protobuf_ShutdownFile_engine_5fgcmessages_2eproto()
 t Bias(float, float)
 t Gain(float, float)
 t lerp(float, float, float)
@@ -8818,6 +8824,7 @@ t (anonymous namespace)::generic_error_category::~generic_error_category()
 t (anonymous namespace)::protobuf_RegisterTypes(std::string const&)
 t (anonymous namespace)::protobuf_RegisterTypes(std::string const&)
 t (anonymous namespace)::protobuf_RegisterTypes(std::string const&)
+t (anonymous namespace)::protobuf_RegisterTypes(std::string const&)
 b (anonymous namespace)::CNETMsg_NOP_descriptor_
 b (anonymous namespace)::CNETMsg_NOP_reflection_
 b (anonymous namespace)::CCLCMsg_Move_descriptor_
@@ -8905,6 +8912,9 @@ b (anonymous namespace)::CSVCMsg_TempEntities_reflection_
 b (anonymous namespace)::protobuf_AssignDescriptors_once_
 b (anonymous namespace)::protobuf_AssignDescriptors_once_
 b (anonymous namespace)::protobuf_AssignDescriptors_once_
+b (anonymous namespace)::protobuf_AssignDescriptors_once_
+b (anonymous namespace)::CEngineGotvSyncPacket_descriptor_
+b (anonymous namespace)::CEngineGotvSyncPacket_reflection_
 b (anonymous namespace)::CSVCMsg_EncryptedData_descriptor_
 b (anonymous namespace)::CSVCMsg_EncryptedData_reflection_
 b (anonymous namespace)::CSVCMsg_GameEventList_descriptor_
@@ -9793,6 +9803,7 @@ t CHLTVBroadcast::WriteFrame(CHLTVFrame*, bf_write*)
 t CHLTVBroadcast::IsRecording()
 t CHLTVBroadcast::LowLevelSend(CUtlString const&, void const*, unsigned int)
 t CHLTVBroadcast::CHttpCallback::GetCallbackSizeBytes()
+t CHLTVBroadcast::CHttpCallback::SetProtobufMsgForGCUponSuccess(CEngineGotvSyncPacket const*)
 t CHLTVBroadcast::CHttpCallback::Run(void*)
 t CHLTVBroadcast::CHttpCallback::Run(void*, bool, unsigned long long)
 t CHLTVBroadcast::CHttpCallback::CHttpCallback(CHLTVBroadcast*, unsigned int, char const*)
@@ -9819,7 +9830,7 @@ t CHLTVBroadcast::OnHttpRequestFailed()
 t CHLTVBroadcast::RecordServerClasses(CHLTVBroadcast::CMemoryStream&, ServerClass*)
 t CHLTVBroadcast::OnHttpRequestSuccess()
 t CHLTVBroadcast::FlushCollectedStreams(char const*)
-t CHLTVBroadcast::FlushCollectedStreams(char const*) [clone .part.95]
+t CHLTVBroadcast::FlushCollectedStreams(char const*) [clone .part.102]
 t CHLTVBroadcast::OnHttpRequestResetContent()
 t CHLTVBroadcast::Send(char const*, void const*, unsigned int)
 t CHLTVBroadcast::Send(char const*, CHLTVBroadcast::CMemoryStream&)
@@ -10423,12 +10434,14 @@ t CDecalVertCache::NextBlock(decalcache_t*)
 t CDemoStreamHttp::Fragment_t::ResetBuffers()
 t CDemoStreamHttp::Fragment_t::SetField(CDemoStreamHttp::FragmentTypeEnum_t, CDemoStreamHttp::Buffer_t*)
 t CDemoStreamHttp::MakeBuffer(unsigned int)
+t CDemoStreamHttp::GetStreamId(char const*)
 t CDemoStreamHttp::CSyncRequest::OnFailure(HTTPRequestCompleted_t const*)
 t CDemoStreamHttp::CSyncRequest::OnSuccess(HTTPRequestCompleted_t const*)
 t CDemoStreamHttp::CStartRequest::OnSuccess(HTTPRequestCompleted_t const*)
 t CDemoStreamHttp::GetTotalTicks()
 t CDemoStreamHttp::StopStreaming()
-t CDemoStreamHttp::StartStreaming(char const*, char const*)
+t CDemoStreamHttp::BeginBuffering(int)
+t CDemoStreamHttp::StartStreaming(char const*, CDemoStreamHttp::SyncParams_t)
 t CDemoStreamHttp::CPendingRequest::GetCallbackSizeBytes()
 t CDemoStreamHttp::CPendingRequest::Run(void*)
 t CDemoStreamHttp::CPendingRequest::Run(void*, bool, unsigned long long)
@@ -10448,16 +10461,20 @@ t CDemoStreamHttp::GetFragmentBuffer(int, CDemoStreamHttp::FragmentTypeEnum_t)
 t CDemoStreamHttp::GetTicksPerSecond()
 t CDemoStreamHttp::PrepareForStreaming(char const*)
 t CDemoStreamHttp::StartStreamingCached(char const*, int)
+t CDemoStreamHttp::OnEngineGotvSyncPacket(CEngineGotvSyncPacket const*)
+t CDemoStreamHttp::GetStreamStartReference(bool)
 t CDemoStreamHttp::OnFragmentRequestFailure(EHTTPStatusCode, int, CDemoStreamHttp::FragmentTypeEnum_t)
 t CDemoStreamHttp::OnFragmentRequestSuccess(unsigned int, int, CDemoStreamHttp::FragmentTypeEnum_t)
 t CDemoStreamHttp::Close()
 t CDemoStreamHttp::GetUrl()
+t CDemoStreamHttp::OnSync(int)
 t CDemoStreamHttp::OnSync(char const*, int, int)
-t CDemoStreamHttp::Resync(char const*)
-t CDemoStreamHttp::OnStart(unsigned int, int, int, int)
+t CDemoStreamHttp::Resync()
+t CDemoStreamHttp::Update()
+t CDemoStreamHttp::OnStart(unsigned int)
 t CDemoStreamHttp::SendGet(char const*, CDemoStreamHttp::CPendingRequest*)
 t CDemoStreamHttp::Fragment(int)
-t CDemoStreamHttp::SendSync(char const*, int)
+t CDemoStreamHttp::SendSync(int)
 t CDemoStreamHttp::CDemoStreamHttp()
 t CDemoStreamHttp::CDemoStreamHttp()
 t CDemoStreamHttp::~CDemoStreamHttp()
@@ -12725,6 +12742,35 @@ t SplitScreenConVarRef::SplitScreenConVarRef(IConVar*)
 t SplitScreenConVarRef::SplitScreenConVarRef(char const*)
 t SplitScreenConVarRef::SplitScreenConVarRef(char const*, bool)
 t CClientDatatableStack::RecurseAndCallProxies(CSendNode*, unsigned char*)
+t CEngineGotvSyncPacket::descriptor()
+t CEngineGotvSyncPacket::SharedCtor()
+t CEngineGotvSyncPacket::SharedDtor()
+t CEngineGotvSyncPacket::default_instance()
+r CEngineGotvSyncPacket::kTickFieldNumber
+b CEngineGotvSyncPacket::default_instance_
+r CEngineGotvSyncPacket::kRcvageFieldNumber
+r CEngineGotvSyncPacket::kMatchIdFieldNumber
+r CEngineGotvSyncPacket::kRtdelayFieldNumber
+r CEngineGotvSyncPacket::kTickrateFieldNumber
+t CEngineGotvSyncPacket::InitAsDefaultInstance()
+r CEngineGotvSyncPacket::kInstanceIdFieldNumber
+r CEngineGotvSyncPacket::kSignupfragmentFieldNumber
+r CEngineGotvSyncPacket::kCurrentfragmentFieldNumber
+t CEngineGotvSyncPacket::MergePartialFromCodedStream(google::protobuf::io::CodedInputStream*)
+r CEngineGotvSyncPacket::kKeyframeIntervalFieldNumber
+t CEngineGotvSyncPacket::Swap(CEngineGotvSyncPacket*)
+t CEngineGotvSyncPacket::Clear()
+t CEngineGotvSyncPacket::CopyFrom(google::protobuf::Message const&)
+t CEngineGotvSyncPacket::CopyFrom(CEngineGotvSyncPacket const&)
+t CEngineGotvSyncPacket::MergeFrom(google::protobuf::Message const&)
+t CEngineGotvSyncPacket::MergeFrom(CEngineGotvSyncPacket const&)
+t CEngineGotvSyncPacket::CEngineGotvSyncPacket(CEngineGotvSyncPacket const&)
+t CEngineGotvSyncPacket::CEngineGotvSyncPacket()
+t CEngineGotvSyncPacket::CEngineGotvSyncPacket(CEngineGotvSyncPacket const&)
+t CEngineGotvSyncPacket::CEngineGotvSyncPacket()
+t CEngineGotvSyncPacket::~CEngineGotvSyncPacket()
+t CEngineGotvSyncPacket::~CEngineGotvSyncPacket()
+t CEngineGotvSyncPacket::~CEngineGotvSyncPacket()
 t CExpressionCalculator::ParseUnary(char const*&)
 t CExpressionCalculator::ParseAddSub(char const*&)
 t CExpressionCalculator::ParseDivMul(char const*&)
@@ -12847,6 +12893,8 @@ t CSVCMsg_GameEventList::~CSVCMsg_GameEventList()
 t CUtlCStringConversion::FindConversion(char const*, int*)
 t CUtlCStringConversion::CUtlCStringConversion(char, char const*, int, CUtlCharConversion::ConversionArray_t*)
 t CUtlCStringConversion::CUtlCStringConversion(char, char const*, int, CUtlCharConversion::ConversionArray_t*)
+t CUtlIncrementalVector<CHLTVBroadcast::CHttpCallback, DefaultIncrementalVectorAccessor_t<CHLTVBroadcast::CHttpCallback>, CUtlMemory<CHLTVBroadcast::CHttpCallback*, int> >::~CUtlIncrementalVector()
+t CUtlIncrementalVector<CHLTVBroadcast::CHttpCallback, DefaultIncrementalVectorAccessor_t<CHLTVBroadcast::CHttpCallback>, CUtlMemory<CHLTVBroadcast::CHttpCallback*, int> >::~CUtlIncrementalVector()
 t CUtlIncrementalVector<CDemoStreamHttp::CPendingRequest, DefaultIncrementalVectorAccessor_t<CDemoStreamHttp::CPendingRequest>, CUtlMemory<CDemoStreamHttp::CPendingRequest*, int> >::~CUtlIncrementalVector()
 t CUtlIncrementalVector<CDemoStreamHttp::CPendingRequest, DefaultIncrementalVectorAccessor_t<CDemoStreamHttp::CPendingRequest>, CUtlMemory<CDemoStreamHttp::CPendingRequest*, int> >::~CUtlIncrementalVector()
 t CWin32UploadGameStats::SetNextState(unsigned int)
@@ -22094,7 +22142,7 @@ t CSVCMsg_Print::SerializeWithCachedSizesToArray(unsigned char*) const
 t CSVCMsg_Print::New() const
 t CSVCMsg_Print::ByteSize() const
 t unsigned int CUtlHashtable<CSteamID, SteamDatagramTransport::CSteamDatagramTransportGameserver::Client, SteamDatagramTransport::CSteamDatagramTransportGameserver::SteamIDHashFunctor, DefaultEqualFunctor<CSteamID>, undefined_t>::DoLookup<CSteamID const&>(CSteamID const&, unsigned int, unsigned int*) const [clone .part.55]
-t unsigned int CUtlHashtable<int, CDemoStreamHttp::Fragment_t, IdentityHashFunctor, DefaultEqualFunctor<int>, undefined_t>::DoLookup<int>(int, unsigned int, unsigned int*) const [clone .part.54]
+t unsigned int CUtlHashtable<int, CDemoStreamHttp::Fragment_t, IdentityHashFunctor, DefaultEqualFunctor<int>, undefined_t>::DoLookup<int>(int, unsigned int, unsigned int*) const [clone .part.65]
 t unsigned int CUtlHashtable<int, CAsyncOcclusionQuery*, IdentityHashFunctor, DefaultEqualFunctor<int>, undefined_t>::DoLookup<int>(int, unsigned int, unsigned int*) const [clone .part.109]
 t unsigned int CUtlHashtable<unsigned int, SteamDatagramTransport::SharedClusterData::DataCenterPing, DefaultHashFunctor<unsigned int>, DefaultEqualFunctor<unsigned int>, undefined_t>::DoLookup<unsigned int>(unsigned int, unsigned int, unsigned int*) const [clone .part.198] [clone .constprop.289]
 t unsigned int CUtlHashtable<CUtlStableHashtable<model_t*, empty_t, CModelInfo::ModelFileHandleHash, CModelInfo::ModelFileHandleEq, short, void*>::IndirectIndex, empty_t, CUtlStableHashtable<model_t*, empty_t, CModelInfo::ModelFileHandleHash, CModelInfo::ModelFileHandleEq, short, void*>::HashProxy, CUtlStableHashtable<model_t*, empty_t, CModelInfo::ModelFileHandleHash, CModelInfo::ModelFileHandleEq, short, void*>::EqualProxy, void*>::DoLookup<void*>(void*, unsigned int, unsigned int*) const
@@ -22147,6 +22195,7 @@ t CVEngineServer::IsGenericPrecached(char const*) const
 t CVEngineServer::WasShutDownRequested() const
 t virtualgroup_t::GetStudioHdr() const
 t CAppSystemGroup::GetCurrentStage() const
+t CDemoStreamHttp::SyncParams_t::PrintSyncRequest(char*, int) const
 t CDiskDemoBuffer::DumpToFile(char const*, demoheader_t const&) const
 t CDiskDemoBuffer::TellMaxPut() const
 t CDiskDemoBuffer::IsInitialized() const
@@ -22529,6 +22578,14 @@ t CSVCMsg_TempEntities::SerializeWithCachedSizesToArray(unsigned char*) const
 t CSVCMsg_TempEntities::New() const
 t CSVCMsg_TempEntities::ByteSize() const
 t SplitScreenConVarRef::IsValid() const
+t CEngineGotvSyncPacket::GetMetadata() const
+t CEngineGotvSyncPacket::GetCachedSize() const
+t CEngineGotvSyncPacket::IsInitialized() const
+t CEngineGotvSyncPacket::SetCachedSize(int) const
+t CEngineGotvSyncPacket::SerializeWithCachedSizes(google::protobuf::io::CodedOutputStream*) const
+t CEngineGotvSyncPacket::SerializeWithCachedSizesToArray(unsigned char*) const
+t CEngineGotvSyncPacket::New() const
+t CEngineGotvSyncPacket::ByteSize() const
 t CSVCMsg_EncryptedData::GetMetadata() const
 t CSVCMsg_EncryptedData::GetCachedSize() const
 t CSVCMsg_EncryptedData::IsInitialized() const
@@ -32504,6 +32561,7 @@ r typeinfo for IStaticPropMgrEngine
 r typeinfo for IStaticPropMgrServer
 r typeinfo for IUniformRandomStream
 r typeinfo for CClientDatatableStack
+r typeinfo for CEngineGotvSyncPacket
 r typeinfo for CFrameSnapshotManager
 r typeinfo for CMaterialProxyFactory
 r typeinfo for CNETMsg_SignonState_t
@@ -33685,6 +33743,7 @@ r typeinfo name for IStaticPropMgrEngine
 r typeinfo name for IStaticPropMgrServer
 r typeinfo name for IUniformRandomStream
 r typeinfo name for CClientDatatableStack
+r typeinfo name for CEngineGotvSyncPacket
 r typeinfo name for CFrameSnapshotManager
 r typeinfo name for CMaterialProxyFactory
 r typeinfo name for CNETMsg_SignonState_t
@@ -35151,6 +35210,7 @@ r vtable for IStaticPropMgrClient
 r vtable for IStaticPropMgrEngine
 r vtable for IStaticPropMgrServer
 r vtable for CClientDatatableStack
+r vtable for CEngineGotvSyncPacket
 r vtable for CFrameSnapshotManager
 r vtable for CMaterialProxyFactory
 r vtable for CNETMsg_SignonState_t
@@ -36117,7 +36177,9 @@ r protobuf_AssignDesc_netmessages_2eproto()::CSVCMsg_Sounds_sounddata_t_offsets_
 r protobuf_AssignDesc_netmessages_2eproto()::CSVCMsg_GameEventList_key_t_offsets_
 r protobuf_AssignDesc_netmessages_2eproto()::CSVCMsg_SendTable_sendprop_t_offsets_
 r protobuf_AssignDesc_netmessages_2eproto()::CSVCMsg_GameEventList_descriptor_t_offsets_
+b protobuf_AddDesc_engine_5fgcmessages_2eproto()::already_here
 b protobuf_AddDesc_network_5fconnection_2eproto()::already_here
+r protobuf_AssignDesc_engine_5fgcmessages_2eproto()::CEngineGotvSyncPacket_offsets_
 b protobuf_AddDesc_steamdatagram_5fmessages_2eproto()::already_here
 b Bias(float, float)::lastExponent
 b vstr(Vector&)::idx

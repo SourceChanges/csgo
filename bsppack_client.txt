@@ -1,4 +1,4 @@
-U abort@@GLIBC_2.0test
+U abort@@GLIBC_2.0
 U access@@GLIBC_2.0
 U __acosf_finite@@GLIBC_2.15
 U __acos_finite@@GLIBC_2.15

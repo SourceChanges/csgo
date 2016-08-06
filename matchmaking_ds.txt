@@ -1304,7 +1304,7 @@ b lineartotexture
 t Sys_LoadLibrary(char const*)
 b texturetolinear
 t voice_show_mute(CCommand const&)
-t voice_show_mute(CCommand const&) [clone .part.6]
+t voice_show_mute(CCommand const&) [clone .part.7]
 b emergency_buffer
 t get_adjusted_ptr(std::type_info const*, std::type_info const*, void**)
 b g_MatchFramework
@@ -2286,10 +2286,10 @@ t CBitWrite::WriteBitVec3Normal(Vector const&)
 t CBitWrite::WriteBitsFromBuffer(bf_read*, int)
 t CBitWrite::SeekToBit(int)
 t CBitWrite::WriteBits(void const*, int)
-t void CByteswap::SwapBufferToTargetEndian<float>(float*, float*, int) [clone .part.31] [clone .constprop.89]
-t void CByteswap::SwapBufferToTargetEndian<int>(int*, int*, int) [clone .part.60] [clone .constprop.92]
-t void CByteswap::SwapBufferToTargetEndian<unsigned short>(unsigned short*, unsigned short*, int) [clone .part.57] [clone .constprop.91]
-t void CByteswap::SwapBufferToTargetEndian<long long>(long long*, long long*, int) [clone .part.63] [clone .constprop.88]
+t void CByteswap::SwapBufferToTargetEndian<float>(float*, float*, int) [clone .part.32] [clone .constprop.90]
+t void CByteswap::SwapBufferToTargetEndian<int>(int*, int*, int) [clone .part.61] [clone .constprop.93]
+t void CByteswap::SwapBufferToTargetEndian<unsigned short>(unsigned short*, unsigned short*, int) [clone .part.58] [clone .constprop.92]
+t void CByteswap::SwapBufferToTargetEndian<long long>(long long*, long long*, int) [clone .part.64] [clone .constprop.89]
 t ConVarRef::Init(char const*, bool)
 t ConVarRef::ConVarRef(IConVar*)
 t ConVarRef::ConVarRef(char const*)

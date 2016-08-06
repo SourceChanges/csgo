@@ -1277,7 +1277,7 @@ t Catmull_Rom_Spline_Integral(Vector const&, Vector const&, Vector const&, Vecto
 t Catmull_Rom_Spline_Integral(Vector const&, Vector const&, Vector const&, Vector const&, Vector&)
 t DefaultConditionalErrorProc(char const*)
 t FileSystem_GetExecutableDir(char*, int)
-t FileSystem_GetExecutableDir(char*, int) [clone .part.8]
+t FileSystem_GetExecutableDir(char*, int) [clone .part.9]
 t Parabolic_Spline_NormalizeX(Vector const&, Vector const&, Vector const&, Vector const&, float, Vector&)
 t Sys_RunningWithDebugModules()
 t TransformAnglesToLocalSpace(QAngle const&, matrix3x4_t const&)
@@ -1579,7 +1579,7 @@ b s_nRandContextsInUse
 b s_nRegistrationCount
 b async_suspend_command
 t base_of_encoded_value(unsigned char, _Unwind_Context*)
-t FileSystem_GetBaseDir(char*, int) [clone .constprop.19]
+t FileSystem_GetBaseDir(char*, int) [clone .constprop.20]
 t fs_fios_prefetch_file(CCommand const&)
 d g_FileSystemErrorMode
 t ServiceChildProcesses()
@@ -2033,7 +2033,7 @@ t CUtlVector<CUtlSymbol, CUtlMemory<CUtlSymbol, int> >::~CUtlVector()
 t CUtlVector<DLCCorrupt_t, CUtlMemory<DLCCorrupt_t, int> >::~CUtlVector()
 t CUtlVector<DLCCorrupt_t, CUtlMemory<DLCCorrupt_t, int> >::~CUtlVector()
 t CUtlVector<CStoreIDEntry, CUtlMemory<CStoreIDEntry, int> >::InsertBefore(int, CStoreIDEntry const&)
-t CUtlVector<CUtlSymbolTable, CUtlMemory<CUtlSymbolTable, int> >::EnsureCount(int) [clone .part.58]
+t CUtlVector<CUtlSymbolTable, CUtlMemory<CUtlSymbolTable, int> >::EnsureCount(int) [clone .part.59]
 t CUtlVector<CUtlSymbolTable, CUtlMemory<CUtlSymbolTable, int> >::~CUtlVector()
 t CUtlVector<CUtlSymbolTable, CUtlMemory<CUtlSymbolTable, int> >::~CUtlVector()
 t CUtlVector<ChunkHashFraction_t, CUtlMemory<ChunkHashFraction_t, int> >::GrowVector(int)
@@ -2322,7 +2322,7 @@ t CFileAsyncJob::~CFileAsyncJob()
 t CFileAsyncJob::~CFileAsyncJob()
 t CFileAsyncJob::~CFileAsyncJob()
 t CFileOpenInfo::SetAbsolutePath(char const*, ...)
-t CFileOpenInfo::HandleFileCRCTracking(char const*, bool) [clone .part.38]
+t CFileOpenInfo::HandleFileCRCTracking(char const*, bool) [clone .part.39]
 t CFileTracker2::ShutdownAsync()
 t CFileTracker2::RecordFileRead(void*, unsigned int, unsigned int, _IO_FILE*)
 t CFileTracker2::RecordFileSeek(_IO_FILE*, long long, int)
@@ -2639,7 +2639,7 @@ t CBaseFileSystem::CSearchPathsVisits::~CSearchPathsVisits()
 t CBaseFileSystem::CSearchPathsVisits::~CSearchPathsVisits()
 t CBaseFileSystem::DiscardPreloadData()
 t CBaseFileSystem::FindNextFileHelper(CBaseFileSystem::FindData_t*, int*)
-t CBaseFileSystem::FindNextFileHelper(CBaseFileSystem::FindData_t*, int*) [clone .part.192]
+t CBaseFileSystem::FindNextFileHelper(CBaseFileSystem::FindData_t*, int*) [clone .part.193]
 b CBaseFileSystem::m_ExcludeFilePaths
 t CBaseFileSystem::OpenedFileLessFunc(CBaseFileSystem::COpenedFile const&, CBaseFileSystem::COpenedFile const&)
 t CBaseFileSystem::AddPackFileFromPath(char const*, char const*, bool, char const*)
@@ -2663,7 +2663,7 @@ t CBaseFileSystem::IsSpecificDLCPresent(unsigned int)
 t CBaseFileSystem::RemoveAllSearchPaths()
 t CBaseFileSystem::ShouldGameReloadFile(char const*)
 t CBaseFileSystem::AddSearchPathInternal(char const*, char const*, SearchPathAdd_t, bool, int)
-t CBaseFileSystem::AddSearchPathInternal(char const*, char const*, SearchPathAdd_t, bool, int) [clone .part.291]
+t CBaseFileSystem::AddSearchPathInternal(char const*, char const*, SearchPathAdd_t, bool, int) [clone .part.292]
 t CBaseFileSystem::CacheAllVPKFileHashes(bool, bool)
 t CBaseFileSystem::FindFileInSearchPaths(char const*, char const*, char const*, unsigned int, char**, bool)
 t CBaseFileSystem::FreeOptimalReadBuffer(void*)
@@ -2690,7 +2690,7 @@ t CBaseFileSystem::MarkPathIDByRequestOnly(char const*, bool)
 t CBaseFileSystem::RemoveAllMapSearchPaths()
 t CBaseFileSystem::Trace_DumpUnclosedFiles()
 t CBaseFileSystem::FullPathToRelativePathEx(char const*, char const*, char*, int)
-t CBaseFileSystem::FullPathToRelativePathEx(char const*, char const*, char*, int) [clone .part.78]
+t CBaseFileSystem::FullPathToRelativePathEx(char const*, char const*, char*, int) [clone .part.79]
 b CBaseFileSystem::m_bFoundXboxImageInCache
 t CBaseFileSystem::IsInstalledToXboxHDDCache()
 t CBaseFileSystem::FindFileAbsoluteListHelper(CUtlVector<CUtlString, CUtlMemory<CUtlString, int> >&, CBaseFileSystem::FindData_t&, char const*)
@@ -2777,7 +2777,7 @@ t CUtlBinaryBlock::CUtlBinaryBlock(void*, int, int)
 t CUtlBinaryBlock::CUtlBinaryBlock(CUtlBinaryBlock const&)
 t CUtlBlockMemory<unsigned char, int>::ChangeSize(int)
 t CUtlBlockMemory<unsigned char, int>::Init(int, int)
-t CUtlBlockMemory<unsigned char, int>::Purge() [clone .isra.41]
+t CUtlBlockMemory<unsigned char, int>::Purge() [clone .isra.42]
 t CUtlBlockVector<unsigned char>::~CUtlBlockVector()
 t CUtlBlockVector<unsigned char>::~CUtlBlockVector()
 t CUtlSymbolTable::CTree::~CTree()
@@ -3449,10 +3449,10 @@ t netadr_s::SetIP(unsigned int)
 t netadr_s::SetPort(unsigned short)
 t netadr_s::SetType(netadrtype_t)
 t CByteswap::SwapFieldToTargetEndian(void*, void*, typedescription_t*)
-t void CByteswap::SwapBufferToTargetEndian<float>(float*, float*, int) [clone .part.31] [clone .constprop.89]
-t void CByteswap::SwapBufferToTargetEndian<int>(int*, int*, int) [clone .part.60] [clone .constprop.92]
-t void CByteswap::SwapBufferToTargetEndian<unsigned short>(unsigned short*, unsigned short*, int) [clone .part.57] [clone .constprop.91]
-t void CByteswap::SwapBufferToTargetEndian<long long>(long long*, long long*, int) [clone .part.63] [clone .constprop.88]
+t void CByteswap::SwapBufferToTargetEndian<float>(float*, float*, int) [clone .part.32] [clone .constprop.90]
+t void CByteswap::SwapBufferToTargetEndian<int>(int*, int*, int) [clone .part.61] [clone .constprop.93]
+t void CByteswap::SwapBufferToTargetEndian<unsigned short>(unsigned short*, unsigned short*, int) [clone .part.58] [clone .constprop.92]
+t void CByteswap::SwapBufferToTargetEndian<long long>(long long*, long long*, int) [clone .part.64] [clone .constprop.89]
 t CByteswap::SwapFieldsToTargetEndian(void*, void*, datamap_t*)
 t CFileInfo::CFileInfo()
 t CFileInfo::CFileInfo()

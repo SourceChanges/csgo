@@ -1279,7 +1279,7 @@ t CUtlBinaryBlock::CUtlBinaryBlock(void const*, int)
 t CUtlBinaryBlock::CUtlBinaryBlock(void*, int, int)
 t CUtlBinaryBlock::CUtlBinaryBlock(CUtlBinaryBlock const&)
 t CUtlFixedMemory<UtlLinkedListElem_t<CConCommandHash::HashEntry_t, int> >::Grow(int)
-t CUtlFixedMemory<UtlLinkedListElem_t<CConCommandHash::HashEntry_t, int> >::Purge() [clone .isra.61]
+t CUtlFixedMemory<UtlLinkedListElem_t<CConCommandHash::HashEntry_t, int> >::Purge() [clone .isra.62]
 t CUtlFixedMemory<UtlLinkedListElem_t<CEventId::SubscribedQueue_t, int> >::Grow(int)
 t CDefaultAccessor::RegisterConCommandBase(ConCommandBase*)
 t CDllDemandLoader::GetFactory()

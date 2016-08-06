@@ -1323,10 +1323,10 @@ t CUtlDict<gender_t, unsigned char>::~CUtlDict()
 t CUtlDict<gender_t, unsigned char>::~CUtlDict()
 t CUtlHash<int, CKeyValuesGrowableStringTable::CLookupFunctor&, CKeyValuesGrowableStringTable::CLookupFunctor&>::CUtlHash(int, int, int, CKeyValuesGrowableStringTable::CLookupFunctor&, CKeyValuesGrowableStringTable::CLookupFunctor&)
 t CUtlHash<int, CKeyValuesGrowableStringTable::CLookupFunctor&, CKeyValuesGrowableStringTable::CLookupFunctor&>::CUtlHash(int, int, int, CKeyValuesGrowableStringTable::CLookupFunctor&, CKeyValuesGrowableStringTable::CLookupFunctor&)
-t void CByteswap::SwapBufferToTargetEndian<float>(float*, float*, int) [clone .part.31] [clone .constprop.89]
-t void CByteswap::SwapBufferToTargetEndian<int>(int*, int*, int) [clone .part.60] [clone .constprop.92]
-t void CByteswap::SwapBufferToTargetEndian<unsigned short>(unsigned short*, unsigned short*, int) [clone .part.57] [clone .constprop.91]
-t void CByteswap::SwapBufferToTargetEndian<long long>(long long*, long long*, int) [clone .part.63] [clone .constprop.88]
+t void CByteswap::SwapBufferToTargetEndian<float>(float*, float*, int) [clone .part.32] [clone .constprop.90]
+t void CByteswap::SwapBufferToTargetEndian<int>(int*, int*, int) [clone .part.61] [clone .constprop.93]
+t void CByteswap::SwapBufferToTargetEndian<unsigned short>(unsigned short*, unsigned short*, int) [clone .part.58] [clone .constprop.92]
+t void CByteswap::SwapBufferToTargetEndian<long long>(long long*, long long*, int) [clone .part.64] [clone .constprop.89]
 t ConVarRef::Init(char const*, bool)
 t ConVarRef::ConVarRef(IConVar*)
 t ConVarRef::ConVarRef(char const*)

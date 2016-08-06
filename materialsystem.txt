@@ -26,12 +26,12 @@ T CreateInterface
 U CreateNewThreadPool
 U CreateSimpleThread
 b csm_quality_level
-r CSWTCH.1082
+r CSWTCH.1085
 r CSWTCH.149
 r CSWTCH.151
-r CSWTCH.60
 r CSWTCH.62
-r CSWTCH.752
+r CSWTCH.64
+r CSWTCH.754
 d __CTOR_END__
 d __CTOR_LIST__
 b cvar
@@ -1564,7 +1564,7 @@ b s_pVertexColor
 b s_ShaderSystem
 b stb__QuantGTab
 r wszCantEndLine
-t CalcSphereColor(SphereCalc_t*, float, float) [clone .constprop.76]
+t CalcSphereColor(SphereCalc_t*, float, float) [clone .constprop.77]
 b dependents_used
 t get_ttype_entry(lsda_header_info*, unsigned long) [clone .constprop.6]
 r g_nRandomValues
@@ -1594,9 +1594,9 @@ b s_bBuiltBreakSet
 d s_nDLLIdentifier
 b s_TextureManager
 r wszCantBeginLine
-t ConvertModeStruct(ShaderDeviceInfo_t*, MaterialSystem_Config_t const&) [clone .constprop.395]
+t ConvertModeStruct(ShaderDeviceInfo_t*, MaterialSystem_Config_t const&) [clone .constprop.396]
 b dependents_buffer
-t DrawExtrusionFace(Vector const&, Vector const&, Vector*, int, int, Color, CMeshBuilder&) [clone .constprop.30]
+t DrawExtrusionFace(Vector const&, Vector const&, Vector*, int, int, Color, CMeshBuilder&) [clone .constprop.31]
 t GetHardwareConfig()
 d g_ImageFormatInfo
 b mat_lightmap_pfms
@@ -1628,7 +1628,7 @@ b s_pTempMaterialVar
 b s_pVTFAsyncTexture
 b s_SIMDRandContexts
 t ApplyPatchKeyValues(KeyValues&, KeyValues&)
-t CalcHemisphereColor(SphereCalc_t*, float, float) [clone .constprop.77]
+t CalcHemisphereColor(SphereCalc_t*, float, float) [clone .constprop.78]
 b __g_CreateICVar_reg
 t GenerateBoxVertices(Vector const&, QAngle const&, Vector const&, Vector const&, Vector*)
 r g_pInterfaceGlobals
@@ -1679,7 +1679,7 @@ b r_flashlightdepthtexture
 r s_compositeTextureRTData
 b s_nOptimalReadBufferSize
 b g_BreakSetIncludingColons
-t PSDReadCompressedChannels(CUtlBuffer&, int, PSDMode_t, PSDPalette_t&, Bitmap_t&) [clone .constprop.14]
+t PSDReadCompressedChannels(CUtlBuffer&, int, PSDMode_t, PSDPalette_t&, Bitmap_t&) [clone .constprop.15]
 b s_pConnectionRegistration
 b UNSPECIFIED_LOGGING_COLOR
 b UNSPECIFIED_LOGGING_COLOR
@@ -1751,7 +1751,7 @@ b s_bRunningWithDebugModules
 d s_pBoxFaceIndicesInsideOut
 t GenericAllocateReusableData(unsigned char**, int*, int)
 b mat_monitorgamma_tv_enabled
-t PSDReadUncompressedChannels(CUtlBuffer&, int, PSDMode_t, PSDPalette_t&, Bitmap_t&) [clone .constprop.15]
+t PSDReadUncompressedChannels(CUtlBuffer&, int, PSDMode_t, PSDPalette_t&, Bitmap_t&) [clone .constprop.16]
 t mat_showmiplevels_Callback_f(IConVar*, char const*, float)
 t read_encoded_value_with_base(unsigned char, unsigned int, unsigned char const*, unsigned int*)
 t AccumulateRecursiveVmtPatches(KeyValues&, KeyValues**, KeyValues const&, char const*, CUtlVector<void*, CUtlMemory<void*, int> >*)
@@ -1782,8 +1782,8 @@ b __g_CreateMaterialSystem_Config_tMaterialSystem_Config_t_reg
 t __CreateCColorCorrectionSystemIColorCorrectionSystem_interface()
 t __CreateMaterialSystem_Config_tMaterialSystem_Config_t_interface()
 t GetInt(void*&)
-t CalcInit(SphereCalc_t*, int, unsigned char**, LookDir_t) [clone .constprop.75]
-t DrawAxes(Vector const&, Vector*, int, Color, CMeshBuilder&) [clone .constprop.31]
+t CalcInit(SphereCalc_t*, int, unsigned char**, LookDir_t) [clone .constprop.76]
+t DrawAxes(Vector const&, Vector*, int, Color, CMeshBuilder&) [clone .constprop.32]
 t GetICVar()
 t V_nibble(char)
 t CalcColor(SphereCalc_t*, int, Vector const&, unsigned char*) [clone .isra.10]
@@ -1940,7 +1940,7 @@ t CUtlMemory<char, int>::Grow(int)
 t CUtlMemory<unsigned char, int>::ConvertToGrowableMemory(int) [clone .part.32]
 t CUtlMemory<unsigned char, int>::Grow(int)
 t CUtlMemory<unsigned char, int>::Purge()
-t CUtlMemory<unsigned char, int>::~CUtlMemory() [clone .constprop.23]
+t CUtlMemory<unsigned char, int>::~CUtlMemory() [clone .constprop.24]
 t CUtlMemory<int, int>::Grow(int)
 t CUtlMemory<int, int>::~CUtlMemory()
 t CUtlMemory<int, int>::~CUtlMemory()
@@ -2018,7 +2018,7 @@ t CUtlRBTree<CMaterialDict::MaterialLookup_t, unsigned short, bool (*)(CMaterial
 t CUtlRBTree<CMaterialDict::MaterialLookup_t, unsigned short, bool (*)(CMaterialDict::MaterialLookup_t const&, CMaterialDict::MaterialLookup_t const&), CUtlMemory<UtlRBTreeNode_t<CMaterialDict::MaterialLookup_t, unsigned short>, unsigned short> >::Insert(CMaterialDict::MaterialLookup_t const&)
 t CUtlRBTree<CMaterialDict::MaterialLookup_t, unsigned short, bool (*)(CMaterialDict::MaterialLookup_t const&, CMaterialDict::MaterialLookup_t const&), CUtlMemory<UtlRBTreeNode_t<CMaterialDict::MaterialLookup_t, unsigned short>, unsigned short> >::Unlink(unsigned short)
 t CUtlRBTree<CMaterialDict::MaterialLookup_t, unsigned short, bool (*)(CMaterialDict::MaterialLookup_t const&, CMaterialDict::MaterialLookup_t const&), CUtlMemory<UtlRBTreeNode_t<CMaterialDict::MaterialLookup_t, unsigned short>, unsigned short> >::NewNode()
-t CUtlRBTree<CMaterialDict::MaterialLookup_t, unsigned short, bool (*)(CMaterialDict::MaterialLookup_t const&, CMaterialDict::MaterialLookup_t const&), CUtlMemory<UtlRBTreeNode_t<CMaterialDict::MaterialLookup_t, unsigned short>, unsigned short> >::RemoveAt(unsigned short) [clone .part.31]
+t CUtlRBTree<CMaterialDict::MaterialLookup_t, unsigned short, bool (*)(CMaterialDict::MaterialLookup_t const&, CMaterialDict::MaterialLookup_t const&), CUtlMemory<UtlRBTreeNode_t<CMaterialDict::MaterialLookup_t, unsigned short>, unsigned short> >::RemoveAt(unsigned short) [clone .part.32]
 t CUtlRBTree<CMaterialDict::MaterialLookup_t, unsigned short, bool (*)(CMaterialDict::MaterialLookup_t const&, CMaterialDict::MaterialLookup_t const&), CUtlMemory<UtlRBTreeNode_t<CMaterialDict::MaterialLookup_t, unsigned short>, unsigned short> >::RemoveAll()
 t CUtlRBTree<CMaterialDict::MaterialLookup_t, unsigned short, bool (*)(CMaterialDict::MaterialLookup_t const&, CMaterialDict::MaterialLookup_t const&), CUtlMemory<UtlRBTreeNode_t<CMaterialDict::MaterialLookup_t, unsigned short>, unsigned short> >::~CUtlRBTree()
 t CUtlRBTree<CMaterialDict::MaterialLookup_t, unsigned short, bool (*)(CMaterialDict::MaterialLookup_t const&, CMaterialDict::MaterialLookup_t const&), CUtlMemory<UtlRBTreeNode_t<CMaterialDict::MaterialLookup_t, unsigned short>, unsigned short> >::~CUtlRBTree()
@@ -2270,7 +2270,7 @@ t CVTFTexture::ConvertImageFormat(ImageFormat, bool, bool)
 t CVTFTexture::SetupEdgeIncrement(CEdgePos&, CEdgePos&, CEdgePos&)
 t CVTFTexture::ComputeReflectivity()
 t CVTFTexture::MatchCubeMapBorders(int, ImageFormat, bool)
-t CVTFTexture::MatchCubeMapBorders(int, ImageFormat, bool) [clone .part.72]
+t CVTFTexture::MatchCubeMapBorders(int, ImageFormat, bool) [clone .part.73]
 t CVTFTexture::ConstructLowResImage()
 t CVTFTexture::NormalizeTopMipLevel()
 t CVTFTexture::BlendCubeMapFaceEdges(int, int, CEdgeMatch const*)
@@ -2549,7 +2549,7 @@ t IMaterialVar::Create(IMaterial*, char const*, VMatrix const&)
 t IMaterialVar::Create(IMaterial*, char const*, char const*)
 t IMaterialVar::Destroy(IMaterialVar*)
 t IMaterialVar::GetSymbol(char const*)
-t IMaterialVar::GetSymbol(char const*) [clone .part.21]
+t IMaterialVar::GetSymbol(char const*) [clone .part.22]
 t InterfaceReg::InterfaceReg(void* (*)(), char const*)
 t InterfaceReg::InterfaceReg(void* (*)(), char const*)
 t AsianWordWrap::CanEndLine(wchar_t)
@@ -2571,8 +2571,8 @@ t CDummyTexture::IncrementReferenceCount()
 t CDummyTexture::Download(int, int, unsigned char*, int, int, ImageFormat)
 t CDummyTexture::Download(Rect_t*, int)
 t CIndexBuilder::~CIndexBuilder() [clone .isra.15]
-t CIndexBuilder::~CIndexBuilder() [clone .isra.18]
-t CIndexBuilder::~CIndexBuilder() [clone .isra.40]
+t CIndexBuilder::~CIndexBuilder() [clone .isra.19]
+t CIndexBuilder::~CIndexBuilder() [clone .isra.41]
 t void CMatCallQueue::QueueCall<CLateBoundPtr<IMesh>, IMesh, void, IMesh*, int, IMesh*, int>(CLateBoundPtr<IMesh>, void (IMesh::*)(IMesh*, int), IMesh* const&, int const&)
 t void CMatCallQueue::QueueCall<CMaterialVar*, CMaterialVar, void, unsigned long, void*, unsigned long, void*>(CMaterialVar*, void (CMaterialVar::*)(unsigned long, void*), unsigned long const&, void* const&)
 t void CMatCallQueue::QueueCall<CMaterialVar*, CMaterialVar, void, IMaterialVar*, IMaterialVar*>(CMaterialVar*, void (CMaterialVar::*)(IMaterialVar*), IMaterialVar* const&)
@@ -2665,7 +2665,7 @@ t CShaderSystem::BindTexture(Sampler_t, TextureBindFlags_t, ITexture*, int)
 t CShaderSystem::BindTexture(Sampler_t, Sampler_t, TextureBindFlags_t, ITexture*, int)
 t CShaderSystem::LoadBumpMap(IMaterialVar*, char const*, int)
 t CShaderSystem::LoadCubeMap(IMaterialVar**, IMaterialVar*, int)
-t CShaderSystem::LoadCubeMap(IMaterialVar**, IMaterialVar*, int) [clone .part.13]
+t CShaderSystem::LoadCubeMap(IMaterialVar**, IMaterialVar*, int) [clone .part.14]
 t CShaderSystem::LoadTexture(IMaterialVar*, char const*, int)
 t CShaderSystem::ModShutdown()
 t CShaderSystem::DrawElements(IShader*, IMaterialVar**, ShaderRenderState_t*, VertexCompressionType_t, unsigned int, unsigned int, bool)
@@ -3625,7 +3625,7 @@ t CTextureManager::ShadowNoise2D()
 t CTextureManager::ReloadTextures()
 t CTextureManager::RestoreTexture(ITextureInternal*)
 t CTextureManager::AddTextureAlias(char const*, char const*)
-t CTextureManager::AddTextureAlias(char const*, char const*) [clone .part.202]
+t CTextureManager::AddTextureAlias(char const*, char const*) [clone .part.203]
 t CTextureManager::IsTextureLoaded(char const*)
 t CTextureManager::ReleaseTextures(bool)
 t CTextureManager::FindOrLoadTexture(char const*, char const*, int)
@@ -5540,10 +5540,10 @@ t CUtlDict<char const*, unsigned short>::~CUtlDict()
 t CUtlDict<char const*, unsigned short>::~CUtlDict()
 t CUtlHash<int, CKeyValuesGrowableStringTable::CLookupFunctor&, CKeyValuesGrowableStringTable::CLookupFunctor&>::CUtlHash(int, int, int, CKeyValuesGrowableStringTable::CLookupFunctor&, CKeyValuesGrowableStringTable::CLookupFunctor&)
 t CUtlHash<int, CKeyValuesGrowableStringTable::CLookupFunctor&, CKeyValuesGrowableStringTable::CLookupFunctor&>::CUtlHash(int, int, int, CKeyValuesGrowableStringTable::CLookupFunctor&, CKeyValuesGrowableStringTable::CLookupFunctor&)
-t void CByteswap::SwapBufferToTargetEndian<float>(float*, float*, int) [clone .part.31] [clone .constprop.89]
-t void CByteswap::SwapBufferToTargetEndian<int>(int*, int*, int) [clone .part.60] [clone .constprop.92]
-t void CByteswap::SwapBufferToTargetEndian<unsigned short>(unsigned short*, unsigned short*, int) [clone .part.57] [clone .constprop.91]
-t void CByteswap::SwapBufferToTargetEndian<long long>(long long*, long long*, int) [clone .part.63] [clone .constprop.88]
+t void CByteswap::SwapBufferToTargetEndian<float>(float*, float*, int) [clone .part.32] [clone .constprop.90]
+t void CByteswap::SwapBufferToTargetEndian<int>(int*, int*, int) [clone .part.61] [clone .constprop.93]
+t void CByteswap::SwapBufferToTargetEndian<unsigned short>(unsigned short*, unsigned short*, int) [clone .part.58] [clone .constprop.92]
+t void CByteswap::SwapBufferToTargetEndian<long long>(long long*, long long*, int) [clone .part.64] [clone .constprop.89]
 t CFunctor3<void (*)(matrix3x4_t const&, float, bool), matrix3x4_t, float, bool, CRefCounted1<CFunctor, CRefCountServiceBase<true, CRefMT> > >::operator()()
 t CFunctor3<void (*)(matrix3x4_t const&, float, bool), matrix3x4_t, float, bool, CRefCounted1<CFunctor, CRefCountServiceBase<true, CRefMT> > >::~CFunctor3()
 t CFunctor3<void (*)(matrix3x4_t const&, float, bool), matrix3x4_t, float, bool, CRefCounted1<CFunctor, CRefCountServiceBase<true, CRefMT> > >::~CFunctor3()
@@ -5662,7 +5662,7 @@ t CMaterial::NeedsFullFrameBufferTexture(bool)
 t CMaterial::ReloadFromWhitelistIfMarked()
 t CMaterial::RefreshPreservingMaterialVars()
 t CMaterial::DecideShouldReloadFromWhitelist(IFileList*)
-t CMaterial::DecideShouldReloadFromWhitelist(IFileList*) [clone .part.43]
+t CMaterial::DecideShouldReloadFromWhitelist(IFileList*) [clone .part.44]
 t CMaterial::NeedsPowerOfTwoFrameBufferTexture(bool)
 t CMaterial::FindVar(char const*, bool*, bool)
 t CMaterial::GetVars()
@@ -5872,12 +5872,12 @@ t TGALoader::Load(unsigned char*, CUtlBuffer&, int, int, ImageFormat, float, boo
 t TGALoader::GetInfo(char const*, int*, int*, ImageFormat*, float*)
 t TGALoader::GetInfo(CUtlBuffer&, int*, int*, ImageFormat*, float*)
 b TGALoader::g_ColorMap
-t TGALoader::ReadHeader(CUtlBuffer&, TGALoader::TGAHeader_t&) [clone .constprop.22]
-t TGALoader::DecompressRow(CUtlBuffer&, TGALoader::TGAHeader_t const&, unsigned char*) [clone .isra.17]
-t TGALoader::ReadSourceImage(CUtlBuffer&, TGALoader::TGAHeader_t&, CUtlMemory<unsigned char, int>&) [clone .constprop.21]
+t TGALoader::ReadHeader(CUtlBuffer&, TGALoader::TGAHeader_t&) [clone .constprop.23]
+t TGALoader::DecompressRow(CUtlBuffer&, TGALoader::TGAHeader_t const&, unsigned char*) [clone .isra.18]
+t TGALoader::ReadSourceImage(CUtlBuffer&, TGALoader::TGAHeader_t&, CUtlMemory<unsigned char, int>&) [clone .constprop.22]
 b TGALoader::g_IsRunLengthPacket
 b TGALoader::g_PixelsLeftInPacket
-t TGALoader::ReadFile(char const*, CUtlMemory<unsigned char, int>&, int) [clone .constprop.20]
+t TGALoader::ReadFile(char const*, CUtlMemory<unsigned char, int>&, int) [clone .constprop.21]
 t operator new[](unsigned int)
 t operator new[](unsigned int, int, char const*, int)
 t CDummyMesh::IndexCount() const

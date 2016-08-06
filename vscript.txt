@@ -29,7 +29,7 @@ d cplus_demangle_operators
 T CreateInterface
 r CSWTCH.114
 r CSWTCH.284
-r CSWTCH.462
+r CSWTCH.465
 d __CTOR_END__
 d __CTOR_LIST__
 b cvar
@@ -885,7 +885,7 @@ t VectorRelease(void*, int)
 t VectorVectors(Vector const&, Vector&, Vector&)
 t V_hextobinary(char const*, int, unsigned char*, int)
 t V_SplitString(char const*, char const*, CUtlVector<char*, CUtlMemory<char*, int> >&)
-t char* V_strcat_safe<512u>(char (&) [512u], char const*, int) [clone .constprop.165]
+t char* V_strcat_safe<512u>(char (&) [512u], char const*, int) [clone .constprop.166]
 t V_StringToBin(char const*, void*, unsigned int)
 t V_strncasecmp(char const*, char const*, int)
 t _V_UCS2ToUTF8(unsigned short const*, char*, int)
@@ -1803,7 +1803,7 @@ t CSquirrelVM::DisconnectDebugger()
 t CSquirrelVM::GetNumTableEntries(HSCRIPT__*)
 t CSquirrelVM::SetInstanceUniqeId(HSCRIPT__*, char const*)
 t CSquirrelVM::GetFunctionSignature(SQVM*)
-t CSquirrelVM::RegisterFunctionGuts(ScriptFunctionBinding_t*, ScriptClassDesc_t*) [clone .part.88]
+t CSquirrelVM::RegisterFunctionGuts(ScriptFunctionBinding_t*, ScriptClassDesc_t*) [clone .part.89]
 t CSquirrelVM::RemoveOrphanInstances()
 t CSquirrelVM::ExternalInstanceReleaseHook(void*, int)
 t CSquirrelVM::Run(HSCRIPT__*, bool)
@@ -1811,7 +1811,7 @@ t CSquirrelVM::Run(HSCRIPT__*, HSCRIPT__*, bool)
 t CSquirrelVM::Run(char const*, bool)
 t CSquirrelVM::Init()
 t CSquirrelVM::Frame(float)
-t CSquirrelVM::WriteVM(SQVM*) [clone .part.162]
+t CSquirrelVM::WriteVM(SQVM*) [clone .part.163]
 t CSquirrelVM::GetValue(HSCRIPT__*, char const*, ScriptVariant_t*)
 t CSquirrelVM::SetValue(HSCRIPT__*, char const*, ScriptVariant_t const&)
 t CSquirrelVM::SetValue(HSCRIPT__*, char const*, char const*)
@@ -2080,7 +2080,7 @@ t CUtlBinaryBlock::CUtlBinaryBlock(void const*, int)
 t CUtlBinaryBlock::CUtlBinaryBlock(void*, int, int)
 t CUtlBinaryBlock::CUtlBinaryBlock(CUtlBinaryBlock const&)
 t CUtlFixedMemory<UtlLinkedListElem_t<CUtlHashFast<SQClass*, CUtlHashFastGenericHash>::HashFastData_t_<SQClass*>, int> >::Grow(int)
-t CUtlFixedMemory<UtlLinkedListElem_t<CUtlHashFast<SQClass*, CUtlHashFastGenericHash>::HashFastData_t_<SQClass*>, int> >::Purge() [clone .isra.97]
+t CUtlFixedMemory<UtlLinkedListElem_t<CUtlHashFast<SQClass*, CUtlHashFastGenericHash>::HashFastData_t_<SQClass*>, int> >::Purge() [clone .isra.98]
 t SQFunctionProto::Load(SQVM*, void*, int (*)(void*, void*, int), SQObjectPtr&)
 t SQFunctionProto::Save(SQVM*, void*, int (*)(void*, void*, int))
 t SQFunctionProto::Create(int, int, int, int, int, int, int, int)
@@ -2356,10 +2356,10 @@ t sqvector<SQExceptionTrap>::~sqvector()
 t sqvector<int>::~sqvector()
 t sqvector<int>::~sqvector()
 t sqvector<SQVM::CallInfo>::~sqvector() [clone .part.29]
-t void CByteswap::SwapBufferToTargetEndian<float>(float*, float*, int) [clone .part.77] [clone .constprop.166]
-t void CByteswap::SwapBufferToTargetEndian<int>(int*, int*, int) [clone .part.110] [clone .constprop.168]
-t void CByteswap::SwapBufferToTargetEndian<unsigned int>(unsigned int*, unsigned int*, int) [clone .part.91] [clone .constprop.167]
-t void CByteswap::SwapBufferToTargetEndian<long long>(long long*, long long*, int) [clone .part.115] [clone .constprop.164]
+t void CByteswap::SwapBufferToTargetEndian<float>(float*, float*, int) [clone .part.78] [clone .constprop.167]
+t void CByteswap::SwapBufferToTargetEndian<int>(int*, int*, int) [clone .part.111] [clone .constprop.169]
+t void CByteswap::SwapBufferToTargetEndian<unsigned int>(unsigned int*, unsigned int*, int) [clone .part.92] [clone .constprop.168]
+t void CByteswap::SwapBufferToTargetEndian<long long>(long long*, long long*, int) [clone .part.116] [clone .constprop.165]
 t ConVarRef::Init(char const*, bool)
 t ConVarRef::ConVarRef(IConVar*)
 t ConVarRef::ConVarRef(char const*)

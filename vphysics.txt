@@ -1125,7 +1125,7 @@ t AngleVectors(QAngle const&, Vector*, Vector*, Vector*)
 t CopyMemory3D(void*, void const*, int, int, int, int, int, int, int)
 t CreateSpring(IVP_Environment*, CPhysicsObject*, CPhysicsObject*, springparams_t*)
 t CrossProduct(float const*, float const*, float*)
-t CrossProduct(Vector const&, Vector const&, Vector&) [clone .constprop.84]
+t CrossProduct(Vector const&, Vector const&, Vector&) [clone .constprop.85]
 t Cubic_Spline(Vector const&, Vector const&, Vector const&, Vector const&, float, Vector&)
 t gbs_add_path(char*, char*)
 t _InvRSquared(float const*)
@@ -2276,7 +2276,7 @@ b vec4_origin
 b vec4_origin
 b vec4_origin
 t AppendPrintf(char*, unsigned int, char const*, ...)
-t BuildVertMap(vertmap_t&, Vector const*, int, IVP_Compact_Ledge const*) [clone .constprop.25]
+t BuildVertMap(vertmap_t&, Vector const*, int, IVP_Compact_Ledge const*) [clone .constprop.26]
 t InitBoxVerts(Vector*, Vector**, Vector const&, Vector const&)
 t read_sleb128(unsigned char const*, long*)
 t read_uleb128(unsigned char const*, unsigned long*)
@@ -2508,7 +2508,7 @@ t parse_lsda_header(_Unwind_Context*, unsigned char const*, lsda_header_info*) [
 d s_DefaultAccessor
 b g_MainDLLInterface
 d g_PrintConVarFlags
-t InitObjectTemplate(IVP_Template_Real_Object&, int, objectparams_t*, bool) [clone .constprop.96]
+t InitObjectTemplate(IVP_Template_Real_Object&, int, objectparams_t*, bool) [clone .constprop.97]
 t read_encoded_value(_Unwind_Context*, unsigned char, unsigned char const*, unsigned int*)
 b s_nConnectionCount
 b s_SIMDRandContexts
@@ -2969,7 +2969,7 @@ t CUtlVector<unsigned char, CUtlMemory<unsigned char, int> >::SetCount(int)
 t CUtlVector<unsigned char, CUtlMemory<unsigned char, int> >::~CUtlVector()
 t CUtlVector<unsigned char, CUtlMemory<unsigned char, int> >::~CUtlVector()
 t CUtlVector<int, CUtlMemory<int, int> >::GrowVector(int)
-t CUtlVector<int, CUtlMemory<int, int> >::EnsureCount(int) [clone .part.22]
+t CUtlVector<int, CUtlMemory<int, int> >::EnsureCount(int) [clone .part.23]
 t CUtlVector<int, CUtlMemory<int, int> >::ShiftElementsRight(int, int)
 t CUtlVector<int, CUtlMemory<int, int> >::~CUtlVector()
 t CUtlVector<int, CUtlMemory<int, int> >::~CUtlVector()

@@ -1210,7 +1210,7 @@ b texgammatable
 b emergency_used
 b eyeOriginCache
 t GetTextureName(studiohdr_t*, OptimizedModel::FileHeader_t*, int, int)
-t IntersectPlane(DecalClipState_t&, int, int, int, float) [clone .constprop.169]
+t IntersectPlane(DecalClipState_t&, int, int, int, float) [clone .constprop.170]
 b lineartoscreen
 d s_BackSlashMap
 b s_pVertexCount
@@ -1245,7 +1245,7 @@ t read_encoded_value(_Unwind_Context*, unsigned char, unsigned char const*, unsi
 b r_glint_alwaysdraw
 b r_glint_procedural
 b r_lod_switch_scale
-t R_TransformTangent(Vector4D const*, matrix3x4_t*, Vector4DAligned&) [clone .constprop.27]
+t R_TransformTangent(Vector4D const*, matrix3x4_t*, Vector4DAligned&) [clone .constprop.28]
 b s_nConnectionCount
 d s_pAmbientLightDir
 b s_pZeroFlexWeights
@@ -1261,7 +1261,7 @@ b sPosEdge2BndStencil
 b sPosInteriorStencil
 t Sys_LoadLibraryGuts(char const*)
 t check_exception_spec(lsda_header_info*, std::type_info const*, void*, long) [clone .constprop.4]
-t ComputeSkinMatrixSSE(mstudioboneweight_t&, matrix3x4_t*, matrix3x4_t&) [clone .constprop.26]
+t ComputeSkinMatrixSSE(mstudioboneweight_t&, matrix3x4_t*, matrix3x4_t&) [clone .constprop.27]
 b s_nRandContextsInUse
 b s_nRegistrationCount
 b sPosCornerBndStencil
@@ -1281,7 +1281,7 @@ b g_Mathlib_LinearToGamma
 t __gxx_exception_cleanup(_Unwind_Reason_Code, _Unwind_Exception*)
 t mat_rendered_faces_spew(CCommand const&)
 b s_bResourceFCRegistered
-t ClipTriangleAgainstPlane(DecalClipState_t&, int, int, float) [clone .constprop.170]
+t ClipTriangleAgainstPlane(DecalClipState_t&, int, int, float) [clone .constprop.171]
 b mat_rendered_faces_count
 b sShowACCGeometryTangents
 t ComputeACCEdgePosStencils(unsigned char, unsigned char, int, float __vector(4)*, float __vector(4)*)
@@ -1567,7 +1567,7 @@ t void ICallQueue::QueueCall<CStudioRender*, CStudioRender, void, StudioDecalHan
 t void ICallQueue::QueueCall<CStudioRender*, CStudioRender, void, void (*)(int, IStudioRender::FacesRenderedInfo_t*, int), void (*)(int, IStudioRender::FacesRenderedInfo_t*, int)>(CStudioRender*, void (CStudioRender::*)(void (*)(int, IStudioRender::FacesRenderedInfo_t*, int)), void (* const&)(int, IStudioRender::FacesRenderedInfo_t*, int))
 t CVProfScope::~CVProfScope()
 t CVProfScope::~CVProfScope()
-t CVProfScope::~CVProfScope() [clone .constprop.158]
+t CVProfScope::~CVProfScope() [clone .constprop.159]
 t FourVectors::RotateManyBy(FourVectors*, unsigned int, matrix3x4_t const&)
 t FourVectors::RotateManyBy(FourVectors*, unsigned int, matrix3x4_t const&, FourVectors*)
 t FourVectors::CalcClosestPointOnLineSIMD(FourVectors const&, FourVectors const&, FourVectors const&, FourVectors&, float __vector(4)*)
@@ -1602,8 +1602,8 @@ t AsianWordWrap::CanEndLine(wchar_t)
 t AsianWordWrap::CanBeginLine(wchar_t)
 t AsianWordWrap::CanBreakAfter(wchar_t const*)
 t AsianWordWrap::CanBreakRepeated(wchar_t)
-t CIndexBuilder::~CIndexBuilder() [clone .isra.37]
-t CIndexBuilder::~CIndexBuilder() [clone .isra.40]
+t CIndexBuilder::~CIndexBuilder() [clone .isra.38]
+t CIndexBuilder::~CIndexBuilder() [clone .isra.41]
 t CStudioRender::BeginFrame()
 t CStudioRender::PopScissor(FlashlightState_t*)
 t CStudioRender::SortMeshes(int*, IMaterial**, short*, Vector const&, Vector const&)
@@ -1971,7 +1971,7 @@ t CStudioRenderContext::ComputeLighting(Vector const*, int, LightDesc_t*, Vector
 t CStudioRenderContext::ComputeModelLod(studiohwdata_t*, float, float*)
 t CStudioRenderContext::CreateDecalList(studiohwdata_t*)
 t CStudioRenderContext::GetMaterialList(studiohdr_t*, int, IMaterial**)
-t CStudioRenderContext::GetMaterialList(studiohdr_t*, int, IMaterial**) [clone .part.23]
+t CStudioRenderContext::GetMaterialList(studiohdr_t*, int, IMaterial**) [clone .part.24]
 t CStudioRenderContext::ComputeRenderLOD(IMatRenderContext*, DrawModelInfo_t const&, Vector const&, float*)
 t CStudioRenderContext::DestroyDecalList(StudioDecalHandle_t__*)
 t CStudioRenderContext::GetCurrentConfig(StudioRenderConfig_t&)
@@ -2652,10 +2652,10 @@ t CUtlHash<studiohwdata_t*, bool (*)(studiohwdata_t* const&, studiohwdata_t* con
 t CUtlHash<studiohwdata_t*, bool (*)(studiohwdata_t* const&, studiohwdata_t* const&), unsigned int (*)(studiohwdata_t* const&)>::CUtlHash(int, int, int, bool (*)(studiohwdata_t* const&, studiohwdata_t* const&), unsigned int (*)(studiohwdata_t* const&))
 t CUtlHash<studiohwdata_t*, bool (*)(studiohwdata_t* const&, studiohwdata_t* const&), unsigned int (*)(studiohwdata_t* const&)>::~CUtlHash()
 t CUtlHash<studiohwdata_t*, bool (*)(studiohwdata_t* const&, studiohwdata_t* const&), unsigned int (*)(studiohwdata_t* const&)>::~CUtlHash()
-t void CByteswap::SwapBufferToTargetEndian<float>(float*, float*, int) [clone .part.31] [clone .constprop.89]
-t void CByteswap::SwapBufferToTargetEndian<int>(int*, int*, int) [clone .part.60] [clone .constprop.92]
-t void CByteswap::SwapBufferToTargetEndian<unsigned short>(unsigned short*, unsigned short*, int) [clone .part.57] [clone .constprop.91]
-t void CByteswap::SwapBufferToTargetEndian<long long>(long long*, long long*, int) [clone .part.63] [clone .constprop.88]
+t void CByteswap::SwapBufferToTargetEndian<float>(float*, float*, int) [clone .part.32] [clone .constprop.90]
+t void CByteswap::SwapBufferToTargetEndian<int>(int*, int*, int) [clone .part.61] [clone .constprop.93]
+t void CByteswap::SwapBufferToTargetEndian<unsigned short>(unsigned short*, unsigned short*, int) [clone .part.58] [clone .constprop.92]
+t void CByteswap::SwapBufferToTargetEndian<long long>(long long*, long long*, int) [clone .part.64] [clone .constprop.89]
 t ConVarRef::Init(char const*, bool)
 t ConVarRef::ConVarRef(IConVar*)
 t ConVarRef::ConVarRef(char const*)

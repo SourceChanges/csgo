@@ -110,16 +110,15 @@ d cplus_demangle_builtin_types
 d cplus_demangle_operators
 T CreateInterface
 U CreateSimpleThread
-r CSWTCH.1340
-r CSWTCH.1342
+r CSWTCH.1339
+r CSWTCH.1341
 r CSWTCH.206
 r CSWTCH.23
-r CSWTCH.258
 r CSWTCH.412
-r CSWTCH.597
+r CSWTCH.598
 r CSWTCH.619
 r CSWTCH.622
-r CSWTCH.845
+r CSWTCH.866
 d __CTOR_END__
 d __CTOR_LIST__
 U __ctype_get_mb_cur_max@@GLIBC_2.0
@@ -594,6 +593,7 @@ t _GLOBAL__sub_I__Z14Shader_Connectb
 t _GLOBAL__sub_I__Z15NET_ErrorStringi
 t _GLOBAL__sub_I__Z16CreateDemoBufferbRK22DemoBufferInitParams_t
 t _GLOBAL__sub_I__Z16InstanceRegistryPKc
+t _GLOBAL__sub_I__Z16Q_IsValidUChar32w
 t _GLOBAL__sub_I__Z16SV_RedirectFlushv
 t _GLOBAL__sub_I__Z17CreateBSPTreeDatav
 t _GLOBAL__sub_I__Z17EngineSoundServerv
@@ -863,7 +863,6 @@ d g_SteamSocketMgr
 b g_StudioHdrToActivityMaps
 b g_StudioHdrToActivityMapsLock
 b g_svInstanceBaselineMutex
-d g_szDefaultLogoFileName
 b gszDisconnectReason
 b gszExtendedDisconnectReason
 b g_szHostStateDelayedMessage
@@ -1163,7 +1162,6 @@ U LoggingSystem_SetChannelSpewLevelByTag
 U log@@GLIBC_2.0
 b LOG_SERVER_LOG
 b LOG_StaticPropManager
-b LOG_STEAMDATAGRAM_SERVER
 U longjmp@@GLIBC_2.0
 U lseek64@@GLIBC_2.2
 U lseek@@GLIBC_2.0
@@ -1243,6 +1241,7 @@ b net_blocksize
 b net_local_adr
 b net_maxroutable
 b net_megasnapshot
+d net_notcp
 b net_queued_packet_thread
 b net_queue_trace
 b net_showtcp
@@ -1844,6 +1843,7 @@ t _V_strrchr(char const*, char)
 t V_StrRight(char const*, int, char*, int)
 t V_StrSlice(char const*, int, int, char*, int)
 t V_StrSubst(char const*, char const*, char const*, char*, int, bool)
+t V_strtoi64(char const*, char**, int)
 t V_strtowcs(char const*, int, wchar_t*, int)
 t V_wcstostr(wchar_t const*, int, char*, int)
 t AddNeighbor(CCoreDispInfo*, int, int, NeighborSpan, CCoreDispInfo*, int, NeighborSpan)
@@ -1921,6 +1921,7 @@ t VOX_LRUInit(sentencegroup_t*)
 t V_ParseLine(char const*, char*, int, bool*)
 t V_snwprintf(wchar_t*, int, wchar_t const*, ...)
 t _V_strlower(char*)
+t V_strtoui64(char const*, char**, int)
 t V_vsnprintf(char*, int, char const*, char*)
 t _V_wcslower(wchar_t*)
 t zlibVersion()
@@ -2102,6 +2103,10 @@ t qhNewellPlane(qhFace*)
 t qhVertexCount(qhFace const*)
 t QuaternionAdd(Quaternion const&, Quaternion const&, Quaternion&)
 t QuaternionExp(Quaternion const&, Quaternion&)
+t Q_UTF16ToUTF8(unsigned short const*, char*, int, EStringConvertErrorPolicy)
+t Q_UTF32ToUTF8(wchar_t const*, char*, int, EStringConvertErrorPolicy)
+t Q_UTF8ToUTF16(char const*, unsigned short*, int, EStringConvertErrorPolicy)
+t Q_UTF8ToUTF32(char const*, wchar_t*, int, EStringConvertErrorPolicy)
 t RecvPropFloat(char*, int, int, int, void (*)(CRecvProxyData const*, void*, void*))
 t RotateBetween(Vector const&, Vector const&)
 t RotationDelta(QAngle const&, QAngle const&, QAngle*)
@@ -2214,6 +2219,9 @@ t PopTraceVisits(TraceInfo_t*)
 t QuaternionMult(Quaternion const&, Quaternion const&, Quaternion&)
 t Q_URLDecodeRaw(char*, int, char const*, int)
 t Q_URLEncodeRaw(char*, int, char const*, int)
+t Q_UTF16ToUTF32(unsigned short const*, wchar_t*, int, EStringConvertErrorPolicy)
+t Q_UTF32ToUTF16(wchar_t const*, unsigned short*, int, EStringConvertErrorPolicy)
+t Q_UTF32ToUTF32(wchar_t const*, wchar_t*, int, EStringConvertErrorPolicy)
 t RecvPropArray3(char*, int, int, int, RecvProp, void (*)(RecvProp const*, void**, void*, int))
 t RecvPropString(char*, int, int, int, void (*)(CRecvProxyData const*, void*, void*))
 t RecvPropVector(char*, int, int, int, void (*)(CRecvProxyData const*, void*, void*))
@@ -2249,6 +2257,8 @@ t Test_StartLoop(CCommand const&)
 t UnallowVerts_R(CDispUtilsHelper*, CVertIndex const&, int&)
 t UpdateOrCreate(char const*, char*, int, char const*, bool (*)(char const*, char const*, char const*, void*), bool, void*)
 t UpdateProgress(TGameStatsParameters const&, char const*, ...)
+t V_BBCodeToHTML(char*, int, char const*, int)
+t V_IsMeanSpaceW(wchar_t)
 t V_LogMultiline(bool, char const*, char const*, unsigned int, CUtlString&)
 t VOX_AddNumbers(char*, CUtlVector<WordBuf, CUtlMemory<WordBuf, int> >&)
 t VOX_DeleteWord(int)
@@ -2342,6 +2352,14 @@ t QuaternionAlign(Quaternion const&, Quaternion const&, Quaternion&)
 t QuaternionBlend(Quaternion const&, Quaternion const&, float, Quaternion&)
 t QuaternionScale(Quaternion const&, float, Quaternion&)
 t QuaternionSlerp(Quaternion const&, Quaternion const&, float, Quaternion&)
+t Q_UChar32ToUTF8(wchar_t, char*)
+t Q_UnicodeLength(char const*)
+t Q_UnicodeLength(unsigned short const*)
+t Q_UnicodeLength(wchar_t const*)
+t Q_UnicodeRepair(char*, EStringConvertErrorPolicy)
+t Q_UnicodeRepair(unsigned short*, EStringConvertErrorPolicy)
+t Q_UnicodeRepair(wchar_t*, EStringConvertErrorPolicy)
+t Q_UTF8ToUChar32(char const*, wchar_t&, bool&)
 t RangeCompressor(float, float, float, float)
 t R_DoDecalSHClip(CDecalVert*, CDecalVert*, decal_t*, int, Vector const&)
 t ResetKeyLogging()
@@ -2371,6 +2389,7 @@ t VectorXY_Encode(unsigned char const*, DVariant*, SendProp const*, bf_write*, i
 t VectorXY_IsZero(unsigned char const*, DVariant*, SendProp const*)
 t VectorYawRotate(Vector const&, float, Vector&)
 t V_FixupPathName(char*, int, char const*)
+t V_IsDeprecatedW(wchar_t)
 t VOX_InsertWords(int, int, char*, char*, char*)
 t VOX_ParseString(char*)
 t VOX_TouchSounds(CUtlDict<int, int>&, CUtlRBTree<ccpair, int, bool (*)(ccpair const&, ccpair const&), CUtlMemory<UtlRBTreeNode_t<ccpair, int>, int> >&, bool)
@@ -2378,8 +2397,6 @@ t V_SplitWString2(wchar_t const*, wchar_t const**, int, CUtlVector<wchar_t*, CUt
 t V_StripFilename(char*)
 t AddPointToBounds(Vector const&, Vector&, Vector&)
 t Array_DecodeZero(DecodeInfo*)
-t ChatIDFromClanID(CSteamID const&)
-t ClanIDFromChatID(CSteamID const&)
 t CL_ClanIdChanged(IConVar*, char const*, float)
 t CL_QueueDownload(char const*)
 t CM_DecompressVis(CCollisionBSPData*, int, int, unsigned char*)
@@ -2438,6 +2455,7 @@ t NET_SetDedicated()
 t OnTVEnablehanged(IConVar*, char const*, float)
 t Parabolic_Spline(Vector const&, Vector const&, Vector const&, Vector const&, float, Vector&)
 t PreUpdateProfile(float)
+t Q_IsValidUChar32(wchar_t)
 t QuaternionAngles(Quaternion const&, RadianEuler&)
 t QuaternionAngles(Quaternion const&, QAngle&)
 t QuaternionInvert(Quaternion const&, Quaternion&)
@@ -2445,6 +2463,11 @@ t QuaternionLookAt(Vector const&, Vector const&, Quaternion&)
 t QuaternionMatrix(Quaternion const&, matrix3x4_t&)
 t QuaternionMatrix(Quaternion const&, Vector const&, matrix3x4_t&)
 t QuaternionMatrix(Quaternion const&, Vector const&, Vector const&, matrix3x4_t&)
+t Q_UChar32ToUTF16(wchar_t, unsigned short*)
+t Q_UnicodeAdvance(char*, int)
+t Q_UnicodeAdvance(unsigned short*, int)
+t Q_UnicodeAdvance(wchar_t*, int)
+t Q_UTF16ToUChar32(unsigned short const*, wchar_t&, bool&)
 t RandomQuaternion(IUniformRandomStream*)
 t RandomQuaternion()
 t R_DecalVertsClip(CDecalVert*, decal_t*, msurface2_t*, IMaterial*)
@@ -2501,8 +2524,6 @@ t BZ2_hbAssignCodes(int*, unsigned char*, int, int, int)
 t CalcPathLengths_R(CSendNode*, CUtlVector<int, CUtlMemory<int, int> >&, int, int&)
 t CC_TransmitEvents(CCommand const&)
 t CharacterSetBuild(characterset_t*, char const*)
-t ChatIDFromSteamID(CSteamID const&)
-t ClanIDFromSteamID(CSteamID const&)
 t CL_DownloadUpdate()
 t ClearNeighborData(CCoreDispInfo*)
 t CM_AreasConnected(int, int)
@@ -2564,6 +2585,9 @@ t NUM_FOR_EDICTINFO(edict_t const*)
 t PlaneIntersection(VPlane const&, VPlane const&, VPlane const&, Vector&)
 t PostUpdateProfile()
 t PrintChangeTracks()
+t Q_UnicodeValidate(char const*)
+t Q_UnicodeValidate(unsigned short const*)
+t Q_UnicodeValidate(wchar_t const*)
 t ReadKeyValuesFile(char const*)
 t RecvPropDataTable(char*, int, int, RecvTable*, void (*)(RecvProp const*, void**, void*, int))
 t RecvPropUtlVector(char*, int, int, void (*)(void*, int, int), void (*)(void*, int, int), int, RecvProp)
@@ -2685,6 +2709,11 @@ t PolyFromPlane_SIMD(float __vector*, float __vector const&, float)
 t ProtrusionBoxAoutB(AABB_t const&, AABB_t const&)
 t qhCheckConsistency(qhFace const*)
 t QuaternionMultiply(Quaternion const&, Vector const&, Vector&)
+t Q_UChar32ToUTF8Len(wchar_t)
+t Q_UTF16CharsToUTF8(unsigned short const*, int, char*, int, EStringConvertErrorPolicy)
+t Q_UTF32CharsToUTF8(wchar_t const*, int, char*, int, EStringConvertErrorPolicy)
+t Q_UTF8CharsToUTF16(char const*, int, unsigned short*, int, EStringConvertErrorPolicy)
+t Q_UTF8CharsToUTF32(char const*, int, wchar_t*, int, EStringConvertErrorPolicy)
 t ReconnectInterface(void* (*)(char const*, int*), char const*)
 t ReconnectInterface(void* (*)(char const*, int*), char const*, void**)
 t SendTable_CRCTable(unsigned int&, SendTable*)
@@ -2809,8 +2838,11 @@ t QuaternionAxisAngle(Quaternion const&, Vector&, float&)
 t QuaternionConjugate(Quaternion const&, Quaternion&)
 t QuaternionionGetYaw(Quaternion const&)
 t QuaternionNormalize(Quaternion&)
+t Q_UChar32ToUTF16Len(wchar_t)
 t Q_URLDecodeInternal(char*, int, char const*, int, bool)
 t Q_URLEncodeInternal(char*, int, char const*, int, bool)
+t Q_UTF16CharsToUTF32(unsigned short const*, int, wchar_t*, int, EStringConvertErrorPolicy)
+t Q_UTF32CharsToUTF16(wchar_t const*, int, unsigned short*, int, EStringConvertErrorPolicy)
 t R_AddPaintToSurface(msurface2_t*, paintinfo_t*)
 t R_DecalComputeBasis(Vector const&, Vector const*, Vector*)
 t RecvTable_ReadInfos(CSVCMsg_SendTable const&, int)
@@ -2834,10 +2866,12 @@ t unzCloseCurrentFile(unz_s*)
 t unzGetGlobalComment(unz_s*, char*, unsigned long)
 t UpdateParentProcess()
 t VectorXY_DecodeZero(DecodeInfo*)
+t V_IsMeanUnderscoreW(wchar_t)
 t VOX_GetMapNameIndex(char const*)
 t VOX_LookupMyVirtual(int, char*, char, int)
 t VOX_ParseWordParams(char*, voxword_t*, int)
 t VProf_StopRecording()
+t V_URLContainsDomain(char const*, char const*)
 t AddModelDebugOverlay(DrawModelInfo_t const&, DrawModelResults_t const&, Vector const&)
 t AllocateStringHelper(char const*, ...)
 t BuildMinidumpComment(char const*)
@@ -3041,6 +3075,7 @@ t unzGetCurrentFileInfo(unz_s*, unz_file_info_s*, char*, unsigned long, void*, u
 t unzGetLocalExtrafield(unz_s*, void*, unsigned int)
 t VectorToColorRGBExp32(Vector const&, ColorRGBExp32&)
 t V_GetCurrentDirectory(char*, int)
+t V_IsValidURLCharacter(char const*, int*)
 t VOX_AddMyVirtualWords(int, char*, char, CUtlVector<WordBuf, CUtlMemory<WordBuf, int> >&)
 t VOX_ParseLineCommands(char*, int)
 t V_SetCurrentDirectory(char const*)
@@ -3127,11 +3162,13 @@ t Test_LoopForNumSeconds(CCommand const&)
 t Test_WaitForCheckPoint(CCommand const&)
 t VectorXY_CompareDeltas(SendProp const*, bf_read*, bf_read*)
 t VectorXY_IsEncodedZero(SendProp const*, bf_read*)
+t V_ExtractDomainFromURL(char const*, char*, int)
 t V_ExtractFileExtension(char const*, char*, int)
 t V_GetFileExtensionSafe(char const*)
 t V_normalizeFloatString(char*)
 t VProfPlayback_StepBack()
 t V_StringMatchesPattern(char const*, char const*, int)
+t V_StripAndPreserveHTML(CUtlBuffer*, char const*, char const**, unsigned int, unsigned int)
 t Array_GetTypeNameString()
 t CalcClosestPointToLineT(Vector const&, Vector const&, Vector const&, Vector&)
 t CalcDistanceSqrToLine2D(Vector2D const&, Vector2D const&, Vector2D const&, float*)
@@ -3205,6 +3242,7 @@ t SV_ParallelSendSnapshot(CGameClient*&)
 t SV_SetSteamCrashComment()
 t SV_SetSteamCrashComment() [clone .part.78]
 t void TesselateDisplacement_R<CEngineTesselateHelper>(CEngineTesselateHelper*, CVertIndex const&, int, int)
+t V_BasicHtmlEntityEncode(char*, int, char const*, int, bool)
 t VOX_CompactSentenceFile()
 t VOX_GetNextEntnameIndex()
 t VOX_LookupGlobalVirtual(int, int, char*, int)
@@ -3284,6 +3322,7 @@ t unzStringFileNameCompare(char const*, char const*, int)
 t UpdateStudioRenderConfig()
 t Vector4DMultiplyPosition(VMatrix const&, Vector const&, Vector4D&)
 t Vector_GetTypeNameString()
+t V_HtmlEntityDecodeToUTF8(char*, int, char const*, int)
 t V_StripLeadingWhitespace(char*)
 t V_StripSurroundingQuotes(char*)
 t Audio_GetEngineVoiceSteam()
@@ -3393,6 +3432,7 @@ t UpdateMaterialSystemConfig()
 t Vector3DMultiplyProjective(VMatrix const&, Vector const&, Vector&)
 t VectorXY_GetTypeNameString()
 t VOX_LookupGlobalSeqVirtual(int, int, char*, int)
+t V_StripAndPreserveHTMLCore(CUtlBuffer*, char const*, char const**, unsigned int, char const**, unsigned int, unsigned int)
 t V_TranslateLineFeedsToUnix(char*)
 t AdjustThreadPoolThreadCount()
 t AllocateUniqueDataTableName(bool, char const*, ...)
@@ -3481,6 +3521,7 @@ t SteamDatagram_GetCurrentTime()
 t SV_CreateNetworkStringTables(char const*)
 t VerifyNeighborVertConnection(CDispUtilsHelper*, CVertIndex const&, CDispUtilsHelper const*, CVertIndex const&, int)
 t V_FixupPathSpaceToUnderscore(char*)
+t V_IsValidDomainNameCharacter(char const*, int*)
 t VoiceDataFormat_t_descriptor()
 t VOX_LookupRangeHeadingOrGrid(int, char*, channel_t*, int, char**, char**, char**, int*, bool)
 t VProfPlayback_GetCurrentTick()
@@ -3622,6 +3663,7 @@ t SendTable_BuildHierarchy_IterateProps(CSendNode*, SendTable const*, CBuildHier
 t _ServerDTI_RegisterNetworkStateChange(SendTable*, bool)
 t ENetworkDisconnectionReason_descriptor()
 t IsSphereIntersectForwardFacingTriangle(Vector const&, VPlane const&, float, Vector const&, Vector const&, Vector const&, Vector&)
+t NET_HasSteamDatagramTicketForGameserver(CSteamID)
 t protobuf_AssignDesc_netmessages_2eproto()
 t CalculateAABBFromProjectionMatrixInverse(VMatrix const&, Vector*, Vector*)
 t DataTable_SetupReceiveTableFromSendTable(SendTable*, bool)
@@ -3645,8 +3687,8 @@ t CalculateSphereFromProjectionMatrixInverse(VMatrix const&, Vector*, float*)
 t FileSystem_IsHldsUpdateToolDedicatedServer()
 t DataTable_CreateClientTablesFromServerTables()
 t protobuf_AddDesc_engine_5fgcmessages_2eproto()
+t SteamDatagramClient_SetupHardcodedRouterList(char const*)
 t protobuf_AddDesc_network_5fconnection_2eproto()
-t SteamDatagramNetwork_SetupHardcodedRouterList(char const*)
 t protobuf_AssignDesc_engine_5fgcmessages_2eproto()
 t protobuf_AssignDesc_network_5fconnection_2eproto()
 t DataTable_CreateClientClassInfosFromServerClasses(CBaseClientState*)
@@ -3811,6 +3853,7 @@ t V_strncmp(char const*, char const*, int)
 t V_strncpy(char*, char const*, int)
 t V_strnlwr(char*, unsigned int)
 t _V_strstr(char const*, char const*)
+t V_StrTrim(char*)
 t _V_strupr(char*)
 t _V_wcscmp(wchar_t const*, wchar_t const*)
 t V_wcsistr(wchar_t const*, wchar_t const*)
@@ -4014,6 +4057,7 @@ t net_status(CCommand const&)
 b r_drawleaf
 b r_flushlod
 b s_BreakSet
+d s_ePartner
 b s_FatBytes
 b singlestep
 b s_pLagData
@@ -5029,7 +5073,6 @@ b restart_command
 b r_itemblinkrate
 b r_maxmodeldecal
 b r_occlusionspew
-b r_queued_decals
 b s_CommandBuffer
 b s_DecalSurfaces
 t SendProxy_Empty(SendProp const*, void const*, void const*, DVariant*, int, int)
@@ -5121,7 +5164,6 @@ b removeip_command
 b _restart_command
 b r_printdecalinfo
 b r_showenvcubemap
-b r_spray_lifetime
 b s_bBuiltBreakSet
 b s_bExitWhenEmpty
 d s_bFirstRunFrame
@@ -5247,7 +5289,7 @@ t net_dumpeventstats(CCommand const&)
 b net_status_command
 t occlusion_test_run(CCommand const&)
 t OpenSocketInternal(int, int, int, char const*, int, bool) [clone .constprop.224]
-t ParseRouterAddress(char const*, SteamDatagramTransport::SteamDatagramNetwork::RouterAddress&) [clone .constprop.106]
+t ParseRouterAddress(char const*, SteamDatagramTransport::SteamDatagramNetwork::RouterAddress&) [clone .constprop.174]
 t plugin_unpause_all(CCommand const&)
 b r_colorstaticprops
 b r_decalstaticprops
@@ -5256,7 +5298,7 @@ t read_encoded_value(_Unwind_Context*, unsigned char, unsigned char const*, unsi
 t ReslistLogLessFunc(CUtlString const&, CUtlString const&)
 b r_occludermincount
 t r_printdecalinfo_f()
-b s_arValveAddresses
+r s_arValveAddresses
 b s_DispShadowDecals
 t ServerMetricsToMsg(SteamDatagramTransport::ServerQualityMetrics const&, CMsgSteamDatagramClientSwitchedPrimary_RouterQuality*)
 b s_GameEventManager
@@ -5290,6 +5332,7 @@ r configuration_table
 b differences_command
 t display_elapsedtime(CCommand const&)
 b fps_max_splitscreen
+r g_BasicHTMLEntities
 r g_bEdgeNeighborFlip
 b g_ChildNodeIndexMul
 b g_EdgeVisualization
@@ -5352,6 +5395,7 @@ b g_QueuedPacketSender
 b g_SerializedEntities
 r g_SIMD_0101_signmask
 b g_szHostStatusBuffer
+r g_WhitespaceEntities
 b incrementvar_command
 t IsProtectedBySvPure2(char const*)
 b mat_powersavingsmode
@@ -5516,6 +5560,7 @@ b g_QuarterSizedFBTexture2
 b g_QuarterSizedFBTexture3
 b g_szCombinedStatusBuffer
 b g_szModSaveContainerName
+r g_Tier1_FullHTMLEntities
 b g_WaterReflectionTexture
 b g_WaterRefractionTexture
 t LoadSteamdatagramTickets()
@@ -5560,6 +5605,7 @@ t SvSearchKeyChangeCallback(IConVar*, char const*, float)
 b Test_RandomChance_command
 b unbindalljoystick_command
 b unload_all_addons_command
+b UNSPECIFIED_LOGGING_COLOR
 b UNSPECIFIED_LOGGING_COLOR
 b UNSPECIFIED_LOGGING_COLOR
 b UNSPECIFIED_LOGGING_COLOR
@@ -5856,6 +5902,7 @@ b threadpool_run_tests_command
 t vprof_generate_report_budget(CCommand const&)
 b vprof_playback_start_command
 t g_execifexists_CompletionFunc(char const*, char (*) [64])
+r g_pszSimpleBBCodeReplacements
 b mat_monitorgamma_tv_range_max
 b mat_monitorgamma_tv_range_min
 t mat_powersavingsmode_callback(IConVar*, char const*, float)
@@ -6123,7 +6170,6 @@ t kickid_ex(CCommand const&)
 t mat_debug(CCommand const&)
 b net_error
 b net_nodns
-d net_notcp
 t net_start(CCommand const&)
 t ReadDWord(_IO_FILE*)
 b r_eyemove
@@ -6741,6 +6787,7 @@ t CUtlMemory<void (*)(IConVar*, char const*, float), int>::~CUtlMemory()
 t CUtlMemory<studiohdr_t const*, int>::Grow(int)
 t CUtlMemory<RecvProp const*, int>::Grow(int)
 t CUtlMemory<SendProp const*, int>::Grow(int)
+t CUtlMemory<char const*, int>::Grow(int)
 t CUtlMemory<CInitTracker::InitFunc*, int>::Grow(int)
 t CUtlMemory<CInitTracker::InitFunc*, int>::~CUtlMemory()
 t CUtlMemory<CInitTracker::InitFunc*, int>::~CUtlMemory()
@@ -7389,6 +7436,8 @@ t CUtlVector<SendProp const*, CUtlMemory<SendProp const*, int> >::SetCount(int)
 t CUtlVector<SendProp const*, CUtlMemory<SendProp const*, int> >::CopyArray(SendProp const* const*, int)
 t CUtlVector<SendProp const*, CUtlMemory<SendProp const*, int> >::~CUtlVector()
 t CUtlVector<SendProp const*, CUtlMemory<SendProp const*, int> >::~CUtlVector()
+t CUtlVector<char const*, CUtlMemory<char const*, int> >::InsertBefore(int, char const* const&)
+t CUtlVector<char const*, CUtlMemory<char const*, int> >::Remove(int)
 t CUtlVector<CInitTracker::InitFunc*, CUtlMemory<CInitTracker::InitFunc*, int> >::InsertBefore(int, CInitTracker::InitFunc* const&)
 t CUtlVector<CInitTracker::InitFunc*, CUtlMemory<CInitTracker::InitFunc*, int> >::~CUtlVector()
 t CUtlVector<CInitTracker::InitFunc*, CUtlMemory<CInitTracker::InitFunc*, int> >::~CUtlVector()
@@ -7576,6 +7625,7 @@ t CBaseClient::GetHltvReplayDelay()
 t CBaseClient::NETMsg_SignonState(CNETMsg_SignonState const&)
 t CBaseClient::ShouldSendMessages()
 t CBaseClient::ShouldSendMessages() [clone .part.92]
+t CBaseClient::SVCMsg_UserMessage(CSVCMsg_UserMessage const&)
 t CBaseClient::UpdateUserSettings()
 t CBaseClient::CLCMsg_CmdKeyValues(CCLCMsg_CmdKeyValues const&)
 t CBaseClient::CLCMsg_FileCRCCheck(CCLCMsg_FileCRCCheck const&)
@@ -7748,12 +7798,13 @@ t CGameClient::SetupPrevPackInfo()
 t CGameClient::CanStartHltvReplay()
 t CGameClient::GetHltvReplayDelay()
 t CGameClient::ShouldSendMessages()
+t CGameClient::SVCMsg_UserMessage(CSVCMsg_UserMessage const&)
 t CGameClient::UpdateUserSettings()
 t CGameClient::CLCMsg_CmdKeyValues(CCLCMsg_CmdKeyValues const&)
 t CGameClient::CLCMsg_FileCRCCheck(CCLCMsg_FileCRCCheck const&)
 t CGameClient::CLCMsg_FileCRCCheck(CCLCMsg_FileCRCCheck const&) [clone .part.57]
 t CGameClient::ExecuteStringCommand(char const*)
-t CGameClient::ExecuteStringCommand(char const*) [clone .part.104]
+t CGameClient::ExecuteStringCommand(char const*) [clone .part.106]
 t CGameClient::PerformDisconnection(char const*)
 t CGameClient::StepHltvReplayStatus(int)
 t CGameClient::WriteViewAngleUpdate()
@@ -8194,8 +8245,6 @@ t INetMessage::Process()
 t INetMessage::~INetMessage()
 t INetMessage::~INetMessage()
 t INetMessage::~INetMessage()
-t IPv4NetMask::IPv4NetMask(char const*)
-t IPv4NetMask::IPv4NetMask(char const*)
 t IVModelInfo::Unused0()
 t IVModelInfo::~IVModelInfo()
 t IVModelInfo::~IVModelInfo()
@@ -8609,7 +8658,7 @@ t CModelRender::UnlockCacheCacheHandleArray(int, memhandle_t__**)
 t CModelRender::ValidateStaticPropColorData(unsigned short)
 t CModelRender::GetCachedStaticPropColorData(char const*)
 b CModelRender::ModelInstanceLightingState_t::s_Allocator
-t CModelRender::RemoveAllDecalsFromAllModels()
+t CModelRender::RemoveAllDecalsFromAllModels(bool)
 t CModelRender::ComputeModelVertexLightingOld(mstudiomodel_t*, matrix3x4_t&, LightingState_t const&, color24*, bool, float)
 t CModelRender::ReleaseAllStaticPropColorData()
 t CModelRender::RestoreAllStaticPropColorData()
@@ -8618,7 +8667,7 @@ t CModelRender::FindOrCreateStaticPropColorData(unsigned short)
 t CModelRender::EngineLightingToMaterialLighting(MaterialLightingState_t*, Vector const&, LightingState_t const&)
 t CModelRender::GetBrightestShadowingLightSource(Vector const&, Vector&, Vector&, bool)
 t CModelRender::Init()
-t CModelRender::AddDecal(unsigned short, Ray_t const&, Vector const&, int, int, bool, int, IMaterial*, float, float)
+t CModelRender::AddDecal(unsigned short, Ray_t const&, Vector const&, int, int, bool, int, IMaterial*, float, float, void*, int)
 t CModelRender::Shutdown()
 t CModelRender::DrawModel(int, IClientRenderable*, unsigned short, int, model_t const*, Vector const&, QAngle const&, int, int, int, matrix3x4_t const*, matrix3x4_t const*)
 t CModelRender::~CModelRender()
@@ -8793,6 +8842,8 @@ b (anonymous namespace)::emergency_mutex
 t (anonymous namespace)::get_locale_mutex()
 b (anonymous namespace)::numpunct_cache_c
 b (anonymous namespace)::numpunct_cache_w
+t (anonymous namespace)::Q_UTF32ToUChar32(wchar_t const*, wchar_t&, bool&)
+t int (anonymous namespace)::Q_UnicodeConvertT<wchar_t, wchar_t, true, (anonymous namespace)::Q_UTF32ToUChar32(wchar_t const*, wchar_t&, bool&), (anonymous namespace)::Q_UChar32ToUTF32Len(wchar_t), (anonymous namespace)::Q_UChar32ToUTF32(wchar_t, wchar_t*)>(wchar_t const*, int, wchar_t*, int, EStringConvertErrorPolicy) [clone .isra.4]
 b (anonymous namespace)::timepunct_cache_c
 b (anonymous namespace)::timepunct_cache_w
 b (anonymous namespace)::moneypunct_cache_cf
@@ -9669,7 +9720,9 @@ t FastDelegate1<CNETMsg_SignonState const&, bool>::FastDelegate1<CBaseClient, CB
 t FastDelegate1<CNETMsg_SignonState const&, bool>::FastDelegate1<CBaseClientState, CBaseClientState>(CBaseClientState*, bool (CBaseClientState::*)(CNETMsg_SignonState const&))
 t FastDelegate1<CSVCMsg_SplitScreen const&, bool>::FastDelegate1<CBaseClientState, CBaseClientState>(CBaseClientState*, bool (CBaseClientState::*)(CSVCMsg_SplitScreen const&))
 t FastDelegate1<CSVCMsg_SplitScreen const&, bool>::FastDelegate1<CBaseClientState, CBaseClientState>(CBaseClientState*, bool (CBaseClientState::*)(CSVCMsg_SplitScreen const&))
+t FastDelegate1<CSVCMsg_UserMessage const&, bool>::FastDelegate1<CBaseClient, CBaseClient>(CBaseClient*, bool (CBaseClient::*)(CSVCMsg_UserMessage const&))
 t FastDelegate1<CSVCMsg_UserMessage const&, bool>::FastDelegate1<CBaseClientState, CBaseClientState>(CBaseClientState*, bool (CBaseClientState::*)(CSVCMsg_UserMessage const&))
+t FastDelegate1<CSVCMsg_UserMessage const&, bool>::FastDelegate1<CBaseClient, CBaseClient>(CBaseClient*, bool (CBaseClient::*)(CSVCMsg_UserMessage const&))
 t FastDelegate1<CSVCMsg_UserMessage const&, bool>::FastDelegate1<CBaseClientState, CBaseClientState>(CBaseClientState*, bool (CBaseClientState::*)(CSVCMsg_UserMessage const&))
 t FastDelegate1<CCLCMsg_CmdKeyValues const&, bool>::FastDelegate1<CBaseClient, CBaseClient>(CBaseClient*, bool (CBaseClient::*)(CCLCMsg_CmdKeyValues const&))
 t FastDelegate1<CCLCMsg_CmdKeyValues const&, bool>::FastDelegate1<CBaseClient, CBaseClient>(CBaseClient*, bool (CBaseClient::*)(CCLCMsg_CmdKeyValues const&))
@@ -9920,7 +9973,7 @@ t CStaticPropMgr::GetLightingOrigins(Vector*, int, int, IClientRenderable**, int
 t CStaticPropMgr::RestoreStaticProps()
 t CStaticPropMgr::LevelShutdownClient()
 t CStaticPropMgr::UnserializeLeafList(CUtlBuffer&)
-t CStaticPropMgr::AddDecalToStaticProp(Vector const&, Vector const&, int, int, bool, CGameTrace&)
+t CStaticPropMgr::AddDecalToStaticProp(Vector const&, Vector const&, int, int, bool, CGameTrace&, void*, Vector const*, int)
 t CStaticPropMgr::ConfigureSystemLevel(int, int)
 t CStaticPropMgr::DrawStaticProps_Fast(IClientRenderable**, RenderableInstance_t const*, int, bool)
 t CStaticPropMgr::DrawStaticProps_Slow(IClientRenderable**, RenderableInstance_t const*, int, bool, bool)
@@ -10584,8 +10637,11 @@ t CNetSupportImpl::ReserveServer(ns_address const&, ns_address const&, unsigned 
 t CNetSupportImpl::QueryInterface(char const*)
 t CNetSupportImpl::GetEngineBuildNumber()
 t CNetSupportImpl::CheckServerReservation(ns_address const&, unsigned long long, unsigned int, IMatchAsyncOperationCallback*, IMatchAsyncOperation**)
+t CNetSupportImpl::GetSteamDatagramClient()
 t CNetSupportImpl::UpdateClientReservation(unsigned long long, unsigned long long)
 t CNetSupportImpl::UpdateServerReservation(unsigned long long)
+t CNetSupportImpl::ReceivedSteamDatagramTicket(CMsgSteamDatagramGameServerAuthTicket const&)
+t CNetSupportImpl::BHasSteamDatagramTicketForGameserver(CSteamID)
 t CNetSupportImpl::Init()
 t CNetSupportImpl::Connect(void* (*)(char const*, int*))
 t CNetSupportImpl::Shutdown()
@@ -11124,6 +11180,8 @@ t CUtlHashMapLarge<int, CIPRateLimit::iprate_val, CDefEquals<int>, CIPRateLimit:
 t CUtlHashMapLarge<int, CIPRateLimit::iprate_val, CDefEquals<int>, CIPRateLimit::IpHashNoopFunctor>::UnlinkNodeFromBucket(int, int)
 t CUtlHashMapLarge<int, CIPRateLimit::iprate_val, CDefEquals<int>, CIPRateLimit::IpHashNoopFunctor>::~CUtlHashMapLarge()
 t CUtlHashMapLarge<int, CIPRateLimit::iprate_val, CDefEquals<int>, CIPRateLimit::IpHashNoopFunctor>::~CUtlHashMapLarge()
+t CUtlNetAdrRender::CUtlNetAdrRender(sockaddr const&)
+t CUtlNetAdrRender::CUtlNetAdrRender(sockaddr const&)
 t CUtlStreamBuffer::TryFlushToFile(int)
 t CUtlStreamBuffer::GrowAllocatedSize(int)
 t CUtlStreamBuffer::ReadBytesFromFile(int, int)
@@ -11229,6 +11287,7 @@ t CGameEventManager::SerializeEvent(IGameEvent*, CSVCMsg_GameEvent*)
 t CGameEventManager::WriteEventList(CSVCMsg_GameEventList*)
 t CGameEventManager::FireEventIntern(IGameEvent*, bool, bool)
 t CGameEventManager::UnserializeEvent(CSVCMsg_GameEvent const&)
+t CGameEventManager::AddListenerGlobal(IGameEventListener2*, bool)
 t CGameEventManager::FindEventListener(void*)
 t CGameEventManager::GetEventDataTypes(IGameEvent*)
 t CGameEventManager::RemoveListenerOld(void*)
@@ -12400,6 +12459,7 @@ t KeyValuesJSONParser::KeyValuesJSONParser(CUtlBuffer const&)
 t KeyValuesJSONParser::~KeyValuesJSONParser()
 t KeyValuesJSONParser::~KeyValuesJSONParser()
 b lump_t_DataDescInit::g_DataMapHolder
+t PercentileGenerator<unsigned char, 1000>::AddSample(unsigned char)
 t CAsyncOcclusionQuery::~CAsyncOcclusionQuery()
 t CAsyncOcclusionQuery::~CAsyncOcclusionQuery()
 t CAsyncOcclusionQuery::~CAsyncOcclusionQuery()
@@ -13028,7 +13088,7 @@ t SteamDatagramTransport::LinkStatsTracker::UpdateInterval(unsigned long long)
 t SteamDatagramTransport::LinkStatsTracker::PopulateMessage(CMsgSteamDatagramConnectionQuality&, unsigned long long)
 t SteamDatagramTransport::LinkStatsTracker::BNeedToSendStats(unsigned long long)
 t SteamDatagramTransport::LinkStatsTracker::StartNextInterval(unsigned long long)
-t SteamDatagramTransport::LinkStatsTracker::TrackRecvSequencedPacket(unsigned short)
+t SteamDatagramTransport::LinkStatsTracker::TrackRecvSequencedPacket(unsigned short, unsigned long long, int)
 t SteamDatagramTransport::LinkStatsTracker::BCheckHaveDataToSendLifetime(unsigned long long)
 t SteamDatagramTransport::LinkStatsTracker::BCheckHaveDataToSendInstantaneous(unsigned long long)
 t SteamDatagramTransport::LinkStatsTracker::Init(unsigned long long)
@@ -13036,9 +13096,9 @@ t SteamDatagramTransport::SharedClusterData::ReceivedDataCenterPingTime(unsigned
 t SteamDatagramTransport::SharedClusterData::SharedClusterData(int)
 t SteamDatagramTransport::SharedClusterData::SharedClusterData(int)
 t SteamDatagramTransport::LinkStatsPrintToBuf(char const*, SteamDatagramLinkStats const&, CUtlBuffer&)
-t SteamDatagramTransport::SteamDatagramNetwork::SetupFromJSON(char const*, int, char (&) [1024])
+t SteamDatagramTransport::SteamDatagramNetwork::SetupFromJSON(char const*, int, char (&) [1024], int)
 t SteamDatagramTransport::SteamDatagramNetwork::BuildLookupTables(char (&) [1024])
-t SteamDatagramTransport::SteamDatagramNetwork::GetURLForUniverse(EUniverse)
+t SteamDatagramTransport::SteamDatagramNetwork::GetURLForUniverse(EUniverse, ESteamDatagramPartner)
 t SteamDatagramTransport::SteamDatagramNetwork::SetupHardcodedRouterList(char const*)
 t SteamDatagramTransport::SteamDatagramNetwork::SetupHardcodedDevUniverse()
 t SteamDatagramTransport::SteamDatagramNetwork::SteamDatagramNetwork()
@@ -13051,7 +13111,7 @@ t SteamDatagramTransport::SteamDatagramTransportLock::SteamDatagramTransportLock
 t SteamDatagramTransport::SteamDatagramTransportLock::SteamDatagramTransportLock()
 t SteamDatagramTransport::SteamDatagramTransportLock::~SteamDatagramTransportLock()
 t SteamDatagramTransport::SteamDatagramTransportLock::~SteamDatagramTransportLock()
-t SteamDatagramTransport::SteamDatagramTransportLock::~SteamDatagramTransportLock() [clone .constprop.291]
+t SteamDatagramTransport::SteamDatagramTransportLock::~SteamDatagramTransportLock() [clone .constprop.295]
 t SteamDatagramTransport::LinkStatsPrintLifetimeToBuf(char const*, SteamDatagramLinkLifetimeStats const&, CUtlBuffer&)
 t SteamDatagramTransport::LinkStatsLifetimeMsgToStruct(CMsgSteamDatagramLinkLifetimeStats const&, SteamDatagramLinkLifetimeStats&)
 t SteamDatagramTransport::LinkStatsLifetimeStructToMsg(SteamDatagramLinkLifetimeStats const&, CMsgSteamDatagramLinkLifetimeStats&)
@@ -13063,6 +13123,7 @@ t SteamDatagramTransport::CSteamDatagramTransportClient::ServerData::~ServerData
 t SteamDatagramTransport::CSteamDatagramTransportClient::ServerData::~ServerData()
 t SteamDatagramTransport::CSteamDatagramTransportClient::ThreadProc()
 t SteamDatagramTransport::CSteamDatagramTransportClient::LostSession(SteamDatagramTransport::CSteamDatagramTransportClient::ServerData&, char const*)
+t SteamDatagramTransport::CSteamDatagramTransportClient::CloseSockets()
 t SteamDatagramTransport::CSteamDatagramTransportClient::RecvDatagram(void*, unsigned int, unsigned long long*, int)
 t SteamDatagramTransport::CSteamDatagramTransportClient::RemoveServer(int)
 t SteamDatagramTransport::CSteamDatagramTransportClient::SendDatagram(void const*, unsigned int, int)
@@ -13105,11 +13166,11 @@ t SteamDatagramTransport::CSteamDatagramTransportClient::~CSteamDatagramTranspor
 b SteamDatagramTransport::steamdatagram_client_spew_level
 t SteamDatagramTransport::LinkStatsPrintInstantaneousToBuf(char const*, SteamDatagramLinkInstantaneousStats const&, CUtlBuffer&)
 t SteamDatagramTransport::CSteamDatagramTransportGameserver::ThreadProc()
+t SteamDatagramTransport::CSteamDatagramTransportGameserver::CloseSockets()
 t SteamDatagramTransport::CSteamDatagramTransportGameserver::LocateClient(CSteamID, sockaddr const&, unsigned int, unsigned long long)
 t SteamDatagramTransport::CSteamDatagramTransportGameserver::RecvDatagram(void*, unsigned int, CSteamID*, unsigned long long*, int)
 t SteamDatagramTransport::CSteamDatagramTransportGameserver::SendDatagram(void const*, unsigned int, CSteamID, int)
 t SteamDatagramTransport::CSteamDatagramTransportGameserver::ProcessPacket(unsigned char const*, int, sockaddr const&)
-t SteamDatagramTransport::CSteamDatagramTransportGameserver::DiagnosticMessage(int, char const*, ...)
 t SteamDatagramTransport::CSteamDatagramTransportGameserver::CallbackThreadProc(void*)
 t SteamDatagramTransport::CSteamDatagramTransportGameserver::Start(char (&) [1024])
 t SteamDatagramTransport::CSteamDatagramTransportGameserver::Think()
@@ -13126,6 +13187,7 @@ t SteamDatagramTransport::LinkStatsInstantaneousStructToMsg(SteamDatagramLinkIns
 b SteamDatagramTransport::steamdatagram_client_fakeloss_recv
 b SteamDatagramTransport::steamdatagram_client_fakeloss_send
 b SteamDatagramTransport::steamdatagram_client_single_socket
+b SteamDatagramTransport::steamdatagram_client_force_relay_cluster
 b SteamDatagramTransport::steamdatagram_client_min_pings_before_ping_accurate
 b SteamDatagramTransport::steamdatagram_client_consecutitive_ping_timeouts_fail
 b SteamDatagramTransport::steamdatagram_client_consecutitive_ping_timeouts_fail_initial
@@ -13748,11 +13810,38 @@ r CMsgSteamDatagramLinkLifetimeStats::kKbSentFieldNumber
 t CMsgSteamDatagramLinkLifetimeStats::InitAsDefaultInstance()
 r CMsgSteamDatagramLinkLifetimeStats::kPacketsRecvFieldNumber
 r CMsgSteamDatagramLinkLifetimeStats::kPacketsSentFieldNumber
+r CMsgSteamDatagramLinkLifetimeStats::kPingNtile5ThFieldNumber
+r CMsgSteamDatagramLinkLifetimeStats::kPingNtile50ThFieldNumber
+r CMsgSteamDatagramLinkLifetimeStats::kPingNtile75ThFieldNumber
+r CMsgSteamDatagramLinkLifetimeStats::kPingNtile95ThFieldNumber
+r CMsgSteamDatagramLinkLifetimeStats::kPingNtile98ThFieldNumber
+r CMsgSteamDatagramLinkLifetimeStats::kPingHistogram25FieldNumber
+r CMsgSteamDatagramLinkLifetimeStats::kPingHistogram50FieldNumber
+r CMsgSteamDatagramLinkLifetimeStats::kPingHistogram75FieldNumber
+r CMsgSteamDatagramLinkLifetimeStats::kQualityNtile2NdFieldNumber
+r CMsgSteamDatagramLinkLifetimeStats::kQualityNtile5ThFieldNumber
 t CMsgSteamDatagramLinkLifetimeStats::MergePartialFromCodedStream(google::protobuf::io::CodedInputStream*)
 r CMsgSteamDatagramLinkLifetimeStats::kPacketsRecvLurchFieldNumber
+r CMsgSteamDatagramLinkLifetimeStats::kPingHistogram100FieldNumber
+r CMsgSteamDatagramLinkLifetimeStats::kPingHistogram125FieldNumber
+r CMsgSteamDatagramLinkLifetimeStats::kPingHistogram150FieldNumber
+r CMsgSteamDatagramLinkLifetimeStats::kPingHistogram200FieldNumber
+r CMsgSteamDatagramLinkLifetimeStats::kPingHistogram300FieldNumber
+r CMsgSteamDatagramLinkLifetimeStats::kPingHistogramMaxFieldNumber
+r CMsgSteamDatagramLinkLifetimeStats::kQualityNtile25ThFieldNumber
+r CMsgSteamDatagramLinkLifetimeStats::kQualityNtile50ThFieldNumber
+r CMsgSteamDatagramLinkLifetimeStats::kQualityHistogram1FieldNumber
 r CMsgSteamDatagramLinkLifetimeStats::kPacketsRecvDroppedFieldNumber
+r CMsgSteamDatagramLinkLifetimeStats::kQualityHistogram50FieldNumber
+r CMsgSteamDatagramLinkLifetimeStats::kQualityHistogram75FieldNumber
+r CMsgSteamDatagramLinkLifetimeStats::kQualityHistogram90FieldNumber
+r CMsgSteamDatagramLinkLifetimeStats::kQualityHistogram95FieldNumber
+r CMsgSteamDatagramLinkLifetimeStats::kQualityHistogram97FieldNumber
+r CMsgSteamDatagramLinkLifetimeStats::kQualityHistogram99FieldNumber
+r CMsgSteamDatagramLinkLifetimeStats::kQualityHistogram100FieldNumber
 r CMsgSteamDatagramLinkLifetimeStats::kPacketsRecvDuplicateFieldNumber
 r CMsgSteamDatagramLinkLifetimeStats::kPacketsRecvSequencedFieldNumber
+r CMsgSteamDatagramLinkLifetimeStats::kQualityHistogramDeadFieldNumber
 r CMsgSteamDatagramLinkLifetimeStats::kPacketsRecvOutOfOrderFieldNumber
 t CMsgSteamDatagramLinkLifetimeStats::Swap(CMsgSteamDatagramLinkLifetimeStats*)
 t CMsgSteamDatagramLinkLifetimeStats::Clear()
@@ -13919,6 +14008,7 @@ r CMsgSteamDatagramLinkInstantaneousStats::kPingMsFieldNumber
 t CMsgSteamDatagramLinkInstantaneousStats::InitAsDefaultInstance()
 r CMsgSteamDatagramLinkInstantaneousStats::kInBytesPerSecFieldNumber
 r CMsgSteamDatagramLinkInstantaneousStats::kOutBytesPerSecFieldNumber
+r CMsgSteamDatagramLinkInstantaneousStats::kPeakJitterUsecFieldNumber
 t CMsgSteamDatagramLinkInstantaneousStats::MergePartialFromCodedStream(google::protobuf::io::CodedInputStream*)
 r CMsgSteamDatagramLinkInstantaneousStats::kPacketsDroppedPctFieldNumber
 r CMsgSteamDatagramLinkInstantaneousStats::kInPacketsPerSecX10FieldNumber
@@ -14357,6 +14447,7 @@ t void detail::ClosurePtr<bool (detail::GenericClass::*)(CCLCMsg_BaselineAck con
 t void detail::ClosurePtr<bool (detail::GenericClass::*)(CNETMsg_SignonState const&), bool (*)(CNETMsg_SignonState const&), bool (*)(CNETMsg_SignonState const&)>::bindmemfunc<CBaseClient, bool (CBaseClient::*)(CNETMsg_SignonState const&)>(CBaseClient*, bool (CBaseClient::*)(CNETMsg_SignonState const&))
 t void detail::ClosurePtr<bool (detail::GenericClass::*)(CNETMsg_SignonState const&), bool (*)(CNETMsg_SignonState const&), bool (*)(CNETMsg_SignonState const&)>::bindmemfunc<CBaseClientState, bool (CBaseClientState::*)(CNETMsg_SignonState const&)>(CBaseClientState*, bool (CBaseClientState::*)(CNETMsg_SignonState const&))
 t void detail::ClosurePtr<bool (detail::GenericClass::*)(CSVCMsg_SplitScreen const&), bool (*)(CSVCMsg_SplitScreen const&), bool (*)(CSVCMsg_SplitScreen const&)>::bindmemfunc<CBaseClientState, bool (CBaseClientState::*)(CSVCMsg_SplitScreen const&)>(CBaseClientState*, bool (CBaseClientState::*)(CSVCMsg_SplitScreen const&))
+t void detail::ClosurePtr<bool (detail::GenericClass::*)(CSVCMsg_UserMessage const&), bool (*)(CSVCMsg_UserMessage const&), bool (*)(CSVCMsg_UserMessage const&)>::bindmemfunc<CBaseClient, bool (CBaseClient::*)(CSVCMsg_UserMessage const&)>(CBaseClient*, bool (CBaseClient::*)(CSVCMsg_UserMessage const&))
 t void detail::ClosurePtr<bool (detail::GenericClass::*)(CSVCMsg_UserMessage const&), bool (*)(CSVCMsg_UserMessage const&), bool (*)(CSVCMsg_UserMessage const&)>::bindmemfunc<CBaseClientState, bool (CBaseClientState::*)(CSVCMsg_UserMessage const&)>(CBaseClientState*, bool (CBaseClientState::*)(CSVCMsg_UserMessage const&))
 t void detail::ClosurePtr<bool (detail::GenericClass::*)(CCLCMsg_CmdKeyValues const&), bool (*)(CCLCMsg_CmdKeyValues const&), bool (*)(CCLCMsg_CmdKeyValues const&)>::bindmemfunc<CBaseClient, bool (CBaseClient::*)(CCLCMsg_CmdKeyValues const&)>(CBaseClient*, bool (CBaseClient::*)(CCLCMsg_CmdKeyValues const&))
 t void detail::ClosurePtr<bool (detail::GenericClass::*)(CCLCMsg_FileCRCCheck const&), bool (*)(CCLCMsg_FileCRCCheck const&), bool (*)(CCLCMsg_FileCRCCheck const&)>::bindmemfunc<CBaseClient, bool (CBaseClient::*)(CCLCMsg_FileCRCCheck const&)>(CBaseClient*, bool (CBaseClient::*)(CCLCMsg_FileCRCCheck const&))
@@ -14864,7 +14955,7 @@ t google::protobuf::RepeatedField<unsigned int>::RepeatedField()
 t google::protobuf::RepeatedField<unsigned int>::RepeatedField()
 t google::protobuf::RepeatedField<unsigned int>::~RepeatedField()
 t google::protobuf::RepeatedField<unsigned int>::~RepeatedField()
-t google::protobuf::RepeatedField<unsigned int>::~RepeatedField() [clone .isra.347]
+t google::protobuf::RepeatedField<unsigned int>::~RepeatedField() [clone .isra.431]
 t google::protobuf::RepeatedField<unsigned int>::~RepeatedField() [clone .isra.669]
 t google::protobuf::RepeatedField<long long>::RemoveLast()
 t google::protobuf::RepeatedField<long long>::SwapElements(int, int)
@@ -17394,9 +17485,6 @@ t CEngine::CEngine()
 t CEngine::~CEngine()
 t CEngine::~CEngine()
 t CEngine::~CEngine()
-t CGameID::Render(unsigned long long)
-t CGameID::CGameID(char const*)
-t CGameID::CGameID(char const*)
 t CPlugin::GetCallback()
 t CPlugin::Load(char const*)
 t CPlugin::Unload()
@@ -20564,8 +20652,8 @@ t CSentence::~CSentence()
 t CSmartPtr<CDemoStreamHttp::Buffer_t, CDemoStreamHttp::Buffer_t>::~CSmartPtr()
 t CSmartPtr<CDemoStreamHttp::Buffer_t, CDemoStreamHttp::Buffer_t>::~CSmartPtr()
 t CStatTime::GetTime()
-t CUtlArray<CNetMessageBinder, 16u>::~CUtlArray()
-t CUtlArray<CNetMessageBinder, 16u>::~CUtlArray()
+t CUtlArray<CNetMessageBinder, 17u>::~CUtlArray()
+t CUtlArray<CNetMessageBinder, 17u>::~CUtlArray()
 t CUtlStack<float, CUtlMemory<float, int> >::Push(float const&)
 t CUtlStack<float, CUtlMemory<float, int> >::CopyFrom(CUtlStack<float, CUtlMemory<float, int> > const&)
 t CUtlStack<float, CUtlMemory<float, int> >::~CUtlStack()
@@ -22137,10 +22225,10 @@ t CSVCMsg_Print::SerializeWithCachedSizes(google::protobuf::io::CodedOutputStrea
 t CSVCMsg_Print::SerializeWithCachedSizesToArray(unsigned char*) const
 t CSVCMsg_Print::New() const
 t CSVCMsg_Print::ByteSize() const
-t unsigned int CUtlHashtable<CSteamID, SteamDatagramTransport::CSteamDatagramTransportGameserver::Client, SteamDatagramTransport::CSteamDatagramTransportGameserver::SteamIDHashFunctor, DefaultEqualFunctor<CSteamID>, undefined_t>::DoLookup<CSteamID const&>(CSteamID const&, unsigned int, unsigned int*) const [clone .part.56]
+t unsigned int CUtlHashtable<CSteamID, SteamDatagramTransport::CSteamDatagramTransportGameserver::Client, SteamDatagramTransport::CSteamDatagramTransportGameserver::SteamIDHashFunctor, DefaultEqualFunctor<CSteamID>, undefined_t>::DoLookup<CSteamID const&>(CSteamID const&, unsigned int, unsigned int*) const [clone .part.70]
 t unsigned int CUtlHashtable<int, CDemoStreamHttp::Fragment_t, IdentityHashFunctor, DefaultEqualFunctor<int>, undefined_t>::DoLookup<int>(int, unsigned int, unsigned int*) const [clone .part.66]
 t unsigned int CUtlHashtable<int, CAsyncOcclusionQuery*, IdentityHashFunctor, DefaultEqualFunctor<int>, undefined_t>::DoLookup<int>(int, unsigned int, unsigned int*) const [clone .part.110]
-t unsigned int CUtlHashtable<unsigned int, SteamDatagramTransport::SharedClusterData::DataCenterPing, DefaultHashFunctor<unsigned int>, DefaultEqualFunctor<unsigned int>, undefined_t>::DoLookup<unsigned int>(unsigned int, unsigned int, unsigned int*) const [clone .part.199] [clone .constprop.290]
+t unsigned int CUtlHashtable<unsigned int, SteamDatagramTransport::SharedClusterData::DataCenterPing, DefaultHashFunctor<unsigned int>, DefaultEqualFunctor<unsigned int>, undefined_t>::DoLookup<unsigned int>(unsigned int, unsigned int, unsigned int*) const [clone .part.202] [clone .constprop.294]
 t unsigned int CUtlHashtable<CUtlStableHashtable<model_t*, empty_t, CModelInfo::ModelFileHandleHash, CModelInfo::ModelFileHandleEq, short, void*>::IndirectIndex, empty_t, CUtlStableHashtable<model_t*, empty_t, CModelInfo::ModelFileHandleHash, CModelInfo::ModelFileHandleEq, short, void*>::HashProxy, CUtlStableHashtable<model_t*, empty_t, CModelInfo::ModelFileHandleHash, CModelInfo::ModelFileHandleEq, short, void*>::EqualProxy, void*>::DoLookup<void*>(void*, unsigned int, unsigned int*) const
 t unsigned int CUtlHashtable<IModelLoadCallback*, int, DefaultHashFunctor<IModelLoadCallback*>, DefaultEqualFunctor<IModelLoadCallback*>, undefined_t>::DoLookup<IModelLoadCallback*>(IModelLoadCallback*, unsigned int, unsigned int*) const [clone .part.227]
 t unsigned int CUtlHashtable<qhFace*, int, DefaultHashFunctor<qhFace*>, DefaultEqualFunctor<qhFace*>, undefined_t>::DoLookup<qhFace*>(qhFace*, unsigned int, unsigned int*) const [clone .part.43] [clone .constprop.56]
@@ -22511,6 +22599,8 @@ t CSVCMsg_UserMessage::SerializeWithCachedSizes(google::protobuf::io::CodedOutpu
 t CSVCMsg_UserMessage::SerializeWithCachedSizesToArray(unsigned char*) const
 t CSVCMsg_UserMessage::New() const
 t CSVCMsg_UserMessage::ByteSize() const
+t PercentileGenerator<unsigned char, 1000>::GetPercentile(float) const
+t PercentileGenerator<unsigned short, 1000>::GetPercentile(float) const
 t CCLCMsg_CmdKeyValues::GetMetadata() const
 t CCLCMsg_CmdKeyValues::GetCachedSize() const
 t CCLCMsg_CmdKeyValues::IsInitialized() const
@@ -22765,6 +22855,9 @@ t CSVCMsg_SendTable_sendprop_t::New() const
 t CSVCMsg_SendTable_sendprop_t::ByteSize() const
 t CTraceFilterWorldAndPropsOnly::GetTraceType() const
 t ISteamDatagramTransportClient::ConnectionStatus::Print(char*, int) const
+t SteamDatagramLinkLifetimeStats::PingHistogramTotalCount() const
+t SteamDatagramLinkLifetimeStats::JitterHistogramTotalCount() const
+t SteamDatagramLinkLifetimeStats::QualityHistogramTotalCount() const
 t CMsgSteamDatagramGameserverPing::GetMetadata() const
 t CMsgSteamDatagramGameserverPing::GetCachedSize() const
 t CMsgSteamDatagramGameserverPing::IsInitialized() const
@@ -23879,7 +23972,6 @@ t IceKey::decrypt(unsigned char const*, unsigned char*) const
 t IceKey::encrypt(unsigned char const*, unsigned char*) const
 t IceKey::keySize() const
 t IceKey::blockSize() const
-t CGameID::Render() const
 t IClient::GetHltvReplayStatus() const
 t VMatrix::Transpose3x3() const
 t VMatrix::InverseGeneral(VMatrix&) const
@@ -30062,10 +30154,12 @@ t void std::__adjust_heap<__gnu_cxx::__normal_iterator<CryptoPP::BaseAndExponent
 t void std::__adjust_heap<__gnu_cxx::__normal_iterator<CryptoPP::BaseAndExponent<CryptoPP::EC2NPoint, CryptoPP::Integer>*, std::vector<CryptoPP::BaseAndExponent<CryptoPP::EC2NPoint, CryptoPP::Integer>, std::allocator<CryptoPP::BaseAndExponent<CryptoPP::EC2NPoint, CryptoPP::Integer> > > >, int, CryptoPP::BaseAndExponent<CryptoPP::EC2NPoint, CryptoPP::Integer> >(__gnu_cxx::__normal_iterator<CryptoPP::BaseAndExponent<CryptoPP::EC2NPoint, CryptoPP::Integer>*, std::vector<CryptoPP::BaseAndExponent<CryptoPP::EC2NPoint, CryptoPP::Integer>, std::allocator<CryptoPP::BaseAndExponent<CryptoPP::EC2NPoint, CryptoPP::Integer> > > >, int, int, CryptoPP::BaseAndExponent<CryptoPP::EC2NPoint, CryptoPP::Integer>)
 t void std::__adjust_heap<__gnu_cxx::__normal_iterator<google::protobuf::FieldDescriptor const**, std::vector<google::protobuf::FieldDescriptor const*, std::allocator<google::protobuf::FieldDescriptor const*> > >, int, google::protobuf::FieldDescriptor const*, google::protobuf::internal::(anonymous namespace)::FieldNumberSorter>(__gnu_cxx::__normal_iterator<google::protobuf::FieldDescriptor const**, std::vector<google::protobuf::FieldDescriptor const*, std::allocator<google::protobuf::FieldDescriptor const*> > >, int, int, google::protobuf::FieldDescriptor const*, google::protobuf::internal::(anonymous namespace)::FieldNumberSorter)
 t void std::__adjust_heap<ServerWithSessionSort*, int, ServerWithSessionSort>(ServerWithSessionSort*, int, int, ServerWithSessionSort)
+t void std::__adjust_heap<unsigned char*, int, unsigned char>(unsigned char*, int, int, unsigned char)
 t void std::__adjust_heap<int*, int, int, bool (*)(int const&, int const&)>(int*, int, int, int, bool (*)(int const&, int const&))
 t void std::__adjust_heap<CSendTablePrecalc::PropOffset_t*, int, CSendTablePrecalc::PropOffset_t>(CSendTablePrecalc::PropOffset_t*, int, int, CSendTablePrecalc::PropOffset_t)
 t void std::__adjust_heap<SteamDatagramTransport::SteamDatagramNetwork::RouterAddress*, int, SteamDatagramTransport::SteamDatagramNetwork::RouterAddress>(SteamDatagramTransport::SteamDatagramNetwork::RouterAddress*, int, int, SteamDatagramTransport::SteamDatagramNetwork::RouterAddress)
 t void std::__adjust_heap<SteamDatagramTransport::SteamDatagramNetwork::RouterAddressLookup*, int, SteamDatagramTransport::SteamDatagramNetwork::RouterAddressLookup>(SteamDatagramTransport::SteamDatagramNetwork::RouterAddressLookup*, int, int, SteamDatagramTransport::SteamDatagramNetwork::RouterAddressLookup)
+t void std::__adjust_heap<unsigned short*, int, unsigned short>(unsigned short*, int, int, unsigned short)
 t void std::__adjust_heap<SteamDatagramTransport::CSteamDatagramTransportClient::ThinkSelectServer(unsigned long long)::ClusterSort*, int, SteamDatagramTransport::CSteamDatagramTransportClient::ThinkSelectServer(unsigned long long)::ClusterSort>(SteamDatagramTransport::CSteamDatagramTransportClient::ThinkSelectServer(unsigned long long)::ClusterSort*, int, int, SteamDatagramTransport::CSteamDatagramTransportClient::ThinkSelectServer(unsigned long long)::ClusterSort)
 t void std::__adjust_heap<std::_Deque_iterator<CryptoPP::MeterFilter::MessageRange, CryptoPP::MeterFilter::MessageRange&, CryptoPP::MeterFilter::MessageRange*>, int, CryptoPP::MeterFilter::MessageRange>(std::_Deque_iterator<CryptoPP::MeterFilter::MessageRange, CryptoPP::MeterFilter::MessageRange&, CryptoPP::MeterFilter::MessageRange*>, int, int, CryptoPP::MeterFilter::MessageRange)
 t bool std::binary_search<unsigned short const*, unsigned short>(unsigned short const*, unsigned short const*, unsigned short const&)
@@ -30149,13 +30243,16 @@ t void std::__insertion_sort<unsigned char*>(unsigned char*, unsigned char*)
 t void std::__insertion_sort<CSendTablePrecalc::PropOffset_t*>(CSendTablePrecalc::PropOffset_t*, CSendTablePrecalc::PropOffset_t*)
 t void std::__insertion_sort<SteamDatagramTransport::SteamDatagramNetwork::RouterAddress*>(SteamDatagramTransport::SteamDatagramNetwork::RouterAddress*, SteamDatagramTransport::SteamDatagramNetwork::RouterAddress*)
 t void std::__insertion_sort<SteamDatagramTransport::SteamDatagramNetwork::RouterAddressLookup*>(SteamDatagramTransport::SteamDatagramNetwork::RouterAddressLookup*, SteamDatagramTransport::SteamDatagramNetwork::RouterAddressLookup*)
+t void std::__insertion_sort<unsigned short*>(unsigned short*, unsigned short*)
 t void std::__insertion_sort<SteamDatagramTransport::CSteamDatagramTransportClient::ThinkSelectServer(unsigned long long)::ClusterSort*>(SteamDatagramTransport::CSteamDatagramTransportClient::ThinkSelectServer(unsigned long long)::ClusterSort*, SteamDatagramTransport::CSteamDatagramTransportClient::ThinkSelectServer(unsigned long long)::ClusterSort*)
 t void std::__insertion_sort<std::_Deque_iterator<CryptoPP::MeterFilter::MessageRange, CryptoPP::MeterFilter::MessageRange&, CryptoPP::MeterFilter::MessageRange*> >(std::_Deque_iterator<CryptoPP::MeterFilter::MessageRange, CryptoPP::MeterFilter::MessageRange&, CryptoPP::MeterFilter::MessageRange*>, std::_Deque_iterator<CryptoPP::MeterFilter::MessageRange, CryptoPP::MeterFilter::MessageRange&, CryptoPP::MeterFilter::MessageRange*>)
 t void std::__introsort_loop<__gnu_cxx::__normal_iterator<google::protobuf::FieldDescriptor const**, std::vector<google::protobuf::FieldDescriptor const*, std::allocator<google::protobuf::FieldDescriptor const*> > >, int, google::protobuf::internal::(anonymous namespace)::FieldNumberSorter>(__gnu_cxx::__normal_iterator<google::protobuf::FieldDescriptor const**, std::vector<google::protobuf::FieldDescriptor const*, std::allocator<google::protobuf::FieldDescriptor const*> > >, __gnu_cxx::__normal_iterator<google::protobuf::FieldDescriptor const**, std::vector<google::protobuf::FieldDescriptor const*, std::allocator<google::protobuf::FieldDescriptor const*> > >, int, google::protobuf::internal::(anonymous namespace)::FieldNumberSorter)
 t void std::__introsort_loop<ServerWithSessionSort*, int>(ServerWithSessionSort*, ServerWithSessionSort*, int)
+t void std::__introsort_loop<unsigned char*, int>(unsigned char*, unsigned char*, int)
 t void std::__introsort_loop<CSendTablePrecalc::PropOffset_t*, int>(CSendTablePrecalc::PropOffset_t*, CSendTablePrecalc::PropOffset_t*, int)
 t void std::__introsort_loop<SteamDatagramTransport::SteamDatagramNetwork::RouterAddress*, int>(SteamDatagramTransport::SteamDatagramNetwork::RouterAddress*, SteamDatagramTransport::SteamDatagramNetwork::RouterAddress*, int)
 t void std::__introsort_loop<SteamDatagramTransport::SteamDatagramNetwork::RouterAddressLookup*, int>(SteamDatagramTransport::SteamDatagramNetwork::RouterAddressLookup*, SteamDatagramTransport::SteamDatagramNetwork::RouterAddressLookup*, int)
+t void std::__introsort_loop<unsigned short*, int>(unsigned short*, unsigned short*, int)
 t void std::__introsort_loop<SteamDatagramTransport::CSteamDatagramTransportClient::ThinkSelectServer(unsigned long long)::ClusterSort*, int>(SteamDatagramTransport::CSteamDatagramTransportClient::ThinkSelectServer(unsigned long long)::ClusterSort*, SteamDatagramTransport::CSteamDatagramTransportClient::ThinkSelectServer(unsigned long long)::ClusterSort*, int)
 t void std::__introsort_loop<std::_Deque_iterator<CryptoPP::MeterFilter::MessageRange, CryptoPP::MeterFilter::MessageRange&, CryptoPP::MeterFilter::MessageRange*>, int>(std::_Deque_iterator<CryptoPP::MeterFilter::MessageRange, CryptoPP::MeterFilter::MessageRange&, CryptoPP::MeterFilter::MessageRange*>, std::_Deque_iterator<CryptoPP::MeterFilter::MessageRange, CryptoPP::MeterFilter::MessageRange&, CryptoPP::MeterFilter::MessageRange*>, int)
 t void std::__merge_adaptive<unsigned char*, int, unsigned char*>(unsigned char*, unsigned char*, unsigned char*, int, int, unsigned char*, int)
@@ -31242,7 +31339,7 @@ t non-virtual thunk to CNETMsg_Tick_t::~CNETMsg_Tick_t()
 t non-virtual thunk to CStaticPropMgr::DrawStaticProps(IClientRenderable**, RenderableInstance_t const*, int, bool, bool)
 t non-virtual thunk to CStaticPropMgr::GetAllStaticProps(CUtlVector<ICollideable*, CUtlMemory<ICollideable*, int> >*)
 t non-virtual thunk to CStaticPropMgr::GetLightingOrigins(Vector*, int, int, IClientRenderable**, int)
-t non-virtual thunk to CStaticPropMgr::AddDecalToStaticProp(Vector const&, Vector const&, int, int, bool, CGameTrace&)
+t non-virtual thunk to CStaticPropMgr::AddDecalToStaticProp(Vector const&, Vector const&, int, int, bool, CGameTrace&, void*, Vector const*, int)
 t non-virtual thunk to CStaticPropMgr::GetStaticPropByIndex(int)
 t non-virtual thunk to CStaticPropMgr::AddShadowToStaticProp(unsigned short, IClientRenderable*)
 t non-virtual thunk to CStaticPropMgr::GetAllStaticPropsInOBB(Vector const&, Vector const&, Vector const&, Vector const&, CUtlVector<ICollideable*, CUtlMemory<ICollideable*, int> >*)
@@ -36285,7 +36382,6 @@ b CVEngineServer::ClientCommand(edict_t*, char const*, ...)::szOut
 b CNetSupportImpl::GetServerInfo(INetSupport::ServerInfo_t*)::s_bHideHostIP
 b CNetSupportImpl::GetServerInfo(INetSupport::ServerInfo_t*)::s_netAdrLocalhost
 b DownloadManager::FileReceived(char const*, unsigned int, bool)::gamedir
-b CBaseClientState::SVCMsg_ServerInfo(CSVCMsg_ServerInfo const&)::gamedir
 b CBaseClientState::ProcessConnectionlessPacket(netpacket_s*)::s_nGeneratedEncryptionKey
 b CBaseClientState::CAsyncOperation_ReserveServer::GetResult()::buf
 b CDataManagerBase::GetForFreeByIndex(unsigned short)::__executeCount
@@ -36396,8 +36492,6 @@ r google::protobuf::internal::scoped_ptr<google::protobuf::UnknownFieldSet>::ope
 r google::protobuf::internal::scoped_ptr<google::protobuf::DynamicMessageFactory::PrototypeMap>::operator->() const::__PRETTY_FUNCTION__
 r google::protobuf::internal::scoped_ptr<google::protobuf::Message>::operator->() const::__PRETTY_FUNCTION__
 r google::protobuf::internal::scoped_array<int>::operator[](int) const::__PRETTY_FUNCTION__
-b CGameID::Render() const::nBuf
-b CGameID::Render() const::rgchBuf
 b CNetChan::GetChannelEncryptionKey() const::unHostVersion
 d CNetChan::GetChannelEncryptionKey() const::ubDefaultEncryptionKey
 r CryptoPP::PolynomialMod2::Squared() const::map

@@ -118,7 +118,7 @@ r CSWTCH.412
 r CSWTCH.598
 r CSWTCH.619
 r CSWTCH.622
-r CSWTCH.866
+r CSWTCH.867
 d __CTOR_END__
 d __CTOR_LIST__
 U __ctype_get_mb_cur_max@@GLIBC_2.0
@@ -3256,6 +3256,7 @@ t BZ2_hbCreateDecodeTables(int*, int*, int*, unsigned char*, int, int, int)
 t CalcClosestPointOnLine2D(Vector2D const&, Vector2D const&, Vector2D const&, Vector2D&, float*)
 t CalcTriangleTangentSpace(Vector const&, Vector const&, Vector const&, Vector2D const&, Vector2D const&, Vector2D const&, Vector&, Vector&)
 t CM_CreateDispPhysCollide(dphysdisp_t*, int)
+t Cmd_AliasToCommandString(char const*)
 t CollisionBSPData_Destroy(CCollisionBSPData*)
 t CollisionBSPData_PreLoad(CCollisionBSPData*)
 t COM_BlockSequenceCRCByte(unsigned char*, int, int)
@@ -3979,6 +3980,7 @@ b guard variable for CBaseServer::ReplyReservationRequest(ns_address const&, bf_
 b guard variable for CBaseServer::ProcessConnectionlessPacket(netpacket_s*)::s_bEnableLegacyPackets
 b guard variable for CHLTVServer::AddNewFrame(CClientFrame*)::tv_delay
 b guard variable for CEngineTrace::TraceRay(Ray_t const&, unsigned int, ITraceFilter*, CGameTrace*)::_counter
+b guard variable for CModelLoader::FindModel(char const*)::s_BannedMDLs
 b guard variable for CModelRender::StaticPropColorMeshCallback(void*, void const*, int, FSAsyncStatus_t)::r_staticlight_streams
 b guard variable for CModelRender::ValidateStaticPropColorData(unsigned short)::r_staticlight_streams
 b guard variable for (anonymous namespace)::get_locale_mutex()::locale_mutex
@@ -4052,7 +4054,7 @@ t listmodels(CCommand const&)
 t maxplayers(CCommand const&)
 t mem_verify(CCommand const&)
 b net_nohltv
-t NET_SendTo(bool, int, char const*, int, ns_address const&, int) [clone .isra.59]
+t NET_SendTo(bool, int, char const*, int, ns_address const&, int) [clone .isra.60]
 t net_status(CCommand const&)
 b r_drawleaf
 b r_flushlod
@@ -5288,8 +5290,8 @@ b mod_load_showstall
 t net_dumpeventstats(CCommand const&)
 b net_status_command
 t occlusion_test_run(CCommand const&)
-t OpenSocketInternal(int, int, int, char const*, int, bool) [clone .constprop.224]
-t ParseRouterAddress(char const*, SteamDatagramTransport::SteamDatagramNetwork::RouterAddress&) [clone .constprop.174]
+t OpenSocketInternal(int, int, int, char const*, int, bool) [clone .constprop.225]
+t ParseRouterAddress(char const*, SteamDatagramTransport::SteamDatagramNetwork::RouterAddress&) [clone .constprop.186]
 t plugin_unpause_all(CCommand const&)
 b r_colorstaticprops
 b r_decalstaticprops
@@ -5324,7 +5326,7 @@ t vprof_cachemiss_on(CCommand const&)
 t vprof_record_start(CCommand const&)
 b actualLightingState
 t budget_toggle_group(CCommand const&)
-t BuildSpriteLoadName(char const*, char*, int, bool&, bool&) [clone .constprop.246]
+t BuildSpriteLoadName(char const*, char*, int, bool&, bool&) [clone .constprop.249]
 b cache_print_command
 t cache_print_summary(CCommand const&)
 t ComputeCenterMatrix(Vector const&, QAngle const&, Vector const&, Vector const&, matrix3x4_t&) [clone .constprop.48]
@@ -5497,7 +5499,7 @@ b ice_sboxes_initialised
 b logaddress_add_command
 b logaddress_del_command
 b net_droponsendoverflow
-t NET_QueuePacketForSend(CNetChan*, bool, int, char const*, int, ns_address const&, unsigned int) [clone .isra.187]
+t NET_QueuePacketForSend(CNetChan*, bool, int, char const*, int, ns_address const&, unsigned int) [clone .isra.188]
 b net_showeventlisteners
 b net_showreliablesounds
 b plugin_unpause_command
@@ -7101,7 +7103,7 @@ t CUtlVector<challenge_t, CUtlMemory<challenge_t, int> >::~CUtlVector()
 t CUtlVector<CStaticProp, CUtlMemory<CStaticProp, int> >::InsertBefore(int)
 t CUtlVector<CStaticProp, CUtlMemory<CStaticProp, int> >::~CUtlVector()
 t CUtlVector<CStaticProp, CUtlMemory<CStaticProp, int> >::~CUtlVector()
-t CUtlVector<netpacket_s, CUtlMemory<netpacket_s, int> >::EnsureCount(int) [clone .part.189] [clone .constprop.230]
+t CUtlVector<netpacket_s, CUtlMemory<netpacket_s, int> >::EnsureCount(int) [clone .part.190] [clone .constprop.231]
 t CUtlVector<netpacket_s, CUtlMemory<netpacket_s, int> >::~CUtlVector()
 t CUtlVector<netpacket_s, CUtlMemory<netpacket_s, int> >::~CUtlVector()
 t CUtlVector<netsocket_t, CUtlMemory<netsocket_t, int> >::GrowVector(int)
@@ -7452,7 +7454,7 @@ t CUtlVector<void*, CUtlMemory<void*, int> >::InsertBefore(int, void* const&)
 t CUtlVector<void*, CUtlMemory<void*, int> >::~CUtlVector()
 t CUtlVector<void*, CUtlMemory<void*, int> >::~CUtlVector()
 t CUtlVector<wchar_t*, CUtlMemory<wchar_t*, int> >::InsertBefore(int, wchar_t* const&)
-t CUtlVector<CUtlVector<CSplitPacketEntry, CUtlMemory<CSplitPacketEntry, int> >, CUtlMemory<CUtlVector<CSplitPacketEntry, CUtlMemory<CSplitPacketEntry, int> >, int> >::EnsureCount(int) [clone .part.203] [clone .constprop.223]
+t CUtlVector<CUtlVector<CSplitPacketEntry, CUtlMemory<CSplitPacketEntry, int> >, CUtlMemory<CUtlVector<CSplitPacketEntry, CUtlMemory<CSplitPacketEntry, int> >, int> >::EnsureCount(int) [clone .part.204] [clone .constprop.224]
 t CUtlVector<CUtlVector<CSplitPacketEntry, CUtlMemory<CSplitPacketEntry, int> >, CUtlMemory<CUtlVector<CSplitPacketEntry, CUtlMemory<CSplitPacketEntry, int> >, int> >::RemoveAll()
 t CUtlVector<CUtlVector<CSplitPacketEntry, CUtlMemory<CSplitPacketEntry, int> >, CUtlMemory<CUtlVector<CSplitPacketEntry, CUtlMemory<CSplitPacketEntry, int> >, int> >::~CUtlVector()
 t CUtlVector<CUtlVector<CSplitPacketEntry, CUtlMemory<CSplitPacketEntry, int> >, CUtlMemory<CUtlVector<CSplitPacketEntry, CUtlMemory<CSplitPacketEntry, int> >, int> >::~CUtlVector()
@@ -8526,7 +8528,7 @@ t CMemoryStack::~CMemoryStack()
 t CMeshBuilder::~CMeshBuilder()
 t CMeshBuilder::~CMeshBuilder()
 t CModelLoader::Map_IsValid(char const*, bool)
-t CModelLoader::Map_IsValid(char const*, bool) [clone .part.35]
+t CModelLoader::Map_IsValid(char const*, bool) [clone .part.36]
 t CModelLoader::UnloadModel(model_t*)
 t CModelLoader::GetExtraData(model_t*)
 t CModelLoader::Map_LoadModel(model_t*)
@@ -9903,7 +9905,7 @@ t CMapLoadHelper::LoadLumpElement(int, int, void*)
 t CMapLoadHelper::FreeLightingLump()
 t CMapLoadHelper::UncompressedLumpSize()
 t CMapLoadHelper::Init(model_t*, char const*)
-t CMapLoadHelper::Init(model_t*, char const*) [clone .part.36]
+t CMapLoadHelper::Init(model_t*, char const*) [clone .part.37]
 t CMapLoadHelper::GetMap()
 t CMapLoadHelper::LumpBase()
 t CMapLoadHelper::LumpSize(int)
@@ -10280,7 +10282,7 @@ t CVEngineServer::EmitAmbientSound(int, Vector const&, char const*, float, sound
 t CVEngineServer::FadeClientVolume(edict_t const*, float, float, float, float)
 t CVEngineServer::ForceFlushEntity(int)
 t CVEngineServer::ForceModelBounds(char const*, Vector const&, Vector const&)
-t CVEngineServer::GetClientSteamID(edict_t const*)
+t CVEngineServer::GetClientSteamID(edict_t const*, bool)
 t CVEngineServer::GetGamestatsData()
 t CVEngineServer::GetLaunchOptions()
 t CVEngineServer::GetPlayerNetInfo(int)
@@ -13111,7 +13113,7 @@ t SteamDatagramTransport::SteamDatagramTransportLock::SteamDatagramTransportLock
 t SteamDatagramTransport::SteamDatagramTransportLock::SteamDatagramTransportLock()
 t SteamDatagramTransport::SteamDatagramTransportLock::~SteamDatagramTransportLock()
 t SteamDatagramTransport::SteamDatagramTransportLock::~SteamDatagramTransportLock()
-t SteamDatagramTransport::SteamDatagramTransportLock::~SteamDatagramTransportLock() [clone .constprop.295]
+t SteamDatagramTransport::SteamDatagramTransportLock::~SteamDatagramTransportLock() [clone .constprop.296]
 t SteamDatagramTransport::LinkStatsPrintLifetimeToBuf(char const*, SteamDatagramLinkLifetimeStats const&, CUtlBuffer&)
 t SteamDatagramTransport::LinkStatsLifetimeMsgToStruct(CMsgSteamDatagramLinkLifetimeStats const&, SteamDatagramLinkLifetimeStats&)
 t SteamDatagramTransport::LinkStatsLifetimeStructToMsg(SteamDatagramLinkLifetimeStats const&, CMsgSteamDatagramLinkLifetimeStats&)
@@ -13821,6 +13823,9 @@ r CMsgSteamDatagramLinkLifetimeStats::kPingHistogram75FieldNumber
 r CMsgSteamDatagramLinkLifetimeStats::kQualityNtile2NdFieldNumber
 r CMsgSteamDatagramLinkLifetimeStats::kQualityNtile5ThFieldNumber
 t CMsgSteamDatagramLinkLifetimeStats::MergePartialFromCodedStream(google::protobuf::io::CodedInputStream*)
+r CMsgSteamDatagramLinkLifetimeStats::kJitterHistogram1FieldNumber
+r CMsgSteamDatagramLinkLifetimeStats::kJitterHistogram2FieldNumber
+r CMsgSteamDatagramLinkLifetimeStats::kJitterHistogram5FieldNumber
 r CMsgSteamDatagramLinkLifetimeStats::kPacketsRecvLurchFieldNumber
 r CMsgSteamDatagramLinkLifetimeStats::kPingHistogram100FieldNumber
 r CMsgSteamDatagramLinkLifetimeStats::kPingHistogram125FieldNumber
@@ -13830,6 +13835,8 @@ r CMsgSteamDatagramLinkLifetimeStats::kPingHistogram300FieldNumber
 r CMsgSteamDatagramLinkLifetimeStats::kPingHistogramMaxFieldNumber
 r CMsgSteamDatagramLinkLifetimeStats::kQualityNtile25ThFieldNumber
 r CMsgSteamDatagramLinkLifetimeStats::kQualityNtile50ThFieldNumber
+r CMsgSteamDatagramLinkLifetimeStats::kJitterHistogram10FieldNumber
+r CMsgSteamDatagramLinkLifetimeStats::kJitterHistogram20FieldNumber
 r CMsgSteamDatagramLinkLifetimeStats::kQualityHistogram1FieldNumber
 r CMsgSteamDatagramLinkLifetimeStats::kPacketsRecvDroppedFieldNumber
 r CMsgSteamDatagramLinkLifetimeStats::kQualityHistogram50FieldNumber
@@ -13843,6 +13850,7 @@ r CMsgSteamDatagramLinkLifetimeStats::kPacketsRecvDuplicateFieldNumber
 r CMsgSteamDatagramLinkLifetimeStats::kPacketsRecvSequencedFieldNumber
 r CMsgSteamDatagramLinkLifetimeStats::kQualityHistogramDeadFieldNumber
 r CMsgSteamDatagramLinkLifetimeStats::kPacketsRecvOutOfOrderFieldNumber
+r CMsgSteamDatagramLinkLifetimeStats::kJitterHistogramNegligibleFieldNumber
 t CMsgSteamDatagramLinkLifetimeStats::Swap(CMsgSteamDatagramLinkLifetimeStats*)
 t CMsgSteamDatagramLinkLifetimeStats::Clear()
 t CMsgSteamDatagramLinkLifetimeStats::CopyFrom(google::protobuf::Message const&)
@@ -14059,6 +14067,7 @@ r CMsgSteamDatagramGameserverSessionRequest::kChallengeFieldNumber
 r CMsgSteamDatagramGameserverSessionRequest::kClientCookieFieldNumber
 r CMsgSteamDatagramGameserverSessionRequest::kChallengeTimeFieldNumber
 t CMsgSteamDatagramGameserverSessionRequest::MergePartialFromCodedStream(google::protobuf::io::CodedInputStream*)
+r CMsgSteamDatagramGameserverSessionRequest::kNetworkConfigVersionFieldNumber
 t CMsgSteamDatagramGameserverSessionRequest::Swap(CMsgSteamDatagramGameserverSessionRequest*)
 t CMsgSteamDatagramGameserverSessionRequest::Clear()
 t CMsgSteamDatagramGameserverSessionRequest::CopyFrom(google::protobuf::Message const&)
@@ -14955,7 +14964,7 @@ t google::protobuf::RepeatedField<unsigned int>::RepeatedField()
 t google::protobuf::RepeatedField<unsigned int>::RepeatedField()
 t google::protobuf::RepeatedField<unsigned int>::~RepeatedField()
 t google::protobuf::RepeatedField<unsigned int>::~RepeatedField()
-t google::protobuf::RepeatedField<unsigned int>::~RepeatedField() [clone .isra.431]
+t google::protobuf::RepeatedField<unsigned int>::~RepeatedField() [clone .isra.452]
 t google::protobuf::RepeatedField<unsigned int>::~RepeatedField() [clone .isra.669]
 t google::protobuf::RepeatedField<long long>::RemoveLast()
 t google::protobuf::RepeatedField<long long>::SwapElements(int, int)
@@ -18400,7 +18409,7 @@ t CryptoPP::NonblockingRng::~NonblockingRng()
 t CryptoPP::NonblockingRng::~NonblockingRng()
 t CryptoPP::NotImplemented::NotImplemented(std::string const&)
 t CryptoPP::NotImplemented::NotImplemented(std::string const&)
-t CryptoPP::NotImplemented::NotImplemented(std::string const&) [clone .constprop.231]
+t CryptoPP::NotImplemented::NotImplemented(std::string const&) [clone .constprop.232]
 t CryptoPP::NotImplemented::~NotImplemented()
 t CryptoPP::NotImplemented::~NotImplemented()
 t CryptoPP::NotImplemented::~NotImplemented()
@@ -19078,7 +19087,7 @@ t CryptoPP::PublicKeyAlgorithm::~PublicKeyAlgorithm()
 t CryptoPP::PublicKeyAlgorithm::~PublicKeyAlgorithm()
 t CryptoPP::SSE2_MultiplyTop16(unsigned int*, unsigned int const*, unsigned int const*, unsigned int)
 t CryptoPP::SSE2_MultiplyTop32(unsigned int*, unsigned int const*, unsigned int const*, unsigned int)
-t CryptoPP::AllocatorWithCleanup<unsigned char, false>::pointer CryptoPP::StandardReallocate<unsigned char, CryptoPP::AllocatorWithCleanup<unsigned char, false> >(CryptoPP::AllocatorWithCleanup<unsigned char, false>&, unsigned char*, CryptoPP::AllocatorWithCleanup<unsigned char, false>::size_type, CryptoPP::AllocatorWithCleanup<unsigned char, false>::size_type, bool) [clone .isra.170] [clone .constprop.229]
+t CryptoPP::AllocatorWithCleanup<unsigned char, false>::pointer CryptoPP::StandardReallocate<unsigned char, CryptoPP::AllocatorWithCleanup<unsigned char, false> >(CryptoPP::AllocatorWithCleanup<unsigned char, false>&, unsigned char*, CryptoPP::AllocatorWithCleanup<unsigned char, false>::size_type, CryptoPP::AllocatorWithCleanup<unsigned char, false>::size_type, bool) [clone .isra.171] [clone .constprop.230]
 t CryptoPP::AllocatorWithCleanup<unsigned int, false>::pointer CryptoPP::StandardReallocate<unsigned int, CryptoPP::AllocatorWithCleanup<unsigned int, false> >(CryptoPP::AllocatorWithCleanup<unsigned int, false>&, unsigned int*, CryptoPP::AllocatorWithCleanup<unsigned int, false>::size_type, CryptoPP::AllocatorWithCleanup<unsigned int, false>::size_type, bool)
 t CryptoPP::AllocatorWithCleanup<unsigned int, true>::pointer CryptoPP::StandardReallocate<unsigned int, CryptoPP::AllocatorWithCleanup<unsigned int, true> >(CryptoPP::AllocatorWithCleanup<unsigned int, true>&, unsigned int*, CryptoPP::AllocatorWithCleanup<unsigned int, true>::size_type, CryptoPP::AllocatorWithCleanup<unsigned int, true>::size_type, bool)
 t CryptoPP::AllocatorWithCleanup<unsigned short, false>::pointer CryptoPP::StandardReallocate<unsigned short, CryptoPP::AllocatorWithCleanup<unsigned short, false> >(CryptoPP::AllocatorWithCleanup<unsigned short, false>&, unsigned short*, CryptoPP::AllocatorWithCleanup<unsigned short, false>::size_type, CryptoPP::AllocatorWithCleanup<unsigned short, false>::size_type, bool)
@@ -20430,7 +20439,7 @@ t void CByteswap::SwapBuffer<unsigned long>(unsigned long*, unsigned long*, int)
 t void CByteswap::SwapBuffer<unsigned short>(unsigned short*, unsigned short*, int) [clone .isra.69] [clone .part.70] [clone .constprop.152]
 t CByteswap::SwapFieldToTargetEndian(void*, void*, typedescription_t*)
 t void CByteswap::SwapBufferToTargetEndian<float>(float*, float*, int) [clone .part.32] [clone .constprop.90]
-t void CByteswap::SwapBufferToTargetEndian<int>(int*, int*, int) [clone .part.136] [clone .constprop.228]
+t void CByteswap::SwapBufferToTargetEndian<int>(int*, int*, int) [clone .part.137] [clone .constprop.229]
 t void CByteswap::SwapBufferToTargetEndian<int>(int*, int*, int) [clone .part.61] [clone .constprop.93]
 t void CByteswap::SwapBufferToTargetEndian<unsigned short>(unsigned short*, unsigned short*, int) [clone .part.58] [clone .constprop.92]
 t void CByteswap::SwapBufferToTargetEndian<long long>(long long*, long long*, int)
@@ -22228,11 +22237,11 @@ t CSVCMsg_Print::ByteSize() const
 t unsigned int CUtlHashtable<CSteamID, SteamDatagramTransport::CSteamDatagramTransportGameserver::Client, SteamDatagramTransport::CSteamDatagramTransportGameserver::SteamIDHashFunctor, DefaultEqualFunctor<CSteamID>, undefined_t>::DoLookup<CSteamID const&>(CSteamID const&, unsigned int, unsigned int*) const [clone .part.70]
 t unsigned int CUtlHashtable<int, CDemoStreamHttp::Fragment_t, IdentityHashFunctor, DefaultEqualFunctor<int>, undefined_t>::DoLookup<int>(int, unsigned int, unsigned int*) const [clone .part.66]
 t unsigned int CUtlHashtable<int, CAsyncOcclusionQuery*, IdentityHashFunctor, DefaultEqualFunctor<int>, undefined_t>::DoLookup<int>(int, unsigned int, unsigned int*) const [clone .part.110]
-t unsigned int CUtlHashtable<unsigned int, SteamDatagramTransport::SharedClusterData::DataCenterPing, DefaultHashFunctor<unsigned int>, DefaultEqualFunctor<unsigned int>, undefined_t>::DoLookup<unsigned int>(unsigned int, unsigned int, unsigned int*) const [clone .part.202] [clone .constprop.294]
+t unsigned int CUtlHashtable<unsigned int, SteamDatagramTransport::SharedClusterData::DataCenterPing, DefaultHashFunctor<unsigned int>, DefaultEqualFunctor<unsigned int>, undefined_t>::DoLookup<unsigned int>(unsigned int, unsigned int, unsigned int*) const [clone .part.203] [clone .constprop.295]
 t unsigned int CUtlHashtable<CUtlStableHashtable<model_t*, empty_t, CModelInfo::ModelFileHandleHash, CModelInfo::ModelFileHandleEq, short, void*>::IndirectIndex, empty_t, CUtlStableHashtable<model_t*, empty_t, CModelInfo::ModelFileHandleHash, CModelInfo::ModelFileHandleEq, short, void*>::HashProxy, CUtlStableHashtable<model_t*, empty_t, CModelInfo::ModelFileHandleHash, CModelInfo::ModelFileHandleEq, short, void*>::EqualProxy, void*>::DoLookup<void*>(void*, unsigned int, unsigned int*) const
-t unsigned int CUtlHashtable<IModelLoadCallback*, int, DefaultHashFunctor<IModelLoadCallback*>, DefaultEqualFunctor<IModelLoadCallback*>, undefined_t>::DoLookup<IModelLoadCallback*>(IModelLoadCallback*, unsigned int, unsigned int*) const [clone .part.227]
+t unsigned int CUtlHashtable<IModelLoadCallback*, int, DefaultHashFunctor<IModelLoadCallback*>, DefaultEqualFunctor<IModelLoadCallback*>, undefined_t>::DoLookup<IModelLoadCallback*>(IModelLoadCallback*, unsigned int, unsigned int*) const [clone .part.229]
 t unsigned int CUtlHashtable<qhFace*, int, DefaultHashFunctor<qhFace*>, DefaultEqualFunctor<qhFace*>, undefined_t>::DoLookup<qhFace*>(qhFace*, unsigned int, unsigned int*) const [clone .part.43] [clone .constprop.56]
-t unsigned int CUtlHashtable<model_t*, CModelLoader::CDynamicModelInfo, DefaultHashFunctor<model_t*>, DefaultEqualFunctor<model_t*>, undefined_t>::DoLookup<model_t*>(model_t*, unsigned int, unsigned int*) const [clone .part.151]
+t unsigned int CUtlHashtable<model_t*, CModelLoader::CDynamicModelInfo, DefaultHashFunctor<model_t*>, DefaultEqualFunctor<model_t*>, undefined_t>::DoLookup<model_t*>(model_t*, unsigned int, unsigned int*) const [clone .part.153]
 t CClockDriftMgr::GetCurrentClockDifference() const
 t CEngineBSPTree::LeafCount() const
 t CFrameSnapshot::GetMemSize() const
@@ -36362,6 +36371,10 @@ d CXboxSystem::GameHasSavegames()::s_bHasSavegames
 b CEngineTrace::TraceRay(Ray_t const&, unsigned int, ITraceFilter*, CGameTrace*)::_counter
 b CModelLoader::Map_IsValid(char const*, bool)::s_szBaseMapName
 b CModelLoader::UpdateDynamicModelLoadQueue()::s_LastDynamicLoadTime
+b CModelLoader::FindModel(char const*)::s_BannedMDLs
+t CModelLoader::FindModel(char const*)::BannedMDLs_t::BannedMDLs_t() [clone .constprop.248]
+t CModelLoader::FindModel(char const*)::BannedMDLs_t::~BannedMDLs_t()
+t CModelLoader::FindModel(char const*)::BannedMDLs_t::~BannedMDLs_t()
 b CModelRender::StaticPropColorMeshCallback(void*, void const*, int, FSAsyncStatus_t)::r_staticlight_streams
 b CModelRender::ValidateStaticPropColorData(unsigned short)::r_staticlight_streams
 b (anonymous namespace)::get_global()::global

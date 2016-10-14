@@ -1120,6 +1120,7 @@ t CalculateAABBFromProjectionMatrix(VMatrix const&, Vector*, Vector*)
 t Kochanek_Bartels_Spline_NormalizeX(float, float, float, Vector const&, Vector const&, Vector const&, Vector const&, float, Vector&)
 t Vector3DMultiplyPositionProjective(VMatrix const&, Vector const&, Vector&)
 t CalculateSphereFromProjectionMatrix(VMatrix const&, Vector*, float*)
+t GameTypesRecursivelyCensorKeyValues(KeyValues*)
 t MM_Title_RichPresence_PlayersChanged(KeyValues*)
 t Catmull_Rom_Spline_Integral_Normalize(Vector const&, Vector const&, Vector const&, Vector const&, float, Vector&)
 t CalculateAABBFromProjectionMatrixInverse(VMatrix const&, Vector*, Vector*)
@@ -1185,6 +1186,8 @@ t V_wcsncpy(wchar_t*, wchar_t const*, int)
 t _V_wcsupr(wchar_t*)
 t operator delete[](void*)
 t operator delete(void*)
+b guard variable for GameTypesRecursivelyCensorKeyValues(KeyValues*)::bLoadBannedWords
+b guard variable for GameTypesRecursivelyCensorKeyValues(KeyValues*)::nSrchLen
 b guard variable for PrepareTitleDataStorageDescription()::s_tdfd
 b guard variable for CMatchTitle::DescribeTitleDataStorage()::s_pTDFD
 b guard variable for CMatchTitleGameSettingsMgr::InitializeGameSettings(KeyValues*, char const*)::sv_search_key
@@ -2931,6 +2934,8 @@ b V_pretifynum(long long)::current
 r V_LogMultiline(bool, char const*, char const*, unsigned int, CUtlString&)::HEX
 d GetBitForBitnum(int)::bitsForBitnum
 b COM_GetModDirectory()::modDir
+b GameTypesRecursivelyCensorKeyValues(KeyValues*)::bLoadBannedWords
+b GameTypesRecursivelyCensorKeyValues(KeyValues*)::nSrchLen
 b MM_Title_RichPresence_PrepareForSessionCreate(KeyValues*)::val
 b Bias(float, float)::lastExponent
 b PrepareTitleDataStorageDescription()::s_tdfd

@@ -1457,6 +1457,7 @@ b guard variable for datamap_t* DataMapInit<ZIP_PreloadDirectoryEntry>(ZIP_Prelo
 b guard variable for AllocTempVector()::s_nIndex
 b guard variable for AllocTempVector()::s_vecTemp
 b guard variable for pathmatch(char const*, char**, bool, char*, unsigned int)::s_pszDbgPathMatch
+b guard variable for V_FormatFilenameForSymlinking(char (&) [260], char const*)::bLoadBannedWords
 b guard variable for CPackedStore::GetFileHandle(int)::invalid
 b guard variable for CBaseFileSystem::LogAccessToFile(char const*, char const*, char const*)::autoMutex__
 b guard variable for CKeyValuesDumpContextAsDevMsg::KvBeginKey(KeyValues*, int)::r_developer
@@ -2381,7 +2382,7 @@ t CFileAsyncJob::~CFileAsyncJob()
 t CFileAsyncJob::~CFileAsyncJob()
 t CFileAsyncJob::~CFileAsyncJob()
 t CFileOpenInfo::SetAbsolutePath(char const*, ...)
-t CFileOpenInfo::HandleFileCRCTracking(char const*, bool) [clone .part.39]
+t CFileOpenInfo::HandleFileCRCTracking(char const*, bool) [clone .part.38]
 t CFileTracker2::ShutdownAsync()
 t CFileTracker2::RecordFileRead(void*, unsigned int, unsigned int, _IO_FILE*)
 t CFileTracker2::RecordFileSeek(_IO_FILE*, long long, int)
@@ -2698,7 +2699,7 @@ t CBaseFileSystem::CSearchPathsVisits::~CSearchPathsVisits()
 t CBaseFileSystem::CSearchPathsVisits::~CSearchPathsVisits()
 t CBaseFileSystem::DiscardPreloadData()
 t CBaseFileSystem::FindNextFileHelper(CBaseFileSystem::FindData_t*, int*)
-t CBaseFileSystem::FindNextFileHelper(CBaseFileSystem::FindData_t*, int*) [clone .part.193]
+t CBaseFileSystem::FindNextFileHelper(CBaseFileSystem::FindData_t*, int*) [clone .part.192]
 b CBaseFileSystem::m_ExcludeFilePaths
 t CBaseFileSystem::OpenedFileLessFunc(CBaseFileSystem::COpenedFile const&, CBaseFileSystem::COpenedFile const&)
 t CBaseFileSystem::AddPackFileFromPath(char const*, char const*, bool, char const*)
@@ -2722,7 +2723,7 @@ t CBaseFileSystem::IsSpecificDLCPresent(unsigned int)
 t CBaseFileSystem::RemoveAllSearchPaths()
 t CBaseFileSystem::ShouldGameReloadFile(char const*)
 t CBaseFileSystem::AddSearchPathInternal(char const*, char const*, SearchPathAdd_t, bool, int)
-t CBaseFileSystem::AddSearchPathInternal(char const*, char const*, SearchPathAdd_t, bool, int) [clone .part.292]
+t CBaseFileSystem::AddSearchPathInternal(char const*, char const*, SearchPathAdd_t, bool, int) [clone .part.291]
 t CBaseFileSystem::CacheAllVPKFileHashes(bool, bool)
 t CBaseFileSystem::FindFileInSearchPaths(char const*, char const*, char const*, unsigned int, char**, bool)
 t CBaseFileSystem::FreeOptimalReadBuffer(void*)
@@ -2749,7 +2750,7 @@ t CBaseFileSystem::MarkPathIDByRequestOnly(char const*, bool)
 t CBaseFileSystem::RemoveAllMapSearchPaths()
 t CBaseFileSystem::Trace_DumpUnclosedFiles()
 t CBaseFileSystem::FullPathToRelativePathEx(char const*, char const*, char*, int)
-t CBaseFileSystem::FullPathToRelativePathEx(char const*, char const*, char*, int) [clone .part.79]
+t CBaseFileSystem::FullPathToRelativePathEx(char const*, char const*, char*, int) [clone .part.78]
 b CBaseFileSystem::m_bFoundXboxImageInCache
 t CBaseFileSystem::IsInstalledToXboxHDDCache()
 t CBaseFileSystem::FindFileAbsoluteListHelper(CUtlVector<CUtlString, CUtlMemory<CUtlString, int> >&, CBaseFileSystem::FindData_t&, char const*)
@@ -4204,6 +4205,7 @@ b UTIL_GetExecutableDir()::exedir
 b Bias(float, float)::lastExponent
 b MD5_Print(unsigned char*, int)::szReturn
 b pathmatch(char const*, char**, bool, char*, unsigned int)::s_pszDbgPathMatch
+b V_FormatFilenameForSymlinking(char (&) [260], char const*)::bLoadBannedWords
 b va(char*, ...)::string
 b va(char*, ...)::curstring
 b CUtlSymbol::Initialize()::symbolsInitialized

@@ -21370,6 +21370,7 @@ t KeyValues::ReadAsBinary(CUtlBuffer&, int)
 t KeyValues::RemoveSubKey(KeyValues*)
 t KeyValues::WriteIndents(IBaseFileSystem*, void*, CUtlBuffer*, int)
 t KeyValues::ChainKeyValue(KeyValues*)
+t KeyValues::CreatePeerKey(char const*)
 t KeyValues::GetFirstValue()
 t KeyValues::InternalWrite(IBaseFileSystem*, void*, CUtlBuffer*, void const*, int)
 t KeyValues::MergeBaseKeys(CUtlVector<KeyValues*, CUtlMemory<KeyValues*, int> >&)
@@ -22718,6 +22719,8 @@ t CSVCMsg_PacketEntities::SerializeWithCachedSizesToArray(unsigned char*) const
 t CSVCMsg_PacketEntities::New() const
 t CSVCMsg_PacketEntities::ByteSize() const
 t SteamDatagramLinkStats::Print(char*, int) const
+t SteamDatagramTransport::PingTracker::OptimisticPingEstimate() const
+t SteamDatagramTransport::PingTracker::PessimisticPingEstimate() const
 t SteamDatagramTransport::LinkStatsTracker::GetLinkStats(SteamDatagramLinkStats&, unsigned long long) const
 t SteamDatagramTransport::LinkStatsTracker::GetLifetimeStats(SteamDatagramLinkLifetimeStats&) const
 t SteamDatagramTransport::LinkStatsTracker::GetInstantaneousStats(SteamDatagramLinkInstantaneousStats&) const
@@ -30336,7 +30339,6 @@ t std::_Rb_tree_rotate_right(std::_Rb_tree_node_base*, std::_Rb_tree_node_base*&
 t std::__throw_bad_exception()
 t std::__throw_runtime_error(char const*)
 t __gnu_cxx::__normal_iterator<google::protobuf::FieldDescriptor const**, std::vector<google::protobuf::FieldDescriptor const*, std::allocator<google::protobuf::FieldDescriptor const*> > > std::__unguarded_partition<__gnu_cxx::__normal_iterator<google::protobuf::FieldDescriptor const**, std::vector<google::protobuf::FieldDescriptor const*, std::allocator<google::protobuf::FieldDescriptor const*> > >, google::protobuf::FieldDescriptor const*, google::protobuf::internal::(anonymous namespace)::FieldNumberSorter>(__gnu_cxx::__normal_iterator<google::protobuf::FieldDescriptor const**, std::vector<google::protobuf::FieldDescriptor const*, std::allocator<google::protobuf::FieldDescriptor const*> > >, __gnu_cxx::__normal_iterator<google::protobuf::FieldDescriptor const**, std::vector<google::protobuf::FieldDescriptor const*, std::allocator<google::protobuf::FieldDescriptor const*> > >, google::protobuf::FieldDescriptor const* const&, google::protobuf::internal::(anonymous namespace)::FieldNumberSorter)
-t ServerWithSessionSort* std::__unguarded_partition<ServerWithSessionSort*, ServerWithSessionSort>(ServerWithSessionSort*, ServerWithSessionSort*, ServerWithSessionSort const&)
 t SteamDatagramTransport::SteamDatagramNetwork::RouterAddressLookup* std::__unguarded_partition<SteamDatagramTransport::SteamDatagramNetwork::RouterAddressLookup*, SteamDatagramTransport::SteamDatagramNetwork::RouterAddressLookup>(SteamDatagramTransport::SteamDatagramNetwork::RouterAddressLookup*, SteamDatagramTransport::SteamDatagramNetwork::RouterAddressLookup*, SteamDatagramTransport::SteamDatagramNetwork::RouterAddressLookup const&)
 t std::_Deque_iterator<CryptoPP::MeterFilter::MessageRange, CryptoPP::MeterFilter::MessageRange&, CryptoPP::MeterFilter::MessageRange*> std::__unguarded_partition<std::_Deque_iterator<CryptoPP::MeterFilter::MessageRange, CryptoPP::MeterFilter::MessageRange&, CryptoPP::MeterFilter::MessageRange*>, CryptoPP::MeterFilter::MessageRange>(std::_Deque_iterator<CryptoPP::MeterFilter::MessageRange, CryptoPP::MeterFilter::MessageRange&, CryptoPP::MeterFilter::MessageRange*>, std::_Deque_iterator<CryptoPP::MeterFilter::MessageRange, CryptoPP::MeterFilter::MessageRange&, CryptoPP::MeterFilter::MessageRange*>, CryptoPP::MeterFilter::MessageRange const&)
 t int* std::__copy_move_backward_a<false, int*, int*>(int*, int*, int*)

@@ -9003,6 +9003,8 @@ b (anonymous namespace)::CSVCMsg_GameEventList_key_t_reflection_
 b (anonymous namespace)::ENetworkDisconnectionReason_descriptor_
 b (anonymous namespace)::CSVCMsg_SendTable_sendprop_t_descriptor_
 b (anonymous namespace)::CSVCMsg_SendTable_sendprop_t_reflection_
+b (anonymous namespace)::CMsgSteamDatagramRouterHealth_descriptor_
+b (anonymous namespace)::CMsgSteamDatagramRouterHealth_reflection_
 b (anonymous namespace)::CMsgSteamDatagramGameserverPing_descriptor_
 b (anonymous namespace)::CMsgSteamDatagramGameserverPing_reflection_
 b (anonymous namespace)::CMsgSteamDatagramDataCenterState_descriptor_
@@ -9027,6 +9029,8 @@ b (anonymous namespace)::CMsgSteamDatagramLinkInstantaneousStats_descriptor_
 b (anonymous namespace)::CMsgSteamDatagramLinkInstantaneousStats_reflection_
 b (anonymous namespace)::CMsgSteamDatagramClientPingSampleRequest_descriptor_
 b (anonymous namespace)::CMsgSteamDatagramClientPingSampleRequest_reflection_
+b (anonymous namespace)::CMsgSteamDatagramRouterHealth_DataCenter_descriptor_
+b (anonymous namespace)::CMsgSteamDatagramRouterHealth_DataCenter_reflection_
 b (anonymous namespace)::CMsgSteamDatagramGameserverSessionRequest_descriptor_
 b (anonymous namespace)::CMsgSteamDatagramGameserverSessionRequest_reflection_
 b (anonymous namespace)::CMsgSteamDatagramDataCenterState_DataCenter_descriptor_
@@ -13701,6 +13705,33 @@ t CEngineConsoleLoggingListener::Log(LoggingContext_t const*, char const*)
 t CKeyValuesDumpContextAsDevMsg::KvBeginKey(KeyValues*, int)
 t CKeyValuesDumpContextAsDevMsg::KvWriteText(char const*)
 t CKeyValuesDumpForStatusReport::KvWriteText(char const*)
+t CMsgSteamDatagramRouterHealth::descriptor()
+t CMsgSteamDatagramRouterHealth::SharedCtor()
+t CMsgSteamDatagramRouterHealth::SharedDtor()
+t CMsgSteamDatagramRouterHealth::default_instance()
+b CMsgSteamDatagramRouterHealth::default_instance_
+r CMsgSteamDatagramRouterHealth::kMagicFieldNumber
+r CMsgSteamDatagramRouterHealth::kCpuLoadFieldNumber
+t CMsgSteamDatagramRouterHealth::InitAsDefaultInstance()
+r CMsgSteamDatagramRouterHealth::kDataCentersFieldNumber
+r CMsgSteamDatagramRouterHealth::kDataPktsSecFieldNumber
+r CMsgSteamDatagramRouterHealth::kOtherPktsSecFieldNumber
+r CMsgSteamDatagramRouterHealth::kActiveSessionsFieldNumber
+t CMsgSteamDatagramRouterHealth::MergePartialFromCodedStream(google::protobuf::io::CodedInputStream*)
+r CMsgSteamDatagramRouterHealth::kSecondsUntilShutdownFieldNumber
+t CMsgSteamDatagramRouterHealth::Swap(CMsgSteamDatagramRouterHealth*)
+t CMsgSteamDatagramRouterHealth::Clear()
+t CMsgSteamDatagramRouterHealth::CopyFrom(google::protobuf::Message const&)
+t CMsgSteamDatagramRouterHealth::CopyFrom(CMsgSteamDatagramRouterHealth const&)
+t CMsgSteamDatagramRouterHealth::MergeFrom(google::protobuf::Message const&)
+t CMsgSteamDatagramRouterHealth::MergeFrom(CMsgSteamDatagramRouterHealth const&)
+t CMsgSteamDatagramRouterHealth::CMsgSteamDatagramRouterHealth(CMsgSteamDatagramRouterHealth const&)
+t CMsgSteamDatagramRouterHealth::CMsgSteamDatagramRouterHealth()
+t CMsgSteamDatagramRouterHealth::CMsgSteamDatagramRouterHealth(CMsgSteamDatagramRouterHealth const&)
+t CMsgSteamDatagramRouterHealth::CMsgSteamDatagramRouterHealth()
+t CMsgSteamDatagramRouterHealth::~CMsgSteamDatagramRouterHealth()
+t CMsgSteamDatagramRouterHealth::~CMsgSteamDatagramRouterHealth()
+t CMsgSteamDatagramRouterHealth::~CMsgSteamDatagramRouterHealth()
 t CSimpleWindowsLoggingListener::Log(LoggingContext_t const*, char const*)
 t CTraceFilterWorldAndPropsOnly::ShouldHitEntity(IHandleEntity*, int)
 t SteamDatagramLinkLifetimeStats::Clear()
@@ -13765,8 +13796,11 @@ r CMsgSteamDatagramRouterPingReply::kYourPublicIpFieldNumber
 r CMsgSteamDatagramRouterPingReply::kLatencyPingMsFieldNumber
 r CMsgSteamDatagramRouterPingReply::kClientTimestampFieldNumber
 t CMsgSteamDatagramRouterPingReply::MergePartialFromCodedStream(google::protobuf::io::CodedInputStream*)
+r CMsgSteamDatagramRouterPingReply::kRelayScoringPenaltyFieldNumber
 r CMsgSteamDatagramRouterPingReply::kLatencyDatacenterIdsFieldNumber
+r CMsgSteamDatagramRouterPingReply::kScoringPenaltyValuesFieldNumber
 r CMsgSteamDatagramRouterPingReply::kSecondsUntilShutdownFieldNumber
+r CMsgSteamDatagramRouterPingReply::kScoringPenaltyDatacenterIdsFieldNumber
 t CMsgSteamDatagramRouterPingReply::Swap(CMsgSteamDatagramRouterPingReply*)
 t CMsgSteamDatagramRouterPingReply::Clear()
 t CMsgSteamDatagramRouterPingReply::CopyFrom(google::protobuf::Message const&)
@@ -14056,6 +14090,28 @@ t CMsgSteamDatagramClientPingSampleRequest::CMsgSteamDatagramClientPingSampleReq
 t CMsgSteamDatagramClientPingSampleRequest::~CMsgSteamDatagramClientPingSampleRequest()
 t CMsgSteamDatagramClientPingSampleRequest::~CMsgSteamDatagramClientPingSampleRequest()
 t CMsgSteamDatagramClientPingSampleRequest::~CMsgSteamDatagramClientPingSampleRequest()
+t CMsgSteamDatagramRouterHealth_DataCenter::descriptor()
+t CMsgSteamDatagramRouterHealth_DataCenter::SharedCtor()
+t CMsgSteamDatagramRouterHealth_DataCenter::SharedDtor()
+t CMsgSteamDatagramRouterHealth_DataCenter::default_instance()
+b CMsgSteamDatagramRouterHealth_DataCenter::default_instance_
+r CMsgSteamDatagramRouterHealth_DataCenter::kStateFieldNumber
+t CMsgSteamDatagramRouterHealth_DataCenter::InitAsDefaultInstance()
+r CMsgSteamDatagramRouterHealth_DataCenter::kDatacenterIdFieldNumber
+t CMsgSteamDatagramRouterHealth_DataCenter::MergePartialFromCodedStream(google::protobuf::io::CodedInputStream*)
+t CMsgSteamDatagramRouterHealth_DataCenter::Swap(CMsgSteamDatagramRouterHealth_DataCenter*)
+t CMsgSteamDatagramRouterHealth_DataCenter::Clear()
+t CMsgSteamDatagramRouterHealth_DataCenter::CopyFrom(google::protobuf::Message const&)
+t CMsgSteamDatagramRouterHealth_DataCenter::CopyFrom(CMsgSteamDatagramRouterHealth_DataCenter const&)
+t CMsgSteamDatagramRouterHealth_DataCenter::MergeFrom(google::protobuf::Message const&)
+t CMsgSteamDatagramRouterHealth_DataCenter::MergeFrom(CMsgSteamDatagramRouterHealth_DataCenter const&)
+t CMsgSteamDatagramRouterHealth_DataCenter::CMsgSteamDatagramRouterHealth_DataCenter(CMsgSteamDatagramRouterHealth_DataCenter const&)
+t CMsgSteamDatagramRouterHealth_DataCenter::CMsgSteamDatagramRouterHealth_DataCenter()
+t CMsgSteamDatagramRouterHealth_DataCenter::CMsgSteamDatagramRouterHealth_DataCenter(CMsgSteamDatagramRouterHealth_DataCenter const&)
+t CMsgSteamDatagramRouterHealth_DataCenter::CMsgSteamDatagramRouterHealth_DataCenter()
+t CMsgSteamDatagramRouterHealth_DataCenter::~CMsgSteamDatagramRouterHealth_DataCenter()
+t CMsgSteamDatagramRouterHealth_DataCenter::~CMsgSteamDatagramRouterHealth_DataCenter()
+t CMsgSteamDatagramRouterHealth_DataCenter::~CMsgSteamDatagramRouterHealth_DataCenter()
 t CMsgSteamDatagramGameserverSessionRequest::descriptor()
 t CMsgSteamDatagramGameserverSessionRequest::SharedCtor()
 t CMsgSteamDatagramGameserverSessionRequest::SharedDtor()
@@ -14164,6 +14220,8 @@ r CMsgSteamDatagramConnectionStatsRouterToClient::kSeqNumR2CFieldNumber
 r CMsgSteamDatagramConnectionStatsRouterToClient::kSeqNumS2CFieldNumber
 r CMsgSteamDatagramConnectionStatsRouterToClient::kClientCookieFieldNumber
 t CMsgSteamDatagramConnectionStatsRouterToClient::MergePartialFromCodedStream(google::protobuf::io::CodedInputStream*)
+r CMsgSteamDatagramConnectionStatsRouterToClient::kMigrateRequestIpFieldNumber
+r CMsgSteamDatagramConnectionStatsRouterToClient::kMigrateRequestPortFieldNumber
 r CMsgSteamDatagramConnectionStatsRouterToClient::kSecondsUntilShutdownFieldNumber
 r CMsgSteamDatagramConnectionStatsRouterToClient::kRouterGameserverLatencyFieldNumber
 r CMsgSteamDatagramConnectionStatsRouterToClient::kClientTimestampFromRouterFieldNumber
@@ -14964,7 +15022,7 @@ t google::protobuf::RepeatedField<unsigned int>::RepeatedField()
 t google::protobuf::RepeatedField<unsigned int>::RepeatedField()
 t google::protobuf::RepeatedField<unsigned int>::~RepeatedField()
 t google::protobuf::RepeatedField<unsigned int>::~RepeatedField()
-t google::protobuf::RepeatedField<unsigned int>::~RepeatedField() [clone .isra.452]
+t google::protobuf::RepeatedField<unsigned int>::~RepeatedField() [clone .isra.482]
 t google::protobuf::RepeatedField<unsigned int>::~RepeatedField() [clone .isra.669]
 t google::protobuf::RepeatedField<long long>::RemoveLast()
 t google::protobuf::RepeatedField<long long>::SwapElements(int, int)
@@ -15276,6 +15334,8 @@ t google::protobuf::RepeatedPtrField<CSVCMsg_GameEventList_descriptor_t>::~Repea
 t google::protobuf::RepeatedPtrField<CSVCMsg_GameEventList_descriptor_t>::~RepeatedPtrField()
 t google::protobuf::RepeatedPtrField<CMsgSteamDatagramDataCenterState_Server>::~RepeatedPtrField()
 t google::protobuf::RepeatedPtrField<CMsgSteamDatagramDataCenterState_Server>::~RepeatedPtrField()
+t google::protobuf::RepeatedPtrField<CMsgSteamDatagramRouterHealth_DataCenter>::~RepeatedPtrField()
+t google::protobuf::RepeatedPtrField<CMsgSteamDatagramRouterHealth_DataCenter>::~RepeatedPtrField()
 t google::protobuf::RepeatedPtrField<CMsgSteamDatagramDataCenterState_DataCenter>::~RepeatedPtrField()
 t google::protobuf::RepeatedPtrField<CMsgSteamDatagramDataCenterState_DataCenter>::~RepeatedPtrField()
 t google::protobuf::RepeatedPtrField<CMsgSteamDatagramGameServerAuthTicket_ExtraField>::~RepeatedPtrField()
@@ -16780,7 +16840,6 @@ t unsigned char* google::protobuf::internal::WireFormatLite::WriteMessageNoVirtu
 t unsigned char* google::protobuf::internal::WireFormatLite::WriteMessageNoVirtualToArray<google::protobuf::UninterpretedOption_NamePart>(int, google::protobuf::UninterpretedOption_NamePart const&, unsigned char*)
 t unsigned char* google::protobuf::internal::WireFormatLite::WriteMessageNoVirtualToArray<google::protobuf::DescriptorProto_ExtensionRange>(int, google::protobuf::DescriptorProto_ExtensionRange const&, unsigned char*)
 t bool google::protobuf::internal::WireFormatLite::ReadRepeatedPrimitiveNoInline<int, (google::protobuf::internal::WireFormatLite::FieldType)5>(int, unsigned int, google::protobuf::io::CodedInputStream*, google::protobuf::RepeatedField<int>*)
-t bool google::protobuf::internal::WireFormatLite::ReadRepeatedPrimitiveNoInline<unsigned int, (google::protobuf::internal::WireFormatLite::FieldType)13>(int, unsigned int, google::protobuf::io::CodedInputStream*, google::protobuf::RepeatedField<unsigned int>*)
 t google::protobuf::internal::WireFormatLite::MakeTag(int, google::protobuf::internal::WireFormatLite::WireType)
 t google::protobuf::internal::WireFormatLite::TagSize(int, google::protobuf::internal::WireFormatLite::FieldType)
 t google::protobuf::internal::WireFormatLite::EnumSize(int)
@@ -22865,6 +22924,14 @@ t CSVCMsg_SendTable_sendprop_t::SerializeWithCachedSizes(google::protobuf::io::C
 t CSVCMsg_SendTable_sendprop_t::SerializeWithCachedSizesToArray(unsigned char*) const
 t CSVCMsg_SendTable_sendprop_t::New() const
 t CSVCMsg_SendTable_sendprop_t::ByteSize() const
+t CMsgSteamDatagramRouterHealth::GetMetadata() const
+t CMsgSteamDatagramRouterHealth::GetCachedSize() const
+t CMsgSteamDatagramRouterHealth::IsInitialized() const
+t CMsgSteamDatagramRouterHealth::SetCachedSize(int) const
+t CMsgSteamDatagramRouterHealth::SerializeWithCachedSizes(google::protobuf::io::CodedOutputStream*) const
+t CMsgSteamDatagramRouterHealth::SerializeWithCachedSizesToArray(unsigned char*) const
+t CMsgSteamDatagramRouterHealth::New() const
+t CMsgSteamDatagramRouterHealth::ByteSize() const
 t CTraceFilterWorldAndPropsOnly::GetTraceType() const
 t ISteamDatagramTransportClient::ConnectionStatus::Print(char*, int) const
 t SteamDatagramLinkLifetimeStats::PingHistogramTotalCount() const
@@ -22971,6 +23038,14 @@ t CMsgSteamDatagramClientPingSampleRequest::SerializeWithCachedSizes(google::pro
 t CMsgSteamDatagramClientPingSampleRequest::SerializeWithCachedSizesToArray(unsigned char*) const
 t CMsgSteamDatagramClientPingSampleRequest::New() const
 t CMsgSteamDatagramClientPingSampleRequest::ByteSize() const
+t CMsgSteamDatagramRouterHealth_DataCenter::GetMetadata() const
+t CMsgSteamDatagramRouterHealth_DataCenter::GetCachedSize() const
+t CMsgSteamDatagramRouterHealth_DataCenter::IsInitialized() const
+t CMsgSteamDatagramRouterHealth_DataCenter::SetCachedSize(int) const
+t CMsgSteamDatagramRouterHealth_DataCenter::SerializeWithCachedSizes(google::protobuf::io::CodedOutputStream*) const
+t CMsgSteamDatagramRouterHealth_DataCenter::SerializeWithCachedSizesToArray(unsigned char*) const
+t CMsgSteamDatagramRouterHealth_DataCenter::New() const
+t CMsgSteamDatagramRouterHealth_DataCenter::ByteSize() const
 t CMsgSteamDatagramGameserverSessionRequest::GetMetadata() const
 t CMsgSteamDatagramGameserverSessionRequest::GetCachedSize() const
 t CMsgSteamDatagramGameserverSessionRequest::IsInitialized() const
@@ -32719,6 +32794,7 @@ r typeinfo for StreamDemoBufferInitParams_t
 r typeinfo for CEngineConsoleLoggingListener
 r typeinfo for CKeyValuesDumpContextAsDevMsg
 r typeinfo for CKeyValuesDumpForStatusReport
+r typeinfo for CMsgSteamDatagramRouterHealth
 d typeinfo for CSimpleWindowsLoggingListener
 r typeinfo for CTraceFilterWorldAndPropsOnly
 r typeinfo for ISteamDatagramTransportClient
@@ -32737,6 +32813,7 @@ r typeinfo for CMsgSteamDatagramClientSwitchedPrimary
 r typeinfo for CMsgSteamDatagramDataCenterState_Server
 r typeinfo for CMsgSteamDatagramLinkInstantaneousStats
 r typeinfo for CMsgSteamDatagramClientPingSampleRequest
+r typeinfo for CMsgSteamDatagramRouterHealth_DataCenter
 r typeinfo for CMsgSteamDatagramGameserverSessionRequest
 r typeinfo for CMsgSteamDatagramDataCenterState_DataCenter
 r typeinfo for CMsgSteamDatagramGameserverSessionEstablished
@@ -33901,6 +33978,7 @@ r typeinfo name for StreamDemoBufferInitParams_t
 r typeinfo name for CEngineConsoleLoggingListener
 r typeinfo name for CKeyValuesDumpContextAsDevMsg
 r typeinfo name for CKeyValuesDumpForStatusReport
+r typeinfo name for CMsgSteamDatagramRouterHealth
 r typeinfo name for CSimpleWindowsLoggingListener
 r typeinfo name for CTraceFilterWorldAndPropsOnly
 r typeinfo name for ISteamDatagramTransportClient
@@ -33919,6 +33997,7 @@ r typeinfo name for CMsgSteamDatagramClientSwitchedPrimary
 r typeinfo name for CMsgSteamDatagramDataCenterState_Server
 r typeinfo name for CMsgSteamDatagramLinkInstantaneousStats
 r typeinfo name for CMsgSteamDatagramClientPingSampleRequest
+r typeinfo name for CMsgSteamDatagramRouterHealth_DataCenter
 r typeinfo name for CMsgSteamDatagramGameserverSessionRequest
 r typeinfo name for CMsgSteamDatagramDataCenterState_DataCenter
 r typeinfo name for CMsgSteamDatagramGameserverSessionEstablished
@@ -35365,6 +35444,7 @@ r vtable for StreamDemoBufferInitParams_t
 r vtable for CEngineConsoleLoggingListener
 r vtable for CKeyValuesDumpContextAsDevMsg
 r vtable for CKeyValuesDumpForStatusReport
+r vtable for CMsgSteamDatagramRouterHealth
 d vtable for CSimpleWindowsLoggingListener
 r vtable for CTraceFilterWorldAndPropsOnly
 r vtable for ISteamDatagramTransportClient
@@ -35383,6 +35463,7 @@ r vtable for CMsgSteamDatagramClientSwitchedPrimary
 r vtable for CMsgSteamDatagramDataCenterState_Server
 r vtable for CMsgSteamDatagramLinkInstantaneousStats
 r vtable for CMsgSteamDatagramClientPingSampleRequest
+r vtable for CMsgSteamDatagramRouterHealth_DataCenter
 r vtable for CMsgSteamDatagramGameserverSessionRequest
 r vtable for CMsgSteamDatagramDataCenterState_DataCenter
 r vtable for CMsgSteamDatagramGameserverSessionEstablished
@@ -36289,6 +36370,7 @@ b vstr(Vector&)::idx
 b vstr(Vector&)::string
 r protobuf_AssignDesc_steamdatagram_5fmessages_2eproto()::CMsgSteamDatagramNoSession_offsets_
 r protobuf_AssignDesc_steamdatagram_5fmessages_2eproto()::CMsgSteamDatagramDiagnostic_offsets_
+r protobuf_AssignDesc_steamdatagram_5fmessages_2eproto()::CMsgSteamDatagramRouterHealth_offsets_
 r protobuf_AssignDesc_steamdatagram_5fmessages_2eproto()::CMsgSteamDatagramGameserverPing_offsets_
 r protobuf_AssignDesc_steamdatagram_5fmessages_2eproto()::CMsgSteamDatagramDataCenterState_offsets_
 r protobuf_AssignDesc_steamdatagram_5fmessages_2eproto()::CMsgSteamDatagramRouterPingReply_offsets_
@@ -36300,6 +36382,7 @@ r protobuf_AssignDesc_steamdatagram_5fmessages_2eproto()::CMsgSteamDatagramClien
 r protobuf_AssignDesc_steamdatagram_5fmessages_2eproto()::CMsgSteamDatagramDataCenterState_Server_offsets_
 r protobuf_AssignDesc_steamdatagram_5fmessages_2eproto()::CMsgSteamDatagramLinkInstantaneousStats_offsets_
 r protobuf_AssignDesc_steamdatagram_5fmessages_2eproto()::CMsgSteamDatagramClientPingSampleRequest_offsets_
+r protobuf_AssignDesc_steamdatagram_5fmessages_2eproto()::CMsgSteamDatagramRouterHealth_DataCenter_offsets_
 r protobuf_AssignDesc_steamdatagram_5fmessages_2eproto()::CMsgSteamDatagramGameserverSessionRequest_offsets_
 r protobuf_AssignDesc_steamdatagram_5fmessages_2eproto()::CMsgSteamDatagramDataCenterState_DataCenter_offsets_
 r protobuf_AssignDesc_steamdatagram_5fmessages_2eproto()::CMsgSteamDatagramGameserverSessionEstablished_offsets_

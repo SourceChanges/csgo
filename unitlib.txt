@@ -1,389 +1,38 @@
 U abort@@GLIBC_2.0
-t add_fdes
-d adds.7496
-t base_from_cb_data
-t base_from_object
 A __bss_start
-t _calloc_dbg
-t classify_object_over_fdes
-b completed.5793
-d cplus_demangle_builtin_types
-d cplus_demangle_operators
-d __CTOR_END__
-d __CTOR_LIST__
-t __cxa_allocate_dependent_exception
-t __cxa_allocate_exception
-t __cxa_begin_catch
-t __cxa_call_terminate
-t __cxa_call_unexpected
-t __cxa_current_exception_type
-t __cxa_demangle
-t __cxa_end_catch
 w __cxa_finalize@@GLIBC_2.1.3
-t __cxa_free_dependent_exception
-t __cxa_free_exception
-t __cxa_get_exception_ptr
-t __cxa_get_globals
-t __cxa_get_globals_fast
-t __cxa_pure_virtual
-t __cxa_rethrow
-t __cxa_throw
-t d_add_substitution
-t d_append_buffer
-t d_append_char
-t d_append_num
-t d_append_string
-t d_bare_function_type
-t d_call_offset
-t d_compact_number
-t d_cv_qualifiers
-t d_demangle_callback.constprop.18
-t d_encoding
-t __deregister_frame
-t __deregister_frame_info
-t __deregister_frame_info_bases
-t d_expression
-t d_exprlist
-t d_expr_primary
-t d_find_pack
-t d_growable_string_callback_adapter
-t d_index_template_argument
 U dl_iterate_phdr@@GLIBC_2.2.4
-t d_make_builtin_type
-t d_make_comp
-t d_make_empty
-t d_make_name
-t d_mangled_name
-t d_name
-t d_number.isra.0
-t __do_global_ctors_aux
-t __do_global_dtors_aux
-t d_operator_name
-t d_parmlist
-t d_print_array_type.isra.10
-t d_print_cast.isra.13.part.14
-t d_print_comp
-t d_print_expr_op
-t d_print_flush
-t d_print_function_type.isra.12
-t d_print_mod
-t d_print_mod_list
-t d_print_subexpr
-d __dso_handle
-t d_source_name
-t d_substitution
-t d_template_args
-t d_template_param
-d __DTOR_END__
-b dtor_idx.5795
-d __DTOR_LIST__
-t d_type
-t d_unqualified_name
-b dwarf_reg_size_table
-d DW.ref.__gxx_personality_v0
-d DW.ref._ZTISt9exception
-a _DYNAMIC
 A _edata
 A _end
-t execute_cfa_program
-t execute_stack_op
-t _expand_dbg
-t fde_mixed_encoding_compare
-t fde_single_encoding_compare
-t fde_unencoded_compare
 T _fini
 U fputc@@GLIBC_2.0
 U fputs@@GLIBC_2.0
-t frame_downheap
-t frame_dummy
-r __FRAME_END__
-b frame_hdr_cache
-b frame_hdr_cache_head
-t frame_heapsort
-t __frame_state_for
-t _free_dbg
 U free@@GLIBC_2.0
-t __gcclibcxx_demangle_callback
-t get_cie_encoding
-t get_fde_encoding
 T GetUnitTest
-a _GLOBAL_OFFSET_TABLE_
-t _GLOBAL__sub_I___cxa_pure_virtual
-t _GLOBAL__sub_I_eh_alloc.cc
-t _GLOBAL__sub_I__ZN9CTestCaseC2EPKcP10ITestSuite
 w __gmon_start__
 U g_pMemAlloc
-d g_pszModule
-t __gxx_personality_v0
-t __i686.get_pc_thunk.bx
-t __i686.get_pc_thunk.cx
-t __i686.get_pc_thunk.dx
 T _init
-t init_dwarf_reg_size_table
-d __JCR_END__
-d __JCR_LIST__
 w _Jv_RegisterClasses
-t .L12
-t .L155
-t .L156
-t .L157
-t .L158
-t .L159
-t .L160
-t .L161
-t .L162
-t .L163
-t .L164
-t .L165
-t .L166
-t .L167
-t .L168
-t .L169
-t .L17
-t .L19
-t .L20
-t .L214
-t .L215
-t .L216
-t .L217
-t .L218
-t .L218
-t .L219
-t .L220
-t .L221
-t .L222
-t .L223
-t .L224
-t .L225
-t .L226
-t .L227
-t .L228
-t .L229
-t .L23
-t .L230
-t .L24
-t .L244
-t .L25
-t .L26
-t .L26
-t .L271
-t .L272
-t .L273
-t .L274
-t .L275
-t .L28
-t .L29
-t .L32
-t .L327
-t .L328
-t .L329
-t .L33
-t .L330
-t .L331
-t .L34
-t .L35
-t .L43
-t .L45
-t .L46
-t .L47
-t .L47
-t .L48
-t .L48
-t .L49
-t .L50
-t .L51
-t .L51
-t .L52
-t .L52
-t .L53
-t .L53
-t .L54
-t .L54
-t .L542
-t .L543
-t .L544
-t .L545
-t .L546
-t .L547
-t .L549
-t .L55
-t .L550
-t .L551
-t .L552
-t .L553
-t .L554
-t .L555
-t .L556
-t .L557
-t .L558
-t .L559
-t .L56
-t .L560
-t .L561
-t .L562
-t .L563
-t .L564
-t .L565
-t .L566
-t .L567
-t .L568
-t .L569
-t .L57
-t .L570
-t .L571
-t .L572
-t .L573
-t .L574
-t .L575
-t .L576
-t .L577
-t .L579
-t .L58
-t .L581
-t .L582
-t .L583
-t .L584
-t .L585
-t .L586
-t .L587
-t .L588
-t .L589
-t .L59
-t .L590
-t .L591
-t .L6
-t .L60
-t .L61
-t .L62
-t .L63
-t .L64
-t .L65
-t .L66
-t .L663
-t .L664
-t .L665
-t .L666
-t .L667
-t .L67
-t .L68
-t .L683
-t .L69
-t .L7
-t .L70
-t .L700
-t .L71
-t .L711
-t .L712
-t .L713
-t .L714
-t .L715
-t .L716
-t .L717
-t .L718
-t .L719
-t .L720
-t .L721
-t .L722
-t .L723
-t .L8
-t .L9
-t linear_search_fdes
-t _malloc_dbg
 U malloc@@GLIBC_2.0
-b marker.7234
 U memcmp@@GLIBC_2.0
 U memset@@GLIBC_2.0
-t _msize_dbg
-t _nh_malloc_dbg
-b object_mutex
-b once_regsizes.7669
 U Plat_ExitProcess
 U Plat_IsInDebugSession
 w pthread_cancel@@GLIBC_2.0
 w pthread_mutex_lock@@GLIBC_2.0
 w pthread_mutex_unlock@@GLIBC_2.0
 w pthread_once@@GLIBC_2.0
-t read_encoded_value
-t read_encoded_value_with_base
-t read_sleb128
-t read_sleb128
-t read_uleb128
-t read_uleb128
-t _realloc_dbg
 U realloc@@GLIBC_2.0
-t __register_frame
-t __register_frame_info
-t __register_frame_info_bases
-t __register_frame_info_table
-t __register_frame_info_table_bases
-t __register_frame_table
-t search_object
-b seen_objects
-t set_fast_math
-t size_of_encoded_value
 U sprintf@@GLIBC_2.0
-d standard_subs
 U stderr@@GLIBC_2.0
 U strcmp@@GLIBC_2.0
 U strcpy@@GLIBC_2.0
 U strlen@@GLIBC_2.0
 U strncmp@@GLIBC_2.0
-b subs.7497
-b terminator.7340
 U ___tls_get_addr@@GLIBC_2.3
 T UnitTestCount
 T UnitTestInstallTestCase
-b unseen_objects
-t _Unwind_Backtrace
-t _Unwind_DebugHook
-t _Unwind_DeleteException
-t _Unwind_FindEnclosingFunction
-t _Unwind_Find_FDE
-t _Unwind_ForcedUnwind
-t _Unwind_ForcedUnwind_Phase2
-t _Unwind_GetCFA
-t _Unwind_GetDataRelBase
-t _Unwind_GetGR
-t _Unwind_GetIP
-t _Unwind_GetIPInfo
-t _Unwind_GetLanguageSpecificData
-t _Unwind_GetRegionStart
-t _Unwind_GetTextRelBase
-t _Unwind_IteratePhdrCallback
-t _Unwind_RaiseException
-t _Unwind_RaiseException_Phase2
-t _Unwind_Resume
-t _Unwind_Resume_or_Rethrow
-t _Unwind_SetGR
-t _Unwind_SetIP
-t _Unwind_SetSpColumn
-t uw_frame_state_for
-t uw_init_context_1
-t uw_install_context_1
-t uw_update_context
-t uw_update_context_1
 U WriteMiniDump
-t operator delete[](void*)
-t operator delete(void*)
-b s_TestCount
-t read_sleb128(unsigned char const*, long*)
-t read_uleb128(unsigned char const*, unsigned long*)
-b s_ppTestCases
-b emergency_used
-b dependents_used
-t get_ttype_entry(lsda_header_info*, unsigned long) [clone .constprop.6]
-b s_TestAllocated
-b emergency_buffer
-t get_adjusted_ptr(std::type_info const*, std::type_info const*, void**)
-b dependents_buffer
-t parse_lsda_header(_Unwind_Context*, unsigned char const*, lsda_header_info*) [clone .constprop.5]
-t read_encoded_value(_Unwind_Context*, unsigned char, unsigned char const*, unsigned int*)
-t check_exception_spec(lsda_header_info*, std::type_info const*, void*, long) [clone .constprop.4]
-t base_of_encoded_value(unsigned char, _Unwind_Context*)
-t __gxx_exception_cleanup(_Unwind_Reason_Code, _Unwind_Exception*)
-b UNSPECIFIED_LOGGING_COLOR
-b UNSPECIFIED_LOGGING_COLOR
-t read_encoded_value_with_base(unsigned char, unsigned int, unsigned char const*, unsigned int*)
 T CTestSuite::AddTest(ITestCase*)
 T CTestSuite::GetName()
 T CTestSuite::RunTest()
@@ -391,83 +40,28 @@ T CTestSuite::CTestSuite(char const*, ITestSuite*)
 T CTestSuite::CTestSuite(char const*, ITestSuite*)
 T CTestSuite::~CTestSuite()
 T CTestSuite::~CTestSuite()
-t __cxxabiv1::__terminate(void (*)())
-t __cxxabiv1::__unexpected(void (*)())
-t __cxxabiv1::__forced_unwind::~__forced_unwind()
-t __cxxabiv1::__forced_unwind::~__forced_unwind()
-t __cxxabiv1::__forced_unwind::~__forced_unwind()
-t __cxxabiv1::__foreign_exception::~__foreign_exception()
-t __cxxabiv1::__foreign_exception::~__foreign_exception()
-t __cxxabiv1::__foreign_exception::~__foreign_exception()
-d __cxxabiv1::__terminate_handler
-d __cxxabiv1::__unexpected_handler
-b (anonymous namespace)::emergency_mutex
 T CTestCase::GetName()
 T CTestCase::CTestCase(char const*, ITestSuite*)
 T CTestCase::CTestCase(char const*, ITestSuite*)
 T CTestCase::~CTestCase()
 T CTestCase::~CTestCase()
-t __gnu_cxx::__scoped_lock::__scoped_lock(__gnu_cxx::__mutex&)
-t __gnu_cxx::__scoped_lock::__scoped_lock(__gnu_cxx::__mutex&)
-t __gnu_cxx::__scoped_lock::~__scoped_lock()
-t __gnu_cxx::__scoped_lock::~__scoped_lock()
-t __gnu_cxx::__concurrence_lock_error::~__concurrence_lock_error()
-t __gnu_cxx::__concurrence_lock_error::~__concurrence_lock_error()
-t __gnu_cxx::__concurrence_lock_error::~__concurrence_lock_error()
-t __gnu_cxx::__concurrence_unlock_error::~__concurrence_unlock_error()
-t __gnu_cxx::__concurrence_unlock_error::~__concurrence_unlock_error()
-t __gnu_cxx::__concurrence_unlock_error::~__concurrence_unlock_error()
-t __gnu_cxx::__verbose_terminate_handler()
-t operator new[](unsigned int)
-t operator new[](unsigned int, int, char const*, int)
-t __gnu_cxx::__concurrence_lock_error::what() const
-t __gnu_cxx::__concurrence_unlock_error::what() const
-t std::bad_exception::what() const
-t std::exception::what() const
-t std::bad_exception::~bad_exception()
-t std::bad_exception::~bad_exception()
-t std::bad_exception::~bad_exception()
-t std::exception::~exception()
-t std::exception::~exception()
-t std::exception::~exception()
-t operator new(unsigned int)
-t operator new(unsigned int, int, char const*, int)
-t std::unexpected()
-t std::set_terminate(void (*)())
-t std::set_unexpected(void (*)())
-t std::uncaught_exception()
-t std::terminate()
 V typeinfo for CTestSuite
-r typeinfo for ITestSuite
 V typeinfo for CTestCase
-r typeinfo for ITestCase
 V typeinfo for __cxxabiv1::__forced_unwind
 V typeinfo for __cxxabiv1::__foreign_exception
 V typeinfo for __gnu_cxx::__concurrence_lock_error
 V typeinfo for __gnu_cxx::__concurrence_unlock_error
-d typeinfo for std::bad_exception
-d typeinfo for std::exception
 V typeinfo name for CTestSuite
-r typeinfo name for ITestSuite
 V typeinfo name for CTestCase
-r typeinfo name for ITestCase
 V typeinfo name for __cxxabiv1::__forced_unwind
 V typeinfo name for __cxxabiv1::__foreign_exception
 V typeinfo name for __gnu_cxx::__concurrence_lock_error
 V typeinfo name for __gnu_cxx::__concurrence_unlock_error
-r typeinfo name for std::bad_exception
-r typeinfo name for std::exception
 V vtable for CTestSuite
-r vtable for ITestSuite
 V vtable for CTestCase
-r vtable for ITestCase
 V vtable for __cxxabiv1::__forced_unwind
 U vtable for __cxxabiv1::__class_type_info
 V vtable for __cxxabiv1::__foreign_exception
 U vtable for __cxxabiv1::__si_class_type_info
 V vtable for __gnu_cxx::__concurrence_lock_error
 V vtable for __gnu_cxx::__concurrence_unlock_error
-d vtable for std::bad_exception
-d vtable for std::exception
-b (anonymous namespace)::get_global()::global
-b __gnu_cxx::__verbose_terminate_handler()::terminating

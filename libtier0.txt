@@ -1,8 +1,6 @@
 U abort@@GLIBC_2.0
 U access@@GLIBC_2.0
-t add_fdes
 T AddMemoryInfoCallback
-d adds.7496
 U alarm@@GLIBC_2.0
 T AllocateThreadID
 T AppendMiniProfilerToList
@@ -15,8 +13,6 @@ T _AssertValidReadWritePtr
 T _AssertValidStringPtr
 T _AssertValidWritePtr
 T AssertValidWStringPtr
-t base_from_cb_data
-t base_from_object
 T BeginWatchdogTimer
 A __bss_start
 T CallAssertFailedNotifyFunc
@@ -24,107 +20,27 @@ T CatchAndWriteMiniDump
 T _CCallStackStatsGatherer_Internal_DumpStatsToFile
 U chmod@@GLIBC_2.0
 U chown@@GLIBC_2.1
-t classify_object_over_fdes
 U closedir@@GLIBC_2.0
 T CommandLine
-b completed.5793
 T COM_TimestampedLog
 T ConDMsg
-d cplus_demangle_builtin_types
-d cplus_demangle_operators
 T CrackSmokingCompiler
 T CreateSimpleThread
 U ctime_r@@GLIBC_2.0
-d __CTOR_END__
-d __CTOR_LIST__
-t __cxa_allocate_dependent_exception
-t __cxa_allocate_exception
 U __cxa_atexit@@GLIBC_2.1.3
-t __cxa_begin_catch
-t __cxa_call_terminate
-t __cxa_call_unexpected
-t __cxa_current_exception_type
-t __cxa_demangle
-t __cxa_end_catch
 w __cxa_finalize@@GLIBC_2.1.3
-t __cxa_free_dependent_exception
-t __cxa_free_exception
-t __cxa_get_exception_ptr
-t __cxa_get_globals
-t __cxa_get_globals_fast
-t __cxa_guard_abort
-t __cxa_guard_acquire
-t __cxa_guard_release
-t __cxa_pure_virtual
-t __cxa_rethrow
-t __cxa_throw
-t d_add_substitution
-t d_append_buffer
-t d_append_char
-t d_append_num
-t d_append_string
 U __daylight@@GLIBC_2.0
 U daylight@@GLIBC_2.0
-t d_bare_function_type
-t d_call_offset
-t d_compact_number
-t d_cv_qualifiers
-t d_demangle_callback.constprop.18
 T DeclareCurrentThreadIsMainThread
 T DecodeBinaryFromString
-t d_encoding
-t __deregister_frame
-t __deregister_frame_info
-t __deregister_frame_info_bases
 T DevMsg
 T DevWarning
-t d_expression
-t d_exprlist
-t d_expr_primary
-t d_find_pack
-t d_growable_string_callback_adapter
-t d_index_template_argument
 U dlclose@@GLIBC_2.0
 U dl_iterate_phdr@@GLIBC_2.2.4
 U dlopen@@GLIBC_2.1
 U dlsym@@GLIBC_2.0
-t d_make_builtin_type
-t d_make_comp
-t d_make_empty
-t d_make_name
-t d_mangled_name
-t d_name
-t d_number.isra.0
-t __do_global_ctors_aux
-t __do_global_dtors_aux
 T DoNewAssertDialog
-t d_operator_name
-t d_parmlist
-t d_print_array_type.isra.10
-t d_print_cast.isra.13.part.14
-t d_print_comp
-t d_print_expr_op
-t d_print_flush
-t d_print_function_type.isra.12
-t d_print_mod
-t d_print_mod_list
-t d_print_subexpr
-d __dso_handle
-t d_source_name
-t d_substitution
-t d_template_args
-t d_template_param
-d __DTOR_END__
-b dtor_idx.5795
-d __DTOR_LIST__
-t d_type
 T DumpMemoryInfoStats
-t d_unqualified_name
-b dwarf_reg_size_table
-d DW.ref.__gxx_personality_v0
-d DW.ref._ZTISt9bad_alloc
-d DW.ref._ZTISt9exception
-a _DYNAMIC
 A _edata
 T EncodeBinaryToString
 A _end
@@ -134,42 +50,24 @@ T Error
 T _Error_AlwaysSpewCallStack_Enable
 T _Error_AlwaysSpewCallStack_Length
 T Error_SpewCallStack
-t execute_cfa_program
-t execute_stack_op
 U _exit@@GLIBC_2.0
 T _ExitOnFatalAssert
 U fclose@@GLIBC_2.1
-t fde_mixed_encoding_compare
-t fde_single_encoding_compare
-t fde_unencoded_compare
 U fflush@@GLIBC_2.0
 U fgetc@@GLIBC_2.0
 U fgets@@GLIBC_2.0
 T _fini
-t __fixunsdfdi
 U fopen64@@GLIBC_2.1
 U fopen@@GLIBC_2.1
 U fprintf@@GLIBC_2.0
 U fputc@@GLIBC_2.0
 U fputs@@GLIBC_2.0
-t frame_downheap
-t frame_dummy
-r __FRAME_END__
-b frame_hdr_cache
-b frame_hdr_cache_head
-t frame_heapsort
-t __frame_state_for
 U fread@@GLIBC_2.0
 U free@@GLIBC_2.0
 T FreeThreadID
 U freopen@@GLIBC_2.0
 U fscanf@@GLIBC_2.0
-d g_AllocError
-b g_bEnforceLoggingSystemSingleton
-d g_bInitMemory
-t __gcclibcxx_demangle_callback
 B g_ClockSpeed
-b g_ClockSpeedInit
 B g_ClockSpeedMicrosecondsMultiplier
 B g_ClockSpeedMillisecondsMultiplier
 B g_ClockSpeedSecondsMultiplier
@@ -177,13 +75,11 @@ B g_dwClockSpeed
 T GetAssertDialogParent
 T GetCallStack
 T GetCallStack_Fast
-t get_cie_encoding
 T GetCPUFrequencyResults
 T GetCPUInformation
 T GetCurrentDayOfTheWeek
 T GetCurrentDayOfTheYear
 U getenv@@GLIBC_2.0
-t get_fde_encoding
 T GetFileAndLineFromAddress
 T GetHardwareClockReliably
 T GetModuleNameFromAddress
@@ -193,260 +89,29 @@ T GetThreadedLoadLibraryFunc
 U gettimeofday@@GLIBC_2.0
 T GetUnitTest
 T GetVAtom
-a _GLOBAL_OFFSET_TABLE_
-t _GLOBAL__sub_I.00101_s_MemoryInfoCallbacks
-t _GLOBAL__sub_I__CCallStackStatsGatherer_Internal_DumpStatsToFile
-t _GLOBAL__sub_I_CommandLine
-t _GLOBAL__sub_I_cputopology.cpp
-t _GLOBAL__sub_I_eh_alloc.cc
-t _GLOBAL__sub_I_g_ClockSpeed
-t _GLOBAL__sub_I_GetCallStack
-t _GLOBAL__sub_I_GetCPUFrequencyResults
-t _GLOBAL__sub_I_GetCurrentDayOfTheWeek
-t _GLOBAL__sub_I_GetVAtom
-t _GLOBAL__sub_I_g_nThreadID
-t _GLOBAL__sub_I_g_PerfStats
-t _GLOBAL__sub_I_g_pszModule
-t _GLOBAL__sub_I_g_VProfSignalSpike
-t _GLOBAL__sub_I_InitPME
-t _GLOBAL__sub_I_LOG_GENERAL
-t _GLOBAL__sub_I_LOG_LOADING
-t _GLOBAL__sub_I_MemAllocScratch
-t _GLOBAL__sub_I_memdbg.cpp
-t _GLOBAL__sub_I_memvalidate.cpp
-t _GLOBAL__sub_I_Plat_CreateWindow
-t _GLOBAL__sub_I_Plat_GetMemPageSize
-t _GLOBAL__sub_I_Plat_IsInBenchmarkMode
-t _GLOBAL__sub_I_Plat_VerifyHardwareKey
-t _GLOBAL__sub_I_ReportProgress
-t _GLOBAL__sub_I_s_MemoryInfoCallbacks
-t _GLOBAL__sub_I_s_pLastMiniProfilerTS
-t _GLOBAL__sub_I_VmmMsgFlag
-t _GLOBAL__sub_I_VoidFnPtrLookup_Tier0
-t _GLOBAL__sub_I_V_tier0_stricmp
-t _GLOBAL__sub_I_vtuneinterface.cpp
-t _GLOBAL__sub_I_WriteMiniDump
-t _GLOBAL__sub_I__Z19CheckSSE3Technologyv
-t _GLOBAL__sub_I__Z22CreateNewAssertDisablePKc
-t _GLOBAL__sub_I__ZN11TSListTests8NUM_TESTE
-t _GLOBAL__sub_I__ZN9CTestCaseC2EPKcP10ITestSuite
-t _GLOBAL__sub_I__ZNSt14error_categoryC2Ev
-b g_MemStats
 w __gmon_start__
 U gmtime@@GLIBC_2.0
 U gmtime_r@@GLIBC_2.0
-b g_nMemStats
 B g_nMiniProfilerFrame
 B g_nThreadID
-b g_nThreadLocalStateIndex
 B g_pAssertMiniProfilers
-b g_pCurThread
 B g_PerfStats
-b g_pGlobalLoggingSystem
 B g_pGlobalMiniProfilers
 D g_pLastMiniProfiler
 D g_pMemAlloc
-b g_ProfilerListMutex
 D g_pRootMiniProfiler
-b g_pStartNode
-d g_pszModule
-b g_pszSumNode
-b g_rootMiniProfiler
-b g_SDLWindow
-b g_ThreadMainThreadID
-b g_TimesLessChildren
-b g_TimeSums
-b g_TimeSumsMap
-b g_TotalFrames
 B g_VProfCurrentProfile
 B g_VProfSignalSpike
-t __gxx_personality_v0
-t __i686.get_pc_thunk.bx
-t __i686.get_pc_thunk.cx
-t __i686.get_pc_thunk.dx
 T _init
-t init_dwarf_reg_size_table
 T InitPME
 T InstallProgressReportHandler
 T Is64BitOS
 T IsAssertDialogDisabled
-d __JCR_END__
-d __JCR_LIST__
 w _Jv_RegisterClasses
-t .L12
-t .L155
-t .L156
-t .L157
-t .L158
-t .L159
-t .L160
-t .L161
-t .L162
-t .L163
-t .L164
-t .L165
-t .L166
-t .L167
-t .L168
-t .L169
-t .L17
-t .L19
-t .L20
-t .L214
-t .L215
-t .L216
-t .L217
-t .L218
-t .L218
-t .L219
-t .L220
-t .L221
-t .L222
-t .L223
-t .L224
-t .L225
-t .L226
-t .L227
-t .L228
-t .L229
-t .L23
-t .L230
-t .L24
-t .L244
-t .L25
-t .L26
-t .L26
-t .L271
-t .L272
-t .L273
-t .L274
-t .L275
-t .L28
-t .L29
-t .L32
-t .L327
-t .L328
-t .L329
-t .L33
-t .L330
-t .L331
-t .L34
-t .L35
-t .L43
-t .L45
-t .L46
-t .L47
-t .L47
-t .L48
-t .L48
-t .L49
-t .L50
-t .L51
-t .L51
-t .L52
-t .L52
-t .L53
-t .L53
-t .L54
-t .L54
-t .L542
-t .L543
-t .L544
-t .L545
-t .L546
-t .L547
-t .L549
-t .L55
-t .L550
-t .L551
-t .L552
-t .L553
-t .L554
-t .L555
-t .L556
-t .L557
-t .L558
-t .L559
-t .L56
-t .L560
-t .L561
-t .L562
-t .L563
-t .L564
-t .L565
-t .L566
-t .L567
-t .L568
-t .L569
-t .L57
-t .L570
-t .L571
-t .L572
-t .L573
-t .L574
-t .L575
-t .L576
-t .L577
-t .L579
-t .L58
-t .L581
-t .L582
-t .L583
-t .L584
-t .L585
-t .L586
-t .L587
-t .L588
-t .L589
-t .L59
-t .L590
-t .L591
-t .L6
-t .L60
-t .L61
-t .L62
-t .L63
-t .L64
-t .L65
-t .L66
-t .L663
-t .L664
-t .L665
-t .L666
-t .L667
-t .L67
-t .L68
-t .L683
-t .L69
-t .L7
-t .L70
-t .L700
-t .L71
-t .L711
-t .L712
-t .L713
-t .L714
-t .L715
-t .L716
-t .L717
-t .L718
-t .L719
-t .L720
-t .L721
-t .L722
-t .L723
-t .L8
-t .L9
 U lchown@@GLIBC_2.0
-t linear_search_fdes
 U link@@GLIBC_2.0
 U localtime@@GLIBC_2.0
 U localtime_r@@GLIBC_2.0
-b LOG_ASSERT
-b LOG_CONSOLE
-b LOG_DEVELOPER
-b LOG_DEVELOPER_CONSOLE
-b LOG_DEVELOPER_VERBOSE
 B LOG_GENERAL
 T LoggingSystem_AddTagToCurrentChannel
 T LoggingSystem_FindChannel
@@ -473,14 +138,10 @@ T LoggingSystem_SetChannelSpewLevelByName
 T LoggingSystem_SetChannelSpewLevelByTag
 T LoggingSystem_SetGlobalSpewLevel
 T LoggingSystem_SetLoggingResponsePolicy
-b LOG_LOADING
-t lstat
-t __lstat
 U __lxstat64@@GLIBC_2.2
 U __lxstat@@GLIBC_2.0
 U malloc@@GLIBC_2.0
 U malloc_usable_size@@GLIBC_2.0
-b marker.7234
 T MemAllocScratch
 U memchr@@GLIBC_2.0
 U memcmp@@GLIBC_2.0
@@ -492,14 +153,10 @@ U memset@@GLIBC_2.0
 T MicroProfilerAddTS
 U mkdir@@GLIBC_2.0
 U mkfifo@@GLIBC_2.0
-t mknod
-t __mknod
 U mount@@GLIBC_2.0
 T Msg
 U nanosleep@@GLIBC_2.0
 B __new_handler
-b object_mutex
-b once_regsizes.7669
 U open64@@GLIBC_2.2
 U opendir@@GLIBC_2.0
 U open@@GLIBC_2.0
@@ -579,20 +236,8 @@ T PushMiniProfilerTS
 U puts@@GLIBC_2.0
 U rand@@GLIBC_2.0
 U readdir64@@GLIBC_2.2
-t read_encoded_value
-t read_encoded_value_with_base
-t read_sleb128
-t read_sleb128
-t read_uleb128
-t read_uleb128
 U realloc@@GLIBC_2.0
 U realpath@@GLIBC_2.3
-t __register_frame
-t __register_frame_info
-t __register_frame_info_bases
-t __register_frame_info_table
-t __register_frame_info_table_bases
-t __register_frame_table
 T ReleaseThreadHandle
 T RemoveMemoryInfoCallback
 T RemoveMiniProfilerFromList
@@ -601,34 +246,22 @@ T ReportProgress
 U rmdir@@GLIBC_2.0
 T RunTSListTests
 T RunTSQueueTests
-b s_bCpuBrandInitialized
-b s_bCpuVendorIdInitialized
 U scandir@@GLIBC_2.0
-b s_CpuBrand
-t search_object
-b seen_objects
 T SetAllAssertsDisabled
 T SetAssertDialogDisabled
 T SetAssertDialogParent
 T SetAssertFailedNotifyFunc
 T SetCPUMonitoringInterval
-t set_fast_math
 T SetStackTranslationSymbolSearchPath
 T SetThreadedLoadLibraryFunc
 T ShouldUseNewAssertDialog
 T ShutdownPME
 U signal@@GLIBC_2.0
-t size_of_encoded_value
-b s_MemoryInfoCallbacks
 U snprintf@@GLIBC_2.0
-b s_pLastMiniProfilerTS
 U sprintf@@GLIBC_2.0
 U srand@@GLIBC_2.0
 U sscanf@@GLIBC_2.0
 T StackToolsNotify_LoadedLibrary
-d standard_subs
-t stat
-t __stat
 U stderr@@GLIBC_2.0
 U stdout@@GLIBC_2.0
 U strcasecmp@@GLIBC_2.0
@@ -648,10 +281,8 @@ U strpbrk@@GLIBC_2.0
 U strstr@@GLIBC_2.0
 U strtod@@GLIBC_2.0
 U strtol@@GLIBC_2.0
-b subs.7497
 U symlink@@GLIBC_2.0
 U syscall@@GLIBC_2.0
-b terminator.7340
 T ThreadGetCurrentHandle
 T ThreadGetCurrentId
 T ThreadGetPriority
@@ -672,44 +303,12 @@ U timezone@@GLIBC_2.0
 U ___tls_get_addr@@GLIBC_2.3
 U tolower@@GLIBC_2.0
 T TranslateStackInfo
-t __udivdi3
-t __umoddi3
 T UnitTestCount
 T UnitTestInstallTestCase
 U unlink@@GLIBC_2.0
-b unseen_objects
-t _Unwind_Backtrace
-t _Unwind_DebugHook
-t _Unwind_DeleteException
-t _Unwind_FindEnclosingFunction
-t _Unwind_Find_FDE
-t _Unwind_ForcedUnwind
-t _Unwind_ForcedUnwind_Phase2
-t _Unwind_GetCFA
-t _Unwind_GetDataRelBase
-t _Unwind_GetGR
-t _Unwind_GetIP
-t _Unwind_GetIPInfo
-t _Unwind_GetLanguageSpecificData
-t _Unwind_GetRegionStart
-t _Unwind_GetTextRelBase
-t _Unwind_IteratePhdrCallback
-t _Unwind_RaiseException
-t _Unwind_RaiseException_Phase2
-t _Unwind_Resume
-t _Unwind_Resume_or_Rethrow
-t _Unwind_SetGR
-t _Unwind_SetIP
-t _Unwind_SetSpColumn
 U usleep@@GLIBC_2.0
 U utime@@GLIBC_2.0
 U utimes@@GLIBC_2.0
-t uw_frame_state_for
-t uw_init_context_1
-t uw_install_context_1
-t uw_update_context
-t uw_update_context_1
-b VmmMsgFlag
 T VoidFnPtrLookup_Tier0
 U vsnprintf@@GLIBC_2.0
 T V_tier0_snprintf
@@ -722,36 +321,6 @@ T Warning
 T _Warning_AlwaysSpewCallStack_Enable
 T _Warning_AlwaysSpewCallStack_Length
 T Warning_SpewCallStack
-t __wrap_access
-t __wrap_chmod
-t __wrap_chown
-t __wrap_creat
-t __wrap_fopen
-t __wrap_fopen64
-t __wrap_freopen
-t __wrap_lchown
-t __wrap_link
-t __wrap_lstat
-t __wrap___lxstat
-t __wrap___lxstat64
-t __wrap_mkdir
-t __wrap_mkfifo
-t __wrap_mknod
-t __wrap_mount
-t __wrap_open
-t __wrap_open64
-t __wrap_opendir
-t __wrap_realpath
-t __wrap_rename
-t __wrap_rmdir
-t __wrap_scandir
-t __wrap_stat
-t __wrap_symlink
-t __wrap_unlink
-t __wrap_utime
-t __wrap_utimes
-t __wrap___xstat
-t __wrap___xstat64
 U write@@GLIBC_2.0
 T WriteMiniDump
 U __xmknod@@GLIBC_2.0
@@ -759,159 +328,10 @@ U __xstat64@@GLIBC_2.2
 U __xstat@@GLIBC_2.0
 T DevWarning(char const*, ...)
 T ConColorMsg(Color const&, char const*, ...)
-t CalcHeapUsed()
-t Plat_asctime(tm const*, char*, unsigned int)
-t InitMainThread()
-t RunSharedTests(int)
-t JoinTestThreads(ThreadHandle_t__**)
-t Platform_gmtime(long const*, tm*)
-t CalculateCPUFreq()
-t CreateTestThreads(unsigned int (*)(void*), int, int)
-t GetProcessorBrand()
 T LoggingSystem_Log(int, LoggingSeverity_t, Color, char const*, ...)
-t GetCPUFreqFromPROC()
-t SetAllocatorObject(IMemAlloc*)
-t CheckSSE3Technology()
-t IgnoreAssertsNearby(int)
-t CheckSSE41Technology()
-t CheckSSE42Technology()
-t CheckSSE4aTechnology()
-t CheckSSSE3Technology()
-t GetProcessorVendorId()
-t CreateNewAssertDisable(char const*)
-t GetGlobalLoggingSystem()
-t PreloadStackInformation(void const**, int)
-t ThreadIsThreadIdRunning(unsigned int)
-t ThreadInterlockedAssignIf(long volatile*, long, long)
-t ThreadInterlockedExchange(long volatile*, long)
-t GetMemorySectionForAddress(void*)
-t IgnoreAssertsInCurrentFile()
-t ThreadInterlockedDecrement(long volatile*)
-t ThreadInterlockedIncrement(long volatile*)
-t AppendCallStackToLogMessage(char*, int, int)
-t DoApplyMemoryInitializations(void*, unsigned int)
-t ThreadInterlockedExchangeAdd(long volatile*, long)
-t VirtualMemoryManager_Shutdown()
-t GetGlobalLoggingSystem_Internal()
-t ThreadInterlockedCompareExchange(long volatile*, long, long)
-t __static_initialization_and_destruction_0(int, int) [clone .constprop.10]
-t VirtualMemoryManager_AllocateVirtualMemorySection(unsigned int)
 T ConMsg(char const*, ...)
 T DevMsg(char const*, ...)
-t InitTime(timeval&)
-t pathmatch(char const*, char**, bool, char*, unsigned int)
-t operator delete[](void*)
-t operator delete(void*)
 T ZeroMemory
-b guard variable for DoNewAssertDialog::autoMutex__
-b guard variable for ShouldUseNewAssertDialog::bMPIWorker
-b guard variable for GetGlobalLoggingSystem_Internal()::globalLoggingSystem
-b guard variable for pathmatch(char const*, char**, bool, char*, unsigned int)::s_pszDbgPathMatch
-b guard variable for AssertStack()::bResult
-b guard variable for AllAssertOnce()::bResult
-b guard variable for AreAssertsDisabled()::bResult
-b guard variable for IsDebugBreakEnabled()::bResult
-b guard variable for (anonymous namespace)::__future_category_instance()::__fec
-b guard variable for CSharedLibraryCache::GetCache()::Singleton
-t DumpSorted(char const*, double, bool (*)(TimeSums_t const&, TimeSums_t const&), int)
-t PeakCompare(TimeSums_t const&, TimeSums_t const&)
-b s_bShowDiag
-d s_nBufDepth
-b s_TestCount
-t TimeCompare(TimeSums_t const&, TimeSums_t const&)
-t read_sleb128(unsigned char const*, long*)
-t read_uleb128(unsigned char const*, unsigned long*)
-b s_bInittedWD
-r g_ColorLookup
-d s_CpuVendorID
-b s_nBufCurSize
-b s_ppTestCases
-b s_StdMemAlloc
-b emergency_used
-t DefaultWaitFunc(unsigned int, CThreadEvent**, int, unsigned int)
-b dependents_used
-t get_ttype_entry(lsda_header_info*, unsigned long) [clone .constprop.6]
-b s_callbackMutex
-b s_nBufAllocSize
-b s_TestAllocated
-b s_ThreadIDMutex
-b emergency_buffer
-b g_bBenchmarkMode
-t get_adjusted_ptr(std::type_info const*, std::type_info const*, void**)
-b g_LocalTimeMutex
-b pReportHandlerFN
-b s_cpuInformation
-b s_pBufStackDepth
-b dependents_buffer
-d g_bAssertsEnabled
-b g_pAssertDisables
-t parse_lsda_header(_Unwind_Context*, unsigned char const*, lsda_header_info*) [clone .constprop.5]
-t ThreadProcConvert(void*)
-t AverageTimeCompare(TimeSums_t const&, TimeSums_t const&)
-t read_encoded_value(_Unwind_Context*, unsigned char, unsigned char const*, unsigned int*)
-b g_FakeBenchmarkTime
-t check_exception_spec(lsda_header_info*, std::type_info const*, void*, long) [clone .constprop.4]
-b s_bThreadIDAllocated
-t base_of_encoded_value(unsigned char, _Unwind_Context*)
-d g_bAssertDialogEnabled
-t PeakOverAverageCompare(TimeSums_t const&, TimeSums_t const&)
-b s_nMemoryInfoCallbacks
-t __gxx_exception_cleanup(_Unwind_Reason_Code, _Unwind_Exception*)
-t TimeLessChildrenCompare(TimeSums_t const&, TimeSums_t const&)
-b s_AssertFailedNotifyFunc
-t Register_LOG_CONSOLE_Tags()
-b s_nWatchDogTimerTimeScale
-b s_ThreadedLoadLibraryFunc
-b UNSPECIFIED_LOGGING_COLOR
-b UNSPECIFIED_LOGGING_COLOR
-b UNSPECIFIED_LOGGING_COLOR
-b UNSPECIFIED_LOGGING_COLOR
-b UNSPECIFIED_LOGGING_COLOR
-b UNSPECIFIED_LOGGING_COLOR
-b UNSPECIFIED_LOGGING_COLOR
-b UNSPECIFIED_LOGGING_COLOR
-b UNSPECIFIED_LOGGING_COLOR
-b UNSPECIFIED_LOGGING_COLOR
-b UNSPECIFIED_LOGGING_COLOR
-b UNSPECIFIED_LOGGING_COLOR
-b UNSPECIFIED_LOGGING_COLOR
-b UNSPECIFIED_LOGGING_COLOR
-b UNSPECIFIED_LOGGING_COLOR
-b UNSPECIFIED_LOGGING_COLOR
-b UNSPECIFIED_LOGGING_COLOR
-b UNSPECIFIED_LOGGING_COLOR
-b UNSPECIFIED_LOGGING_COLOR
-b UNSPECIFIED_LOGGING_COLOR
-b UNSPECIFIED_LOGGING_COLOR
-b UNSPECIFIED_LOGGING_COLOR
-b UNSPECIFIED_LOGGING_COLOR
-b UNSPECIFIED_LOGGING_COLOR
-b UNSPECIFIED_LOGGING_COLOR
-b UNSPECIFIED_LOGGING_COLOR
-b UNSPECIFIED_LOGGING_COLOR
-b UNSPECIFIED_LOGGING_COLOR
-b UNSPECIFIED_LOGGING_COLOR
-b UNSPECIFIED_LOGGING_COLOR
-b UNSPECIFIED_LOGGING_COLOR
-b UNSPECIFIED_LOGGING_COLOR
-b UNSPECIFIED_LOGGING_COLOR
-b UNSPECIFIED_LOGGING_COLOR
-t WatchdogCoreDumpSigHandler(int)
-t Register_LOG_DEVELOPER_Tags()
-t read_encoded_value_with_base(unsigned char, unsigned int, unsigned char const*, unsigned int*)
-t AverageTimeLessChildrenCompare(TimeSums_t const&, TimeSums_t const&)
-t InterpretIntelCacheDescriptors(unsigned int)
-t __gxx_dependent_exception_cleanup(_Unwind_Reason_Code, _Unwind_Exception*)
-t Register_LOG_DEVELOPER_CONSOLE_Tags()
-t Register_LOG_DEVELOPER_VERBOSE_Tags()
-b g_Info
-b s_pBuf
-t Descend(char*, unsigned int, bool, unsigned int)
-b g_atoms
-b secbase
-b g_bBreak
-b g_CmdLine
-b g_CmdLine
 T CTestSuite::AddTest(ITestCase*)
 T CTestSuite::GetName()
 T CTestSuite::RunTest()
@@ -932,155 +352,6 @@ T CVProfNode::MarkFrame()
 T CVProfNode::ResetPeak()
 T CVProfNode::~CVProfNode()
 T CVProfNode::~CVProfNode()
-t __cxxabiv1::__terminate(void (*)())
-t __cxxabiv1::__unexpected(void (*)())
-t __cxxabiv1::__forced_unwind::~__forced_unwind()
-t __cxxabiv1::__forced_unwind::~__forced_unwind()
-t __cxxabiv1::__forced_unwind::~__forced_unwind()
-t __cxxabiv1::__class_type_info::~__class_type_info()
-t __cxxabiv1::__class_type_info::~__class_type_info()
-t __cxxabiv1::__class_type_info::~__class_type_info()
-t __cxxabiv1::__pbase_type_info::~__pbase_type_info()
-t __cxxabiv1::__pbase_type_info::~__pbase_type_info()
-t __cxxabiv1::__pbase_type_info::~__pbase_type_info()
-t __cxxabiv1::__foreign_exception::~__foreign_exception()
-t __cxxabiv1::__foreign_exception::~__foreign_exception()
-t __cxxabiv1::__foreign_exception::~__foreign_exception()
-t __cxxabiv1::__pointer_type_info::~__pointer_type_info()
-t __cxxabiv1::__pointer_type_info::~__pointer_type_info()
-t __cxxabiv1::__pointer_type_info::~__pointer_type_info()
-d __cxxabiv1::__terminate_handler
-t __cxxabiv1::__si_class_type_info::~__si_class_type_info()
-t __cxxabiv1::__si_class_type_info::~__si_class_type_info()
-t __cxxabiv1::__si_class_type_info::~__si_class_type_info()
-d __cxxabiv1::__unexpected_handler
-t __cxxabiv1::__fundamental_type_info::~__fundamental_type_info()
-t __cxxabiv1::__fundamental_type_info::~__fundamental_type_info()
-t __cxxabiv1::__fundamental_type_info::~__fundamental_type_info()
-t CTSListBase::CTSListBase()
-t CTSListBase::CTSListBase()
-t CTSListBase::~CTSListBase()
-t CTSListBase::~CTSListBase()
-b TSListTests::g_nThreads
-b TSListTests::g_pTestOps
-d TSListTests::g_QueueOps
-b TSListTests::g_TestList
-b TSListTests::g_TestLock
-b TSListTests::g_bUseMutex
-b TSListTests::g_pListType
-b TSListTests::g_TestQueue
-d TSListTests::MAX_THREADS
-t TSListTests::MTPushMTPop(bool)
-t TSListTests::MTPushSTPop(bool)
-b TSListTests::NUM_THREADS
-t TSListTests::PushPopTest()
-t TSListTests::STPushMTPop(bool)
-t TSListTests::TestThreads()
-t TSListTests::ClearBuckets()
-t TSListTests::MTPushSeqPop(bool)
-t TSListTests::SeqPushMTPop(bool)
-b TSListTests::g_nPopThreads
-t TSListTests::PopThreadFunc(void*)
-b TSListTests::g_nPushThreads
-b TSListTests::g_pTestBuckets
-d TSListTests::NUM_PROCESSORS
-t TSListTests::PushThreadFunc(void*)
-t TSListTests::ValidateBuckets()
-t TSListTests::PushPopInterleavedTest()
-t TSListTests::MTPushPopPopInterleaved(bool)
-t TSListTests::PushPopInterleavedTestGuts()
-t TSListTests::PushPopInterleavedTestThreadFunc(void*)
-b TSListTests::idx
-b TSListTests::g_Test
-b TSListTests::g_nodes
-b TSListTests::g_nPops
-t TSListTests::TestEnd(bool)
-t TSListTests::CListOps::Pop(int*)
-t TSListTests::CListOps::Push(int)
-t TSListTests::CListOps::IsEmpty()
-t TSListTests::CListOps::Validate()
-b TSListTests::g_bStart
-d TSListTests::NUM_TEST
-t TSListTests::TestWait()
-t TSListTests::CQueueOps::Pop(int*)
-t TSListTests::CQueueOps::Push(int)
-t TSListTests::CQueueOps::IsEmpty()
-t TSListTests::CQueueOps::Validate()
-t TSListTests::DecBucket(int)
-d TSListTests::g_ListOps
-b TSListTests::g_nPushes
-b TSListTests::g_nTested
-t TSListTests::IncBucket(int)
-t TSListTests::TestStart()
-t CCommandLine::AppendParm(char const*, char const*)
-t CCommandLine::RemoveParm(char const*)
-t CCommandLine::AddArgument(char const*, char const*)
-t CCommandLine::CleanUpParms()
-t CCommandLine::CreateCmdLine(int, char**)
-t CCommandLine::CreateCmdLine(char const*)
-t CCommandLine::ParseCommandLine()
-t CCommandLine::LoadParametersFromFile(char const*&, char*&, int, bool)
-t CCommandLine::SetParm(int, char const*)
-t CCommandLine::CCommandLine()
-t CCommandLine::CCommandLine()
-t CCommandLine::~CCommandLine()
-t CCommandLine::~CCommandLine()
-t CCommandLine::~CCommandLine()
-t CStdMemAlloc::GetVersion()
-t CStdMemAlloc::CompactHeap()
-t CStdMemAlloc::IsDebugHeap()
-t CStdMemAlloc::OutOfMemory(unsigned int)
-t CStdMemAlloc::RegionAlloc(int, unsigned int)
-t CStdMemAlloc::RegionAlloc(int, unsigned int, char const*, int)
-t CStdMemAlloc::CrtDbgReport(int, char const*, int, char const*, char const*)
-t CStdMemAlloc::CompactOnFail()
-t CStdMemAlloc::CrtSetDbgFlag(int)
-t CStdMemAlloc::InitDebugInfo(void*, char const*, int)
-t CStdMemAlloc::SaveDebugInfo(void*)
-t CStdMemAlloc::CrtCheckMemory()
-t CStdMemAlloc::DumpBlockStats(void*)
-t CStdMemAlloc::InternalCompact(bool)
-t CStdMemAlloc::PopAllocDbgInfo()
-t CStdMemAlloc::CrtMemCheckpoint(_CrtMemState*)
-t CStdMemAlloc::CrtSetBreakAlloc(int)
-t CStdMemAlloc::CrtSetReportFile(int, void*)
-t CStdMemAlloc::CrtSetReportHook(void*)
-t CStdMemAlloc::CrtSetReportMode(int, int)
-t CStdMemAlloc::GetActualDbgInfo(char const*&, int&)
-t CStdMemAlloc::GetDebugInfoSize()
-t CStdMemAlloc::PushAllocDbgInfo(char const*, int)
-t CStdMemAlloc::RestoreDebugInfo(void const*)
-t CStdMemAlloc::CrtIsValidPointer(void const*, unsigned int, int)
-t CStdMemAlloc::DumpStatsFileBase(char const*, IMemAlloc::DumpStatsFormat_t)
-t CStdMemAlloc::MemoryAllocFailed()
-t CStdMemAlloc::SetCRTAllocFailed(unsigned int)
-t CStdMemAlloc::SetStatsExtraInfo(char const*, char const*)
-t CStdMemAlloc::CompactIncremental()
-t CStdMemAlloc::DefaultFailHandler(unsigned int)
-t CStdMemAlloc::GlobalMemoryStatus(unsigned int*, unsigned int*)
-t CStdMemAlloc::RegisterAllocation(char const*, int, unsigned int, unsigned int, unsigned int)
-t CStdMemAlloc::ComputeMemoryUsedBy(char const*)
-t CStdMemAlloc::SetAllocFailHandler(unsigned int (*)(unsigned int))
-t CStdMemAlloc::RegisterDeallocation(char const*, int, unsigned int, unsigned int, unsigned int)
-t CStdMemAlloc::CrtIsValidHeapPointer(void const*)
-t CStdMemAlloc::GetGenericMemoryStats(GenericMemoryStat_t**)
-t CStdMemAlloc::Expand_NoLongerSupported(void*, unsigned int)
-t CStdMemAlloc::Expand_NoLongerSupported(void*, unsigned int, char const*, int)
-t CStdMemAlloc::AllocateVirtualMemorySection(unsigned int)
-t CStdMemAlloc::Free(void*)
-t CStdMemAlloc::Free(void*, char const*, int)
-t CStdMemAlloc::Alloc(unsigned int)
-t CStdMemAlloc::Alloc(unsigned int, char const*, int)
-t CStdMemAlloc::GetSize(void*)
-t CStdMemAlloc::heapchk()
-t CStdMemAlloc::Realloc(void*, unsigned int)
-t CStdMemAlloc::Realloc(void*, unsigned int, char const*, int)
-t CStdMemAlloc::DumpStats()
-t CStdMemAlloc::CStdMemAlloc()
-t CStdMemAlloc::CStdMemAlloc()
-t CStdMemAlloc::~CStdMemAlloc()
-t CStdMemAlloc::~CStdMemAlloc()
-t CStdMemAlloc::~CStdMemAlloc()
 T CThreadEvent::WaitForMultiple(int, CThreadEvent**, bool, unsigned int)
 T CThreadEvent::WaitForMultiple(int, CThreadEvent*, bool, unsigned int)
 T CThreadEvent::Set()
@@ -1092,18 +363,6 @@ T CThreadEvent::CThreadEvent(bool)
 T CThreadMutex::TryLock()
 W CThreadMutex::~CThreadMutex()
 W CThreadMutex::~CThreadMutex()
-b (anonymous namespace)::emergency_mutex
-t (anonymous namespace)::future_error_category::~future_error_category()
-t (anonymous namespace)::future_error_category::~future_error_category()
-t (anonymous namespace)::future_error_category::~future_error_category()
-t (anonymous namespace)::system_error_category::~system_error_category()
-t (anonymous namespace)::system_error_category::~system_error_category()
-t (anonymous namespace)::system_error_category::~system_error_category()
-t (anonymous namespace)::generic_error_category::~generic_error_category()
-t (anonymous namespace)::generic_error_category::~generic_error_category()
-t (anonymous namespace)::generic_error_category::~generic_error_category()
-b (anonymous namespace)::system_category_instance
-b (anonymous namespace)::generic_category_instance
 T CThreadRWLock::UnlockWrite()
 T CThreadRWLock::WaitForRead()
 T CThreadRWLock::LockForWrite()
@@ -1123,36 +382,12 @@ T CWorkerThread::CWorkerThread()
 W CWorkerThread::~CWorkerThread()
 W CWorkerThread::~CWorkerThread()
 W CWorkerThread::~CWorkerThread()
-t CLoggingSystem::GetChannel(int)
-t CLoggingSystem::GetCurrentState()
-t CLoggingSystem::PopLoggingState(bool)
-t CLoggingSystem::PushLoggingState(bool, bool)
-t CLoggingSystem::SetGlobalSpewLevel(LoggingSeverity_t)
-t CLoggingSystem::SetChannelSpewLevel(int, LoggingSeverity_t)
-t CLoggingSystem::FindUnusedStateIndex()
-t CLoggingSystem::IsListenerRegistered(ILoggingListener*)
-t CLoggingSystem::AddTagToCurrentChannel(char const*)
-t CLoggingSystem::RegisterLoggingChannel(char const*, void (*)(), int, LoggingSeverity_t, Color)
-t CLoggingSystem::RegisterLoggingListener(ILoggingListener*)
-t CLoggingSystem::ResetCurrentLoggingState()
-t CLoggingSystem::SetChannelSpewLevelByTag(char const*, LoggingSeverity_t)
-t CLoggingSystem::SetLoggingResponsePolicy(ILoggingResponsePolicy*)
-t CLoggingSystem::SetChannelSpewLevelByName(char const*, LoggingSeverity_t)
-t CLoggingSystem::AllocTag(char const*)
-t CLoggingSystem::LogDirect(int, LoggingSeverity_t, Color, char const*)
-t CLoggingSystem::CLoggingSystem()
-t CLoggingSystem::CLoggingSystem()
-t CLoggingSystem::~CLoggingSystem()
-t CLoggingSystem::~CLoggingSystem()
 T CPerfStatsData::Tick()
 T CPerfStatsData::Reset()
 T CPerfStatsData::CPerfStatsData()
 T CPerfStatsData::CPerfStatsData()
-t CClockSpeedInit::Init()
 T CCallStackStorage::CCallStackStorage(int (*)(void**, int, int), unsigned int)
 T CCallStackStorage::CCallStackStorage(int (*)(void**, int, int), unsigned int)
-t CRootMiniProfiler::~CRootMiniProfiler()
-t CRootMiniProfiler::~CRootMiniProfiler()
 T CThreadSpinRWLock::SpinLockForRead()
 T CThreadSpinRWLock::SpinLockForWrite()
 T CThreadSyncObject::AssertUseable()
@@ -1163,25 +398,16 @@ T CThreadSyncObject::CThreadSyncObject()
 T CThreadSyncObject::CThreadSyncObject()
 T CThreadSyncObject::~CThreadSyncObject()
 T CThreadSyncObject::~CThreadSyncObject()
-t CLinkedMiniProfiler::PurgeHistory()
-t CLinkedMiniProfiler::Publish(unsigned int)
-t CSharedLibraryCache::CSharedLibraryItem::~CSharedLibraryItem()
-t CSharedLibraryCache::CSharedLibraryItem::~CSharedLibraryItem()
-t CSharedLibraryCache::~CSharedLibraryCache()
-t CSharedLibraryCache::~CSharedLibraryCache()
-t CSimpleLoggingListener::Log(LoggingContext_t const*, char const*)
 T BasicStatStructFieldDesc::DescribeField(unsigned char*, unsigned int)
 T CStackTop_CopyParentStack::CStackTop_CopyParentStack(void* const*, int)
 T CStackTop_CopyParentStack::CStackTop_CopyParentStack(void* const*, int)
 T CStackTop_CopyParentStack::~CStackTop_CopyParentStack()
 T CStackTop_CopyParentStack::~CStackTop_CopyParentStack()
-t CDefaultLoggingResponsePolicy::OnLog(LoggingContext_t const*)
 T CStackTop_ReferenceParentStack::ReleaseParentStackReferences()
 T CStackTop_ReferenceParentStack::CStackTop_ReferenceParentStack(void* const*, int)
 T CStackTop_ReferenceParentStack::CStackTop_ReferenceParentStack(void* const*, int)
 T CStackTop_ReferenceParentStack::~CStackTop_ReferenceParentStack()
 T CStackTop_ReferenceParentStack::~CStackTop_ReferenceParentStack()
-t CWrap::~CWrap() [clone .constprop.2]
 T CThread::ThreadProc(void*)
 T CThread::SetPriority(int)
 T CThread::GetThreadProc()
@@ -1209,16 +435,6 @@ T CThread::CThread()
 T CThread::~CThread()
 T CThread::~CThread()
 T CThread::~CThread()
-t CTSList<int>::~CTSList()
-t CTSList<int>::~CTSList()
-t CL2Cache::End()
-t CL2Cache::Start()
-t CL2Cache::CL2Cache()
-t CL2Cache::CL2Cache()
-t CL2Cache::~CL2Cache()
-t CL2Cache::~CL2Cache()
-t CTSQueue<int, true>::~CTSQueue()
-t CTSQueue<int, true>::~CTSQueue()
 T CTestCase::GetName()
 T CTestCase::CTestCase(char const*, ITestSuite*)
 T CTestCase::CTestCase(char const*, ITestSuite*)
@@ -1245,57 +461,7 @@ T CVProfile::CVProfile()
 T CVProfile::CVProfile()
 T CVProfile::~CVProfile()
 T CVProfile::~CVProfile()
-t __gnu_cxx::__scoped_lock::__scoped_lock(__gnu_cxx::__mutex&)
-t __gnu_cxx::__scoped_lock::__scoped_lock(__gnu_cxx::__mutex&)
-t __gnu_cxx::__scoped_lock::~__scoped_lock()
-t __gnu_cxx::__scoped_lock::~__scoped_lock()
-t __gnu_cxx::recursive_init_error::~recursive_init_error()
-t __gnu_cxx::recursive_init_error::~recursive_init_error()
-t __gnu_cxx::recursive_init_error::~recursive_init_error()
-t __gnu_cxx::__concurrence_lock_error::~__concurrence_lock_error()
-t __gnu_cxx::__concurrence_lock_error::~__concurrence_lock_error()
-t __gnu_cxx::__concurrence_lock_error::~__concurrence_lock_error()
-t __gnu_cxx::__concurrence_unlock_error::~__concurrence_unlock_error()
-t __gnu_cxx::__concurrence_unlock_error::~__concurrence_unlock_error()
-t __gnu_cxx::__concurrence_unlock_error::~__concurrence_unlock_error()
-t __gnu_cxx::__verbose_terminate_handler()
-t bool __gnu_cxx::operator==<char*, std::string>(__gnu_cxx::__normal_iterator<char*, std::string> const&, __gnu_cxx::__normal_iterator<char*, std::string> const&)
-t bool __gnu_cxx::operator==<char const*, std::string>(__gnu_cxx::__normal_iterator<char const*, std::string> const&, __gnu_cxx::__normal_iterator<char const*, std::string> const&)
-t IMemAlloc::~IMemAlloc()
-t IMemAlloc::~IMemAlloc()
-t IMemAlloc::~IMemAlloc()
-t operator new[](unsigned int)
-t __cxxabiv1::__class_type_info::__do_catch(std::type_info const*, void**, unsigned int) const
-t __cxxabiv1::__class_type_info::__do_upcast(__cxxabiv1::__class_type_info const*, void const*, __cxxabiv1::__class_type_info::__upcast_result&) const
-t __cxxabiv1::__class_type_info::__do_upcast(__cxxabiv1::__class_type_info const*, void**) const
-t __cxxabiv1::__class_type_info::__do_dyncast(int, __cxxabiv1::__class_type_info::__sub_kind, __cxxabiv1::__class_type_info const*, void const*, __cxxabiv1::__class_type_info const*, void const*, __cxxabiv1::__class_type_info::__dyncast_result&) const
-t __cxxabiv1::__class_type_info::__do_find_public_src(int, void const*, __cxxabiv1::__class_type_info const*, void const*) const
-t __cxxabiv1::__pbase_type_info::__do_catch(std::type_info const*, void**, unsigned int) const
-t __cxxabiv1::__pbase_type_info::__pointer_catch(__cxxabiv1::__pbase_type_info const*, void**, unsigned int) const
-t __cxxabiv1::__pointer_type_info::__is_pointer_p() const
-t __cxxabiv1::__pointer_type_info::__pointer_catch(__cxxabiv1::__pbase_type_info const*, void**, unsigned int) const
-t __cxxabiv1::__si_class_type_info::__do_upcast(__cxxabiv1::__class_type_info const*, void const*, __cxxabiv1::__class_type_info::__upcast_result&) const
-t __cxxabiv1::__si_class_type_info::__do_dyncast(int, __cxxabiv1::__class_type_info::__sub_kind, __cxxabiv1::__class_type_info const*, void const*, __cxxabiv1::__class_type_info const*, void const*, __cxxabiv1::__class_type_info::__dyncast_result&) const
-t __cxxabiv1::__si_class_type_info::__do_find_public_src(int, void const*, __cxxabiv1::__class_type_info const*, void const*) const
-t CCommandLine::GetCmdLine() const
-t CCommandLine::GetParm(int) const
-t CCommandLine::HasParm(char const*) const
-t CCommandLine::FindParm(char const*) const
-t CCommandLine::CheckParm(char const*, char const**) const
-t CCommandLine::ParmCount() const
-t CCommandLine::ParmValue(char const*, float) const
-t CCommandLine::ParmValue(char const*, int) const
-t CCommandLine::ParmValue(char const*, char const*) const
-t (anonymous namespace)::future_error_category::name() const
-t (anonymous namespace)::future_error_category::message(int) const
-t (anonymous namespace)::system_error_category::name() const
-t (anonymous namespace)::system_error_category::message(int) const
-t (anonymous namespace)::generic_error_category::name() const
-t (anonymous namespace)::generic_error_category::message(int) const
 T CWorkerThread::GetCallParam() const
-t CLoggingSystem::GetChannel(int) const
-t CLoggingSystem::FindChannel(char const*) const
-t CLoggingSystem::GetCurrentState() const
 T CThreadSyncObject::operator!() const
 T CThread::GetPriority() const
 T CVProfile::GetCounterName(int) const
@@ -1303,428 +469,13 @@ T CVProfile::GetNumCounters() const
 T CVProfile::GetCounterGroup(int) const
 T CVProfile::GetCounterValue(int) const
 T CVProfile::GetCounterNameAndValue(int, int&) const
-t __gnu_cxx::__concurrence_lock_error::what() const
-t __gnu_cxx::__concurrence_unlock_error::what() const
-t std::string::_M_disjunct(char const*) const
-t std::string::find_last_of(char, unsigned int) const
-t std::string::find_last_of(char const*, unsigned int) const
-t std::string::find_last_of(char const*, unsigned int, unsigned int) const
-t std::string::find_last_of(std::string const&, unsigned int) const
-t std::string::find_first_of(char, unsigned int) const
-t std::string::find_first_of(char const*, unsigned int) const
-t std::string::find_first_of(char const*, unsigned int, unsigned int) const
-t std::string::find_first_of(std::string const&, unsigned int) const
-t std::string::get_allocator() const
-t std::string::_M_check_length(unsigned int, unsigned int, char const*) const
-t std::string::find_last_not_of(char, unsigned int) const
-t std::string::find_last_not_of(char const*, unsigned int) const
-t std::string::find_last_not_of(char const*, unsigned int, unsigned int) const
-t std::string::find_last_not_of(std::string const&, unsigned int) const
-t std::string::find_first_not_of(char, unsigned int) const
-t std::string::find_first_not_of(char const*, unsigned int) const
-t std::string::find_first_not_of(char const*, unsigned int, unsigned int) const
-t std::string::find_first_not_of(std::string const&, unsigned int) const
-t std::string::at(unsigned int) const
-t std::string::end() const
-t std::string::back() const
-t std::string::cend() const
-t std::string::copy(char*, unsigned int, unsigned int) const
-t std::string::data() const
-t std::string::find(char, unsigned int) const
-t std::string::find(char const*, unsigned int) const
-t std::string::find(char const*, unsigned int, unsigned int) const
-t std::string::find(std::string const&, unsigned int) const
-t std::string::rend() const
-t std::string::_Rep::_M_is_leaked() const
-t std::string::_Rep::_M_is_shared() const
-t std::string::size() const
-t std::string::begin() const
-t std::string::crend() const
-t std::string::c_str() const
-t std::string::empty() const
-t std::string::front() const
-t std::string::rfind(char, unsigned int) const
-t std::string::rfind(char const*, unsigned int) const
-t std::string::rfind(char const*, unsigned int, unsigned int) const
-t std::string::rfind(std::string const&, unsigned int) const
-t std::string::cbegin() const
-t std::string::length() const
-t std::string::_M_rep() const
-t std::string::rbegin() const
-t std::string::substr(unsigned int, unsigned int) const
-t std::string::compare(unsigned int, unsigned int, char const*) const
-t std::string::compare(unsigned int, unsigned int, char const*, unsigned int) const
-t std::string::compare(unsigned int, unsigned int, std::string const&) const
-t std::string::compare(unsigned int, unsigned int, std::string const&, unsigned int, unsigned int) const
-t std::string::compare(char const*) const
-t std::string::compare(std::string const&) const
-t std::string::crbegin() const
-t std::string::_M_data() const
-t std::string::_M_iend() const
-t std::string::capacity() const
-t std::string::max_size() const
-t std::string::_M_check(unsigned int, char const*) const
-t std::string::_M_limit(unsigned int, unsigned int) const
-t std::string::_M_ibegin() const
-t std::string::operator[](unsigned int) const
-t std::bad_typeid::what() const
-t std::error_code::default_error_condition() const
-t std::logic_error::what() const
-t std::future_error::what() const
-t std::bad_exception::what() const
-t std::runtime_error::what() const
-t std::error_category::equivalent(int, std::error_condition const&) const
-t std::error_category::equivalent(std::error_code const&, int) const
-t std::error_category::default_error_condition(int) const
-t std::__exception_ptr::exception_ptr::__cxa_exception_type() const
-t std::__exception_ptr::exception_ptr::_M_get() const
-t std::__exception_ptr::exception_ptr::operator void (std::__exception_ptr::exception_ptr::*)()() const
-t std::__exception_ptr::exception_ptr::operator!() const
-t std::bad_cast::what() const
-t std::ios_base::failure::what() const
-t std::bad_alloc::what() const
-t std::exception::what() const
-t std::type_info::__do_catch(std::type_info const*, void**, unsigned int) const
-t std::type_info::__do_upcast(__cxxabiv1::__class_type_info const*, void**) const
-t std::type_info::__is_pointer_p() const
-t std::type_info::__is_function_p() const
-t std::type_info::operator==(std::type_info const&) const [clone .isra.0]
-t std::type_info::operator==(std::type_info const&) const [clone .isra.1]
-t std::string::_S_compare(unsigned int, unsigned int)
-t std::string::_Alloc_hider::_Alloc_hider(char*, std::allocator<char> const&)
-t std::string::_Alloc_hider::_Alloc_hider(char*, std::allocator<char> const&)
-t std::string::_M_leak_hard()
-t std::string::_S_construct(unsigned int, char, std::allocator<char> const&)
-t char* std::string::_S_construct<__gnu_cxx::__normal_iterator<char*, std::string> >(__gnu_cxx::__normal_iterator<char*, std::string>, __gnu_cxx::__normal_iterator<char*, std::string>, std::allocator<char> const&, std::forward_iterator_tag)
-t char* std::string::_S_construct<char*>(char*, char*, std::allocator<char> const&, std::forward_iterator_tag)
-t char* std::string::_S_construct<char const*>(char const*, char const*, std::allocator<char> const&, std::forward_iterator_tag)
-t std::string::_S_empty_rep()
-t std::string::_S_copy_chars(char*, __gnu_cxx::__normal_iterator<char const*, std::string>, __gnu_cxx::__normal_iterator<char const*, std::string>)
-t std::string::_S_copy_chars(char*, __gnu_cxx::__normal_iterator<char*, std::string>, __gnu_cxx::__normal_iterator<char*, std::string>)
-t std::string::_S_copy_chars(char*, char const*, char const*)
-t std::string::_S_copy_chars(char*, char*, char*)
-t std::string::shrink_to_fit()
-t std::string::_M_replace_aux(unsigned int, unsigned int, unsigned int, char)
-t std::string::_M_replace_safe(unsigned int, unsigned int, char const*, unsigned int)
-t std::string::_S_construct_aux_2(unsigned int, char, std::allocator<char> const&)
-t std::string::at(unsigned int)
-t std::string::end()
-t std::string::back()
-r std::string::npos
-t std::string::rend()
-t std::string::_Rep::_M_destroy(std::allocator<char> const&)
-t std::string::_Rep::_M_dispose(std::allocator<char> const&)
-t std::string::_Rep::_M_refcopy()
-t std::string::_Rep::_M_refdata()
-r std::string::_Rep::_S_max_size
-r std::string::_Rep::_S_terminal
-t std::string::_Rep::_S_empty_rep()
-t std::string::_Rep::_M_set_leaked()
-t std::string::_Rep::_M_set_sharable()
-b std::string::_Rep::_S_empty_rep_storage
-t std::string::_Rep::_M_set_length_and_sharable(unsigned int)
-t std::string::_Rep::_M_grab(std::allocator<char> const&, std::allocator<char> const&)
-t std::string::_Rep::_M_clone(std::allocator<char> const&, unsigned int)
-t std::string::_Rep::_S_create(unsigned int, unsigned int, std::allocator<char> const&)
-t std::string::swap(std::string&)
-t std::string::begin()
-t std::string::clear()
-t std::string::erase(unsigned int, unsigned int)
-t std::string::erase(__gnu_cxx::__normal_iterator<char*, std::string>)
-t std::string::erase(__gnu_cxx::__normal_iterator<char*, std::string>, __gnu_cxx::__normal_iterator<char*, std::string>)
-t std::string::front()
-t std::string::append(unsigned int, char)
-t std::string::append(char const*)
-t std::string::append(char const*, unsigned int)
-t std::string::append(std::string const&)
-t std::string::append(std::string const&, unsigned int, unsigned int)
-t std::string::append(std::initializer_list<char>)
-t std::string::assign(unsigned int, char)
-t std::string::assign(std::string&&)
-t std::string::assign(char const*)
-t std::string::assign(char const*, unsigned int)
-t std::string::assign(std::string const&)
-t std::string::assign(std::string const&, unsigned int, unsigned int)
-t std::string::assign(std::initializer_list<char>)
-t std::string::insert(unsigned int, unsigned int, char)
-t std::string::insert(unsigned int, char const*)
-t std::string::insert(unsigned int, char const*, unsigned int)
-t std::string::insert(unsigned int, std::string const&)
-t std::string::insert(unsigned int, std::string const&, unsigned int, unsigned int)
-t std::string::insert(__gnu_cxx::__normal_iterator<char*, std::string>, char)
-t std::string::insert(__gnu_cxx::__normal_iterator<char*, std::string>, unsigned int, char)
-t std::string::insert(__gnu_cxx::__normal_iterator<char*, std::string>, std::initializer_list<char>)
-t std::string::rbegin()
-t std::string::resize(unsigned int)
-t std::string::resize(unsigned int, char)
-t std::string::_M_copy(char*, char const*, unsigned int)
-t std::string::_M_data(char*)
-t std::string::_M_leak()
-t std::string::_M_move(char*, char const*, unsigned int)
-t std::string::replace(unsigned int, unsigned int, unsigned int, char)
-t std::string::replace(unsigned int, unsigned int, char const*)
-t std::string::replace(unsigned int, unsigned int, char const*, unsigned int)
-t std::string::replace(unsigned int, unsigned int, std::string const&)
-t std::string::replace(unsigned int, unsigned int, std::string const&, unsigned int, unsigned int)
-t std::string::replace(__gnu_cxx::__normal_iterator<char*, std::string>, __gnu_cxx::__normal_iterator<char*, std::string>, unsigned int, char)
-t std::string::replace(__gnu_cxx::__normal_iterator<char*, std::string>, __gnu_cxx::__normal_iterator<char*, std::string>, __gnu_cxx::__normal_iterator<char const*, std::string>, __gnu_cxx::__normal_iterator<char const*, std::string>)
-t std::string::replace(__gnu_cxx::__normal_iterator<char*, std::string>, __gnu_cxx::__normal_iterator<char*, std::string>, char const*)
-t std::string::replace(__gnu_cxx::__normal_iterator<char*, std::string>, __gnu_cxx::__normal_iterator<char*, std::string>, char const*, unsigned int)
-t std::string::replace(__gnu_cxx::__normal_iterator<char*, std::string>, __gnu_cxx::__normal_iterator<char*, std::string>, char const*, char const*)
-t std::string::replace(__gnu_cxx::__normal_iterator<char*, std::string>, __gnu_cxx::__normal_iterator<char*, std::string>, std::string const&)
-t std::string::replace(__gnu_cxx::__normal_iterator<char*, std::string>, __gnu_cxx::__normal_iterator<char*, std::string>, char*, char*)
-t std::string::replace(__gnu_cxx::__normal_iterator<char*, std::string>, __gnu_cxx::__normal_iterator<char*, std::string>, __gnu_cxx::__normal_iterator<char*, std::string>, __gnu_cxx::__normal_iterator<char*, std::string>)
-t std::string::replace(__gnu_cxx::__normal_iterator<char*, std::string>, __gnu_cxx::__normal_iterator<char*, std::string>, std::initializer_list<char>)
-t std::string::reserve(unsigned int)
-t std::string::_M_assign(char*, unsigned int, char)
-t std::string::_M_mutate(unsigned int, unsigned int, unsigned int)
-t std::string::push_back(char)
-t std::string::operator=(char)
-t std::string::operator=(std::string&&)
-t std::string::operator=(char const*)
-t std::string::operator=(std::string const&)
-t std::string::operator=(std::initializer_list<char>)
-t std::basic_string<char, std::char_traits<char>, std::allocator<char> >::basic_string(unsigned int, char, std::allocator<char> const&)
-t std::basic_string<char, std::char_traits<char>, std::allocator<char> >::basic_string(std::string&&)
-t std::basic_string<char, std::char_traits<char>, std::allocator<char> >::basic_string(char const*, unsigned int, std::allocator<char> const&)
-t std::basic_string<char, std::char_traits<char>, std::allocator<char> >::basic_string(char const*, std::allocator<char> const&)
-t std::basic_string<char, std::char_traits<char>, std::allocator<char> >::basic_string(std::allocator<char> const&)
-t std::basic_string<char, std::char_traits<char>, std::allocator<char> >::basic_string(std::string const&)
-t std::basic_string<char, std::char_traits<char>, std::allocator<char> >::basic_string(std::string const&, unsigned int, unsigned int)
-t std::basic_string<char, std::char_traits<char>, std::allocator<char> >::basic_string(std::string const&, unsigned int, unsigned int, std::allocator<char> const&)
-t std::basic_string<char, std::char_traits<char>, std::allocator<char> >::basic_string(std::initializer_list<char>, std::allocator<char> const&)
-t std::basic_string<char, std::char_traits<char>, std::allocator<char> >::basic_string()
-t std::basic_string<char, std::char_traits<char>, std::allocator<char> >::basic_string<__gnu_cxx::__normal_iterator<char*, std::string> >(__gnu_cxx::__normal_iterator<char*, std::string>, __gnu_cxx::__normal_iterator<char*, std::string>, std::allocator<char> const&)
-t std::basic_string<char, std::char_traits<char>, std::allocator<char> >::basic_string<char*>(char*, char*, std::allocator<char> const&)
-t std::basic_string<char, std::char_traits<char>, std::allocator<char> >::basic_string<char const*>(char const*, char const*, std::allocator<char> const&)
-t std::basic_string<char, std::char_traits<char>, std::allocator<char> >::basic_string(unsigned int, char, std::allocator<char> const&)
-t std::basic_string<char, std::char_traits<char>, std::allocator<char> >::basic_string(std::string&&)
-t std::basic_string<char, std::char_traits<char>, std::allocator<char> >::basic_string(char const*, unsigned int, std::allocator<char> const&)
-t std::basic_string<char, std::char_traits<char>, std::allocator<char> >::basic_string(char const*, std::allocator<char> const&)
-t std::basic_string<char, std::char_traits<char>, std::allocator<char> >::basic_string(std::allocator<char> const&)
-t std::basic_string<char, std::char_traits<char>, std::allocator<char> >::basic_string(std::string const&)
-t std::basic_string<char, std::char_traits<char>, std::allocator<char> >::basic_string(std::string const&, unsigned int, unsigned int)
-t std::basic_string<char, std::char_traits<char>, std::allocator<char> >::basic_string(std::string const&, unsigned int, unsigned int, std::allocator<char> const&)
-t std::basic_string<char, std::char_traits<char>, std::allocator<char> >::basic_string(std::initializer_list<char>, std::allocator<char> const&)
-t std::basic_string<char, std::char_traits<char>, std::allocator<char> >::basic_string()
-t std::basic_string<char, std::char_traits<char>, std::allocator<char> >::basic_string<__gnu_cxx::__normal_iterator<char*, std::string> >(__gnu_cxx::__normal_iterator<char*, std::string>, __gnu_cxx::__normal_iterator<char*, std::string>, std::allocator<char> const&)
-t std::basic_string<char, std::char_traits<char>, std::allocator<char> >::basic_string<char*>(char*, char*, std::allocator<char> const&)
-t std::basic_string<char, std::char_traits<char>, std::allocator<char> >::basic_string<char const*>(char const*, char const*, std::allocator<char> const&)
-t std::basic_string<char, std::char_traits<char>, std::allocator<char> >::~basic_string()
-t std::basic_string<char, std::char_traits<char>, std::allocator<char> >::~basic_string()
-t std::string::operator[](unsigned int)
-t std::string::operator+=(char)
-t std::string::operator+=(char const*)
-t std::string::operator+=(std::string const&)
-t std::string::operator+=(std::initializer_list<char>)
-t std::bad_typeid::~bad_typeid()
-t std::bad_typeid::~bad_typeid()
-t std::bad_typeid::~bad_typeid()
-t std::logic_error::logic_error(std::string const&)
-t std::logic_error::logic_error(std::string const&)
-t std::logic_error::~logic_error()
-t std::logic_error::~logic_error()
-t std::logic_error::~logic_error()
-t std::range_error::range_error(std::string const&)
-t std::range_error::range_error(std::string const&)
-t std::range_error::~range_error()
-t std::range_error::~range_error()
-t std::range_error::~range_error()
-t std::regex_error::regex_error(std::regex_constants::error_type)
-t std::regex_error::regex_error(std::regex_constants::error_type)
-t std::regex_error::~regex_error()
-t std::regex_error::~regex_error()
-t std::regex_error::~regex_error()
-t std::domain_error::domain_error(std::string const&)
-t std::domain_error::domain_error(std::string const&)
-t std::domain_error::~domain_error()
-t std::domain_error::~domain_error()
-t std::domain_error::~domain_error()
-t std::future_error::~future_error()
-t std::future_error::~future_error()
-t std::future_error::~future_error()
-t std::length_error::length_error(std::string const&)
-t std::length_error::length_error(std::string const&)
-t std::length_error::~length_error()
-t std::length_error::~length_error()
-t std::length_error::~length_error()
-t std::out_of_range::out_of_range(std::string const&)
-t std::out_of_range::out_of_range(std::string const&)
-t std::out_of_range::~out_of_range()
-t std::out_of_range::~out_of_range()
-t std::out_of_range::~out_of_range()
-t std::system_error::~system_error()
-t std::system_error::~system_error()
-t std::system_error::~system_error()
-t std::bad_exception::~bad_exception()
-t std::bad_exception::~bad_exception()
-t std::bad_exception::~bad_exception()
-t std::__future_base::_State_base::_M_run_deferred()
-t std::__future_base::_State_base::~_State_base()
-t std::__future_base::_State_base::~_State_base()
-t std::__future_base::_State_base::~_State_base()
-t std::__future_base::_Result_base::_Result_base()
-t std::__future_base::_Result_base::_Result_base()
-t std::__future_base::_Result_base::~_Result_base()
-t std::__future_base::_Result_base::~_Result_base()
-t std::__future_base::_Result_base::~_Result_base()
-t std::runtime_error::runtime_error(std::string const&)
-t std::runtime_error::runtime_error(std::string const&)
-t std::runtime_error::~runtime_error()
-t std::runtime_error::~runtime_error()
-t std::runtime_error::~runtime_error()
-t std::error_category::error_category()
-t std::error_category::error_category()
-t std::error_category::~error_category()
-t std::error_category::~error_category()
-t std::error_category::~error_category()
-t std::overflow_error::overflow_error(std::string const&)
-t std::overflow_error::overflow_error(std::string const&)
-t std::overflow_error::~overflow_error()
-t std::overflow_error::~overflow_error()
-t std::overflow_error::~overflow_error()
-t std::__exception_ptr::exception_ptr::_M_release()
-t std::__exception_ptr::exception_ptr::_M_safe_bool_dummy()
-t std::__exception_ptr::exception_ptr::swap(std::__exception_ptr::exception_ptr&)
-t std::__exception_ptr::exception_ptr::_M_addref()
-t std::__exception_ptr::exception_ptr::operator=(std::__exception_ptr::exception_ptr const&)
-t std::__exception_ptr::exception_ptr::exception_ptr(void (std::__exception_ptr::exception_ptr::*)())
-t std::__exception_ptr::exception_ptr::exception_ptr(void*)
-t std::__exception_ptr::exception_ptr::exception_ptr(std::__exception_ptr::exception_ptr const&)
-t std::__exception_ptr::exception_ptr::exception_ptr()
-t std::__exception_ptr::exception_ptr::exception_ptr(void (std::__exception_ptr::exception_ptr::*)())
-t std::__exception_ptr::exception_ptr::exception_ptr(void*)
-t std::__exception_ptr::exception_ptr::exception_ptr(std::__exception_ptr::exception_ptr const&)
-t std::__exception_ptr::exception_ptr::exception_ptr()
-t std::__exception_ptr::exception_ptr::~exception_ptr()
-t std::__exception_ptr::exception_ptr::~exception_ptr()
-t std::__exception_ptr::operator==(std::__exception_ptr::exception_ptr const&, std::__exception_ptr::exception_ptr const&)
-t std::__exception_ptr::operator!=(std::__exception_ptr::exception_ptr const&, std::__exception_ptr::exception_ptr const&)
-t std::underflow_error::underflow_error(std::string const&)
-t std::underflow_error::underflow_error(std::string const&)
-t std::underflow_error::~underflow_error()
-t std::underflow_error::~underflow_error()
-t std::underflow_error::~underflow_error()
-t std::invalid_argument::invalid_argument(std::string const&)
-t std::invalid_argument::invalid_argument(std::string const&)
-t std::invalid_argument::~invalid_argument()
-t std::invalid_argument::~invalid_argument()
-t std::invalid_argument::~invalid_argument()
-t std::bad_function_call::~bad_function_call()
-t std::bad_function_call::~bad_function_call()
-t std::bad_function_call::~bad_function_call()
-t std::condition_variable::notify_all()
-t std::condition_variable::notify_one()
-t std::condition_variable::wait(std::unique_lock<std::mutex>&)
-t std::condition_variable::condition_variable()
-t std::condition_variable::condition_variable()
-t std::condition_variable::~condition_variable()
-t std::condition_variable::~condition_variable()
-t std::condition_variable_any::condition_variable_any()
-t std::condition_variable_any::condition_variable_any()
-t std::condition_variable_any::~condition_variable_any()
-t std::condition_variable_any::~condition_variable_any()
-t std::map<CVProfNode*, double, std::less<CVProfNode*>, std::allocator<std::pair<CVProfNode* const, double> > >::~map()
-t std::map<CVProfNode*, double, std::less<CVProfNode*>, std::allocator<std::pair<CVProfNode* const, double> > >::~map()
-t std::map<char const*, unsigned int, std::less<char const*>, std::allocator<std::pair<char const* const, unsigned int> > >::~map()
-t std::map<char const*, unsigned int, std::less<char const*>, std::allocator<std::pair<char const* const, unsigned int> > >::~map()
-t void std::vector<TimeSums_t, std::allocator<TimeSums_t> >::_M_insert_aux<TimeSums_t const&>(__gnu_cxx::__normal_iterator<TimeSums_t*, std::vector<TimeSums_t, std::allocator<TimeSums_t> > >, TimeSums_t const&)
-t std::vector<TimeSums_t, std::allocator<TimeSums_t> >::operator=(std::vector<TimeSums_t, std::allocator<TimeSums_t> > const&)
-t std::vector<TimeSums_t, std::allocator<TimeSums_t> >::~vector()
-t std::vector<TimeSums_t, std::allocator<TimeSums_t> >::~vector()
-t std::bad_cast::~bad_cast()
-t std::bad_cast::~bad_cast()
-t std::bad_cast::~bad_cast()
-t std::ios_base::failure::failure(std::string const&)
-t std::ios_base::failure::failure(std::string const&)
-t std::ios_base::failure::~failure()
-t std::ios_base::failure::~failure()
-t std::ios_base::failure::~failure()
-t std::_Rb_tree_iterator<std::pair<CVProfNode* const, double> > std::_Rb_tree<CVProfNode*, std::pair<CVProfNode* const, double>, std::_Select1st<std::pair<CVProfNode* const, double> >, std::less<CVProfNode*>, std::allocator<std::pair<CVProfNode* const, double> > >::_M_insert_<std::pair<CVProfNode*, double> >(std::_Rb_tree_node_base const*, std::_Rb_tree_node_base const*, std::pair<CVProfNode*, double>&&)
-t std::pair<std::_Rb_tree_iterator<std::pair<CVProfNode* const, double> >, bool> std::_Rb_tree<CVProfNode*, std::pair<CVProfNode* const, double>, std::_Select1st<std::pair<CVProfNode* const, double> >, std::less<CVProfNode*>, std::allocator<std::pair<CVProfNode* const, double> > >::_M_insert_unique<std::pair<CVProfNode*, double> >(std::pair<CVProfNode*, double>&&)
-t std::_Rb_tree<CVProfNode*, std::pair<CVProfNode* const, double>, std::_Select1st<std::pair<CVProfNode* const, double> >, std::less<CVProfNode*>, std::allocator<std::pair<CVProfNode* const, double> > >::_M_erase(std::_Rb_tree_node<std::pair<CVProfNode* const, double> >*)
-t std::_Rb_tree_iterator<std::pair<char const* const, unsigned int> > std::_Rb_tree<char const*, std::pair<char const* const, unsigned int>, std::_Select1st<std::pair<char const* const, unsigned int> >, std::less<char const*>, std::allocator<std::pair<char const* const, unsigned int> > >::_M_insert_<std::pair<char const*, unsigned int> >(std::_Rb_tree_node_base const*, std::_Rb_tree_node_base const*, std::pair<char const*, unsigned int>&&)
-t std::pair<std::_Rb_tree_iterator<std::pair<char const* const, unsigned int> >, bool> std::_Rb_tree<char const*, std::pair<char const* const, unsigned int>, std::_Select1st<std::pair<char const* const, unsigned int> >, std::less<char const*>, std::allocator<std::pair<char const* const, unsigned int> > >::_M_insert_unique<std::pair<char const*, unsigned int> >(std::pair<char const*, unsigned int>&&)
-t std::_Rb_tree<char const*, std::pair<char const* const, unsigned int>, std::_Select1st<std::pair<char const* const, unsigned int> >, std::less<char const*>, std::allocator<std::pair<char const* const, unsigned int> > >::_M_erase(std::_Rb_tree_node<std::pair<char const* const, unsigned int> >*)
-t std::bad_alloc::~bad_alloc()
-t std::bad_alloc::~bad_alloc()
-t std::bad_alloc::~bad_alloc()
-t std::exception::~exception()
-t std::exception::~exception()
-t std::exception::~exception()
-t std::type_info::~type_info()
-t std::type_info::~type_info()
-t std::type_info::~type_info()
 T CThreadFastMutex::Lock(unsigned int, unsigned int) volatile
-t operator new(unsigned int)
-t void std::__pop_heap<__gnu_cxx::__normal_iterator<TimeSums_t*, std::vector<TimeSums_t, std::allocator<TimeSums_t> > >, bool (*)(TimeSums_t const&, TimeSums_t const&)>(__gnu_cxx::__normal_iterator<TimeSums_t*, std::vector<TimeSums_t, std::allocator<TimeSums_t> > >, __gnu_cxx::__normal_iterator<TimeSums_t*, std::vector<TimeSums_t, std::allocator<TimeSums_t> > >, __gnu_cxx::__normal_iterator<TimeSums_t*, std::vector<TimeSums_t, std::allocator<TimeSums_t> > >, bool (*)(TimeSums_t const&, TimeSums_t const&))
-t std::unexpected()
-t void std::__push_heap<__gnu_cxx::__normal_iterator<TimeSums_t*, std::vector<TimeSums_t, std::allocator<TimeSums_t> > >, int, TimeSums_t, bool (*)(TimeSums_t const&, TimeSums_t const&)>(__gnu_cxx::__normal_iterator<TimeSums_t*, std::vector<TimeSums_t, std::allocator<TimeSums_t> > >, int, int, TimeSums_t, bool (*)(TimeSums_t const&, TimeSums_t const&))
-t void std::__adjust_heap<__gnu_cxx::__normal_iterator<TimeSums_t*, std::vector<TimeSums_t, std::allocator<TimeSums_t> > >, int, TimeSums_t, bool (*)(TimeSums_t const&, TimeSums_t const&)>(__gnu_cxx::__normal_iterator<TimeSums_t*, std::vector<TimeSums_t, std::allocator<TimeSums_t> > >, int, int, TimeSums_t, bool (*)(TimeSums_t const&, TimeSums_t const&))
-t std::set_terminate(void (*)())
-t std::set_unexpected(void (*)())
-t std::future_category()
-t std::set_new_handler(void (*)())
-t std::system_category()
-t std::generic_category()
-t void std::__insertion_sort<__gnu_cxx::__normal_iterator<TimeSums_t*, std::vector<TimeSums_t, std::allocator<TimeSums_t> > >, bool (*)(TimeSums_t const&, TimeSums_t const&)>(__gnu_cxx::__normal_iterator<TimeSums_t*, std::vector<TimeSums_t, std::allocator<TimeSums_t> > >, __gnu_cxx::__normal_iterator<TimeSums_t*, std::vector<TimeSums_t, std::allocator<TimeSums_t> > >, bool (*)(TimeSums_t const&, TimeSums_t const&))
-t void std::__introsort_loop<__gnu_cxx::__normal_iterator<TimeSums_t*, std::vector<TimeSums_t, std::allocator<TimeSums_t> > >, int, bool (*)(TimeSums_t const&, TimeSums_t const&)>(__gnu_cxx::__normal_iterator<TimeSums_t*, std::vector<TimeSums_t, std::allocator<TimeSums_t> > >, __gnu_cxx::__normal_iterator<TimeSums_t*, std::vector<TimeSums_t, std::allocator<TimeSums_t> > >, int, bool (*)(TimeSums_t const&, TimeSums_t const&))
-t std::__throw_bad_cast()
-t std::current_exception()
-t std::rethrow_exception(std::__exception_ptr::exception_ptr)
-t std::__throw_bad_alloc()
-t std::_Rb_tree_decrement(std::_Rb_tree_node_base const*)
-t std::_Rb_tree_decrement(std::_Rb_tree_node_base*)
-t std::_Rb_tree_increment(std::_Rb_tree_node_base const*)
-t std::_Rb_tree_increment(std::_Rb_tree_node_base*)
-t std::__throw_bad_typeid()
-t std::uncaught_exception()
-t void std::__move_median_first<__gnu_cxx::__normal_iterator<TimeSums_t*, std::vector<TimeSums_t, std::allocator<TimeSums_t> > >, bool (*)(TimeSums_t const&, TimeSums_t const&)>(__gnu_cxx::__normal_iterator<TimeSums_t*, std::vector<TimeSums_t, std::allocator<TimeSums_t> > >, __gnu_cxx::__normal_iterator<TimeSums_t*, std::vector<TimeSums_t, std::allocator<TimeSums_t> > >, __gnu_cxx::__normal_iterator<TimeSums_t*, std::vector<TimeSums_t, std::allocator<TimeSums_t> > >, bool (*)(TimeSums_t const&, TimeSums_t const&))
-t std::__throw_ios_failure(char const*)
-t std::__throw_logic_error(char const*)
-t std::__throw_range_error(char const*)
-t std::__throw_regex_error(std::regex_constants::error_type)
-t std::_Rb_tree_black_count(std::_Rb_tree_node_base const*, std::_Rb_tree_node_base const*)
-t std::_Rb_tree_rotate_left(std::_Rb_tree_node_base*, std::_Rb_tree_node_base*&)
-t std::__throw_domain_error(char const*)
-t std::__throw_future_error(int)
-t std::__throw_length_error(char const*)
-t std::__throw_out_of_range(char const*)
-t std::__throw_system_error(int)
-t std::_Rb_tree_rotate_right(std::_Rb_tree_node_base*, std::_Rb_tree_node_base*&)
-t std::__throw_bad_exception()
-t std::__throw_runtime_error(char const*)
-t std::__throw_overflow_error(char const*)
-t std::__throw_underflow_error(char const*)
-t std::__throw_invalid_argument(char const*)
-t std::__throw_bad_function_call()
-t void std::__unguarded_linear_insert<__gnu_cxx::__normal_iterator<TimeSums_t*, std::vector<TimeSums_t, std::allocator<TimeSums_t> > >, bool (*)(TimeSums_t const&, TimeSums_t const&)>(__gnu_cxx::__normal_iterator<TimeSums_t*, std::vector<TimeSums_t, std::allocator<TimeSums_t> > >, bool (*)(TimeSums_t const&, TimeSums_t const&))
-t std::_Rb_tree_rebalance_for_erase(std::_Rb_tree_node_base*, std::_Rb_tree_node_base&)
-t std::_Rb_tree_insert_and_rebalance(bool, std::_Rb_tree_node_base*, std::_Rb_tree_node_base*, std::_Rb_tree_node_base&)
-r std::nothrow
-t void std::make_heap<__gnu_cxx::__normal_iterator<TimeSums_t*, std::vector<TimeSums_t, std::allocator<TimeSums_t> > >, bool (*)(TimeSums_t const&, TimeSums_t const&)>(__gnu_cxx::__normal_iterator<TimeSums_t*, std::vector<TimeSums_t, std::allocator<TimeSums_t> > >, __gnu_cxx::__normal_iterator<TimeSums_t*, std::vector<TimeSums_t, std::allocator<TimeSums_t> > >, bool (*)(TimeSums_t const&, TimeSums_t const&))
-t std::terminate()
-t std::local_Rb_tree_rotate_left(std::_Rb_tree_node_base*, std::_Rb_tree_node_base*&)
-t std::local_Rb_tree_rotate_right(std::_Rb_tree_node_base*, std::_Rb_tree_node_base*&)
-t std::basic_string<char, std::char_traits<char>, std::allocator<char> > std::operator+<char, std::char_traits<char>, std::allocator<char> >(char const*, std::basic_string<char, std::char_traits<char>, std::allocator<char> > const&)
-t std::basic_string<char, std::char_traits<char>, std::allocator<char> > std::operator+<char, std::char_traits<char>, std::allocator<char> >(std::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, std::basic_string<char, std::char_traits<char>, std::allocator<char> > const&)
-t std::basic_string<char, std::char_traits<char>, std::allocator<char> > std::operator+<char, std::char_traits<char>, std::allocator<char> >(char, std::basic_string<char, std::char_traits<char>, std::allocator<char> > const&)
 V typeinfo for CTestSuite
-r typeinfo for ITestSuite
-r typeinfo for CCommandLine
-r typeinfo for CStdMemAlloc
-r typeinfo for ICommandLine
 V typeinfo for CWorkerThread
-r typeinfo for ILoggingListener
-r typeinfo for CSimpleLoggingListener
-r typeinfo for ILoggingResponsePolicy
 V typeinfo for BasicStatStructFieldDesc
 V typeinfo for CallStackStatStructDescFuncs
-r typeinfo for CDefaultLoggingResponsePolicy
 V typeinfo for CThread
 V typeinfo for CTestCase
-r typeinfo for IMemAlloc
-r typeinfo for ITestCase
 V typeinfo for signed char
 V typeinfo for bool
 V typeinfo for char
@@ -1749,18 +500,9 @@ V typeinfo for __cxxabiv1::__foreign_exception
 V typeinfo for __cxxabiv1::__pointer_type_info
 V typeinfo for __cxxabiv1::__si_class_type_info
 V typeinfo for __cxxabiv1::__fundamental_type_info
-r typeinfo for TSListTests::CListOps
-r typeinfo for TSListTests::CTestOps
-r typeinfo for TSListTests::CQueueOps
-r typeinfo for (anonymous namespace)::future_error_category
-r typeinfo for (anonymous namespace)::system_error_category
-r typeinfo for (anonymous namespace)::generic_error_category
 V typeinfo for __gnu_cxx::recursive_init_error
 V typeinfo for __gnu_cxx::__concurrence_lock_error
 V typeinfo for __gnu_cxx::__concurrence_unlock_error
-r typeinfo for std::__future_base::_State_base
-r typeinfo for std::__future_base::_Result_base
-r typeinfo for std::ios_base::failure
 V typeinfo for signed char*
 V typeinfo for bool*
 V typeinfo for char*
@@ -1808,47 +550,17 @@ V typeinfo for wchar_t*
 V typeinfo for long long*
 V typeinfo for unsigned long long*
 V typeinfo for short
-d typeinfo for std::bad_typeid
-r typeinfo for std::logic_error
-r typeinfo for std::range_error
-r typeinfo for std::regex_error
-r typeinfo for std::domain_error
-r typeinfo for std::future_error
-r typeinfo for std::length_error
-r typeinfo for std::out_of_range
-r typeinfo for std::system_error
-d typeinfo for std::bad_exception
-r typeinfo for std::runtime_error
-r typeinfo for std::error_category
-r typeinfo for std::overflow_error
-r typeinfo for std::underflow_error
-r typeinfo for std::invalid_argument
-r typeinfo for std::bad_function_call
-d typeinfo for std::bad_cast
-d typeinfo for std::bad_alloc
-d typeinfo for std::exception
-d typeinfo for std::type_info
 V typeinfo for unsigned short
 V typeinfo for void
 V typeinfo for wchar_t
 V typeinfo for long long
 V typeinfo for unsigned long long
 V typeinfo name for CTestSuite
-r typeinfo name for ITestSuite
-r typeinfo name for CCommandLine
-r typeinfo name for CStdMemAlloc
-r typeinfo name for ICommandLine
 V typeinfo name for CWorkerThread
-r typeinfo name for ILoggingListener
-r typeinfo name for CSimpleLoggingListener
-r typeinfo name for ILoggingResponsePolicy
 V typeinfo name for BasicStatStructFieldDesc
 V typeinfo name for CallStackStatStructDescFuncs
-r typeinfo name for CDefaultLoggingResponsePolicy
 V typeinfo name for CThread
 V typeinfo name for CTestCase
-r typeinfo name for IMemAlloc
-r typeinfo name for ITestCase
 V typeinfo name for signed char
 V typeinfo name for bool
 V typeinfo name for char
@@ -1873,18 +585,9 @@ V typeinfo name for __cxxabiv1::__foreign_exception
 V typeinfo name for __cxxabiv1::__pointer_type_info
 V typeinfo name for __cxxabiv1::__si_class_type_info
 V typeinfo name for __cxxabiv1::__fundamental_type_info
-r typeinfo name for TSListTests::CListOps
-r typeinfo name for TSListTests::CTestOps
-r typeinfo name for TSListTests::CQueueOps
-r typeinfo name for (anonymous namespace)::future_error_category
-r typeinfo name for (anonymous namespace)::system_error_category
-r typeinfo name for (anonymous namespace)::generic_error_category
 V typeinfo name for __gnu_cxx::recursive_init_error
 V typeinfo name for __gnu_cxx::__concurrence_lock_error
 V typeinfo name for __gnu_cxx::__concurrence_unlock_error
-r typeinfo name for std::__future_base::_State_base
-r typeinfo name for std::__future_base::_Result_base
-r typeinfo name for std::ios_base::failure
 V typeinfo name for signed char*
 V typeinfo name for bool*
 V typeinfo name for char*
@@ -1932,45 +635,16 @@ V typeinfo name for wchar_t*
 V typeinfo name for long long*
 V typeinfo name for unsigned long long*
 V typeinfo name for short
-r typeinfo name for std::bad_typeid
-r typeinfo name for std::logic_error
-r typeinfo name for std::range_error
-r typeinfo name for std::regex_error
-r typeinfo name for std::domain_error
-r typeinfo name for std::future_error
-r typeinfo name for std::length_error
-r typeinfo name for std::out_of_range
-r typeinfo name for std::system_error
-r typeinfo name for std::bad_exception
-r typeinfo name for std::runtime_error
-r typeinfo name for std::error_category
-r typeinfo name for std::overflow_error
-r typeinfo name for std::underflow_error
-r typeinfo name for std::invalid_argument
-r typeinfo name for std::bad_function_call
-r typeinfo name for std::bad_cast
-r typeinfo name for std::bad_alloc
-r typeinfo name for std::exception
-r typeinfo name for std::type_info
 V typeinfo name for unsigned short
 V typeinfo name for void
 V typeinfo name for wchar_t
 V typeinfo name for long long
 V typeinfo name for unsigned long long
 V vtable for CTestSuite
-r vtable for ITestSuite
-r vtable for CCommandLine
-r vtable for CStdMemAlloc
-r vtable for ICommandLine
 V vtable for CWorkerThread
-r vtable for ILoggingListener
-r vtable for CSimpleLoggingListener
 V vtable for BasicStatStructFieldDesc
-r vtable for CDefaultLoggingResponsePolicy
 V vtable for CThread
 V vtable for CTestCase
-r vtable for IMemAlloc
-r vtable for ITestCase
 V vtable for __cxxabiv1::__forced_unwind
 V vtable for __cxxabiv1::__class_type_info
 V vtable for __cxxabiv1::__pbase_type_info
@@ -1978,55 +652,6 @@ V vtable for __cxxabiv1::__foreign_exception
 V vtable for __cxxabiv1::__pointer_type_info
 V vtable for __cxxabiv1::__si_class_type_info
 V vtable for __cxxabiv1::__fundamental_type_info
-r vtable for TSListTests::CListOps
-r vtable for TSListTests::CQueueOps
-r vtable for (anonymous namespace)::future_error_category
-r vtable for (anonymous namespace)::system_error_category
-r vtable for (anonymous namespace)::generic_error_category
 V vtable for __gnu_cxx::recursive_init_error
 V vtable for __gnu_cxx::__concurrence_lock_error
 V vtable for __gnu_cxx::__concurrence_unlock_error
-r vtable for std::__future_base::_State_base
-r vtable for std::__future_base::_Result_base
-r vtable for std::ios_base::failure
-d vtable for std::bad_typeid
-r vtable for std::logic_error
-r vtable for std::range_error
-r vtable for std::regex_error
-r vtable for std::domain_error
-r vtable for std::future_error
-r vtable for std::length_error
-r vtable for std::out_of_range
-r vtable for std::system_error
-d vtable for std::bad_exception
-r vtable for std::runtime_error
-r vtable for std::error_category
-r vtable for std::overflow_error
-r vtable for std::underflow_error
-r vtable for std::invalid_argument
-r vtable for std::bad_function_call
-d vtable for std::bad_cast
-d vtable for std::bad_alloc
-d vtable for std::exception
-d vtable for std::type_info
-b DoNewAssertDialog::autoMutex__
-b DoNewAssertDialog::pfnSDLShowMessageBox
-b DoNewAssertDialog::pfnSDLGetKeyboardFocus
-b COM_TimestampedLog::s_bChecked
-b COM_TimestampedLog::s_LastStamp
-b COM_TimestampedLog::s_bShouldLog
-b COM_TimestampedLog::s_bFirstWrite
-b COM_TimestampedLog::s_bShouldLogToETW
-b COM_TimestampedLog::s_bShouldLogToConsole
-b ShouldUseNewAssertDialog::bMPIWorker
-b GetGlobalLoggingSystem_Internal()::globalLoggingSystem
-b pathmatch(char const*, char**, bool, char*, unsigned int)::s_pszDbgPathMatch
-b AssertStack()::bResult
-b AllAssertOnce()::bResult
-b AreAssertsDisabled()::bResult
-b IsDebugBreakEnabled()::bResult
-b (anonymous namespace)::get_global()::global
-b (anonymous namespace)::__future_category_instance()::__fec
-b CSharedLibraryCache::GetCache()::Singleton
-b CVProfile::FindOrCreateCounter(char const*, CounterGroup_t)::dummy
-b __gnu_cxx::__verbose_terminate_handler()::terminating

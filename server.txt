@@ -55,7 +55,6 @@ A _edata
 A _end
 U __errno_location@@GLIBC_2.0
 U Error
-U _exit@@GLIBC_2.0
 U _ExitOnFatalAssert
 U expf@@GLIBC_2.0
 U fclose@@GLIBC_2.1

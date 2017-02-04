@@ -245,6 +245,8 @@ U __stack_chk_fail@@GLIBC_2.4
 U stderr@@GLIBC_2.0
 U stdin@@GLIBC_2.0
 U stdout@@GLIBC_2.0
+U SteamAPI_GetHSteamPipe
+U SteamAPI_GetHSteamUser
 U SteamAPI_RegisterCallback
 U SteamAPI_RegisterCallResult
 U SteamAPI_RestartAppIfNecessary
@@ -260,6 +262,7 @@ U SteamGameServer_GetIPCCallCount
 U SteamGameServerInternal_CreateInterface
 U SteamGameServer_RunCallbacks
 U SteamGameServer_Shutdown
+U SteamInternal_CreateInterface
 U SteamInternal_GameServer_Init
 U strcasecmp@@GLIBC_2.0
 U strcasestr@@GLIBC_2.1

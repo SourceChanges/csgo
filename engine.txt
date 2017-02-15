@@ -153,11 +153,9 @@ U mbsnrtowcs@@GLIBC_2.0
 U mbsrtowcs@@GLIBC_2.0
 U mbstowcs@@GLIBC_2.0
 U memalign@@GLIBC_2.0
-U MemAllocScratch
 U memchr@@GLIBC_2.0
 U memcmp@@GLIBC_2.0
 U memcpy@@GLIBC_2.0
-U MemFreeScratch
 U memmove@@GLIBC_2.0
 U memset@@GLIBC_2.0
 U mkdir@@GLIBC_2.0

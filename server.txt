@@ -71,7 +71,9 @@ U fread@@GLIBC_2.0
 U free@@GLIBC_2.0
 U __freelocale@@GLIBC_2.1
 U freopen@@GLIBC_2.0
+U fseek@@GLIBC_2.0
 U fseeko64@@GLIBC_2.1
+U ftell@@GLIBC_2.0
 U ftello64@@GLIBC_2.1
 U futimes@@GLIBC_2.3
 U fwrite@@GLIBC_2.0

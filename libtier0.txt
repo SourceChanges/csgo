@@ -213,7 +213,7 @@ U printf@@GLIBC_2.0
 U pthread_attr_init@@GLIBC_2.1
 U pthread_attr_setstacksize@@GLIBC_2.1
 w pthread_cancel@@GLIBC_2.0
-w pthread_cond_broadcast@@GLIBC_2.3.2
+U pthread_cond_broadcast@@GLIBC_2.3.2
 U pthread_cond_destroy@@GLIBC_2.3.2
 U pthread_cond_init@@GLIBC_2.3.2
 U pthread_cond_signal@@GLIBC_2.3.2

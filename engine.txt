@@ -158,6 +158,7 @@ U memcmp@@GLIBC_2.0
 U memcpy@@GLIBC_2.0
 U memmove@@GLIBC_2.0
 U memset@@GLIBC_2.0
+U MicroProfilerAddTS
 U mkdir@@GLIBC_2.0
 U mkfifo@@GLIBC_2.0
 U mount@@GLIBC_2.0
@@ -178,6 +179,7 @@ U Plat_IsInDebugSession
 U Plat_MSTime
 U Plat_SetBenchmarkMode
 U Plat_SetWindowTitle
+U Plat_USTime
 U poll@@GLIBC_2.0
 U popen@@GLIBC_2.1
 U powf@@GLIBC_2.0

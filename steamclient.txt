@@ -1,9 +1,12 @@
 U abort@@GLIBC_2.0
 U accept@@GLIBC_2.0
 U access@@GLIBC_2.0
+U acosf@@GLIBC_2.0
+U acos@@GLIBC_2.0
 U alphasort64@@GLIBC_2.2
 U asctime_r@@GLIBC_2.0
 U asinf@@GLIBC_2.0
+U asin@@GLIBC_2.0
 U __assert_fail@@GLIBC_2.0
 U atan2f@@GLIBC_2.0
 U atan2@@GLIBC_2.0
@@ -11,11 +14,13 @@ U atan@@GLIBC_2.0
 U backtrace@@GLIBC_2.1
 U backtrace_symbols@@GLIBC_2.1
 U bind@@GLIBC_2.0
+U bindtextdomain@@GLIBC_2.0
 T Breakpad_SteamMiniDumpInit
 T Breakpad_SteamSetAppID
 T Breakpad_SteamSetSteamID
 T Breakpad_SteamWriteMiniDumpSetComment
 T Breakpad_SteamWriteMiniDumpUsingExceptionInfoWithBuildId
+U btowc@@GLIBC_2.0
 U calloc@@GLIBC_2.0
 U ceilf@@GLIBC_2.0
 U ceil@@GLIBC_2.0
@@ -24,29 +29,19 @@ U chmod@@GLIBC_2.0
 U chown@@GLIBC_2.1
 U clearerr@@GLIBC_2.0
 U clock_gettime@@GLIBC_2.2
-U clock@@GLIBC_2.0
 U closedir@@GLIBC_2.0
 U close@@GLIBC_2.0
 U connect@@GLIBC_2.0
+U cosf@@GLIBC_2.0
 U cos@@GLIBC_2.0
 T CreateInterface
 U ctime_r@@GLIBC_2.0
 U __ctype_b_loc@@GLIBC_2.3
+U __ctype_get_mb_cur_max@@GLIBC_2.0
 U __ctype_tolower_loc@@GLIBC_2.3
 U __ctype_toupper_loc@@GLIBC_2.3
-U __cxa_allocate_exception@@CXXABI_1.3
 U __cxa_atexit@@GLIBC_2.1.3
-U __cxa_begin_catch@@CXXABI_1.3
-U __cxa_end_catch@@CXXABI_1.3
 w __cxa_finalize@@GLIBC_2.1.3
-U __cxa_free_exception@@CXXABI_1.3
-U __cxa_get_exception_ptr@@CXXABI_1.3.1
-U __cxa_guard_abort@@CXXABI_1.3
-U __cxa_guard_acquire@@CXXABI_1.3
-U __cxa_guard_release@@CXXABI_1.3
-U __cxa_pure_virtual@@CXXABI_1.3
-U __cxa_rethrow@@CXXABI_1.3
-U __cxa_throw@@CXXABI_1.3
 U __daylight@@GLIBC_2.0
 U daylight@@GLIBC_2.0
 U div@@GLIBC_2.0
@@ -58,11 +53,13 @@ U dlmopen@@GLIBC_2.3.4
 U dlopen@@GLIBC_2.1
 U dlsym@@GLIBC_2.0
 U dup@@GLIBC_2.0
-U __dynamic_cast@@CXXABI_1.3
+U __duplocale@@GLIBC_2.1
+U endmntent@@GLIBC_2.0
 U epoll_create@@GLIBC_2.3.2
 U epoll_ctl@@GLIBC_2.3.2
 U epoll_wait@@GLIBC_2.3.2
 U __errno_location@@GLIBC_2.0
+U eventfd@@GLIBC_2.7
 U execvp@@GLIBC_2.0
 U _exit@@GLIBC_2.0
 U exit@@GLIBC_2.0
@@ -72,15 +69,16 @@ U fchown@@GLIBC_2.0
 U fclose@@GLIBC_2.1
 U fcntl@@GLIBC_2.0
 U fdatasync@@GLIBC_2.0
+U fdopen@@GLIBC_2.1
 U feof@@GLIBC_2.0
 U ferror@@GLIBC_2.0
 U fflush@@GLIBC_2.0
-U fgetc@@GLIBC_2.0
 U fgets@@GLIBC_2.0
 U fileno@@GLIBC_2.0
 U flock@@GLIBC_2.0
 U floorf@@GLIBC_2.0
 U floor@@GLIBC_2.0
+U fmodf@@GLIBC_2.0
 U fmod@@GLIBC_2.0
 U fopen64@@GLIBC_2.1
 U fopen@@GLIBC_2.1
@@ -94,12 +92,14 @@ U fread@@GLIBC_2.0
 U freeaddrinfo@@GLIBC_2.0
 U free@@GLIBC_2.0
 U freeifaddrs@@GLIBC_2.3
+U __freelocale@@GLIBC_2.1
 U freopen@@GLIBC_2.0
 U frexp@@GLIBC_2.0
 U fseek@@GLIBC_2.0
 U fseeko64@@GLIBC_2.1
 U fsync@@GLIBC_2.0
 U ftell@@GLIBC_2.0
+U ftello64@@GLIBC_2.1
 U ftruncate64@@GLIBC_2.1
 U ftruncate@@GLIBC_2.0
 U futimes@@GLIBC_2.3
@@ -107,36 +107,40 @@ U fwrite@@GLIBC_2.0
 U __fxstat64@@GLIBC_2.2
 U __fxstat@@GLIBC_2.0
 U getaddrinfo@@GLIBC_2.0
+U getc@@GLIBC_2.0
 U getcwd@@GLIBC_2.0
 U getenv@@GLIBC_2.0
 U geteuid@@GLIBC_2.0
 U gethostbyname@@GLIBC_2.0
 U gethostname@@GLIBC_2.0
 U getifaddrs@@GLIBC_2.3
+U getmntent@@GLIBC_2.0
 U getnameinfo@@GLIBC_2.1
 U getpeername@@GLIBC_2.0
 U getpid@@GLIBC_2.0
 U getpwuid@@GLIBC_2.0
 U getsockname@@GLIBC_2.0
 U getsockopt@@GLIBC_2.0
+U gettext@@GLIBC_2.0
 U gettimeofday@@GLIBC_2.0
 U getuid@@GLIBC_2.0
+U getwc@@GLIBC_2.2
 w __gmon_start__
 U gmtime@@GLIBC_2.0
 U gmtime_r@@GLIBC_2.0
 U gnu_get_libc_version@@GLIBC_2.1
-U __gxx_personality_v0@@CXXABI_1.3
 U __h_errno_location@@GLIBC_2.0
 U inet_aton@@GLIBC_2.0
 U ioctl@@GLIBC_2.0
 U isalnum@@GLIBC_2.0
 U isalpha@@GLIBC_2.0
+U __isoc99_sscanf@@GLIBC_2.7
 U isprint@@GLIBC_2.0
 U isspace@@GLIBC_2.0
 U iswalnum@@GLIBC_2.0
 U iswalpha@@GLIBC_2.0
+U __iswctype_l@@GLIBC_2.1
 U iswspace@@GLIBC_2.0
-U isxdigit@@GLIBC_2.0
 w _ITM_deregisterTMCloneTable
 w _ITM_registerTMCloneTable
 w _Jv_RegisterClasses
@@ -148,18 +152,24 @@ U listen@@GLIBC_2.0
 U localeconv@@GLIBC_2.2
 U localtime@@GLIBC_2.0
 U localtime_r@@GLIBC_2.0
+U log10f@@GLIBC_2.0
 U log10@@GLIBC_2.0
 U logf@@GLIBC_2.0
 U log@@GLIBC_2.0
 U __longjmp_chk@@GLIBC_2.11
 U longjmp@@GLIBC_2.0
+U lrintf@@GLIBC_2.1
+U lroundf@@GLIBC_2.1
 U lseek64@@GLIBC_2.2
 U lseek@@GLIBC_2.0
 U __lxstat64@@GLIBC_2.2
 U __lxstat@@GLIBC_2.0
 U malloc@@GLIBC_2.0
 U malloc_usable_size@@GLIBC_2.0
-U memalign@@GLIBC_2.0
+U mbrtowc@@GLIBC_2.0
+U mbsnrtowcs@@GLIBC_2.0
+U mbsrtowcs@@GLIBC_2.0
+U memchr@@GLIBC_2.0
 U memcmp@@GLIBC_2.0
 U __memcpy_chk@@GLIBC_2.3.4
 U memcpy@@GLIBC_2.0
@@ -179,7 +189,9 @@ U mprotect@@GLIBC_2.0
 U mremap@@GLIBC_2.0
 U munmap@@GLIBC_2.0
 U nanosleep@@GLIBC_2.0
+U __newlocale@@GLIBC_2.1
 U nice@@GLIBC_2.0
+U __nl_langinfo_l@@GLIBC_2.2
 U open64@@GLIBC_2.2
 U opendir@@GLIBC_2.0
 U open@@GLIBC_2.0
@@ -187,6 +199,7 @@ U pclose@@GLIBC_2.1
 U pipe@@GLIBC_2.0
 U poll@@GLIBC_2.0
 U popen@@GLIBC_2.1
+U posix_fadvise@@GLIBC_2.2
 U powf@@GLIBC_2.0
 U pow@@GLIBC_2.0
 U prctl@@GLIBC_2.0
@@ -227,7 +240,9 @@ U pthread_once@@GLIBC_2.0
 U pthread_self@@GLIBC_2.0
 U pthread_setname_np@@GLIBC_2.12
 U pthread_setspecific@@GLIBC_2.0
+U putc@@GLIBC_2.0
 U puts@@GLIBC_2.0
+U putwc@@GLIBC_2.2
 U pwrite64@@GLIBC_2.2
 U qsort@@GLIBC_2.0
 U rand@@GLIBC_2.0
@@ -242,6 +257,7 @@ U __recv_chk@@GLIBC_2.4
 U recvfrom@@GLIBC_2.0
 U recv@@GLIBC_2.0
 U recvmsg@@GLIBC_2.0
+U __register_atfork@@GLIBC_2.3.2
 U remove@@GLIBC_2.0
 U rename@@GLIBC_2.0
 U rewind@@GLIBC_2.0
@@ -260,6 +276,8 @@ U sendmsg@@GLIBC_2.0
 U sendto@@GLIBC_2.0
 U setenv@@GLIBC_2.0
 U _setjmp@@GLIBC_2.0
+U setlocale@@GLIBC_2.0
+U setmntent@@GLIBC_2.0
 U setsockopt@@GLIBC_2.0
 U setvbuf@@GLIBC_2.0
 U shm_open@@GLIBC_2.2
@@ -271,6 +289,8 @@ U sigemptyset@@GLIBC_2.0
 U signal@@GLIBC_2.0
 U sigprocmask@@GLIBC_2.0
 U sincosf@@GLIBC_2.1
+U sinf@@GLIBC_2.0
+U sin@@GLIBC_2.0
 U sleep@@GLIBC_2.0
 U __snprintf_chk@@GLIBC_2.3.4
 U snprintf@@GLIBC_2.0
@@ -291,17 +311,18 @@ T Steam_BGetCallback
 T Steam_FreeLastCallback
 T Steam_GetAPICallResult
 T Steam_ReleaseThreadLocalMemory
-U stpcpy@@GLIBC_2.0
 U strcasecmp@@GLIBC_2.0
 U strcasestr@@GLIBC_2.1
-U strcat@@GLIBC_2.0
+U __strcat_chk@@GLIBC_2.3.4
 U strchr@@GLIBC_2.0
 U strcmp@@GLIBC_2.0
+U __strcoll_l@@GLIBC_2.1
 U __strcpy_chk@@GLIBC_2.3.4
 U strcpy@@GLIBC_2.0
 U strdup@@GLIBC_2.0
 U strerror@@GLIBC_2.0
 U strftime@@GLIBC_2.0
+U __strftime_l@@GLIBC_2.3
 U strlen@@GLIBC_2.0
 U strncasecmp@@GLIBC_2.0
 U __strncat_chk@@GLIBC_2.3.4
@@ -311,10 +332,15 @@ U strncpy@@GLIBC_2.0
 U strpbrk@@GLIBC_2.0
 U strptime@@GLIBC_2.0
 U strrchr@@GLIBC_2.0
+U strspn@@GLIBC_2.0
 U strstr@@GLIBC_2.0
 U strtod@@GLIBC_2.0
 U __strtod_internal@@GLIBC_2.0
+U __strtod_l@@GLIBC_2.1
 U strtof@@GLIBC_2.0
+U __strtof_l@@GLIBC_2.1
+U strtok@@GLIBC_2.0
+U strtold_l@@GLIBC_2.3
 U strtol@@GLIBC_2.0
 U __strtol_internal@@GLIBC_2.0
 U strtoll@@GLIBC_2.0
@@ -323,6 +349,7 @@ U strtoul@@GLIBC_2.0
 U __strtoul_internal@@GLIBC_2.0
 U strtoull@@GLIBC_2.0
 U __strtoull_internal@@GLIBC_2.0
+U __strxfrm_l@@GLIBC_2.1
 U __swprintf_chk@@GLIBC_2.4
 U swprintf@@GLIBC_2.2
 U swscanf@@GLIBC_2.2
@@ -330,196 +357,64 @@ U symlink@@GLIBC_2.0
 U syscall@@GLIBC_2.0
 U sysconf@@GLIBC_2.0
 U system@@GLIBC_2.0
+U tanf@@GLIBC_2.0
+U tan@@GLIBC_2.0
 U tcgetattr@@GLIBC_2.0
 U tcsetattr@@GLIBC_2.0
+U textdomain@@GLIBC_2.0
 U time@@GLIBC_2.0
 U timegm@@GLIBC_2.0
-U times@@GLIBC_2.0
 U __timezone@@GLIBC_2.0
 U timezone@@GLIBC_2.0
+U ___tls_get_addr@@GLIBC_2.3
 U tolower@@GLIBC_2.0
 U toupper@@GLIBC_2.0
 U towlower@@GLIBC_2.0
+U __towlower_l@@GLIBC_2.1
 U towupper@@GLIBC_2.0
+U __towupper_l@@GLIBC_2.1
 U truncf@@GLIBC_2.1
 U trunc@@GLIBC_2.1
 U uname@@GLIBC_2.0
+U ungetc@@GLIBC_2.0
+U ungetwc@@GLIBC_2.2
 U unlink@@GLIBC_2.0
 U unsetenv@@GLIBC_2.0
+U __uselocale@@GLIBC_2.3
 U usleep@@GLIBC_2.0
 U utime@@GLIBC_2.0
 U utimes@@GLIBC_2.0
 U __vasprintf_chk@@GLIBC_2.8
 U __vfprintf_chk@@GLIBC_2.3.4
-U vfprintf@@GLIBC_2.0
 U __vsnprintf_chk@@GLIBC_2.3.4
 U vsnprintf@@GLIBC_2.0
 U vswprintf@@GLIBC_2.2
 U wait@@GLIBC_2.0
 U waitpid@@GLIBC_2.0
+U wcrtomb@@GLIBC_2.0
 U wcscasecmp@@GLIBC_2.1
 U wcscmp@@GLIBC_2.0
+U __wcscoll_l@@GLIBC_2.1
+U __wcsftime_l@@GLIBC_2.3
 U wcslen@@GLIBC_2.0
 U wcsncasecmp@@GLIBC_2.1
 U wcsncat@@GLIBC_2.0
 U wcsncpy@@GLIBC_2.0
+U wcsnrtombs@@GLIBC_2.0
 U wcstol@@GLIBC_2.0
 U wcstoll@@GLIBC_2.1
 U wcstombs@@GLIBC_2.0
 U wcstoull@@GLIBC_2.1
+U __wcsxfrm_l@@GLIBC_2.1
+U wctob@@GLIBC_2.0
+U __wctype_l@@GLIBC_2.1
+U wmemchr@@GLIBC_2.0
 U wmemcmp@@GLIBC_2.0
 U wmemcpy@@GLIBC_2.0
+U wmemmove@@GLIBC_2.0
+U wmemset@@GLIBC_2.0
 U write@@GLIBC_2.0
+U writev@@GLIBC_2.0
 U __xmknod@@GLIBC_2.0
 U __xstat64@@GLIBC_2.2
 U __xstat@@GLIBC_2.0
-U operator delete[](void*)@@GLIBCXX_3.4
-U operator delete(void*)@@GLIBCXX_3.4
-U operator delete(void*, std::nothrow_t const&)@@GLIBCXX_3.4
-U operator new[](unsigned int)@@GLIBCXX_3.4
-U std::basic_string<wchar_t, std::char_traits<wchar_t>, std::allocator<wchar_t> >::find(wchar_t const*, unsigned int, unsigned int) const@@GLIBCXX_3.4
-U std::basic_string<wchar_t, std::char_traits<wchar_t>, std::allocator<wchar_t> >::rfind(wchar_t const*, unsigned int, unsigned int) const@@GLIBCXX_3.4
-U std::string::find_first_of(char const*, unsigned int) const@@GLIBCXX_3.4
-U std::string::find_first_of(char const*, unsigned int, unsigned int) const@@GLIBCXX_3.4
-U std::string::find_first_not_of(char const*, unsigned int) const@@GLIBCXX_3.4
-U std::string::at(unsigned int) const@@GLIBCXX_3.4
-U std::string::find(char, unsigned int) const@@GLIBCXX_3.4
-U std::string::find(char const*, unsigned int, unsigned int) const@@GLIBCXX_3.4
-U std::string::find(std::string const&, unsigned int) const@@GLIBCXX_3.4
-U std::string::rfind(char, unsigned int) const@@GLIBCXX_3.4
-U std::string::substr(unsigned int, unsigned int) const@@GLIBCXX_3.4
-U std::string::compare(unsigned int, unsigned int, std::string const&) const@@GLIBCXX_3.4
-U std::string::compare(char const*) const@@GLIBCXX_3.4
-U std::string::compare(std::string const&) const@@GLIBCXX_3.4
-U std::ctype<char>::_M_widen_init() const@@GLIBCXX_3.4.11
-U std::basic_string<wchar_t, std::char_traits<wchar_t>, std::allocator<wchar_t> >::_M_leak_hard()@@GLIBCXX_3.4
-U std::basic_string<wchar_t, std::char_traits<wchar_t>, std::allocator<wchar_t> >::_Rep::_M_destroy(std::allocator<wchar_t> const&)@@GLIBCXX_3.4
-U std::basic_string<wchar_t, std::char_traits<wchar_t>, std::allocator<wchar_t> >::_Rep::_S_empty_rep_storage@@GLIBCXX_3.4
-U std::basic_string<wchar_t, std::char_traits<wchar_t>, std::allocator<wchar_t> >::_Rep::_S_create(unsigned int, unsigned int, std::allocator<wchar_t> const&)@@GLIBCXX_3.4
-U std::basic_string<wchar_t, std::char_traits<wchar_t>, std::allocator<wchar_t> >::append(wchar_t const*, unsigned int)@@GLIBCXX_3.4
-U std::basic_string<wchar_t, std::char_traits<wchar_t>, std::allocator<wchar_t> >::append(std::basic_string<wchar_t, std::char_traits<wchar_t>, std::allocator<wchar_t> > const&)@@GLIBCXX_3.4
-U std::basic_string<wchar_t, std::char_traits<wchar_t>, std::allocator<wchar_t> >::resize(unsigned int, wchar_t)@@GLIBCXX_3.4
-U std::basic_string<wchar_t, std::char_traits<wchar_t>, std::allocator<wchar_t> >::reserve(unsigned int)@@GLIBCXX_3.4
-U std::basic_string<wchar_t, std::char_traits<wchar_t>, std::allocator<wchar_t> >::basic_string(unsigned int, wchar_t, std::allocator<wchar_t> const&)@@GLIBCXX_3.4
-U std::basic_string<wchar_t, std::char_traits<wchar_t>, std::allocator<wchar_t> >::basic_string(wchar_t const*, std::allocator<wchar_t> const&)@@GLIBCXX_3.4
-U std::basic_string<wchar_t, std::char_traits<wchar_t>, std::allocator<wchar_t> >::basic_string(std::basic_string<wchar_t, std::char_traits<wchar_t>, std::allocator<wchar_t> > const&)@@GLIBCXX_3.4
-U std::basic_string<wchar_t, std::char_traits<wchar_t>, std::allocator<wchar_t> >::basic_string(std::basic_string<wchar_t, std::char_traits<wchar_t>, std::allocator<wchar_t> > const&, unsigned int, unsigned int)@@GLIBCXX_3.4
-U std::basic_string<wchar_t, std::char_traits<wchar_t>, std::allocator<wchar_t> >::~basic_string()@@GLIBCXX_3.4
-U std::basic_iostream<char, std::char_traits<char> >::~basic_iostream()@@GLIBCXX_3.4
-U std::istream::get()@@GLIBCXX_3.4
-U std::istream::peek()@@GLIBCXX_3.4
-U std::istream::read(char*, int)@@GLIBCXX_3.4
-U std::istream::putback(char)@@GLIBCXX_3.4
-U std::istream::operator>>(int&)@@GLIBCXX_3.4
-U std::ostream::put(char)@@GLIBCXX_3.4
-U std::ostream::flush()@@GLIBCXX_3.4
-U std::ostream::write(char const*, int)@@GLIBCXX_3.4
-U std::ostream& std::ostream::_M_insert<unsigned long>(unsigned long)@@GLIBCXX_3.4.9
-U std::ostream& std::ostream::_M_insert<void const*>(void const*)@@GLIBCXX_3.4.9
-U std::ostream::operator<<(int)@@GLIBCXX_3.4
-U std::string::_M_leak_hard()@@GLIBCXX_3.4
-U std::string::_S_copy_chars(char*, char*, char*)@@GLIBCXX_3.4
-U std::string::_M_replace_aux(unsigned int, unsigned int, unsigned int, char)@@GLIBCXX_3.4
-U std::string::end()@@GLIBCXX_3.4
-U std::string::_Rep::_M_destroy(std::allocator<char> const&)@@GLIBCXX_3.4
-U std::string::_Rep::_M_dispose(std::allocator<char> const&)@@GLIBCXX_3.4
-U std::string::_Rep::_S_empty_rep_storage@@GLIBCXX_3.4
-U std::string::_Rep::_M_set_length_and_sharable(unsigned int)@@GLIBCXX_3.4.5
-U std::string::_Rep::_S_create(unsigned int, unsigned int, std::allocator<char> const&)@@GLIBCXX_3.4
-U std::string::swap(std::string&)@@GLIBCXX_3.4
-U std::string::clear()@@GLIBCXX_3.4
-U std::string::erase(unsigned int, unsigned int)@@GLIBCXX_3.4
-U std::string::erase(__gnu_cxx::__normal_iterator<char*, std::string>, __gnu_cxx::__normal_iterator<char*, std::string>)@@GLIBCXX_3.4
-U std::string::append(unsigned int, char)@@GLIBCXX_3.4
-U std::string::append(char const*)@@GLIBCXX_3.4
-U std::string::append(char const*, unsigned int)@@GLIBCXX_3.4
-U std::string::append(std::string const&)@@GLIBCXX_3.4
-U std::string::append(std::string const&, unsigned int, unsigned int)@@GLIBCXX_3.4
-U std::string::assign(char const*)@@GLIBCXX_3.4
-U std::string::assign(char const*, unsigned int)@@GLIBCXX_3.4
-U std::string::assign(std::string const&)@@GLIBCXX_3.4
-U std::string::insert(unsigned int, char const*, unsigned int)@@GLIBCXX_3.4
-U std::string::resize(unsigned int, char)@@GLIBCXX_3.4
-U std::string::resize(unsigned int)@@GLIBCXX_3.4
-U std::string::_M_leak()@@GLIBCXX_3.4
-U std::string::replace(unsigned int, unsigned int, char const*, unsigned int)@@GLIBCXX_3.4
-U std::string::replace(__gnu_cxx::__normal_iterator<char*, std::string>, __gnu_cxx::__normal_iterator<char*, std::string>, char const*, char const*)@@GLIBCXX_3.4
-U std::string::reserve(unsigned int)@@GLIBCXX_3.4
-U std::string::_M_mutate(unsigned int, unsigned int, unsigned int)@@GLIBCXX_3.4
-U std::string::push_back(char)@@GLIBCXX_3.4
-U std::basic_string<char, std::char_traits<char>, std::allocator<char> >::basic_string(unsigned int, char, std::allocator<char> const&)@@GLIBCXX_3.4
-U std::basic_string<char, std::char_traits<char>, std::allocator<char> >::basic_string(char const*, unsigned int, std::allocator<char> const&)@@GLIBCXX_3.4
-U std::basic_string<char, std::char_traits<char>, std::allocator<char> >::basic_string(char const*, std::allocator<char> const&)@@GLIBCXX_3.4
-U std::basic_string<char, std::char_traits<char>, std::allocator<char> >::basic_string(std::string const&)@@GLIBCXX_3.4
-U std::basic_string<char, std::char_traits<char>, std::allocator<char> >::basic_string(std::string const&, unsigned int, unsigned int)@@GLIBCXX_3.4
-U std::basic_string<char, std::char_traits<char>, std::allocator<char> >::basic_string(char const*, std::allocator<char> const&)@@GLIBCXX_3.4
-U std::basic_string<char, std::char_traits<char>, std::allocator<char> >::~basic_string()@@GLIBCXX_3.4
-U std::basic_streambuf<char, std::char_traits<char> >::~basic_streambuf()@@GLIBCXX_3.4
-U std::basic_stringbuf<char, std::char_traits<char>, std::allocator<char> >::_M_sync(char*, unsigned int, unsigned int)@@GLIBCXX_3.4
-U std::_List_node_base::_M_transfer(std::_List_node_base*, std::_List_node_base*)@@GLIBCXX_3.4.14
-U std::_List_node_base::_M_hook(std::_List_node_base*)@@GLIBCXX_3.4.14
-U std::_List_node_base::_M_unhook()@@GLIBCXX_3.4.14
-U std::basic_stringstream<char, std::char_traits<char>, std::allocator<char> >::~basic_stringstream()@@GLIBCXX_3.4
-U std::basic_istringstream<char, std::char_traits<char>, std::allocator<char> >::~basic_istringstream()@@GLIBCXX_3.4
-U std::basic_ostringstream<char, std::char_traits<char>, std::allocator<char> >::~basic_ostringstream()@@GLIBCXX_3.4
-U std::tr1::__detail::__prime_list@@GLIBCXX_3.4.10
-U std::locale::locale()@@GLIBCXX_3.4
-U std::locale::~locale()@@GLIBCXX_3.4
-U std::__detail::_List_node_base::_M_hook(std::__detail::_List_node_base*)@@GLIBCXX_3.4.15
-U std::__detail::_List_node_base::_M_unhook()@@GLIBCXX_3.4.15
-U std::ios_base::Init::Init()@@GLIBCXX_3.4
-U std::ios_base::Init::~Init()@@GLIBCXX_3.4
-U std::ios_base::ios_base()@@GLIBCXX_3.4
-U std::ios_base::~ios_base()@@GLIBCXX_3.4
-U std::bad_alloc::~bad_alloc()@@GLIBCXX_3.4
-U std::basic_ios<char, std::char_traits<char> >::init(std::basic_streambuf<char, std::char_traits<char> >*)@@GLIBCXX_3.4
-U std::basic_ios<char, std::char_traits<char> >::clear(std::_Ios_Iostate)@@GLIBCXX_3.4
-U std::exception::~exception()@@GLIBCXX_3.4
-U operator new(unsigned int)@@GLIBCXX_3.4
-U operator new(unsigned int, std::nothrow_t const&)@@GLIBCXX_3.4
-U std::set_new_handler(void (*)())@@GLIBCXX_3.4
-U std::basic_ostream<char, std::char_traits<char> >& std::__ostream_insert<char, std::char_traits<char> >(std::basic_ostream<char, std::char_traits<char> >&, char const*, int)@@GLIBCXX_3.4.9
-U std::__throw_bad_cast()@@GLIBCXX_3.4
-U std::__throw_bad_alloc()@@GLIBCXX_3.4
-U std::_Rb_tree_decrement(std::_Rb_tree_node_base const*)@@GLIBCXX_3.4
-U std::_Rb_tree_decrement(std::_Rb_tree_node_base*)@@GLIBCXX_3.4
-U std::_Rb_tree_increment(std::_Rb_tree_node_base const*)@@GLIBCXX_3.4
-U std::_Rb_tree_increment(std::_Rb_tree_node_base*)@@GLIBCXX_3.4
-U std::uncaught_exception()@@GLIBCXX_3.4
-U std::__throw_logic_error(char const*)@@GLIBCXX_3.4
-U std::__throw_length_error(char const*)@@GLIBCXX_3.4
-U std::__throw_out_of_range(char const*)@@GLIBCXX_3.4
-U std::_Rb_tree_rebalance_for_erase(std::_Rb_tree_node_base*, std::_Rb_tree_node_base&)@@GLIBCXX_3.4
-U std::_Rb_tree_insert_and_rebalance(bool, std::_Rb_tree_node_base*, std::_Rb_tree_node_base*, std::_Rb_tree_node_base&)@@GLIBCXX_3.4
-U std::basic_istream<char, std::char_traits<char> >& std::ws<char, std::char_traits<char> >(std::basic_istream<char, std::char_traits<char> >&)@@GLIBCXX_3.4
-U std::cerr@@GLIBCXX_3.4
-U std::nothrow@@GLIBCXX_3.4
-U std::terminate()@@GLIBCXX_3.4
-U std::basic_ostream<char, std::char_traits<char> >& std::operator<< <char, std::char_traits<char>, std::allocator<char> >(std::basic_ostream<char, std::char_traits<char> >&, std::basic_string<char, std::char_traits<char>, std::allocator<char> > const&)@@GLIBCXX_3.4
-U std::basic_ostream<char, std::char_traits<char> >& std::operator<< <std::char_traits<char> >(std::basic_ostream<char, std::char_traits<char> >&, char)@@GLIBCXX_3.4
-U std::basic_ostream<char, std::char_traits<char> >& std::operator<< <std::char_traits<char> >(std::basic_ostream<char, std::char_traits<char> >&, char const*)@@GLIBCXX_3.4
-U std::basic_istream<char, std::char_traits<char> >& std::operator>><char, std::char_traits<char>, std::allocator<char> >(std::basic_istream<char, std::char_traits<char> >&, std::basic_string<char, std::char_traits<char>, std::allocator<char> >&)@@GLIBCXX_3.4
-U typeinfo for bool@@CXXABI_1.3
-U typeinfo for unsigned char@@CXXABI_1.3
-U typeinfo for int@@CXXABI_1.3
-U typeinfo for unsigned int@@CXXABI_1.3
-U typeinfo for unsigned char*@@CXXABI_1.3
-U typeinfo for unsigned char const*@@CXXABI_1.3
-U typeinfo for int const*@@CXXABI_1.3
-U typeinfo for std::bad_alloc@@GLIBCXX_3.4
-U typeinfo for std::exception@@GLIBCXX_3.4
-U VTT for std::basic_stringstream<char, std::char_traits<char>, std::allocator<char> >@@GLIBCXX_3.4
-U VTT for std::basic_istringstream<char, std::char_traits<char>, std::allocator<char> >@@GLIBCXX_3.4
-U VTT for std::basic_ostringstream<char, std::char_traits<char>, std::allocator<char> >@@GLIBCXX_3.4
-U vtable for __cxxabiv1::__enum_type_info@@CXXABI_1.3
-U vtable for __cxxabiv1::__class_type_info@@CXXABI_1.3
-U vtable for __cxxabiv1::__pointer_type_info@@CXXABI_1.3
-U vtable for __cxxabiv1::__si_class_type_info@@CXXABI_1.3
-U vtable for __cxxabiv1::__vmi_class_type_info@@CXXABI_1.3
-U vtable for std::basic_streambuf<char, std::char_traits<char> >@@GLIBCXX_3.4
-U vtable for std::basic_stringbuf<char, std::char_traits<char>, std::allocator<char> >@@GLIBCXX_3.4
-U vtable for std::basic_stringstream<char, std::char_traits<char>, std::allocator<char> >@@GLIBCXX_3.4
-U vtable for std::basic_istringstream<char, std::char_traits<char>, std::allocator<char> >@@GLIBCXX_3.4
-U vtable for std::basic_ostringstream<char, std::char_traits<char>, std::allocator<char> >@@GLIBCXX_3.4
-U vtable for std::bad_alloc@@GLIBCXX_3.4
-U vtable for std::basic_ios<char, std::char_traits<char> >@@GLIBCXX_3.4

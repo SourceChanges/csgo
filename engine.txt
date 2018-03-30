@@ -140,6 +140,7 @@ U LoggingSystem_RegisterLoggingChannel
 U LoggingSystem_RegisterLoggingListener
 U LoggingSystem_ResetCurrentLoggingState
 U LoggingSystem_SetChannelSpewLevelByTag
+U LoggingSystem_SetLoggingResponsePolicy
 U log@@GLIBC_2.0
 U longjmp@@GLIBC_2.0
 U lseek64@@GLIBC_2.2

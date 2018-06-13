@@ -46,6 +46,7 @@ U isalnum@@GLIBC_2.0
 U iscntrl@@GLIBC_2.0
 U isprint@@GLIBC_2.0
 U iswalnum@@GLIBC_2.0
+U iswalpha@@GLIBC_2.0
 U iswspace@@GLIBC_2.0
 w _Jv_RegisterClasses
 U KeyValuesSystem

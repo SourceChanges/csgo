@@ -291,9 +291,12 @@ U strtod@@GLIBC_2.0
 U strtol@@GLIBC_2.0
 U symlink@@GLIBC_2.0
 U syscall@@GLIBC_2.0
+T ThreadFinishInitOnce
 T ThreadGetCurrentHandle
 T ThreadGetCurrentId
 T ThreadGetPriority
+T ThreadInitOnce
+T ThreadInitOnceCall
 T ThreadInMainThread
 T ThreadInterlockedAssignIf64
 T ThreadInterlockedCompareExchange64
@@ -394,6 +397,10 @@ T CPerfStatsData::Tick()
 T CPerfStatsData::Reset()
 T CPerfStatsData::CPerfStatsData()
 T CPerfStatsData::CPerfStatsData()
+T CThreadSemaphore::Wait(unsigned int)
+T CThreadSemaphore::Release(int, int*)
+T CThreadSemaphore::CThreadSemaphore(int, int)
+T CThreadSemaphore::CThreadSemaphore(int, int)
 T CCallStackStorage::CCallStackStorage(int (*)(void**, int, int), unsigned int)
 T CCallStackStorage::CCallStackStorage(int (*)(void**, int, int), unsigned int)
 T CThreadSpinRWLock::SpinLockForRead()

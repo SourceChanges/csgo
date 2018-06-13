@@ -49,6 +49,7 @@ U ispunct@@GLIBC_2.0
 U isspace@@GLIBC_2.0
 U isupper@@GLIBC_2.0
 U iswalnum@@GLIBC_2.0
+U iswalpha@@GLIBC_2.0
 U iswspace@@GLIBC_2.0
 U isxdigit@@GLIBC_2.0
 w _Jv_RegisterClasses

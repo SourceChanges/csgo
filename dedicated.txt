@@ -49,6 +49,7 @@ U feof@@GLIBC_2.0
 U ferror@@GLIBC_2.0
 U fflush@@GLIBC_2.0
 U fgets@@GLIBC_2.0
+U fileno@@GLIBC_2.0
 U fileno_unlocked@@GLIBC_2.0
 T _fini
 U flock@@GLIBC_2.0
@@ -65,6 +66,7 @@ U fseek@@GLIBC_2.0
 U fseeko64@@GLIBC_2.1
 U ftell@@GLIBC_2.0
 U ftello64@@GLIBC_2.1
+U ftruncate64@@GLIBC_2.1
 U fwrite@@GLIBC_2.0
 U g_ClockSpeed
 U g_ClockSpeedMicrosecondsMultiplier

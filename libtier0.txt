@@ -165,6 +165,7 @@ U open@@GLIBC_2.0
 U pclose@@GLIBC_2.1
 T Plat_Alloc
 T Plat_ConvertToLocalTime
+T Plat_CreateUUIDImpl
 T Plat_CreateWindow
 T Plat_ctime
 T Plat_daylight
@@ -203,6 +204,8 @@ T Plat_SimpleLog
 T Plat_timegm
 T Plat_timezone
 T Plat_USTime
+T Plat_UUIDFromString
+T Plat_UUIDToString
 T Plat_VerifyHardwareKey
 T Plat_VerifyHardwareKeyDriver
 T Plat_VerifyHardwareKeyPrompt

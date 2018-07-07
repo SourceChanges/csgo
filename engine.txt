@@ -267,9 +267,9 @@ U SteamGameServerInternal_CreateInterface
 U SteamGameServer_RunCallbacks
 U SteamGameServer_Shutdown
 U SteamInternal_GameServer_Init
+U SteamNetworkingSockets
+U SteamNetworkingSocketsGameServer
 U SteamNetworkingUtils
-U SteamSocketNetworking
-U SteamSocketNetworkingGameServer
 U strcasecmp@@GLIBC_2.0
 U strcasestr@@GLIBC_2.1
 U strcat@@GLIBC_2.0
@@ -306,7 +306,6 @@ U syscall@@GLIBC_2.0
 U sysconf@@GLIBC_2.0
 U tanf@@GLIBC_2.0
 U tan@@GLIBC_2.0
-U Temp_DispatchsSteamNetConnectionStatusChangedCallbacks
 U textdomain@@GLIBC_2.0
 U ThreadGetCurrentId
 U ThreadInMainThread

@@ -7,7 +7,6 @@ A __bss_start
 U btowc@@GLIBC_2.0
 U ceilf@@GLIBC_2.0
 U clock_gettime@@GLIBC_2.2
-U closedir@@GLIBC_2.0
 U close@@GLIBC_2.0
 U connect@@GLIBC_2.0
 U ctime_r@@GLIBC_2.0
@@ -40,7 +39,8 @@ U fprintf@@GLIBC_2.0
 U fputc@@GLIBC_2.0
 U fputs@@GLIBC_2.0
 U fread@@GLIBC_2.0
-T free
+U free@@GLIBC_2.0
+U freeifaddrs@@GLIBC_2.3
 U __freelocale@@GLIBC_2.1
 U fseek@@GLIBC_2.0
 U fseeko64@@GLIBC_2.1
@@ -52,6 +52,7 @@ U __fxstat@@GLIBC_2.0
 U getc@@GLIBC_2.0
 U getcwd@@GLIBC_2.0
 U getenv@@GLIBC_2.0
+U getifaddrs@@GLIBC_2.3
 U get_nprocs@@GLIBC_2.0
 U getpid@@GLIBC_2.0
 U getsockname@@GLIBC_2.0
@@ -89,7 +90,6 @@ U nanosleep@@GLIBC_2.0
 B __new_handler
 U __newlocale@@GLIBC_2.1
 U __nl_langinfo_l@@GLIBC_2.2
-U opendir@@GLIBC_2.0
 U open@@GLIBC_2.0
 U poll@@GLIBC_2.0
 U __printf_chk@@GLIBC_2.3.4
@@ -113,7 +113,6 @@ U putc@@GLIBC_2.0
 U putwc@@GLIBC_2.2
 U qsort@@GLIBC_2.0
 U rand@@GLIBC_2.0
-U readdir@@GLIBC_2.0
 U read@@GLIBC_2.0
 U realloc@@GLIBC_2.0
 U recvfrom@@GLIBC_2.0
@@ -126,7 +125,6 @@ U sendmsg@@GLIBC_2.0
 U setlocale@@GLIBC_2.0
 U setsockopt@@GLIBC_2.0
 U setvbuf@@GLIBC_2.0
-U shutdown@@GLIBC_2.0
 U sigaction@@GLIBC_2.0
 U signal@@GLIBC_2.0
 U __snprintf_chk@@GLIBC_2.3.4
@@ -142,27 +140,51 @@ U __stack_chk_fail@@GLIBC_2.4
 U stderr@@GLIBC_2.0
 U stdin@@GLIBC_2.0
 U stdout@@GLIBC_2.0
-T SteamDatagramClient_Init_InternalV4
+T SteamAPI_ISteamNetworkingSockets_AcceptConnection
+T SteamAPI_ISteamNetworkingSockets_CloseConnection
+T SteamAPI_ISteamNetworkingSockets_CloseListenSocket
+T SteamAPI_ISteamNetworkingSockets_ConnectByIPv4Address
+T SteamAPI_ISteamNetworkingSockets_ConnectBySteamID
+T SteamAPI_ISteamNetworkingSockets_ConnectToHostedDedicatedServer
+T SteamAPI_ISteamNetworkingSockets_CreateHostedDedicatedServerListenSocket
+T SteamAPI_ISteamNetworkingSockets_CreateListenSocket
+T SteamAPI_ISteamNetworkingSockets_CreateSocketPair
+T SteamAPI_ISteamNetworkingSockets_FindRelayAuthTicketForServer
+T SteamAPI_ISteamNetworkingSockets_FlushMessagesOnConnection
+T SteamAPI_ISteamNetworkingSockets_GetConfigurationString
+T SteamAPI_ISteamNetworkingSockets_GetConfigurationStringName
+T SteamAPI_ISteamNetworkingSockets_GetConfigurationValue
+T SteamAPI_ISteamNetworkingSockets_GetConfigurationValueName
+T SteamAPI_ISteamNetworkingSockets_GetConnectionConfigurationValue
+T SteamAPI_ISteamNetworkingSockets_GetConnectionDebugText
+T SteamAPI_ISteamNetworkingSockets_GetConnectionInfo
+T SteamAPI_ISteamNetworkingSockets_GetConnectionName
+T SteamAPI_ISteamNetworkingSockets_GetConnectionUserData
+T SteamAPI_ISteamNetworkingSockets_GetDetailedConnectionStatus
+T SteamAPI_ISteamNetworkingSockets_GetHostedDedicatedServerInfo
+T SteamAPI_ISteamNetworkingSockets_GetListenSocketInfo
+T SteamAPI_ISteamNetworkingSockets_GetQuickConnectionStatus
+T SteamAPI_ISteamNetworkingSockets_ReceivedRelayAuthTicket
+T SteamAPI_ISteamNetworkingSockets_ReceiveMessagesOnConnection
+T SteamAPI_ISteamNetworkingSockets_ReceiveMessagesOnListenSocket
+T SteamAPI_ISteamNetworkingSockets_RunConnectionStatusChangedCallbacks
+T SteamAPI_ISteamNetworkingSockets_SendMessageToConnection
+T SteamAPI_ISteamNetworkingSockets_SetConfigurationString
+T SteamAPI_ISteamNetworkingSockets_SetConfigurationValue
+T SteamAPI_ISteamNetworkingSockets_SetConnectionConfigurationValue
+T SteamAPI_ISteamNetworkingSockets_SetConnectionName
+T SteamAPI_ISteamNetworkingSockets_SetConnectionUserData
+T SteamDatagramClient_Init_InternalV5
 T SteamDatagramClient_Internal_SteamAPIKludge
 T SteamDatagramClient_Kill
-T SteamDatagramLinkInstantaneousStats_Clear
-T SteamDatagramLinkLifetimeStats_Clear
-T SteamDatagramLinkLifetimeStats_JitterHistogramTotalCount
-T SteamDatagramLinkLifetimeStats_PingHistogramTotalCount
-T SteamDatagramLinkLifetimeStats_QualityHistogramTotalCount
-T SteamDatagramLinkLifetimeStats_RXSpeedHistogramTotalCount
-T SteamDatagramLinkLifetimeStats_TXSpeedHistogramTotalCount
-T SteamDatagramLinkStats_Clear
-T SteamDatagramRelayAuthTicket_Parse
 T SteamDatagramServer_Init_Internal
 T SteamDatagramServer_Kill
-T SteamDatagram_SetDebugOutputFunction
-T SteamNetworkingDetailedConnectionStatus_Clear
-T SteamNetworkingDetailedConnectionStatus_Print
 T SteamNetworkingP2P
 T SteamNetworkingP2PGameServer
 T SteamNetworkingSockets
 T SteamNetworkingSocketsGameServer
+T SteamNetworkingSockets_GetLocalTimestamp
+T SteamNetworkingSockets_SetDebugOutputFunction
 T SteamNetworkingUtils
 U strcasecmp@@GLIBC_2.0
 U __strcat_chk@@GLIBC_2.3.4
@@ -205,7 +227,6 @@ U __towupper_l@@GLIBC_2.1
 U ungetc@@GLIBC_2.0
 U ungetwc@@GLIBC_2.2
 U __uselocale@@GLIBC_2.3
-U __vasprintf_chk@@GLIBC_2.8
 U __vfprintf_chk@@GLIBC_2.3.4
 U __vsnprintf_chk@@GLIBC_2.3.4
 U vsnprintf@@GLIBC_2.0
@@ -225,10 +246,10 @@ U wmemmove@@GLIBC_2.0
 U wmemset@@GLIBC_2.0
 U write@@GLIBC_2.0
 U writev@@GLIBC_2.0
-U __xstat@@GLIBC_2.0
 W void std::vector<int, std::allocator<int> >::_M_emplace_back_aux<int const&>(int const&)
 W void std::vector<unsigned int, std::allocator<unsigned int> >::_M_emplace_back_aux<unsigned int const&>(unsigned int const&)
 W std::_Rb_tree_iterator<std::pair<unsigned int const, int> > std::_Rb_tree<unsigned int, std::pair<unsigned int const, int>, std::_Select1st<std::pair<unsigned int const, int> >, std::less<unsigned int>, std::allocator<std::pair<unsigned int const, int> > >::_M_emplace_hint_unique<std::piecewise_construct_t const&, std::tuple<unsigned int const&>, std::tuple<> >(std::_Rb_tree_const_iterator<std::pair<unsigned int const, int> >, std::piecewise_construct_t const&, std::tuple<unsigned int const&>&&, std::tuple<>&&)
+W std::_Rb_tree_iterator<std::pair<long long const, long long> > std::_Rb_tree<long long, std::pair<long long const, long long>, std::_Select1st<std::pair<long long const, long long> >, std::less<long long>, std::allocator<std::pair<long long const, long long> > >::_M_emplace_hint_unique<std::piecewise_construct_t const&, std::tuple<long long const&>, std::tuple<> >(std::_Rb_tree_const_iterator<std::pair<long long const, long long> >, std::piecewise_construct_t const&, std::tuple<long long const&>&&, std::tuple<>&&)
 V typeinfo for __cxxabiv1::__forced_unwind
 V typeinfo for __cxxabiv1::__class_type_info
 V typeinfo for __cxxabiv1::__foreign_exception
@@ -237,6 +258,7 @@ V typeinfo for __cxxabiv1::__vmi_class_type_info
 V typeinfo for __gnu_cxx::recursive_init_error
 V typeinfo for __gnu_cxx::__concurrence_lock_error
 V typeinfo for __gnu_cxx::__concurrence_unlock_error
+V typeinfo for SteamAPI_ISteamNetworkingSockets_RunConnectionStatusChangedCallbacks::CallbackAdapter
 V typeinfo name for __cxxabiv1::__forced_unwind
 V typeinfo name for __cxxabiv1::__class_type_info
 V typeinfo name for __cxxabiv1::__foreign_exception
@@ -253,3 +275,4 @@ V vtable for __cxxabiv1::__vmi_class_type_info
 V vtable for __gnu_cxx::recursive_init_error
 V vtable for __gnu_cxx::__concurrence_lock_error
 V vtable for __gnu_cxx::__concurrence_unlock_error
+V vtable for SteamAPI_ISteamNetworkingSockets_RunConnectionStatusChangedCallbacks::CallbackAdapter

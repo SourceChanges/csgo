@@ -70,7 +70,7 @@ U fprintf@@GLIBC_2.0
 U fputc@@GLIBC_2.0
 U fputs@@GLIBC_2.0
 U fread@@GLIBC_2.0
-U free
+U free@@GLIBC_2.0
 U __freelocale@@GLIBC_2.1
 U freopen@@GLIBC_2.0
 U fseek@@GLIBC_2.0
@@ -259,7 +259,6 @@ U SteamDatagramClient_Internal_SteamAPIKludge
 U SteamDatagramClient_Kill
 U SteamDatagramServer_Init_Internal
 U SteamDatagramServer_Kill
-U SteamDatagram_SetDebugOutputFunction
 U SteamGameServer_GetHSteamPipe
 U SteamGameServer_GetHSteamUser
 U SteamGameServer_GetIPCCallCount
@@ -269,6 +268,7 @@ U SteamGameServer_Shutdown
 U SteamInternal_GameServer_Init
 U SteamNetworkingSockets
 U SteamNetworkingSocketsGameServer
+U SteamNetworkingSockets_SetDebugOutputFunction
 U SteamNetworkingUtils
 U strcasecmp@@GLIBC_2.0
 U strcasestr@@GLIBC_2.1

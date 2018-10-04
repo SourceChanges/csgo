@@ -109,6 +109,7 @@ U __fxstat@@GLIBC_2.0
 U getaddrinfo@@GLIBC_2.0
 U getc@@GLIBC_2.0
 U getcwd@@GLIBC_2.0
+U getdomainname@@GLIBC_2.0
 U getenv@@GLIBC_2.0
 U geteuid@@GLIBC_2.0
 U gethostbyname@@GLIBC_2.0
@@ -179,7 +180,6 @@ U __memset_chk@@GLIBC_2.3.4
 U memset@@GLIBC_2.0
 U mkdir@@GLIBC_2.0
 U mkfifo@@GLIBC_2.0
-U mktemp@@GLIBC_2.0
 U mktime@@GLIBC_2.0
 U mmap64@@GLIBC_2.1
 U mmap@@GLIBC_2.0
@@ -187,6 +187,7 @@ U modf@@GLIBC_2.0
 U mount@@GLIBC_2.0
 U mprotect@@GLIBC_2.0
 U mremap@@GLIBC_2.0
+U msync@@GLIBC_2.0
 U munmap@@GLIBC_2.0
 U nanosleep@@GLIBC_2.0
 U __newlocale@@GLIBC_2.1
@@ -200,6 +201,7 @@ U pipe@@GLIBC_2.0
 U poll@@GLIBC_2.0
 U popen@@GLIBC_2.1
 U posix_fadvise@@GLIBC_2.2
+U posix_memalign@@GLIBC_2.2
 U powf@@GLIBC_2.0
 U pow@@GLIBC_2.0
 U prctl@@GLIBC_2.0
@@ -221,6 +223,7 @@ U pthread_cond_signal@@GLIBC_2.3.2
 U pthread_cond_timedwait@@GLIBC_2.3.2
 U pthread_cond_wait@@GLIBC_2.3.2
 U pthread_create@@GLIBC_2.1
+U pthread_detach@@GLIBC_2.0
 U pthread_exit@@GLIBC_2.0
 U pthread_getspecific@@GLIBC_2.0
 U pthread_join@@GLIBC_2.0
@@ -257,7 +260,6 @@ U __recv_chk@@GLIBC_2.4
 U recvfrom@@GLIBC_2.0
 U recv@@GLIBC_2.0
 U recvmsg@@GLIBC_2.0
-U __register_atfork@@GLIBC_2.3.2
 U remove@@GLIBC_2.0
 U rename@@GLIBC_2.0
 U rewind@@GLIBC_2.0
@@ -269,7 +271,6 @@ U select@@GLIBC_2.0
 U semctl@@GLIBC_2.2
 U semget@@GLIBC_2.0
 U semop@@GLIBC_2.0
-U sem_unlink@@GLIBC_2.1.1
 U sendfile64@@GLIBC_2.3
 U send@@GLIBC_2.0
 U sendmsg@@GLIBC_2.0
@@ -278,6 +279,7 @@ U setenv@@GLIBC_2.0
 U _setjmp@@GLIBC_2.0
 U setlocale@@GLIBC_2.0
 U setmntent@@GLIBC_2.0
+U setsid@@GLIBC_2.0
 U setsockopt@@GLIBC_2.0
 U setvbuf@@GLIBC_2.0
 U shm_open@@GLIBC_2.2
